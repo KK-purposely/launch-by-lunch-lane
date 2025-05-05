@@ -16,6 +16,7 @@ const CTA = () => {
         <Button 
           size="lg" 
           className="bg-white text-launch-orange hover:bg-white/90 px-8 py-6 text-lg rounded-full font-medium transition-all duration-300 shadow-lg hover:shadow-xl"
+          onClick={() => window.open('https://lu.ma/7jv9c0eb', '_blank')}
         >
           Apply Now
         </Button>
