@@ -15,7 +15,7 @@ const Hero = () => {
   return (
     <section className="w-full min-h-screen flex flex-col items-center justify-center px-4 sm:px-6 py-12 bg-launch-purple">
       <div className="max-w-6xl mx-auto text-center animate-fade-in">
-        <div className="mb-10 relative">
+        <div className="mb-10 relative" style={{ height: "auto", width: "100%", maxWidth: "500px", margin: "0 auto" }}>
           {/* Low-quality placeholder with blur-up technique */}
           <div 
             className={`w-full max-w-xl mx-auto bg-gray-200 transition-opacity duration-300 ${imageLoaded ? 'opacity-0' : 'opacity-100'}`}
@@ -31,7 +31,7 @@ const Hero = () => {
           <img 
             src="/lovable-uploads/83aacd6e-7468-4b31-b18e-b03214d01cc0.png" 
             alt="Launch by Lunch Logo with Karen Kelly and Stephan Smith" 
-            className={`w-full max-w-xl mx-auto absolute top-0 left-0 right-0 transition-opacity duration-500 ${imageLoaded ? 'opacity-100' : 'opacity-0'}`}
+            className={`w-full max-w-xl mx-auto transition-opacity duration-500 ${imageLoaded ? 'opacity-100' : 'opacity-0'}`}
             style={{ margin: '0 auto' }}
             loading="eager"
             fetchPriority="high"
