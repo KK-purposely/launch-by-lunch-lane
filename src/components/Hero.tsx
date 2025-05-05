@@ -34,7 +34,7 @@ const Hero = () => {
             className={`w-full max-w-xl mx-auto absolute top-0 left-0 right-0 transition-opacity duration-500 ${imageLoaded ? 'opacity-100' : 'opacity-0'}`}
             style={{ margin: '0 auto' }}
             loading="eager"
-            fetchpriority="high"
+            fetchPriority="high"
           />
         </div>
         
