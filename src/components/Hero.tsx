@@ -9,7 +9,7 @@ const Hero = () => {
           <img 
             src="/lovable-uploads/83aacd6e-7468-4b31-b18e-b03214d01cc0.png" 
             alt="Launch by Lunch Logo with Karen Kelly and Stephan Smith" 
-            className="w-full max-w-2xl mx-auto"
+            className="w-full max-w-xl mx-auto" // Changed max-w-2xl to max-w-xl (~25% reduction)
           />
         </div>
         
