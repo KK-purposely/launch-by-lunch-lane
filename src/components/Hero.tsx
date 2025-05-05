@@ -3,21 +3,21 @@ import { Button } from "@/components/ui/button";
 
 const Hero = () => {
   return (
-    <section className="w-full min-h-screen flex flex-col items-center justify-center px-4 sm:px-6 py-12 bg-launch-light">
+    <section className="w-full min-h-screen flex flex-col items-center justify-center px-4 sm:px-6 py-12 bg-[#8B5CF6]">
       <div className="max-w-6xl mx-auto text-center animate-fade-in">
         <div className="mb-10">
           <img 
             src="/lovable-uploads/83aacd6e-7468-4b31-b18e-b03214d01cc0.png" 
             alt="Launch by Lunch Logo with Karen Kelly and Stephan Smith" 
-            className="w-full max-w-xl mx-auto" // Changed max-w-2xl to max-w-xl (~25% reduction)
+            className="w-full max-w-xl mx-auto"
           />
         </div>
         
-        <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-launch-purple mb-6 tracking-tight">
+        <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 tracking-tight">
           The no-code fast lane
         </h1>
         
-        <p className="text-xl md:text-2xl lg:text-3xl font-medium text-launch-purple/80 mb-12 max-w-3xl mx-auto">
+        <p className="text-xl md:text-2xl lg:text-3xl font-medium text-white/90 mb-12 max-w-3xl mx-auto">
           for non-technical founders, builders, and creators.
         </p>
         
@@ -32,7 +32,7 @@ const Hero = () => {
           <Button 
             variant="outline" 
             size="lg" 
-            className="bg-transparent border-2 border-launch-purple text-launch-purple hover:bg-launch-purple/10 px-8 py-6 text-lg rounded-full font-medium transition-all duration-300"
+            className="bg-transparent border-2 border-white text-white hover:bg-white/10 px-8 py-6 text-lg rounded-full font-medium transition-all duration-300"
           >
             Learn More
           </Button>
