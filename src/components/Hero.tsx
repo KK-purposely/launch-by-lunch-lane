@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 
 const Hero = () => {
   return (
-    <section className="w-full min-h-screen flex flex-col items-center justify-center px-4 sm:px-6 py-12 bg-[#8B5CF6]">
+    <section className="w-full min-h-screen flex flex-col items-center justify-center px-4 sm:px-6 py-12 bg-launch-purple">
       <div className="max-w-6xl mx-auto text-center animate-fade-in">
         <div className="mb-10">
           <img 
