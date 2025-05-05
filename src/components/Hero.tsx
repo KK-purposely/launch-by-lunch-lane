@@ -13,9 +13,9 @@ const Hero = () => {
   }, []);
 
   return (
-    <section className="w-full min-h-screen flex flex-col items-center justify-center px-4 sm:px-6 py-12 bg-launch-purple">
+    <section className="w-full min-h-screen flex flex-col items-center pt-16 px-4 sm:px-6 pb-12 bg-launch-purple">
       <div className="max-w-6xl mx-auto text-center animate-fade-in">
-        <div className="mb-10 relative" style={{ height: "auto", width: "100%", maxWidth: "500px", margin: "0 auto" }}>
+        <div className="mb-6 relative" style={{ height: "auto", width: "100%", maxWidth: "500px", margin: "0 auto" }}>
           {/* Low-quality placeholder with blur-up technique */}
           <div 
             className={`w-full max-w-xl mx-auto bg-gray-200 transition-opacity duration-300 ${imageLoaded ? 'opacity-0' : 'opacity-100'}`}
