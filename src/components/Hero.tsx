@@ -21,21 +21,13 @@ const Hero = () => {
           for non-technical founders, builders, and creators.
         </p>
         
-        <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+        <div className="flex justify-center">
           <Button 
             size="lg" 
             className="bg-launch-orange hover:bg-launch-orange/90 text-white px-8 py-6 text-lg rounded-full font-medium transition-all duration-300 shadow-lg hover:shadow-xl"
             onClick={() => window.open('https://lu.ma/7jv9c0eb', '_blank')}
           >
             Join Our Program
-          </Button>
-          
-          <Button 
-            variant="outline" 
-            size="lg" 
-            className="bg-transparent border-2 border-white text-white hover:bg-white/10 px-8 py-6 text-lg rounded-full font-medium transition-all duration-300"
-          >
-            Learn More
           </Button>
         </div>
       </div>
