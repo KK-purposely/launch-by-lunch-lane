@@ -7,8 +7,8 @@ const Hero = () => {
       <div className="max-w-6xl mx-auto text-center animate-fade-in">
         <div className="mb-10">
           <img 
-            src="/lovable-uploads/fb164285-9e6e-4bcd-a96f-4fb850c4aad9.png" 
-            alt="Launch by Lunch Logo with co-founders" 
+            src="/lovable-uploads/83aacd6e-7468-4b31-b18e-b03214d01cc0.png" 
+            alt="Launch by Lunch Logo with Karen Kelly and Stephan Smith" 
             className="w-full max-w-2xl mx-auto"
           />
         </div>
