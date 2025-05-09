@@ -9,8 +9,7 @@ const CTA = () => {
           Ready to Launch Your Idea?
         </h2>
 
-        <iframe src="https://embeds.beehiiv.com/dc87f09d-9bd7-4810-9857-6ac39cfd0e75" data-test-id="beehiiv-embed" width="480" height="320" frameborder="0" scrolling="no" style="border-radius: 4px; border: 2px solid #e5e7eb; margin: 0; background-color: transparent;"></iframe>
-        
+ 
         <p className="text-xl text-white/90 mb-10 max-w-2xl mx-auto">
           Join our next cohort and go from idea to launch in record time - no coding required.
         </p>
