@@ -32,18 +32,25 @@ const Contact = () => {
 
   const onSubmit = async (values: FormValues) => {
     try {
-      // Prepare email content
-      const subject = `Website Inquiry from ${values.firstName} ${values.lastName}`;
-      const body = `
+      // Format the email content
+      const subject = encodeURIComponent(`Website Inquiry from ${values.firstName} ${values.lastName}`);
+      const body = encodeURIComponent(`
         Name: ${values.firstName} ${values.lastName}
         Email: ${values.email}
         
         Message:
         ${values.message}
-      `;
+      `);
       
-      // Open user's email client with pre-filled fields
-      window.location.href = `mailto:welcome@launchbylunch.co?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+      // Create mailto link
+      const mailtoLink = `mailto:welcome@launchbylunch.co?subject=${subject}&body=${body}`;
+      
+      // Create a hidden anchor element and simulate a click
+      const link = document.createElement('a');
+      link.href = mailtoLink;
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
       
       // Show success message
       toast.success("Thank you for your inquiry! Your email client should open shortly.");
@@ -133,6 +140,18 @@ const Contact = () => {
               >
                 {form.formState.isSubmitting ? "Submitting..." : "Send Inquiry"}
               </Button>
+
+              <div className="text-center text-sm text-gray-500 mt-4">
+                <p>
+                  You can also reach us directly at{" "}
+                  <a 
+                    href="mailto:welcome@launchbylunch.co" 
+                    className="text-launch-purple hover:underline font-medium"
+                  >
+                    welcome@launchbylunch.co
+                  </a>
+                </p>
+              </div>
             </form>
           </Form>
         </div>
