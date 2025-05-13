@@ -36,7 +36,7 @@ const Navigation = () => {
               className="bg-launch-orange hover:bg-launch-orange/90 text-white rounded-full font-medium transition-all duration-300"
               onClick={() => window.open('https://learn.launchbylunch.co/subscribe', '_blank')}
             >
-              Join Our Program
+              Get Our Newsletter
             </Button>
           </div>
           <div className="md:hidden">
@@ -77,7 +77,7 @@ const Navigation = () => {
                 className="w-full bg-launch-orange hover:bg-launch-orange/90 text-white rounded-full font-medium transition-all duration-300"
                 onClick={() => window.open('https://learn.launchbylunch.co/subscribe', '_blank')}
               >
-                Join Our Program
+                Get Our Newsletter
               </Button>
             </div>
           </div>
