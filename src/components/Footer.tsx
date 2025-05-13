@@ -10,7 +10,11 @@ const Footer = () => {
           <p className="text-sm text-white/70">The no-code fast lane</p>
         </div>
         
-        <div className="mt-4 text-sm text-white/70">
+        <div className="mb-4 text-sm text-center">
+          Reach out at <a href="mailto:welcome@launchbylunch.co" className="underline hover:text-launch-orange transition-colors">welcome@launchbylunch.co</a>
+        </div>
+        
+        <div className="text-sm text-white/70">
           &copy; {currentYear} Launch by Lunch. All rights reserved.
         </div>
       </div>
