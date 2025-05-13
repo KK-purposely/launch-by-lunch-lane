@@ -35,32 +35,31 @@ const Contact = () => {
       // Format the email content
       const subject = encodeURIComponent(`Website Inquiry from ${values.firstName} ${values.lastName}`);
       const body = encodeURIComponent(`
-        Name: ${values.firstName} ${values.lastName}
-        Email: ${values.email}
-        
-        Message:
-        ${values.message}
-      `);
+Name: ${values.firstName} ${values.lastName}
+Email: ${values.email}
+
+Message:
+${values.message}
+      `.trim());
       
-      // Create mailto link
-      const mailtoLink = `mailto:welcome@launchbylunch.co?subject=${subject}&body=${body}`;
+      // Direct approach to open email client
+      window.location.href = `mailto:welcome@launchbylunch.co?subject=${subject}&body=${body}`;
       
-      // Create a hidden anchor element and simulate a click
-      const link = document.createElement('a');
-      link.href = mailtoLink;
-      document.body.appendChild(link);
-      link.click();
-      document.body.removeChild(link);
+      // Show success message after a short delay
+      setTimeout(() => {
+        toast.success("Thank you for your inquiry!");
+        form.reset();
+      }, 500);
       
-      // Show success message
-      toast.success("Thank you for your inquiry! Your email client should open shortly.");
-      
-      // Reset the form
-      form.reset();
     } catch (error) {
-      toast.error("Something went wrong. Please try again later.");
+      toast.error("Something went wrong. Please try the direct email link below.");
       console.error("Form submission error:", error);
     }
+  };
+
+  // Function to handle direct email click
+  const handleDirectEmailClick = () => {
+    toast.success("Opening email client...");
   };
 
   return (
@@ -147,6 +146,7 @@ const Contact = () => {
                   <a 
                     href="mailto:welcome@launchbylunch.co" 
                     className="text-launch-purple hover:underline font-medium"
+                    onClick={handleDirectEmailClick}
                   >
                     welcome@launchbylunch.co
                   </a>
