@@ -25,7 +25,7 @@ const Hero = () => {
           <Button 
             size="lg" 
             className="bg-launch-orange hover:bg-launch-orange/90 text-white px-8 py-6 text-lg rounded-full font-medium transition-all duration-300 shadow-lg hover:shadow-xl"
-            onClick={() => window.open('https://learn.launchbylunch.co/subscribe', '_blank')}
+            onClick={() => window.open('https://lu.ma/882gea4s', '_blank')}
           >
             Join Our Program
           </Button>
