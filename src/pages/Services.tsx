@@ -1,7 +1,7 @@
 import React from "react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
-import { Zap, Rocket, Layers, ChartBar } from "lucide-react";
+import { Layers, ChartBar } from "lucide-react";
 
 const Services = () => {
   return (
@@ -9,73 +9,9 @@ const Services = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 py-16">
         <h1 className="text-4xl md:text-5xl font-bold mb-12 text-center text-launch-purple">Our Services</h1>
         
-        {/* Accelerators Section */}
-        <section className="mb-20">
-          <div className="flex items-center gap-3 mb-6">
-            <Zap className="h-8 w-8 text-launch-orange" />
-            <h2 className="text-3xl font-bold text-launch-purple">Accelerators</h2>
-          </div>
-          <Card className="border-2 border-gray-200 hover:border-launch-purple transition-all duration-300">
-            <CardHeader>
-              <CardTitle className="text-2xl text-launch-purple">
-                For the AI-, no-code curious + community lovers
-              </CardTitle>
-              <CardDescription className="text-xl font-medium">
-                $199 / seat
-              </CardDescription>
-            </CardHeader>
-            <CardContent>
-              <ul className="list-disc pl-5 space-y-2 text-lg">
-                <li>4, 1 hour group sessions (general, specialized, NOT custom content)</li>
-                <li>Up to 20 seats per cohort</li>
-              </ul>
-            </CardContent>
-          </Card>
-        </section>
-
         {/* Other Packages */}
         <section className="mb-20">
           <h2 className="text-3xl font-bold text-launch-purple mb-8">Our Packages</h2>
-          
-          {/* Starter Sparks */}
-          <Card className="mb-12 border-2 border-gray-200 hover:border-launch-purple transition-all duration-300">
-            <CardHeader className="bg-gray-50">
-              <div className="flex items-center gap-3 mb-2">
-                <Rocket className="h-6 w-6 text-launch-orange" />
-                <CardTitle className="text-2xl text-launch-purple">Starter Sparks</CardTitle>
-              </div>
-              <CardDescription className="text-xl font-medium">
-                For Founders & Teams Who Want to Start Fast
-              </CardDescription>
-            </CardHeader>
-            <CardContent className="space-y-6">
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                <div>
-                  <p className="font-semibold text-gray-700">Price:</p>
-                  <p className="text-lg">$1,000 – $1,500</p>
-                </div>
-                <div>
-                  <p className="font-semibold text-gray-700">Time:</p>
-                  <p className="text-lg">3–5 hours</p>
-                </div>
-              </div>
-              
-              <div>
-                <p className="font-semibold text-gray-700 mb-2">Includes:</p>
-                <ul className="list-disc pl-5 space-y-2 text-lg">
-                  <li>30-min idea consult with CEO + CTO</li>
-                  <li>Build-a-basic: clickable prototype or core feature MVP using tools like Bolt, Lovable, or Replit</li>
-                  <li>Loom walkthrough + async feedback round</li>
-                  <li>Access to our private "What to Build Next" resource vault</li>
-                </ul>
-              </div>
-              
-              <div>
-                <p className="font-semibold text-gray-700 mb-2">Perfect For:</p>
-                <p className="text-lg">Startups validating new features, solo founders prepping for pitch, or teams needing a fast visual to get buy-in.</p>
-              </div>
-            </CardContent>
-          </Card>
           
           {/* Momentum Builder */}
           <Card className="mb-12 border-2 border-gray-200 hover:border-launch-purple transition-all duration-300">
@@ -122,7 +58,7 @@ const Services = () => {
           <Card className="mb-12 border-2 border-gray-200 hover:border-launch-purple transition-all duration-300">
             <CardHeader className="bg-gray-50">
               <div className="flex items-center gap-3 mb-2">
-                <Rocket className="h-6 w-6 text-launch-orange" />
+                <Layers className="h-6 w-6 text-launch-orange" />
                 <CardTitle className="text-2xl text-launch-purple">Launch Lab</CardTitle>
               </div>
               <CardDescription className="text-xl font-medium">
