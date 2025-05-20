@@ -15,14 +15,14 @@ const Accelerators = () => {
     },
     {
       id: 2,
-      name: "Cohort #2",
+      name: "Cohort #2 (May 2025)",
       url: "https://lu.ma/7jv9c0eb",
       status: "SOLD OUT",
       isActive: false
     },
     {
       id: 1,
-      name: "Cohort #1",
+      name: "Cohort #1 (April 2025)",
       url: "https://lu.ma/640oqgpw",
       status: "SOLD OUT",
       isActive: false
