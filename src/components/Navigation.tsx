@@ -25,7 +25,7 @@ const Navigation = () => {
                   Home
                 </Link>
                 <Link to="/services" className="px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-launch-orange">
-                  Services
+                  Enterprise
                 </Link>
                 <a 
                   href="https://learn.launchbylunch.co/forms/3d943f05-e3f5-4b13-a8e5-430b350bcf80" 
@@ -75,7 +75,7 @@ const Navigation = () => {
               className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-launch-purple hover:bg-gray-100"
               onClick={() => setIsMenuOpen(false)}
             >
-              Services
+              Enterprise
             </Link>
             <a 
               href="https://learn.launchbylunch.co/forms/3d943f05-e3f5-4b13-a8e5-430b350bcf80"
