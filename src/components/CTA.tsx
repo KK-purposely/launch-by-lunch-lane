@@ -18,7 +18,7 @@ const CTA = () => {
           className="bg-white text-launch-orange hover:bg-white/90 px-8 py-6 text-lg rounded-full font-medium transition-all duration-300 shadow-lg hover:shadow-xl"
           onClick={() => window.open('https://learn.launchbylunch.co/subscribe', '_blank')}
         >
-          Apply Now
+          Subscribe to our Newsletter
         </Button>
       </div>
     </section>
