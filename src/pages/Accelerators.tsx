@@ -32,7 +32,8 @@ const Accelerators = () => {
   return (
     <div className="bg-white min-h-screen">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 py-16">
-        <h1 className="text-4xl md:text-5xl font-bold mb-12 text-center text-launch-purple">Accelerators</h1>
+        <h1 className="text-4xl md:text-5xl font-bold mb-2 text-center text-launch-purple">Accelerators</h1>
+        <p className="text-xl text-center text-gray-700 mb-12">If code and cost stands between you and your vision, this accelerator is for you.</p>
         
         <div className="space-y-8">
           {cohorts.map((cohort) => (
