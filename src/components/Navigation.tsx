@@ -27,6 +27,9 @@ const Navigation = () => {
                 <Link to="/services" className="px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-launch-orange">
                   Enterprise
                 </Link>
+                <Link to="/accelerators" className="px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-launch-orange">
+                  Accelerators
+                </Link>
                 <a 
                   href="https://learn.launchbylunch.co/forms/3d943f05-e3f5-4b13-a8e5-430b350bcf80" 
                   className="px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-launch-orange"
@@ -76,6 +79,13 @@ const Navigation = () => {
               onClick={() => setIsMenuOpen(false)}
             >
               Enterprise
+            </Link>
+            <Link 
+              to="/accelerators" 
+              className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-launch-purple hover:bg-gray-100"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              Accelerators
             </Link>
             <a 
               href="https://learn.launchbylunch.co/forms/3d943f05-e3f5-4b13-a8e5-430b350bcf80"
