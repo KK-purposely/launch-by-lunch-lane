@@ -16,7 +16,7 @@ const About = () => {
               Launch by Lunch is the first virtual AI accelerator created to empower non-technical founders to move from the back of the crowd to the front of the line. Paired with strategic consulting services and an online community, startups go from prototype to revenue to scale - all without outsourcing a line of code.
             </p>
             <p className="text-lg text-gray-700 mb-6 leading-relaxed">
-              Created by Boston-based CTO <a href="https://www.linkedin.com/in/stephansmithbc93/" target="_blank" rel="noopener noreferrer" className="text-launch-purple hover:underline">Stephan Smith</a> and 3x non-technical founder <a href="https://www.linkedin.com/in/karen-kelly-daring-greatly/" target="_blank" rel="noopener noreferrer" className="text-launch-purple hover:underline">Karen Kelly</a>, our vibe coding services shepherd you through the delightful process of using natural language to build technical products.
+              Created by Boston-based CTO <a href="https://www.linkedin.com/in/stephansmithbc93/" target="_blank" rel="noopener noreferrer" className="text-blue-600 font-medium hover:underline">Stephan Smith</a> and 3x non-technical founder <a href="https://www.linkedin.com/in/karen-kelly-daring-greatly/" target="_blank" rel="noopener noreferrer" className="text-blue-600 font-medium hover:underline">Karen Kelly</a>, our vibe coding services shepherd you through the delightful process of using natural language to build technical products.
             </p>
             <p className="text-lg text-gray-700 mb-6 leading-relaxed">
               If code and cost has always stood between you and your vision, come talk to us.
