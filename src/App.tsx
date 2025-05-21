@@ -9,6 +9,7 @@ import NotFound from "./pages/NotFound";
 import Services from "./pages/Services";
 import Accelerators from "./pages/Accelerators";
 import About from "./pages/About";
+import MembersOnly from "./pages/MembersOnly";
 import Navigation from "./components/Navigation";
 
 const queryClient = new QueryClient();
@@ -25,6 +26,7 @@ const App = () => (
           <Route path="/services" element={<Services />} />
           <Route path="/accelerators" element={<Accelerators />} />
           <Route path="/about" element={<About />} />
+          <Route path="/members" element={<MembersOnly />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
