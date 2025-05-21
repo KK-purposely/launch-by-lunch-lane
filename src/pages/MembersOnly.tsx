@@ -99,7 +99,7 @@ const MembersOnly = () => {
             Thank you for being part of our community. This area contains exclusive content for our members.
           </p>
           
-          <div className="bg-white p-6 rounded-md border border-gray-200 mb-8">
+          <div className="bg-white p-6 rounded-md border border-gray-200">
             <h3 className="text-xl font-semibold mb-3 text-launch-purple">Special Resources</h3>
             <p className="text-gray-700 mb-4">
               As a member, you have access to special resources, templates, and support to help you with your projects.
@@ -110,27 +110,6 @@ const MembersOnly = () => {
               <li>Monthly webinars with industry experts</li>
               <li>Early access to new features and tools</li>
             </ul>
-          </div>
-          
-          <div className="bg-white p-6 rounded-md border border-gray-200">
-            <h3 className="text-xl font-semibold mb-3 text-launch-purple">Upcoming Events</h3>
-            <p className="text-gray-700 mb-4">
-              Join us for these upcoming members-only events:
-            </p>
-            <div className="space-y-4">
-              <div className="border-l-4 border-launch-orange pl-4">
-                <p className="font-medium">Webinar: Advanced No-Code Techniques</p>
-                <p className="text-gray-600">June 15, 2025 - 2:00 PM EST</p>
-              </div>
-              <div className="border-l-4 border-launch-orange pl-4">
-                <p className="font-medium">Workshop: Building Your First Web App</p>
-                <p className="text-gray-600">July 3, 2025 - 1:00 PM EST</p>
-              </div>
-              <div className="border-l-4 border-launch-orange pl-4">
-                <p className="font-medium">Q&A: Ask the Experts</p>
-                <p className="text-gray-600">July 22, 2025 - 3:00 PM EST</p>
-              </div>
-            </div>
           </div>
         </div>
       </div>
