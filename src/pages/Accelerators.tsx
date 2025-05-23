@@ -10,8 +10,8 @@ const Accelerators = () => {
       id: 3,
       name: "Cohort #3",
       url: "https://lu.ma/882gea4s",
-      status: "Currently Accepting Applications",
-      isActive: true
+      status: "SOLD OUT",
+      isActive: false
     },
     {
       id: 2,
