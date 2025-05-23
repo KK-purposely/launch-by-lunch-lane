@@ -1,4 +1,3 @@
-
 import React from "react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -15,7 +14,7 @@ const Accelerators = () => {
     },
     {
       id: 3,
-      name: "Cohort #3",
+      name: "Cohort #3 (June 2025)",
       url: "https://lu.ma/882gea4s",
       status: "SOLD OUT",
       isActive: false
