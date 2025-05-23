@@ -1,4 +1,5 @@
 
+
 import React from "react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -41,7 +42,7 @@ const Accelerators = () => {
       <div className="max-w-4xl mx-auto px-4 sm:px-6 py-16">
         <h1 className="text-4xl md:text-5xl font-bold mb-2 text-center text-launch-purple">Accelerators</h1>
         <p className="text-xl font-semibold text-center text-gray-700 mb-2">If code and cost stands between you and your vision, this accelerator is for you. Learn how to vibe code a working prototype in just an hour or two.</p>
-        <p className="text-lg text-center text-gray-600 mb-12">Our accelerators typically sell out in less than a week, so we encourage you to apply early.</p>
+        <p className="text-lg text-center text-gray-600 mb-12">*Our accelerators typically sell out in less than a week, so we encourage you to apply early.</p>
         
         <div className="space-y-8">
           {cohorts.map((cohort) => (
