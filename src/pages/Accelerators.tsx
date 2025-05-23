@@ -7,6 +7,13 @@ import { ArrowUpRight } from "lucide-react";
 const Accelerators = () => {
   const cohorts = [
     {
+      id: 4,
+      name: "Cohort #4",
+      url: "https://lu.ma/ns8lakdh",
+      status: "Currently Accepting Applications",
+      isActive: true
+    },
+    {
       id: 3,
       name: "Cohort #3",
       url: "https://lu.ma/882gea4s",
