@@ -7,7 +7,7 @@ const Accelerators = () => {
   const cohorts = [
     {
       id: 4,
-      name: "Cohort #4",
+      name: "Cohort #4 (June 2025)",
       url: "https://lu.ma/ns8lakdh",
       status: "Currently Accepting Applications",
       isActive: true
