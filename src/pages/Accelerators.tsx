@@ -51,7 +51,7 @@ const Accelerators = () => {
               <CardHeader className={`${cohort.isActive ? 'bg-launch-orange/10' : 'bg-gray-50'}`}>
                 <div className="flex justify-between items-center">
                   <CardTitle className="text-2xl text-launch-purple">{cohort.name}</CardTitle>
-                  <span className={`text-sm font-medium px-3 py-1 rounded-full ${cohort.isActive ? 'bg-launch-orange/20 text-launch-orange' : 'bg-gray-200 text-gray-700'}`}>
+                  <span className={`text-sm font-bold px-3 py-1 rounded-full ${cohort.isActive ? 'bg-launch-orange/20 text-launch-orange' : 'bg-gray-200 text-gray-700'}`}>
                     {cohort.status}
                   </span>
                 </div>
