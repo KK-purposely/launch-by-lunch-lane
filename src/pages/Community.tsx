@@ -1,4 +1,3 @@
-
 import React from "react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -8,26 +7,26 @@ const Community = () => {
   const benefits = [
     {
       id: 1,
-      title: "Learn from the Community",
-      description: "Connect with experienced entrepreneurs and learn from their journeys, mistakes, and successes",
+      title: "Learn from Elite Entrepreneurs",
+      description: "Tap into the collective wisdom of battle-tested founders who've scaled from zero to millions",
       icon: Users,
     },
     {
       id: 2,
-      title: "Join AI-first Events",
-      description: "Access exclusive events focused on AI innovation, product development, and industry insights",
+      title: "Access Exclusive AI-Power Events",
+      description: "Get VIP access to cutting-edge events where industry leaders reveal their AI strategies and breakthroughs",
       icon: Calendar,
     },
     {
       id: 3,
-      title: "Founder/Investor Fireside Chats",
-      description: "Participate in intimate conversations with successful founders and active investors",
+      title: "Investor Fireside Chats",
+      description: "Get insider access to intimate conversations with top-tier investors sharing funding secrets and market insights",
       icon: MessageCircle,
     },
     {
       id: 4,
-      title: "Office Hours 2x a Month",
-      description: "Get personalized guidance and feedback during our bi-monthly office hours sessions",
+      title: "Bi-Monthly Power Sessions",
+      description: "Fast-track your success with expert-led office hours designed to solve your biggest challenges in real-time",
       icon: Clock,
     }
   ];
