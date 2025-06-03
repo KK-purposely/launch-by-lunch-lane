@@ -1,3 +1,4 @@
+
 import React from "react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -19,7 +20,7 @@ const Join = () => {
         "Join events", 
         "Investor Fireside chats",
         "Office hours 2x a month",
-        "Pay annually and get a seat in 2 accelerators of your choice"
+        "Pay annually and score a seat in 2 accelerators of your choice"
       ],
       icon: Users,
       ctaText: "Join Community",
