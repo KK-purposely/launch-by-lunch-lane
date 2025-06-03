@@ -2,8 +2,11 @@ import React from "react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Users, Clock, Code, Rocket, Search } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 
 const Join = () => {
+  const navigate = useNavigate();
+
   const services = [
     {
       id: 1,
@@ -13,7 +16,7 @@ const Join = () => {
       description: "Connect with like-minded entrepreneurs building AI-first companies",
       icon: Users,
       ctaText: "Join Community",
-      ctaUrl: "#"
+      ctaUrl: "/community"
     },
     {
       id: 2,
@@ -102,8 +105,9 @@ const Join = () => {
                   className="w-full bg-launch-purple hover:bg-launch-purple/90 text-white"
                   onClick={() => {
                     if (service.ctaUrl === "#") {
-                      // For placeholder links, you can add actual URLs later
                       console.log(`Clicked ${service.title}`);
+                    } else if (service.ctaUrl.startsWith("/")) {
+                      navigate(service.ctaUrl);
                     } else {
                       window.location.href = service.ctaUrl;
                     }
