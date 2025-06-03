@@ -18,7 +18,8 @@ const Join = () => {
         "Learn from the community",
         "Join events", 
         "Investor Fireside chats",
-        "Office hours 2x a month"
+        "Office hours 2x a month",
+        "Pay annually and get a seat in 2 accelerators of your choice"
       ],
       icon: Users,
       ctaText: "Join Community",
