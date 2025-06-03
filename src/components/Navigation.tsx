@@ -30,6 +30,9 @@ const Navigation = () => {
                 <Link to="/accelerators" className="px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-launch-orange">
                   Accelerators
                 </Link>
+                <Link to="/join" className="px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-launch-orange">
+                  Join
+                </Link>
                 <Link to="/about" className="px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-launch-orange">
                   About
                 </Link>
@@ -92,6 +95,13 @@ const Navigation = () => {
               onClick={() => setIsMenuOpen(false)}
             >
               Accelerators
+            </Link>
+            <Link 
+              to="/join" 
+              className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-launch-purple hover:bg-gray-100"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              Join
             </Link>
             <Link 
               to="/about" 

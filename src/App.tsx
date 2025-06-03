@@ -10,6 +10,7 @@ import Services from "./pages/Services";
 import Accelerators from "./pages/Accelerators";
 import About from "./pages/About";
 import MembersOnly from "./pages/MembersOnly";
+import Join from "./pages/Join";
 import Navigation from "./components/Navigation";
 
 const queryClient = new QueryClient();
@@ -27,6 +28,7 @@ const App = () => (
           <Route path="/accelerators" element={<Accelerators />} />
           <Route path="/about" element={<About />} />
           <Route path="/members" element={<MembersOnly />} />
+          <Route path="/join" element={<Join />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
