@@ -1,7 +1,7 @@
 import React from "react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Users, Clock, Code, Rocket, Search } from "lucide-react";
+import { Users, Clock, Code, Rocket, Search, Check } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 
 const Join = () => {
@@ -14,6 +14,12 @@ const Join = () => {
       price: "$99/month",
       savings: "or save 2 months with annual",
       description: "Connect with like-minded entrepreneurs building AI-first companies",
+      benefits: [
+        "Learn from the community",
+        "Join events", 
+        "Investor Fireside chats",
+        "Office hours 2x a month"
+      ],
       icon: Users,
       ctaText: "Join Community",
       ctaUrl: "/community"
@@ -101,6 +107,18 @@ const Join = () => {
                 <CardDescription className="text-base mb-6">
                   {service.description}
                 </CardDescription>
+                
+                {service.benefits && (
+                  <div className="mb-6 space-y-3">
+                    {service.benefits.map((benefit, index) => (
+                      <div key={index} className="flex items-center gap-3">
+                        <Check className="h-5 w-5 text-launch-orange flex-shrink-0" />
+                        <span className="text-sm text-gray-700">{benefit}</span>
+                      </div>
+                    ))}
+                  </div>
+                )}
+
                 <Button
                   className="w-full bg-launch-purple hover:bg-launch-purple/90 text-white"
                   onClick={() => {
