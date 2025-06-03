@@ -1,3 +1,4 @@
+
 import React from "react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -60,11 +61,11 @@ const Join = () => {
 
   return (
     <div className="bg-white min-h-screen">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 py-16">
+      <div className="max-w-4xl mx-auto px-4 sm:px-6 py-16">
         <h1 className="text-4xl md:text-5xl font-bold mb-4 text-center text-launch-purple">Join Launch by Lunch</h1>
         <p className="text-xl text-center text-gray-700 mb-12">Choose the service that best fits your entrepreneurial journey</p>
         
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 gap-8">
           {services.map((service) => (
             <Card 
               key={service.id}
