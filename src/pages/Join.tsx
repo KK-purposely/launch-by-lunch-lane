@@ -1,4 +1,3 @@
-
 import React from "react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -100,7 +99,7 @@ const Join = () => {
                   {service.description}
                 </CardDescription>
                 <Button
-                  className={`w-full ${service.isLearnMore ? 'bg-launch-purple hover:bg-launch-purple/90' : 'bg-launch-orange hover:bg-launch-orange/90'} text-white`}
+                  className="w-full bg-launch-purple hover:bg-launch-purple/90 text-white"
                   onClick={() => {
                     if (service.ctaUrl === "#") {
                       // For placeholder links, you can add actual URLs later
