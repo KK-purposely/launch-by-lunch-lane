@@ -1,4 +1,5 @@
 
+
 import React from "react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -18,13 +19,13 @@ const Join = () => {
     },
     {
       id: 2,
-      title: "Drop in Office Hours",
-      price: "$25 per person",
-      availability: "10 seats open per hour",
-      description: "Get direct access to expert guidance during scheduled office hours",
-      icon: Clock,
-      ctaText: "Book Session",
-      ctaUrl: "#"
+      title: "Launch by Lunch Accelerators",
+      price: "$199",
+      sessions: "4, 1 hour virtual sessions",
+      description: "Intensive accelerator program to fast-track your startup journey",
+      icon: Rocket,
+      ctaText: "Apply Now",
+      ctaUrl: "/accelerators"
     },
     {
       id: 3,
@@ -39,13 +40,13 @@ const Join = () => {
     },
     {
       id: 4,
-      title: "Launch by Lunch Accelerators",
-      price: "$199",
-      sessions: "4, 1 hour virtual sessions",
-      description: "Intensive accelerator program to fast-track your startup journey",
-      icon: Rocket,
-      ctaText: "Apply Now",
-      ctaUrl: "/accelerators"
+      title: "Drop in Office Hours",
+      price: "$25 per person",
+      availability: "10 seats open per hour",
+      description: "Get direct access to expert guidance during scheduled office hours",
+      icon: Clock,
+      ctaText: "Book Session",
+      ctaUrl: "#"
     },
     {
       id: 5,
@@ -122,3 +123,4 @@ const Join = () => {
 };
 
 export default Join;
+
