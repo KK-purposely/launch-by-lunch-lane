@@ -1,3 +1,4 @@
+
 import React from "react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -40,7 +41,7 @@ const Join = () => {
       title: "Drop in Office Hours",
       price: "$25 per person",
       availability: "10 seats open per hour",
-      description: "Get direct access to expert guidance from our founders Karen Kelly & Stephan Smith during scheduled office hours",
+      description: "Get direct access to expert guidance from our founders Karen Kelly & Stephan Smith during scheduled office hours.",
       icon: Clock,
       ctaText: "Book Session",
       ctaUrl: "#"
