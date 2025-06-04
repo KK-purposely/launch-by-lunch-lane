@@ -1,3 +1,4 @@
+
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Sparkles, CheckCircle } from "lucide-react";
 
@@ -23,7 +24,7 @@ const Hero = () => {
           </div>
           
           <p className="text-xl md:text-2xl text-gray-700 mb-8 max-w-3xl mx-auto leading-relaxed">
-            One of our founders can code. One of them can't. But we both believe this: you don't need a tech team or investor dollars to launch something real and revenue generating, and we're here to show you how.
+            Founded by CTO and non-technical founder duo with the shared belief that you don't need a tech team or investor dollars to launch something real and revenue generating today.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
