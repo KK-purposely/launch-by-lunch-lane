@@ -1,11 +1,15 @@
-import React from "react";
+
+import React, { useState } from "react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Users, Clock, Code, Rocket, Search, Check } from "lucide-react";
 import { useNavigate } from "react-router-dom";
+import ContactForm from "@/components/ContactForm";
 
 const Join = () => {
   const navigate = useNavigate();
+  const [contactFormOpen, setContactFormOpen] = useState(false);
+  const [selectedService, setSelectedService] = useState("");
 
   const services = [
     {
@@ -54,7 +58,7 @@ const Join = () => {
       icon: Code,
       ctaText: "Contact us",
       ctaUrl: "#",
-      isLearnMore: true
+      isContact: true
     },
     {
       id: 5,
@@ -67,6 +71,19 @@ const Join = () => {
       ctaUrl: "#"
     }
   ];
+
+  const handleServiceClick = (service: any) => {
+    if (service.isContact) {
+      setSelectedService(service.title);
+      setContactFormOpen(true);
+    } else if (service.ctaUrl === "#") {
+      console.log(`Clicked ${service.title}`);
+    } else if (service.ctaUrl.startsWith("/")) {
+      navigate(service.ctaUrl);
+    } else {
+      window.location.href = service.ctaUrl;
+    }
+  };
 
   return (
     <div className="bg-white min-h-screen">
@@ -122,15 +139,7 @@ const Join = () => {
 
                 <Button
                   className="w-full bg-launch-purple hover:bg-launch-purple/90 text-white"
-                  onClick={() => {
-                    if (service.ctaUrl === "#") {
-                      console.log(`Clicked ${service.title}`);
-                    } else if (service.ctaUrl.startsWith("/")) {
-                      navigate(service.ctaUrl);
-                    } else {
-                      window.location.href = service.ctaUrl;
-                    }
-                  }}
+                  onClick={() => handleServiceClick(service)}
                 >
                   {service.ctaText}
                 </Button>
@@ -138,6 +147,12 @@ const Join = () => {
             </Card>
           ))}
         </div>
+
+        <ContactForm
+          isOpen={contactFormOpen}
+          onClose={() => setContactFormOpen(false)}
+          serviceTitle={selectedService}
+        />
       </div>
     </div>
   );
