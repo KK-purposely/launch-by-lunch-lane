@@ -1,3 +1,4 @@
+
 import { Code, Users, Rocket, Clock, Sparkles, CheckCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
@@ -41,8 +42,8 @@ const Features = () => {
             </span>
           </h2>
           <p className="text-xl text-gray-700 max-w-3xl mx-auto leading-relaxed">
-            We're not just teaching you to code - we're teaching you to 
-            <span className="text-launch-orange font-semibold"> build the future with AI as your co-pilot.</span>
+            Where the new eco-system of founders, fractionals, and investors 
+            <span className="text-launch-orange font-semibold"> build, scale and fund the next generation of AI-first startups.</span>
           </p>
         </div>
         
