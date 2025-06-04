@@ -1,5 +1,5 @@
 
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
@@ -7,22 +7,6 @@ import { Users, Calendar, MessageCircle, Clock, Check } from "lucide-react";
 
 const Community = () => {
   const [selectedPlan, setSelectedPlan] = useState("annual");
-
-  useEffect(() => {
-    // Load Beehiiv script
-    const script = document.createElement('script');
-    script.src = 'https://subscribe-forms.beehiiv.com/embed.js';
-    script.async = true;
-    document.head.appendChild(script);
-
-    return () => {
-      // Cleanup script when component unmounts
-      const existingScript = document.querySelector('script[src="https://subscribe-forms.beehiiv.com/embed.js"]');
-      if (existingScript) {
-        document.head.removeChild(existingScript);
-      }
-    };
-  }, []);
 
   const benefits = [
     {
@@ -71,27 +55,9 @@ const Community = () => {
             <p className="text-xl text-gray-700 mb-4">
               Where the new eco-system of founders, fractionals, and investors build, scale and fund the next generation of AI-first startups.
             </p>
-            <p className="text-lg font-medium text-launch-purple mb-8">
+            <p className="text-lg font-medium text-launch-purple">
               Get our early bird rates for the next 60 days.
             </p>
-            
-            {/* Beehiiv Form Embed */}
-            <div className="max-w-md mx-auto mb-8">
-              <iframe 
-                src="https://subscribe-forms.beehiiv.com/af233839-ec0e-40aa-a736-dc3df8097ca4" 
-                className="beehiiv-embed w-full h-auto border-0" 
-                data-test-id="beehiiv-embed" 
-                frameBorder="0" 
-                scrolling="no" 
-                style={{ 
-                  margin: 0, 
-                  borderRadius: '0px 0px 0px 0px', 
-                  backgroundColor: 'transparent', 
-                  boxShadow: '0 0 #0000',
-                  minHeight: '200px'
-                }}
-              />
-            </div>
           </div>
         </div>
 

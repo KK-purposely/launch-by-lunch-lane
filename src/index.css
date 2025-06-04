@@ -1,4 +1,3 @@
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -99,33 +98,4 @@
   body {
     @apply bg-background text-foreground;
   }
-}
-
-/* Beehiiv form styling */
-.beehiiv-embed iframe {
-  border-radius: 8px !important;
-}
-
-/* Target Beehiiv subscribe button specifically */
-.beehiiv-embed button[type="submit"],
-.beehiiv-embed input[type="submit"],
-.beehiiv-embed button[data-testid="subscribe-btn"],
-.beehiiv-embed .subscribe-btn,
-iframe[src*="beehiiv"] button,
-iframe[src*="beehiiv"] input[type="submit"] {
-  background-color: #F27B35 !important;
-  border-color: #F27B35 !important;
-  color: white !important;
-  transition: all 0.2s ease !important;
-}
-
-.beehiiv-embed button[type="submit"]:hover,
-.beehiiv-embed input[type="submit"]:hover,
-.beehiiv-embed button[data-testid="subscribe-btn"]:hover,
-.beehiiv-embed .subscribe-btn:hover,
-iframe[src*="beehiiv"] button:hover,
-iframe[src*="beehiiv"] input[type="submit"]:hover {
-  background-color: #e06a2a !important;
-  border-color: #e06a2a !important;
-  transform: translateY(-1px) !important;
 }
