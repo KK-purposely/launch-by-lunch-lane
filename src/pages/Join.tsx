@@ -17,7 +17,7 @@ const Join = () => {
       description: "Connect with like-minded entrepreneurs building AI-first companies",
       benefits: [
         "Connect and learn from our community of founders and fractional experts",
-        "Join events", 
+        "Discover local AI events", 
         "Investor Fireside chats",
         "Office hours 2x a month",
         "Pay annually and score a seat in 2 accelerators of your choice"
