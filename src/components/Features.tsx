@@ -1,4 +1,3 @@
-
 import { Code, Users, Rocket, Clock, Sparkles, CheckCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
@@ -6,7 +5,7 @@ const Features = () => {
   const features = [
     {
       icon: Code,
-      title: "Vibe Coding",
+      title: "Meet Investors",
       description: "Learn to build working prototypes using AI and no-code tools in record time"
     },
     {
@@ -16,12 +15,12 @@ const Features = () => {
     },
     {
       icon: Users,
-      title: "Expert Community",
+      title: "Learn with Friends",
       description: "Connect with AI-first founders and get guidance from experienced entrepreneurs"
     },
     {
       icon: Rocket,
-      title: "Launch Ready",
+      title: "Launch Today",
       description: "Graduate with a working prototype and the knowledge to scale your vision"
     }
   ];
