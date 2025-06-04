@@ -1,4 +1,3 @@
-
 import React from "react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -14,7 +13,7 @@ const Join = () => {
       title: "Join our Community of AI-first Founders",
       price: "$99/month",
       savings: "or save 2 months with annual",
-      description: "Our accelerators are accessible to anyone, anywhere and include 4 hours of small group learning over 4 consecutive weeks,",
+      description: "Connect with like-minded entrepreneurs building AI-first companies",
       benefits: [
         "Connect and learn from our community of founders and fractional experts",
         "Discover local AI events", 
