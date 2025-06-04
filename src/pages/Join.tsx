@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Users, Clock, Code, Rocket, Search, Check } from "lucide-react";
+import { Users, Clock, Code, Rocket, Search, Check, Sparkles, ArrowRight } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 import ContactForm from "@/components/ContactForm";
 
@@ -27,7 +27,8 @@ const Join = () => {
       ],
       icon: Users,
       ctaText: "Join Community",
-      ctaUrl: "/community"
+      ctaUrl: "/community",
+      featured: true
     },
     {
       id: 2,
@@ -86,66 +87,164 @@ const Join = () => {
   };
 
   return (
-    <div className="bg-white min-h-screen">
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 py-16">
-        <h1 className="text-4xl md:text-5xl font-bold mb-4 text-center text-launch-purple">Join Launch by Lunch</h1>
-        <p className="text-xl text-center text-gray-700 mb-12">Choose the service that best fits your entrepreneurial journey</p>
-        
+    <div className="min-h-screen bg-gradient-to-br from-launch-light via-white to-orange-50">
+      {/* Hero Section with Gradient */}
+      <div className="relative overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-r from-launch-purple/10 via-transparent to-launch-orange/10" />
+        <div className="relative max-w-4xl mx-auto px-4 sm:px-6 py-16">
+          <div className="text-center mb-4">
+            <div className="inline-flex items-center gap-2 bg-gradient-to-r from-launch-purple to-launch-orange bg-clip-text text-transparent mb-4">
+              <Sparkles className="h-6 w-6 text-launch-orange animate-pulse" />
+              <span className="text-sm font-semibold uppercase tracking-wide">Your Journey Starts Here</span>
+              <Sparkles className="h-6 w-6 text-launch-purple animate-pulse" />
+            </div>
+            <h1 className="text-4xl md:text-6xl font-bold mb-6">
+              <span className="bg-gradient-to-r from-launch-purple via-launch-orange to-launch-purple bg-clip-text text-transparent">
+                Join Launch by Lunch
+              </span>
+            </h1>
+            <p className="text-xl md:text-2xl text-gray-700 mb-8 max-w-3xl mx-auto leading-relaxed">
+              Choose the service that best fits your entrepreneurial journey and 
+              <span className="text-launch-orange font-semibold"> transform your ideas into reality</span>
+            </p>
+          </div>
+        </div>
+      </div>
+      
+      {/* Services Grid */}
+      <div className="max-w-5xl mx-auto px-4 sm:px-6 pb-16">
         <div className="grid grid-cols-1 gap-8">
-          {services.map((service) => (
+          {services.map((service, index) => (
             <Card 
               key={service.id}
-              className="border-2 border-gray-200 hover:border-launch-orange transition-all duration-300 hover:shadow-lg"
+              className={`group relative border-2 transition-all duration-500 hover:shadow-2xl transform hover:-translate-y-2 ${
+                service.featured 
+                  ? 'border-gradient-to-r from-launch-purple to-launch-orange shadow-xl bg-gradient-to-br from-white via-launch-light to-white' 
+                  : 'border-gray-200 hover:border-launch-orange bg-white'
+              }`}
+              style={{
+                animation: `fade-in 0.6s ease-out ${index * 0.1}s both`
+              }}
             >
-              <CardHeader className="bg-gray-50">
-                <div className="flex items-center gap-3 mb-2">
-                  <service.icon className="h-6 w-6 text-launch-orange" />
-                  <CardTitle className="text-xl text-launch-purple">{service.title}</CardTitle>
+              {service.featured && (
+                <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
+                  <div className="bg-gradient-to-r from-launch-purple to-launch-orange text-white px-6 py-2 rounded-full text-sm font-bold shadow-lg">
+                    🌟 Most Popular
+                  </div>
                 </div>
-                <div className="space-y-1">
-                  <p className="text-2xl font-bold text-launch-orange">{service.price}</p>
-                  {service.savings && (
-                    <p className="text-sm text-gray-600">{service.savings}</p>
-                  )}
-                  {service.availability && (
-                    <p className="text-sm text-gray-600">{service.availability}</p>
-                  )}
-                  {service.sessions && (
-                    <p className="text-sm text-gray-600">{service.sessions}</p>
-                  )}
-                  {service.provider && (
-                    <p className="text-sm text-gray-600">{service.provider}</p>
-                  )}
-                  {service.timing && (
-                    <p className="text-sm text-gray-600">{service.timing}</p>
-                  )}
+              )}
+              
+              <CardHeader className={`${service.featured ? 'bg-gradient-to-r from-launch-purple/5 to-launch-orange/5' : 'bg-gray-50'} relative overflow-hidden`}>
+                <div className="absolute top-0 right-0 w-32 h-32 opacity-10">
+                  <service.icon className="w-full h-full text-launch-orange" />
+                </div>
+                <div className="relative z-10">
+                  <div className="flex items-center gap-3 mb-4">
+                    <div className={`p-3 rounded-full ${service.featured ? 'bg-gradient-to-r from-launch-purple to-launch-orange' : 'bg-launch-orange'} shadow-lg`}>
+                      <service.icon className="h-6 w-6 text-white" />
+                    </div>
+                    <CardTitle className={`text-xl md:text-2xl ${service.featured ? 'bg-gradient-to-r from-launch-purple to-launch-orange bg-clip-text text-transparent' : 'text-launch-purple'}`}>
+                      {service.title}
+                    </CardTitle>
+                  </div>
+                  <div className="space-y-2">
+                    <p className={`text-3xl md:text-4xl font-bold ${service.featured ? 'bg-gradient-to-r from-launch-orange to-launch-purple bg-clip-text text-transparent' : 'text-launch-orange'}`}>
+                      {service.price}
+                    </p>
+                    {service.savings && (
+                      <p className="text-sm text-green-600 font-medium bg-green-50 px-3 py-1 rounded-full inline-block">
+                        💰 {service.savings}
+                      </p>
+                    )}
+                    {service.availability && (
+                      <p className="text-sm text-blue-600 bg-blue-50 px-3 py-1 rounded-full inline-block">
+                        👥 {service.availability}
+                      </p>
+                    )}
+                    {service.sessions && (
+                      <p className="text-sm text-purple-600 bg-purple-50 px-3 py-1 rounded-full inline-block">
+                        🎯 {service.sessions}
+                      </p>
+                    )}
+                    {service.provider && (
+                      <p className="text-sm text-orange-600 bg-orange-50 px-3 py-1 rounded-full inline-block">
+                        👨‍💻 {service.provider}
+                      </p>
+                    )}
+                    {service.timing && (
+                      <p className="text-sm text-indigo-600 bg-indigo-50 px-3 py-1 rounded-full inline-block">
+                        ⏰ {service.timing}
+                      </p>
+                    )}
+                  </div>
                 </div>
               </CardHeader>
-              <CardContent className="pt-4">
-                <CardDescription className="text-base mb-6">
+              
+              <CardContent className="pt-6">
+                <CardDescription className="text-base md:text-lg mb-8 text-gray-700 leading-relaxed">
                   {service.description}
                 </CardDescription>
                 
                 {service.benefits && (
-                  <div className="mb-6 space-y-3">
+                  <div className="mb-8 space-y-4">
                     {service.benefits.map((benefit, index) => (
-                      <div key={index} className="flex items-center gap-3">
-                        <Check className="h-5 w-5 text-launch-orange flex-shrink-0" />
-                        <span className="text-sm text-gray-700">{benefit}</span>
+                      <div 
+                        key={index} 
+                        className="flex items-start gap-4 p-3 rounded-lg bg-gradient-to-r from-green-50 to-emerald-50 border border-green-100"
+                      >
+                        <div className="flex-shrink-0 w-6 h-6 bg-gradient-to-r from-green-500 to-emerald-500 rounded-full flex items-center justify-center">
+                          <Check className="h-4 w-4 text-white" />
+                        </div>
+                        <span className="text-sm md:text-base text-gray-700 leading-relaxed">{benefit}</span>
                       </div>
                     ))}
                   </div>
                 )}
 
                 <Button
-                  className="w-full bg-launch-purple hover:bg-launch-purple/90 text-white"
+                  className={`w-full group text-lg py-6 transition-all duration-300 ${
+                    service.featured 
+                      ? 'bg-gradient-to-r from-launch-purple to-launch-orange hover:from-launch-orange hover:to-launch-purple text-white shadow-lg hover:shadow-xl' 
+                      : 'bg-launch-purple hover:bg-launch-purple/90 text-white'
+                  }`}
                   onClick={() => handleServiceClick(service)}
                 >
-                  {service.ctaText}
+                  <span className="flex items-center justify-center gap-2">
+                    {service.ctaText}
+                    <ArrowRight className="h-5 w-5 group-hover:translate-x-1 transition-transform" />
+                  </span>
                 </Button>
               </CardContent>
             </Card>
           ))}
+        </div>
+
+        {/* Bottom CTA Section */}
+        <div className="mt-16 text-center">
+          <div className="bg-gradient-to-r from-launch-purple/10 via-launch-orange/10 to-launch-purple/10 rounded-3xl p-8 md:p-12">
+            <h2 className="text-2xl md:text-3xl font-bold mb-4">
+              <span className="bg-gradient-to-r from-launch-purple to-launch-orange bg-clip-text text-transparent">
+                Ready to Transform Your Ideas?
+              </span>
+            </h2>
+            <p className="text-lg text-gray-700 mb-6 max-w-2xl mx-auto">
+              Join thousands of entrepreneurs who have already taken the leap into the AI-first future.
+            </p>
+            <div className="flex flex-wrap justify-center gap-4 text-sm text-gray-600">
+              <span className="flex items-center gap-1">
+                <Check className="h-4 w-4 text-green-500" />
+                No long-term commitments
+              </span>
+              <span className="flex items-center gap-1">
+                <Check className="h-4 w-4 text-green-500" />
+                Expert guidance included
+              </span>
+              <span className="flex items-center gap-1">
+                <Check className="h-4 w-4 text-green-500" />
+                Community support
+              </span>
+            </div>
+          </div>
         </div>
 
         <ContactForm
