@@ -1,3 +1,4 @@
+
 import { Button } from "@/components/ui/button";
 import { ArrowRight, CheckCircle } from "lucide-react";
 
@@ -5,10 +6,10 @@ const Hero = () => {
   return (
     <div className="relative overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-r from-launch-purple/10 via-transparent to-launch-orange/10" />
-      <div className="relative w-full py-20 px-4 sm:px-6">
+      <div className="relative w-full py-12 px-4 sm:px-6">
         <div className="max-w-4xl mx-auto text-center">
           <div className="mb-6">
-            <div className="mb-4">
+            <div className="mb-2">
               <img
                 src="/lovable-uploads/8f3eba1c-0f11-4411-9774-5671f6239bf2.png"
                 alt="Launch by Lunch Logo"
