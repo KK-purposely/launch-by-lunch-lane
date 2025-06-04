@@ -129,28 +129,6 @@ const Community = () => {
             </div>
           </RadioGroup>
         </div>
-        
-        {/* Benefits Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
-          {benefits.map((benefit) => (
-            <Card 
-              key={benefit.id}
-              className="border-2 border-gray-200 hover:border-launch-orange transition-all duration-300 hover:shadow-lg"
-            >
-              <CardHeader>
-                <div className="flex items-center gap-3 mb-2">
-                  <benefit.icon className="h-8 w-8 text-launch-orange" />
-                  <CardTitle className="text-xl text-launch-purple">{benefit.title}</CardTitle>
-                </div>
-              </CardHeader>
-              <CardContent>
-                <CardDescription className="text-base text-gray-700">
-                  {benefit.description}
-                </CardDescription>
-              </CardContent>
-            </Card>
-          ))}
-        </div>
 
         {/* Call to Action */}
         <div className="text-center">
