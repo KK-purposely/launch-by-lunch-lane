@@ -152,7 +152,7 @@ const Join = () => {
                       {service.price}
                     </p>
                     {service.savings && (
-                      <p className="text-sm text-green-600 font-medium bg-green-50 px-3 py-1 rounded-full inline-block">
+                      <p className="text-sm text-blue-600 font-medium bg-blue-50 px-3 py-1 rounded-full inline-block">
                         💰 {service.savings}
                       </p>
                     )}
@@ -190,9 +190,9 @@ const Join = () => {
                     {service.benefits.map((benefit, index) => (
                       <div 
                         key={index} 
-                        className="flex items-start gap-4 p-3 rounded-lg bg-gradient-to-r from-green-50 to-emerald-50 border border-green-100"
+                        className="flex items-start gap-4 p-3 rounded-lg bg-gradient-to-r from-blue-50 to-sky-50 border border-blue-100"
                       >
-                        <div className="flex-shrink-0 w-6 h-6 bg-gradient-to-r from-green-500 to-emerald-500 rounded-full flex items-center justify-center">
+                        <div className="flex-shrink-0 w-6 h-6 bg-gradient-to-r from-blue-500 to-sky-500 rounded-full flex items-center justify-center">
                           <Check className="h-4 w-4 text-white" />
                         </div>
                         <span className="text-sm md:text-base text-gray-700 leading-relaxed">{benefit}</span>
@@ -232,15 +232,15 @@ const Join = () => {
             </p>
             <div className="flex flex-wrap justify-center gap-4 text-sm text-gray-600">
               <span className="flex items-center gap-1">
-                <Check className="h-4 w-4 text-green-500" />
+                <Check className="h-4 w-4 text-blue-500" />
                 No long-term commitments
               </span>
               <span className="flex items-center gap-1">
-                <Check className="h-4 w-4 text-green-500" />
+                <Check className="h-4 w-4 text-blue-500" />
                 Expert guidance included
               </span>
               <span className="flex items-center gap-1">
-                <Check className="h-4 w-4 text-green-500" />
+                <Check className="h-4 w-4 text-blue-500" />
                 Community support
               </span>
             </div>
