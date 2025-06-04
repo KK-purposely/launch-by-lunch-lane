@@ -6,9 +6,9 @@ const Hero = () => {
   return (
     <div className="relative overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-r from-launch-purple/10 via-transparent to-launch-orange/10" />
-      <div className="relative w-full py-12 px-4 sm:px-6">
+      <div className="relative w-full py-8 px-4 sm:px-6">
         <div className="max-w-4xl mx-auto text-center">
-          <div className="mb-6">
+          <div className="mb-8">
             <div className="mb-2">
               <img
                 src="/lovable-uploads/8f3eba1c-0f11-4411-9774-5671f6239bf2.png"
@@ -18,8 +18,8 @@ const Hero = () => {
             </div>
           </div>
           
-          <p className="text-xl md:text-2xl text-gray-700 mb-12 max-w-3xl mx-auto leading-relaxed">
-            Founded by CTO and non-technical founder duo with the shared belief that you don't need a tech team or investor dollars to launch something real and revenue generating today.
+          <p className="text-xl md:text-2xl text-gray-800 mb-12 max-w-3xl mx-auto leading-relaxed font-medium">
+            Founded by CTO and non-technical founder duo with the shared belief that you don't need a tech team or investor dollars to launch something <strong className="text-launch-purple">real</strong> and <strong className="text-launch-purple">revenue generating</strong> today.
           </p>
 
           {/* Founders Section */}
