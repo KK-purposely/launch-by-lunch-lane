@@ -19,7 +19,7 @@ const Join = () => {
         "Connect and learn from our community of founders and fractional experts",
         "Discover local AI events", 
         "Join investor fireside chats",
-        "Office hours 2x a month",
+        "Access office hours 2x a month",
         "Pay annually and score a seat in 2 accelerators of your choice"
       ],
       icon: Users,
