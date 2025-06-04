@@ -1,4 +1,3 @@
-
 import React from "react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -53,7 +52,7 @@ const Join = () => {
       provider: "Provided by Stephan Smith or Karen Kelly",
       description: "Professional coding support to bring your vision to life",
       icon: Code,
-      ctaText: "Learn More",
+      ctaText: "Contact us",
       ctaUrl: "#",
       isLearnMore: true
     },
