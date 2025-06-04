@@ -16,7 +16,7 @@ const Join = () => {
       savings: "or save 2 months with annual",
       description: "Connect with like-minded entrepreneurs building AI-first companies",
       benefits: [
-        "Learn from the community",
+        "Connect and learn from our community of founders and fractional experts",
         "Join events", 
         "Investor Fireside chats",
         "Office hours 2x a month",
