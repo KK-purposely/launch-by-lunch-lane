@@ -1,4 +1,3 @@
-
 import React, { useState } from "react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -26,7 +25,7 @@ const Join = () => {
         "Bonus: Pay annually and score a seat in 2 accelerators of your choice"
       ],
       icon: Users,
-      ctaText: "Join Community",
+      ctaText: "Apply to Join",
       ctaUrl: "/community",
       featured: true
     },
