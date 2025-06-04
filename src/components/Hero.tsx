@@ -7,12 +7,12 @@ const Hero = () => {
       <div className="absolute inset-0 bg-gradient-to-r from-launch-purple/10 via-transparent to-launch-orange/10" />
       <div className="relative w-full py-20 px-4 sm:px-6">
         <div className="max-w-4xl mx-auto text-center">
-          <div className="mb-8">
+          <div className="mb-6">
             <div className="mb-4">
               <img
                 src="/lovable-uploads/8f3eba1c-0f11-4411-9774-5671f6239bf2.png"
                 alt="Launch by Lunch Logo"
-                className="h-24 md:h-32 lg:h-40 w-auto mx-auto"
+                className="h-32 md:h-44 lg:h-56 w-auto mx-auto"
               />
             </div>
           </div>
