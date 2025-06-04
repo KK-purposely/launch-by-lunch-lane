@@ -2,7 +2,7 @@
 import React from "react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { ArrowUpRight, Sparkles, Rocket, Users, Clock, CheckCircle, Target } from "lucide-react";
+import { ArrowUpRight, Sparkles, Rocket, CheckCircle } from "lucide-react";
 
 const Accelerators = () => {
   const cohorts = [
@@ -33,29 +33,6 @@ const Accelerators = () => {
       url: "https://lu.ma/640oqgpw",
       status: "SOLD OUT",
       isActive: false
-    }
-  ];
-
-  const features = [
-    {
-      icon: Target,
-      title: "Learn Vibe Coding",
-      description: "Master the art of rapid prototyping with no-code/low-code solutions"
-    },
-    {
-      icon: Clock,
-      title: "Just 4 Hours",
-      description: "4 intensive 1-hour sessions designed for maximum impact"
-    },
-    {
-      icon: Users,
-      title: "Small Groups",
-      description: "Intimate learning environment with personalized attention"
-    },
-    {
-      icon: Rocket,
-      title: "Working Prototype",
-      description: "Walk away with a functional prototype of your idea"
     }
   ];
 
@@ -90,27 +67,8 @@ const Accelerators = () => {
         </div>
       </div>
 
-      {/* Features Section */}
+      {/* Cohorts Section */}
       <div className="max-w-5xl mx-auto px-4 sm:px-6 pb-8">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
-          {features.map((feature, index) => (
-            <div 
-              key={index}
-              className="text-center p-6 bg-white/80 backdrop-blur-sm rounded-2xl shadow-sm border border-gray-100 hover:shadow-lg transition-all duration-300 hover:-translate-y-1"
-              style={{
-                animation: `fade-in 0.6s ease-out ${index * 0.1}s both`
-              }}
-            >
-              <div className="w-12 h-12 bg-gradient-to-r from-launch-purple to-launch-orange rounded-full flex items-center justify-center mx-auto mb-4">
-                <feature.icon className="h-6 w-6 text-white" />
-              </div>
-              <h3 className="text-lg font-semibold text-launch-purple mb-2">{feature.title}</h3>
-              <p className="text-gray-600 text-sm">{feature.description}</p>
-            </div>
-          ))}
-        </div>
-
-        {/* Cohorts Section */}
         <div className="space-y-8">
           {cohorts.map((cohort, index) => (
             <Card 
@@ -166,15 +124,12 @@ const Accelerators = () => {
                     {cohort.isActive && (
                       <div className="flex flex-wrap gap-3 mt-4">
                         <div className="flex items-center gap-2 bg-blue-50 px-3 py-1 rounded-full">
-                          <Clock className="h-4 w-4 text-blue-600" />
                           <span className="text-sm text-blue-600 font-medium">4 Virtual Sessions</span>
                         </div>
                         <div className="flex items-center gap-2 bg-purple-50 px-3 py-1 rounded-full">
-                          <Users className="h-4 w-4 text-purple-600" />
                           <span className="text-sm text-purple-600 font-medium">Small Group Learning</span>
                         </div>
                         <div className="flex items-center gap-2 bg-green-50 px-3 py-1 rounded-full">
-                          <Target className="h-4 w-4 text-green-600" />
                           <span className="text-sm text-green-600 font-medium">Working Prototype</span>
                         </div>
                       </div>
