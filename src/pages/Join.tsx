@@ -1,3 +1,4 @@
+
 import React, { useState } from "react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -15,7 +16,7 @@ const Join = () => {
       id: 1,
       title: "Join our Community of AI-first Founders",
       price: "$99/month",
-      savings: "or save 2 months with annual",
+      savings: "or save with annual",
       description: "Connect with like-minded entrepreneurs building AI-first companies",
       benefits: [
         "Connect and learn from our community of founders and fractional experts",
