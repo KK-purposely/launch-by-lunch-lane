@@ -1,6 +1,5 @@
-
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Sparkles, CheckCircle } from "lucide-react";
+import { ArrowRight, CheckCircle } from "lucide-react";
 
 const Hero = () => {
   return (
@@ -15,11 +14,6 @@ const Hero = () => {
                 alt="Launch by Lunch Logo"
                 className="h-24 md:h-32 lg:h-40 w-auto mx-auto"
               />
-            </div>
-            <div className="inline-flex items-center gap-2 bg-gradient-to-r from-launch-purple to-launch-orange bg-clip-text text-transparent">
-              <Sparkles className="h-5 w-5 text-launch-orange animate-pulse" />
-              <span className="text-lg font-semibold uppercase tracking-wide">The No-Code Fast Lane</span>
-              <Sparkles className="h-5 w-5 text-launch-purple animate-pulse" />
             </div>
           </div>
           
