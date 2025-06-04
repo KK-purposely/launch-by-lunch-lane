@@ -1,4 +1,3 @@
-
 import React, { useState } from "react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -100,10 +99,10 @@ const Community = () => {
         <div className="mb-12">
           <RadioGroup value={selectedPlan} onValueChange={setSelectedPlan} className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {/* Monthly Plan */}
-            <div className="relative h-full">
-              <label htmlFor="monthly" className="cursor-pointer h-full block">
-                <Card className={`border-2 transition-all duration-300 hover:shadow-lg h-full flex flex-col ${selectedPlan === 'monthly' ? 'border-launch-orange ring-2 ring-launch-orange/20' : 'border-gray-200 hover:border-launch-orange'}`}>
-                  <CardHeader className="flex-shrink-0">
+            <div className="relative">
+              <label htmlFor="monthly" className="cursor-pointer">
+                <Card className={`border-2 transition-all duration-300 hover:shadow-lg ${selectedPlan === 'monthly' ? 'border-launch-orange ring-2 ring-launch-orange/20' : 'border-gray-200 hover:border-launch-orange'}`}>
+                  <CardHeader>
                     <div className="flex items-center justify-between">
                       <div>
                         <CardTitle className="text-2xl text-launch-purple">Monthly</CardTitle>
@@ -116,7 +115,7 @@ const Community = () => {
                       <p className="text-sm text-gray-600">per month</p>
                     </div>
                   </CardHeader>
-                  <CardContent className="flex-grow">
+                  <CardContent>
                     <ul className="space-y-2">
                       {benefits.map((benefit) => (
                         <li key={benefit.id} className="flex items-start gap-2 text-sm text-gray-700">
@@ -131,15 +130,15 @@ const Community = () => {
             </div>
 
             {/* Annual Plan */}
-            <div className="relative h-full">
+            <div className="relative">
               <div className="absolute -top-3 left-1/2 transform -translate-x-1/2 z-10">
                 <span className="bg-launch-orange text-white px-3 py-1 rounded-full text-sm font-medium">
                   Best Value
                 </span>
               </div>
-              <label htmlFor="annual" className="cursor-pointer h-full block">
-                <Card className={`border-2 transition-all duration-300 hover:shadow-lg h-full flex flex-col ${selectedPlan === 'annual' ? 'border-launch-orange ring-2 ring-launch-orange/20' : 'border-gray-200 hover:border-launch-orange'}`}>
-                  <CardHeader className="flex-shrink-0">
+              <label htmlFor="annual" className="cursor-pointer">
+                <Card className={`border-2 transition-all duration-300 hover:shadow-lg ${selectedPlan === 'annual' ? 'border-launch-orange ring-2 ring-launch-orange/20' : 'border-gray-200 hover:border-launch-orange'}`}>
+                  <CardHeader>
                     <div className="flex items-center justify-between">
                       <div>
                         <CardTitle className="text-2xl text-launch-purple">Annual</CardTitle>
@@ -153,7 +152,7 @@ const Community = () => {
                       <p className="text-xs text-green-600 font-medium">Save 2 months + $400 bonus</p>
                     </div>
                   </CardHeader>
-                  <CardContent className="flex-grow">
+                  <CardContent>
                     <ul className="space-y-2">
                       {benefits.map((benefit) => (
                         <li key={benefit.id} className="flex items-start gap-2 text-sm text-gray-700">
