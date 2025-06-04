@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Sparkles, CheckCircle } from "lucide-react";
 
@@ -11,7 +10,7 @@ const Hero = () => {
           <div className="mb-8">
             <div className="mb-4">
               <img
-                src="/lovable-uploads/9e01cb2b-d7f4-4b83-adb5-706805de7735.png"
+                src="/lovable-uploads/8f3eba1c-0f11-4411-9774-5671f6239bf2.png"
                 alt="Launch by Lunch Logo"
                 className="h-24 md:h-32 lg:h-40 w-auto mx-auto"
               />
@@ -24,8 +23,7 @@ const Hero = () => {
           </div>
           
           <p className="text-xl md:text-2xl text-gray-700 mb-8 max-w-3xl mx-auto leading-relaxed">
-            Turn your ideas into working prototypes in hours, not months. 
-            <span className="text-launch-orange font-semibold"> Join the AI-first founders who are building the future.</span>
+            One of our founders can code. One of them can't. But we both believe this: you don't need a tech team or investor dollars to launch something real and revenue generating, and we're here to show you how.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
