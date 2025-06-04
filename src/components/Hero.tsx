@@ -1,4 +1,5 @@
 
+
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Sparkles, CheckCircle } from "lucide-react";
 
@@ -31,10 +32,10 @@ const Hero = () => {
             <Button 
               size="lg" 
               className="group bg-gradient-to-r from-launch-purple to-launch-orange hover:from-launch-orange hover:to-launch-purple text-white px-8 py-6 text-lg rounded-full font-medium transition-all duration-300 shadow-lg hover:shadow-xl"
-              onClick={() => window.location.href = '/accelerators'}
+              onClick={() => window.location.href = '/join'}
             >
               <span className="flex items-center gap-2">
-                Join Our Accelerator
+                Join Our Community
                 <ArrowRight className="h-5 w-5 group-hover:translate-x-1 transition-transform" />
               </span>
             </Button>
@@ -70,3 +71,4 @@ const Hero = () => {
 };
 
 export default Hero;
+
