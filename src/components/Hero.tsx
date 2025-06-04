@@ -5,7 +5,7 @@ import { ArrowRight, CheckCircle } from "lucide-react";
 const Hero = () => {
   return (
     <div className="relative overflow-hidden">
-      <div className="absolute inset-0 bg-gradient-to-r from-launch-purple/10 via-transparent to-launch-orange/10" />
+      <div className="absolute inset-0 bg-gradient-to-r from-launch-purple/20 via-launch-orange/10 to-launch-orange/20" />
       <div className="relative w-full py-8 px-4 sm:px-6">
         <div className="max-w-4xl mx-auto text-center">
           <div className="mb-4">
