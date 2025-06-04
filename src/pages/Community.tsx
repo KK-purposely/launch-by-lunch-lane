@@ -15,88 +15,11 @@ const Community = () => {
     script.async = true;
     document.head.appendChild(script);
 
-    // Add custom CSS for styling the Beehiiv form
-    const style = document.createElement('style');
-    style.textContent = `
-      .beehiiv-embed iframe {
-        background: transparent !important;
-      }
-      
-      /* Target the form elements inside the iframe */
-      .beehiiv-embed {
-        --beehiiv-primary-color: #2A1747;
-        --beehiiv-accent-color: #F27B35;
-        --beehiiv-background-color: #F9F5FF;
-        --beehiiv-text-color: #374151;
-        --beehiiv-border-color: #E5E7EB;
-      }
-      
-      /* Custom styling that will be applied to the form */
-      .beehiiv-embed input[type="email"] {
-        border: 2px solid #E5E7EB !important;
-        border-radius: 0.5rem !important;
-        padding: 0.75rem 1rem !important;
-        font-size: 1rem !important;
-        background-color: white !important;
-        color: #374151 !important;
-        transition: border-color 0.3s ease !important;
-      }
-      
-      .beehiiv-embed input[type="email"]:focus {
-        border-color: #F27B35 !important;
-        outline: none !important;
-        box-shadow: 0 0 0 3px rgba(242, 123, 53, 0.1) !important;
-      }
-      
-      .beehiiv-embed button {
-        background-color: #2A1747 !important;
-        color: white !important;
-        border: none !important;
-        border-radius: 0.5rem !important;
-        padding: 0.75rem 1.5rem !important;
-        font-size: 1rem !important;
-        font-weight: 600 !important;
-        transition: background-color 0.3s ease !important;
-        cursor: pointer !important;
-      }
-      
-      .beehiiv-embed button:hover {
-        background-color: rgba(42, 23, 71, 0.9) !important;
-      }
-      
-      .beehiiv-embed .beehiiv-embed-form {
-        background-color: transparent !important;
-        padding: 1.5rem !important;
-        border-radius: 0.75rem !important;
-        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06) !important;
-        border: 1px solid #E5E7EB !important;
-      }
-      
-      .beehiiv-embed .beehiiv-embed-form h3,
-      .beehiiv-embed .beehiiv-embed-form h4 {
-        color: #2A1747 !important;
-        font-weight: 700 !important;
-        margin-bottom: 0.5rem !important;
-      }
-      
-      .beehiiv-embed .beehiiv-embed-form p {
-        color: #6B7280 !important;
-        margin-bottom: 1rem !important;
-      }
-    `;
-    document.head.appendChild(style);
-
     return () => {
-      // Cleanup script and styles when component unmounts
+      // Cleanup script when component unmounts
       const existingScript = document.querySelector('script[src="https://subscribe-forms.beehiiv.com/embed.js"]');
       if (existingScript) {
         document.head.removeChild(existingScript);
-      }
-      
-      // Remove the custom styles
-      const existingStyle = document.querySelector('style');
-      if (existingStyle && existingStyle.textContent?.includes('beehiiv-embed')) {
-        document.head.removeChild(existingStyle);
       }
     };
   }, []);
@@ -154,22 +77,20 @@ const Community = () => {
             
             {/* Beehiiv Form Embed */}
             <div className="max-w-md mx-auto mb-8">
-              <div className="bg-gradient-to-br from-launch-light to-white p-1 rounded-xl shadow-lg">
-                <iframe 
-                  src="https://subscribe-forms.beehiiv.com/af233839-ec0e-40aa-a736-dc3df8097ca4" 
-                  className="beehiiv-embed w-full h-auto border-0 rounded-lg" 
-                  data-test-id="beehiiv-embed" 
-                  frameBorder="0" 
-                  scrolling="no" 
-                  style={{ 
-                    margin: 0, 
-                    borderRadius: '0.5rem', 
-                    backgroundColor: 'transparent', 
-                    boxShadow: 'none',
-                    minHeight: '200px'
-                  }}
-                />
-              </div>
+              <iframe 
+                src="https://subscribe-forms.beehiiv.com/af233839-ec0e-40aa-a736-dc3df8097ca4" 
+                className="beehiiv-embed w-full h-auto border-0" 
+                data-test-id="beehiiv-embed" 
+                frameBorder="0" 
+                scrolling="no" 
+                style={{ 
+                  margin: 0, 
+                  borderRadius: '0px 0px 0px 0px', 
+                  backgroundColor: 'transparent', 
+                  boxShadow: '0 0 #0000',
+                  minHeight: '200px'
+                }}
+              />
             </div>
           </div>
         </div>
