@@ -1,3 +1,4 @@
+
 import React from "react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -30,7 +31,7 @@ const Join = () => {
       title: "Launch by Lunch Accelerators",
       price: "$199",
       sessions: "4, 1 hour virtual sessions",
-      description: "Intensive accelerator program to fast-track your startup journey",
+      description: "Our virtual accelerators are accessible to anyone, anywhere and include 4 hours of small group learning.",
       icon: Rocket,
       ctaText: "Apply Now",
       ctaUrl: "/accelerators"
