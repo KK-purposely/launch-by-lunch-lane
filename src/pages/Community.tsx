@@ -3,9 +3,18 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Button } from "@/components/ui/button";
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 import { Users, Calendar, MessageCircle, Clock, Check } from "lucide-react";
+import { createClient } from "@supabase/supabase-js";
+import { useToast } from "@/hooks/use-toast";
+
+const supabase = createClient(
+  import.meta.env.VITE_SUPABASE_URL,
+  import.meta.env.VITE_SUPABASE_ANON_KEY
+);
 
 const Community = () => {
   const [selectedPlan, setSelectedPlan] = useState("annual");
+  const [isLoading, setIsLoading] = useState(false);
+  const { toast } = useToast();
 
   const benefits = [
     {
@@ -34,10 +43,44 @@ const Community = () => {
     }
   ];
 
-  const handlePayment = () => {
-    // Placeholder for Stripe integration
-    console.log(`Processing ${selectedPlan} payment`);
-    alert(`${selectedPlan} payment integration will be implemented once Stripe is configured`);
+  const handlePayment = async () => {
+    setIsLoading(true);
+    
+    try {
+      const { data: { session } } = await supabase.auth.getSession();
+      
+      if (!session) {
+        toast({
+          title: "Authentication Required",
+          description: "Please log in to subscribe to our community.",
+          variant: "destructive",
+        });
+        setIsLoading(false);
+        return;
+      }
+
+      const { data, error } = await supabase.functions.invoke('create-checkout', {
+        body: { plan: selectedPlan },
+      });
+
+      if (error) {
+        throw error;
+      }
+
+      if (data?.url) {
+        // Open Stripe checkout in a new tab
+        window.open(data.url, '_blank');
+      }
+    } catch (error) {
+      console.error('Payment error:', error);
+      toast({
+        title: "Payment Error",
+        description: "There was an issue processing your payment. Please try again.",
+        variant: "destructive",
+      });
+    } finally {
+      setIsLoading(false);
+    }
   };
 
   return (
@@ -135,8 +178,14 @@ const Community = () => {
             size="lg"
             className="bg-launch-purple hover:bg-launch-purple/90 text-white px-8 py-3 text-lg font-medium"
             onClick={handlePayment}
+            disabled={isLoading}
           >
-            {selectedPlan === 'monthly' ? 'Subscribe Monthly - $99/month' : 'Subscribe Annually - $990/year'}
+            {isLoading 
+              ? 'Processing...'
+              : selectedPlan === 'monthly' 
+                ? 'Subscribe Monthly - $99/month' 
+                : 'Subscribe Annually - $990/year'
+            }
           </Button>
           <p className="text-sm text-gray-600 mt-4">
             Cancel anytime. No long-term commitments.
