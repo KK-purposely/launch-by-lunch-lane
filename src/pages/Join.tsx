@@ -50,7 +50,7 @@ const Join = () => {
       title: "Vibe Coding Support Packages",
       price: "Starting at $1500",
       provider: "Provided by Stephan Smith or Karen Kelly",
-      description: "Professional coding support to bring your vision to life",
+      description: "Support for AI-first founders using no-code or low code solutions.",
       icon: Code,
       ctaText: "Contact us",
       ctaUrl: "#",
