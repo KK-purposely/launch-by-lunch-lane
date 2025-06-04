@@ -11,7 +11,7 @@ const Features = () => {
     },
     {
       icon: Clock,
-      title: "4-Hour Accelerators",
+      title: "Join AI Accelerators",
       description: "Transform your idea into reality with just 4 focused learning sessions"
     },
     {
