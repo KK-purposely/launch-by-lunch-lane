@@ -8,8 +8,27 @@ const Hero = () => {
       <div className="absolute inset-0 bg-gradient-to-r from-launch-purple/10 via-transparent to-launch-orange/10" />
       <div className="relative w-full py-20 px-4 sm:px-6">
         <div className="max-w-4xl mx-auto text-center">
+          <div className="mb-8">
+            <div className="mb-4">
+              <img
+                src="/lovable-uploads/8f3eba1c-0f11-4411-9774-5671f6239bf2.png"
+                alt="Launch by Lunch Logo"
+                className="h-24 md:h-32 lg:h-40 w-auto mx-auto"
+              />
+            </div>
+            <div className="inline-flex items-center gap-2 bg-gradient-to-r from-launch-purple to-launch-orange bg-clip-text text-transparent">
+              <Sparkles className="h-5 w-5 text-launch-orange animate-pulse" />
+              <span className="text-lg font-semibold uppercase tracking-wide">The No-Code Fast Lane</span>
+              <Sparkles className="h-5 w-5 text-launch-purple animate-pulse" />
+            </div>
+          </div>
+          
+          <p className="text-xl md:text-2xl text-gray-700 mb-12 max-w-3xl mx-auto leading-relaxed">
+            Founded by CTO and non-technical founder duo with the shared belief that you don't need a tech team or investor dollars to launch something real and revenue generating today.
+          </p>
+
           {/* Founders Section */}
-          <div className="mb-16">
+          <div className="mb-12">
             <h2 className="text-lg font-semibold text-gray-700 mb-8 uppercase tracking-wide">Meet Your Founders</h2>
             <div className="flex flex-col sm:flex-row justify-center items-center gap-12 mb-8">
               <div className="group flex flex-col items-center">
@@ -57,27 +76,8 @@ const Hero = () => {
               </div>
             </div>
           </div>
-
-          <div className="mb-8">
-            <div className="mb-4">
-              <img
-                src="/lovable-uploads/8f3eba1c-0f11-4411-9774-5671f6239bf2.png"
-                alt="Launch by Lunch Logo"
-                className="h-24 md:h-32 lg:h-40 w-auto mx-auto"
-              />
-            </div>
-            <div className="inline-flex items-center gap-2 bg-gradient-to-r from-launch-purple to-launch-orange bg-clip-text text-transparent">
-              <Sparkles className="h-5 w-5 text-launch-orange animate-pulse" />
-              <span className="text-lg font-semibold uppercase tracking-wide">The No-Code Fast Lane</span>
-              <Sparkles className="h-5 w-5 text-launch-purple animate-pulse" />
-            </div>
-          </div>
           
-          <p className="text-xl md:text-2xl text-gray-700 mb-8 max-w-3xl mx-auto leading-relaxed">
-            Founded by CTO and non-technical founder duo with the shared belief that you don't need a tech team or investor dollars to launch something real and revenue generating today.
-          </p>
-          
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
             <Button 
               size="lg" 
               className="group bg-gradient-to-r from-launch-purple to-launch-orange hover:from-launch-orange hover:to-launch-purple text-white px-8 py-6 text-lg rounded-full font-medium transition-all duration-300 shadow-lg hover:shadow-xl"
@@ -99,7 +99,7 @@ const Hero = () => {
             </Button>
           </div>
 
-          <div className="mt-12 flex flex-wrap justify-center gap-6 text-sm text-gray-600">
+          <div className="flex flex-wrap justify-center gap-6 text-sm text-gray-600">
             <span className="flex items-center gap-1">
               <CheckCircle className="h-4 w-4 text-green-500" />
               No coding required
