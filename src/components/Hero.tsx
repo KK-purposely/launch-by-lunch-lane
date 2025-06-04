@@ -8,17 +8,18 @@ const Hero = () => {
       <div className="absolute inset-0 bg-gradient-to-r from-launch-purple/10 via-transparent to-launch-orange/10" />
       <div className="relative w-full py-20 px-4 sm:px-6">
         <div className="max-w-4xl mx-auto text-center">
-          <div className="inline-flex items-center gap-2 bg-gradient-to-r from-launch-purple to-launch-orange bg-clip-text text-transparent mb-6">
-            <Sparkles className="h-6 w-6 text-launch-orange animate-pulse" />
-            <span className="text-sm font-semibold uppercase tracking-wide">Launch by Lunch</span>
-            <Sparkles className="h-6 w-6 text-launch-purple animate-pulse" />
+          <div className="mb-8">
+            <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold mb-2">
+              <span className="bg-gradient-to-r from-launch-purple via-launch-orange to-launch-purple bg-clip-text text-transparent">
+                Launch by Lunch
+              </span>
+            </h1>
+            <div className="inline-flex items-center gap-2 bg-gradient-to-r from-launch-purple to-launch-orange bg-clip-text text-transparent">
+              <Sparkles className="h-5 w-5 text-launch-orange animate-pulse" />
+              <span className="text-lg font-semibold uppercase tracking-wide">The No-Code Fast Lane</span>
+              <Sparkles className="h-5 w-5 text-launch-purple animate-pulse" />
+            </div>
           </div>
-          
-          <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6">
-            <span className="bg-gradient-to-r from-launch-purple via-launch-orange to-launch-purple bg-clip-text text-transparent">
-              The No-Code Fast Lane
-            </span>
-          </h1>
           
           <p className="text-xl md:text-2xl text-gray-700 mb-8 max-w-3xl mx-auto leading-relaxed">
             Turn your ideas into working prototypes in hours, not months. 
