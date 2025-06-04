@@ -1,4 +1,3 @@
-
 import React from "react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -33,7 +32,7 @@ const Join = () => {
       sessions: "4, 1 hour virtual sessions",
       description: "Our virtual accelerators are accessible to anyone, anywhere and include 4 hours of small group learning.",
       icon: Rocket,
-      ctaText: "Apply Now",
+      ctaText: "View Accelerators",
       ctaUrl: "/accelerators"
     },
     {
