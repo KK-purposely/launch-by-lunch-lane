@@ -1,3 +1,4 @@
+
 import React, { useState } from "react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -45,11 +46,19 @@ const Community = () => {
       <div className="max-w-4xl mx-auto px-4 sm:px-6 py-16">
         <div className="text-center mb-12">
           <h1 className="text-4xl md:text-5xl font-bold mb-4 text-launch-purple">
-            Join Our AI-First Community
+            The Elite Network for the AI-First Community
           </h1>
-          <p className="text-xl text-gray-700 mb-8">
-            Connect with like-minded entrepreneurs building the future with AI
-          </p>
+          <div className="mb-6">
+            <p className="text-lg font-semibold text-launch-orange mb-2">
+              COMING SUMMER 2025
+            </p>
+            <p className="text-xl text-gray-700 mb-4">
+              Where the new eco-system of founders, fractionals, and investors build, scale and fund the next generation of AI-first startups.
+            </p>
+            <p className="text-lg font-medium text-launch-purple">
+              Get our early bird rates for the next 60 days.
+            </p>
+          </div>
         </div>
 
         {/* Pricing Options */}
