@@ -38,7 +38,7 @@ const PointOfServiceSection = ({ onServiceClick }: PointOfServiceSectionProps) =
       availability: "10 seats open per hour",
       description: "Get direct access to expert guidance from our founders Karen Kelly & Stephan Smith during scheduled office hours.",
       icon: Clock,
-      ctaText: "Book a Seat",
+      ctaText: "LearnMore",
       ctaUrl: "/office-hours"
     }
   ];
