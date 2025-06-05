@@ -1,4 +1,3 @@
-
 import React from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
@@ -124,9 +123,9 @@ const OfficeHours = () => {
                     />
                   </div>
                   <div>
-                    <h3 className="font-bold text-xl text-launch-purple">Stephan Smith</h3>
-                    <p className="text-launch-orange font-medium text-base uppercase tracking-wider">CTO</p>
-                    <p className="text-gray-600 text-base">Building the future with AI as your co-pilot.</p>
+                    <h3 className="font-bold text-2xl text-launch-purple">Stephan Smith</h3>
+                    <p className="text-launch-orange font-medium text-lg uppercase tracking-wider">CTO</p>
+                    <p className="text-gray-600 text-lg">Building the future with AI as your co-pilot.</p>
                   </div>
                 </div>
                 
@@ -139,9 +138,9 @@ const OfficeHours = () => {
                     />
                   </div>
                   <div>
-                    <h3 className="font-bold text-xl text-launch-purple">Karen Kelly</h3>
-                    <p className="text-launch-orange font-medium text-base uppercase tracking-wider">CEO • Non-Technical Founder</p>
-                    <p className="text-gray-600 text-base">Proving you don't need code to build something amazing.</p>
+                    <h3 className="font-bold text-2xl text-launch-purple">Karen Kelly</h3>
+                    <p className="text-launch-orange font-medium text-lg uppercase tracking-wider">CEO • Non-Technical Founder</p>
+                    <p className="text-gray-600 text-lg">Proving you don't need code to build something amazing.</p>
                   </div>
                 </div>
               </div>
