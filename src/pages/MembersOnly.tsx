@@ -2,7 +2,10 @@
 import React, { useState, useEffect } from "react";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
 import { toast } from "@/components/ui/sonner";
+import { ExternalLink, Lock, Users, BookOpen, Calendar, Star } from "lucide-react";
 
 const MembersOnly = () => {
   const [password, setPassword] = useState("");
@@ -46,34 +49,45 @@ const MembersOnly = () => {
       <div className="bg-white min-h-screen">
         <div className="max-w-xl mx-auto px-4 sm:px-6 py-24">
           <div className="text-center mb-10">
+            <div className="flex justify-center mb-6">
+              <div className="bg-launch-light p-4 rounded-full">
+                <Lock className="w-12 h-12 text-launch-purple" />
+              </div>
+            </div>
             <h1 className="text-4xl md:text-5xl font-bold mb-6 text-launch-purple">Members Only</h1>
             <p className="text-xl text-gray-600">This area is password-protected. Please enter the password to continue.</p>
           </div>
           
-          <div className="bg-gray-50 p-8 rounded-lg shadow-sm border border-gray-200">
-            <form onSubmit={handleSubmit} className="space-y-6">
-              <div>
-                <label htmlFor="password" className="block text-sm font-medium text-gray-700 mb-2">
-                  Password
-                </label>
-                <Input
-                  id="password"
-                  type="password"
-                  value={password}
-                  onChange={(e) => setPassword(e.target.value)}
-                  placeholder="Enter password"
-                  className="w-full"
-                  required
-                />
-              </div>
-              <Button 
-                type="submit" 
-                className="w-full bg-launch-purple hover:bg-launch-purple/90 text-white"
-              >
-                Access Members Area
-              </Button>
-            </form>
-          </div>
+          <Card className="shadow-lg border-launch-purple/10">
+            <CardHeader className="text-center">
+              <CardTitle className="text-launch-purple">Access Required</CardTitle>
+              <CardDescription>Enter your password to access exclusive member content</CardDescription>
+            </CardHeader>
+            <CardContent>
+              <form onSubmit={handleSubmit} className="space-y-6">
+                <div>
+                  <label htmlFor="password" className="block text-sm font-medium text-gray-700 mb-2">
+                    Password
+                  </label>
+                  <Input
+                    id="password"
+                    type="password"
+                    value={password}
+                    onChange={(e) => setPassword(e.target.value)}
+                    placeholder="Enter password"
+                    className="w-full border-gray-300 focus:border-launch-purple focus:ring-launch-purple"
+                    required
+                  />
+                </div>
+                <Button 
+                  type="submit" 
+                  className="w-full bg-launch-purple hover:bg-launch-purple/90 text-white"
+                >
+                  Access Members Area
+                </Button>
+              </form>
+            </CardContent>
+          </Card>
         </div>
       </div>
     );
@@ -83,7 +97,10 @@ const MembersOnly = () => {
     <div className="bg-white min-h-screen">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 py-16">
         <div className="flex justify-between items-center mb-12">
-          <h1 className="text-4xl md:text-5xl font-bold text-launch-purple">Members Area</h1>
+          <div>
+            <h1 className="text-4xl md:text-5xl font-bold text-launch-purple mb-4">Members Area</h1>
+            <p className="text-xl text-gray-600">Welcome to your exclusive member portal</p>
+          </div>
           <Button 
             onClick={handleLogout} 
             variant="outline" 
@@ -93,69 +110,100 @@ const MembersOnly = () => {
           </Button>
         </div>
         
-        <div className="bg-gray-50 p-8 rounded-lg shadow-sm border border-gray-200">
-          <h2 className="text-2xl font-bold mb-4 text-launch-purple">Welcome to the exclusive members area!</h2>
-          <p className="text-lg text-gray-700 mb-6">
-            Thank you for being part of our community. This area contains exclusive content for our members.
-          </p>
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
+          <Card className="shadow-lg border-launch-purple/10">
+            <CardHeader>
+              <div className="flex items-center gap-3 mb-2">
+                <div className="bg-launch-light p-2 rounded-lg">
+                  <Users className="w-6 h-6 text-launch-purple" />
+                </div>
+                <div>
+                  <CardTitle className="text-launch-purple">Welcome to the Community!</CardTitle>
+                  <Badge variant="secondary" className="bg-launch-orange/10 text-launch-orange">
+                    Exclusive Access
+                  </Badge>
+                </div>
+              </div>
+              <CardDescription>
+                Thank you for being part of our community. This area contains exclusive content for our members.
+              </CardDescription>
+            </CardHeader>
+            <CardContent>
+              <div className="space-y-4">
+                <div className="flex items-start gap-3">
+                  <Star className="w-5 h-5 text-launch-orange mt-0.5" />
+                  <span className="text-gray-700">Exclusive templates for faster development</span>
+                </div>
+                <div className="flex items-start gap-3">
+                  <Star className="w-5 h-5 text-launch-orange mt-0.5" />
+                  <span className="text-gray-700">Priority support for your questions</span>
+                </div>
+                <div className="flex items-start gap-3">
+                  <Star className="w-5 h-5 text-launch-orange mt-0.5" />
+                  <span className="text-gray-700">Monthly webinars with industry experts</span>
+                </div>
+                <div className="flex items-start gap-3">
+                  <Star className="w-5 h-5 text-launch-orange mt-0.5" />
+                  <span className="text-gray-700">Early access to new features and tools</span>
+                </div>
+              </div>
+            </CardContent>
+          </Card>
           
-          <div className="bg-white p-6 rounded-md border border-gray-200 mb-8">
-            <h3 className="text-xl font-semibold mb-3 text-launch-purple">Special Resources</h3>
-            <p className="text-gray-700 mb-4">
-              As a member, you have access to special resources, templates, and support to help you with your projects.
-            </p>
-            <ul className="list-disc pl-5 space-y-2 text-gray-700">
-              <li>Exclusive templates for faster development</li>
-              <li>Priority support for your questions</li>
-              <li>Monthly webinars with industry experts</li>
-              <li>Early access to new features and tools</li>
-            </ul>
-          </div>
-          
-          <div className="bg-white p-6 rounded-md border border-gray-200">
-            <h3 className="text-xl font-semibold mb-3 text-launch-purple">Resources</h3>
-            <p className="text-gray-700 mb-4">
-              Helpful resources for your no-code journey:
-            </p>
-            <ul className="space-y-3">
-              <li>
-                <a 
-                  href="https://glossary.launchbylunch.co/glossary" 
-                  target="_blank"
-                  rel="noopener noreferrer" 
-                  className="flex items-center text-launch-purple hover:text-launch-purple/80 font-medium hover:underline"
-                >
-                  <span className="mr-2">No Code Glossary</span>
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-external-link">
-                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                    <polyline points="15 3 21 3 21 9"></polyline>
-                    <line x1="10" y1="14" x2="21" y2="3"></line>
-                  </svg>
-                </a>
-                <p className="text-gray-600 text-sm mt-1">
-                  A comprehensive guide to no-code terminology and concepts
-                </p>
-              </li>
-              <li>
-                <a 
-                  href="https://vibe-coding-memory.lovable.app/" 
-                  target="_blank"
-                  rel="noopener noreferrer" 
-                  className="flex items-center text-launch-purple hover:text-launch-purple/80 font-medium hover:underline"
-                >
-                  <span className="mr-2">Memory Guide for Founders</span>
-                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-external-link">
-                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                    <polyline points="15 3 21 3 21 9"></polyline>
-                    <line x1="10" y1="14" x2="21" y2="3"></line>
-                  </svg>
-                </a>
-                <p className="text-gray-600 text-sm mt-1">
-                  Essential memory techniques and strategies for startup founders
-                </p>
-              </li>
-            </ul>
-          </div>
+          <Card className="shadow-lg border-launch-purple/10">
+            <CardHeader>
+              <div className="flex items-center gap-3 mb-2">
+                <div className="bg-launch-light p-2 rounded-lg">
+                  <BookOpen className="w-6 h-6 text-launch-purple" />
+                </div>
+                <CardTitle className="text-launch-purple">Member Resources</CardTitle>
+              </div>
+              <CardDescription>
+                Helpful resources for your no-code journey
+              </CardDescription>
+            </CardHeader>
+            <CardContent>
+              <div className="space-y-6">
+                <div className="border border-gray-200 rounded-lg p-4 hover:border-launch-purple/30 transition-colors">
+                  <a 
+                    href="https://glossary.launchbylunch.co/glossary" 
+                    target="_blank"
+                    rel="noopener noreferrer" 
+                    className="flex items-center justify-between group"
+                  >
+                    <div>
+                      <h3 className="font-medium text-launch-purple group-hover:text-launch-purple/80 mb-1">
+                        No Code Glossary
+                      </h3>
+                      <p className="text-gray-600 text-sm">
+                        A comprehensive guide to no-code terminology and concepts
+                      </p>
+                    </div>
+                    <ExternalLink className="w-5 h-5 text-gray-400 group-hover:text-launch-purple" />
+                  </a>
+                </div>
+                
+                <div className="border border-gray-200 rounded-lg p-4 hover:border-launch-purple/30 transition-colors">
+                  <a 
+                    href="https://vibe-coding-memory.lovable.app/" 
+                    target="_blank"
+                    rel="noopener noreferrer" 
+                    className="flex items-center justify-between group"
+                  >
+                    <div>
+                      <h3 className="font-medium text-launch-purple group-hover:text-launch-purple/80 mb-1">
+                        Memory Guide for Founders
+                      </h3>
+                      <p className="text-gray-600 text-sm">
+                        Essential memory techniques and strategies for startup founders
+                      </p>
+                    </div>
+                    <ExternalLink className="w-5 h-5 text-gray-400 group-hover:text-launch-purple" />
+                  </a>
+                </div>
+              </div>
+            </CardContent>
+          </Card>
         </div>
       </div>
     </div>
