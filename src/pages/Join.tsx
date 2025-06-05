@@ -1,3 +1,4 @@
+
 import React, { useState } from "react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -10,7 +11,7 @@ const Join = () => {
   const [contactFormOpen, setContactFormOpen] = useState(false);
   const [selectedService, setSelectedService] = useState("");
 
-  const services = [
+  const mainServices = [
     {
       id: 1,
       title: "Join our Community of AI-first Founders",
@@ -40,16 +41,6 @@ const Join = () => {
       ctaUrl: "/accelerators"
     },
     {
-      id: 3,
-      title: "Drop in Office Hours",
-      price: "$25 per person",
-      availability: "10 seats open per hour",
-      description: "Get direct access to expert guidance from our founders Karen Kelly & Stephan Smith during scheduled office hours.",
-      icon: Clock,
-      ctaText: "Book a Seat",
-      ctaUrl: "https://calendly.com/karen-launchbylunch/ai-low-code-office-hours"
-    },
-    {
       id: 4,
       title: "Vibe Coding Support Packages",
       price: "Starting at $1500",
@@ -59,7 +50,10 @@ const Join = () => {
       ctaText: "Contact us",
       ctaUrl: "#",
       isContact: true
-    },
+    }
+  ];
+
+  const pointOfServiceItems = [
     {
       id: 5,
       title: "Tear Down MVP Service",
@@ -69,6 +63,16 @@ const Join = () => {
       icon: Search,
       ctaText: "Get Started",
       ctaUrl: "#"
+    },
+    {
+      id: 3,
+      title: "Drop in Office Hours",
+      price: "$25 per person",
+      availability: "10 seats open per hour",
+      description: "Get direct access to expert guidance from our founders Karen Kelly & Stephan Smith during scheduled office hours.",
+      icon: Clock,
+      ctaText: "Book a Seat",
+      ctaUrl: "https://calendly.com/karen-launchbylunch/ai-low-code-office-hours"
     }
   ];
 
@@ -112,15 +116,15 @@ const Join = () => {
         </div>
       </div>
       
-      {/* Services Grid */}
-      <div className="max-w-5xl mx-auto px-4 sm:px-6 pb-16">
-        <div className="grid grid-cols-1 gap-8">
-          {services.map((service, index) => (
+      {/* Main Services - Horizontal Layout */}
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 pb-8">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+          {mainServices.map((service, index) => (
             <Card 
               key={service.id}
               className={`group relative border-2 transition-all duration-500 hover:shadow-2xl transform hover:-translate-y-2 ${
                 service.featured 
-                  ? 'border-gradient-to-r from-launch-purple to-launch-orange shadow-xl bg-gradient-to-br from-white via-launch-light to-white' 
+                  ? 'border-gradient-to-r from-launch-purple to-launch-orange shadow-xl bg-gradient-to-br from-white via-launch-light to-white lg:scale-105' 
                   : 'border-gray-200 hover:border-launch-orange bg-white'
               }`}
               style={{
@@ -144,22 +148,17 @@ const Join = () => {
                     <div className={`p-3 rounded-full ${service.featured ? 'bg-gradient-to-r from-launch-purple to-launch-orange' : 'bg-launch-orange'} shadow-lg`}>
                       <service.icon className="h-6 w-6 text-white" />
                     </div>
-                    <CardTitle className={`text-xl md:text-2xl ${service.featured ? 'bg-gradient-to-r from-launch-purple to-launch-orange bg-clip-text text-transparent' : 'text-launch-purple'}`}>
+                    <CardTitle className={`text-lg md:text-xl ${service.featured ? 'bg-gradient-to-r from-launch-purple to-launch-orange bg-clip-text text-transparent' : 'text-launch-purple'}`}>
                       {service.title}
                     </CardTitle>
                   </div>
                   <div className="space-y-2">
-                    <p className={`text-3xl md:text-4xl font-bold ${service.featured ? 'bg-gradient-to-r from-launch-orange to-launch-purple bg-clip-text text-transparent' : 'text-launch-orange'}`}>
+                    <p className={`text-2xl md:text-3xl font-bold ${service.featured ? 'bg-gradient-to-r from-launch-orange to-launch-purple bg-clip-text text-transparent' : 'text-launch-orange'}`}>
                       {service.price}
                     </p>
                     {service.savings && (
                       <p className="text-sm text-blue-600 font-medium bg-blue-50 px-3 py-1 rounded-full inline-block">
                         💰 {service.savings}
-                      </p>
-                    )}
-                    {service.availability && (
-                      <p className="text-sm text-blue-600 bg-blue-50 px-3 py-1 rounded-full inline-block">
-                        👥 {service.availability}
                       </p>
                     )}
                     {service.sessions && (
@@ -170,6 +169,94 @@ const Join = () => {
                     {service.provider && (
                       <p className="text-sm text-orange-600 bg-orange-50 px-3 py-1 rounded-full inline-block">
                         👨‍💻 {service.provider}
+                      </p>
+                    )}
+                  </div>
+                </div>
+              </CardHeader>
+              
+              <CardContent className="pt-6">
+                <CardDescription className="text-sm md:text-base mb-6 text-gray-700 leading-relaxed">
+                  {service.description}
+                </CardDescription>
+                
+                {service.benefits && (
+                  <div className="mb-6 space-y-3">
+                    {service.benefits.map((benefit, index) => (
+                      <div 
+                        key={index} 
+                        className="flex items-start gap-3 p-2 rounded-lg bg-gradient-to-r from-blue-50 to-sky-50 border border-blue-100"
+                      >
+                        <div className="flex-shrink-0 w-5 h-5 bg-gradient-to-r from-blue-500 to-sky-500 rounded-full flex items-center justify-center mt-0.5">
+                          <Check className="h-3 w-3 text-white" />
+                        </div>
+                        <span className="text-sm text-gray-700 leading-relaxed">{benefit}</span>
+                      </div>
+                    ))}
+                  </div>
+                )}
+
+                <Button
+                  className={`w-full group text-base py-4 transition-all duration-300 ${
+                    service.featured 
+                      ? 'bg-gradient-to-r from-launch-purple to-launch-orange hover:from-launch-orange hover:to-launch-purple text-white shadow-lg hover:shadow-xl' 
+                      : 'bg-launch-purple hover:bg-launch-purple/90 text-white'
+                  }`}
+                  onClick={() => handleServiceClick(service)}
+                >
+                  <span className="flex items-center justify-center gap-2">
+                    {service.ctaText}
+                    <ArrowRight className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
+                  </span>
+                </Button>
+              </CardContent>
+            </Card>
+          ))}
+        </div>
+      </div>
+
+      {/* Point of Service Section */}
+      <div className="max-w-5xl mx-auto px-4 sm:px-6 pb-16">
+        <div className="mb-12">
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-4">
+            <span className="bg-gradient-to-r from-launch-purple to-launch-orange bg-clip-text text-transparent">
+              Point of Service
+            </span>
+          </h2>
+          <p className="text-lg text-gray-700 text-center max-w-2xl mx-auto">
+            Targeted support services designed to help you at specific moments in your journey
+          </p>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          {pointOfServiceItems.map((service, index) => (
+            <Card 
+              key={service.id}
+              className="group relative border-2 border-gray-200 hover:border-launch-orange transition-all duration-500 hover:shadow-2xl transform hover:-translate-y-2 bg-white"
+              style={{
+                animation: `fade-in 0.6s ease-out ${index * 0.1}s both`
+              }}
+            >
+              <CardHeader className="bg-gray-50 relative overflow-hidden">
+                <div className="absolute top-0 right-0 w-24 h-24 opacity-10">
+                  <service.icon className="w-full h-full text-launch-orange" />
+                </div>
+                <div className="relative z-10">
+                  <div className="flex items-center gap-3 mb-4">
+                    <div className="p-3 rounded-full bg-launch-orange shadow-lg">
+                      <service.icon className="h-6 w-6 text-white" />
+                    </div>
+                    <CardTitle className="text-xl md:text-2xl text-launch-purple">
+                      {service.title}
+                    </CardTitle>
+                  </div>
+                  <div className="space-y-2">
+                    <p className="text-3xl md:text-4xl font-bold text-launch-orange">
+                      {service.price}
+                    </p>
+                    {service.availability && (
+                      <p className="text-sm text-blue-600 bg-blue-50 px-3 py-1 rounded-full inline-block">
+                        👥 {service.availability}
                       </p>
                     )}
                     {service.timing && (
@@ -185,29 +272,9 @@ const Join = () => {
                 <CardDescription className="text-base md:text-lg mb-8 text-gray-700 leading-relaxed">
                   {service.description}
                 </CardDescription>
-                
-                {service.benefits && (
-                  <div className="mb-8 space-y-4">
-                    {service.benefits.map((benefit, index) => (
-                      <div 
-                        key={index} 
-                        className="flex items-start gap-4 p-3 rounded-lg bg-gradient-to-r from-blue-50 to-sky-50 border border-blue-100"
-                      >
-                        <div className="flex-shrink-0 w-6 h-6 bg-gradient-to-r from-blue-500 to-sky-500 rounded-full flex items-center justify-center">
-                          <Check className="h-4 w-4 text-white" />
-                        </div>
-                        <span className="text-sm md:text-base text-gray-700 leading-relaxed">{benefit}</span>
-                      </div>
-                    ))}
-                  </div>
-                )}
 
                 <Button
-                  className={`w-full group text-lg py-6 transition-all duration-300 ${
-                    service.featured 
-                      ? 'bg-gradient-to-r from-launch-purple to-launch-orange hover:from-launch-orange hover:to-launch-purple text-white shadow-lg hover:shadow-xl' 
-                      : 'bg-launch-purple hover:bg-launch-purple/90 text-white'
-                  }`}
+                  className="w-full group text-lg py-6 transition-all duration-300 bg-launch-purple hover:bg-launch-purple/90 text-white"
                   onClick={() => handleServiceClick(service)}
                 >
                   <span className="flex items-center justify-center gap-2">
