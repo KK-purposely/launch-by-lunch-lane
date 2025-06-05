@@ -164,16 +164,16 @@ const TearDown = () => {
                 <div className="flex items-start space-x-3">
                   <ClipboardList className="h-6 w-6 text-launch-purple mt-1 flex-shrink-0" />
                   <div>
-                    <h3 className="font-semibold text-gray-900 mb-1">Comprehensive Functionality Review</h3>
-                    <p className="text-gray-600 text-sm">Complete assessment of your application's core features, performance, and user flows to ensure everything works as intended.</p>
+                    <h3 className="font-semibold text-gray-900 mb-1">Functionality Review</h3>
+                    <p className="text-gray-600 text-sm">Complete assessment of core features and user flows.</p>
                   </div>
                 </div>
                 
                 <div className="flex items-start space-x-3">
                   <Eye className="h-6 w-6 text-launch-purple mt-1 flex-shrink-0" />
                   <div>
-                    <h3 className="font-semibold text-gray-900 mb-1">UI/UX Expert Feedback</h3>
-                    <p className="text-gray-600 text-sm">Professional evaluation of your interface design, user experience, and recommendations for improving user engagement and conversion.</p>
+                    <h3 className="font-semibold text-gray-900 mb-1">UI/UX Feedback</h3>
+                    <p className="text-gray-600 text-sm">Expert evaluation with recommendations for better user experience.</p>
                   </div>
                 </div>
               </div>
@@ -182,16 +182,16 @@ const TearDown = () => {
                 <div className="flex items-start space-x-3">
                   <Bug className="h-6 w-6 text-launch-orange mt-1 flex-shrink-0" />
                   <div>
-                    <h3 className="font-semibold text-gray-900 mb-1">Bug Detection & Risk Assessment</h3>
-                    <p className="text-gray-600 text-sm">Identification of existing bugs and potential issues that could impact your launch, with clear prioritization for fixes.</p>
+                    <h3 className="font-semibold text-gray-900 mb-1">Bug Detection</h3>
+                    <p className="text-gray-600 text-sm">Identify issues that could impact your launch with clear priorities.</p>
                   </div>
                 </div>
                 
                 <div className="flex items-start space-x-3">
                   <TrendingUp className="h-6 w-6 text-launch-orange mt-1 flex-shrink-0" />
                   <div>
-                    <h3 className="font-semibold text-gray-900 mb-1">Strategic Development Roadmap</h3>
-                    <p className="text-gray-600 text-sm">Detailed recommendations for your next 3-5 development phases, complete with actionable prompts and prioritized feature suggestions.</p>
+                    <h3 className="font-semibold text-gray-900 mb-1">Development Roadmap</h3>
+                    <p className="text-gray-600 text-sm">Strategic recommendations for your next 3-5 development phases.</p>
                   </div>
                 </div>
               </div>
@@ -199,8 +199,8 @@ const TearDown = () => {
 
             <div className="mt-6 p-4 bg-gradient-to-r from-launch-purple/5 to-launch-orange/5 rounded-lg">
               <p className="text-center text-gray-700 font-medium">
-                <span className="text-launch-purple font-semibold">Perfect for AI-first applications</span> ready to make their market debut. 
-                Get the confidence you need to launch successfully with our expert analysis and strategic guidance.
+                <span className="text-launch-purple font-semibold">Perfect for AI-first applications</span> ready to launch. 
+                Get expert analysis and strategic guidance for a successful debut.
               </p>
             </div>
           </CardContent>
