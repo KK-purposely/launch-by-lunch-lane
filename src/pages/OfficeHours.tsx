@@ -1,3 +1,4 @@
+
 import React from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
@@ -146,25 +147,27 @@ const OfficeHours = () => {
           </span>
         </h2>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          {features.map((feature, index) => (
-            <Card 
-              key={index}
-              className="border-2 border-gray-200 hover:border-launch-orange transition-all duration-300 hover:shadow-lg"
-            >
-              <CardHeader>
-                <div className="flex items-center gap-3">
-                  <div className="p-2 rounded-full bg-launch-orange/10">
-                    <feature.icon className="h-5 w-5 text-launch-orange" />
+        <div className="max-w-3xl mx-auto px-4 sm:px-6">
+          <div className="grid grid-cols-2 gap-4">
+            {features.map((feature, index) => (
+              <Card 
+                key={index}
+                className="border-2 border-gray-200 hover:border-launch-orange transition-all duration-300 hover:shadow-lg"
+              >
+                <CardHeader className="pb-3">
+                  <div className="flex items-center gap-2 mb-2">
+                    <div className="p-1.5 rounded-full bg-launch-orange/10">
+                      <feature.icon className="h-4 w-4 text-launch-orange" />
+                    </div>
+                    <CardTitle className="text-base text-launch-purple">{feature.title}</CardTitle>
                   </div>
-                  <CardTitle className="text-lg text-launch-purple">{feature.title}</CardTitle>
-                </div>
-              </CardHeader>
-              <CardContent>
-                <p className="text-base text-gray-700">{feature.description}</p>
-              </CardContent>
-            </Card>
-          ))}
+                </CardHeader>
+                <CardContent className="pt-0">
+                  <p className="text-sm text-gray-700">{feature.description}</p>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
         </div>
       </div>
 
