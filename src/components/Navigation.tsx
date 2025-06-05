@@ -1,4 +1,3 @@
-
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { Menu } from "lucide-react";
@@ -33,14 +32,12 @@ const Navigation = () => {
                 <Link to="/members" className="px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-launch-orange">
                   Members Only
                 </Link>
-                <a 
-                  href="https://learn.launchbylunch.co/forms/3d943f05-e3f5-4b13-a8e5-430b350bcf80" 
+                <Link 
+                  to="/contact" 
                   className="px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-launch-orange"
-                  target="_blank" 
-                  rel="noopener noreferrer"
                 >
                   Contact
-                </a>
+                </Link>
               </div>
             </div>
           </div>
@@ -97,15 +94,13 @@ const Navigation = () => {
             >
               Members Only
             </Link>
-            <a 
-              href="https://learn.launchbylunch.co/forms/3d943f05-e3f5-4b13-a8e5-430b350bcf80"
+            <Link 
+              to="/contact"
               className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-launch-purple hover:bg-gray-100"
-              target="_blank" 
-              rel="noopener noreferrer"
               onClick={() => setIsMenuOpen(false)}
             >
               Contact
-            </a>
+            </Link>
           </div>
           <div className="pt-4 pb-3 border-t border-gray-200">
             <div className="px-5">
