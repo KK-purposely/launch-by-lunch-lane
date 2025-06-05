@@ -27,10 +27,10 @@ const Navigation = () => {
     { to: "/accelerators", label: "Accelerators" },
     { to: "/office-hours", label: "Office Hours" },
     { to: "/teardown", label: "TearDown" },
+    { to: "/community", label: "Join Community" },
   ];
 
   const communityLinks = [
-    { to: "/community", label: "Join Community" },
     { to: "/members", label: "Members Only" },
   ];
 
