@@ -63,45 +63,10 @@ const OfficeHours = () => {
 
       {/* Session Details */}
       <div className="max-w-5xl mx-auto px-4 sm:px-6 pb-16">
-        {/* Pricing Card */}
-        <Card className="border-2 border-launch-orange shadow-xl bg-gradient-to-br from-white via-launch-light to-white mb-12">
+        {/* Hosts Card - moved above pricing */}
+        <Card className="border-2 border-launch-orange shadow-xl mb-12">
           <CardHeader className="bg-gradient-to-r from-launch-orange/5 to-launch-purple/5">
-            <div className="flex items-center gap-3 mb-4">
-              <div className="p-3 rounded-full bg-gradient-to-r from-launch-orange to-launch-purple shadow-lg">
-                <Clock className="h-5 w-5 text-white" />
-              </div>
-              <CardTitle className="text-2xl bg-gradient-to-r from-launch-orange to-launch-purple bg-clip-text text-transparent">
-                Weekly Office Hours
-              </CardTitle>
-            </div>
-            <div className="space-y-2">
-              <p className="text-3xl font-bold text-launch-orange">$25</p>
-              <p className="text-sm text-gray-600">per person, per session</p>
-              <p className="text-sm text-blue-600 bg-blue-50 px-3 py-1 rounded-full inline-block">
-                👥 Limited to 10 seats per hour
-              </p>
-            </div>
-          </CardHeader>
-          <CardContent className="pt-6">
-            <CardDescription className="text-base mb-6 text-gray-700 leading-relaxed">
-              Get direct access to expert guidance during our weekly office hours sessions.
-            </CardDescription>
-            <Button
-              className="w-full bg-gradient-to-r from-launch-orange to-launch-purple hover:from-launch-purple hover:to-launch-orange text-white text-base py-4 shadow-lg hover:shadow-xl transition-all duration-300"
-              onClick={handleBookSession}
-            >
-              <span className="flex items-center justify-center gap-2">
-                Book a Seat
-                <ArrowRight className="h-4 w-4" />
-              </span>
-            </Button>
-          </CardContent>
-        </Card>
-
-        {/* Hosts Card */}
-        <Card className="border-2 border-launch-purple shadow-xl">
-          <CardHeader className="bg-gradient-to-r from-launch-purple/5 to-launch-orange/5">
-            <CardTitle className="text-2xl text-launch-purple mb-4">Meet Your Hosts</CardTitle>
+            <CardTitle className="text-2xl text-launch-orange mb-4">Meet Your Hosts</CardTitle>
             <CardDescription className="text-base text-gray-700 leading-relaxed">
               Learn from two experienced founders who've built successful companies using different paths - 
               one technical, one non-technical. Together, they bring unique perspectives on building products in the AI era.
@@ -153,6 +118,41 @@ const OfficeHours = () => {
                 </div>
               </div>
             </div>
+          </CardContent>
+        </Card>
+
+        {/* Pricing Card - moved below hosts */}
+        <Card className="border-2 border-launch-orange shadow-xl bg-gradient-to-br from-white via-launch-light to-white mb-12">
+          <CardHeader className="bg-gradient-to-r from-launch-orange/5 to-launch-purple/5">
+            <div className="flex items-center gap-3 mb-4">
+              <div className="p-3 rounded-full bg-gradient-to-r from-launch-orange to-launch-purple shadow-lg">
+                <Clock className="h-5 w-5 text-white" />
+              </div>
+              <CardTitle className="text-2xl bg-gradient-to-r from-launch-orange to-launch-purple bg-clip-text text-transparent">
+                Weekly Office Hours
+              </CardTitle>
+            </div>
+            <div className="space-y-2">
+              <p className="text-3xl font-bold text-launch-orange">$25</p>
+              <p className="text-sm text-gray-600">per person, per session</p>
+              <p className="text-sm text-blue-600 bg-blue-50 px-3 py-1 rounded-full inline-block">
+                👥 Limited to 10 seats per hour
+              </p>
+            </div>
+          </CardHeader>
+          <CardContent className="pt-6">
+            <CardDescription className="text-base mb-6 text-gray-700 leading-relaxed">
+              Get direct access to expert guidance during our weekly office hours sessions.
+            </CardDescription>
+            <Button
+              className="w-full bg-gradient-to-r from-launch-orange to-launch-purple hover:from-launch-purple hover:to-launch-orange text-white text-base py-4 shadow-lg hover:shadow-xl transition-all duration-300"
+              onClick={handleBookSession}
+            >
+              <span className="flex items-center justify-center gap-2">
+                Book a Seat
+                <ArrowRight className="h-4 w-4" />
+              </span>
+            </Button>
           </CardContent>
         </Card>
       </div>
