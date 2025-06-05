@@ -1,5 +1,5 @@
 
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import ContactForm from "@/components/ContactForm";
 import HeroSection from "@/components/join/HeroSection";
@@ -12,6 +12,11 @@ const Join = () => {
   const navigate = useNavigate();
   const [contactFormOpen, setContactFormOpen] = useState(false);
   const [selectedService, setSelectedService] = useState("");
+
+  // Scroll to top when component mounts
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   const handleServiceClick = (service: any) => {
     if (service.isContact) {
