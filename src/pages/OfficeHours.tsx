@@ -64,62 +64,64 @@ const OfficeHours = () => {
       {/* Session Details */}
       <div className="max-w-5xl mx-auto px-4 sm:px-6 pb-16">
         {/* Hosts Card */}
-        <Card className="border-2 border-launch-orange shadow-xl mb-12">
-          <CardHeader className="bg-gradient-to-r from-launch-orange/5 to-launch-purple/5">
-            <CardTitle className="text-2xl text-launch-orange mb-4">Meet Your Hosts</CardTitle>
-            <CardDescription className="text-base text-gray-700 leading-relaxed">
-              Learn from two experienced founders who've built successful companies using different paths - 
-              one technical, one non-technical. Together, they bring unique perspectives on building products in the AI era.
-            </CardDescription>
-          </CardHeader>
-          <CardContent className="pt-6">
-            <div className="space-y-8">
-              <div className="flex items-start gap-6">
-                <div className="w-20 h-20 rounded-full p-1 bg-gradient-to-r from-launch-orange to-launch-purple flex-shrink-0">
-                  <img
-                    src="/lovable-uploads/a25b125a-4110-46e2-bf28-7cd7e60e633f.png"
-                    alt="Karen Kelly"
-                    className="w-full h-full rounded-full object-cover bg-white"
-                  />
+        <div className="pt-8">
+          <Card className="border-2 border-launch-orange shadow-xl mb-12">
+            <CardHeader className="bg-gradient-to-r from-launch-orange/5 to-launch-purple/5">
+              <CardTitle className="text-2xl text-launch-orange mb-4">Meet Your Hosts</CardTitle>
+              <CardDescription className="text-base text-gray-700 leading-relaxed">
+                Learn from two experienced founders who've built successful companies using different paths - 
+                one technical, one non-technical. Together, they bring unique perspectives on building products in the AI era.
+              </CardDescription>
+            </CardHeader>
+            <CardContent className="pt-6">
+              <div className="space-y-8">
+                <div className="flex items-start gap-6">
+                  <div className="w-20 h-20 rounded-full p-1 bg-gradient-to-r from-launch-orange to-launch-purple flex-shrink-0">
+                    <img
+                      src="/lovable-uploads/a25b125a-4110-46e2-bf28-7cd7e60e633f.png"
+                      alt="Karen Kelly"
+                      className="w-full h-full rounded-full object-cover bg-white"
+                    />
+                  </div>
+                  <div className="flex-1">
+                    <h3 className="font-bold text-xl text-launch-purple mb-1">Karen Kelly</h3>
+                    <p className="text-launch-orange font-medium text-sm uppercase tracking-wider mb-3">CEO & Non-Technical Founder</p>
+                    <p className="text-gray-700 text-sm leading-relaxed mb-3">
+                      A successful entrepreneur who built and scaled multiple companies without writing a single line of code. 
+                      Karen specializes in product strategy, user experience design, and leveraging AI tools to bring ideas to life. 
+                      She's passionate about empowering non-technical founders to build confidently.
+                    </p>
+                    <p className="text-gray-600 text-sm italic">
+                      "Your lack of technical skills isn't a limitation - it's your superpower for building user-focused products."
+                    </p>
+                  </div>
                 </div>
-                <div className="flex-1">
-                  <h3 className="font-bold text-xl text-launch-purple mb-1">Karen Kelly</h3>
-                  <p className="text-launch-orange font-medium text-sm uppercase tracking-wider mb-3">CEO & Non-Technical Founder</p>
-                  <p className="text-gray-700 text-sm leading-relaxed mb-3">
-                    A successful entrepreneur who built and scaled multiple companies without writing a single line of code. 
-                    Karen specializes in product strategy, user experience design, and leveraging AI tools to bring ideas to life. 
-                    She's passionate about empowering non-technical founders to build confidently.
-                  </p>
-                  <p className="text-gray-600 text-sm italic">
-                    "Your lack of technical skills isn't a limitation - it's your superpower for building user-focused products."
-                  </p>
+                
+                <div className="flex items-start gap-6">
+                  <div className="w-20 h-20 rounded-full p-1 bg-gradient-to-r from-launch-purple to-launch-orange flex-shrink-0">
+                    <img
+                      src="/lovable-uploads/de950dd0-67d3-45fd-b2d5-e419d56f3c2e.png"
+                      alt="Stephan Smith"
+                      className="w-full h-full rounded-full object-cover bg-white"
+                    />
+                  </div>
+                  <div className="flex-1">
+                    <h3 className="font-bold text-xl text-launch-purple mb-1">Stephan Smith</h3>
+                    <p className="text-launch-orange font-medium text-sm uppercase tracking-wider mb-3">CTO & Technical Co-Founder</p>
+                    <p className="text-gray-700 text-sm leading-relaxed mb-3">
+                      A seasoned software architect with over 15 years of experience building scalable web applications. 
+                      Stephan has led engineering teams at multiple startups and brings deep expertise in modern development 
+                      practices, AI integration, and low-code/no-code solutions.
+                    </p>
+                    <p className="text-gray-600 text-sm italic">
+                      "I believe the future belongs to builders who can leverage AI as their co-pilot, regardless of their technical background."
+                    </p>
+                  </div>
                 </div>
               </div>
-              
-              <div className="flex items-start gap-6">
-                <div className="w-20 h-20 rounded-full p-1 bg-gradient-to-r from-launch-purple to-launch-orange flex-shrink-0">
-                  <img
-                    src="/lovable-uploads/de950dd0-67d3-45fd-b2d5-e419d56f3c2e.png"
-                    alt="Stephan Smith"
-                    className="w-full h-full rounded-full object-cover bg-white"
-                  />
-                </div>
-                <div className="flex-1">
-                  <h3 className="font-bold text-xl text-launch-purple mb-1">Stephan Smith</h3>
-                  <p className="text-launch-orange font-medium text-sm uppercase tracking-wider mb-3">CTO & Technical Co-Founder</p>
-                  <p className="text-gray-700 text-sm leading-relaxed mb-3">
-                    A seasoned software architect with over 15 years of experience building scalable web applications. 
-                    Stephan has led engineering teams at multiple startups and brings deep expertise in modern development 
-                    practices, AI integration, and low-code/no-code solutions.
-                  </p>
-                  <p className="text-gray-600 text-sm italic">
-                    "I believe the future belongs to builders who can leverage AI as their co-pilot, regardless of their technical background."
-                  </p>
-                </div>
-              </div>
-            </div>
-          </CardContent>
-        </Card>
+            </CardContent>
+          </Card>
+        </div>
 
         {/* Features Grid */}
         <div className="mb-12">
@@ -206,7 +208,7 @@ const OfficeHours = () => {
           </p>
           <Button
             size="lg"
-            className="bg-gradient-to-r from-launch-purple to-launch-orange hover:from-launch-orange hover:to-launch-purple text-white px-6 py-3 text-base font-medium shadow-lg hover:shadow-xl transition-all duration-300"
+            className="bg-gradient-to-r from-launch-purple to-launch-orange hover:from-launch-orange hover:to-launch-orange text-white px-6 py-3 text-base font-medium shadow-lg hover:shadow-xl transition-all duration-300"
             onClick={handleBookSession}
           >
             <span className="flex items-center gap-2">
