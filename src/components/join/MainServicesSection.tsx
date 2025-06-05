@@ -1,4 +1,3 @@
-
 import React from "react";
 import { Users, Code, Rocket, LucideIcon } from "lucide-react";
 import ServiceCard from "./ServiceCard";
@@ -78,8 +77,7 @@ const MainServicesSection = ({ onServiceClick }: MainServicesSectionProps) => {
       ],
       icon: Code,
       ctaText: "Contact us",
-      ctaUrl: "#",
-      isContact: true
+      ctaUrl: "/contact"
     }
   ];
 
