@@ -4,6 +4,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Button } from "@/components/ui/button";
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 import { Users, Calendar, MessageCircle, Clock, Check } from "lucide-react";
+import CommunityForm from "@/components/community/CommunityForm";
 
 const Community = () => {
   const [selectedPlan, setSelectedPlan] = useState("annual");
@@ -61,8 +62,12 @@ const Community = () => {
           </div>
         </div>
 
+        {/* Community Form */}
+        <CommunityForm />
+
         {/* Pricing Options */}
         <div className="mb-12">
+          <h2 className="text-2xl font-bold text-center mb-8 text-launch-purple">Choose Your Membership Plan</h2>
           <RadioGroup value={selectedPlan} onValueChange={setSelectedPlan} className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {/* Monthly Plan */}
             <div className="relative">
