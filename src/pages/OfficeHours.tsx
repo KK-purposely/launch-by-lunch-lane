@@ -120,6 +120,38 @@ const OfficeHours = () => {
           </CardContent>
         </Card>
 
+        {/* Features Grid */}
+        <div className="mb-12">
+          <h2 className="text-2xl md:text-3xl font-bold text-center mb-8">
+            <span className="bg-gradient-to-r from-launch-purple to-launch-orange bg-clip-text text-transparent">
+              Why Join Our Office Hours?
+            </span>
+          </h2>
+          
+          <div className="max-w-3xl mx-auto px-4 sm:px-6">
+            <div className="grid grid-cols-2 gap-4">
+              {features.map((feature, index) => (
+                <Card 
+                  key={index}
+                  className="border-2 border-gray-200 hover:border-launch-orange transition-all duration-300 hover:shadow-lg"
+                >
+                  <CardHeader className="pb-3">
+                    <div className="flex items-center gap-2 mb-2">
+                      <div className="p-1.5 rounded-full bg-launch-orange/10">
+                        <feature.icon className="h-4 w-4 text-launch-orange" />
+                      </div>
+                      <CardTitle className="text-base text-launch-purple">{feature.title}</CardTitle>
+                    </div>
+                  </CardHeader>
+                  <CardContent className="pt-0">
+                    <p className="text-sm text-gray-700">{feature.description}</p>
+                  </CardContent>
+                </Card>
+              ))}
+            </div>
+          </div>
+        </div>
+
         {/* Pricing Card - moved here after features */}
         <Card className="border-2 border-launch-orange shadow-xl bg-gradient-to-br from-white via-launch-light to-white mb-12">
           <CardHeader className="bg-gradient-to-r from-launch-orange/5 to-launch-purple/5">
@@ -154,38 +186,6 @@ const OfficeHours = () => {
             </Button>
           </CardContent>
         </Card>
-      </div>
-
-      {/* Features Grid */}
-      <div className="mb-12">
-        <h2 className="text-2xl md:text-3xl font-bold text-center mb-8">
-          <span className="bg-gradient-to-r from-launch-purple to-launch-orange bg-clip-text text-transparent">
-            Why Join Our Office Hours?
-          </span>
-        </h2>
-        
-        <div className="max-w-3xl mx-auto px-4 sm:px-6">
-          <div className="grid grid-cols-2 gap-4">
-            {features.map((feature, index) => (
-              <Card 
-                key={index}
-                className="border-2 border-gray-200 hover:border-launch-orange transition-all duration-300 hover:shadow-lg"
-              >
-                <CardHeader className="pb-3">
-                  <div className="flex items-center gap-2 mb-2">
-                    <div className="p-1.5 rounded-full bg-launch-orange/10">
-                      <feature.icon className="h-4 w-4 text-launch-orange" />
-                    </div>
-                    <CardTitle className="text-base text-launch-purple">{feature.title}</CardTitle>
-                  </div>
-                </CardHeader>
-                <CardContent className="pt-0">
-                  <p className="text-sm text-gray-700">{feature.description}</p>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-        </div>
       </div>
 
       {/* Call to Action */}
