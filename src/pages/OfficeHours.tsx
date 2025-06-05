@@ -1,10 +1,16 @@
-import React from "react";
+
+import React, { useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Clock, Users, MessageCircle, Calendar, ArrowRight, CheckCircle, Sparkles } from "lucide-react";
+import { Clock, Users, MessageCircle, Calendar, ArrowRight, CheckCircle } from "lucide-react";
 import Footer from "@/components/Footer";
 
 const OfficeHours = () => {
+  // Scroll to top when component mounts
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   const features = [
     {
       icon: Users,
@@ -37,7 +43,7 @@ const OfficeHours = () => {
       {/* Hero Section */}
       <div className="relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-r from-launch-purple/10 via-transparent to-launch-orange/10" />
-        <div className="relative max-w-4xl mx-auto px-4 sm:px-6 py-16">
+        <div className="relative max-w-5xl mx-auto px-4 sm:px-6 py-16">
           <div className="text-center mb-8">
             <div className="inline-flex items-center gap-2 bg-gradient-to-r from-launch-purple to-launch-orange bg-clip-text text-transparent mb-4">
               <Clock className="h-5 w-5 text-launch-orange animate-pulse" />
@@ -191,36 +197,6 @@ const OfficeHours = () => {
         </Card>
       </div>
 
-      {/* Call to Action */}
-      <div className="text-center">
-        <div className="bg-gradient-to-r from-launch-purple/10 via-launch-orange/10 to-launch-purple/10 rounded-3xl p-8 md:p-12">
-          <div className="flex items-center justify-center gap-2 mb-4">
-            <Sparkles className="h-5 w-5 text-launch-orange animate-pulse" />
-            <h2 className="text-2xl md:text-3xl font-bold">
-              <span className="bg-gradient-to-r from-launch-purple to-launch-orange bg-clip-text text-transparent">
-                Ready to Get Started?
-              </span>
-            </h2>
-            <Sparkles className="h-5 w-5 text-launch-purple animate-pulse" />
-          </div>
-          <p className="text-base text-gray-700 mb-6 max-w-2xl mx-auto">
-            Join our weekly sessions and become part of a community that believes in the power of non-technical founders.
-          </p>
-          <Button
-            size="lg"
-            className="bg-gradient-to-r from-launch-purple to-launch-orange hover:from-launch-orange hover:to-launch-orange text-white px-6 py-3 text-base font-medium shadow-lg hover:shadow-xl transition-all duration-300"
-            onClick={handleBookSession}
-          >
-            <span className="flex items-center gap-2">
-              Book a Seat
-              <ArrowRight className="h-4 w-4" />
-            </span>
-          </Button>
-          <p className="text-sm text-gray-600 mt-4">
-            $25 per session • 10 seats available • Weekly sessions
-          </p>
-        </div>
-      </div>
       <Footer />
     </div>
   );
