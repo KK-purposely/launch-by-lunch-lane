@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { ArrowRight, CheckCircle } from "lucide-react";
 
@@ -14,10 +13,9 @@ const Hero = () => {
                 src="/lovable-uploads/8f3eba1c-0f11-4411-9774-5671f6239bf2.png"
                 alt="Launch by Lunch Logo"
                 className="h-32 md:h-44 lg:h-56 w-auto mx-auto"
-                width="400"
-                height="224"
                 loading="eager"
                 decoding="async"
+                style={{ aspectRatio: '400/224' }}
               />
             </div>
           </div>
