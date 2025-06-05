@@ -34,10 +34,6 @@ const Navigation = () => {
                   Home
                 </Link>
 
-                <Link to="/join" className="px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-launch-orange">
-                  Services
-                </Link>
-
                 <Link to="/members" className="px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-launch-orange">
                   Members Only
                 </Link>
@@ -88,16 +84,6 @@ const Navigation = () => {
                 </DropdownMenuItem>
                 
                 <DropdownMenuSeparator />
-                
-                <DropdownMenuItem asChild>
-                  <Link 
-                    to="/join" 
-                    className="w-full"
-                    onClick={() => setIsMenuOpen(false)}
-                  >
-                    Services
-                  </Link>
-                </DropdownMenuItem>
                 
                 <DropdownMenuItem asChild>
                   <Link 
