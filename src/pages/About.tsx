@@ -1,3 +1,4 @@
+
 import React from "react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -62,6 +63,10 @@ const About = () => {
             src="/lovable-uploads/d93cbef0-7fe6-4762-b53e-46153f8f2fad.png" 
             alt="Stephan Smith and Karen Kelly, founders of Launch by Lunch" 
             className="rounded-2xl shadow-lg mx-auto max-w-full h-auto"
+            width="800"
+            height="600"
+            loading="lazy"
+            decoding="async"
           />
           <p className="text-sm text-gray-600 mt-4 italic">
             Stephan Smith and Karen Kelly, the founding team behind Launch by Lunch

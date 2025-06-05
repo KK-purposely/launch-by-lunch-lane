@@ -14,6 +14,10 @@ const Hero = () => {
                 src="/lovable-uploads/8f3eba1c-0f11-4411-9774-5671f6239bf2.png"
                 alt="Launch by Lunch Logo"
                 className="h-32 md:h-44 lg:h-56 w-auto mx-auto"
+                width="400"
+                height="224"
+                loading="eager"
+                decoding="async"
               />
             </div>
           </div>
@@ -35,6 +39,10 @@ const Hero = () => {
                         src="/lovable-uploads/a25b125a-4110-46e2-bf28-7cd7e60e633f.png"
                         alt="Karen Kelly"
                         className="w-full h-full rounded-full object-cover bg-white"
+                        width="144"
+                        height="144"
+                        loading="lazy"
+                        decoding="async"
                       />
                     </div>
                   </div>
@@ -59,6 +67,10 @@ const Hero = () => {
                         src="/lovable-uploads/de950dd0-67d3-45fd-b2d5-e419d56f3c2e.png"
                         alt="Stephan Smith"
                         className="w-full h-full rounded-full object-cover bg-white"
+                        width="144"
+                        height="144"
+                        loading="lazy"
+                        decoding="async"
                       />
                     </div>
                   </div>

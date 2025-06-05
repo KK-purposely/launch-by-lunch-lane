@@ -87,6 +87,10 @@ const OfficeHours = () => {
                       src="/lovable-uploads/a25b125a-4110-46e2-bf28-7cd7e60e633f.png"
                       alt="Karen Kelly"
                       className="w-full h-full rounded-full object-cover bg-white"
+                      width="80"
+                      height="80"
+                      loading="lazy"
+                      decoding="async"
                     />
                   </div>
                   <div className="flex-1">
@@ -109,6 +113,10 @@ const OfficeHours = () => {
                       src="/lovable-uploads/de950dd0-67d3-45fd-b2d5-e419d56f3c2e.png"
                       alt="Stephan Smith"
                       className="w-full h-full rounded-full object-cover bg-white"
+                      width="80"
+                      height="80"
+                      loading="lazy"
+                      decoding="async"
                     />
                   </div>
                   <div className="flex-1">
