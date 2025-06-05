@@ -39,7 +39,7 @@ const PointOfServiceSection = ({ onServiceClick }: PointOfServiceSectionProps) =
       description: "Get direct access to expert guidance from our founders Karen Kelly & Stephan Smith during scheduled office hours.",
       icon: Clock,
       ctaText: "Book a Seat",
-      ctaUrl: "https://calendly.com/karen-launchbylunch/ai-low-code-office-hours"
+      ctaUrl: "/office-hours"
     }
   ];
 
