@@ -1,4 +1,3 @@
-
 import React from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
@@ -57,157 +56,146 @@ const OfficeHours = () => {
               Whether you have a burning question or are just curious about what's possible, 
               <span className="text-launch-purple font-semibold"> you belong here</span>.
             </p>
-
-            <div className="bg-gradient-to-r from-launch-purple/10 via-launch-orange/10 to-launch-purple/10 rounded-2xl p-6 mb-8">
-              <p className="text-base font-medium text-gray-800 mb-2">
-                🚀 No Stupid Questions Policy
-              </p>
-              <p className="text-base text-gray-700">
-                Every question is valuable. Every curiosity is welcome. Learn from the group and discover what's truly possible.
-              </p>
-            </div>
           </div>
         </div>
       </div>
 
       {/* Session Details */}
       <div className="max-w-5xl mx-auto px-4 sm:px-6 pb-16">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
-          {/* Pricing Card */}
-          <Card className="border-2 border-launch-orange shadow-xl bg-gradient-to-br from-white via-launch-light to-white">
-            <CardHeader className="bg-gradient-to-r from-launch-orange/5 to-launch-purple/5">
-              <div className="flex items-center gap-3 mb-4">
-                <div className="p-3 rounded-full bg-gradient-to-r from-launch-orange to-launch-purple shadow-lg">
-                  <Clock className="h-5 w-5 text-white" />
-                </div>
-                <CardTitle className="text-2xl bg-gradient-to-r from-launch-orange to-launch-purple bg-clip-text text-transparent">
-                  Weekly Office Hours
-                </CardTitle>
+        {/* Pricing Card */}
+        <Card className="border-2 border-launch-orange shadow-xl bg-gradient-to-br from-white via-launch-light to-white">
+          <CardHeader className="bg-gradient-to-r from-launch-orange/5 to-launch-purple/5">
+            <div className="flex items-center gap-3 mb-4">
+              <div className="p-3 rounded-full bg-gradient-to-r from-launch-orange to-launch-purple shadow-lg">
+                <Clock className="h-5 w-5 text-white" />
               </div>
-              <div className="space-y-2">
-                <p className="text-3xl font-bold text-launch-orange">$25</p>
-                <p className="text-sm text-gray-600">per person, per session</p>
-                <p className="text-sm text-blue-600 bg-blue-50 px-3 py-1 rounded-full inline-block">
-                  👥 Limited to 10 seats per hour
-                </p>
-              </div>
-            </CardHeader>
-            <CardContent className="pt-6">
-              <CardDescription className="text-base mb-6 text-gray-700 leading-relaxed">
-                Get direct access to expert guidance during our weekly office hours sessions.
-              </CardDescription>
-              <Button
-                className="w-full bg-gradient-to-r from-launch-orange to-launch-purple hover:from-launch-purple hover:to-launch-orange text-white text-base py-4 shadow-lg hover:shadow-xl transition-all duration-300"
-                onClick={handleBookSession}
-              >
-                <span className="flex items-center justify-center gap-2">
-                  Book a Seat
-                  <ArrowRight className="h-4 w-4" />
-                </span>
-              </Button>
-            </CardContent>
-          </Card>
-
-          {/* Hosts Card */}
-          <Card className="border-2 border-launch-purple shadow-xl">
-            <CardHeader className="bg-gradient-to-r from-launch-purple/5 to-launch-orange/5">
-              <CardTitle className="text-2xl text-launch-purple mb-4">Meet Your Hosts</CardTitle>
-            </CardHeader>
-            <CardContent className="pt-6">
-              <div className="space-y-6">
-                <div className="flex items-center gap-4">
-                  <div className="w-12 h-12 rounded-full p-1 bg-gradient-to-r from-launch-purple to-launch-orange">
-                    <img
-                      src="/lovable-uploads/de950dd0-67d3-45fd-b2d5-e419d56f3c2e.png"
-                      alt="Stephan Smith"
-                      className="w-full h-full rounded-full object-cover bg-white"
-                    />
-                  </div>
-                  <div>
-                    <h3 className="font-bold text-lg text-launch-purple">Stephan Smith</h3>
-                    <p className="text-launch-orange font-medium text-sm uppercase tracking-wider">CTO</p>
-                    <p className="text-gray-600 text-sm">Building the future with AI as your co-pilot.</p>
-                  </div>
-                </div>
-                
-                <div className="flex items-center gap-4">
-                  <div className="w-12 h-12 rounded-full p-1 bg-gradient-to-r from-launch-orange to-launch-purple">
-                    <img
-                      src="/lovable-uploads/a25b125a-4110-46e2-bf28-7cd7e60e633f.png"
-                      alt="Karen Kelly"
-                      className="w-full h-full rounded-full object-cover bg-white"
-                    />
-                  </div>
-                  <div>
-                    <h3 className="font-bold text-lg text-launch-purple">Karen Kelly</h3>
-                    <p className="text-launch-orange font-medium text-sm uppercase tracking-wider">CEO • Non-Technical Founder</p>
-                    <p className="text-gray-600 text-sm">Proving you don't need code to build something amazing.</p>
-                  </div>
-                </div>
-              </div>
-            </CardContent>
-          </Card>
-        </div>
-
-        {/* Features Grid */}
-        <div className="mb-12">
-          <h2 className="text-2xl md:text-3xl font-bold text-center mb-8">
-            <span className="bg-gradient-to-r from-launch-purple to-launch-orange bg-clip-text text-transparent">
-              Why Join Our Office Hours?
-            </span>
-          </h2>
-          
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {features.map((feature, index) => (
-              <Card 
-                key={index}
-                className="border-2 border-gray-200 hover:border-launch-orange transition-all duration-300 hover:shadow-lg"
-              >
-                <CardHeader>
-                  <div className="flex items-center gap-3">
-                    <div className="p-2 rounded-full bg-launch-orange/10">
-                      <feature.icon className="h-5 w-5 text-launch-orange" />
-                    </div>
-                    <CardTitle className="text-lg text-launch-purple">{feature.title}</CardTitle>
-                  </div>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-base text-gray-700">{feature.description}</p>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-        </div>
-
-        {/* Call to Action */}
-        <div className="text-center">
-          <div className="bg-gradient-to-r from-launch-purple/10 via-launch-orange/10 to-launch-purple/10 rounded-3xl p-8 md:p-12">
-            <div className="flex items-center justify-center gap-2 mb-4">
-              <Sparkles className="h-5 w-5 text-launch-orange animate-pulse" />
-              <h2 className="text-2xl md:text-3xl font-bold">
-                <span className="bg-gradient-to-r from-launch-purple to-launch-orange bg-clip-text text-transparent">
-                  Ready to Get Started?
-                </span>
-              </h2>
-              <Sparkles className="h-5 w-5 text-launch-purple animate-pulse" />
+              <CardTitle className="text-2xl bg-gradient-to-r from-launch-orange to-launch-purple bg-clip-text text-transparent">
+                Weekly Office Hours
+              </CardTitle>
             </div>
-            <p className="text-base text-gray-700 mb-6 max-w-2xl mx-auto">
-              Join our weekly sessions and become part of a community that believes in the power of non-technical founders.
-            </p>
+            <div className="space-y-2">
+              <p className="text-3xl font-bold text-launch-orange">$25</p>
+              <p className="text-sm text-gray-600">per person, per session</p>
+              <p className="text-sm text-blue-600 bg-blue-50 px-3 py-1 rounded-full inline-block">
+                👥 Limited to 10 seats per hour
+              </p>
+            </div>
+          </CardHeader>
+          <CardContent className="pt-6">
+            <CardDescription className="text-base mb-6 text-gray-700 leading-relaxed">
+              Get direct access to expert guidance during our weekly office hours sessions.
+            </CardDescription>
             <Button
-              size="lg"
-              className="bg-gradient-to-r from-launch-purple to-launch-orange hover:from-launch-orange hover:to-launch-purple text-white px-6 py-3 text-base font-medium shadow-lg hover:shadow-xl transition-all duration-300"
+              className="w-full bg-gradient-to-r from-launch-orange to-launch-purple hover:from-launch-purple hover:to-launch-orange text-white text-base py-4 shadow-lg hover:shadow-xl transition-all duration-300"
               onClick={handleBookSession}
             >
-              <span className="flex items-center gap-2">
+              <span className="flex items-center justify-center gap-2">
                 Book a Seat
                 <ArrowRight className="h-4 w-4" />
               </span>
             </Button>
-            <p className="text-sm text-gray-600 mt-4">
-              $25 per session • 10 seats available • Weekly sessions
-            </p>
+          </CardContent>
+        </Card>
+
+        {/* Hosts Card */}
+        <Card className="border-2 border-launch-purple shadow-xl">
+          <CardHeader className="bg-gradient-to-r from-launch-purple/5 to-launch-orange/5">
+            <CardTitle className="text-2xl text-launch-purple mb-4">Meet Your Hosts</CardTitle>
+          </CardHeader>
+          <CardContent className="pt-6">
+            <div className="space-y-6">
+              <div className="flex items-center gap-4">
+                <div className="w-12 h-12 rounded-full p-1 bg-gradient-to-r from-launch-purple to-launch-orange">
+                  <img
+                    src="/lovable-uploads/de950dd0-67d3-45fd-b2d5-e419d56f3c2e.png"
+                    alt="Stephan Smith"
+                    className="w-full h-full rounded-full object-cover bg-white"
+                  />
+                </div>
+                <div>
+                  <h3 className="font-bold text-lg text-launch-purple">Stephan Smith</h3>
+                  <p className="text-launch-orange font-medium text-sm uppercase tracking-wider">CTO</p>
+                  <p className="text-gray-600 text-sm">Building the future with AI as your co-pilot.</p>
+                </div>
+              </div>
+              
+              <div className="flex items-center gap-4">
+                <div className="w-12 h-12 rounded-full p-1 bg-gradient-to-r from-launch-orange to-launch-purple">
+                  <img
+                    src="/lovable-uploads/a25b125a-4110-46e2-bf28-7cd7e60e633f.png"
+                    alt="Karen Kelly"
+                    className="w-full h-full rounded-full object-cover bg-white"
+                  />
+                </div>
+                <div>
+                  <h3 className="font-bold text-lg text-launch-purple">Karen Kelly</h3>
+                  <p className="text-launch-orange font-medium text-sm uppercase tracking-wider">CEO • Non-Technical Founder</p>
+                  <p className="text-gray-600 text-sm">Proving you don't need code to build something amazing.</p>
+                </div>
+              </div>
+            </div>
+          </CardContent>
+        </Card>
+      </div>
+
+      {/* Features Grid */}
+      <div className="mb-12">
+        <h2 className="text-2xl md:text-3xl font-bold text-center mb-8">
+          <span className="bg-gradient-to-r from-launch-purple to-launch-orange bg-clip-text text-transparent">
+            Why Join Our Office Hours?
+          </span>
+        </h2>
+        
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          {features.map((feature, index) => (
+            <Card 
+              key={index}
+              className="border-2 border-gray-200 hover:border-launch-orange transition-all duration-300 hover:shadow-lg"
+            >
+              <CardHeader>
+                <div className="flex items-center gap-3">
+                  <div className="p-2 rounded-full bg-launch-orange/10">
+                    <feature.icon className="h-5 w-5 text-launch-orange" />
+                  </div>
+                  <CardTitle className="text-lg text-launch-purple">{feature.title}</CardTitle>
+                </div>
+              </CardHeader>
+              <CardContent>
+                <p className="text-base text-gray-700">{feature.description}</p>
+              </CardContent>
+            </Card>
+          ))}
+        </div>
+      </div>
+
+      {/* Call to Action */}
+      <div className="text-center">
+        <div className="bg-gradient-to-r from-launch-purple/10 via-launch-orange/10 to-launch-purple/10 rounded-3xl p-8 md:p-12">
+          <div className="flex items-center justify-center gap-2 mb-4">
+            <Sparkles className="h-5 w-5 text-launch-orange animate-pulse" />
+            <h2 className="text-2xl md:text-3xl font-bold">
+              <span className="bg-gradient-to-r from-launch-purple to-launch-orange bg-clip-text text-transparent">
+                Ready to Get Started?
+              </span>
+            </h2>
+            <Sparkles className="h-5 w-5 text-launch-purple animate-pulse" />
           </div>
+          <p className="text-base text-gray-700 mb-6 max-w-2xl mx-auto">
+            Join our weekly sessions and become part of a community that believes in the power of non-technical founders.
+          </p>
+          <Button
+            size="lg"
+            className="bg-gradient-to-r from-launch-purple to-launch-orange hover:from-launch-orange hover:to-launch-purple text-white px-6 py-3 text-base font-medium shadow-lg hover:shadow-xl transition-all duration-300"
+            onClick={handleBookSession}
+          >
+            <span className="flex items-center gap-2">
+              Book a Seat
+              <ArrowRight className="h-4 w-4" />
+            </span>
+          </Button>
+          <p className="text-sm text-gray-600 mt-4">
+            $25 per session • 10 seats available • Weekly sessions
+          </p>
         </div>
       </div>
     </div>
