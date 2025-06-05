@@ -47,7 +47,7 @@ const Community = () => {
     <div className="min-h-screen bg-gradient-to-br from-launch-light via-white to-orange-50">
       <CommunityHeroSection />
       
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 pb-16">
+      <div className="max-w-4xl mx-auto px-4 sm:px-6 pb-16 pt-8">
         {/* Community Form */}
         <CommunityForm />
 
