@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect } from "react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -5,7 +6,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
-import { Search, CheckCircle, Loader2 } from "lucide-react";
+import { Search, CheckCircle, Loader2, ClipboardList, Eye, Bug, TrendingUp } from "lucide-react";
 import { supabase } from "@/integrations/supabase/client";
 import { useToast } from "@/hooks/use-toast";
 
@@ -132,7 +133,7 @@ const TearDown = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-launch-light via-white to-orange-50">
-      <div className="max-w-2xl mx-auto px-4 sm:px-6 py-16">
+      <div className="max-w-4xl mx-auto px-4 sm:px-6 py-16">
         <div className="text-center mb-8">
           <div className="flex justify-center mb-4">
             <div className="p-4 bg-gradient-to-r from-launch-purple to-launch-orange rounded-full">
@@ -149,6 +150,61 @@ const TearDown = () => {
             Only $250
           </p>
         </div>
+
+        {/* Service Description Section */}
+        <Card className="border-2 border-launch-purple/20 shadow-lg mb-8">
+          <CardHeader className="bg-gradient-to-r from-launch-purple/5 to-launch-orange/5">
+            <CardTitle className="text-2xl text-launch-purple text-center">
+              What You Get: Complete MVP Health Assessment
+            </CardTitle>
+          </CardHeader>
+          <CardContent className="pt-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div className="space-y-4">
+                <div className="flex items-start space-x-3">
+                  <ClipboardList className="h-6 w-6 text-launch-purple mt-1 flex-shrink-0" />
+                  <div>
+                    <h3 className="font-semibold text-gray-900 mb-1">Comprehensive Functionality Review</h3>
+                    <p className="text-gray-600 text-sm">Complete assessment of your application's core features, performance, and user flows to ensure everything works as intended.</p>
+                  </div>
+                </div>
+                
+                <div className="flex items-start space-x-3">
+                  <Eye className="h-6 w-6 text-launch-purple mt-1 flex-shrink-0" />
+                  <div>
+                    <h3 className="font-semibold text-gray-900 mb-1">UI/UX Expert Feedback</h3>
+                    <p className="text-gray-600 text-sm">Professional evaluation of your interface design, user experience, and recommendations for improving user engagement and conversion.</p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="space-y-4">
+                <div className="flex items-start space-x-3">
+                  <Bug className="h-6 w-6 text-launch-orange mt-1 flex-shrink-0" />
+                  <div>
+                    <h3 className="font-semibold text-gray-900 mb-1">Bug Detection & Risk Assessment</h3>
+                    <p className="text-gray-600 text-sm">Identification of existing bugs and potential issues that could impact your launch, with clear prioritization for fixes.</p>
+                  </div>
+                </div>
+                
+                <div className="flex items-start space-x-3">
+                  <TrendingUp className="h-6 w-6 text-launch-orange mt-1 flex-shrink-0" />
+                  <div>
+                    <h3 className="font-semibold text-gray-900 mb-1">Strategic Development Roadmap</h3>
+                    <p className="text-gray-600 text-sm">Detailed recommendations for your next 3-5 development phases, complete with actionable prompts and prioritized feature suggestions.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="mt-6 p-4 bg-gradient-to-r from-launch-purple/5 to-launch-orange/5 rounded-lg">
+              <p className="text-center text-gray-700 font-medium">
+                <span className="text-launch-purple font-semibold">Perfect for AI-first applications</span> ready to make their market debut. 
+                Get the confidence you need to launch successfully with our expert analysis and strategic guidance.
+              </p>
+            </div>
+          </CardContent>
+        </Card>
 
         <Card className="border-2 border-launch-orange/20 shadow-xl">
           <CardHeader className="bg-gradient-to-r from-launch-purple/5 to-launch-orange/5">
