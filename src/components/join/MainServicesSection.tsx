@@ -1,3 +1,4 @@
+
 import React from "react";
 import { Users, Code, Rocket, LucideIcon } from "lucide-react";
 import ServiceCard from "./ServiceCard";
@@ -35,9 +36,9 @@ const MainServicesSection = ({ onServiceClick }: MainServicesSectionProps) => {
         "🎯 Discover local AI events", 
         "💬 Join investor fireside chats",
         "⏰ Access office hours 2x a month",
-        "🎁 Bonus: Pay annually and score a seat in 2 accelerators of your choice ($400 value)",
         "🎓 Join exclusive accelerators",
-        "🌟 Access thought leadership on making cultural change"
+        "🌟 Access thought leadership on making cultural change",
+        "🎁 Bonus: Pay annually and score a seat in 2 accelerators of your choice ($400 value)"
       ],
       icon: Users,
       ctaText: "Apply to Join",
