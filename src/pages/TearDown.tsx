@@ -6,7 +6,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
-import { Search, CheckCircle, Loader2, ClipboardList, Eye, Bug, TrendingUp } from "lucide-react";
+import { Search, CheckCircle, Loader2, ClipboardList, Eye, Bug, TrendingUp, Zap, Target, Rocket, Star } from "lucide-react";
 import { supabase } from "@/integrations/supabase/client";
 import { useToast } from "@/hooks/use-toast";
 
@@ -104,25 +104,41 @@ const TearDown = () => {
 
   if (isSubmitted) {
     return (
-      <div className="min-h-screen bg-gradient-to-br from-launch-light via-white to-orange-50">
-        <div className="max-w-2xl mx-auto px-4 sm:px-6 py-16">
-          <Card className="border-2 border-green-200 bg-gradient-to-br from-green-50 to-white">
+      <div className="min-h-screen bg-gradient-to-br from-launch-light via-white to-orange-50 relative overflow-hidden">
+        {/* Background decorative elements */}
+        <div className="absolute inset-0 bg-gradient-to-r from-launch-purple/5 to-launch-orange/5"></div>
+        <div className="absolute top-20 right-20 w-32 h-32 bg-launch-orange/10 rounded-full blur-3xl animate-pulse"></div>
+        <div className="absolute bottom-20 left-20 w-40 h-40 bg-launch-purple/10 rounded-full blur-3xl animate-pulse delay-1000"></div>
+        
+        <div className="max-w-2xl mx-auto px-4 sm:px-6 py-16 relative z-10">
+          <Card className="border-2 border-green-200 bg-gradient-to-br from-green-50 via-white to-green-50/50 shadow-2xl transform hover:scale-105 transition-all duration-300">
             <CardContent className="pt-8 text-center">
-              <CheckCircle className="h-16 w-16 text-green-500 mx-auto mb-6" />
-              <h1 className="text-3xl font-bold text-launch-purple mb-4">
-                Application Submitted!
+              <div className="relative">
+                <CheckCircle className="h-20 w-20 text-green-500 mx-auto mb-6 animate-bounce" />
+                <div className="absolute -top-2 -right-2 w-6 h-6 bg-green-400 rounded-full animate-ping"></div>
+              </div>
+              <h1 className="text-4xl font-bold bg-gradient-to-r from-launch-purple to-green-600 bg-clip-text text-transparent mb-4">
+                Mission Accomplished!
               </h1>
-              <p className="text-lg text-gray-700 mb-6">
-                Thank you for your interest in our Tear Down MVP Service. We've received your application and will review it shortly.
+              <div className="flex justify-center mb-6">
+                {[...Array(5)].map((_, i) => (
+                  <Star key={i} className="h-6 w-6 text-yellow-400 fill-yellow-400 animate-pulse" style={{ animationDelay: `${i * 100}ms` }} />
+                ))}
+              </div>
+              <p className="text-xl text-gray-700 mb-6 font-medium">
+                Your application has been received and is being processed by our expert team.
               </p>
-              <p className="text-base text-gray-600 mb-8">
-                We'll get back to you within 2-3 business days with next steps.
-              </p>
+              <div className="bg-gradient-to-r from-launch-purple/10 to-launch-orange/10 rounded-lg p-4 mb-8">
+                <p className="text-base text-gray-600">
+                  🚀 <strong>Next steps:</strong> We'll review your application and get back to you within 2-3 business days with a detailed assessment plan.
+                </p>
+              </div>
               <Button 
                 onClick={() => window.location.href = '/'}
-                className="bg-launch-purple hover:bg-launch-purple/90 text-white"
+                className="bg-gradient-to-r from-launch-purple to-launch-orange hover:from-launch-orange hover:to-launch-purple text-white px-8 py-3 text-lg font-semibold transform hover:scale-105 transition-all duration-200 shadow-lg"
               >
-                Return to Home
+                <Rocket className="mr-2 h-5 w-5" />
+                Back to Launch Pad
               </Button>
             </CardContent>
           </Card>
@@ -132,202 +148,261 @@ const TearDown = () => {
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-launch-light via-white to-orange-50">
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 py-16">
-        <div className="text-center mb-8">
-          <div className="flex justify-center mb-4">
-            <div className="p-4 bg-gradient-to-r from-launch-purple to-launch-orange rounded-full">
-              <Search className="h-8 w-8 text-white" />
+    <div className="min-h-screen bg-gradient-to-br from-launch-light via-white to-orange-50 relative overflow-hidden">
+      {/* Background decorative elements */}
+      <div className="absolute inset-0 bg-gradient-to-r from-launch-purple/5 to-launch-orange/5"></div>
+      <div className="absolute top-40 right-10 w-64 h-64 bg-launch-orange/10 rounded-full blur-3xl animate-pulse"></div>
+      <div className="absolute bottom-40 left-10 w-80 h-80 bg-launch-purple/10 rounded-full blur-3xl animate-pulse delay-1000"></div>
+      <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-gradient-to-r from-launch-purple/5 to-launch-orange/5 rounded-full blur-3xl"></div>
+
+      <div className="max-w-4xl mx-auto px-4 sm:px-6 py-16 relative z-10">
+        {/* Hero Section */}
+        <div className="text-center mb-12 animate-fade-in">
+          <div className="flex justify-center mb-6">
+            <div className="relative">
+              <div className="p-6 bg-gradient-to-r from-launch-purple to-launch-orange rounded-full shadow-2xl">
+                <Search className="h-12 w-12 text-white" />
+              </div>
+              <div className="absolute -top-1 -right-1 w-4 h-4 bg-yellow-400 rounded-full animate-ping"></div>
+              <div className="absolute -bottom-1 -left-1 w-3 h-3 bg-green-400 rounded-full animate-bounce"></div>
             </div>
           </div>
-          <h1 className="text-4xl font-bold text-launch-purple mb-4">
+          <h1 className="text-5xl md:text-6xl font-bold bg-gradient-to-r from-launch-purple via-launch-orange to-launch-purple bg-clip-text text-transparent mb-6 animate-slide-in">
             Tear Down MVP Service
           </h1>
-          <p className="text-xl text-gray-700 mb-2">
-            Get your MVP reviewed and optimized before launch
-          </p>
-          <p className="text-lg font-semibold text-launch-orange">
-            Only $250
-          </p>
+          <div className="max-w-2xl mx-auto">
+            <p className="text-2xl text-gray-700 mb-4 font-medium">
+              Transform your MVP into a launch-ready powerhouse
+            </p>
+            <div className="flex items-center justify-center gap-2 mb-4">
+              <Zap className="h-6 w-6 text-launch-orange animate-pulse" />
+              <p className="text-3xl font-bold bg-gradient-to-r from-launch-orange to-launch-purple bg-clip-text text-transparent">
+                Only $250
+              </p>
+              <Zap className="h-6 w-6 text-launch-orange animate-pulse" />
+            </div>
+            <div className="flex items-center justify-center gap-4 text-sm text-gray-600">
+              <div className="flex items-center gap-1">
+                <Target className="h-4 w-4 text-green-500" />
+                <span>Expert Analysis</span>
+              </div>
+              <div className="flex items-center gap-1">
+                <Rocket className="h-4 w-4 text-blue-500" />
+                <span>Launch Ready</span>
+              </div>
+              <div className="flex items-center gap-1">
+                <Star className="h-4 w-4 text-yellow-500" />
+                <span>AI-Optimized</span>
+              </div>
+            </div>
+          </div>
         </div>
 
         {/* Service Description Section */}
-        <Card className="border-2 border-launch-purple/20 shadow-lg mb-8">
-          <CardHeader className="bg-gradient-to-r from-launch-purple/5 to-launch-orange/5">
-            <CardTitle className="text-2xl text-launch-purple text-center">
-              What You Get: Complete MVP Health Assessment
+        <Card className="border-2 border-launch-purple/20 shadow-2xl mb-12 bg-gradient-to-br from-white via-launch-light/30 to-white transform hover:scale-[1.02] transition-all duration-300 animate-fade-in">
+          <CardHeader className="bg-gradient-to-r from-launch-purple/10 via-launch-orange/10 to-launch-purple/10 relative overflow-hidden">
+            <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent animate-pulse"></div>
+            <CardTitle className="text-3xl text-center relative z-10">
+              <span className="bg-gradient-to-r from-launch-purple to-launch-orange bg-clip-text text-transparent">
+                Complete MVP Health Assessment
+              </span>
             </CardTitle>
           </CardHeader>
-          <CardContent className="pt-6">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <div className="space-y-4">
-                <div className="flex items-start space-x-3">
-                  <ClipboardList className="h-6 w-6 text-launch-purple mt-1 flex-shrink-0" />
+          <CardContent className="pt-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+              <div className="space-y-6">
+                <div className="flex items-start space-x-4 p-4 rounded-lg bg-gradient-to-r from-launch-purple/5 to-transparent hover:from-launch-purple/10 transition-all duration-300 transform hover:scale-105">
+                  <div className="p-2 bg-launch-purple/10 rounded-full">
+                    <ClipboardList className="h-6 w-6 text-launch-purple flex-shrink-0" />
+                  </div>
                   <div>
-                    <h3 className="font-semibold text-gray-900 mb-1">Functionality Review</h3>
-                    <p className="text-gray-600 text-sm">Complete assessment of core features and user flows.</p>
+                    <h3 className="font-bold text-gray-900 mb-2 text-lg">Functionality Deep Dive</h3>
+                    <p className="text-gray-600">Complete assessment of core features and user flows with actionable insights.</p>
                   </div>
                 </div>
                 
-                <div className="flex items-start space-x-3">
-                  <Eye className="h-6 w-6 text-launch-purple mt-1 flex-shrink-0" />
+                <div className="flex items-start space-x-4 p-4 rounded-lg bg-gradient-to-r from-launch-purple/5 to-transparent hover:from-launch-purple/10 transition-all duration-300 transform hover:scale-105">
+                  <div className="p-2 bg-launch-purple/10 rounded-full">
+                    <Eye className="h-6 w-6 text-launch-purple flex-shrink-0" />
+                  </div>
                   <div>
-                    <h3 className="font-semibold text-gray-900 mb-1">UI/UX Feedback</h3>
-                    <p className="text-gray-600 text-sm">Expert evaluation with recommendations for better user experience.</p>
+                    <h3 className="font-bold text-gray-900 mb-2 text-lg">UX/UI Excellence</h3>
+                    <p className="text-gray-600">Expert evaluation with proven recommendations for enhanced user experience.</p>
                   </div>
                 </div>
               </div>
 
-              <div className="space-y-4">
-                <div className="flex items-start space-x-3">
-                  <Bug className="h-6 w-6 text-launch-orange mt-1 flex-shrink-0" />
+              <div className="space-y-6">
+                <div className="flex items-start space-x-4 p-4 rounded-lg bg-gradient-to-r from-launch-orange/5 to-transparent hover:from-launch-orange/10 transition-all duration-300 transform hover:scale-105">
+                  <div className="p-2 bg-launch-orange/10 rounded-full">
+                    <Bug className="h-6 w-6 text-launch-orange flex-shrink-0" />
+                  </div>
                   <div>
-                    <h3 className="font-semibold text-gray-900 mb-1">Bug Detection</h3>
-                    <p className="text-gray-600 text-sm">Identify issues that could impact your launch with clear priorities.</p>
+                    <h3 className="font-bold text-gray-900 mb-2 text-lg">Critical Bug Hunt</h3>
+                    <p className="text-gray-600">Identify launch-blocking issues with clear priority rankings and solutions.</p>
                   </div>
                 </div>
                 
-                <div className="flex items-start space-x-3">
-                  <TrendingUp className="h-6 w-6 text-launch-orange mt-1 flex-shrink-0" />
+                <div className="flex items-start space-x-4 p-4 rounded-lg bg-gradient-to-r from-launch-orange/5 to-transparent hover:from-launch-orange/10 transition-all duration-300 transform hover:scale-105">
+                  <div className="p-2 bg-launch-orange/10 rounded-full">
+                    <TrendingUp className="h-6 w-6 text-launch-orange flex-shrink-0" />
+                  </div>
                   <div>
-                    <h3 className="font-semibold text-gray-900 mb-1">Development Roadmap</h3>
-                    <p className="text-gray-600 text-sm">Strategic recommendations for your next 3-5 development phases.</p>
+                    <h3 className="font-bold text-gray-900 mb-2 text-lg">Growth Roadmap</h3>
+                    <p className="text-gray-600">Strategic roadmap for your next 3-5 development phases with AI optimization.</p>
                   </div>
                 </div>
               </div>
             </div>
 
-            <div className="mt-6 p-4 bg-gradient-to-r from-launch-purple/5 to-launch-orange/5 rounded-lg">
-              <p className="text-center text-gray-700 font-medium">
-                <span className="text-launch-purple font-semibold">Perfect for AI-first applications</span> ready to launch. 
-                Get expert analysis and strategic guidance for a successful debut.
+            <div className="mt-8 p-6 bg-gradient-to-r from-launch-purple/10 via-launch-orange/10 to-launch-purple/10 rounded-xl border-2 border-gradient-to-r from-launch-purple/20 to-launch-orange/20 relative overflow-hidden">
+              <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/30 to-transparent animate-pulse"></div>
+              <p className="text-center text-gray-800 font-semibold text-lg relative z-10">
+                ⚡ <span className="text-launch-purple font-bold">Perfect for AI-first applications</span> ready to dominate the market! 
+                Get the competitive edge with our expert analysis and strategic guidance. ⚡
               </p>
             </div>
           </CardContent>
         </Card>
 
-        <Card className="border-2 border-launch-orange/20 shadow-xl">
-          <CardHeader className="bg-gradient-to-r from-launch-purple/5 to-launch-orange/5">
-            <CardTitle className="text-2xl text-launch-purple">
-              Application Form
+        {/* Application Form */}
+        <Card className="border-2 border-launch-orange/20 shadow-2xl bg-gradient-to-br from-white via-orange-50/20 to-white animate-fade-in">
+          <CardHeader className="bg-gradient-to-r from-launch-orange/10 via-launch-purple/10 to-launch-orange/10 relative overflow-hidden">
+            <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent animate-pulse"></div>
+            <CardTitle className="text-3xl text-center relative z-10">
+              <span className="bg-gradient-to-r from-launch-orange to-launch-purple bg-clip-text text-transparent">
+                🚀 Ready for Takeoff? Apply Now!
+              </span>
             </CardTitle>
           </CardHeader>
-          <CardContent className="pt-6">
-            <form onSubmit={handleSubmit} className="space-y-6">
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                <div>
-                  <Label htmlFor="firstName" className="text-sm font-medium text-gray-700">
+          <CardContent className="pt-8">
+            <form onSubmit={handleSubmit} className="space-y-8">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div className="space-y-2">
+                  <Label htmlFor="firstName" className="text-sm font-semibold text-gray-700 flex items-center gap-2">
                     First Name *
+                    <Star className="h-3 w-3 text-launch-orange" />
                   </Label>
                   <Input
                     id="firstName"
                     type="text"
                     value={formData.firstName}
                     onChange={(e) => handleInputChange('firstName', e.target.value)}
-                    className="mt-1"
+                    className="border-2 border-gray-200 focus:border-launch-purple transition-all duration-200 hover:border-launch-purple/50"
                     required
                   />
                 </div>
-                <div>
-                  <Label htmlFor="lastName" className="text-sm font-medium text-gray-700">
+                <div className="space-y-2">
+                  <Label htmlFor="lastName" className="text-sm font-semibold text-gray-700 flex items-center gap-2">
                     Last Name *
+                    <Star className="h-3 w-3 text-launch-orange" />
                   </Label>
                   <Input
                     id="lastName"
                     type="text"
                     value={formData.lastName}
                     onChange={(e) => handleInputChange('lastName', e.target.value)}
-                    className="mt-1"
+                    className="border-2 border-gray-200 focus:border-launch-purple transition-all duration-200 hover:border-launch-purple/50"
                     required
                   />
                 </div>
               </div>
 
-              <div>
-                <Label htmlFor="companyName" className="text-sm font-medium text-gray-700">
+              <div className="space-y-2">
+                <Label htmlFor="companyName" className="text-sm font-semibold text-gray-700 flex items-center gap-2">
                   Company Name *
+                  <Star className="h-3 w-3 text-launch-orange" />
                 </Label>
                 <Input
                   id="companyName"
                   type="text"
                   value={formData.companyName}
                   onChange={(e) => handleInputChange('companyName', e.target.value)}
-                  className="mt-1"
+                  className="border-2 border-gray-200 focus:border-launch-purple transition-all duration-200 hover:border-launch-purple/50"
                   required
                 />
               </div>
 
-              <div>
-                <Label htmlFor="applicationDescription" className="text-sm font-medium text-gray-700">
+              <div className="space-y-2">
+                <Label htmlFor="applicationDescription" className="text-sm font-semibold text-gray-700 flex items-center gap-2">
                   What is your application? *
+                  <Star className="h-3 w-3 text-launch-orange" />
                 </Label>
                 <Textarea
                   id="applicationDescription"
                   value={formData.applicationDescription}
                   onChange={(e) => handleInputChange('applicationDescription', e.target.value)}
-                  className="mt-1"
+                  className="border-2 border-gray-200 focus:border-launch-purple transition-all duration-200 hover:border-launch-purple/50"
                   rows={4}
-                  placeholder="Please describe your application, its purpose, target audience, and key features..."
+                  placeholder="Tell us about your MVP - its purpose, target audience, key features, and what makes it special..."
                   required
                 />
               </div>
 
-              <div>
-                <Label className="text-sm font-medium text-gray-700 mb-3 block">
+              <div className="space-y-4">
+                <Label className="text-sm font-semibold text-gray-700 flex items-center gap-2">
                   Is your app public yet? *
+                  <Star className="h-3 w-3 text-launch-orange" />
                 </Label>
                 <RadioGroup
                   value={formData.isAppPublic}
                   onValueChange={(value) => handleInputChange('isAppPublic', value)}
-                  className="flex flex-col space-y-2"
+                  className="space-y-3"
                 >
-                  <div className="flex items-center space-x-2">
-                    <RadioGroupItem value="yes" id="public-yes" />
-                    <Label htmlFor="public-yes" className="text-sm">Yes, it's already public</Label>
+                  <div className="flex items-center space-x-3 p-3 rounded-lg border-2 border-gray-100 hover:border-launch-purple/30 transition-all duration-200">
+                    <RadioGroupItem value="yes" id="public-yes" className="border-2 border-launch-purple" />
+                    <Label htmlFor="public-yes" className="text-sm font-medium">🌟 Yes, it's already public and ready for users</Label>
                   </div>
-                  <div className="flex items-center space-x-2">
-                    <RadioGroupItem value="no" id="public-no" />
-                    <Label htmlFor="public-no" className="text-sm">No, it's still private/in development</Label>
+                  <div className="flex items-center space-x-3 p-3 rounded-lg border-2 border-gray-100 hover:border-launch-purple/30 transition-all duration-200">
+                    <RadioGroupItem value="no" id="public-no" className="border-2 border-launch-purple" />
+                    <Label htmlFor="public-no" className="text-sm font-medium">🔒 No, it's still private/in development</Label>
                   </div>
-                  <div className="flex items-center space-x-2">
-                    <RadioGroupItem value="beta" id="public-beta" />
-                    <Label htmlFor="public-beta" className="text-sm">It's in beta/limited release</Label>
+                  <div className="flex items-center space-x-3 p-3 rounded-lg border-2 border-gray-100 hover:border-launch-purple/30 transition-all duration-200">
+                    <RadioGroupItem value="beta" id="public-beta" className="border-2 border-launch-purple" />
+                    <Label htmlFor="public-beta" className="text-sm font-medium">🧪 It's in beta/limited release</Label>
                   </div>
                 </RadioGroup>
               </div>
 
-              <div>
-                <Label htmlFor="otherComments" className="text-sm font-medium text-gray-700">
-                  Other Comments
+              <div className="space-y-2">
+                <Label htmlFor="otherComments" className="text-sm font-semibold text-gray-700">
+                  Additional Comments
                 </Label>
                 <Textarea
                   id="otherComments"
                   value={formData.otherComments}
                   onChange={(e) => handleInputChange('otherComments', e.target.value)}
-                  className="mt-1"
+                  className="border-2 border-gray-200 focus:border-launch-orange transition-all duration-200 hover:border-launch-orange/50"
                   rows={3}
-                  placeholder="Any additional information, specific concerns, or questions you'd like us to know about..."
+                  placeholder="Any specific concerns, goals, or questions about your MVP? We're here to help! 💪"
                 />
               </div>
 
-              <Button
-                type="submit"
-                disabled={isSubmitting}
-                className="w-full bg-gradient-to-r from-launch-purple to-launch-orange hover:from-launch-orange hover:to-launch-purple text-white py-3 text-lg font-semibold"
-              >
-                {isSubmitting ? (
-                  <>
-                    <Loader2 className="mr-2 h-4 w-4 animate-spin" />
-                    Submitting...
-                  </>
-                ) : (
-                  'Submit Application'
-                )}
-              </Button>
+              <div className="pt-4">
+                <Button
+                  type="submit"
+                  disabled={isSubmitting}
+                  className="w-full bg-gradient-to-r from-launch-purple via-launch-orange to-launch-purple bg-size-200 hover:bg-pos-100 text-white py-4 text-xl font-bold shadow-2xl transform hover:scale-[1.02] transition-all duration-300 animate-pulse"
+                >
+                  {isSubmitting ? (
+                    <>
+                      <Loader2 className="mr-2 h-6 w-6 animate-spin" />
+                      Launching Analysis...
+                    </>
+                  ) : (
+                    <>
+                      <Rocket className="mr-2 h-6 w-6" />
+                      🚀 Launch My MVP Assessment!
+                    </>
+                  )}
+                </Button>
+              </div>
 
-              <p className="text-xs text-gray-500 text-center">
-                * Required fields. We'll review your application and contact you within 2-3 business days.
-              </p>
+              <div className="text-center">
+                <p className="text-sm text-gray-500">
+                  * Required fields • We'll review your application and contact you within 2-3 business days with your custom assessment plan! 🎯
+                </p>
+              </div>
             </form>
           </CardContent>
         </Card>
