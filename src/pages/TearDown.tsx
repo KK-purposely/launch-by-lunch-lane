@@ -382,7 +382,7 @@ const TearDown = () => {
                 <Button
                   type="submit"
                   disabled={isSubmitting}
-                  className="w-full bg-gradient-to-r from-launch-purple via-launch-orange to-launch-purple bg-size-200 hover:bg-pos-100 text-white py-4 text-xl font-bold shadow-2xl transform hover:scale-[1.02] transition-all duration-300 animate-pulse"
+                  className="w-full bg-gradient-to-r from-launch-purple via-launch-orange to-launch-purple bg-size-200 hover:bg-pos-100 text-white py-4 text-xl font-bold shadow-2xl transform hover:scale-[1.02] transition-all duration-300"
                 >
                   {isSubmitting ? (
                     <>
@@ -392,7 +392,7 @@ const TearDown = () => {
                   ) : (
                     <>
                       <Rocket className="mr-2 h-6 w-6" />
-                      🚀 Launch My MVP Assessment!
+                      Submit Now
                     </>
                   )}
                 </Button>
