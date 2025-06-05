@@ -22,7 +22,7 @@ const FormHeader = () => {
       <div className="mt-4 p-4 bg-green-50 border border-green-200 rounded-lg flex items-start gap-3">
         <Shield className="h-5 w-5 text-green-600 mt-0.5 flex-shrink-0" />
         <p className="text-sm text-green-800 font-medium">
-          <strong>No upfront payment required:</strong> You don't pay anything unless you're accepted, and you decide to join.
+          <strong>No credit card required:</strong> You don't pay anything unless you're accepted, and you decide to join.
         </p>
       </div>
     </CardHeader>
