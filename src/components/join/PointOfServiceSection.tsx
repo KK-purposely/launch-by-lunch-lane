@@ -1,3 +1,4 @@
+
 import React from "react";
 import { Search, Clock, LucideIcon } from "lucide-react";
 import ServiceCard from "./ServiceCard";
@@ -25,7 +26,7 @@ const PointOfServiceSection = ({ onServiceClick }: PointOfServiceSectionProps) =
       title: "Tear Down MVP Service",
       price: "$250",
       timing: "When you're ready to soft launch",
-      description: "Get a comprehensive review and report of your MVP.",
+      description: "Make sure your AI-first app is launch ready. Get a comprehensive review and report of your MVP.",
       icon: Search,
       ctaText: "Get Started",
       ctaUrl: "/teardown"
