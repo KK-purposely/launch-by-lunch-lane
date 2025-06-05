@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 import { Users, Calendar, MessageCircle, Clock, Check } from "lucide-react";
 import CommunityForm from "@/components/community/CommunityForm";
+import CommunityHeroSection from "@/components/community/CommunityHeroSection";
 
 const Community = () => {
   const [selectedPlan, setSelectedPlan] = useState("annual");
@@ -43,25 +44,10 @@ const Community = () => {
   };
 
   return (
-    <div className="bg-white min-h-screen">
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 py-16">
-        <div className="text-center mb-12">
-          <h1 className="text-4xl md:text-5xl font-bold mb-4 text-launch-purple">
-            The Elite Network for the AI-First Community
-          </h1>
-          <div className="mb-6">
-            <p className="text-lg font-semibold text-launch-orange mb-2">
-              COMING SUMMER 2025
-            </p>
-            <p className="text-xl text-gray-700 mb-4">
-              Where the new eco-system of founders, fractionals, and investors build, scale and fund the next generation of AI-first startups.
-            </p>
-            <p className="text-lg font-medium text-launch-purple">
-              Get our early bird rates for the next 60 days.
-            </p>
-          </div>
-        </div>
-
+    <div className="min-h-screen bg-gradient-to-br from-launch-light via-white to-orange-50">
+      <CommunityHeroSection />
+      
+      <div className="max-w-4xl mx-auto px-4 sm:px-6 pb-16">
         {/* Community Form */}
         <CommunityForm />
 
