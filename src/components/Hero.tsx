@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { ArrowRight, CheckCircle } from "lucide-react";
 
@@ -24,7 +23,7 @@ const Hero = () => {
 
           {/* Founders Section */}
           <div className="mb-12">
-            <h2 className="text-lg font-semibold text-gray-700 mb-8 uppercase tracking-wide">Meet Your Founders</h2>
+            <h2 className="text-lg font-semibold text-gray-700 mb-8 uppercase tracking-wide">Meet Our Founders</h2>
             <div className="flex flex-col sm:flex-row justify-center items-center gap-12 mb-8">
               <div className="group flex flex-col items-center">
                 <div className="relative mb-6">
