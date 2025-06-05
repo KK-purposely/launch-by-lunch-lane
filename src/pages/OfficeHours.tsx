@@ -1,4 +1,3 @@
-
 import React from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
@@ -63,7 +62,7 @@ const OfficeHours = () => {
 
       {/* Session Details */}
       <div className="max-w-5xl mx-auto px-4 sm:px-6 pb-16">
-        {/* Hosts Card - moved above pricing */}
+        {/* Hosts Card */}
         <Card className="border-2 border-launch-orange shadow-xl mb-12">
           <CardHeader className="bg-gradient-to-r from-launch-orange/5 to-launch-purple/5">
             <CardTitle className="text-2xl text-launch-orange mb-4">Meet Your Hosts</CardTitle>
@@ -121,7 +120,7 @@ const OfficeHours = () => {
           </CardContent>
         </Card>
 
-        {/* Pricing Card - moved below hosts */}
+        {/* Pricing Card - moved here after features */}
         <Card className="border-2 border-launch-orange shadow-xl bg-gradient-to-br from-white via-launch-light to-white mb-12">
           <CardHeader className="bg-gradient-to-r from-launch-orange/5 to-launch-purple/5">
             <div className="flex items-center gap-3 mb-4">
