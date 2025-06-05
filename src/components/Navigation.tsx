@@ -30,10 +30,6 @@ const Navigation = () => {
     { to: "/community", label: "Join Community" },
   ];
 
-  const communityLinks = [
-    { to: "/members", label: "Members Only" },
-  ];
-
   return (
     <nav className="bg-white shadow-sm border-b border-gray-200 sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
@@ -80,25 +76,9 @@ const Navigation = () => {
                   </NavigationMenuItem>
 
                   <NavigationMenuItem>
-                    <NavigationMenuTrigger className="text-gray-700 hover:text-launch-orange">
-                      Community
-                    </NavigationMenuTrigger>
-                    <NavigationMenuContent>
-                      <div className="grid gap-3 p-6 w-80 bg-white">
-                        {communityLinks.map((link) => (
-                          <NavigationMenuLink key={link.to} asChild>
-                            <Link
-                              to={link.to}
-                              className="block p-3 space-y-1 rounded-md hover:bg-gray-50 transition-colors"
-                            >
-                              <div className="text-sm font-medium text-gray-900">
-                                {link.label}
-                              </div>
-                            </Link>
-                          </NavigationMenuLink>
-                        ))}
-                      </div>
-                    </NavigationMenuContent>
+                    <Link to="/members" className="px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-launch-orange">
+                      Members Only
+                    </Link>
                   </NavigationMenuItem>
 
                   <NavigationMenuItem>
@@ -169,19 +149,15 @@ const Navigation = () => {
                 
                 <DropdownMenuSeparator />
                 
-                {communityLinks.map((link) => (
-                  <DropdownMenuItem key={link.to} asChild>
-                    <Link 
-                      to={link.to} 
-                      className="w-full"
-                      onClick={() => setIsMenuOpen(false)}
-                    >
-                      {link.label}
-                    </Link>
-                  </DropdownMenuItem>
-                ))}
-                
-                <DropdownMenuSeparator />
+                <DropdownMenuItem asChild>
+                  <Link 
+                    to="/members" 
+                    className="w-full"
+                    onClick={() => setIsMenuOpen(false)}
+                  >
+                    Members Only
+                  </Link>
+                </DropdownMenuItem>
                 
                 <DropdownMenuItem asChild>
                   <Link 
