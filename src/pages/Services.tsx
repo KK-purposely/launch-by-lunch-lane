@@ -1,6 +1,7 @@
 
 import React from "react";
 import PackagesSection from "@/components/services/PackagesSection";
+import Footer from "@/components/Footer";
 
 const Services = () => {
   return (
@@ -11,6 +12,7 @@ const Services = () => {
         {/* Services Packages Section */}
         <PackagesSection />
       </div>
+      <Footer />
     </div>
   );
 };

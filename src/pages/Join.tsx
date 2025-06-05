@@ -6,6 +6,7 @@ import HeroSection from "@/components/join/HeroSection";
 import MainServicesSection from "@/components/join/MainServicesSection";
 import PointOfServiceSection from "@/components/join/PointOfServiceSection";
 import BottomCTASection from "@/components/join/BottomCTASection";
+import Footer from "@/components/Footer";
 
 const Join = () => {
   const navigate = useNavigate();
@@ -40,6 +41,7 @@ const Join = () => {
           serviceTitle={selectedService}
         />
       </div>
+      <Footer />
     </div>
   );
 };

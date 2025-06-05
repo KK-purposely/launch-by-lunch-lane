@@ -1,8 +1,8 @@
-
 import React from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Clock, Users, MessageCircle, Calendar, ArrowRight, CheckCircle, Sparkles } from "lucide-react";
+import Footer from "@/components/Footer";
 
 const OfficeHours = () => {
   const features = [
@@ -219,6 +219,7 @@ const OfficeHours = () => {
           </p>
         </div>
       </div>
+      <Footer />
     </div>
   );
 };
