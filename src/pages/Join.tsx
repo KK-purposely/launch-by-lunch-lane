@@ -1,4 +1,3 @@
-
 import React, { useState } from "react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -35,7 +34,15 @@ const Join = () => {
       title: "Launch by Lunch Accelerators",
       price: "$199",
       sessions: "4, 1 hour virtual sessions",
-      description: "Our virtual accelerators are accessible to anyone, anywhere and include 4 hours of small group learning.",
+      description: "Transform your brilliant idea into a real, working app - no coding required! Our accelerators are specially designed for visionary founders who want to build independently.",
+      benefits: [
+        "🚀 Build real applications without writing a single line of code",
+        "💡 Perfect for non-technical founders (coding knowledge actually gets in the way!)",
+        "🎉 Learn through hands-on fun with your cohort of fellow builders",
+        "🤝 Gain lifelong connections with entrepreneurs just like you",
+        "⚡ Go from idea to working prototype in just 4 weeks",
+        "🎯 Small group format ensures personalized attention and support"
+      ],
       icon: Rocket,
       ctaText: "View Accelerators",
       ctaUrl: "/accelerators"
