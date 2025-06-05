@@ -52,12 +52,12 @@ const MainServicesSection = ({ onServiceClick }: MainServicesSectionProps) => {
       sessions: "4, 1 hour virtual sessions",
       description: "Transform your brilliant idea into a real, working app - no coding required! Our accelerators are specially designed for visionary founders who want to build independently.",
       benefits: [
-        "🚀 Build real applications without writing a single line of code",
-        "💡 Perfect for non-technical founders (coding knowledge actually gets in the way!)",
-        "🎉 Learn through hands-on fun with your cohort of fellow builders",
-        "🤝 Gain lifelong connections with entrepreneurs just like you",
-        "⚡ Go from idea to working prototype in just 4 weeks",
-        "🎯 Small group format ensures personalized attention and support"
+        "🚀 Build real applications without writing code",
+        "💡 Perfect for non-technical founders",
+        "🎉 Learn through hands-on fun with your cohort",
+        "🤝 Gain lifelong connections with fellow entrepreneurs",
+        "⚡ Go from idea to working prototype in 4 weeks",
+        "🎯 Small groups ensure personalized attention"
       ],
       icon: Rocket,
       ctaText: "View Accelerators",
@@ -70,12 +70,12 @@ const MainServicesSection = ({ onServiceClick }: MainServicesSectionProps) => {
       provider: "Provided by Stephan Smith or Karen Kelly",
       description: "Strategic technical guidance for founders who have proven their AI concept and are ready to scale. Perfect for those with working prototypes, active users, and a vision for robust growth.",
       benefits: [
-        "🎯 Ideal for founders with validated AI prototypes and real user traction",
-        "🏗️ Strategic oversight for transitioning from MVP to scalable, production-ready systems",
-        "📚 Educational approach that empowers you to make informed technology decisions",
-        "🛠️ Curated recommendations for tools, platforms, and tech stack evolution",
-        "🚀 Maintain deep product knowledge while building technical confidence",
-        "💡 Learn to evaluate and implement solutions that scale with your vision"
+        "🎯 Ideal for founders with validated AI prototypes",
+        "🏗️ Strategic oversight for scaling to production systems",
+        "📚 Educational approach that empowers tech decisions",
+        "🛠️ Curated recommendations for tools and platforms",
+        "🚀 Maintain product knowledge while building confidence",
+        "💡 Learn to evaluate solutions that scale"
       ],
       icon: Code,
       ctaText: "Contact us",
