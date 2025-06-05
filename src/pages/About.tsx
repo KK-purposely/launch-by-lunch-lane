@@ -3,8 +3,11 @@ import React from "react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { ArrowUpRight, Sparkles } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 
 const About = () => {
+  const navigate = useNavigate();
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-launch-light via-white to-orange-50">
       {/* Hero Section */}
@@ -67,7 +70,7 @@ const About = () => {
             <Button 
               size="lg" 
               className="bg-gradient-to-r from-launch-purple to-launch-orange hover:from-launch-orange hover:to-launch-purple text-white rounded-full font-medium px-8 py-6 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
-              onClick={() => window.open('https://learn.launchbylunch.co/forms/3d943f05-e3f5-4b13-a8e5-430b350bcf80', '_blank')}
+              onClick={() => navigate('/contact')}
             >
               <span className="mr-2">Talk to Us</span>
               <ArrowUpRight className="h-5 w-5" />
