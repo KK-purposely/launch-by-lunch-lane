@@ -1,3 +1,4 @@
+
 import React from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
@@ -74,28 +75,6 @@ const OfficeHours = () => {
           <CardContent className="pt-6">
             <div className="space-y-8">
               <div className="flex items-start gap-6">
-                <div className="w-20 h-20 rounded-full p-1 bg-gradient-to-r from-launch-purple to-launch-orange flex-shrink-0">
-                  <img
-                    src="/lovable-uploads/de950dd0-67d3-45fd-b2d5-e419d56f3c2e.png"
-                    alt="Stephan Smith"
-                    className="w-full h-full rounded-full object-cover bg-white"
-                  />
-                </div>
-                <div className="flex-1">
-                  <h3 className="font-bold text-xl text-launch-purple mb-1">Stephan Smith</h3>
-                  <p className="text-launch-orange font-medium text-sm uppercase tracking-wider mb-3">CTO & Technical Co-Founder</p>
-                  <p className="text-gray-700 text-sm leading-relaxed mb-3">
-                    A seasoned software architect with over 15 years of experience building scalable web applications. 
-                    Stephan has led engineering teams at multiple startups and brings deep expertise in modern development 
-                    practices, AI integration, and low-code/no-code solutions.
-                  </p>
-                  <p className="text-gray-600 text-sm italic">
-                    "I believe the future belongs to builders who can leverage AI as their co-pilot, regardless of their technical background."
-                  </p>
-                </div>
-              </div>
-              
-              <div className="flex items-start gap-6">
                 <div className="w-20 h-20 rounded-full p-1 bg-gradient-to-r from-launch-orange to-launch-purple flex-shrink-0">
                   <img
                     src="/lovable-uploads/a25b125a-4110-46e2-bf28-7cd7e60e633f.png"
@@ -113,6 +92,28 @@ const OfficeHours = () => {
                   </p>
                   <p className="text-gray-600 text-sm italic">
                     "Your lack of technical skills isn't a limitation - it's your superpower for building user-focused products."
+                  </p>
+                </div>
+              </div>
+              
+              <div className="flex items-start gap-6">
+                <div className="w-20 h-20 rounded-full p-1 bg-gradient-to-r from-launch-purple to-launch-orange flex-shrink-0">
+                  <img
+                    src="/lovable-uploads/de950dd0-67d3-45fd-b2d5-e419d56f3c2e.png"
+                    alt="Stephan Smith"
+                    className="w-full h-full rounded-full object-cover bg-white"
+                  />
+                </div>
+                <div className="flex-1">
+                  <h3 className="font-bold text-xl text-launch-purple mb-1">Stephan Smith</h3>
+                  <p className="text-launch-orange font-medium text-sm uppercase tracking-wider mb-3">CTO & Technical Co-Founder</p>
+                  <p className="text-gray-700 text-sm leading-relaxed mb-3">
+                    A seasoned software architect with over 15 years of experience building scalable web applications. 
+                    Stephan has led engineering teams at multiple startups and brings deep expertise in modern development 
+                    practices, AI integration, and low-code/no-code solutions.
+                  </p>
+                  <p className="text-gray-600 text-sm italic">
+                    "I believe the future belongs to builders who can leverage AI as their co-pilot, regardless of their technical background."
                   </p>
                 </div>
               </div>
