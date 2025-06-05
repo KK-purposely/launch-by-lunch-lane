@@ -1,3 +1,4 @@
+
 import React from "react";
 import { Users, Code, Rocket, LucideIcon } from "lucide-react";
 import ServiceCard from "./ServiceCard";
@@ -49,7 +50,7 @@ const MainServicesSection = ({ onServiceClick }: MainServicesSectionProps) => {
       title: "Launch by Lunch Accelerators",
       price: "$199",
       sessions: "4, 1 hour virtual sessions",
-      description: "Transform your brilliant idea into a real, working app - no coding required! Our accelerators are specially designed for visionary founders who want to build independently.",
+      description: "Transform your brilliant idea into a real, working app - no coding required!",
       benefits: [
         "🚀 Build real applications without writing code",
         "💡 Perfect for non-technical founders",
@@ -66,7 +67,7 @@ const MainServicesSection = ({ onServiceClick }: MainServicesSectionProps) => {
       title: "Vibe Coding Support Packages",
       price: "Starting at $1500",
       provider: "Provided by Stephan Smith or Karen Kelly",
-      description: "Strategic technical guidance for founders who have proven their AI concept and are ready to scale. Perfect for those with working prototypes, active users, and a vision for robust growth.",
+      description: "Strategic technical guidance for founders who have proven their AI concept and are ready to scale.",
       benefits: [
         "🎯 Ideal for founders with validated AI prototypes",
         "🏗️ Strategic oversight for scaling to production systems",
