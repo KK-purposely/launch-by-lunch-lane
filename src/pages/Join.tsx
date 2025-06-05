@@ -18,11 +18,11 @@ const Join = () => {
       savings: "or save with annual",
       description: "Connect with like-minded entrepreneurs building AI-first companies",
       benefits: [
-        "Connect and learn from our community of founders and fractional experts",
-        "Discover local AI events", 
-        "Join investor fireside chats",
-        "Access office hours 2x a month",
-        "Bonus: Pay annually and score a seat in 2 accelerators of your choice ($400 value)"
+        "🤝 Connect and learn from our community of founders and fractional experts",
+        "🎯 Discover local AI events", 
+        "💬 Join investor fireside chats",
+        "⏰ Access office hours 2x a month",
+        "🎁 Bonus: Pay annually and score a seat in 2 accelerators of your choice ($400 value)"
       ],
       icon: Users,
       ctaText: "Apply to Join",
