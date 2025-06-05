@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
-import { Mail, Send, CheckCircle } from "lucide-react";
+import { Mail, Send } from "lucide-react";
 import { supabase } from "@/integrations/supabase/client";
 import { useToast } from "@/hooks/use-toast";
 
@@ -217,29 +217,6 @@ const Contact = () => {
               )}
             </Button>
           </form>
-
-          {/* Additional Contact Info */}
-          <div className="mt-12 pt-8 border-t border-gray-200">
-            <div className="text-center">
-              <h3 className="text-lg font-semibold text-gray-900 mb-4">
-                Other Ways to Reach Us
-              </h3>
-              <div className="flex flex-wrap justify-center gap-4 text-sm text-gray-600">
-                <span className="flex items-center gap-1">
-                  <CheckCircle className="h-4 w-4 text-blue-500" />
-                  Response within 24 hours
-                </span>
-                <span className="flex items-center gap-1">
-                  <CheckCircle className="h-4 w-4 text-blue-500" />
-                  No commitment required
-                </span>
-                <span className="flex items-center gap-1">
-                  <CheckCircle className="h-4 w-4 text-blue-500" />
-                  Free consultation available
-                </span>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
     </div>
