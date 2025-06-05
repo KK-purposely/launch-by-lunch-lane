@@ -67,7 +67,7 @@ const Community = () => {
 
         {/* Pricing Options */}
         <div className="mb-12">
-          <h2 className="text-2xl font-bold text-center mb-8 text-launch-purple">Choose Your Membership Plan</h2>
+          <h2 className="text-2xl font-bold text-center mb-8 text-launch-purple">Membership Options</h2>
           <RadioGroup value={selectedPlan} onValueChange={setSelectedPlan} className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {/* Monthly Plan */}
             <div className="relative">
@@ -102,11 +102,6 @@ const Community = () => {
 
             {/* Annual Plan */}
             <div className="relative">
-              <div className="absolute -top-3 left-1/2 transform -translate-x-1/2 z-10">
-                <span className="bg-launch-orange text-white px-3 py-1 rounded-full text-sm font-medium">
-                  Best Value
-                </span>
-              </div>
               <label htmlFor="annual" className="cursor-pointer">
                 <Card className={`border-2 transition-all duration-300 hover:shadow-lg ${selectedPlan === 'annual' ? 'border-launch-orange ring-2 ring-launch-orange/20' : 'border-gray-200 hover:border-launch-orange'}`}>
                   <CardHeader>
@@ -141,25 +136,6 @@ const Community = () => {
               </label>
             </div>
           </RadioGroup>
-        </div>
-
-        {/* Call to Action */}
-        <div className="text-center">
-          <Button
-            size="lg"
-            className="bg-launch-purple hover:bg-launch-purple/90 text-white px-8 py-3 text-lg font-medium"
-            onClick={handlePayment}
-          >
-            {selectedPlan === 'monthly' ? 'Subscribe Monthly - $99/month' : 'Subscribe Annually - $990/year'}
-          </Button>
-          <p className="text-sm text-gray-600 mt-4">
-            Cancel anytime. No long-term commitments.
-          </p>
-          {selectedPlan === 'annual' && (
-            <p className="text-sm text-green-600 font-medium mt-2">
-              🎉 You're saving $600 and getting 2 accelerator seats worth $400!
-            </p>
-          )}
         </div>
       </div>
     </div>
