@@ -29,7 +29,7 @@ interface ServiceCardProps {
 const ServiceCard = ({ service, index, onServiceClick }: ServiceCardProps) => {
   return (
     <Card 
-      className={`group relative border-2 transition-all duration-500 hover:shadow-2xl transform hover:-translate-y-2 ${
+      className={`group relative border-2 transition-all duration-500 hover:shadow-2xl transform hover:-translate-y-2 flex flex-col h-full ${
         service.featured 
           ? 'border-gradient-to-r from-launch-purple to-launch-orange shadow-xl bg-gradient-to-br from-white via-launch-light to-white lg:scale-105' 
           : 'border-gray-200 hover:border-launch-orange bg-white'
@@ -92,13 +92,13 @@ const ServiceCard = ({ service, index, onServiceClick }: ServiceCardProps) => {
         </div>
       </CardHeader>
       
-      <CardContent className="pt-6">
+      <CardContent className="pt-6 flex flex-col flex-grow">
         <CardDescription className="text-sm md:text-base mb-6 text-gray-700 leading-relaxed">
           {service.description}
         </CardDescription>
         
         {service.benefits && (
-          <div className="mb-6 space-y-3">
+          <div className="mb-6 space-y-3 flex-grow">
             {service.benefits.map((benefit, index) => (
               <div 
                 key={index} 
@@ -113,19 +113,21 @@ const ServiceCard = ({ service, index, onServiceClick }: ServiceCardProps) => {
           </div>
         )}
 
-        <Button
-          className={`w-full group text-base py-4 transition-all duration-300 ${
-            service.featured 
-              ? 'bg-gradient-to-r from-launch-purple to-launch-orange hover:from-launch-orange hover:to-launch-purple text-white shadow-lg hover:shadow-xl' 
-              : 'bg-launch-purple hover:bg-launch-purple/90 text-white'
-          }`}
-          onClick={() => onServiceClick(service)}
-        >
-          <span className="flex items-center justify-center gap-2">
-            {service.ctaText}
-            <ArrowRight className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
-          </span>
-        </Button>
+        <div className="mt-auto">
+          <Button
+            className={`w-full group text-base py-4 transition-all duration-300 ${
+              service.featured 
+                ? 'bg-gradient-to-r from-launch-purple to-launch-orange hover:from-launch-orange hover:to-launch-purple text-white shadow-lg hover:shadow-xl' 
+                : 'bg-launch-purple hover:bg-launch-purple/90 text-white'
+            }`}
+            onClick={() => onServiceClick(service)}
+          >
+            <span className="flex items-center justify-center gap-2">
+              {service.ctaText}
+              <ArrowRight className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
+            </span>
+          </Button>
+        </div>
       </CardContent>
     </Card>
   );
