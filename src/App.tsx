@@ -12,6 +12,7 @@ import About from "./pages/About";
 import MembersOnly from "./pages/MembersOnly";
 import Join from "./pages/Join";
 import Community from "./pages/Community";
+import OfficeHours from "./pages/OfficeHours";
 import Navigation from "./components/Navigation";
 
 const queryClient = new QueryClient();
@@ -31,6 +32,7 @@ const App = () => (
           <Route path="/members" element={<MembersOnly />} />
           <Route path="/join" element={<Join />} />
           <Route path="/community" element={<Community />} />
+          <Route path="/office-hours" element={<OfficeHours />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

@@ -76,6 +76,8 @@ const Join = () => {
     if (service.isContact) {
       setSelectedService(service.title);
       setContactFormOpen(true);
+    } else if (service.ctaUrl === "#" && service.title === "Drop in Office Hours") {
+      navigate("/office-hours");
     } else if (service.ctaUrl === "#") {
       console.log(`Clicked ${service.title}`);
     } else if (service.ctaUrl.startsWith("/")) {
@@ -98,7 +100,7 @@ const Join = () => {
               <Sparkles className="h-6 w-6 text-launch-purple animate-pulse" />
             </div>
             <h1 className="text-4xl md:text-6xl font-bold mb-6">
-              <span className="bg-gradient-to-r from-launch-purple via-launch-orange to-launch-purple bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-launch-purple to-launch-orange bg-clip-text text-transparent">
                 Join Launch by Lunch
               </span>
             </h1>
