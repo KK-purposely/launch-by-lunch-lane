@@ -52,7 +52,16 @@ const Join = () => {
       title: "Vibe Coding Support Packages",
       price: "Starting at $1500",
       provider: "Provided by Stephan Smith or Karen Kelly",
-      description: "Support for AI-first founders using no-code or low code solutions.",
+      description: "Strategic technical guidance for founders who have proven their AI concept and are ready to scale. Perfect for those with working prototypes, active users, and a vision for robust growth.",
+      benefits: [
+        "🎯 Ideal for founders with validated AI prototypes and real user traction",
+        "🏗️ Strategic oversight for transitioning from MVP to scalable, production-ready systems",
+        "📚 Educational approach that empowers you to make informed technology decisions",
+        "🛠️ Curated recommendations for tools, platforms, and tech stack evolution",
+        "🚀 Maintain deep product knowledge while building technical confidence",
+        "📈 Future-focused roadmap planning that aligns with your growth trajectory",
+        "💡 Learn to evaluate and implement solutions that scale with your vision"
+      ],
       icon: Code,
       ctaText: "Contact us",
       ctaUrl: "#",
