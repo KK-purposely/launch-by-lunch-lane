@@ -29,7 +29,7 @@ const PointOfServiceSection = ({ onServiceClick }: PointOfServiceSectionProps) =
       description: "Comprehensive review and optimization of your MVP before launch",
       icon: Search,
       ctaText: "Get Started",
-      ctaUrl: "#"
+      ctaUrl: "/teardown"
     },
     {
       id: 3,

@@ -54,6 +54,39 @@ export type Database = {
         }
         Relationships: []
       }
+      teardown_applications: {
+        Row: {
+          application_description: string
+          company_name: string
+          created_at: string
+          first_name: string
+          id: string
+          is_app_public: string
+          last_name: string
+          other_comments: string | null
+        }
+        Insert: {
+          application_description: string
+          company_name: string
+          created_at?: string
+          first_name: string
+          id?: string
+          is_app_public: string
+          last_name: string
+          other_comments?: string | null
+        }
+        Update: {
+          application_description?: string
+          company_name?: string
+          created_at?: string
+          first_name?: string
+          id?: string
+          is_app_public?: string
+          last_name?: string
+          other_comments?: string | null
+        }
+        Relationships: []
+      }
     }
     Views: {
       [_ in never]: never
