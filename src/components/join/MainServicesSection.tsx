@@ -1,4 +1,3 @@
-
 import React from "react";
 import { Users, Code, Rocket, LucideIcon } from "lucide-react";
 import ServiceCard from "./ServiceCard";
@@ -73,7 +72,9 @@ const MainServicesSection = ({ onServiceClick }: MainServicesSectionProps) => {
         "📚 Educational approach that empowers you to make informed technology decisions",
         "🛠️ Curated recommendations for tools, platforms, and tech stack evolution",
         "🚀 Maintain deep product knowledge while building technical confidence",
-        "💡 Learn to evaluate and implement solutions that scale with your vision"
+        "💡 Learn to evaluate and implement solutions that scale with your vision",
+        "🎓 Join exclusive accelerators",
+        "🌟 Access thought leadership on making cultural change"
       ],
       icon: Code,
       ctaText: "Contact us",
