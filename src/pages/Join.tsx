@@ -46,8 +46,8 @@ const Join = () => {
       availability: "10 seats open per hour",
       description: "Get direct access to expert guidance from our founders Karen Kelly & Stephan Smith during scheduled office hours.",
       icon: Clock,
-      ctaText: "Book Session",
-      ctaUrl: "#"
+      ctaText: "Book a Seat",
+      ctaUrl: "https://calendly.com/karen-launchbylunch/ai-low-code-office-hours"
     },
     {
       id: 4,
@@ -76,8 +76,8 @@ const Join = () => {
     if (service.isContact) {
       setSelectedService(service.title);
       setContactFormOpen(true);
-    } else if (service.ctaUrl === "#" && service.title === "Drop in Office Hours") {
-      navigate("/office-hours");
+    } else if (service.ctaUrl === "https://calendly.com/karen-launchbylunch/ai-low-code-office-hours") {
+      window.open(service.ctaUrl, "_blank");
     } else if (service.ctaUrl === "#") {
       console.log(`Clicked ${service.title}`);
     } else if (service.ctaUrl.startsWith("/")) {

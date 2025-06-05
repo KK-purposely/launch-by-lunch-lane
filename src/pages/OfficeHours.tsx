@@ -1,4 +1,3 @@
-
 import React from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
@@ -29,9 +28,7 @@ const OfficeHours = () => {
   ];
 
   const handleBookSession = () => {
-    // Placeholder for booking functionality
-    console.log("Booking office hours session");
-    alert("Booking integration will be implemented soon!");
+    window.open("https://calendly.com/karen-launchbylunch/ai-low-code-office-hours", "_blank");
   };
 
   return (
@@ -103,7 +100,7 @@ const OfficeHours = () => {
                 onClick={handleBookSession}
               >
                 <span className="flex items-center justify-center gap-2">
-                  Book Your Session
+                  Book a Seat
                   <ArrowRight className="h-5 w-5" />
                 </span>
               </Button>
@@ -202,7 +199,7 @@ const OfficeHours = () => {
               onClick={handleBookSession}
             >
               <span className="flex items-center gap-2">
-                Book Your First Session
+                Book a Seat
                 <ArrowRight className="h-5 w-5" />
               </span>
             </Button>
