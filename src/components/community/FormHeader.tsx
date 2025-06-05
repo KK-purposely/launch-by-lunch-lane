@@ -13,7 +13,7 @@ const FormHeader = () => {
         <div className="flex-1">
           <CardTitle className="text-2xl text-launch-purple mb-2">Join Our Community</CardTitle>
           <CardDescription className="text-base text-gray-600">
-            Tell us about yourself to get started with your membership
+            Tell us about yourself to get started with your membership.
           </CardDescription>
         </div>
       </div>

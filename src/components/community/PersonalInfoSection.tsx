@@ -27,7 +27,7 @@ const PersonalInfoSection = ({ control }: PersonalInfoSectionProps) => {
     <div className="space-y-6">
       <div className="border-l-4 border-launch-orange pl-4">
         <h3 className="text-lg font-semibold text-launch-purple mb-1">Personal Information</h3>
-        <p className="text-sm text-gray-600">Basic details to get to know you</p>
+        <p className="text-sm text-gray-600">Basic details to get to know you.</p>
       </div>
       
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
