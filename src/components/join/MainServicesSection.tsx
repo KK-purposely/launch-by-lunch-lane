@@ -1,4 +1,3 @@
-
 import React from "react";
 import { Users, Code, Rocket, LucideIcon } from "lucide-react";
 import ServiceCard from "./ServiceCard";
@@ -55,7 +54,6 @@ const MainServicesSection = ({ onServiceClick }: MainServicesSectionProps) => {
         "🚀 Build real applications without writing code",
         "💡 Perfect for non-technical founders",
         "🎉 Learn through hands-on fun with your cohort",
-        "🤝 Gain lifelong connections with fellow entrepreneurs",
         "⚡ Go from idea to working prototype in 4 weeks",
         "🎯 Small groups ensure personalized attention"
       ],
