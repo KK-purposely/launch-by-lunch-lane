@@ -72,7 +72,7 @@ const Community = () => {
             {/* Monthly Plan */}
             <div className="relative h-full">
               <label htmlFor="monthly" className="cursor-pointer h-full block">
-                <Card className={`border-2 transition-all duration-300 hover:shadow-lg h-full flex flex-col ${selectedPlan === 'monthly' ? 'border-launch-orange ring-2 ring-launch-orange/20' : 'border-gray-200 hover:border-launch-orange'}`}>
+                <Card className={`border-2 transition-all duration-300 hover:shadow-lg h-full flex flex-col bg-gradient-to-br from-purple-50 via-white to-orange-50 ${selectedPlan === 'monthly' ? 'border-launch-orange ring-2 ring-launch-orange/20' : 'border-gray-200 hover:border-launch-orange'}`}>
                   <CardHeader>
                     <div className="flex items-center justify-between">
                       <div>
@@ -103,7 +103,7 @@ const Community = () => {
             {/* Annual Plan */}
             <div className="relative h-full">
               <label htmlFor="annual" className="cursor-pointer h-full block">
-                <Card className={`border-2 transition-all duration-300 hover:shadow-lg h-full flex flex-col ${selectedPlan === 'annual' ? 'border-launch-orange ring-2 ring-launch-orange/20' : 'border-gray-200 hover:border-launch-orange'}`}>
+                <Card className={`border-2 transition-all duration-300 hover:shadow-lg h-full flex flex-col bg-gradient-to-br from-orange-50 via-white to-purple-50 ${selectedPlan === 'annual' ? 'border-launch-orange ring-2 ring-launch-orange/20' : 'border-gray-200 hover:border-launch-orange'}`}>
                   <CardHeader>
                     <div className="flex items-center justify-between">
                       <div>
