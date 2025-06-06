@@ -166,7 +166,7 @@ const MembersOnly = () => {
               <div className="space-y-6">
                 <div className="border border-gray-200 rounded-lg p-4 hover:border-launch-purple/30 transition-colors">
                   <a 
-                    href="https://glossary.launchbylunch.co/glossary" 
+                    href="https://glossary.launchbylunch.co/" 
                     target="_blank"
                     rel="noopener noreferrer" 
                     className="flex items-center justify-between group"
