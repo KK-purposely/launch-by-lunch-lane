@@ -1,4 +1,3 @@
-
 import { Quote } from "lucide-react";
 
 const Testimonials = () => {
@@ -9,12 +8,11 @@ const Testimonials = () => {
       quote: "After just one session of Launch by Lunch, I built a tool that actually met my needs—and launched it with a client the next week. So grateful to Karen and Stephan for creating something so practical, focused, and empowering.",
       image: "/lovable-uploads/2e38fcee-1ac3-4e29-a97c-0e79da6962c6.png"
     },
-    // Placeholders for the other two testimonials
     {
-      name: "Coming Soon",
-      title: "Founder",
-      quote: "More testimonials coming soon...",
-      image: "/placeholder.svg"
+      name: "Kate Brigham",
+      title: "Product Strategy Consultant & Fractional CPO",
+      quote: "Launch by Lunch has been a great forum for helping me figure out how to get past some of the technical blockers of vibe coding, like adding databases and secure login. As much as I've been able to learn on my own, learning with a group just feels faster — and it's more fun :)",
+      image: "/lovable-uploads/8bbdc5c0-fe87-42b8-ace0-bfb7d1b70cff.png"
     },
     {
       name: "Coming Soon", 
