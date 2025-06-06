@@ -1,3 +1,4 @@
+
 import { Quote } from "lucide-react";
 
 const Testimonials = () => {
@@ -33,7 +34,7 @@ const Testimonials = () => {
             </span>
           </h2>
           <p className="text-xl text-gray-700 max-w-3xl mx-auto leading-relaxed">
-            Real stories from founders who've transformed their ideas into reality
+            Real stories from founders in the Launch by Lunch community.
           </p>
         </div>
         
