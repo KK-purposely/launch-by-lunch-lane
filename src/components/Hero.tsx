@@ -18,8 +18,8 @@ const Hero = () => {
             </div>
           </div>
           
-          <p className="text-xl md:text-2xl text-gray-800 mb-12 max-w-3xl mx-auto leading-relaxed font-medium">
-            Founded by CTO and non-technical founder duo with the shared belief that you don't need a tech team or investor dollars to launch something <strong className="text-launch-purple">real</strong> and <strong className="text-launch-purple">revenue generating</strong> today.
+          <p className="text-xl md:text-2xl text-gray-800 mb-12 max-w-3xl mx-auto leading-relaxed font-normal">
+            Founded by CTO and non-technical founder duo with the shared belief that you don't need a tech team or investor dollars to launch something <strong className="text-launch-purple font-bold">real</strong> and <strong className="text-launch-purple font-bold">revenue generating</strong> today.
           </p>
 
           {/* Founders Section */}
