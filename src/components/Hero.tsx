@@ -1,5 +1,6 @@
+
 import { Button } from "@/components/ui/button";
-import { ArrowRight, CheckCircle } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 
 const Hero = () => {
   return (
@@ -71,7 +72,7 @@ const Hero = () => {
             </div>
           </div>
           
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <Button 
               size="lg" 
               className="group bg-gradient-to-r from-launch-purple to-launch-orange hover:from-launch-orange hover:to-launch-purple text-white px-8 py-6 text-lg rounded-full font-medium transition-all duration-300 shadow-lg hover:shadow-xl"
@@ -91,21 +92,6 @@ const Hero = () => {
             >
               Get Our Newsletter
             </Button>
-          </div>
-
-          <div className="flex flex-wrap justify-center gap-6 text-sm text-gray-600">
-            <span className="flex items-center gap-1">
-              <CheckCircle className="h-4 w-4 text-green-500" />
-              No coding required
-            </span>
-            <span className="flex items-center gap-1">
-              <CheckCircle className="h-4 w-4 text-green-500" />
-              Expert guidance included
-            </span>
-            <span className="flex items-center gap-1">
-              <CheckCircle className="h-4 w-4 text-green-500" />
-              Working prototype guaranteed
-            </span>
           </div>
         </div>
       </div>
