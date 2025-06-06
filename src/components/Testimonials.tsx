@@ -7,7 +7,7 @@ const Testimonials = () => {
       name: "Rachael Lowell",
       title: "Founder of REworking Leadership",
       quote: "After just one session of Launch by Lunch, I built a tool that actually met my needs—and launched it with a client the next week. So grateful to Karen and Stephan for creating something so practical, focused, and empowering.",
-      image: "/placeholder.svg" // Placeholder for now, can be updated when image is provided
+      image: "/lovable-uploads/2e38fcee-1ac3-4e29-a97c-0e79da6962c6.png"
     },
     // Placeholders for the other two testimonials
     {
