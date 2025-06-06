@@ -1,4 +1,3 @@
-
 import { Quote } from "lucide-react";
 
 const Testimonials = () => {
@@ -16,10 +15,10 @@ const Testimonials = () => {
       image: "/lovable-uploads/8bbdc5c0-fe87-42b8-ace0-bfb7d1b70cff.png"
     },
     {
-      name: "Coming Soon", 
-      title: "Founder",
-      quote: "More testimonials coming soon...",
-      image: "/placeholder.svg"
+      name: "Pamela Lynch",
+      title: "Chief Operating Officer",
+      quote: "I was curious about leveraging no-code / low code tools and learning the tricks and tips amongst a community. I'm a kinesthetic learner and learn best through doing and practicing, which is exactly how this was structured. Launch by Lunch was a great fit for me!",
+      image: "/lovable-uploads/bd0188ef-1039-4529-823b-9591bc46984f.png"
     }
   ];
 
