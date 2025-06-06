@@ -55,15 +55,12 @@ const Testimonials = () => {
               
               {/* Profile Image */}
               <div className="relative mb-6">
-                <div className="absolute -inset-1 bg-gradient-to-r from-launch-purple to-launch-orange rounded-full blur opacity-75 group-hover:opacity-100 transition-opacity duration-300" />
-                <div className="relative">
-                  <div className="w-20 h-20 md:w-24 md:h-24 rounded-full p-1 bg-gradient-to-r from-launch-purple via-launch-orange to-launch-purple mx-auto">
-                    <img
-                      src={testimonial.image}
-                      alt={testimonial.name}
-                      className="w-full h-full rounded-full object-cover bg-white"
-                    />
-                  </div>
+                <div className="w-20 h-20 md:w-24 md:h-24 rounded-full p-1 bg-gradient-to-r from-launch-purple via-launch-orange to-launch-purple mx-auto">
+                  <img
+                    src={testimonial.image}
+                    alt={testimonial.name}
+                    className="w-full h-full rounded-full object-cover bg-white"
+                  />
                 </div>
               </div>
               
