@@ -1,9 +1,8 @@
 
 import { Quote } from "lucide-react";
-import { useState, useEffect } from "react";
 
 const Testimonials = () => {
-  const allTestimonials = [
+  const testimonials = [
     {
       name: "Rachael Lowell",
       title: "Founder of REworking Leadership",
@@ -21,36 +20,8 @@ const Testimonials = () => {
       title: "COO & Co-Founder at Cobu",
       quote: "This accelerator has been very eye opening. Not being an engineer and knowing nothing about vibe coding coming in, it felt like the right level of information, and loved doing it as a small group with the opportunity to collaborate.",
       image: "/lovable-uploads/d702d45e-3ea8-41bd-907d-b193a9c37811.png"
-    },
-    {
-      name: "Pamela Lynch",
-      title: "Chief Operating Officer",
-      quote: "I was curious about leveraging no-code / low code tools and learning the tricks and tips amongst a community. I'm a kinesthetic learner and learn best through doing and practicing, which is exactly how this was structured. Launch by Lunch was a great fit for me!",
-      image: "/lovable-uploads/bd0188ef-1039-4529-823b-9591bc46984f.png"
     }
   ];
-
-  const [currentStartIndex, setCurrentStartIndex] = useState(0);
-  
-  // Rotate testimonials every 8 seconds
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentStartIndex((prev) => (prev + 1) % allTestimonials.length);
-    }, 8000);
-    
-    return () => clearInterval(interval);
-  }, [allTestimonials.length]);
-
-  // Get 3 testimonials starting from currentStartIndex
-  const getVisibleTestimonials = () => {
-    const visible = [];
-    for (let i = 0; i < 3; i++) {
-      visible.push(allTestimonials[(currentStartIndex + i) % allTestimonials.length]);
-    }
-    return visible;
-  };
-
-  const visibleTestimonials = getVisibleTestimonials();
 
   return (
     <section className="w-full py-20 px-4 sm:px-6 relative overflow-hidden">
@@ -68,9 +39,9 @@ const Testimonials = () => {
         </div>
         
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {visibleTestimonials.map((testimonial, index) => (
+          {testimonials.map((testimonial, index) => (
             <div 
-              key={`${testimonial.name}-${currentStartIndex}`}
+              key={testimonial.name}
               className="group text-center p-8 bg-white/80 backdrop-blur-sm rounded-2xl shadow-sm border border-gray-100 hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 hover:border-launch-orange relative"
               style={{
                 animation: `fade-in 0.6s ease-out ${index * 0.2}s both`
@@ -103,22 +74,6 @@ const Testimonials = () => {
                 <p className="text-launch-orange font-medium text-sm">{testimonial.title}</p>
               </div>
             </div>
-          ))}
-        </div>
-        
-        {/* Rotation indicator dots */}
-        <div className="flex justify-center mt-8 space-x-2">
-          {allTestimonials.map((_, index) => (
-            <button
-              key={index}
-              onClick={() => setCurrentStartIndex(index)}
-              className={`w-2 h-2 rounded-full transition-all duration-300 ${
-                index === currentStartIndex 
-                  ? 'bg-launch-orange w-6' 
-                  : 'bg-gray-300 hover:bg-launch-orange/50'
-              }`}
-              aria-label={`Show testimonials starting from ${index + 1}`}
-            />
           ))}
         </div>
       </div>
