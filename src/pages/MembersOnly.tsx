@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from "react";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
@@ -99,7 +98,7 @@ const MembersOnly = () => {
         <div className="flex justify-between items-center mb-12">
           <div>
             <h1 className="text-4xl md:text-5xl font-bold text-launch-purple mb-4">Members Area</h1>
-            <p className="text-xl text-gray-600">Welcome to your exclusive member portal</p>
+            <p className="text-xl text-gray-600">Welcome to your exclusive member portal.</p>
           </div>
           <Button 
             onClick={handleLogout} 
