@@ -201,6 +201,25 @@ const MembersOnly = () => {
                     <ExternalLink className="w-5 h-5 text-gray-400 group-hover:text-launch-purple" />
                   </a>
                 </div>
+                
+                <div className="border border-gray-200 rounded-lg p-4 hover:border-launch-purple/30 transition-colors">
+                  <a 
+                    href="https://supabase.launchbylunch.co/" 
+                    target="_blank"
+                    rel="noopener noreferrer" 
+                    className="flex items-center justify-between group"
+                  >
+                    <div>
+                      <h3 className="font-medium text-launch-purple group-hover:text-launch-purple/80 mb-1">
+                        Using Supabase
+                      </h3>
+                      <p className="text-gray-600 text-sm">
+                        Learn how to build powerful backend features with Supabase
+                      </p>
+                    </div>
+                    <ExternalLink className="w-5 h-5 text-gray-400 group-hover:text-launch-purple" />
+                  </a>
+                </div>
               </div>
             </CardContent>
           </Card>
