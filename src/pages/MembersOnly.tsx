@@ -139,10 +139,6 @@ const MembersOnly = () => {
                 </div>
                 <div className="flex items-start gap-3">
                   <Star className="w-5 h-5 text-launch-orange mt-0.5" />
-                  <span className="text-gray-700">Monthly webinars with industry experts</span>
-                </div>
-                <div className="flex items-start gap-3">
-                  <Star className="w-5 h-5 text-launch-orange mt-0.5" />
                   <span className="text-gray-700">Early access to new features and tools</span>
                 </div>
               </div>
