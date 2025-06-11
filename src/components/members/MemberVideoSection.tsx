@@ -23,10 +23,11 @@ const MemberVideoSection = () => {
     },
     {
       id: 3,
-      title: "Advanced Techniques",
-      description: "Pro tips and advanced strategies for experienced builders",
+      title: "Supabase #3: Send an Email with new Contact Submission",
+      description: "Learn how to send automated emails when new contacts submit forms",
       duration: "24:12",
-      thumbnail: "/placeholder.svg"
+      thumbnail: "https://cdn.loom.com/sessions/thumbnails/b82f83ce094741b38af6911831853513-1735764000000-with-play.gif",
+      url: "https://www.loom.com/share/b82f83ce094741b38af6911831853513?sid=63353f48-069e-4cf4-b605-9b600e509a51"
     }
   ];
 
