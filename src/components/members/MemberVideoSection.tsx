@@ -1,3 +1,4 @@
+
 import React from "react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Video, Play } from "lucide-react";
@@ -10,7 +11,7 @@ const MemberVideoSection = () => {
       description: "Learn how to connect your application to a Supabase project",
       duration: "12:34",
       thumbnail: "/lovable-uploads/4028299c-66f3-4dd7-ac24-fc358b6f47c1.png",
-      url: "https://www.loom.com/share/b6e57b8da66a47ae9e28b6f3cb8c64b4"
+      embedCode: '<div style="position: relative; padding-bottom: 60.810810810810814%; height: 0;"><iframe src="https://www.loom.com/embed/b82f83ce094741b38af6911831853513?sid=fe9476db-9b23-4396-81cf-8bcfd46239f8" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>'
     },
     {
       id: 2,
@@ -31,7 +32,32 @@ const MemberVideoSection = () => {
   ];
 
   const handleVideoClick = (video: typeof videos[0]) => {
-    if (video.url) {
+    if (video.embedCode) {
+      // Create a modal or new window to display the embedded video
+      const newWindow = window.open('', '_blank', 'width=800,height=600');
+      if (newWindow) {
+        newWindow.document.write(`
+          <!DOCTYPE html>
+          <html>
+            <head>
+              <title>${video.title}</title>
+              <style>
+                body { margin: 0; padding: 20px; font-family: Arial, sans-serif; }
+                .video-container { max-width: 800px; margin: 0 auto; }
+                h1 { color: #2A1747; margin-bottom: 20px; }
+              </style>
+            </head>
+            <body>
+              <div class="video-container">
+                <h1>${video.title}</h1>
+                ${video.embedCode}
+              </div>
+            </body>
+          </html>
+        `);
+        newWindow.document.close();
+      }
+    } else if (video.url) {
       window.open(video.url, '_blank');
     }
   };
