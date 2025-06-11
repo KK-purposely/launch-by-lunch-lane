@@ -7,10 +7,11 @@ const MemberVideoSection = () => {
   const videos = [
     {
       id: 1,
-      title: "Getting Started with No-Code",
-      description: "Learn the fundamentals of no-code development",
+      title: "Supabase: Connecting to a Project",
+      description: "Learn how to connect your application to a Supabase project",
       duration: "12:34",
-      thumbnail: "/placeholder.svg"
+      thumbnail: "/placeholder.svg",
+      url: "https://www.loom.com/share/b6e57b8da66a47ae9e28b6f3cb8c64b4"
     },
     {
       id: 2,
@@ -28,6 +29,12 @@ const MemberVideoSection = () => {
     }
   ];
 
+  const handleVideoClick = (video: typeof videos[0]) => {
+    if (video.url) {
+      window.open(video.url, '_blank');
+    }
+  };
+
   return (
     <Card className="shadow-lg border-launch-purple/10">
       <CardHeader>
@@ -44,7 +51,11 @@ const MemberVideoSection = () => {
       <CardContent>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {videos.map((video) => (
-            <div key={video.id} className="group cursor-pointer">
+            <div 
+              key={video.id} 
+              className="group cursor-pointer"
+              onClick={() => handleVideoClick(video)}
+            >
               <div className="relative mb-3 rounded-lg overflow-hidden bg-gray-100">
                 <img 
                   src={video.thumbnail} 
