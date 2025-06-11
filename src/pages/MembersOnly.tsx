@@ -5,6 +5,7 @@ import PasswordForm from "@/components/members/PasswordForm";
 import MembersAreaHeader from "@/components/members/MembersAreaHeader";
 import MemberWelcomeCard from "@/components/members/MemberWelcomeCard";
 import MemberResourcesCard from "@/components/members/MemberResourcesCard";
+import MemberVideoSection from "@/components/members/MemberVideoSection";
 
 const MembersOnly = () => {
   const [password, setPassword] = useState("");
@@ -61,6 +62,10 @@ const MembersOnly = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
           <MemberWelcomeCard />
           <MemberResourcesCard />
+        </div>
+        
+        <div className="mb-12">
+          <MemberVideoSection />
         </div>
       </div>
     </div>
