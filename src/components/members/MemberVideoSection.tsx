@@ -87,7 +87,7 @@ const MemberVideoSection = () => {
                 <img 
                   src={video.thumbnail} 
                   alt={video.title}
-                  className="w-full h-32 object-cover"
+                  className="w-full h-48 object-cover"
                 />
                 <div className="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-colors flex items-center justify-center">
                   <div className="bg-white/90 rounded-full p-3 group-hover:scale-110 transition-transform">
