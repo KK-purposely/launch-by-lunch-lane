@@ -1,3 +1,4 @@
+
 import React from "react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Video, Play } from "lucide-react";
@@ -14,10 +15,11 @@ const MemberVideoSection = () => {
     },
     {
       id: 2,
-      title: "Building Your First App",
-      description: "Step-by-step tutorial for creating your first application",
+      title: "Supabase #2: Saving data to tables",
+      description: "Learn how to save and manage data in Supabase tables",
       duration: "18:45",
-      thumbnail: "/placeholder.svg"
+      thumbnail: "https://cdn.loom.com/sessions/thumbnails/36adec83273e438b97dfe759de878c5a-1735749006000-with-play.gif",
+      url: "https://www.loom.com/share/36adec83273e438b97dfe759de878c5a?sid=971ad3f0-b1e7-4314-90c0-e963c8aabef6"
     },
     {
       id: 3,
