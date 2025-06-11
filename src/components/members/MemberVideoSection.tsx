@@ -1,4 +1,3 @@
-
 import React from "react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Video, Play } from "lucide-react";
@@ -10,7 +9,7 @@ const MemberVideoSection = () => {
       title: "Supabase: Connecting to a Project",
       description: "Learn how to connect your application to a Supabase project",
       duration: "12:34",
-      thumbnail: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=400&h=200&fit=crop&auto=format",
+      thumbnail: "https://cdn.loom.com/sessions/thumbnails/b6e57b8da66a47ae9e28b6f3cb8c64b4-1731439200000-with-play.gif",
       url: "https://www.loom.com/share/b6e57b8da66a47ae9e28b6f3cb8c64b4"
     },
     {
