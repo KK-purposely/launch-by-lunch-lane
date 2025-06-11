@@ -19,7 +19,7 @@ const MemberVideoSection = () => {
       description: "Learn how to save and manage data in Supabase tables",
       duration: "18:45",
       thumbnail: "https://cdn.loom.com/sessions/thumbnails/36adec83273e438b97dfe759de878c5a-1735749006000-with-play.gif",
-      url: "https://www.loom.com/share/36adec83273e438b97dfe759de878c5a?sid=971ad3f0-b1e7-4314-90c0-e963c8aabef6"
+      embedCode: '<div style="position: relative; padding-bottom: 60.810810810810814%; height: 0;"><iframe src="https://www.loom.com/embed/b6e57b8da66a47ae9e28b6f3cb8c64b4?sid=441624f0-e29d-4186-bf16-38536bceab3d" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>'
     },
     {
       id: 3,
