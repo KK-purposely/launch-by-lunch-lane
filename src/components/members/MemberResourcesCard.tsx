@@ -29,6 +29,11 @@ const MemberResourcesCard = () => {
       title: "Sending emails through Vibe Coded apps",
       description: "Learn how to integrate email functionality into your no-code applications",
       url: "https://resend.launchbylunch.co/"
+    },
+    {
+      title: "API keys and Secrets in Vibe Coded apps",
+      description: "Learn how to securely manage API keys and secrets in your applications",
+      url: "https://api-keys.launchbylunch.co/"
     }
   ];
 
