@@ -24,6 +24,11 @@ const MemberResourcesCard = () => {
       title: "Front End vs. Back End",
       description: "Understanding the difference between frontend and backend development",
       url: "https://frontend.launchbylunch.co/"
+    },
+    {
+      title: "Sending emails through Vibe Coded apps",
+      description: "Learn how to integrate email functionality into your no-code applications",
+      url: "https://resend.launchbylunch.co/"
     }
   ];
 
