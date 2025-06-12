@@ -19,6 +19,11 @@ const MemberResourcesCard = () => {
       title: "Using Supabase",
       description: "Learn how to build powerful backend features with Supabase",
       url: "https://supabase.launchbylunch.co/"
+    },
+    {
+      title: "Front End vs. Back End",
+      description: "Understanding the difference between frontend and backend development",
+      url: "https://frontend.launchbylunch.co/"
     }
   ];
 
