@@ -27,7 +27,7 @@ const MemberVideoSection = () => {
       description: "Learn how to send automated emails when new contacts submit forms",
       duration: "24:12",
       thumbnail: "https://cdn.loom.com/sessions/thumbnails/b82f83ce094741b38af6911831853513-1735764000000-with-play.gif",
-      url: "https://www.loom.com/share/b82f83ce094741b38af6911831853513?sid=63353f48-069e-4cf4-b605-9b600e509a51"
+      embedCode: '<div style="position: relative; padding-bottom: 60.810810810810814%; height: 0;"><iframe src="https://www.loom.com/embed/b82f83ce094741b38af6911831853513?sid=56082dde-9db8-47c0-8f99-3b447e185ecd" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>'
     }
   ];
 
