@@ -57,8 +57,6 @@ const MemberVideoSection = () => {
         `);
         newWindow.document.close();
       }
-    } else if (video.url) {
-      window.open(video.url, '_blank');
     }
   };
 
