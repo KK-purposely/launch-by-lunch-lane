@@ -15,6 +15,14 @@ const MemberVideoSection = () => {
     },
     {
       id: 2,
+      title: "Connecting Github #2: Navigating your code in Lovable & Github",
+      description: "Learn how to navigate and manage your code between Lovable and Github",
+      duration: "18:20",
+      thumbnail: "/lovable-uploads/89396bc0-f979-49d2-afe9-7185b1acb510.png",
+      embedCode: '<div style="position: relative; padding-bottom: 62.5%; height: 0;"><iframe src="https://www.loom.com/embed/81b04467343a488e8a19021197251b90?sid=4439fe8b-325d-4fc3-a703-a56413b85bc4" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>'
+    },
+    {
+      id: 3,
       title: "Supabase: Connecting to a Project",
       description: "Learn how to connect your application to a Supabase project",
       duration: "12:34",
@@ -22,7 +30,7 @@ const MemberVideoSection = () => {
       embedCode: '<div style="position: relative; padding-bottom: 60.810810810810814%; height: 0;"><iframe src="https://www.loom.com/embed/b82f83ce094741b38af6911831853513?sid=fe9476db-9b23-4396-81cf-8bcfd46239f8" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>'
     },
     {
-      id: 3,
+      id: 4,
       title: "Supabase #2: Saving data to tables",
       description: "Learn how to save and manage data in Supabase tables",
       duration: "18:45",
@@ -30,7 +38,7 @@ const MemberVideoSection = () => {
       embedCode: '<div style="position: relative; padding-bottom: 60.810810810810814%; height: 0;"><iframe src="https://www.loom.com/embed/b6e57b8da66a47ae9e28b6f3cb8c64b4?sid=441624f0-e29d-4186-bf16-38536bceab3d" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>'
     },
     {
-      id: 4,
+      id: 5,
       title: "Supabase #3: Send an Email with new Contact Submission",
       description: "Learn how to send automated emails when new contacts submit forms",
       duration: "24:12",
