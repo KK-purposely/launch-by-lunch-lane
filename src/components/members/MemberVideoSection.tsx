@@ -1,9 +1,10 @@
+
 import React from "react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Video, Play } from "lucide-react";
 
 const MemberVideoSection = () => {
-  const videos = [
+  const githubVideos = [
     {
       id: 1,
       title: "Connecting Github #1: How to Save your code outside Lovable",
@@ -27,7 +28,10 @@ const MemberVideoSection = () => {
       duration: "3:31",
       thumbnail: "/lovable-uploads/89396bc0-f979-49d2-afe9-7185b1acb510.png",
       embedCode: '<div style="position: relative; padding-bottom: 62.5%; height: 0;"><iframe src="https://www.loom.com/embed/c72ec25d7c1b44699d01ccf4ea0cd2b5?sid=45652cc8-d920-4455-87af-35f271a41e6b" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>'
-    },
+    }
+  ];
+
+  const supabaseVideos = [
     {
       id: 4,
       title: "Supabase: Connecting to a Project",
@@ -54,7 +58,7 @@ const MemberVideoSection = () => {
     }
   ];
 
-  const handleVideoClick = (video: typeof videos[0]) => {
+  const handleVideoClick = (video: typeof githubVideos[0]) => {
     if (video.embedCode) {
       // Create a modal or new window to display the embedded video
       const newWindow = window.open('', '_blank', 'width=800,height=600');
@@ -83,6 +87,40 @@ const MemberVideoSection = () => {
     }
   };
 
+  const VideoGrid = ({ videos }: { videos: typeof githubVideos }) => (
+    <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+      {videos.map((video) => (
+        <div 
+          key={video.id} 
+          className="group cursor-pointer"
+          onClick={() => handleVideoClick(video)}
+        >
+          <div className="relative mb-3 rounded-lg overflow-hidden bg-gray-100">
+            <img 
+              src={video.thumbnail} 
+              alt={video.title}
+              className="w-full h-48 object-cover"
+            />
+            <div className="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-colors flex items-center justify-center">
+              <div className="bg-white/90 rounded-full p-3 group-hover:scale-110 transition-transform">
+                <Play className="w-6 h-6 text-launch-purple" />
+              </div>
+            </div>
+            <div className="absolute bottom-2 right-2 bg-black/70 text-white text-xs px-2 py-1 rounded">
+              {video.duration}
+            </div>
+          </div>
+          <h3 className="font-medium text-launch-purple group-hover:text-launch-purple/80 mb-1">
+            {video.title}
+          </h3>
+          <p className="text-gray-600 text-sm">
+            {video.description}
+          </p>
+        </div>
+      ))}
+    </div>
+  );
+
   return (
     <Card className="shadow-lg border-launch-purple/10">
       <CardHeader>
@@ -97,36 +135,14 @@ const MemberVideoSection = () => {
         </CardDescription>
       </CardHeader>
       <CardContent>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          {videos.map((video) => (
-            <div 
-              key={video.id} 
-              className="group cursor-pointer"
-              onClick={() => handleVideoClick(video)}
-            >
-              <div className="relative mb-3 rounded-lg overflow-hidden bg-gray-100">
-                <img 
-                  src={video.thumbnail} 
-                  alt={video.title}
-                  className="w-full h-48 object-cover"
-                />
-                <div className="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-colors flex items-center justify-center">
-                  <div className="bg-white/90 rounded-full p-3 group-hover:scale-110 transition-transform">
-                    <Play className="w-6 h-6 text-launch-purple" />
-                  </div>
-                </div>
-                <div className="absolute bottom-2 right-2 bg-black/70 text-white text-xs px-2 py-1 rounded">
-                  {video.duration}
-                </div>
-              </div>
-              <h3 className="font-medium text-launch-purple group-hover:text-launch-purple/80 mb-1">
-                {video.title}
-              </h3>
-              <p className="text-gray-600 text-sm">
-                {video.description}
-              </p>
-            </div>
-          ))}
+        <div className="mb-8">
+          <h2 className="text-2xl font-bold text-launch-purple mb-6">Learning Github</h2>
+          <VideoGrid videos={githubVideos} />
+        </div>
+        
+        <div>
+          <h2 className="text-2xl font-bold text-launch-purple mb-6">Learning Supabase</h2>
+          <VideoGrid videos={supabaseVideos} />
         </div>
       </CardContent>
     </Card>
