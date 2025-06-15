@@ -14,12 +14,17 @@ import {
 const Navigation = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
+  const handleLogoClick = () => {
+    // Scroll to top when clicking the logo
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
   return (
     <nav className="bg-white shadow-sm border-b border-gray-200 sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6">
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center">
-            <Link to="/" className="flex-shrink-0">
+            <Link to="/" className="flex-shrink-0" onClick={handleLogoClick}>
               <img
                 src="/lovable-uploads/9e01cb2b-d7f4-4b83-adb5-706805de7735.png"
                 alt="Launch by Lunch Logo"
@@ -34,10 +39,6 @@ const Navigation = () => {
                   Home
                 </Link>
 
-                <Link to="/members" className="px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-launch-orange">
-                  Members Only
-                </Link>
-
                 <Link to="/join" className="px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-launch-orange">
                   Join
                 </Link>
@@ -48,6 +49,10 @@ const Navigation = () => {
 
                 <Link to="/contact" className="px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-launch-orange">
                   Contact
+                </Link>
+
+                <Link to="/members" className="px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-launch-orange">
+                  Members Only
                 </Link>
               </div>
             </div>
@@ -87,16 +92,6 @@ const Navigation = () => {
                 
                 <DropdownMenuItem asChild>
                   <Link 
-                    to="/members" 
-                    className="w-full"
-                    onClick={() => setIsMenuOpen(false)}
-                  >
-                    Members Only
-                  </Link>
-                </DropdownMenuItem>
-                
-                <DropdownMenuItem asChild>
-                  <Link 
                     to="/join" 
                     className="w-full"
                     onClick={() => setIsMenuOpen(false)}
@@ -122,6 +117,16 @@ const Navigation = () => {
                     onClick={() => setIsMenuOpen(false)}
                   >
                     Contact
+                  </Link>
+                </DropdownMenuItem>
+                
+                <DropdownMenuItem asChild>
+                  <Link 
+                    to="/members" 
+                    className="w-full"
+                    onClick={() => setIsMenuOpen(false)}
+                  >
+                    Members Only
                   </Link>
                 </DropdownMenuItem>
                 
