@@ -1,4 +1,5 @@
 
+
 import React from "react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Video, Play } from "lucide-react";
@@ -17,7 +18,7 @@ const MemberVideoSection = () => {
       id: 2,
       title: "Connecting Github #2: Navigating your code in Lovable & Github",
       description: "Learn how to navigate and manage your code between Lovable and Github",
-      duration: "18:20",
+      duration: "2:44",
       thumbnail: "/lovable-uploads/89396bc0-f979-49d2-afe9-7185b1acb510.png",
       embedCode: '<div style="position: relative; padding-bottom: 62.5%; height: 0;"><iframe src="https://www.loom.com/embed/81b04467343a488e8a19021197251b90?sid=4439fe8b-325d-4fc3-a703-a56413b85bc4" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>'
     },
@@ -135,3 +136,4 @@ const MemberVideoSection = () => {
 };
 
 export default MemberVideoSection;
+
