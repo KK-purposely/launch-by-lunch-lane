@@ -48,7 +48,7 @@ const MemberVideoSection = () => {
       id: 6,
       title: "Supabase #3: Send an Email with new Contact Submission",
       description: "Learn how to send automated emails when new contacts submit forms",
-      duration: "24:12",
+      duration: "3:25",
       thumbnail: "/lovable-uploads/97021a1a-bbc5-4c1b-b009-17d3ff56fbe1.png",
       embedCode: '<div style="position: relative; padding-bottom: 60.810810810810814%; height: 0;"><iframe src="https://www.loom.com/embed/b82f83ce094741b38af6911831853513?sid=56082dde-9db8-47c0-8f99-3b447e185ecd" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>'
     }
