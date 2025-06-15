@@ -40,7 +40,7 @@ const MemberVideoSection = () => {
       id: 5,
       title: "Supabase #2: Saving data to tables",
       description: "Learn how to save and manage data in Supabase tables",
-      duration: "18:45",
+      duration: "2:48",
       thumbnail: "/lovable-uploads/97021a1a-bbc5-4c1b-b009-17d3ff56fbe1.png",
       embedCode: '<div style="position: relative; padding-bottom: 60.810810810810814%; height: 0;"><iframe src="https://www.loom.com/embed/b6e57b8da66a47ae9e28b6f3cb8c64b4?sid=441624f0-e29d-4186-bf16-38536bceab3d" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>'
     },
