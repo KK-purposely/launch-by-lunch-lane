@@ -1,3 +1,4 @@
+
 import React from "react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Video, Play } from "lucide-react";
@@ -24,7 +25,7 @@ const MemberVideoSection = () => {
       id: 3,
       title: "Connecting Github #3: Making changes directly in the code",
       description: "Learn how to make changes directly in your code while connected to Github",
-      duration: "22:15",
+      duration: "3:31",
       thumbnail: "/lovable-uploads/89396bc0-f979-49d2-afe9-7185b1acb510.png",
       embedCode: '<div style="position: relative; padding-bottom: 62.5%; height: 0;"><iframe src="https://www.loom.com/embed/c72ec25d7c1b44699d01ccf4ea0cd2b5?sid=45652cc8-d920-4455-87af-35f271a41e6b" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>'
     },
