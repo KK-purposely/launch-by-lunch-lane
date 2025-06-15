@@ -32,7 +32,7 @@ const MemberVideoSection = () => {
       id: 4,
       title: "Supabase: Connecting to a Project",
       description: "Learn how to connect your application to a Supabase project",
-      duration: "12:34",
+      duration: "3:21",
       thumbnail: "/lovable-uploads/4028299c-66f3-4dd7-ac24-fc358b6f47c1.png",
       embedCode: '<div style="position: relative; padding-bottom: 60.810810810810814%; height: 0;"><iframe src="https://www.loom.com/embed/b82f83ce094741b38af6911831853513?sid=fe9476db-9b23-4396-81cf-8bcfd46239f8" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>'
     },
