@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 
@@ -41,7 +40,7 @@ const Hero = () => {
                 </div>
                 <div className="text-center">
                   <h3 className="font-bold text-xl text-launch-purple mb-2">Karen Kelly</h3>
-                  <p className="text-launch-orange font-medium text-sm uppercase tracking-wider">CEO • Non-Techy Founder</p>
+                  <p className="text-launch-orange font-medium text-sm uppercase tracking-wider">CEO • AI-empowered Founder</p>
                   <p className="text-gray-600 text-sm mt-2 max-w-[200px]">Proving you don't need code to build something amazing</p>
                 </div>
               </div>
