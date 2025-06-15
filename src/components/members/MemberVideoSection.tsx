@@ -1,4 +1,3 @@
-
 import React from "react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Video, Play } from "lucide-react";
@@ -23,6 +22,14 @@ const MemberVideoSection = () => {
     },
     {
       id: 3,
+      title: "Connecting Github #3: Making changes directly in the code",
+      description: "Learn how to make changes directly in your code while connected to Github",
+      duration: "22:15",
+      thumbnail: "/lovable-uploads/89396bc0-f979-49d2-afe9-7185b1acb510.png",
+      embedCode: '<div style="position: relative; padding-bottom: 62.5%; height: 0;"><iframe src="https://www.loom.com/embed/c72ec25d7c1b44699d01ccf4ea0cd2b5?sid=45652cc8-d920-4455-87af-35f271a41e6b" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>'
+    },
+    {
+      id: 4,
       title: "Supabase: Connecting to a Project",
       description: "Learn how to connect your application to a Supabase project",
       duration: "12:34",
@@ -30,7 +37,7 @@ const MemberVideoSection = () => {
       embedCode: '<div style="position: relative; padding-bottom: 60.810810810810814%; height: 0;"><iframe src="https://www.loom.com/embed/b82f83ce094741b38af6911831853513?sid=fe9476db-9b23-4396-81cf-8bcfd46239f8" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>'
     },
     {
-      id: 4,
+      id: 5,
       title: "Supabase #2: Saving data to tables",
       description: "Learn how to save and manage data in Supabase tables",
       duration: "18:45",
@@ -38,7 +45,7 @@ const MemberVideoSection = () => {
       embedCode: '<div style="position: relative; padding-bottom: 60.810810810810814%; height: 0;"><iframe src="https://www.loom.com/embed/b6e57b8da66a47ae9e28b6f3cb8c64b4?sid=441624f0-e29d-4186-bf16-38536bceab3d" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>'
     },
     {
-      id: 5,
+      id: 6,
       title: "Supabase #3: Send an Email with new Contact Submission",
       description: "Learn how to send automated emails when new contacts submit forms",
       duration: "24:12",
