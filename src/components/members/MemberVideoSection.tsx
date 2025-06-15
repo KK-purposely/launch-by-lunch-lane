@@ -1,5 +1,3 @@
-
-
 import React from "react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Video, Play } from "lucide-react";
@@ -10,7 +8,7 @@ const MemberVideoSection = () => {
       id: 1,
       title: "Connecting Github #1: How to Save your code outside Lovable",
       description: "Connecting Github: How to take your code outside Lovable",
-      duration: "15:30",
+      duration: "3:25",
       thumbnail: "/lovable-uploads/89396bc0-f979-49d2-afe9-7185b1acb510.png",
       embedCode: '<div style="position: relative; padding-bottom: 60.810810810810814%; height: 0;"><iframe src="https://www.loom.com/embed/b82f83ce094741b38af6911831853513?sid=fe9476db-9b23-4396-81cf-8bcfd46239f8" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>'
     },
@@ -136,4 +134,3 @@ const MemberVideoSection = () => {
 };
 
 export default MemberVideoSection;
-
