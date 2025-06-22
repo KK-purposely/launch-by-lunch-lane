@@ -38,9 +38,9 @@ const CTA = () => {
             variant="outline" 
             size="lg"
             className="px-8 py-6 text-lg border-white text-white hover:bg-white hover:text-launch-orange rounded-full font-medium transition-all duration-300"
-            onClick={() => window.location.href = '/accelerators'}
+            onClick={() => window.location.href = '/join'}
           >
-            View Accelerators
+            Learn More
           </Button>
         </div>
       </div>
