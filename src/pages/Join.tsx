@@ -4,7 +4,6 @@ import { useNavigate } from "react-router-dom";
 import ContactForm from "@/components/ContactForm";
 import HeroSection from "@/components/join/HeroSection";
 import MainServicesSection from "@/components/join/MainServicesSection";
-import PointOfServiceSection from "@/components/join/PointOfServiceSection";
 import BottomCTASection from "@/components/join/BottomCTASection";
 import Footer from "@/components/Footer";
 
@@ -37,7 +36,6 @@ const Join = () => {
     <div className="min-h-screen bg-gradient-to-br from-launch-light via-white to-orange-50">
       <HeroSection />
       <MainServicesSection onServiceClick={handleServiceClick} />
-      <PointOfServiceSection onServiceClick={handleServiceClick} />
       <div className="max-w-5xl mx-auto px-4 sm:px-6">
         <BottomCTASection />
         <ContactForm
