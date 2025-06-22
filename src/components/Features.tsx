@@ -1,4 +1,5 @@
 
+
 import { Code, Users, Rocket, Clock, Sparkles, CheckCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
@@ -100,7 +101,7 @@ const Features = () => {
               className="bg-gradient-to-r from-launch-purple to-launch-orange hover:from-launch-orange hover:to-launch-purple text-white px-8 py-6 text-lg rounded-full font-medium transition-all duration-300 shadow-lg hover:shadow-xl"
               onClick={() => window.location.href = '/join'}
             >
-              Explore All Services
+              Join our Community
             </Button>
           </div>
         </div>
@@ -110,3 +111,4 @@ const Features = () => {
 };
 
 export default Features;
+
