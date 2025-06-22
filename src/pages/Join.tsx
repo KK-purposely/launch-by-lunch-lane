@@ -5,6 +5,7 @@ import ContactForm from "@/components/ContactForm";
 import HeroSection from "@/components/join/HeroSection";
 import MainServicesSection from "@/components/join/MainServicesSection";
 import BottomCTASection from "@/components/join/BottomCTASection";
+import FAQSection from "@/components/join/FAQSection";
 import Footer from "@/components/Footer";
 
 const Join = () => {
@@ -36,6 +37,7 @@ const Join = () => {
     <div className="min-h-screen bg-gradient-to-br from-launch-light via-white to-orange-50">
       <HeroSection />
       <MainServicesSection onServiceClick={handleServiceClick} />
+      <FAQSection />
       <div className="max-w-5xl mx-auto px-4 sm:px-6">
         <BottomCTASection />
         <ContactForm
