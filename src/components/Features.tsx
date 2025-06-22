@@ -81,8 +81,8 @@ const Features = () => {
             </h2>
             
             <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-              We're not just another tech community—we're a movement for founders who believe in 
-              <span className="text-launch-orange font-semibold"> building without barriers</span>
+              Welcome to the new eco-system of founders, fractionals, and investors 
+              <span className="text-launch-orange font-semibold"> funding the next generation of AI-first startups.</span>
             </p>
           </div>
           
