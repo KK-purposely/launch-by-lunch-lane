@@ -1,9 +1,26 @@
 
-
-import { Code, Users, Rocket, Clock, Sparkles, CheckCircle } from "lucide-react";
+import { Code, Users, Rocket, Clock, Sparkles, CheckCircle, Heart, DollarSign, Brain } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const Features = () => {
+  const differentiators = [
+    {
+      icon: Brain,
+      title: "No Code-Splaining",
+      description: "Learn AI and no-code tools in plain English. No technical jargon, no overwhelming complexity—just practical knowledge for non-technical founders."
+    },
+    {
+      icon: Heart,
+      title: "Community Over Competition",
+      description: "End founder loneliness. Connect with like-minded entrepreneurs who understand your journey and celebrate your wins alongside their own."
+    },
+    {
+      icon: DollarSign,
+      title: "Revenue Before Investment",
+      description: "Build stellar MVPs using AI-prototyping tools that generate real revenue from day one—before you ever need an investor check."
+    }
+  ];
+
   const features = [
     {
       icon: Code,
@@ -31,6 +48,51 @@ const Features = () => {
     <section className="w-full py-20 px-4 sm:px-6 relative overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-r from-launch-purple/5 via-transparent to-launch-orange/5" />
       <div className="relative max-w-6xl mx-auto">
+        {/* What Makes Us Different Section */}
+        <div className="mb-20">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-8">
+              <span className="bg-gradient-to-r from-launch-purple to-launch-orange bg-clip-text text-transparent">
+                What makes us different.
+              </span>
+            </h2>
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+            {differentiators.map((item, index) => (
+              <div 
+                key={index}
+                className="group bg-gradient-to-br from-pink-50 to-orange-50 backdrop-blur-sm rounded-3xl p-8 shadow-sm border border-orange-100 hover:shadow-xl transition-all duration-500 hover:-translate-y-2 hover:border-launch-orange"
+                style={{
+                  animation: `fade-in 0.6s ease-out ${index * 0.1}s both`
+                }}
+              >
+                <div className="relative mb-6">
+                  <div className="absolute inset-0 bg-gradient-to-r from-launch-purple/20 to-launch-orange/20 rounded-full blur-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                  <div className="relative w-16 h-16 bg-gradient-to-r from-launch-purple to-launch-orange rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                    <item.icon className="h-8 w-8 text-white" />
+                  </div>
+                </div>
+                <h3 className="text-2xl font-bold text-launch-purple mb-4 group-hover:bg-gradient-to-r group-hover:from-launch-purple group-hover:to-launch-orange group-hover:bg-clip-text group-hover:text-transparent transition-all duration-300">
+                  {item.title}
+                </h3>
+                <p className="text-gray-700 leading-relaxed text-lg">{item.description}</p>
+              </div>
+            ))}
+          </div>
+
+          <div className="text-center">
+            <Button 
+              size="lg" 
+              className="bg-gradient-to-r from-launch-purple to-launch-orange hover:from-launch-orange hover:to-launch-purple text-white px-8 py-4 text-lg rounded-full font-medium transition-all duration-300 shadow-lg hover:shadow-xl"
+              onClick={() => window.location.href = '/join'}
+            >
+              Learn More
+            </Button>
+          </div>
+        </div>
+
+        {/* Original Features Section */}
         <div className="text-center mb-16">
           <div className="inline-flex items-center gap-2 bg-gradient-to-r from-launch-purple to-launch-orange bg-clip-text text-transparent mb-4">
             <Sparkles className="h-5 w-5 text-launch-orange animate-pulse" />
@@ -39,7 +101,7 @@ const Features = () => {
           </div>
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
             <span className="bg-gradient-to-r from-launch-purple to-launch-orange bg-clip-text text-transparent">
-              Build. Launch. Scale.
+              Your Journey with Us
             </span>
           </h2>
           <p className="text-xl text-gray-700 max-w-3xl mx-auto leading-relaxed">
@@ -111,4 +173,3 @@ const Features = () => {
 };
 
 export default Features;
-
