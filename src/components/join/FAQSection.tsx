@@ -59,10 +59,10 @@ const FAQSection = () => {
             <p className="text-gray-600 text-lg leading-relaxed">
               If you have any further questions, please email us at{" "}
               <a 
-                href="mailto:support@launchbylunch.com"
+                href="mailto:welcome@launchbylunch.co"
                 className="text-launch-orange font-medium hover:underline"
               >
-                support@launchbylunch.com
+                welcome@launchbylunch.co
               </a>
               .
             </p>
