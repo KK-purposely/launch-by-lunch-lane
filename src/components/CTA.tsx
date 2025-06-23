@@ -3,6 +3,13 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight, Sparkles } from "lucide-react";
 
 const CTA = () => {
+  const scrollToJoinWaitlist = () => {
+    const joinSection = document.querySelector('[data-section="join-waitlist"]');
+    if (joinSection) {
+      joinSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <section className="w-full py-20 px-4 sm:px-6 bg-gradient-to-r from-launch-orange via-launch-orange to-launch-purple relative overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-r from-launch-orange/90 to-launch-purple/90" />
@@ -38,7 +45,7 @@ const CTA = () => {
             variant="outline" 
             size="lg"
             className="px-8 py-6 text-lg border-white text-white hover:bg-white hover:text-launch-orange rounded-full font-medium transition-all duration-300"
-            onClick={() => window.location.href = '/join'}
+            onClick={scrollToJoinWaitlist}
           >
             Learn More
           </Button>
