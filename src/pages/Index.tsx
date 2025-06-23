@@ -34,8 +34,8 @@ const Index = () => {
       
       <div className="min-h-screen flex flex-col bg-gradient-to-br from-launch-light via-white to-orange-50">
         <Hero />
-        <Testimonials />
         <Features />
+        <Testimonials />
         <Footer />
       </div>
     </>
