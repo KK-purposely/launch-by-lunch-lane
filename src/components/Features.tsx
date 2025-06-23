@@ -40,7 +40,7 @@ const Features = () => {
       
       <div className="relative max-w-7xl mx-auto">
         {/* What Makes Us Different Section */}
-        <div className="mb-20">
+        <div>
           {/* Enhanced header with decorative elements */}
           <div className="text-center mb-20 relative">
             <div className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-4 w-24 h-1 bg-gradient-to-r from-launch-purple to-launch-orange rounded-full opacity-60" />
@@ -121,41 +121,6 @@ const Features = () => {
                 </span>
               </Button>
             </div>
-          </div>
-        </div>
-
-        {/* Ready to Join the Movement Section - Moved to bottom */}
-        <div className="text-center">
-          <div className="bg-gradient-to-r from-launch-purple/10 via-launch-orange/10 to-launch-purple/10 rounded-3xl p-8 md:p-12">
-            <h3 className="text-2xl md:text-3xl font-bold mb-4">
-              <span className="bg-gradient-to-r from-launch-purple to-launch-orange bg-clip-text text-transparent">
-                Ready to Join the Movement?
-              </span>
-            </h3>
-            <p className="text-lg text-gray-700 mb-6 max-w-2xl mx-auto">
-              Don't let code and cost stand between you and your vision. Start your journey today.
-            </p>
-            <div className="flex flex-wrap justify-center gap-4 text-sm text-gray-600 mb-8">
-              <span className="flex items-center gap-1">
-                <CheckCircle className="h-4 w-4 text-green-500" />
-                Small group learning
-              </span>
-              <span className="flex items-center gap-1">
-                <CheckCircle className="h-4 w-4 text-green-500" />
-                Expert mentorship
-              </span>
-              <span className="flex items-center gap-1">
-                <CheckCircle className="h-4 w-4 text-green-500" />
-                Proven methodology
-              </span>
-            </div>
-            <Button 
-              size="lg" 
-              className="bg-gradient-to-r from-launch-purple to-launch-orange hover:from-launch-orange hover:to-launch-purple text-white px-8 py-6 text-lg rounded-full font-medium transition-all duration-300 shadow-lg hover:shadow-xl"
-              onClick={() => window.location.href = '/join'}
-            >
-              Join our Community
-            </Button>
           </div>
         </div>
       </div>
