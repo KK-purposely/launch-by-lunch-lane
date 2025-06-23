@@ -78,11 +78,11 @@ const Index = () => {
         </section>
         
         <Features />
-        <AcceleratorCTA />
         <Testimonials />
         
         {/* Join page content */}
         <HeroSection />
+        <AcceleratorCTA />
         <MainServicesSection onServiceClick={handleServiceClick} />
         <FAQSection />
         <div className="max-w-5xl mx-auto px-4 sm:px-6">
