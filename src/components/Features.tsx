@@ -1,8 +1,14 @@
-
 import { Code, Users, Rocket, Clock, Sparkles, CheckCircle, Heart, DollarSign, Brain } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const Features = () => {
+  const scrollToJoinWaitlist = () => {
+    const joinSection = document.querySelector('[data-section="join-waitlist"]');
+    if (joinSection) {
+      joinSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   const differentiators = [
     {
       icon: Brain,
@@ -113,7 +119,7 @@ const Features = () => {
               <Button 
                 size="lg" 
                 className="relative bg-gradient-to-r from-launch-purple to-launch-orange hover:from-launch-orange hover:to-launch-purple text-white px-12 py-6 text-xl rounded-full font-semibold transition-all duration-300 shadow-xl hover:shadow-2xl hover:scale-105 group"
-                onClick={() => window.location.href = '/join'}
+                onClick={scrollToJoinWaitlist}
               >
                 <span className="flex items-center gap-3">
                   Learn More
