@@ -60,6 +60,24 @@ const Index = () => {
       
       <div className="min-h-screen flex flex-col bg-gradient-to-br from-launch-light via-white to-orange-50">
         <Hero />
+        
+        {/* YouTube Video Section */}
+        <section className="w-full py-16 px-4 sm:px-6">
+          <div className="max-w-4xl mx-auto">
+            <div className="w-3/5 mx-auto">
+              <div className="relative w-full" style={{ paddingBottom: '56.25%' }}>
+                <iframe
+                  src="https://www.youtube.com/embed/JS1R58ibwS4"
+                  title="Launch by Lunch Video"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                  className="absolute top-0 left-0 w-full h-full rounded-lg shadow-lg"
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+        
         <Features />
         <Testimonials />
         
