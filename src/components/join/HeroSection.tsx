@@ -4,7 +4,7 @@ import { Sparkles } from "lucide-react";
 
 const HeroSection = () => {
   return (
-    <div className="relative overflow-hidden">
+    <div className="relative overflow-hidden" data-section="join-waitlist">
       <div className="absolute inset-0 bg-gradient-to-r from-launch-purple/10 via-transparent to-launch-orange/10" />
       <div className="relative max-w-4xl mx-auto px-4 sm:px-6 py-16">
         <div className="text-center mb-4">

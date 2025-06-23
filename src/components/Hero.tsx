@@ -3,6 +3,13 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 
 const Hero = () => {
+  const scrollToJoinWaitlist = () => {
+    const joinSection = document.querySelector('[data-section="join-waitlist"]');
+    if (joinSection) {
+      joinSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <div className="relative overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-r from-launch-purple/20 via-launch-orange/10 to-launch-orange/20" />
@@ -76,7 +83,7 @@ const Hero = () => {
             <Button 
               size="lg" 
               className="group bg-gradient-to-r from-launch-purple to-launch-orange hover:from-launch-orange hover:to-launch-purple text-white px-8 py-6 text-lg rounded-full font-medium transition-all duration-300 shadow-lg hover:shadow-xl"
-              onClick={() => window.location.href = '/join'}
+              onClick={scrollToJoinWaitlist}
             >
               <span className="flex items-center gap-2">
                 Join Our Community
@@ -88,9 +95,9 @@ const Hero = () => {
               variant="outline" 
               size="lg"
               className="px-8 py-6 text-lg border-launch-orange text-launch-orange hover:bg-launch-orange hover:text-white rounded-full font-medium transition-all duration-300"
-              onClick={() => window.open('https://learn.launchbylunch.co/subscribe', '_blank')}
+              onClick={scrollToJoinWaitlist}
             >
-              Get Our Newsletter
+              Learn More
             </Button>
           </div>
         </div>
