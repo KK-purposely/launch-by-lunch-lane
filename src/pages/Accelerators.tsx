@@ -1,3 +1,4 @@
+
 import React, { useEffect } from "react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -10,6 +11,13 @@ const Accelerators = () => {
   }, []);
 
   const cohorts = [
+    {
+      id: 6,
+      name: "Cohort #6 - Vibe Coding Basics (July 2025)",
+      url: "https://lu.ma/b2az5xye",
+      status: "Currently Accepting Applications",
+      isActive: true
+    },
     {
       id: 5,
       name: "Cohort #5 (June-July 2025)",
