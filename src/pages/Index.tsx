@@ -64,12 +64,14 @@ const Index = () => {
         {/* YouTube Video Section */}
         <section className="w-full py-16 px-4 sm:px-6">
           <div className="max-w-4xl mx-auto">
-            <div className="w-3/5 mx-auto">
+            <div className="w-4/5 mx-auto">
               <div className="relative w-full" style={{ paddingBottom: '56.25%' }}>
                 <iframe
-                  src="https://www.youtube.com/embed/JS1R58ibwS4"
-                  title="Launch by Lunch Video"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  src="https://www.youtube.com/embed/JS1R58ibwS4?si=Rx7nqxZRUk0WzKva"
+                  title="YouTube video player"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerPolicy="strict-origin-when-cross-origin"
                   allowFullScreen
                   className="absolute top-0 left-0 w-full h-full rounded-lg shadow-lg"
                 />
