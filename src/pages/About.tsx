@@ -1,3 +1,4 @@
+
 import React from "react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -37,7 +38,7 @@ const About = () => {
             <div className="mb-8 p-6 bg-gradient-to-r from-launch-purple/10 via-launch-orange/10 to-launch-purple/10 rounded-2xl border border-launch-orange/20">
               <p className="text-xl md:text-2xl font-bold leading-relaxed">
                 <span className="bg-gradient-to-r from-launch-purple to-launch-orange bg-clip-text text-transparent">
-                  Launch by Lunch is the first virtual AI accelerator created to empower non-technical founders to move from the back of the crowd to the front of the line.
+                  Launch by Lunch is the first community created to empower non-technical founders to move from the back of the crowd to the front of the line.
                 </span>
               </p>
             </div>
