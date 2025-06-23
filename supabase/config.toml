@@ -1,8 +1,17 @@
 
 project_id = "edqjskmaorvfxluojsth"
 
-[functions.send-contact-email]
+[functions.send-waitlist-notification]
 verify_jwt = false
 
+[functions.send-community-notification]
+verify_jwt = true
+
+[functions.send-contact-email]
+verify_jwt = true
+
 [functions.send-contact-notification]
-verify_jwt = false
+verify_jwt = true
+
+[functions.send-teardown-notification]
+verify_jwt = true

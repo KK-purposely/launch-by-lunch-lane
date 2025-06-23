@@ -27,6 +27,20 @@ const handler = async (req: Request): Promise<Response> => {
 
     console.log('Received waitlist request:', { name, email, cohort });
 
+    // Validate required fields
+    if (!name || !email || !cohort) {
+      return new Response(
+        JSON.stringify({ 
+          error: "Missing required fields: name, email, and cohort are required",
+          success: false 
+        }),
+        {
+          status: 400,
+          headers: { "Content-Type": "application/json", ...corsHeaders },
+        }
+      );
+    }
+
     // Send notification email to Karen
     const emailResponse = await resend.emails.send({
       from: "Launch by Lunch <onboarding@resend.dev>",
