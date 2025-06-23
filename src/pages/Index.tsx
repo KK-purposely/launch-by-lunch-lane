@@ -4,8 +4,34 @@ import Hero from "@/components/Hero";
 import Testimonials from "@/components/Testimonials";
 import Features from "@/components/Features";
 import Footer from "@/components/Footer";
+import HeroSection from "@/components/join/HeroSection";
+import MainServicesSection from "@/components/join/MainServicesSection";
+import FAQSection from "@/components/join/FAQSection";
+import BottomCTASection from "@/components/join/BottomCTASection";
+import ContactForm from "@/components/ContactForm";
+import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 const Index = () => {
+  const navigate = useNavigate();
+  const [contactFormOpen, setContactFormOpen] = useState(false);
+  const [selectedService, setSelectedService] = useState("");
+
+  const handleServiceClick = (service: any) => {
+    if (service.isContact) {
+      setSelectedService(service.title);
+      setContactFormOpen(true);
+    } else if (service.ctaUrl === "https://calendly.com/karen-launchbylunch/ai-low-code-office-hours") {
+      window.open(service.ctaUrl, "_blank");
+    } else if (service.ctaUrl === "#") {
+      console.log(`Clicked ${service.title}`);
+    } else if (service.ctaUrl.startsWith("/")) {
+      navigate(service.ctaUrl);
+    } else {
+      window.location.href = service.ctaUrl;
+    }
+  };
+
   return (
     <>
       <Helmet>
@@ -36,6 +62,20 @@ const Index = () => {
         <Hero />
         <Features />
         <Testimonials />
+        
+        {/* Join page content */}
+        <HeroSection />
+        <MainServicesSection onServiceClick={handleServiceClick} />
+        <FAQSection />
+        <div className="max-w-5xl mx-auto px-4 sm:px-6">
+          <BottomCTASection />
+          <ContactForm
+            isOpen={contactFormOpen}
+            onClose={() => setContactFormOpen(false)}
+            serviceTitle={selectedService}
+          />
+        </div>
+        
         <Footer />
       </div>
     </>
