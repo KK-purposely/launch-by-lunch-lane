@@ -1,4 +1,3 @@
-
 import { Helmet } from "react-helmet-async";
 import Hero from "@/components/Hero";
 import Testimonials from "@/components/Testimonials";
@@ -10,7 +9,6 @@ import FAQSection from "@/components/join/FAQSection";
 import BottomCTASection from "@/components/join/BottomCTASection";
 import ContactForm from "@/components/ContactForm";
 import YouTubePlayer from "@/components/YouTubePlayer";
-import AcceleratorCTA from "@/components/AcceleratorCTA";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
@@ -82,7 +80,6 @@ const Index = () => {
         
         {/* Join page content */}
         <HeroSection />
-        <AcceleratorCTA />
         <MainServicesSection onServiceClick={handleServiceClick} />
         <FAQSection />
         <div className="max-w-5xl mx-auto px-4 sm:px-6">

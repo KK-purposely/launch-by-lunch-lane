@@ -1,7 +1,10 @@
 
 import React from "react";
-import { Users, LucideIcon } from "lucide-react";
+import { Users, Rocket, LucideIcon } from "lucide-react";
 import ServiceCard from "./ServiceCard";
+import { Button } from "@/components/ui/button";
+import { ArrowRight } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 
 interface MainServicesSectionProps {
   onServiceClick: (service: any) => void;
@@ -24,6 +27,8 @@ interface Service {
 }
 
 const MainServicesSection = ({ onServiceClick }: MainServicesSectionProps) => {
+  const navigate = useNavigate();
+
   const mainServices: Service[] = [
     {
       id: 1,
@@ -46,10 +51,51 @@ const MainServicesSection = ({ onServiceClick }: MainServicesSectionProps) => {
     }
   ];
 
+  const handleAcceleratorClick = () => {
+    navigate("/accelerators");
+  };
+
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 pb-8">
-      <div className="flex justify-center">
-        <div className="w-full max-w-lg">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+        {/* Left side - Accelerator CTA */}
+        <div className="flex flex-col items-center text-center space-y-6">
+          <div className="flex justify-center mb-4">
+            <div className="relative">
+              <div className="absolute inset-0 bg-gradient-to-r from-launch-purple to-launch-orange rounded-2xl blur-lg opacity-30" />
+              <div className="relative w-16 h-16 bg-gradient-to-r from-launch-purple to-launch-orange rounded-2xl flex items-center justify-center">
+                <Rocket className="h-8 w-8 text-white" />
+              </div>
+            </div>
+          </div>
+          
+          <h3 className="text-2xl md:text-3xl font-bold mb-4">
+            <span className="bg-gradient-to-r from-launch-purple to-launch-orange bg-clip-text text-transparent">
+              Want to jump into a summer accelerator now?
+            </span>
+          </h3>
+          
+          <p className="text-lg text-gray-700 mb-6 max-w-md">
+            Join our next accelerator and learn how to vibe code a working prototype in just an hour or two.
+          </p>
+          
+          <div className="relative inline-block">
+            <div className="absolute inset-0 bg-gradient-to-r from-launch-purple to-launch-orange rounded-full blur-lg opacity-30 animate-pulse" />
+            <Button 
+              size="lg" 
+              className="relative bg-gradient-to-r from-launch-purple to-launch-orange hover:from-launch-orange hover:to-launch-purple text-white px-8 py-4 text-lg rounded-full font-semibold transition-all duration-300 shadow-xl hover:shadow-2xl hover:scale-105 group"
+              onClick={handleAcceleratorClick}
+            >
+              <span className="flex items-center gap-3">
+                View Open Accelerators
+                <ArrowRight className="h-5 w-5 group-hover:translate-x-1 transition-transform duration-300" />
+              </span>
+            </Button>
+          </div>
+        </div>
+
+        {/* Right side - Community Section */}
+        <div className="w-full">
           {mainServices.map((service, index) => (
             <ServiceCard
               key={service.id}
