@@ -1,4 +1,3 @@
-
 import { Helmet } from "react-helmet-async";
 import Hero from "@/components/Hero";
 import Testimonials from "@/components/Testimonials";
@@ -67,7 +66,7 @@ const Index = () => {
             <div className="w-full mx-auto">
               <div className="relative w-full" style={{ paddingBottom: '56.25%' }}>
                 <iframe
-                  src="https://www.youtube.com/embed/JS1R58ibwS4?si=Rx7nqxZRUk0WzKva&autoplay=1&loop=1&playlist=JS1R58ibwS4&controls=0&showinfo=0&rel=0&modestbranding=1"
+                  src="https://www.youtube.com/embed/bOsbDXRda1g?si=V33MRVykBbxVla8l&autoplay=1&loop=1&playlist=bOsbDXRda1g&controls=0&showinfo=0&rel=0&modestbranding=1"
                   title="YouTube video player"
                   frameBorder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
