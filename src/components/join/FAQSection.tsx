@@ -1,4 +1,3 @@
-
 import React from "react";
 import {
   Accordion,
@@ -20,10 +19,6 @@ const FAQSection = () => {
     {
       question: "Can I join if I'm still in the idea stage and haven't launched yet?",
       answer: "Absolutely! Launch by Lunch is designed for founders at all stages, especially those in the early idea phase. Our accelerator programs are specifically designed to help you go from concept to working prototype in just 4 weeks."
-    },
-    {
-      question: "How does the milestone tracking feature work?",
-      answer: "Our milestone tracking tool allows you to set stage-appropriate goals, track your progress, and celebrate achievements. You can prioritize 'top of mind' milestones and move completed ones to your accomplishment list."
     },
     {
       question: "What types of events do you host?",
