@@ -79,8 +79,8 @@ const CommunityForm = () => {
       }
 
       toast({
-        title: "Application Submitted!",
-        description: "Thank you for your interest! Your application has been submitted and we'll review it soon.",
+        title: "Thank You for Your Application!",
+        description: "You've been added to our waitlist. Expect to hear from us within 5-7 days as we review your application.",
       });
 
       // Reset form
