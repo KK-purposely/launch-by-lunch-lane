@@ -11,7 +11,6 @@ import Services from "./pages/Services";
 import Accelerators from "./pages/Accelerators";
 import About from "./pages/About";
 import MembersOnly from "./pages/MembersOnly";
-import Join from "./pages/Join";
 import Community from "./pages/Community";
 import OfficeHours from "./pages/OfficeHours";
 import TearDown from "./pages/TearDown";
@@ -34,7 +33,6 @@ const App = () => (
             <Route path="/accelerators" element={<Accelerators />} />
             <Route path="/about" element={<About />} />
             <Route path="/members" element={<MembersOnly />} />
-            <Route path="/join" element={<Join />} />
             <Route path="/community" element={<Community />} />
             <Route path="/office-hours" element={<OfficeHours />} />
             <Route path="/teardown" element={<TearDown />} />
