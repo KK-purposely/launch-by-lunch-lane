@@ -42,8 +42,7 @@ const MainServicesSection = ({ onServiceClick }: MainServicesSectionProps) => {
       ],
       icon: Users,
       ctaText: "Apply to Join",
-      ctaUrl: "/community",
-      featured: true
+      ctaUrl: "/community"
     }
   ];
 
