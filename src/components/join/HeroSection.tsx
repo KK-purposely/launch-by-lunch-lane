@@ -13,11 +13,14 @@ const HeroSection = () => {
             <span className="text-sm font-semibold uppercase tracking-wide">Your Journey Starts Here</span>
             <Sparkles className="h-6 w-6 text-launch-purple animate-pulse" />
           </div>
-          <h1 className="text-4xl md:text-6xl font-bold mb-6">
+          <h1 className="text-4xl md:text-6xl font-bold mb-2">
             <span className="bg-gradient-to-r from-launch-purple to-launch-orange bg-clip-text text-transparent">
-              Join Launch by Lunch
+              Join our Waitlist
             </span>
           </h1>
+          <h2 className="text-2xl md:text-3xl text-launch-orange font-semibold mb-6">
+            Launching June 2025
+          </h2>
           <p className="text-xl md:text-2xl text-gray-700 mb-8 max-w-3xl mx-auto leading-relaxed">
             Choose the service that best fits your entrepreneurial journey and 
             <span className="text-launch-orange font-semibold"> transform your ideas into reality</span>
