@@ -8,6 +8,7 @@ import MainServicesSection from "@/components/join/MainServicesSection";
 import FAQSection from "@/components/join/FAQSection";
 import BottomCTASection from "@/components/join/BottomCTASection";
 import ContactForm from "@/components/ContactForm";
+import YouTubePlayer from "@/components/YouTubePlayer";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
@@ -65,14 +66,9 @@ const Index = () => {
           <div className="max-w-4xl mx-auto">
             <div className="w-full mx-auto">
               <div className="relative w-full" style={{ paddingBottom: '56.25%' }}>
-                <iframe
-                  src="https://www.youtube.com/embed/bOsbDXRda1g?si=V33MRVykBbxVla8l&autoplay=1&loop=1&playlist=bOsbDXRda1g&controls=0&showinfo=0&rel=0&modestbranding=1&mute=1&start=0&end=0&iv_load_policy=3&cc_load_policy=0&fs=0&disablekb=1"
-                  title="YouTube video player"
-                  frameBorder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  referrerPolicy="strict-origin-when-cross-origin"
-                  allowFullScreen
-                  className="absolute top-0 left-0 w-full h-full rounded-lg shadow-lg"
+                <YouTubePlayer
+                  videoId="bOsbDXRda1g"
+                  className="absolute top-0 left-0 w-full h-full rounded-lg shadow-lg overflow-hidden"
                 />
               </div>
             </div>
