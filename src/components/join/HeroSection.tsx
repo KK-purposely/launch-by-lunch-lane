@@ -21,10 +21,6 @@ const HeroSection = () => {
           <h2 className="text-2xl md:text-3xl text-launch-orange font-semibold mb-6">
             Launching June 2025
           </h2>
-          <p className="text-xl md:text-2xl text-gray-700 mb-8 max-w-3xl mx-auto leading-relaxed">
-            Choose the service that best fits your entrepreneurial journey and 
-            <span className="text-launch-orange font-semibold"> transform your ideas into reality</span>
-          </p>
         </div>
       </div>
     </div>
