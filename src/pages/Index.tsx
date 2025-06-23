@@ -66,7 +66,7 @@ const Index = () => {
             <div className="w-full mx-auto">
               <div className="relative w-full" style={{ paddingBottom: '56.25%' }}>
                 <iframe
-                  src="https://www.youtube.com/embed/bOsbDXRda1g?si=V33MRVykBbxVla8l&autoplay=1&loop=1&playlist=bOsbDXRda1g&controls=0&showinfo=0&rel=0&modestbranding=1"
+                  src="https://www.youtube.com/embed/bOsbDXRda1g?si=V33MRVykBbxVla8l&autoplay=1&loop=1&playlist=bOsbDXRda1g&controls=0&showinfo=0&rel=0&modestbranding=1&mute=1&start=0&end=0&iv_load_policy=3&cc_load_policy=0&fs=0&disablekb=1"
                   title="YouTube video player"
                   frameBorder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
