@@ -1,3 +1,4 @@
+
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 
@@ -18,7 +19,7 @@ const Hero = () => {
           </div>
           
           <p className="text-xl md:text-2xl text-gray-800 mb-12 max-w-3xl mx-auto leading-relaxed font-normal">
-            Founded by CTO and non-technical founder duo with the shared belief that you don't need a tech team or investor dollars to launch something <strong className="text-launch-purple font-bold">real</strong> and <strong className="text-launch-purple font-bold">revenue generating</strong> today.
+            A new community of AI-first, non-technical founders and fractional experts who believe you don't need a tech team or investor dollars to launch something <strong className="text-launch-purple font-bold">real</strong> and <strong className="text-launch-purple font-bold">revenue generating</strong> today.
           </p>
 
           {/* Founders Section */}
