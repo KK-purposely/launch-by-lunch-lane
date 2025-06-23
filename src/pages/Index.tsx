@@ -1,3 +1,4 @@
+
 import { Helmet } from "react-helmet-async";
 import Hero from "@/components/Hero";
 import Testimonials from "@/components/Testimonials";
@@ -63,7 +64,7 @@ const Index = () => {
         {/* YouTube Video Section */}
         <section className="w-full py-16 px-4 sm:px-6">
           <div className="max-w-4xl mx-auto">
-            <div className="w-4/5 mx-auto">
+            <div className="w-full mx-auto">
               <div className="relative w-full" style={{ paddingBottom: '56.25%' }}>
                 <iframe
                   src="https://www.youtube.com/embed/JS1R58ibwS4?si=Rx7nqxZRUk0WzKva&autoplay=1&loop=1&playlist=JS1R58ibwS4&controls=0&showinfo=0&rel=0&modestbranding=1"
