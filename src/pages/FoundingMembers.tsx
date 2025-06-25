@@ -1,4 +1,3 @@
-
 import { Helmet } from "react-helmet-async";
 import Hero from "@/components/Hero";
 import Testimonials from "@/components/Testimonials";
@@ -65,6 +64,13 @@ const FoundingMembers = () => {
         {/* YouTube Video Section */}
         <section className="w-full py-16 px-4 sm:px-6">
           <div className="max-w-4xl mx-auto">
+            <div className="text-center mb-8">
+              <h2 className="text-3xl md:text-4xl font-bold">
+                <span className="bg-gradient-to-r from-launch-purple to-launch-orange bg-clip-text text-transparent">
+                  A first look at our new space
+                </span>
+              </h2>
+            </div>
             <div className="w-full mx-auto">
               <div className="relative w-full" style={{ paddingBottom: '56.25%' }}>
                 <YouTubePlayer
