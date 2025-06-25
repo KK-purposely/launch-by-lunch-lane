@@ -15,15 +15,12 @@ const HeroSection = () => {
           </div>
           <h1 className="text-4xl md:text-6xl font-bold mb-2">
             <span className="bg-gradient-to-r from-launch-purple to-launch-orange bg-clip-text text-transparent">
-              Founding Member Exclusive
+              Join our Waitlist
             </span>
           </h1>
-          <p className="text-xl md:text-2xl text-gray-700 mt-6">
-            Get started for free today, and choose your membership later.
-          </p>
-          <p className="text-lg text-gray-600 mt-2">
-            No credit card required.
-          </p>
+          <h2 className="text-2xl md:text-3xl text-launch-orange font-semibold mb-6">
+            Launching June 2025
+          </h2>
         </div>
       </div>
     </div>
