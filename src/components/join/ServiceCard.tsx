@@ -1,4 +1,3 @@
-
 import React from "react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -71,7 +70,7 @@ const ServiceCard = ({ service, index, onServiceClick }: ServiceCardProps) => {
             )}
             {service.cancellation && (
               <p className="text-sm text-green-600 font-medium bg-green-50 px-3 py-1 rounded-full inline-block">
-                ✅ {service.cancellation}
+                {service.cancellation}
               </p>
             )}
             {service.sessions && (
