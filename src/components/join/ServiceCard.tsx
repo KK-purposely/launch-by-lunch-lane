@@ -10,6 +10,7 @@ interface ServiceCardProps {
     title: string;
     price: string;
     savings?: string;
+    cancellation?: string;
     sessions?: string;
     provider?: string;
     availability?: string;
@@ -66,6 +67,11 @@ const ServiceCard = ({ service, index, onServiceClick }: ServiceCardProps) => {
             {service.savings && (
               <p className="text-sm text-blue-600 font-medium bg-blue-50 px-3 py-1 rounded-full inline-block">
                 💰 {service.savings}
+              </p>
+            )}
+            {service.cancellation && (
+              <p className="text-sm text-green-600 font-medium bg-green-50 px-3 py-1 rounded-full inline-block">
+                ✅ {service.cancellation}
               </p>
             )}
             {service.sessions && (

@@ -15,6 +15,7 @@ interface Service {
   title: string;
   price: string;
   savings?: string;
+  cancellation?: string;
   sessions?: string;
   provider?: string;
   description: string;
@@ -34,6 +35,7 @@ const MainServicesSection = ({ onServiceClick }: MainServicesSectionProps) => {
       id: 1,
       title: "Monthly Membership",
       price: "$59/month",
+      cancellation: "cancel anytime",
       description: "Join our community of AI-first founders with flexible monthly billing",
       benefits: [
         "🤝 Connect and learn from our community of founders and fractional experts",
