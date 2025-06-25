@@ -2,7 +2,8 @@
 import React from "react";
 import { Users, Crown, LucideIcon } from "lucide-react";
 import ServiceCard from "./ServiceCard";
-import { useNavigate } from "react-router-dom";
+import { Button } from "@/components/ui/button";
+import { ArrowRight } from "lucide-react";
 
 interface MainServicesSectionProps {
   onServiceClick: (service: any) => void;
@@ -26,8 +27,6 @@ interface Service {
 }
 
 const MainServicesSection = ({ onServiceClick }: MainServicesSectionProps) => {
-  const navigate = useNavigate();
-
   const membershipPlans: Service[] = [
     {
       id: 1,
@@ -70,6 +69,10 @@ const MainServicesSection = ({ onServiceClick }: MainServicesSectionProps) => {
     }
   ];
 
+  const handleStartMembership = () => {
+    window.open("https://innercircle.launchbylunch.co/checkout/inner-circle-founding-member", "_blank");
+  };
+
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 pb-8">
       <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
@@ -79,9 +82,23 @@ const MainServicesSection = ({ onServiceClick }: MainServicesSectionProps) => {
               service={service}
               index={index}
               onServiceClick={onServiceClick}
+              hideButton={true}
             />
           </div>
         ))}
+      </div>
+      
+      {/* Single CTA at the bottom */}
+      <div className="flex justify-center mt-12">
+        <Button
+          onClick={handleStartMembership}
+          className="bg-gradient-to-r from-launch-purple to-launch-orange hover:from-launch-orange hover:to-launch-purple text-white text-lg py-6 px-12 shadow-lg hover:shadow-xl transition-all duration-300 group"
+        >
+          <span className="flex items-center justify-center gap-3">
+            Start Free Membership
+            <ArrowRight className="h-5 w-5 group-hover:translate-x-1 transition-transform" />
+          </span>
+        </Button>
       </div>
     </div>
   );
