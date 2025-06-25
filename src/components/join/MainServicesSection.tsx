@@ -1,3 +1,4 @@
+
 import React from "react";
 import { Users, Rocket, LucideIcon, Crown } from "lucide-react";
 import ServiceCard from "./ServiceCard";
@@ -49,7 +50,7 @@ const MainServicesSection = ({ onServiceClick }: MainServicesSectionProps) => {
     {
       id: 2,
       title: "Annual Membership (2 free months + 2 free accelerators)",
-      price: "$599/year",
+      price: "$599/year ( 50% off a $1200 value)",
       description: "Get the best value with annual billing and exclusive bonuses",
       benefits: [
         "🤝 Connect and learn from our community of founders and fractional experts",
