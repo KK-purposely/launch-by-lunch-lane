@@ -1,14 +1,8 @@
+
 import { Code, Users, Rocket, Clock, Sparkles, CheckCircle, Heart, DollarSign, Brain } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const Features = () => {
-  const scrollToJoinWaitlist = () => {
-    const joinSection = document.querySelector('[data-section="join-waitlist"]');
-    if (joinSection) {
-      joinSection.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
-
   const differentiators = [
     {
       icon: Brain,
@@ -71,7 +65,7 @@ const Features = () => {
           </div>
           
           {/* Enhanced cards with better visual hierarchy */}
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-12 mb-16">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-12">
             {differentiators.map((item, index) => (
               <div 
                 key={index}
@@ -110,23 +104,6 @@ const Features = () => {
                 <div className="absolute inset-0 bg-gradient-to-br from-white/5 to-transparent rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
               </div>
             ))}
-          </div>
-
-          {/* Enhanced CTA section */}
-          <div className="text-center relative">
-            <div className="inline-block relative">
-              <div className="absolute inset-0 bg-gradient-to-r from-launch-purple to-launch-orange rounded-full blur-lg opacity-30 animate-pulse" />
-              <Button 
-                size="lg" 
-                className="relative bg-gradient-to-r from-launch-purple to-launch-orange hover:from-launch-orange hover:to-launch-purple text-white px-12 py-6 text-xl rounded-full font-semibold transition-all duration-300 shadow-xl hover:shadow-2xl hover:scale-105 group"
-                onClick={scrollToJoinWaitlist}
-              >
-                <span className="flex items-center gap-3">
-                  Learn More
-                  <Sparkles className="h-5 w-5 group-hover:rotate-12 transition-transform duration-300" />
-                </span>
-              </Button>
-            </div>
           </div>
         </div>
       </div>
