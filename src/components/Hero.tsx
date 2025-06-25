@@ -84,28 +84,6 @@ const Hero = () => {
               </div>
             </div>
           </div>
-          
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <Button 
-              size="lg" 
-              className="group bg-gradient-to-r from-launch-purple to-launch-orange hover:from-launch-orange hover:to-launch-purple text-white px-8 py-6 text-lg rounded-full font-medium transition-all duration-300 shadow-lg hover:shadow-xl"
-              onClick={scrollToJoinWaitlist}
-            >
-              <span className="flex items-center gap-2">
-                Join Our Community
-                <ArrowRight className="h-5 w-5 group-hover:translate-x-1 transition-transform" />
-              </span>
-            </Button>
-            
-            <Button 
-              variant="outline" 
-              size="lg"
-              className="px-8 py-6 text-lg border-launch-orange text-launch-orange hover:bg-launch-orange hover:text-white rounded-full font-medium transition-all duration-300"
-              onClick={scrollToJoinWaitlist}
-            >
-              Learn More
-            </Button>
-          </div>
         </div>
       </div>
     </div>
