@@ -18,6 +18,9 @@ const HeroSection = () => {
               Founding Member Exclusive
             </span>
           </h1>
+          <p className="text-xl md:text-2xl text-gray-700 mt-6">
+            Get started for free today, and choose your membership later.
+          </p>
         </div>
       </div>
     </div>
