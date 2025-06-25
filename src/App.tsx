@@ -15,6 +15,7 @@ import Community from "./pages/Community";
 import OfficeHours from "./pages/OfficeHours";
 import TearDown from "./pages/TearDown";
 import Contact from "./pages/Contact";
+import FoundingMembers from "./pages/FoundingMembers";
 import Navigation from "./components/Navigation";
 
 const queryClient = new QueryClient();
@@ -37,6 +38,7 @@ const App = () => (
             <Route path="/office-hours" element={<OfficeHours />} />
             <Route path="/teardown" element={<TearDown />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/founding-members" element={<FoundingMembers />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>
