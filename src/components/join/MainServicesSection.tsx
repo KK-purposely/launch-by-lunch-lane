@@ -1,4 +1,3 @@
-
 import React from "react";
 import { Users, Rocket, LucideIcon, Crown } from "lucide-react";
 import ServiceCard from "./ServiceCard";
@@ -61,8 +60,7 @@ const MainServicesSection = ({ onServiceClick }: MainServicesSectionProps) => {
         "🎓 Join exclusive accelerators",
         "🌟 Meet new team members",
         "🎁 BONUS: 2 months free (worth $118)",
-        "🚀 BONUS: 2 free accelerators of your choice (worth $400)",
-        "💰 Total value: $1,200 for just $599!"
+        "🚀 BONUS: 2 free accelerators of your choice (worth $400)"
       ],
       icon: Crown,
       ctaText: "Join Annual - Best Value",
