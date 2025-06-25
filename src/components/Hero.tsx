@@ -25,11 +25,15 @@ const Hero = () => {
             </div>
           </div>
           
-          <h1 className="text-3xl md:text-5xl font-bold mb-12 max-w-3xl mx-auto leading-relaxed">
+          <h1 className="text-3xl md:text-5xl font-bold mb-6 max-w-3xl mx-auto leading-relaxed">
             <span className="bg-gradient-to-r from-launch-purple to-launch-orange bg-clip-text text-transparent">
-              Hey there, founding members.
+              Hey founding members!
             </span>
           </h1>
+
+          <p className="text-xl md:text-2xl text-gray-700 mb-12 max-w-4xl mx-auto leading-relaxed">
+            You're first to receive an invite to join our new peer to peer community for founders and fractionals. We've got some amazing goodies in store for you.
+          </p>
 
           {/* Founders Section */}
           <div className="mb-12">
