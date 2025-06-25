@@ -1,6 +1,6 @@
 
 import React from "react";
-import { Users, Rocket, LucideIcon } from "lucide-react";
+import { Users, Rocket, LucideIcon, Crown } from "lucide-react";
 import ServiceCard from "./ServiceCard";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
@@ -29,13 +29,30 @@ interface Service {
 const MainServicesSection = ({ onServiceClick }: MainServicesSectionProps) => {
   const navigate = useNavigate();
 
-  const mainServices: Service[] = [
+  const membershipPlans: Service[] = [
     {
       id: 1,
-      title: "Join our Community of AI-First Founders",
+      title: "Monthly Membership",
       price: "$59/month",
-      savings: "or save with annual",
-      description: "Connect with like-minded entrepreneurs building AI-first companies",
+      description: "Join our community of AI-first founders with flexible monthly billing",
+      benefits: [
+        "🤝 Connect and learn from our community of founders and fractional experts",
+        "🎯 Discover local AI events", 
+        "💬 Join investor fireside chats",
+        "⏰ Access office hours 2x a month",
+        "🎓 Join exclusive accelerators",
+        "🌟 Access thought leadership on making cultural change"
+      ],
+      icon: Users,
+      ctaText: "Join Monthly",
+      ctaUrl: "/community"
+    },
+    {
+      id: 2,
+      title: "Annual Membership",
+      price: "$599/year",
+      savings: "Save $109 + Get $400 in bonuses",
+      description: "Get the best value with annual billing and exclusive bonuses",
       benefits: [
         "🤝 Connect and learn from our community of founders and fractional experts",
         "🎯 Discover local AI events", 
@@ -43,11 +60,14 @@ const MainServicesSection = ({ onServiceClick }: MainServicesSectionProps) => {
         "⏰ Access office hours 2x a month",
         "🎓 Join exclusive accelerators",
         "🌟 Access thought leadership on making cultural change",
-        "🎁 Bonus: Pay annually and score a seat in 2 accelerators of your choice ($400 value)"
+        "🎁 BONUS: 2 months free (worth $118)",
+        "🚀 BONUS: 2 free accelerators of your choice (worth $400)",
+        "💰 Total value: $1,200 for just $599!"
       ],
-      icon: Users,
-      ctaText: "Apply to Join",
-      ctaUrl: "/community"
+      icon: Crown,
+      ctaText: "Join Annual - Best Value",
+      ctaUrl: "/community",
+      featured: true
     }
   ];
 
@@ -96,20 +116,18 @@ const MainServicesSection = ({ onServiceClick }: MainServicesSectionProps) => {
 
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 pb-8">
-      <div className="flex justify-center">
-        <div className="w-full max-w-lg">
-          {mainServices.map((service, index) => (
-            <div key={service.id} className="relative">
-              <ServiceCard
-                service={service}
-                index={index}
-                onServiceClick={onServiceClick}
-              />
-              <AcceleratorCTA />
-            </div>
-          ))}
-        </div>
+      <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+        {membershipPlans.map((service, index) => (
+          <div key={service.id} className="relative">
+            <ServiceCard
+              service={service}
+              index={index}
+              onServiceClick={onServiceClick}
+            />
+          </div>
+        ))}
       </div>
+      <AcceleratorCTA />
     </div>
   );
 };
