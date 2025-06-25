@@ -18,9 +18,6 @@ const HeroSection = () => {
               Founding Member Exclusive
             </span>
           </h1>
-          <h2 className="text-2xl md:text-3xl text-launch-orange font-semibold mb-6">
-            Launching June 2025
-          </h2>
         </div>
       </div>
     </div>
