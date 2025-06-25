@@ -1,4 +1,3 @@
-
 import { Helmet } from "react-helmet-async";
 import Hero from "@/components/Hero";
 import Testimonials from "@/components/Testimonials";
@@ -81,8 +80,12 @@ const FoundingMembers = () => {
               </div>
             </div>
             <div className="text-center">
-              <p className="text-lg md:text-xl text-gray-700 max-w-3xl mx-auto leading-relaxed">
-                Here we'll stream accelerators, go live with office hours, answer questions, share our network, host expert AI chats (we already have 5 lined up for law, investment, team building and more), and create a safe space to learn, connect, and build your business (or just keep tinkering).
+              <p className="text-xl md:text-2xl lg:text-3xl text-gray-800 max-w-4xl mx-auto leading-relaxed font-medium">
+                Here we'll stream accelerators, go live with office hours, answer questions, share our network, host{" "}
+                <span className="bg-gradient-to-r from-launch-purple to-launch-orange bg-clip-text text-transparent font-semibold">
+                  expert AI chats
+                </span>{" "}
+                (we already have 5 lined up for law, investment, team building and more), and create a safe space to learn, connect, and build your business (or just keep tinkering).
               </p>
             </div>
           </div>
