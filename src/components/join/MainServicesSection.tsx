@@ -48,7 +48,7 @@ const MainServicesSection = ({ onServiceClick }: MainServicesSectionProps) => {
     },
     {
       id: 2,
-      title: "Annual Membership",
+      title: "Annual Membership (2 free months + 2 free accelerators)",
       price: "$599/year",
       description: "Get the best value with annual billing and exclusive bonuses",
       benefits: [
