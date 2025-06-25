@@ -25,9 +25,11 @@ const Hero = () => {
             </div>
           </div>
           
-          <p className="text-xl md:text-2xl text-gray-800 mb-12 max-w-3xl mx-auto leading-relaxed font-normal">
-            A new community of AI-first, non-technical founders and fractional experts who believe you don't need a tech team or investor dollars to launch something <strong className="text-launch-purple font-bold">real</strong> and <strong className="text-launch-purple font-bold">revenue generating</strong> today.
-          </p>
+          <h1 className="text-3xl md:text-5xl font-bold mb-12 max-w-3xl mx-auto leading-relaxed">
+            <span className="bg-gradient-to-r from-launch-purple to-launch-orange bg-clip-text text-transparent">
+              Your Founding Member Exclusive Offer
+            </span>
+          </h1>
 
           {/* Founders Section */}
           <div className="mb-12">
