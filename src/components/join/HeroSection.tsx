@@ -21,6 +21,9 @@ const HeroSection = () => {
           <p className="text-xl md:text-2xl text-gray-700 mt-6">
             Get started for free today, and choose your membership later.
           </p>
+          <p className="text-lg text-gray-600 mt-2">
+            No credit card required.
+          </p>
         </div>
       </div>
     </div>
