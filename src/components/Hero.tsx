@@ -32,7 +32,7 @@ const Hero = () => {
           </h1>
 
           <p className="text-xl md:text-2xl text-gray-700 mb-12 max-w-4xl mx-auto leading-relaxed">
-            You're first to receive an invite to join our new peer to peer community for founders and fractionals. We've got some amazing goodies in store for you.
+            You're the first to receive an invite to join our new peer to peer community for founders and fractionals. We've got some amazing goodies in store for you.
           </p>
         </div>
       </div>
