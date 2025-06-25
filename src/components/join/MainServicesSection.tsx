@@ -41,7 +41,7 @@ const MainServicesSection = ({ onServiceClick }: MainServicesSectionProps) => {
         "💬 Join investor fireside chats",
         "⏰ Access office hours 2x a month",
         "🎓 Join exclusive accelerators",
-        "🌟 Access thought leadership on making cultural change"
+        "🌟 Meet new team members"
       ],
       icon: Users,
       ctaText: "Join Monthly",
@@ -59,7 +59,7 @@ const MainServicesSection = ({ onServiceClick }: MainServicesSectionProps) => {
         "💬 Join investor fireside chats",
         "⏰ Access office hours 2x a month",
         "🎓 Join exclusive accelerators",
-        "🌟 Access thought leadership on making cultural change",
+        "🌟 Meet new team members",
         "🎁 BONUS: 2 months free (worth $118)",
         "🚀 BONUS: 2 free accelerators of your choice (worth $400)",
         "💰 Total value: $1,200 for just $599!"
