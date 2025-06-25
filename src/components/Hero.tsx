@@ -27,7 +27,7 @@ const Hero = () => {
           
           <h1 className="text-3xl md:text-5xl font-bold mb-12 max-w-3xl mx-auto leading-relaxed">
             <span className="bg-gradient-to-r from-launch-purple to-launch-orange bg-clip-text text-transparent">
-              Your Founding Member Exclusive Offer
+              Hey there, founding members
             </span>
           </h1>
 
