@@ -50,7 +50,6 @@ const MainServicesSection = ({ onServiceClick }: MainServicesSectionProps) => {
       id: 2,
       title: "Annual Membership",
       price: "$599/year",
-      savings: "Save $109 + Get $400 in bonuses",
       description: "Get the best value with annual billing and exclusive bonuses",
       benefits: [
         "🤝 Connect and learn from our community of founders and fractional experts",
