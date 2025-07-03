@@ -94,9 +94,9 @@ const MainServicesSection = ({ onServiceClick }: MainServicesSectionProps) => {
   );
 
   return (
-    <div className="max-w-7xl mx-auto px-4 sm:px-6 pb-8">
+    <div className="max-w-4xl mx-auto px-4 sm:px-6 pb-8">
       <div className="flex justify-center">
-        <div className="w-full max-w-lg">
+        <div className="w-full max-w-3xl">
           {mainServices.map((service, index) => (
             <div key={service.id} className="relative">
               <ServiceCard

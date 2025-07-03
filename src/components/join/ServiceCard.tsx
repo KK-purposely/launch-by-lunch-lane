@@ -46,7 +46,7 @@ const ServiceCard = ({ service, index, onServiceClick }: ServiceCardProps) => {
         </div>
       )}
       
-      <CardHeader className={`${service.featured ? 'bg-gradient-to-r from-launch-purple/5 to-launch-orange/5' : 'bg-gray-50'} relative overflow-hidden`}>
+      <CardHeader className={`${service.featured ? 'bg-gradient-to-r from-launch-purple/5 to-launch-orange/5' : 'bg-gray-50'} relative overflow-hidden p-8`}>
         <div className="absolute top-0 right-0 w-32 h-32 opacity-10">
           <service.icon className="w-full h-full text-launch-orange" />
         </div>
@@ -55,12 +55,12 @@ const ServiceCard = ({ service, index, onServiceClick }: ServiceCardProps) => {
             <div className={`p-3 rounded-full ${service.featured ? 'bg-gradient-to-r from-launch-purple to-launch-orange' : 'bg-launch-orange'} shadow-lg`}>
               <service.icon className="h-6 w-6 text-white" />
             </div>
-            <CardTitle className={`text-lg md:text-xl ${service.featured ? 'bg-gradient-to-r from-launch-purple to-launch-orange bg-clip-text text-transparent' : 'text-launch-purple'}`}>
+            <CardTitle className={`text-xl md:text-2xl ${service.featured ? 'bg-gradient-to-r from-launch-purple to-launch-orange bg-clip-text text-transparent' : 'text-launch-purple'}`}>
               {service.title}
             </CardTitle>
           </div>
           <div className="space-y-2">
-            <p className={`text-2xl md:text-3xl font-bold ${service.featured ? 'bg-gradient-to-r from-launch-orange to-launch-purple bg-clip-text text-transparent' : 'text-launch-orange'}`}>
+            <p className={`text-3xl md:text-4xl font-bold ${service.featured ? 'bg-gradient-to-r from-launch-orange to-launch-purple bg-clip-text text-transparent' : 'text-launch-orange'}`}>
               {service.price}
             </p>
             {service.savings && (
@@ -92,8 +92,8 @@ const ServiceCard = ({ service, index, onServiceClick }: ServiceCardProps) => {
         </div>
       </CardHeader>
       
-      <CardContent className="pt-6 flex flex-col flex-grow">
-        <CardDescription className="text-sm md:text-base mb-6 text-gray-700 leading-relaxed">
+      <CardContent className="pt-8 px-8 pb-8 flex flex-col flex-grow">
+        <CardDescription className="text-base md:text-lg mb-6 text-gray-700 leading-relaxed">
           {service.description}
         </CardDescription>
         
@@ -107,7 +107,7 @@ const ServiceCard = ({ service, index, onServiceClick }: ServiceCardProps) => {
                 <div className="flex-shrink-0 w-5 h-5 bg-gradient-to-r from-blue-500 to-sky-500 rounded-full flex items-center justify-center mt-0.5">
                   <Check className="h-3 w-3 text-white" />
                 </div>
-                <span className="text-sm text-gray-700 leading-relaxed">{benefit}</span>
+                <span className="text-sm md:text-base text-gray-700 leading-relaxed">{benefit}</span>
               </div>
             ))}
           </div>
@@ -115,7 +115,7 @@ const ServiceCard = ({ service, index, onServiceClick }: ServiceCardProps) => {
 
         <div className="mt-auto">
           <Button
-            className={`w-full group text-base py-4 transition-all duration-300 ${
+            className={`w-full group text-lg py-6 transition-all duration-300 ${
               service.featured 
                 ? 'bg-gradient-to-r from-launch-purple to-launch-orange hover:from-launch-orange hover:to-launch-purple text-white shadow-lg hover:shadow-xl' 
                 : 'bg-launch-purple hover:bg-launch-purple/90 text-white'
