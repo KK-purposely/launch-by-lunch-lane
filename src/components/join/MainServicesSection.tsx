@@ -68,7 +68,7 @@ const MainServicesSection = ({ onServiceClick }: MainServicesSectionProps) => {
         
         <h4 className="text-5xl md:text-6xl font-bold leading-tight">
           <span className="bg-gradient-to-r from-launch-purple to-launch-orange bg-clip-text text-transparent">
-            Want to jump into a summer accelerator now?
+            Not sure if it's a good fit? Schedule a call with us.
           </span>
         </h4>
         
