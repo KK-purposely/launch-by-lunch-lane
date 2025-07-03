@@ -10,7 +10,7 @@ const FAQSection = () => {
   const faqs = [
     {
       question: "What is Launch by Lunch and who is it for?",
-      answer: "Launch by Lunch is a community and accelerator program designed for AI-first founders who want to build and scale their startups without extensive coding knowledge. It's perfect for entrepreneurs who have great ideas but need guidance on turning them into working applications using AI and no-code tools."
+      answer: "Launch by Lunch is a community and accelerator program designed for AI-first founders and fractionals who want to build and scale their businesses without extensive coding knowledge. It's perfect for entrepreneurs who have great ideas but need guidance on turning them into working applications using AI and no-code tools."
     },
     {
       question: "How is Launch by Lunch different from other networking platforms?",
