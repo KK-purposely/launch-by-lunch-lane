@@ -51,7 +51,7 @@ const MainServicesSection = ({ onServiceClick }: MainServicesSectionProps) => {
   ];
 
   const handleAcceleratorClick = () => {
-    navigate("/accelerators");
+    window.open("https://calendly.com/d/cwr2-n7m-9gs/learn-more", "_blank");
   };
 
   const AcceleratorCTA = () => (
@@ -80,7 +80,7 @@ const MainServicesSection = ({ onServiceClick }: MainServicesSectionProps) => {
             onClick={handleAcceleratorClick}
           >
             <span className="flex items-center gap-3">
-              View Open Accelerators
+              Find a Time
               <ArrowRight className="h-5 w-5 group-hover:translate-x-2 transition-transform duration-300" />
             </span>
           </Button>
