@@ -1,9 +1,13 @@
 
-import React from "react";
+import React, { useEffect } from "react";
 import CommunityForm from "@/components/community/CommunityForm";
 import CommunityHeroSection from "@/components/community/CommunityHeroSection";
 
 const Community = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-launch-light via-white to-orange-50">
       <CommunityHeroSection />
