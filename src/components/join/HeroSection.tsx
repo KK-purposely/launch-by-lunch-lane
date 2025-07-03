@@ -15,7 +15,7 @@ const HeroSection = () => {
           </div>
           <h1 className="text-4xl md:text-6xl font-bold mb-2">
             <span className="bg-gradient-to-r from-launch-purple to-launch-orange bg-clip-text text-transparent">
-              Join our Waitlist
+              Join our Community
             </span>
           </h1>
           <h2 className="text-2xl md:text-3xl text-launch-orange font-semibold mb-6">
