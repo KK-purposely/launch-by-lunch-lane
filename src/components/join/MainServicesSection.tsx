@@ -72,10 +72,6 @@ const MainServicesSection = ({ onServiceClick }: MainServicesSectionProps) => {
           </span>
         </h4>
         
-        <p className="text-lg md:text-xl text-gray-600 max-w-2xl leading-relaxed">
-          Join our next accelerator and learn how to vibe code a working prototype in just an hour or two.
-        </p>
-        
         <div className="relative inline-block mt-8">
           <div className="absolute inset-0 bg-gradient-to-r from-launch-purple to-launch-orange rounded-full blur-xl opacity-40 animate-pulse" />
           <Button 
