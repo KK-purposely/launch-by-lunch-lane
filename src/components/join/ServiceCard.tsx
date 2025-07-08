@@ -92,7 +92,7 @@ const ServiceCard = ({ service, index, onServiceClick }: ServiceCardProps) => {
         </div>
       </CardHeader>
       
-      <CardContent className="pt-8 px-8 pb-8 flex flex-col flex-grow">
+      <CardContent className="pt-4 px-8 pb-8 flex flex-col flex-grow">
         <CardDescription className="text-base md:text-lg mb-6 text-gray-700 leading-relaxed">
           {service.description}
         </CardDescription>
