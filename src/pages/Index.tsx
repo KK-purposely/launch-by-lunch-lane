@@ -28,7 +28,7 @@ const Index = () => {
     } else if (service.ctaUrl.startsWith("/")) {
       navigate(service.ctaUrl);
     } else {
-      window.location.href = service.ctaUrl;
+      window.open(service.ctaUrl, "_blank");
     }
   };
 
