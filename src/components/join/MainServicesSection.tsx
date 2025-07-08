@@ -31,7 +31,7 @@ const MainServicesSection = ({ onServiceClick }: MainServicesSectionProps) => {
   const mainServices: Service[] = [
     {
       id: 1,
-      title: "Apply for Membership",
+      title: "Join our Membership",
       price: "$59/month",
       savings: "or save with annual",
       description: "Connect with like-minded entrepreneurs building AI-first companies",
