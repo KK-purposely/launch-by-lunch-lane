@@ -38,7 +38,7 @@ const FAQSection = () => {
     },
     {
       question: "Can I upgrade to an annual membership after joining?",
-      answer: "Absolutely! You can upgrade to an annual membership at any time and receive the benefits including access to 2 accelerators of your choice (a $400 value)."
+      answer: "Absolutely! You can upgrade to an annual membership at any time and get 2 months free."
     }
   ];
 
