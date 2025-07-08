@@ -34,14 +34,14 @@ const MainServicesSection = ({ onServiceClick }: MainServicesSectionProps) => {
       title: "Our Membership",
       price: "$59/month*",
       savings: "*our limited time launch rate",
-      description: "Connect with like-minded entrepreneurs building AI-first companies",
+      description: "",
       benefits: [
         "🤝 Connect and learn from our community of founders and fractional experts",
         "🎯 Discover local AI events", 
         "💬 Join investor fireside chats",
         "⏰ Access office hours 2x a month",
         "🎓 Unlimited access to AI accelerators all year long",
-        "🌟 Access thought leadership on making cultural change",
+        
         "🎁 Bonus: Pay annually and save 2 months"
       ],
       icon: Users,
