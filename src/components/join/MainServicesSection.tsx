@@ -33,7 +33,7 @@ const MainServicesSection = ({ onServiceClick }: MainServicesSectionProps) => {
       id: 1,
       title: "Our Membership",
       price: "$59/month*",
-      savings: "*our limited time launch rate",
+      savings: "*our limited time launch rate, includes free 2 week trial",
       description: "",
       benefits: [
         "🤝 Connect and learn from our community of founders and fractional experts",
