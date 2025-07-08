@@ -32,8 +32,8 @@ const MainServicesSection = ({ onServiceClick }: MainServicesSectionProps) => {
     {
       id: 1,
       title: "Join our Membership",
-      price: "$59/month",
-      savings: "or save with annual",
+      price: "$59/month*",
+      savings: "*our limited time launch rate",
       description: "Connect with like-minded entrepreneurs building AI-first companies",
       benefits: [
         "🤝 Connect and learn from our community of founders and fractional experts",
