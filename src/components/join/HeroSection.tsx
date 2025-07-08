@@ -13,14 +13,11 @@ const HeroSection = () => {
             <span className="text-sm font-semibold uppercase tracking-wide">Your Journey Starts Here</span>
             <Sparkles className="h-6 w-6 text-launch-purple animate-pulse" />
           </div>
-          <h1 className="text-4xl md:text-6xl font-bold mb-2">
+          <h1 className="text-3xl md:text-5xl font-bold mb-6">
             <span className="bg-gradient-to-r from-launch-purple to-launch-orange bg-clip-text text-transparent">
-              Join our Community
+              Join our Growing Community
             </span>
           </h1>
-          <h2 className="text-2xl md:text-3xl text-launch-orange font-semibold mb-6">
-            Launching June 2025
-          </h2>
         </div>
       </div>
     </div>
