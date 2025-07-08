@@ -38,9 +38,9 @@ const MainServicesSection = ({ onServiceClick }: MainServicesSectionProps) => {
       benefits: [
         "🤝 Connect and learn from our community of founders and fractional experts",
         "📅 Get invites to local AI community events", 
-        "💬 Join investor fireside chats",
-        "⏰ Access office hours 2x a month",
         "🎓 Unlimited access to AI accelerators all year long",
+        "⏰ Access office hours 2x a month",
+        "💬 Join investor fireside chats",
         
         "🎁 Bonus: Pay annually and save 2 months"
       ],
