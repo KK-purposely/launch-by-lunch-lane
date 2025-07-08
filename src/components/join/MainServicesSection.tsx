@@ -46,7 +46,7 @@ const MainServicesSection = ({ onServiceClick }: MainServicesSectionProps) => {
       ],
       icon: Users,
       ctaText: "Join Now",
-      ctaUrl: "/community"
+      ctaUrl: "https://innercircle.launchbylunch.co/checkout/inner-circle-membership"
     }
   ];
 
