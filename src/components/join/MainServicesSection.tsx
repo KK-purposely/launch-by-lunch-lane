@@ -40,7 +40,7 @@ const MainServicesSection = ({ onServiceClick }: MainServicesSectionProps) => {
         "🎯 Discover local AI events", 
         "💬 Join investor fireside chats",
         "⏰ Access office hours 2x a month",
-        "🎓 Join exclusive accelerators",
+        "🎓 Unlimited access to AI accelerators all year long",
         "🌟 Access thought leadership on making cultural change",
         "🎁 Bonus: Pay annually and save 2 months"
       ],
