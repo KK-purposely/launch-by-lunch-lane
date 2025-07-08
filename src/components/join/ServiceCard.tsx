@@ -65,7 +65,7 @@ const ServiceCard = ({ service, index, onServiceClick }: ServiceCardProps) => {
             </p>
             {service.savings && (
               <p className="text-sm text-blue-600 font-medium bg-blue-50 px-3 py-1 rounded-full inline-block">
-                💰 {service.savings}
+                {service.savings}
               </p>
             )}
             {service.sessions && (
