@@ -45,7 +45,7 @@ const MainServicesSection = ({ onServiceClick }: MainServicesSectionProps) => {
         "🎁 Bonus: Pay annually and save 2 months"
       ],
       icon: Users,
-      ctaText: "Apply to Join",
+      ctaText: "Join Now",
       ctaUrl: "/community"
     }
   ];
