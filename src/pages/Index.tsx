@@ -62,7 +62,7 @@ const Index = () => {
         <Hero />
         
         {/* YouTube Video Section */}
-        <section className="w-full py-16 px-4 sm:px-6">
+        <section className="w-full py-16 px-4 sm:px-6 bg-white">
           <div className="max-w-4xl mx-auto">
             <div className="w-full mx-auto">
               <div className="relative w-full" style={{ paddingBottom: '56.25%' }}>
@@ -72,6 +72,17 @@ const Index = () => {
                 />
               </div>
             </div>
+          </div>
+        </section>
+        
+        {/* Partner Network Section */}
+        <section className="w-full py-16 px-4 sm:px-6 bg-white">
+          <div className="max-w-5xl mx-auto text-center">
+            <img 
+              src="/lovable-uploads/1cb0cf22-661a-40eb-89e0-77bed3a1a19f.png" 
+              alt="Bringing access to founders through our global partner network: Founders EDGE, techstars, CIC, PastCTO"
+              className="w-full h-auto max-w-4xl mx-auto"
+            />
           </div>
         </section>
         
