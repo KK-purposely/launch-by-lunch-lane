@@ -79,7 +79,7 @@ const Index = () => {
         <section className="w-full py-16 px-4 sm:px-6 bg-white">
           <div className="max-w-5xl mx-auto text-center">
             <img 
-              src="/lovable-uploads/1cb0cf22-661a-40eb-89e0-77bed3a1a19f.png" 
+              src="/lovable-uploads/d913c762-4ca7-4507-821c-38f6d01de82d.png" 
               alt="Bringing access to founders through our global partner network: Founders EDGE, techstars, CIC, PastCTO"
               className="w-full h-auto max-w-4xl mx-auto"
             />
