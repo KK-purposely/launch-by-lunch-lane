@@ -24,6 +24,9 @@ const Footer = () => {
           <a href="https://cdn.launchbylunch.co/pages/customer_service" className="underline hover:text-launch-orange transition-colors" target="_blank" rel="noopener noreferrer">
             Customer Service
           </a>
+          <a href="https://status.launchbylunch.co/" className="underline hover:text-launch-orange transition-colors" target="_blank" rel="noopener noreferrer">
+            Status
+          </a>
         </div>
         
         <div className="text-sm text-white/70">
