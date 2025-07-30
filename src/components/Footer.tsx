@@ -14,6 +14,18 @@ const Footer = () => {
           Reach out at <a href="mailto:welcome@launchbylunch.co" className="underline hover:text-launch-orange transition-colors">welcome@launchbylunch.co</a>
         </div>
         
+        <div className="mb-4 flex flex-wrap justify-center gap-4 text-sm">
+          <a href="https://cdn.launchbylunch.co/pages/privacy_policy" className="underline hover:text-launch-orange transition-colors" target="_blank" rel="noopener noreferrer">
+            Privacy Policy
+          </a>
+          <a href="https://cdn.launchbylunch.co/pages/terms_of_service" className="underline hover:text-launch-orange transition-colors" target="_blank" rel="noopener noreferrer">
+            Terms of Service
+          </a>
+          <a href="https://cdn.launchbylunch.co/pages/customer_service" className="underline hover:text-launch-orange transition-colors" target="_blank" rel="noopener noreferrer">
+            Customer Service
+          </a>
+        </div>
+        
         <div className="text-sm text-white/70">
           &copy; {currentYear} Launch by Lunch. All rights reserved.
         </div>
