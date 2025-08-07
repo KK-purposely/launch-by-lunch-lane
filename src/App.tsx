@@ -15,6 +15,7 @@ import Community from "./pages/Community";
 import OfficeHours from "./pages/OfficeHours";
 import TearDown from "./pages/TearDown";
 import Contact from "./pages/Contact";
+import CorporateInnovation from "./pages/CorporateInnovation";
 import Navigation from "./components/Navigation";
 
 const queryClient = new QueryClient();
@@ -32,6 +33,7 @@ const App = () => (
             <Route path="/services" element={<Services />} />
             <Route path="/accelerators" element={<Accelerators />} />
             <Route path="/about" element={<About />} />
+            <Route path="/corporate-innovation" element={<CorporateInnovation />} />
             <Route path="/members" element={<MembersOnly />} />
             <Route path="/community" element={<Community />} />
             <Route path="/office-hours" element={<OfficeHours />} />
