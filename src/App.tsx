@@ -17,7 +17,7 @@ import TearDown from "./pages/TearDown";
 import Contact from "./pages/Contact";
 import Navigation from "./components/Navigation";
 
-const queryClient = new QueryClient();
+const queryClient = new QueryClient(); // Trigger GitHub sync
 
 const App = () => (
   <QueryClientProvider client={queryClient}>
