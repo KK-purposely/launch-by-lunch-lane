@@ -47,9 +47,14 @@ const Navigation = () => {
                   Contact
                 </Link>
 
-                <Link to="/members" className="px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-launch-orange">
+                <a 
+                  href="https://innercircle.launchbylunch.co/" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-launch-orange"
+                >
                   Members Only
-                </Link>
+                </a>
               </div>
             </div>
           </div>
@@ -106,14 +111,13 @@ const Navigation = () => {
                   </Link>
                 </DropdownMenuItem>
                 
-                <DropdownMenuItem asChild>
-                  <Link 
-                    to="/members" 
-                    className="w-full"
-                    onClick={() => setIsMenuOpen(false)}
-                  >
-                    Members Only
-                  </Link>
+                <DropdownMenuItem 
+                  onClick={() => {
+                    window.open('https://innercircle.launchbylunch.co/', '_blank');
+                    setIsMenuOpen(false);
+                  }}
+                >
+                  Members Only
                 </DropdownMenuItem>
                 
                 <DropdownMenuSeparator />
