@@ -11,6 +11,7 @@ const Footer = () => {
         </div>
         
         <div className="mb-4 text-sm text-center">
+          <div className="mb-2">55 Court Street, Boston, MA 02108</div>
           Reach out at <a href="mailto:welcome@launchbylunch.co" className="underline hover:text-launch-orange transition-colors">welcome@launchbylunch.co</a>
         </div>
         
