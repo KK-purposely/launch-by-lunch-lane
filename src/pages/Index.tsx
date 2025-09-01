@@ -79,8 +79,8 @@ const Index = () => {
         <section className="w-full py-16 px-4 sm:px-6 bg-white">
           <div className="max-w-5xl mx-auto text-center">
             <img 
-              src="/lovable-uploads/f4392a17-4397-47d5-a933-efea0e56f460.png" 
-              alt="Our global partner network: Founders EDGE, CIC, techstars, PastCTO, Silicon Society"
+              src="/lovable-uploads/edf596a7-bfe1-43e4-a3c2-8d89f888d8d6.png" 
+              alt="Bringing access to founders through our global partner network: Founders EDGE, CIC, techstars, PastCTO, Silicon Society"
               className="w-full h-auto max-w-4xl mx-auto"
             />
           </div>
