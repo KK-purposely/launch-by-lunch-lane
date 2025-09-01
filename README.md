@@ -1,6 +1,4 @@
 # Welcome to your Lovable project 
-
-## Project info - deploy me now
   
 **URL**: https://lovable.dev/projects/373214f5-6eb3-4d82-9d82-29baf9d6ba9e
 
