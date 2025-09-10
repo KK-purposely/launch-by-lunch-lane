@@ -3,7 +3,8 @@ import { CheckCircle } from "lucide-react";
 const FitSection = () => {
   const founderQuestions = [
     "Did you outsource your dev project and are disappointed in the results?",
-    "Do you have an idea and want to build it yourself without code?"
+    "Do you have an idea and want to build it yourself without code?",
+    "Are you looking for a community to support you?"
   ];
 
   const fractionalQuestions = [
