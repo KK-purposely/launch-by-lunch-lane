@@ -3,6 +3,7 @@ import Hero from "@/components/Hero";
 import Testimonials from "@/components/Testimonials";
 import Features from "@/components/Features";
 import Footer from "@/components/Footer";
+import FitSection from "@/components/FitSection";
 import HeroSection from "@/components/join/HeroSection";
 import MainServicesSection from "@/components/join/MainServicesSection";
 import FAQSection from "@/components/join/FAQSection";
@@ -88,6 +89,7 @@ const Index = () => {
         
         <Features />
         <Testimonials />
+        <FitSection />
         
         {/* Join page content */}
         <HeroSection />
