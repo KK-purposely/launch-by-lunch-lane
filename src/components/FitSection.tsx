@@ -18,7 +18,7 @@ const FitSection = () => {
           Not Sure if You're a Good Fit?
         </h2>
         
-        <div className="grid md:grid-cols-2 gap-8 mb-8 max-w-5xl mx-auto">
+        <div className="grid md:grid-cols-2 gap-10 mb-8 max-w-5xl mx-auto">
           {/* For Fractionals Column */}
           <div className="space-y-6">
             <h3 className="text-2xl font-bold text-gray-800 mb-6">For Fractionals</h3>
