@@ -17,7 +17,7 @@ const FitSection = () => {
     <section className="w-full py-16 px-4 sm:px-6 bg-gradient-to-br from-orange-50 to-white">
       <div className="max-w-6xl mx-auto text-center">
         <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-16 bg-gradient-to-r from-launch-purple to-launch-orange bg-clip-text text-transparent">
-          Not Sure if You're a Good Fit?
+          Still not sure if it's right for you?
         </h2>
         
         <div className="grid md:grid-cols-2 gap-10 mb-8 max-w-5xl mx-auto">
