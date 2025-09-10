@@ -9,7 +9,8 @@ const FitSection = () => {
 
   const fractionalQuestions = [
     "Are you a fractional expert who works with early stage startups and wants to build your brand in a trusted network?",
-    "Are you an AI expert who believes in a \"give first\" approach to building professional relationships?"
+    "Are you an AI expert who believes in a \"give first\" approach to building professional relationships?",
+    "Are you looking for a community to support you?"
   ];
 
   return (
@@ -27,7 +28,7 @@ const FitSection = () => {
               <div key={index} className="flex items-start gap-4 text-left">
                 <div className="flex-shrink-0 mt-1">
                   <span className="inline-flex items-center justify-center w-8 h-8 rounded-full bg-gradient-to-r from-launch-purple to-launch-orange text-white font-semibold text-sm">
-                    {index + 3}
+                    {index + 1}
                   </span>
                 </div>
                 <p className="text-xl text-gray-700 leading-relaxed">
