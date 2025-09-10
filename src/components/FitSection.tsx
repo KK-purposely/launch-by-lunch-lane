@@ -12,7 +12,7 @@ const FitSection = () => {
     <section className="w-full py-16 px-4 sm:px-6 bg-gradient-to-br from-orange-50 to-white">
       <div className="max-w-4xl mx-auto text-center">
         <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-12 bg-gradient-to-r from-launch-purple to-launch-orange bg-clip-text text-transparent">
-          How to Know if You're a Good Fit
+          Not Sure if You're a Good Fit?
         </h2>
         
         <div className="space-y-6 mb-8">
