@@ -18,7 +18,7 @@ const HeroSection = () => {
               Join our Growing Community
             </span>
           </h1>
-          <p className="text-lg text-gray-600 italic">
+          <p className="text-xl text-gray-600 italic">
             *Ask us about our Startup Boston discount
           </p>
         </div>
