@@ -15,6 +15,7 @@ interface ServiceCardProps {
     availability?: string;
     timing?: string;
     description: string;
+    descriptionJSX?: React.ReactNode;
     benefits?: string[];
     icon: LucideIcon;
     ctaText: string;
@@ -94,7 +95,7 @@ const ServiceCard = ({ service, index, onServiceClick }: ServiceCardProps) => {
       
       <CardContent className="pt-4 px-8 pb-8 flex flex-col flex-grow">
         <CardDescription className="text-base md:text-lg mb-6 text-gray-700 leading-relaxed">
-          {service.description}
+          {service.descriptionJSX || service.description}
         </CardDescription>
         
         {service.benefits && (

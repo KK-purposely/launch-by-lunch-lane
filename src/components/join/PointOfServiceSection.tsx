@@ -14,6 +14,7 @@ interface Service {
   timing?: string;
   availability?: string;
   description: string;
+  descriptionJSX?: React.ReactNode;
   icon: LucideIcon;
   ctaText: string;
   ctaUrl: string;
@@ -36,7 +37,30 @@ const PointOfServiceSection = ({ onServiceClick }: PointOfServiceSectionProps) =
       title: "Drop in Office Hours",
       price: "$25 per person",
       availability: "10 seats open per hour",
-      description: "Get direct access to expert guidance from our founders Karen Kelly & Stephan Smith during scheduled office hours.",
+      description: "Get direct access to expert guidance from our founders during scheduled office hours.",
+      descriptionJSX: (
+        <>
+          Get direct access to expert guidance from our founders{" "}
+          <a 
+            href="https://www.linkedin.com/in/karen-kelly-daring-greatly/" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            className="text-launch-orange font-semibold hover:text-launch-purple transition-colors duration-300 hover:underline"
+          >
+            Karen Kelly
+          </a>{" "}
+          &{" "}
+          <a 
+            href="https://www.linkedin.com/in/stephansmithbc93/" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            className="text-launch-orange font-semibold hover:text-launch-purple transition-colors duration-300 hover:underline"
+          >
+            Stephan Smith
+          </a>{" "}
+          during scheduled office hours.
+        </>
+      ),
       icon: Clock,
       ctaText: "Learn More",
       ctaUrl: "/office-hours"

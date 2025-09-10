@@ -104,7 +104,11 @@ const OfficeHours = () => {
                       />
                     </div>
                     <div className="flex-1">
-                      <h3 className="font-bold text-xl text-launch-purple mb-1">Karen Kelly</h3>
+                      <h3 className="font-bold text-xl text-launch-purple mb-1">
+                        <a href="https://www.linkedin.com/in/karen-kelly-daring-greatly/" target="_blank" rel="noopener noreferrer" className="hover:text-launch-orange transition-colors duration-300">
+                          Karen Kelly
+                        </a>
+                      </h3>
                       <p className="text-launch-orange font-medium text-sm uppercase tracking-wider mb-3">CEO & Non-Technical Founder</p>
                       <p className="text-gray-700 text-sm leading-relaxed mb-3">
                         A successful entrepreneur who built and scaled multiple companies without writing a single line of code. 
@@ -126,7 +130,11 @@ const OfficeHours = () => {
                       />
                     </div>
                     <div className="flex-1">
-                      <h3 className="font-bold text-xl text-launch-purple mb-1">Stephan Smith</h3>
+                      <h3 className="font-bold text-xl text-launch-purple mb-1">
+                        <a href="https://www.linkedin.com/in/stephansmithbc93/" target="_blank" rel="noopener noreferrer" className="hover:text-launch-orange transition-colors duration-300">
+                          Stephan Smith
+                        </a>
+                      </h3>
                       <p className="text-launch-orange font-medium text-sm uppercase tracking-wider mb-3">CTO & Technical Co-Founder</p>
                       <p className="text-gray-700 text-sm leading-relaxed mb-3">
                         A seasoned software architect with over 15 years of experience building scalable web applications. 

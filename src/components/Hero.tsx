@@ -47,7 +47,11 @@ const Hero = () => {
                   </div>
                 </div>
                 <div className="text-center">
-                  <h3 className="font-bold text-xl text-launch-purple mb-2">Karen Kelly</h3>
+                  <h3 className="font-bold text-xl text-launch-purple mb-2">
+                    <a href="https://www.linkedin.com/in/karen-kelly-daring-greatly/" target="_blank" rel="noopener noreferrer" className="hover:text-launch-orange transition-colors duration-300">
+                      Karen Kelly
+                    </a>
+                  </h3>
                   <p className="text-launch-orange font-medium text-sm uppercase tracking-wider">CEO • AI-empowered Founder</p>
                   <p className="text-gray-600 text-sm mt-2 max-w-[200px]">Proving you don't need code to build something amazing</p>
                 </div>
@@ -71,7 +75,11 @@ const Hero = () => {
                   </div>
                 </div>
                 <div className="text-center">
-                  <h3 className="font-bold text-xl text-launch-purple mb-2">Stephan Smith</h3>
+                  <h3 className="font-bold text-xl text-launch-purple mb-2">
+                    <a href="https://www.linkedin.com/in/stephansmithbc93/" target="_blank" rel="noopener noreferrer" className="hover:text-launch-orange transition-colors duration-300">
+                      Stephan Smith
+                    </a>
+                  </h3>
                   <p className="text-launch-orange font-medium text-sm uppercase tracking-wider">CTO • No-Code Champion</p>
                   <p className="text-gray-600 text-sm mt-2 max-w-[200px]">Building the future with AI as your co-pilot</p>
                 </div>
