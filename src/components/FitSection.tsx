@@ -23,7 +23,7 @@ const FitSection = () => {
                   {index + 1}
                 </span>
               </div>
-              <p className="text-lg text-gray-700 leading-relaxed">
+              <p className="text-xl text-gray-700 leading-relaxed">
                 {question}
               </p>
             </div>
