@@ -59,7 +59,7 @@ const FitSection = () => {
         <div className="inline-flex items-center gap-3 bg-white px-6 py-4 rounded-lg shadow-md border border-orange-100">
           <CheckCircle className="h-6 w-6 text-launch-orange" />
           <p className="text-lg font-semibold text-gray-800">
-            If you answered yes to any of these, Launch by Lunch is the right place for you.
+            If you answered yes to these, Launch by Lunch is the right place for you.
           </p>
         </div>
       </div>
