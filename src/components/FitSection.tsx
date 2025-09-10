@@ -4,7 +4,7 @@ const FitSection = () => {
   const questions = [
     "Did you outsource your dev project and are disappointed in the results?",
     "Do you have an idea and want to build it yourself without code?",
-    "Are you a fractional expert who works with early stage startups and wants to build your network?",
+    "Are you a fractional expert who works with early stage startups and wants to build your brand in a trusted network?",
     "Are you an AI expert who believes in a \"give first\" approach to building professional relationships?"
   ];
 
