@@ -1,7 +1,8 @@
 import React from "react";
 import Hero from "@/components/Hero";
 import Footer from "@/components/Footer";
-import { User } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { User, ArrowRight } from "lucide-react";
 
 const WomenInCommunity = () => {
   const placeholderWomen = [
@@ -14,7 +15,7 @@ const WomenInCommunity = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-launch-light via-white to-orange-50">
-      <Hero />
+      <Hero showButtons={false} />
 
       {/* Meet Our Community Section */}
       <div className="max-w-6xl mx-auto px-4 sm:px-6 py-16">
@@ -44,6 +45,20 @@ const WomenInCommunity = () => {
               </p>
             </div>
           ))}
+        </div>
+
+        {/* Join Community CTA */}
+        <div className="flex justify-center mt-16">
+          <Button 
+            size="lg" 
+            className="group bg-gradient-to-r from-launch-purple to-launch-orange hover:from-launch-orange hover:to-launch-purple text-white px-8 py-6 text-lg rounded-full font-medium transition-all duration-300 shadow-lg hover:shadow-xl"
+            onClick={() => window.open('https://innercircle.launchbylunch.co/checkout/inner-circle-membership', '_blank')}
+          >
+            <span className="flex items-center gap-2">
+              Join Our Community
+              <ArrowRight className="h-5 w-5 group-hover:translate-x-1 transition-transform" />
+            </span>
+          </Button>
         </div>
       </div>
 
