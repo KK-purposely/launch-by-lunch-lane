@@ -1,4 +1,5 @@
 import React from "react";
+import Hero from "@/components/Hero";
 import Footer from "@/components/Footer";
 import { User } from "lucide-react";
 
@@ -13,20 +14,7 @@ const WomenInCommunity = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-launch-light via-white to-orange-50">
-      {/* Hero Section */}
-      <div className="relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-r from-launch-purple/10 via-transparent to-launch-orange/10" />
-        <div className="relative max-w-4xl mx-auto px-4 sm:px-6 py-24 text-center">
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-8">
-            <span className="bg-gradient-to-r from-launch-purple to-launch-orange bg-clip-text text-transparent">
-              Welcome to Launch by Lunch
-            </span>
-          </h1>
-          <p className="text-xl md:text-2xl text-gray-700 leading-relaxed max-w-3xl mx-auto">
-            A new community of AI-first, non-technical founders and fractional experts who believe you don't need a tech team or investor dollars to launch something real and revenue generating today.
-          </p>
-        </div>
-      </div>
+      <Hero />
 
       {/* Meet Our Community Section */}
       <div className="max-w-6xl mx-auto px-4 sm:px-6 py-16">
