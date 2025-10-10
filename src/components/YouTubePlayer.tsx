@@ -124,13 +124,17 @@ const YouTubePlayer: React.FC<YouTubePlayerProps> = ({ videoId, className }) => 
     if (isMobile && ytPlayerRef.current && isInView) {
       // Small delay to ensure smooth scrolling
       const timer = setTimeout(() => {
-        ytPlayerRef.current.playVideo();
+        if (ytPlayerRef.current && typeof ytPlayerRef.current.playVideo === 'function') {
+          ytPlayerRef.current.playVideo();
+        }
       }, 300);
       
       return () => clearTimeout(timer);
     } else if (isMobile && ytPlayerRef.current && !isInView) {
       // Pause video when it goes out of view on mobile
-      ytPlayerRef.current.pauseVideo();
+      if (ytPlayerRef.current && typeof ytPlayerRef.current.pauseVideo === 'function') {
+        ytPlayerRef.current.pauseVideo();
+      }
     }
   }, [isInView, isMobile]);
 
