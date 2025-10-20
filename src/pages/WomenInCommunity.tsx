@@ -10,7 +10,6 @@ const WomenInCommunity = () => {
     { id: 2, name: "Name 2", info: "Info coming soon" },
     { id: 3, name: "Name 3", info: "Info coming soon" },
     { id: 4, name: "Name 4", info: "Info coming soon" },
-    { id: 5, name: "Name 5", info: "Info coming soon" },
   ];
 
   return (
@@ -21,7 +20,7 @@ const WomenInCommunity = () => {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 py-16">
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-16">
           <span className="bg-gradient-to-r from-launch-purple to-launch-orange bg-clip-text text-transparent">
-            Meet 5 Amazing Women from Our Community
+            Hear from 4 Amazing Women from Our Community
           </span>
         </h2>
 
