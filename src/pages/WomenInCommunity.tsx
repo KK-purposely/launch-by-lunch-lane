@@ -102,26 +102,29 @@ const WomenInCommunity = () => {
               </div>
 
               {woman.audioUrl && (
-                <div className="relative z-10 flex items-center justify-center gap-3 mt-6">
-                  <div className="flex items-center justify-center w-10 h-10 rounded-full bg-gradient-to-br from-launch-purple/10 to-launch-orange/10 group-hover:from-launch-purple/20 group-hover:to-launch-orange/20 transition-all duration-300">
-                    <Volume2 className="w-5 h-5 text-launch-purple" />
+                <div className="relative z-10 flex flex-col items-center justify-center gap-3 mt-6">
+                  <p className="text-xs text-gray-500 font-medium">30 second pitch</p>
+                  <div className="flex items-center gap-3">
+                    <div className="flex items-center justify-center w-10 h-10 rounded-full bg-gradient-to-br from-launch-purple/10 to-launch-orange/10 group-hover:from-launch-purple/20 group-hover:to-launch-orange/20 transition-all duration-300">
+                      <Volume2 className="w-5 h-5 text-launch-purple" />
+                    </div>
+                    <button
+                      onClick={() => toggleAudio(woman.id)}
+                      className="flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-launch-purple to-launch-orange hover:from-launch-orange hover:to-launch-purple text-white rounded-full transition-all duration-300 shadow-md hover:shadow-lg transform hover:scale-105"
+                    >
+                      {playingAudio === woman.id ? (
+                        <>
+                          <Pause className="w-4 h-4" />
+                          <span className="text-sm font-semibold">Stop</span>
+                        </>
+                      ) : (
+                        <>
+                          <Play className="w-4 h-4" />
+                          <span className="text-sm font-semibold">Listen to Pitch</span>
+                        </>
+                      )}
+                    </button>
                   </div>
-                  <button
-                    onClick={() => toggleAudio(woman.id)}
-                    className="flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-launch-purple to-launch-orange hover:from-launch-orange hover:to-launch-purple text-white rounded-full transition-all duration-300 shadow-md hover:shadow-lg transform hover:scale-105"
-                  >
-                    {playingAudio === woman.id ? (
-                      <>
-                        <Pause className="w-4 h-4" />
-                        <span className="text-sm font-semibold">Stop</span>
-                      </>
-                    ) : (
-                      <>
-                        <Play className="w-4 h-4" />
-                        <span className="text-sm font-semibold">Listen to Pitch</span>
-                      </>
-                    )}
-                  </button>
                   <audio
                     ref={(el) => (audioRefs.current[woman.id] = el)}
                     src={woman.audioUrl}
