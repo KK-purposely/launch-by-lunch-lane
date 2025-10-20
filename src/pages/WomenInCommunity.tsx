@@ -10,7 +10,7 @@ const WomenInCommunity = () => {
 
   const placeholderWomen = [
     { id: 1, name: "Alison Campbell", info: "Founder & CEO UnBurnt", photo: "/lovable-uploads/alison-campbell.jpg", linkedinUrl: "https://www.linkedin.com/in/alison-campbell-3035b63/", audioUrl: "/lovable-uploads/alison-campbell-audio.m4a" },
-    { id: 2, name: "Name 2", info: "Info coming soon", photo: null, linkedinUrl: null, audioUrl: null },
+    { id: 2, name: "Samanda J.V. Jean", info: "Co-Founder MyCycleIQ", photo: "/lovable-uploads/samanda-jean.jpg", linkedinUrl: "https://www.linkedin.com/in/samanda-j-v-jean/", audioUrl: "/lovable-uploads/samanda-jean-audio.m4a" },
     { id: 3, name: "Alisha Overton", info: "Founder & CEO The AO Planner Company", photo: "/lovable-uploads/alisha-overton.jpg", linkedinUrl: "https://www.linkedin.com/in/alishaoverton/", audioUrl: "/lovable-uploads/alisha-overton-audio.m4a" },
     { id: 4, name: "Name 4", info: "Info coming soon", photo: null, linkedinUrl: null, audioUrl: null },
   ];
