@@ -1,16 +1,34 @@
-import React from "react";
+import React, { useState, useRef } from "react";
 import Hero from "@/components/Hero";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
-import { User, ArrowRight } from "lucide-react";
+import { User, ArrowRight, Play, Pause, Volume2 } from "lucide-react";
 
 const WomenInCommunity = () => {
+  const [playingAudio, setPlayingAudio] = useState<number | null>(null);
+  const audioRefs = useRef<{ [key: number]: HTMLAudioElement | null }>({});
+
   const placeholderWomen = [
-    { id: 1, name: "Name 1", info: "Info coming soon", photo: null, linkedinUrl: null },
-    { id: 2, name: "Name 2", info: "Info coming soon", photo: null, linkedinUrl: null },
-    { id: 3, name: "Alisha Overton", info: "Founder & CEO The AO Planner Company", photo: "/lovable-uploads/alisha-overton.jpg", linkedinUrl: "https://www.linkedin.com/in/alishaoverton/" },
-    { id: 4, name: "Name 4", info: "Info coming soon", photo: null, linkedinUrl: null },
+    { id: 1, name: "Name 1", info: "Info coming soon", photo: null, linkedinUrl: null, audioUrl: null },
+    { id: 2, name: "Name 2", info: "Info coming soon", photo: null, linkedinUrl: null, audioUrl: null },
+    { id: 3, name: "Alisha Overton", info: "Founder & CEO The AO Planner Company", photo: "/lovable-uploads/alisha-overton.jpg", linkedinUrl: "https://www.linkedin.com/in/alishaoverton/", audioUrl: "/lovable-uploads/alisha-overton-audio.m4a" },
+    { id: 4, name: "Name 4", info: "Info coming soon", photo: null, linkedinUrl: null, audioUrl: null },
   ];
+
+  const toggleAudio = (id: number) => {
+    const audio = audioRefs.current[id];
+    if (!audio) return;
+
+    if (playingAudio === id) {
+      audio.pause();
+      setPlayingAudio(null);
+    } else {
+      // Pause any currently playing audio
+      Object.values(audioRefs.current).forEach(a => a?.pause());
+      audio.play();
+      setPlayingAudio(id);
+    }
+  };
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-launch-light via-white to-orange-50">
@@ -60,9 +78,36 @@ const WomenInCommunity = () => {
                 )}
               </h3>
               
-              <p className="text-gray-600 text-center">
+              <p className="text-gray-600 text-center mb-3">
                 {woman.info}
               </p>
+
+              {woman.audioUrl && (
+                <div className="flex items-center justify-center gap-2">
+                  <Volume2 className="w-4 h-4 text-launch-purple" />
+                  <button
+                    onClick={() => toggleAudio(woman.id)}
+                    className="flex items-center gap-2 px-4 py-2 bg-launch-purple/10 hover:bg-launch-purple/20 text-launch-purple rounded-full transition-colors"
+                  >
+                    {playingAudio === woman.id ? (
+                      <>
+                        <Pause className="w-4 h-4" />
+                        <span className="text-sm font-medium">Stop</span>
+                      </>
+                    ) : (
+                      <>
+                        <Play className="w-4 h-4" />
+                        <span className="text-sm font-medium">Listen</span>
+                      </>
+                    )}
+                  </button>
+                  <audio
+                    ref={(el) => (audioRefs.current[woman.id] = el)}
+                    src={woman.audioUrl}
+                    onEnded={() => setPlayingAudio(null)}
+                  />
+                </div>
+              )}
             </div>
           ))}
         </div>
