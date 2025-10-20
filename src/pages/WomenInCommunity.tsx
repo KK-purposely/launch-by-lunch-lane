@@ -31,25 +31,26 @@ const WomenInCommunity = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-launch-light via-white to-orange-50">
-      {/* Simple Hero with Logo Only */}
+      {/* Unified Hero and Content Section */}
       <div className="relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-r from-launch-purple/20 via-launch-orange/10 to-launch-orange/20" />
-        <div className="relative w-full py-8 px-4 sm:px-6">
-          <div className="max-w-4xl mx-auto text-center">
-            <div className="mb-4">
+        {/* Background gradient overlay */}
+        <div className="absolute inset-0 bg-gradient-to-b from-launch-purple/10 via-launch-orange/5 to-transparent" />
+        
+        <div className="relative w-full">
+          {/* Logo Section */}
+          <div className="py-8 px-4 sm:px-6">
+            <div className="max-w-6xl mx-auto text-center">
               <img
                 src="/lovable-uploads/8f3eba1c-0f11-4411-9774-5671f6239bf2.png"
                 alt="Launch by Lunch Logo"
-                className="h-32 md:h-44 lg:h-56 w-auto mx-auto"
+                className="h-24 md:h-32 lg:h-40 w-auto mx-auto"
               />
             </div>
           </div>
-        </div>
-      </div>
 
-      {/* Meet Our Community Section */}
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 py-16">
-        <h2 className="text-3xl md:text-4xl font-bold text-center mb-16">
+          {/* Main Content Section - seamlessly connected */}
+          <div className="max-w-6xl mx-auto px-4 sm:px-6 pb-16 pt-8">
+        <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
           <span className="bg-gradient-to-r from-launch-purple to-launch-orange bg-clip-text text-transparent">
             Tap to Hear From 4 AI-First Women in our Community
           </span>
@@ -137,7 +138,7 @@ const WomenInCommunity = () => {
         </div>
 
         {/* Join Community CTA */}
-        <div className="flex justify-center mt-16">
+        <div className="flex justify-center mt-12">
           <Button 
             size="lg" 
             className="group bg-gradient-to-r from-launch-purple to-launch-orange hover:from-launch-orange hover:to-launch-purple text-white px-8 py-6 text-lg rounded-full font-medium transition-all duration-300 shadow-lg hover:shadow-xl"
@@ -148,6 +149,8 @@ const WomenInCommunity = () => {
               <ArrowRight className="h-5 w-5 group-hover:translate-x-1 transition-transform" />
             </span>
           </Button>
+        </div>
+          </div>
         </div>
       </div>
 
