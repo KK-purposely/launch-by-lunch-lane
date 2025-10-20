@@ -38,7 +38,7 @@ const WomenInCommunity = () => {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 py-16">
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-16">
           <span className="bg-gradient-to-r from-launch-purple to-launch-orange bg-clip-text text-transparent">
-            Hear from 4 Amazing Women from Our Community
+            Tap to Hear From 4 AI-First Women in our Community
           </span>
         </h2>
 
