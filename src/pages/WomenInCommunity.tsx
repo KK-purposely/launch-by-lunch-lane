@@ -46,58 +46,66 @@ const WomenInCommunity = () => {
           {placeholderWomen.map((woman) => (
             <div
               key={woman.id}
-              className="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow duration-300 border border-orange-100"
+              className="group relative bg-gradient-to-br from-white to-orange-50/30 rounded-2xl p-8 hover:shadow-2xl transition-all duration-500 border-2 border-transparent hover:border-launch-purple/20 hover:scale-[1.02] overflow-hidden"
             >
+              {/* Decorative gradient overlay */}
+              <div className="absolute inset-0 bg-gradient-to-br from-launch-purple/5 to-launch-orange/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-2xl" />
               {/* Photo */}
-              {woman.photo ? (
-                <div className="w-32 h-32 mx-auto mb-4 rounded-full overflow-hidden">
-                  <img 
-                    src={woman.photo} 
-                    alt={woman.name}
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-              ) : (
-                <div className="w-32 h-32 mx-auto mb-4 rounded-full bg-gradient-to-br from-launch-purple/20 to-launch-orange/20 flex items-center justify-center">
-                  <User className="w-16 h-16 text-launch-purple" />
-                </div>
-              )}
-              
-              <h3 className="text-xl font-bold text-center mb-2 text-gray-800">
-                {woman.linkedinUrl ? (
-                  <a 
-                    href={woman.linkedinUrl} 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    className="hover:text-launch-purple transition-colors underline"
-                  >
-                    {woman.name}
-                  </a>
+              <div className="relative z-10">
+                {woman.photo ? (
+                  <div className="w-36 h-36 mx-auto mb-6 rounded-full overflow-hidden ring-4 ring-launch-purple/10 group-hover:ring-launch-purple/30 transition-all duration-500 group-hover:scale-105">
+                    <img 
+                      src={woman.photo} 
+                      alt={woman.name}
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
                 ) : (
-                  woman.name
+                  <div className="w-36 h-36 mx-auto mb-6 rounded-full bg-gradient-to-br from-launch-purple/20 to-launch-orange/20 flex items-center justify-center ring-4 ring-launch-purple/10 group-hover:ring-launch-purple/30 transition-all duration-500">
+                    <User className="w-16 h-16 text-launch-purple" />
+                  </div>
                 )}
-              </h3>
+              </div>
               
-              <p className="text-gray-600 text-center mb-3">
-                {woman.info}
-              </p>
+              <div className="relative z-10">
+                <h3 className="text-xl font-bold text-center mb-2 text-gray-800">
+                  {woman.linkedinUrl ? (
+                    <a 
+                      href={woman.linkedinUrl} 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="hover:text-launch-purple transition-colors relative inline-block after:content-[''] after:absolute after:w-full after:scale-x-0 after:h-0.5 after:bottom-0 after:left-0 after:bg-launch-purple after:origin-bottom-right after:transition-transform after:duration-300 hover:after:scale-x-100 hover:after:origin-bottom-left"
+                    >
+                      {woman.name}
+                    </a>
+                  ) : (
+                    woman.name
+                  )}
+                </h3>
+                
+                <p className="text-gray-600 text-center mb-4 text-sm">
+                  {woman.info}
+                </p>
+              </div>
 
               {woman.audioUrl && (
-                <div className="flex items-center justify-center gap-2">
-                  <Volume2 className="w-4 h-4 text-launch-purple" />
+                <div className="relative z-10 flex items-center justify-center gap-3 mt-6">
+                  <div className="flex items-center justify-center w-10 h-10 rounded-full bg-gradient-to-br from-launch-purple/10 to-launch-orange/10 group-hover:from-launch-purple/20 group-hover:to-launch-orange/20 transition-all duration-300">
+                    <Volume2 className="w-5 h-5 text-launch-purple" />
+                  </div>
                   <button
                     onClick={() => toggleAudio(woman.id)}
-                    className="flex items-center gap-2 px-4 py-2 bg-launch-purple/10 hover:bg-launch-purple/20 text-launch-purple rounded-full transition-colors"
+                    className="flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-launch-purple to-launch-orange hover:from-launch-orange hover:to-launch-purple text-white rounded-full transition-all duration-300 shadow-md hover:shadow-lg transform hover:scale-105"
                   >
                     {playingAudio === woman.id ? (
                       <>
                         <Pause className="w-4 h-4" />
-                        <span className="text-sm font-medium">Stop</span>
+                        <span className="text-sm font-semibold">Stop</span>
                       </>
                     ) : (
                       <>
                         <Play className="w-4 h-4" />
-                        <span className="text-sm font-medium">Listen</span>
+                        <span className="text-sm font-semibold">Listen to Pitch</span>
                       </>
                     )}
                   </button>
