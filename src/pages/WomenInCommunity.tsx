@@ -1,5 +1,4 @@
 import React, { useState, useRef } from "react";
-import Hero from "@/components/Hero";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { User, ArrowRight, Play, Pause, Volume2 } from "lucide-react";
@@ -32,7 +31,21 @@ const WomenInCommunity = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-launch-light via-white to-orange-50">
-      <Hero showButtons={false} />
+      {/* Simple Hero with Logo Only */}
+      <div className="relative overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-r from-launch-purple/20 via-launch-orange/10 to-launch-orange/20" />
+        <div className="relative w-full py-8 px-4 sm:px-6">
+          <div className="max-w-4xl mx-auto text-center">
+            <div className="mb-4">
+              <img
+                src="/lovable-uploads/8f3eba1c-0f11-4411-9774-5671f6239bf2.png"
+                alt="Launch by Lunch Logo"
+                className="h-32 md:h-44 lg:h-56 w-auto mx-auto"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
 
       {/* Meet Our Community Section */}
       <div className="max-w-6xl mx-auto px-4 sm:px-6 py-16">
