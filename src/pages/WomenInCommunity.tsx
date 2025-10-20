@@ -6,10 +6,10 @@ import { User, ArrowRight } from "lucide-react";
 
 const WomenInCommunity = () => {
   const placeholderWomen = [
-    { id: 1, name: "Name 1", info: "Info coming soon" },
-    { id: 2, name: "Name 2", info: "Info coming soon" },
-    { id: 3, name: "Name 3", info: "Info coming soon" },
-    { id: 4, name: "Name 4", info: "Info coming soon" },
+    { id: 1, name: "Name 1", info: "Info coming soon", photo: null, linkedinUrl: null },
+    { id: 2, name: "Name 2", info: "Info coming soon", photo: null, linkedinUrl: null },
+    { id: 3, name: "Alisha Overton", info: "Founder & CEO The AO Planner Company", photo: "/lovable-uploads/alisha-overton.jpg", linkedinUrl: "https://www.linkedin.com/in/alishaoverton/" },
+    { id: 4, name: "Name 4", info: "Info coming soon", photo: null, linkedinUrl: null },
   ];
 
   return (
@@ -30,13 +30,34 @@ const WomenInCommunity = () => {
               key={woman.id}
               className="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition-shadow duration-300 border border-orange-100"
             >
-              {/* Placeholder for photo */}
-              <div className="w-32 h-32 mx-auto mb-4 rounded-full bg-gradient-to-br from-launch-purple/20 to-launch-orange/20 flex items-center justify-center">
-                <User className="w-16 h-16 text-launch-purple" />
-              </div>
+              {/* Photo */}
+              {woman.photo ? (
+                <div className="w-32 h-32 mx-auto mb-4 rounded-full overflow-hidden">
+                  <img 
+                    src={woman.photo} 
+                    alt={woman.name}
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+              ) : (
+                <div className="w-32 h-32 mx-auto mb-4 rounded-full bg-gradient-to-br from-launch-purple/20 to-launch-orange/20 flex items-center justify-center">
+                  <User className="w-16 h-16 text-launch-purple" />
+                </div>
+              )}
               
               <h3 className="text-xl font-bold text-center mb-2 text-gray-800">
-                {woman.name}
+                {woman.linkedinUrl ? (
+                  <a 
+                    href={woman.linkedinUrl} 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="hover:text-launch-purple transition-colors underline"
+                  >
+                    {woman.name}
+                  </a>
+                ) : (
+                  woman.name
+                )}
               </h3>
               
               <p className="text-gray-600 text-center">
