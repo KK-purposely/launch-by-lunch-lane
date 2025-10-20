@@ -24,7 +24,7 @@ const WomenInCommunity = () => {
           </span>
         </h2>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-8">
+        <div className="grid md:grid-cols-2 gap-8 mb-8">
           {placeholderWomen.map((woman) => (
             <div
               key={woman.id}
