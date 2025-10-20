@@ -43,7 +43,7 @@ const WomenInCommunity = () => {
               <img
                 src="/lovable-uploads/8f3eba1c-0f11-4411-9774-5671f6239bf2.png"
                 alt="Launch by Lunch Logo"
-                className="h-24 md:h-32 lg:h-40 w-auto mx-auto"
+                className="h-32 md:h-44 lg:h-52 w-auto mx-auto"
               />
             </div>
           </div>
