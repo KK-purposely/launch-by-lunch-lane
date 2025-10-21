@@ -47,7 +47,7 @@ const CommunityPartnerships = () => {
               <img
                 src="/lovable-uploads/banner-2-panel.png"
                 alt="Launch by Lunch - The Inner Circle"
-                className="w-full max-w-6xl mx-auto rounded-2xl shadow-xl"
+                className="w-full max-w-6xl mx-auto rounded-2xl shadow-xl border-[3mm] border-white"
               />
             </div>
 
