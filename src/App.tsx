@@ -16,6 +16,7 @@ import OfficeHours from "./pages/OfficeHours";
 import TearDown from "./pages/TearDown";
 import Contact from "./pages/Contact";
 import WomenInCommunity from "./pages/WomenInCommunity";
+import CommunityPartnerships from "./pages/CommunityPartnerships";
 import Navigation from "./components/Navigation";
 
 const queryClient = new QueryClient(); // Trigger GitHub sync
@@ -39,6 +40,7 @@ const App = () => (
             <Route path="/teardown" element={<TearDown />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/women-in-community" element={<WomenInCommunity />} />
+            <Route path="/community-partnerships" element={<CommunityPartnerships />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>
