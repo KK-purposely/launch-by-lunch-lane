@@ -15,9 +15,9 @@ const CommunityPartnerships = () => {
           <div className="py-8 px-4 sm:px-6">
             <div className="max-w-6xl mx-auto text-center">
               <img
-                src="/lovable-uploads/8f3eba1c-0f11-4411-9774-5671f6239bf2.png"
-                alt="Launch by Lunch Logo"
-                className="h-32 md:h-44 lg:h-52 w-auto mx-auto"
+                src="/lovable-uploads/banner-2-panel.png"
+                alt="Launch by Lunch - The Inner Circle"
+                className="w-full max-w-4xl mx-auto"
               />
             </div>
           </div>
