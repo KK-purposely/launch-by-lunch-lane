@@ -53,14 +53,6 @@ const CommunityPartnerships = () => {
               </div>
             </div>
 
-            {/* Testimonials Banner */}
-            <div className="mb-16">
-              <img 
-                src="/lovable-uploads/fb164285-9e6e-4bcd-a96f-4fb850c4aad9.png"
-                alt="Customer testimonials"
-                className="w-full rounded-2xl shadow-xl"
-              />
-            </div>
 
             {/* Year-Long Partnerships Section */}
             <div className="mb-16">
