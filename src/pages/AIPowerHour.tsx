@@ -53,7 +53,7 @@ const AIPowerHour = () => {
                   Build better teams that sell more with Crystal Knows
                 </h3>
                 <p className="text-muted-foreground leading-relaxed">
-                  <strong className="text-foreground">Crystal Knows</strong> is an AI-powered personality assessment platform that helps you understand communication styles and build stronger relationships. By analyzing personality traits using DISC methodology, Crystal provides actionable insights to improve team dynamics, enhance sales conversations, and communicate more effectively with clients and colleagues. Learn how to leverage personality data to close more deals and create high-performing teams.
+                  <a href="https://www.crystalknows.com/" target="_blank" rel="noopener noreferrer" className="font-semibold text-launch-purple hover:text-launch-orange transition-colors underline">Crystal Knows</a> is an AI-powered personality assessment platform that helps you understand communication styles and build stronger relationships. By analyzing personality traits using DISC methodology, Crystal provides actionable insights to improve team dynamics, enhance sales conversations, and communicate more effectively with clients and colleagues. Learn how to leverage personality data to close more deals and create high-performing teams.
                 </p>
               </div>
 
@@ -66,7 +66,7 @@ const AIPowerHour = () => {
                   Demo a simple productivity agent with Zapier
                 </h3>
                 <p className="text-muted-foreground leading-relaxed">
-                  <strong className="text-foreground">Zapier Agents</strong> represent the next evolution of automation—AI-powered agents that can handle complex, multi-step workflows with minimal setup. Unlike traditional Zaps, these intelligent agents can make decisions, adapt to context, and execute sophisticated tasks autonomously. We'll demonstrate how to build a productivity agent that can manage your calendar, prioritize tasks, and streamline your daily operations—all without writing a single line of code.
+                  <a href="https://zapier.com/agents" target="_blank" rel="noopener noreferrer" className="font-semibold text-launch-purple hover:text-launch-orange transition-colors underline">Zapier Agents</a> represent the next evolution of automation—AI-powered agents that can handle complex, multi-step workflows with minimal setup. Unlike traditional Zaps, these intelligent agents can make decisions, adapt to context, and execute sophisticated tasks autonomously. We'll demonstrate how to build a productivity agent that can manage your calendar, prioritize tasks, and streamline your daily operations—all without writing a single line of code.
                 </p>
               </div>
 
@@ -79,7 +79,7 @@ const AIPowerHour = () => {
                   Create a Web App with Lovable
                 </h3>
                 <p className="text-muted-foreground leading-relaxed">
-                  <strong className="text-foreground">Lovable</strong> is a revolutionary AI-powered web development platform that turns your ideas into fully functional web applications in minutes. Using natural language, you can describe what you want to build, and Lovable's AI generates production-ready React code with beautiful, responsive designs. Whether you're building an MVP, internal tool, or customer-facing application, Lovable eliminates the technical barriers to bringing your vision to life—no coding experience required.
+                  <a href="https://lovable.dev/" target="_blank" rel="noopener noreferrer" className="font-semibold text-launch-purple hover:text-launch-orange transition-colors underline">Lovable</a> is a revolutionary AI-powered web development platform that turns your ideas into fully functional web applications in minutes. Using natural language, you can describe what you want to build, and Lovable's AI generates production-ready React code with beautiful, responsive designs. Whether you're building an MVP, internal tool, or customer-facing application, Lovable eliminates the technical barriers to bringing your vision to life—no coding experience required.
                 </p>
               </div>
             </div>
