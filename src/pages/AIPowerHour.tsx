@@ -17,7 +17,7 @@ const AIPowerHour = () => {
               AI Tools Power Hour
             </h1>
             <p className="text-xl md:text-2xl mb-8 text-white/90">
-              Unlock the power of AI to transform your business operations
+              Unlock the power of AI to transform your business operations.
             </p>
             <div className="text-lg">
               <p className="mb-2">Presented by</p>
