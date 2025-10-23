@@ -1,5 +1,4 @@
 import { Helmet } from "react-helmet-async";
-import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 
 const AIPowerHour = () => {
@@ -9,8 +8,6 @@ const AIPowerHour = () => {
         <title>AI Tools Power Hour - Launch by Lunch</title>
         <meta name="description" content="Join Karen Kelly, CEO of Launch by Lunch, for an interactive session exploring AI-powered tools including Crystal Knows, Zapier Agents, and Lovable." />
       </Helmet>
-      
-      <Navigation />
       
       <main className="flex-1">
         {/* Hero Section */}
