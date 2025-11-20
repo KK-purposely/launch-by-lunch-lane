@@ -54,7 +54,7 @@ const MainServicesSection = ({ onServiceClick }: MainServicesSectionProps) => {
       description: "",
       benefits: [
         "**Everything in The Appetizer, plus:**",
-        "Access to Invite-Only Events",
+        "Access to quarterly AI-Ecosystem Invite-Only Events",
         "Exclusive Low Code Cookbook content including a custom AI stack builder",
         "Priority listing in the community",
         "Access to vetted founders, fractionals and operators in the AI ecosystem"
