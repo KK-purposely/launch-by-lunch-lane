@@ -12,6 +12,7 @@ interface MainServicesSectionProps {
 interface Service {
   id: number;
   title: string;
+  subtitle?: string;
   price: string;
   savings?: string;
   sessions?: string;
@@ -50,7 +51,8 @@ const MainServicesSection = ({ onServiceClick }: MainServicesSectionProps) => {
     },
     {
       id: 2,
-      title: "The Appetizer - Students & Pre-Funding Startups",
+      subtitle: "The Appetizer",
+      title: "Students & Pre-Funding Startups",
       price: "$15/month",
       description: "For founders who are pre-funding and students who are tired of trying to learn AI alone.",
       benefits: [

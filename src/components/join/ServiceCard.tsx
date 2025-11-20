@@ -8,6 +8,7 @@ interface ServiceCardProps {
   service: {
     id: number;
     title: string;
+    subtitle?: string;
     price: string;
     savings?: string;
     sessions?: string;
@@ -52,6 +53,11 @@ const ServiceCard = ({ service, index, onServiceClick }: ServiceCardProps) => {
           <service.icon className="w-full h-full text-launch-orange" />
         </div>
         <div className="relative z-10">
+          {service.subtitle && (
+            <h2 className="text-2xl md:text-3xl font-bold text-launch-orange mb-3">
+              {service.subtitle}
+            </h2>
+          )}
           <div className="flex items-center gap-3 mb-4">
             <div className={`p-3 rounded-full ${service.featured ? 'bg-gradient-to-r from-launch-purple to-launch-orange' : 'bg-launch-orange'} shadow-lg`}>
               <service.icon className="h-6 w-6 text-white" />
