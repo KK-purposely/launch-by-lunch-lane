@@ -9,6 +9,23 @@ import {
 const FAQSection = () => {
   const faqs = [
     {
+      question: "Can I sponsor Launch by Lunch?",
+      answer: (
+        <>
+          Yes, we're currently evaluating 2026 sponsorships. Read more{" "}
+          <a 
+            href="https://sponsorship.launchbylunch.co/" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="text-launch-orange font-medium hover:underline"
+          >
+            here
+          </a>
+          .
+        </>
+      )
+    },
+    {
       question: "What is Launch by Lunch and who is it for?",
       answer: "Launch by Lunch is a community and accelerator program designed for AI-first founders and fractionals who want to build and scale their businesses without extensive coding knowledge. It's perfect for entrepreneurs who have great ideas but need guidance on turning them into working applications using AI and no-code tools."
     },
@@ -78,9 +95,9 @@ const FAQSection = () => {
                     </span>
                   </AccordionTrigger>
                   <AccordionContent className="px-6 pb-4 pt-0">
-                    <p className="text-gray-600 leading-relaxed">
+                    <div className="text-gray-600 leading-relaxed">
                       {faq.answer}
-                    </p>
+                    </div>
                   </AccordionContent>
                 </AccordionItem>
               ))}
