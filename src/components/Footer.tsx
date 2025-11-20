@@ -28,6 +28,9 @@ const Footer = () => {
           <a href="https://status.launchbylunch.co/" className="underline hover:text-launch-orange transition-colors" target="_blank" rel="noopener noreferrer">
             Status
           </a>
+          <a href="https://sponsorship.launchbylunch.co/" className="underline hover:text-launch-orange transition-colors" target="_blank" rel="noopener noreferrer">
+            Sponsorship
+          </a>
         </div>
         
         <div className="text-sm text-white/70">
