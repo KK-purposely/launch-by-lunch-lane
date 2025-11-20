@@ -69,7 +69,7 @@ const MainServicesSection = ({ onServiceClick }: MainServicesSectionProps) => {
     {
       id: 3,
       subtitle: "Chef's Table",
-      title: "Elite Community Access",
+      title: "Industry Leaders",
       price: "$120/month",
       description: "Your ticket to elite community, strategy, and content in the new AI ecosystem.",
       benefits: [
