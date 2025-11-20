@@ -35,7 +35,7 @@ const MainServicesSection = ({ onServiceClick }: MainServicesSectionProps) => {
       subtitle: "The Appetizer",
       title: "Students & Pre-Funding Startups",
       price: "$15/month",
-      description: "For founders who are pre-funding and students who are tired of trying to learn AI alone.",
+      description: "",
       benefits: [
         "**Connect and learn from our community of AI experts.** Meet your next teammates.",
         "**Access to the Low Code Cookbook.** Build your stack with confidence with our take on today's hot or not AI tools. Perks available.",
