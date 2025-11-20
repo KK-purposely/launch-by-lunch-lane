@@ -56,7 +56,8 @@ const MainServicesSection = ({ onServiceClick }: MainServicesSectionProps) => {
         "**Everything in The Appetizer, plus:**",
         "Access to Invite-Only Events",
         "Exclusive Low Code Cookbook content including a custom AI stack builder",
-        "Priority listing in the community"
+        "Priority listing in the community",
+        "Access to vetted founders, fractionals and operators in the AI ecosystem"
       ],
       icon: Users,
       ctaText: "Join Now",
@@ -72,7 +73,6 @@ const MainServicesSection = ({ onServiceClick }: MainServicesSectionProps) => {
       benefits: [
         "**1 hour/month on The Hotline** with our founders for tech, GTM or 1:1 sales help.",
         "**Priority placement** in Launch by Lunch community & access to invite-only events.",
-        "**Access to vetted founders, fractionals and operators** in the AI ecosystem.",
         "**Exclusive Low Code Cookbook Content** & Stack Reviews.",
         "**A seat at Launch by Lunch's quarterly advisory roundtable.**"
       ],
