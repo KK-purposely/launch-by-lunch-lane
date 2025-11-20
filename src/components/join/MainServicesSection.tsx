@@ -62,6 +62,23 @@ const MainServicesSection = ({ onServiceClick }: MainServicesSectionProps) => {
       icon: Rocket,
       ctaText: "Join us",
       ctaUrl: "https://innercircle.launchbylunch.co/checkout/students-and-early-stage-founders"
+    },
+    {
+      id: 3,
+      subtitle: "Chef's Table",
+      title: "Elite Community Access",
+      price: "$120/month",
+      description: "Your ticket to elite community, strategy, and content in the new AI ecosystem.",
+      benefits: [
+        "**1 hour/month on The Hotline** with our founders for tech, GTM or 1:1 sales help.",
+        "**Priority placement** in Launch by Lunch community & access to invite-only events.",
+        "**Access to vetted founders, fractionals and operators** in the AI ecosystem.",
+        "**Exclusive Low Code Cookbook Content** & Stack Reviews.",
+        "**A seat at Launch by Lunch's quarterly advisory roundtable.**"
+      ],
+      icon: Users,
+      ctaText: "Join Now",
+      ctaUrl: "https://innercircle.launchbylunch.co/checkout/chefs-table"
     }
   ];
 
@@ -106,7 +123,7 @@ const MainServicesSection = ({ onServiceClick }: MainServicesSectionProps) => {
 
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 pb-8 pt-16">
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
         {mainServices.map((service, index) => (
           <ServiceCard
             key={service.id}
