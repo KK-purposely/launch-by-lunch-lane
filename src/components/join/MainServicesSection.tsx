@@ -50,7 +50,7 @@ const MainServicesSection = ({ onServiceClick }: MainServicesSectionProps) => {
     {
       id: 1,
       subtitle: "The Main Course",
-      title: "Our Membership",
+      title: "Founders & Fractionals",
       price: "$59/month",
       description: "",
       benefits: [
