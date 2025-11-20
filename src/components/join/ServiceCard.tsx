@@ -48,11 +48,11 @@ const ServiceCard = ({ service, index, onServiceClick }: ServiceCardProps) => {
         </div>
       )}
       
-      <CardHeader className={`${service.featured ? 'bg-gradient-to-r from-launch-purple/5 to-launch-orange/5' : 'bg-gray-50'} relative overflow-hidden p-8`}>
+      <CardHeader className={`${service.featured ? 'bg-gradient-to-r from-launch-purple/5 to-launch-orange/5' : 'bg-gray-50'} relative overflow-hidden p-8 min-h-[400px] flex flex-col justify-between`}>
         <div className="absolute top-0 right-0 w-32 h-32 opacity-10">
           <service.icon className="w-full h-full text-launch-orange" />
         </div>
-        <div className="relative z-10">
+        <div className="relative z-10 flex-grow">
           {service.subtitle ? (
             <>
               <div className="flex items-center gap-3 mb-3">
@@ -77,7 +77,8 @@ const ServiceCard = ({ service, index, onServiceClick }: ServiceCardProps) => {
               </CardTitle>
             </div>
           )}
-          <div className="space-y-2">
+        </div>
+        <div className="relative z-10 space-y-2 mt-auto">
             <p className={`text-3xl md:text-4xl font-bold ${service.featured ? 'bg-gradient-to-r from-launch-orange to-launch-purple bg-clip-text text-transparent' : 'text-launch-orange'}`}>
               {service.price}
             </p>
@@ -112,7 +113,6 @@ const ServiceCard = ({ service, index, onServiceClick }: ServiceCardProps) => {
               </p>
             )}
           </div>
-        </div>
       </CardHeader>
       
       <CardContent className="pt-4 px-8 pb-8 flex flex-col flex-grow">
