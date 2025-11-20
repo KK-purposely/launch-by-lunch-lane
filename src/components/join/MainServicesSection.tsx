@@ -52,7 +52,8 @@ const MainServicesSection = ({ onServiceClick }: MainServicesSectionProps) => {
     {
       id: 2,
       title: "Students & Pre-Funding Startups",
-      price: "Contact Us",
+      price: "$15/month*",
+      savings: "*our limited time launch rate, includes free 2 week trial",
       description: "",
       benefits: [
         "Connect and learn from our community of AI experts. Meet your next teammates.",
