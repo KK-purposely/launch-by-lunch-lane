@@ -119,17 +119,22 @@ const ServiceCard = ({ service, index, onServiceClick }: ServiceCardProps) => {
         
         {service.benefits && (
           <div className="mb-6 space-y-3 flex-grow">
-            {service.benefits.map((benefit, index) => (
-              <div 
-                key={index} 
-                className="flex items-start gap-3 p-2 rounded-lg bg-gradient-to-r from-blue-50 to-sky-50 border border-blue-100"
-              >
-                <div className="flex-shrink-0 w-5 h-5 bg-gradient-to-r from-blue-500 to-sky-500 rounded-full flex items-center justify-center mt-0.5">
-                  <Check className="h-3 w-3 text-white" />
+            {service.benefits.map((benefit, index) => {
+              const isEverythingInAppetizer = benefit.includes('Everything in The Appetizer');
+              return (
+                <div 
+                  key={index} 
+                  className="flex items-start gap-3 p-2 rounded-lg bg-gradient-to-r from-blue-50 to-sky-50 border border-blue-100"
+                >
+                  {!isEverythingInAppetizer && (
+                    <div className="flex-shrink-0 w-5 h-5 bg-gradient-to-r from-blue-500 to-sky-500 rounded-full flex items-center justify-center mt-0.5">
+                      <Check className="h-3 w-3 text-white" />
+                    </div>
+                  )}
+                  <span className={`text-sm md:text-base text-gray-700 leading-relaxed ${isEverythingInAppetizer ? 'ml-0' : ''}`} dangerouslySetInnerHTML={{ __html: benefit.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>') }} />
                 </div>
-                <span className="text-sm md:text-base text-gray-700 leading-relaxed" dangerouslySetInnerHTML={{ __html: benefit.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>') }} />
-              </div>
-            ))}
+              );
+            })}
           </div>
         )}
 
