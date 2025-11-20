@@ -58,7 +58,7 @@ const MainServicesSection = ({ onServiceClick }: MainServicesSectionProps) => {
         "No Code Wayfinder - build your own stack in seconds or get our take on what you've already built.",
         "Access to quarterly AI-Ecosystem Invite-Only Events",
         "Priority listing in the community",
-        "Looking for help? Get access to vetted founders and fractionals.",
+        "Schedule time with vetted founders and fractionals",
         "Fireside chats with experts 3x a month - from legal advice to AI productivity workflows"
       ],
       icon: Users,
