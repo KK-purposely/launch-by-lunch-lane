@@ -54,7 +54,7 @@ const ServiceCard = ({ service, index, onServiceClick }: ServiceCardProps) => {
         </div>
         <div className="relative z-10">
           {service.subtitle && (
-            <h2 className="text-2xl md:text-3xl font-bold text-launch-orange mb-3">
+            <h2 className="text-2xl md:text-3xl font-bold bg-gradient-to-r from-launch-purple to-launch-orange bg-clip-text text-transparent mb-3">
               {service.subtitle}
             </h2>
           )}
