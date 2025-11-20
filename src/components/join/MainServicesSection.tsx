@@ -70,7 +70,7 @@ const MainServicesSection = ({ onServiceClick }: MainServicesSectionProps) => {
       subtitle: "Chef's Table",
       title: "Industry Leaders",
       price: "$120/month",
-      description: "Your ticket to elite community, strategy, and content in the new AI ecosystem.",
+      description: "",
       benefits: [
         "**1 hour/month on The Hotline** with our founders for tech, GTM or 1:1 sales help.",
         "**Priority placement** in Launch by Lunch community & access to invite-only events.",
