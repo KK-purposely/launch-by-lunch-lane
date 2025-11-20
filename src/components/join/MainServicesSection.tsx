@@ -79,7 +79,7 @@ const MainServicesSection = ({ onServiceClick }: MainServicesSectionProps) => {
       ],
       icon: Users,
       ctaText: "Join Now",
-      ctaUrl: "https://innercircle.launchbylunch.co/checkout/chefs-table"
+      ctaUrl: "https://innercircle.launchbylunch.co/checkout/industry-leaders-chefs-table"
     }
   ];
 
