@@ -32,8 +32,7 @@ const MainServicesSection = ({ onServiceClick }: MainServicesSectionProps) => {
     {
       id: 1,
       title: "Our Membership",
-      price: "$59/month*",
-      savings: "*includes free 2 week trial",
+      price: "$59/month",
       description: "",
       benefits: [
         "🤝 Connect and learn from our community of founders and fractional experts",
@@ -52,7 +51,7 @@ const MainServicesSection = ({ onServiceClick }: MainServicesSectionProps) => {
     {
       id: 2,
       title: "Students & Pre-Funding Startups",
-      price: "$15/month*",
+      price: "$15/month",
       description: "For founders who are pre-funding and students who are tired of trying to learn AI alone.",
       benefits: [
         "Connect and learn from our community of AI experts. Meet your next teammates.",
