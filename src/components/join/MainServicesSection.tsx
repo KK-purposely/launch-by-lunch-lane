@@ -46,7 +46,25 @@ const MainServicesSection = ({ onServiceClick }: MainServicesSectionProps) => {
       ],
       icon: Users,
       ctaText: "Join Now",
-      ctaUrl: "https://innercircle.launchbylunch.co/checkout/inner-circle-membership"
+      ctaUrl: "https://innercircle.launchbylunch.co/checkout/inner-circle-membership",
+      featured: true
+    },
+    {
+      id: 2,
+      title: "Students & Pre-Funding Startups",
+      price: "Contact Us",
+      description: "",
+      benefits: [
+        "✔️ Connect and learn from our community of AI experts. Meet your next teammates.",
+        "✔️ Access to the Low Code Cookbook. Build your stack with confidence with our take on today's hot or not AI tools. Perks available.",
+        "✔️ Invites to >50 events/year. We meet up. A lot.",
+        "✔️ Attend office hours 4x a month. Come ask all your questions and meet other people in our community.",
+        "✔️ Bi-monthly Newsletter. All the latest on where AI is headed, who to watch, and which tools you can skip."
+      ],
+      icon: Rocket,
+      ctaText: "Get in Touch",
+      ctaUrl: "/contact",
+      isContact: true
     }
   ];
 
@@ -90,21 +108,18 @@ const MainServicesSection = ({ onServiceClick }: MainServicesSectionProps) => {
   );
 
   return (
-    <div className="max-w-4xl mx-auto px-4 sm:px-6 pb-8 pt-16">
-      <div className="flex justify-center">
-        <div className="w-full max-w-3xl">
-          {mainServices.map((service, index) => (
-            <div key={service.id} className="relative">
-              <ServiceCard
-                service={service}
-                index={index}
-                onServiceClick={onServiceClick}
-              />
-              <AcceleratorCTA />
-            </div>
-          ))}
-        </div>
+    <div className="max-w-7xl mx-auto px-4 sm:px-6 pb-8 pt-16">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+        {mainServices.map((service, index) => (
+          <ServiceCard
+            key={service.id}
+            service={service}
+            index={index}
+            onServiceClick={onServiceClick}
+          />
+        ))}
       </div>
+      <AcceleratorCTA />
     </div>
   );
 };
