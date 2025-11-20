@@ -36,13 +36,10 @@ const MainServicesSection = ({ onServiceClick }: MainServicesSectionProps) => {
       price: "$59/month",
       description: "",
       benefits: [
-        "Connect and learn from our community of founders and fractional experts",
-        "Get invites to local AI community events", 
-        "Unlimited access to AI accelerators all year long",
-        "Access office hours 4x a month",
-        "Join investor fireside chats",
-        
-        "Bonus: Pay annually and save 2 months"
+        "**Everything in The Appetizer, plus:**",
+        "Access to Invite-Only Events",
+        "Exclusive Low Code Cookbook content including a custom AI stack builder",
+        "Priority listing in the community"
       ],
       icon: Users,
       ctaText: "Join Now",
