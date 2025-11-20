@@ -72,7 +72,7 @@ const MainServicesSection = ({ onServiceClick }: MainServicesSectionProps) => {
       price: "$120/month",
       description: "",
       benefits: [
-        "**1 hour/month on The Hotline** with our founders for tech, GTM or 1:1 sales help.",
+        "**1 hour/month on The Hotline** with our founders, Stephan Smith & Karen Kelly, for tech, GTM or 1:1 sales help.",
         "**Priority placement** in Launch by Lunch community & access to invite-only events.",
         "**Exclusive Low Code Cookbook Content** & Stack Reviews.",
         "**A seat at Launch by Lunch's quarterly advisory roundtable.**"
