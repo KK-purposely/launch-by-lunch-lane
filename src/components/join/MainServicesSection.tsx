@@ -31,22 +31,6 @@ const MainServicesSection = ({ onServiceClick }: MainServicesSectionProps) => {
 
   const mainServices: Service[] = [
     {
-      id: 1,
-      title: "Our Membership",
-      price: "$59/month",
-      description: "",
-      benefits: [
-        "**Everything in The Appetizer, plus:**",
-        "Access to Invite-Only Events",
-        "Exclusive Low Code Cookbook content including a custom AI stack builder",
-        "Priority listing in the community"
-      ],
-      icon: Users,
-      ctaText: "Join Now",
-      ctaUrl: "https://innercircle.launchbylunch.co/checkout/inner-circle-membership",
-      featured: true
-    },
-    {
       id: 2,
       subtitle: "The Appetizer",
       title: "Students & Pre-Funding Startups",
@@ -62,6 +46,22 @@ const MainServicesSection = ({ onServiceClick }: MainServicesSectionProps) => {
       icon: Rocket,
       ctaText: "Join us",
       ctaUrl: "https://innercircle.launchbylunch.co/checkout/students-and-early-stage-founders"
+    },
+    {
+      id: 1,
+      title: "Our Membership",
+      price: "$59/month",
+      description: "",
+      benefits: [
+        "**Everything in The Appetizer, plus:**",
+        "Access to Invite-Only Events",
+        "Exclusive Low Code Cookbook content including a custom AI stack builder",
+        "Priority listing in the community"
+      ],
+      icon: Users,
+      ctaText: "Join Now",
+      ctaUrl: "https://innercircle.launchbylunch.co/checkout/inner-circle-membership",
+      featured: true
     },
     {
       id: 3,
