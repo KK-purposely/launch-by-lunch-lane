@@ -49,7 +49,8 @@ const MainServicesSection = ({ onServiceClick }: MainServicesSectionProps) => {
     },
     {
       id: 1,
-      title: "The Main Course",
+      subtitle: "The Main Course",
+      title: "Our Membership",
       price: "$59/month",
       description: "",
       benefits: [
