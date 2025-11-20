@@ -33,7 +33,7 @@ const MainServicesSection = ({ onServiceClick }: MainServicesSectionProps) => {
     {
       id: 2,
       subtitle: "The Appetizer",
-      title: "Students & Pre-Funding Startups",
+      title: "Students",
       price: "$15/month",
       description: "",
       benefits: [
