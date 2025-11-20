@@ -55,7 +55,7 @@ const MainServicesSection = ({ onServiceClick }: MainServicesSectionProps) => {
       description: "",
       benefits: [
         "**Everything in The Appetizer, plus:**",
-        "**No Code Wayfinder** - build your own stack in seconds or get our take on what you've already built.",
+        "**Exclusive Low Code Cookbook Content** & Stack Reviews.",
         "**Access to quarterly AI-Ecosystem Invite-Only Events**",
         "**Schedule time with vetted founders and fractionals**",
         "**Fireside chats with experts 3x a month** - from legal advice to AI productivity workflows"
@@ -74,7 +74,7 @@ const MainServicesSection = ({ onServiceClick }: MainServicesSectionProps) => {
       benefits: [
         "**1 hour/month on The Hotline** with our founders, Stephan Smith & Karen Kelly, for tech, GTM or 1:1 sales help.",
         "**Priority placement** in Launch by Lunch community & access to invite-only events.",
-        "**Exclusive Low Code Cookbook Content** & Stack Reviews.",
+        "**No Code Wayfinder** - build your own stack in seconds or get our take on what you've already built.",
         "**A seat at Launch by Lunch's quarterly advisory roundtable.**"
       ],
       icon: Users,
