@@ -70,7 +70,7 @@ const ServiceCard = ({ service, index, onServiceClick }: ServiceCardProps) => {
               </p>
             )}
             {(service.description || service.descriptionJSX) && (
-              <p className="text-base text-gray-700 leading-relaxed mt-3">
+              <p className="text-base text-gray-700 leading-relaxed mt-3 font-bold">
                 {service.descriptionJSX || service.description}
               </p>
             )}
