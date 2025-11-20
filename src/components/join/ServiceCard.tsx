@@ -69,6 +69,11 @@ const ServiceCard = ({ service, index, onServiceClick }: ServiceCardProps) => {
                 {service.savings}
               </p>
             )}
+            {(service.description || service.descriptionJSX) && (
+              <p className="text-base text-gray-700 leading-relaxed mt-3">
+                {service.descriptionJSX || service.description}
+              </p>
+            )}
             {service.sessions && (
               <p className="text-sm text-purple-600 bg-purple-50 px-3 py-1 rounded-full inline-block">
                 🎯 {service.sessions}
@@ -94,9 +99,6 @@ const ServiceCard = ({ service, index, onServiceClick }: ServiceCardProps) => {
       </CardHeader>
       
       <CardContent className="pt-4 px-8 pb-8 flex flex-col flex-grow">
-        <CardDescription className="text-base md:text-lg mb-6 text-gray-700 leading-relaxed">
-          {service.descriptionJSX || service.description}
-        </CardDescription>
         
         {service.benefits && (
           <div className="mb-6 space-y-3 flex-grow">
