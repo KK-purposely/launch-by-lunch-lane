@@ -53,19 +53,30 @@ const ServiceCard = ({ service, index, onServiceClick }: ServiceCardProps) => {
           <service.icon className="w-full h-full text-launch-orange" />
         </div>
         <div className="relative z-10">
-          {service.subtitle && (
-            <h2 className="text-2xl md:text-3xl font-bold bg-gradient-to-r from-launch-purple to-launch-orange bg-clip-text text-transparent mb-3">
-              {service.subtitle}
-            </h2>
-          )}
-          <div className="flex items-center gap-3 mb-4">
-            <div className={`p-3 rounded-full ${service.featured ? 'bg-gradient-to-r from-launch-purple to-launch-orange' : 'bg-launch-orange'} shadow-lg`}>
-              <service.icon className="h-6 w-6 text-white" />
+          {service.subtitle ? (
+            <>
+              <div className="flex items-center gap-3 mb-3">
+                <div className={`p-3 rounded-full ${service.featured ? 'bg-gradient-to-r from-launch-purple to-launch-orange' : 'bg-launch-orange'} shadow-lg`}>
+                  <service.icon className="h-6 w-6 text-white" />
+                </div>
+                <h2 className="text-2xl md:text-3xl font-bold bg-gradient-to-r from-launch-purple to-launch-orange bg-clip-text text-transparent">
+                  {service.subtitle}
+                </h2>
+              </div>
+              <CardTitle className="text-xl md:text-2xl text-launch-purple mb-4">
+                {service.title}
+              </CardTitle>
+            </>
+          ) : (
+            <div className="flex items-center gap-3 mb-4">
+              <div className={`p-3 rounded-full ${service.featured ? 'bg-gradient-to-r from-launch-purple to-launch-orange' : 'bg-launch-orange'} shadow-lg`}>
+                <service.icon className="h-6 w-6 text-white" />
+              </div>
+              <CardTitle className={`text-xl md:text-2xl ${service.featured ? 'bg-gradient-to-r from-launch-purple to-launch-orange bg-clip-text text-transparent' : 'text-launch-purple'}`}>
+                {service.title}
+              </CardTitle>
             </div>
-            <CardTitle className={`text-xl md:text-2xl ${service.featured ? 'bg-gradient-to-r from-launch-purple to-launch-orange bg-clip-text text-transparent' : 'text-launch-purple'}`}>
-              {service.title}
-            </CardTitle>
-          </div>
+          )}
           <div className="space-y-2">
             <p className={`text-3xl md:text-4xl font-bold ${service.featured ? 'bg-gradient-to-r from-launch-orange to-launch-purple bg-clip-text text-transparent' : 'text-launch-orange'}`}>
               {service.price}
