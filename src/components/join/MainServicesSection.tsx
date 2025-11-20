@@ -54,11 +54,11 @@ const MainServicesSection = ({ onServiceClick }: MainServicesSectionProps) => {
       price: "$15/month",
       description: "For founders who are pre-funding and students who are tired of trying to learn AI alone.",
       benefits: [
-        "Connect and learn from our community of AI experts. Meet your next teammates.",
-        "Access to the Low Code Cookbook. Build your stack with confidence with our take on today's hot or not AI tools. Perks available.",
-        "Invites to >50 events/year. We meet up. A lot.",
-        "Attend office hours 4x a month. Come ask all your questions and meet other people in our community.",
-        "Bi-monthly Newsletter. All the latest on where AI is headed, who to watch, and which tools you can skip."
+        "**Connect and learn from our community of AI experts.** Meet your next teammates.",
+        "**Access to the Low Code Cookbook.** Build your stack with confidence with our take on today's hot or not AI tools. Perks available.",
+        "**Invites to >50 events/year.** We meet up. A lot.",
+        "**Attend office hours 4x a month.** Come ask all your questions and meet other people in our community.",
+        "**Bi-monthly Newsletter.** All the latest on where AI is headed, who to watch, and which tools you can skip."
       ],
       icon: Rocket,
       ctaText: "Join us",

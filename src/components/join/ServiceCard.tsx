@@ -110,7 +110,7 @@ const ServiceCard = ({ service, index, onServiceClick }: ServiceCardProps) => {
                 <div className="flex-shrink-0 w-5 h-5 bg-gradient-to-r from-blue-500 to-sky-500 rounded-full flex items-center justify-center mt-0.5">
                   <Check className="h-3 w-3 text-white" />
                 </div>
-                <span className="text-sm md:text-base text-gray-700 leading-relaxed">{benefit}</span>
+                <span className="text-sm md:text-base text-gray-700 leading-relaxed" dangerouslySetInnerHTML={{ __html: benefit.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>') }} />
               </div>
             ))}
           </div>
