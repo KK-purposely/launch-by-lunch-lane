@@ -57,7 +57,7 @@ const MainServicesSection = ({ onServiceClick }: MainServicesSectionProps) => {
         "Access to quarterly AI-Ecosystem Invite-Only Events",
         "Exclusive Low Code Cookbook content including a custom AI stack builder",
         "Priority listing in the community",
-        "Looking for help? Get access to vetted founders, fractionals and operators in the AI ecosystem",
+        "Looking for help? Get access to vetted founders and fractionals.",
         "Fireside chats with experts 3x a month - from legal advice to AI productivity workflows"
       ],
       icon: Users,
