@@ -73,8 +73,8 @@ const MainServicesSection = ({ onServiceClick }: MainServicesSectionProps) => {
       description: "",
       benefits: [
         "**1 hour/month on The Hotline** with our founders, Stephan Smith & Karen Kelly, for tech, GTM or 1:1 sales help.",
-        "**Priority placement** in Launch by Lunch community & access to invite-only events.",
         "**No Code Wayfinder** - build your own stack in seconds or get our take on what you've already built.",
+        "**Priority placement** in Launch by Lunch community & access to invite-only events.",
         "**A seat at Launch by Lunch's quarterly advisory roundtable.**"
       ],
       icon: Users,
