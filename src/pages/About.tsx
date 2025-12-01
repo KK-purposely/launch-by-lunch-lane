@@ -46,13 +46,13 @@ const About = () => {
         </Card>
         
         {/* Team Photo and Bios Section */}
-        <div className="mb-12 flex flex-col lg:flex-row gap-8 items-start">
+        <div className="mb-12 flex flex-col lg:flex-row gap-8 items-stretch">
           {/* Team Image */}
-          <div className="lg:w-1/2 w-full">
+          <div className="lg:w-1/2 w-full flex flex-col">
             <img 
               src="/lovable-uploads/team-photo-updated.jpg" 
               alt="Karen Kelly and Stephan Smith, founders of Launch by Lunch" 
-              className="rounded-2xl shadow-lg w-full h-auto"
+              className="rounded-2xl shadow-lg w-full h-full object-cover flex-1"
             />
             <p className="text-sm text-gray-600 mt-4 italic text-center">
               Karen Kelly and Stephan Smith, the founding team behind Launch by Lunch
