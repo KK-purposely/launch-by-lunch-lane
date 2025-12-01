@@ -43,30 +43,77 @@ const About = () => {
               </p>
             </div>
             
-            <div className="space-y-6">
-              <p className="text-lg text-gray-700 leading-relaxed">
-                Paired with strategic consulting services and an online community, startups go from prototype to revenue to scale - all without outsourcing a line of code.
-              </p>
-              <p className="text-lg text-gray-700 leading-relaxed">
-                Created by Boston-based CTO <a href="https://www.linkedin.com/in/stephansmithbc93/" target="_blank" rel="noopener noreferrer" className="text-launch-orange font-semibold hover:text-launch-purple transition-colors duration-300 hover:underline">Stephan Smith</a> and 3x non-technical founder <a href="https://www.linkedin.com/in/karen-kelly-daring-greatly/" target="_blank" rel="noopener noreferrer" className="text-launch-orange font-semibold hover:text-launch-purple transition-colors duration-300 hover:underline">Karen Kelly</a>, our vibe coding services shepherd you through the delightful process of using natural language to build technical products.
-              </p>
-              <p className="text-lg text-gray-700 leading-relaxed">
-                If code and cost has always stood between you and your vision, come talk to us.
-              </p>
-            </div>
+            <p className="text-lg text-gray-700 leading-relaxed">
+              Paired with strategic consulting services and an online community, startups go from prototype to revenue to scale - all without outsourcing a line of code.
+            </p>
           </CardContent>
         </Card>
         
         {/* Team Image */}
         <div className="mb-12 text-center">
           <img 
-            src="/lovable-uploads/d93cbef0-7fe6-4762-b53e-46153f8f2fad.png" 
-            alt="Stephan Smith and Karen Kelly, founders of Launch by Lunch" 
+            src="/lovable-uploads/team-photo-updated.jpg" 
+            alt="Karen Kelly and Stephan Smith, founders of Launch by Lunch" 
             className="rounded-2xl shadow-lg mx-auto max-w-full h-auto"
           />
           <p className="text-sm text-gray-600 mt-4 italic">
-            Stephan Smith and Karen Kelly, the founding team behind Launch by Lunch
+            Karen Kelly and Stephan Smith, the founding team behind Launch by Lunch
           </p>
+        </div>
+        
+        {/* Featured Founder Sections */}
+        <div className="space-y-8 mb-12">
+          {/* Karen Kelly */}
+          <Card className="border-none shadow-lg bg-gradient-to-br from-white via-launch-light/20 to-white overflow-hidden">
+            <CardContent className="p-8 md:p-10">
+              <div className="flex items-start gap-4 mb-4">
+                <div className="flex-shrink-0">
+                  <div className="w-20 h-20 rounded-full bg-gradient-to-r from-launch-purple to-launch-orange p-0.5">
+                    <div className="w-full h-full rounded-full bg-white flex items-center justify-center">
+                      <span className="text-2xl font-bold bg-gradient-to-r from-launch-purple to-launch-orange bg-clip-text text-transparent">KK</span>
+                    </div>
+                  </div>
+                </div>
+                <div className="flex-1">
+                  <h3 className="text-2xl font-bold mb-1">
+                    <a href="https://www.linkedin.com/in/karen-kelly-daring-greatly/" target="_blank" rel="noopener noreferrer" className="bg-gradient-to-r from-launch-purple to-launch-orange bg-clip-text text-transparent hover:opacity-80 transition-opacity">
+                      Karen Kelly
+                    </a>
+                  </h3>
+                  <p className="text-launch-orange font-semibold text-lg mb-3">CEO</p>
+                  <p className="text-gray-700 leading-relaxed">
+                    Non-technical visionary who saw the democratization of technology coming. Karen is a 3x founder and ex-advertising exec who brings startup strategy, "find a way" thinking and a passion for empowerment through access, education, and network.
+                  </p>
+                </div>
+              </div>
+            </CardContent>
+          </Card>
+          
+          {/* Stephan Smith */}
+          <Card className="border-none shadow-lg bg-gradient-to-br from-white via-launch-light/20 to-white overflow-hidden">
+            <CardContent className="p-8 md:p-10">
+              <div className="flex items-start gap-4 mb-4">
+                <div className="flex-shrink-0">
+                  <div className="w-20 h-20 rounded-full bg-gradient-to-r from-launch-orange to-launch-purple p-0.5">
+                    <div className="w-full h-full rounded-full bg-white flex items-center justify-center">
+                      <span className="text-2xl font-bold bg-gradient-to-r from-launch-orange to-launch-purple bg-clip-text text-transparent">SS</span>
+                    </div>
+                  </div>
+                </div>
+                <div className="flex-1">
+                  <h3 className="text-2xl font-bold mb-1">
+                    <a href="https://www.linkedin.com/in/stephansmithbc93/" target="_blank" rel="noopener noreferrer" className="bg-gradient-to-r from-launch-orange to-launch-purple bg-clip-text text-transparent hover:opacity-80 transition-opacity">
+                      Stephan Smith
+                    </a>
+                  </h3>
+                  <p className="text-launch-orange font-semibold text-lg mb-3">CTO</p>
+                  <p className="text-gray-700 leading-relaxed">
+                    Techstars alum and technical expert with deep AI and low-code experience. Stephan bridges the gap between complex technology and practical founder execution. Stephan was a fractional CTO at Karen's company prior to jumping into this new adventure together - democratizing access to AI for everyone, everywhere.
+                  </p>
+                </div>
+              </div>
+            </CardContent>
+          </Card>
         </div>
         
         {/* CTA Section */}
