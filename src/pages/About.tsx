@@ -42,10 +42,6 @@ const About = () => {
                 </span>
               </p>
             </div>
-            
-            <p className="text-lg text-gray-700 leading-relaxed">
-              Paired with strategic consulting services and an online community, startups go from prototype to revenue to scale - all without outsourcing a line of code.
-            </p>
           </CardContent>
         </Card>
         
