@@ -115,6 +115,15 @@ const About = () => {
           </div>
         </div>
         
+        {/* Community Leaders Section */}
+        <div className="mb-12">
+          <img 
+            src="/lovable-uploads/community-leaders.png" 
+            alt="We are Boston's Startup Community Leaders - showcasing our involvement in the Boston startup ecosystem" 
+            className="rounded-2xl shadow-lg w-full h-auto"
+          />
+        </div>
+        
         {/* CTA Section */}
         <div className="text-center">
           <div className="bg-gradient-to-r from-launch-purple/10 via-launch-orange/10 to-launch-purple/10 rounded-3xl p-8 md:p-12 mb-8">
