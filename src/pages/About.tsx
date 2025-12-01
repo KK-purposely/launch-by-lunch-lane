@@ -79,7 +79,7 @@ const About = () => {
                       </a>
                     </h3>
                     <p className="text-launch-orange font-semibold mb-2">CEO</p>
-                    <p className="text-gray-700 leading-relaxed text-sm">
+                    <p className="text-gray-700 leading-relaxed text-base">
                       Non-technical visionary who saw the democratization of technology coming. Karen is a 3x founder, former CMO, martech president and ex-advertising exec who brings startup strategy, "find a way" thinking and a passion for empowerment through access, education, and network.
                     </p>
                   </div>
@@ -105,7 +105,7 @@ const About = () => {
                       </a>
                     </h3>
                     <p className="text-launch-orange font-semibold mb-2">CTO</p>
-                    <p className="text-gray-700 leading-relaxed text-sm">
+                    <p className="text-gray-700 leading-relaxed text-base">
                       Techstars alum and technical expert with deep AI and low-code experience. Stephan bridges the gap between complex technology and practical founder execution. Stephan was a fractional CTO at Karen's company prior to jumping into this new adventure together - democratizing access to AI for everyone, everywhere.
                     </p>
                   </div>
