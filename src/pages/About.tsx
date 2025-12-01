@@ -116,17 +116,19 @@ const About = () => {
         </div>
         
         {/* Community Leaders Section */}
-        <div className="mb-12 -mx-4 sm:-mx-6 lg:-mx-24">
-          <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center px-4 sm:px-6 lg:px-24">
+        <div className="mb-16 mt-8">
+          <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center">
             <span className="bg-gradient-to-r from-launch-purple to-launch-orange bg-clip-text text-transparent">
               We are Boston's Startup Community Leaders
             </span>
           </h2>
-          <img 
-            src="/lovable-uploads/community-leaders-final.png" 
-            alt="We are Boston's Startup Community Leaders - showcasing our involvement in the Boston startup ecosystem" 
-            className="rounded-2xl shadow-lg w-full h-auto transform scale-150 origin-center"
-          />
+          <div className="max-w-6xl mx-auto">
+            <img 
+              src="/lovable-uploads/community-leaders-final.png" 
+              alt="We are Boston's Startup Community Leaders - showcasing our involvement in the Boston startup ecosystem" 
+              className="rounded-2xl shadow-lg w-full h-auto"
+            />
+          </div>
         </div>
         
         {/* CTA Section */}
