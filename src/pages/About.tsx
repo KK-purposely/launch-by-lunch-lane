@@ -54,7 +54,7 @@ const About = () => {
           <img 
             src="/lovable-uploads/team-photo-updated.jpg" 
             alt="Karen Kelly and Stephan Smith, founders of Launch by Lunch" 
-            className="rounded-2xl shadow-lg mx-auto max-w-full h-auto"
+            className="rounded-2xl shadow-lg mx-auto w-1/2 h-auto"
           />
           <p className="text-sm text-gray-600 mt-4 italic">
             Karen Kelly and Stephan Smith, the founding team behind Launch by Lunch
