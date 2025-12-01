@@ -118,7 +118,7 @@ const About = () => {
         {/* Community Leaders Section */}
         <div className="mb-12">
           <img 
-            src="/lovable-uploads/community-leaders.png" 
+            src="/lovable-uploads/boston-community-leaders.png" 
             alt="We are Boston's Startup Community Leaders - showcasing our involvement in the Boston startup ecosystem" 
             className="rounded-2xl shadow-lg w-full h-auto"
           />
