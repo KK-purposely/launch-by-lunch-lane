@@ -80,7 +80,7 @@ const About = () => {
                     </h3>
                     <p className="text-launch-orange font-semibold mb-2">CEO</p>
                     <p className="text-gray-700 leading-relaxed text-sm">
-                      Non-technical visionary who saw the democratization of technology coming. Karen is a 3x founder and ex-advertising exec who brings startup strategy, "find a way" thinking and a passion for empowerment through access, education, and network.
+                      Non-technical visionary who saw the democratization of technology coming. Karen is a 3x founder, former CMO, martech president and ex-advertising exec who brings startup strategy, "find a way" thinking and a passion for empowerment through access, education, and network.
                     </p>
                   </div>
                 </div>
