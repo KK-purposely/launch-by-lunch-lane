@@ -32,19 +32,6 @@ const About = () => {
 
       {/* Main Content */}
       <div className="max-w-4xl mx-auto px-4 sm:px-6 pb-16">
-        <Card className="mb-12 border-none shadow-lg bg-gradient-to-br from-white via-launch-light/30 to-white">
-          <CardContent className="pt-8 p-8 md:p-12">
-            {/* Emphasized First Sentence */}
-            <div className="mb-8 p-6 bg-gradient-to-r from-launch-purple/10 via-launch-orange/10 to-launch-purple/10 rounded-2xl border border-launch-orange/20">
-              <p className="text-xl md:text-2xl font-bold leading-relaxed">
-                <span className="bg-gradient-to-r from-launch-purple to-launch-orange bg-clip-text text-transparent">
-                  Launch by Lunch is the first community created to empower non-technical founders to move from the back of the crowd to the front of the line.
-                </span>
-              </p>
-            </div>
-          </CardContent>
-        </Card>
-        
         {/* Team Photo and Bios Section */}
         <div className="mb-12 flex flex-col lg:flex-row gap-8 items-stretch">
           {/* Team Image */}
