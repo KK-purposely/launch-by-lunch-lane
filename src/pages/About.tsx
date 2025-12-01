@@ -136,6 +136,13 @@ const About = () => {
               className="rounded-2xl shadow-lg w-full h-auto"
             />
           </div>
+          <div className="max-w-6xl mx-auto mt-8">
+            <img 
+              src="/lovable-uploads/community-section-2.png" 
+              alt="Launch by Lunch community events and partnerships" 
+              className="rounded-2xl shadow-lg w-full h-auto"
+            />
+          </div>
         </div>
         
         {/* CTA Section */}
