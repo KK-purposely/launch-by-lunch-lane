@@ -83,7 +83,6 @@ const MainServicesSection = ({ onServiceClick }: MainServicesSectionProps) => {
         "**Invite to annual AI leadership retreat**",
         "**No Code Wayfinder** - build your own stack in seconds or get our take on what you've already built.",
         "**Vetted directory of fractionals** trusted by our community.",
-        "**Priority placement** in Launch by Lunch community & access to invite-only events.",
         "**A seat at Launch by Lunch's quarterly advisory roundtable.**"
       ],
       icon: Users,
