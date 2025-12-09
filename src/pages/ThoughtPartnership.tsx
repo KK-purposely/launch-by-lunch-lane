@@ -27,7 +27,7 @@ const ThoughtPartnership = () => {
               </span>
             </h1>
             <p className="text-xl text-gray-700 max-w-2xl mx-auto">
-              When vision meets execution. Karen and Stephan bring complementary expertise that covers every angle of building an AI-first startup.
+              Karen and Stephan bring complementary fractional expertise that covers every angle of building an AI-first startup.
             </p>
           </div>
         </div>
