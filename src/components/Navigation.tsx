@@ -43,6 +43,10 @@ const Navigation = () => {
                   About
                 </Link>
 
+                <Link to="/thought-partnership" className="px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-launch-orange">
+                  Thought Partnership
+                </Link>
+
                 <Link to="/contact" className="px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-launch-orange">
                   Contact
                 </Link>
@@ -98,6 +102,16 @@ const Navigation = () => {
                     onClick={() => setIsMenuOpen(false)}
                   >
                     About
+                  </Link>
+                </DropdownMenuItem>
+                
+                <DropdownMenuItem asChild>
+                  <Link 
+                    to="/thought-partnership" 
+                    className="w-full"
+                    onClick={() => setIsMenuOpen(false)}
+                  >
+                    Thought Partnership
                   </Link>
                 </DropdownMenuItem>
                 
