@@ -54,13 +54,13 @@ const TearDown = () => {
       // Insert into Supabase
       const { error: insertError } = await supabase
         .from('teardown_applications')
-        .insert({
+        .insert([{
           first_name: formData.firstName,
           last_name: formData.lastName,
           company_name: formData.companyName,
           app_description: formData.applicationDescription,
-          is_public_app: formData.isAppPublic
-        });
+          is_public_app: formData.isAppPublic === "yes"
+        }]);
 
       if (insertError) {
         throw insertError;

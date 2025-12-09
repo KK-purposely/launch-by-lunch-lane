@@ -86,6 +86,30 @@ export type Database = {
         }
         Relationships: []
       }
+      invite_requests: {
+        Row: {
+          company_name: string
+          created_at: string
+          email: string
+          id: string
+          name: string
+        }
+        Insert: {
+          company_name: string
+          created_at?: string
+          email: string
+          id?: string
+          name: string
+        }
+        Update: {
+          company_name?: string
+          created_at?: string
+          email?: string
+          id?: string
+          name?: string
+        }
+        Relationships: []
+      }
       teardown_applications: {
         Row: {
           app_description: string
