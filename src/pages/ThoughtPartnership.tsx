@@ -34,9 +34,9 @@ const ThoughtPartnership = () => {
       </div>
 
       {/* Main Content */}
-      <div className="max-w-5xl mx-auto px-4 sm:px-6 pb-16">
+      <div className="max-w-5xl mx-auto px-4 sm:px-6 pb-16 pt-8">
         {/* Complementary Skills Section */}
-        <div className="mb-16">
+        <div className="mb-16 mt-8">
           <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center">
             <span className="bg-gradient-to-r from-launch-purple to-launch-orange bg-clip-text text-transparent">
               Paired Strengths. One Forward Motion.
