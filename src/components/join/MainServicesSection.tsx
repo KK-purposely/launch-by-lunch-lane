@@ -1,9 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import { Users, Rocket, LucideIcon } from "lucide-react";
 import ServiceCard from "./ServiceCard";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 import { useNavigate } from "react-router-dom";
+import InviteRequestModal from "./InviteRequestModal";
 
 interface MainServicesSectionProps {
   onServiceClick: (service: any) => void;
@@ -25,10 +26,12 @@ interface Service {
   ctaUrl: string;
   featured?: boolean;
   isContact?: boolean;
+  isInviteOnly?: boolean;
 }
 
 const MainServicesSection = ({ onServiceClick }: MainServicesSectionProps) => {
   const navigate = useNavigate();
+  const [inviteModalOpen, setInviteModalOpen] = useState(false);
 
   const mainServices: Service[] = [
     {
@@ -84,7 +87,8 @@ const MainServicesSection = ({ onServiceClick }: MainServicesSectionProps) => {
       ],
       icon: Users,
       ctaText: "Request Invite",
-      ctaUrl: "https://innercircle.launchbylunch.co/checkout/industry-leaders-chefs-table"
+      ctaUrl: "",
+      isInviteOnly: true
     }
   ];
 
@@ -127,6 +131,14 @@ const MainServicesSection = ({ onServiceClick }: MainServicesSectionProps) => {
     </div>
   );
 
+  const handleServiceClick = (service: Service) => {
+    if (service.isInviteOnly) {
+      setInviteModalOpen(true);
+    } else {
+      onServiceClick(service);
+    }
+  };
+
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 pb-8 pt-16">
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
@@ -135,11 +147,12 @@ const MainServicesSection = ({ onServiceClick }: MainServicesSectionProps) => {
             key={service.id}
             service={service}
             index={index}
-            onServiceClick={onServiceClick}
+            onServiceClick={handleServiceClick}
           />
         ))}
       </div>
       <AcceleratorCTA />
+      <InviteRequestModal open={inviteModalOpen} onOpenChange={setInviteModalOpen} />
     </div>
   );
 };

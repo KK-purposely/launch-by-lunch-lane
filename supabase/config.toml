@@ -1,4 +1,3 @@
-
 project_id = "edqjskmaorvfxluojsth"
 
 [functions.send-waitlist-notification]
@@ -15,3 +14,6 @@ verify_jwt = true
 
 [functions.send-teardown-notification]
 verify_jwt = true
+
+[functions.send-invite-request]
+verify_jwt = false
