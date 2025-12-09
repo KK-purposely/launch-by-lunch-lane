@@ -164,7 +164,7 @@ const ThoughtPartnership = () => {
                     <Lightbulb className="h-8 w-8 text-white" />
                   </div>
                   <h3 className="font-bold text-lg mb-2">Vision + Execution</h3>
-                  <p className="text-gray-600 text-sm">Karen brings the strategic vision while Stephan builds the technical roadmap to get there.</p>
+                  <p className="text-gray-600 text-base">Karen brings the strategic vision while Stephan builds the technical roadmap to get there.</p>
                 </div>
                 
                 <div className="text-center">
@@ -172,7 +172,7 @@ const ThoughtPartnership = () => {
                     <Users className="h-8 w-8 text-white" />
                   </div>
                   <h3 className="font-bold text-lg mb-2">Network + Know-How</h3>
-                  <p className="text-gray-600 text-sm">Access to Boston's startup community combined with deep technical mentorship.</p>
+                  <p className="text-gray-600 text-base">Access to Boston's startup community combined with deep technical mentorship.</p>
                 </div>
                 
                 <div className="text-center">
@@ -180,7 +180,7 @@ const ThoughtPartnership = () => {
                     <Handshake className="h-8 w-8 text-white" />
                   </div>
                   <h3 className="font-bold text-lg mb-2">Strategy + Speed</h3>
-                  <p className="text-gray-600 text-sm">Thoughtful planning meets rapid execution — launch by lunch, not by next year.</p>
+                  <p className="text-gray-600 text-base">Thoughtful planning meets rapid execution — launch by lunch, not by next year.</p>
                 </div>
               </div>
             </CardContent>
