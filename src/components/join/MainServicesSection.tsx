@@ -14,6 +14,7 @@ interface Service {
   title: string;
   subtitle?: string;
   price: string;
+  originalPrice?: string;
   savings?: string;
   sessions?: string;
   provider?: string;
@@ -35,6 +36,7 @@ const MainServicesSection = ({ onServiceClick }: MainServicesSectionProps) => {
       subtitle: "The Appetizer",
       title: "Students + Early Stage Startups",
       price: "$15/month",
+      originalPrice: "$25/month",
       description: "",
       benefits: [
         "**Connect and learn from our community of AI experts.** Meet your next teammates.",

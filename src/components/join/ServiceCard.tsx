@@ -10,6 +10,7 @@ interface ServiceCardProps {
     title: string;
     subtitle?: string;
     price: string;
+    originalPrice?: string;
     savings?: string;
     sessions?: string;
     provider?: string;
@@ -78,6 +79,11 @@ const ServiceCard = ({ service, index, onServiceClick }: ServiceCardProps) => {
             </div>
           )}
           <div className="space-y-2">
+            {service.originalPrice && (
+              <p className="text-lg text-gray-400 line-through">
+                {service.originalPrice}
+              </p>
+            )}
             <p className={`text-3xl md:text-4xl font-bold ${service.featured ? 'bg-gradient-to-r from-launch-orange to-launch-purple bg-clip-text text-transparent' : 'text-launch-orange'}`}>
               {service.price}
             </p>
