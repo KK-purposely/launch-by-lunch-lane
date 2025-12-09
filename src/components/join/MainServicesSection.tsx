@@ -54,10 +54,10 @@ const MainServicesSection = ({ onServiceClick }: MainServicesSectionProps) => {
       price: "$59/month",
       description: "",
       benefits: [
+        "**1 hour of group coaching each month**",
         "**Everything in The Appetizer, plus:**",
         "**Exclusive Low Code Cookbook Content** & Stack Reviews.",
         "**Access to quarterly AI-Ecosystem Invite-Only Events**",
-        "**1 hour of group coaching each month**",
         "**Fireside chats with experts 3x a month** - from legal advice to AI productivity workflows"
       ],
       icon: Users,
