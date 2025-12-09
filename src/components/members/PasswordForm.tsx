@@ -9,9 +9,10 @@ interface PasswordFormProps {
   password: string;
   setPassword: (password: string) => void;
   onSubmit: (e: React.FormEvent) => void;
+  isLoading?: boolean;
 }
 
-const PasswordForm = ({ password, setPassword, onSubmit }: PasswordFormProps) => {
+const PasswordForm = ({ password, setPassword, onSubmit, isLoading = false }: PasswordFormProps) => {
   return (
     <div className="bg-white min-h-screen">
       <div className="max-w-xl mx-auto px-4 sm:px-6 py-24">
@@ -49,8 +50,9 @@ const PasswordForm = ({ password, setPassword, onSubmit }: PasswordFormProps) =>
               <Button 
                 type="submit" 
                 className="w-full bg-launch-purple hover:bg-launch-purple/90 text-white"
+                disabled={isLoading}
               >
-                Access Members Area
+                {isLoading ? "Verifying..." : "Access Members Area"}
               </Button>
             </form>
           </CardContent>

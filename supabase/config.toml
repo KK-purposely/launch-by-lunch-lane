@@ -17,3 +17,6 @@ verify_jwt = false
 
 [functions.send-invite-request]
 verify_jwt = false
+
+[functions.validate-member-access]
+verify_jwt = false
