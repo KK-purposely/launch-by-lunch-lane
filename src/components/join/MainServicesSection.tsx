@@ -56,6 +56,7 @@ const MainServicesSection = ({ onServiceClick }: MainServicesSectionProps) => {
       benefits: [
         "**Everything in The Appetizer, plus:**",
         "**1 hour of group coaching each month**",
+        "**Match-making to a small peer group**",
         "**Exclusive Low Code Cookbook Content** & Stack Reviews.",
         "**Early access to private in-person events**",
         "**Fireside chats with experts 3x a month** - from legal advice to AI productivity workflows"
