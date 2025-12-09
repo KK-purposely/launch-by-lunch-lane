@@ -14,7 +14,108 @@ export type Database = {
   }
   public: {
     Tables: {
-      [_ in never]: never
+      community_applications: {
+        Row: {
+          additional_info: string | null
+          company: string | null
+          created_at: string
+          email: string
+          first_name: string
+          id: string
+          interests: string[] | null
+          last_name: string
+          linkedin_url: string | null
+          referral_source: string | null
+          title: string | null
+        }
+        Insert: {
+          additional_info?: string | null
+          company?: string | null
+          created_at?: string
+          email: string
+          first_name: string
+          id?: string
+          interests?: string[] | null
+          last_name: string
+          linkedin_url?: string | null
+          referral_source?: string | null
+          title?: string | null
+        }
+        Update: {
+          additional_info?: string | null
+          company?: string | null
+          created_at?: string
+          email?: string
+          first_name?: string
+          id?: string
+          interests?: string[] | null
+          last_name?: string
+          linkedin_url?: string | null
+          referral_source?: string | null
+          title?: string | null
+        }
+        Relationships: []
+      }
+      contact_submissions: {
+        Row: {
+          company: string | null
+          created_at: string
+          email: string
+          first_name: string
+          id: string
+          last_name: string
+          message: string | null
+        }
+        Insert: {
+          company?: string | null
+          created_at?: string
+          email: string
+          first_name: string
+          id?: string
+          last_name: string
+          message?: string | null
+        }
+        Update: {
+          company?: string | null
+          created_at?: string
+          email?: string
+          first_name?: string
+          id?: string
+          last_name?: string
+          message?: string | null
+        }
+        Relationships: []
+      }
+      teardown_applications: {
+        Row: {
+          app_description: string
+          company_name: string
+          created_at: string
+          first_name: string
+          id: string
+          is_public_app: boolean | null
+          last_name: string
+        }
+        Insert: {
+          app_description: string
+          company_name: string
+          created_at?: string
+          first_name: string
+          id?: string
+          is_public_app?: boolean | null
+          last_name: string
+        }
+        Update: {
+          app_description?: string
+          company_name?: string
+          created_at?: string
+          first_name?: string
+          id?: string
+          is_public_app?: boolean | null
+          last_name?: string
+        }
+        Relationships: []
+      }
     }
     Views: {
       [_ in never]: never
