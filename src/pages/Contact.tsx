@@ -50,6 +50,7 @@ const Contact = () => {
           first_name: formData.firstName,
           last_name: formData.lastName,
           company: formData.company || null,
+          title: formData.title || null,
           email: formData.email,
           message: formData.message,
         });
