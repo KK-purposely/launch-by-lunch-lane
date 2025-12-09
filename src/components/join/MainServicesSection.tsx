@@ -73,7 +73,7 @@ const MainServicesSection = ({ onServiceClick }: MainServicesSectionProps) => {
       id: 3,
       subtitle: "Chef's Table",
       title: "Industry Leaders",
-      price: "$120/month",
+      price: "Invite Only",
       description: "",
       benefits: [
         "**1 hour/month on The Hotline** with our founders, Stephan Smith & Karen Kelly, for tech, GTM or 1:1 sales help.",
@@ -83,7 +83,7 @@ const MainServicesSection = ({ onServiceClick }: MainServicesSectionProps) => {
         "**A seat at Launch by Lunch's quarterly advisory roundtable.**"
       ],
       icon: Users,
-      ctaText: "Join Now",
+      ctaText: "Request Invite",
       ctaUrl: "https://innercircle.launchbylunch.co/checkout/industry-leaders-chefs-table"
     }
   ];
