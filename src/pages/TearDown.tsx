@@ -58,9 +58,8 @@ const TearDown = () => {
           first_name: formData.firstName,
           last_name: formData.lastName,
           company_name: formData.companyName,
-          application_description: formData.applicationDescription,
-          is_app_public: formData.isAppPublic,
-          other_comments: formData.otherComments || null
+          app_description: formData.applicationDescription,
+          is_public_app: formData.isAppPublic
         });
 
       if (insertError) {
