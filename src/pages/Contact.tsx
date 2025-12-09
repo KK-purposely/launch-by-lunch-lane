@@ -112,8 +112,7 @@ const Contact = () => {
               </span>
             </h1>
             <p className="text-xl md:text-2xl text-gray-700 mb-8 max-w-3xl mx-auto leading-relaxed">
-              Have questions about our services? Ready to start your AI-first journey? 
-              <span className="text-launch-orange font-semibold"> We'd love to hear from you!</span>
+              We're grateful for the number of people hoping to work with us. Although our time is limited, we interview with every applicant to understand their needs and make referrals when necessary.
             </p>
           </div>
         </div>
