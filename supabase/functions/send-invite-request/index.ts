@@ -63,7 +63,7 @@ const handler = async (req: Request): Promise<Response> => {
 
     // Send notification email to admins
     const emailResponse = await resend.emails.send({
-      from: "Launch by Lunch <onboarding@resend.dev>",
+      from: "Launch by Lunch <welcome@launchbylunch.co>",
       to: ["welcome@launchbylunch.co"],
       subject: `New Chef's Table Invite Request from ${name}`,
       html: `
