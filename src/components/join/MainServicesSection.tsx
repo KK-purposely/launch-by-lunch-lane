@@ -54,6 +54,7 @@ const MainServicesSection = ({ onServiceClick }: MainServicesSectionProps) => {
       subtitle: "The Main Course",
       title: "Founders & Fractionals",
       price: "$59/month",
+      originalPrice: "$79/month",
       description: "",
       benefits: [
         "**Everything in The Appetizer, plus:**",
