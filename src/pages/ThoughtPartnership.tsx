@@ -14,8 +14,8 @@ const ThoughtPartnership = () => {
       {/* Hero Section */}
       <div className="relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-r from-launch-purple/10 via-transparent to-launch-orange/10" />
-        <div className="relative max-w-4xl mx-auto px-4 sm:px-6 py-16">
-          <div className="text-center mb-8">
+        <div className="relative max-w-4xl mx-auto px-4 sm:px-6 py-10">
+          <div className="text-center mb-4">
             <div className="inline-flex items-center gap-2 bg-gradient-to-r from-launch-purple to-launch-orange bg-clip-text text-transparent mb-4">
               <Sparkles className="h-6 w-6 text-launch-orange animate-pulse" />
               <span className="text-sm font-semibold uppercase tracking-wide">Strategic Partnership</span>
