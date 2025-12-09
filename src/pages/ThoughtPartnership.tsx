@@ -39,7 +39,7 @@ const ThoughtPartnership = () => {
         <div className="mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center">
             <span className="bg-gradient-to-r from-launch-purple to-launch-orange bg-clip-text text-transparent">
-              Two Powers. One Inevitable Rise.
+              Paired Strengths. One Forward Motion.
             </span>
           </h2>
           
