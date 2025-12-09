@@ -13,6 +13,8 @@ const corsHeaders = {
 interface ContactNotificationRequest {
   firstName: string;
   lastName: string;
+  company?: string;
+  title?: string;
   email: string;
   message: string;
 }
@@ -24,7 +26,7 @@ const handler = async (req: Request): Promise<Response> => {
   }
 
   try {
-    const { firstName, lastName, email, message }: ContactNotificationRequest = await req.json();
+    const { firstName, lastName, company, title, email, message }: ContactNotificationRequest = await req.json();
 
     console.log("Sending contact notification for:", firstName, lastName, "from:", email);
 
@@ -35,6 +37,8 @@ const handler = async (req: Request): Promise<Response> => {
       html: `
         <h1>New Contact Form Submission</h1>
         <p><strong>Name:</strong> ${firstName} ${lastName}</p>
+        ${company ? `<p><strong>Company:</strong> ${company}</p>` : ''}
+        ${title ? `<p><strong>Title:</strong> ${title}</p>` : ''}
         <p><strong>Email:</strong> ${email}</p>
         <p><strong>Message:</strong></p>
         <div style="background-color: #f5f5f5; padding: 15px; border-radius: 5px; margin: 10px 0;">

@@ -12,6 +12,8 @@ const Contact = () => {
   const [formData, setFormData] = useState({
     firstName: "",
     lastName: "",
+    company: "",
+    title: "",
     email: "",
     message: ""
   });
@@ -47,6 +49,7 @@ const Contact = () => {
         .insert({
           first_name: formData.firstName,
           last_name: formData.lastName,
+          company: formData.company || null,
           email: formData.email,
           message: formData.message,
         });
@@ -60,6 +63,8 @@ const Contact = () => {
         body: {
           firstName: formData.firstName,
           lastName: formData.lastName,
+          company: formData.company,
+          title: formData.title,
           email: formData.email,
           message: formData.message,
         },
@@ -79,6 +84,8 @@ const Contact = () => {
       setFormData({
         firstName: "",
         lastName: "",
+        company: "",
+        title: "",
         email: "",
         message: ""
       });
@@ -161,6 +168,37 @@ const Contact = () => {
                   onChange={handleChange}
                   placeholder="Your last name"
                   required
+                  className="mt-2 border-gray-300 focus:border-launch-orange focus:ring-launch-orange"
+                />
+              </div>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div>
+                <Label htmlFor="company" className="text-gray-700 font-medium">
+                  Company Name
+                </Label>
+                <Input
+                  id="company"
+                  name="company"
+                  type="text"
+                  value={formData.company}
+                  onChange={handleChange}
+                  placeholder="Your company"
+                  className="mt-2 border-gray-300 focus:border-launch-orange focus:ring-launch-orange"
+                />
+              </div>
+              <div>
+                <Label htmlFor="title" className="text-gray-700 font-medium">
+                  Title
+                </Label>
+                <Input
+                  id="title"
+                  name="title"
+                  type="text"
+                  value={formData.title}
+                  onChange={handleChange}
+                  placeholder="Your title"
                   className="mt-2 border-gray-300 focus:border-launch-orange focus:ring-launch-orange"
                 />
               </div>
