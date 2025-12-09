@@ -1,1 +1,19 @@
 project_id = "jkrwgvhhcxpgwyaiviwx"
+
+[functions.send-waitlist-notification]
+verify_jwt = false
+
+[functions.send-community-notification]
+verify_jwt = false
+
+[functions.send-contact-email]
+verify_jwt = false
+
+[functions.send-contact-notification]
+verify_jwt = false
+
+[functions.send-teardown-notification]
+verify_jwt = false
+
+[functions.send-invite-request]
+verify_jwt = false
