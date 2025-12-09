@@ -49,9 +49,11 @@ const ThoughtPartnership = () => {
               <CardContent className="p-8">
                 <div className="flex items-center gap-4 mb-6">
                   <div className="w-16 h-16 rounded-full bg-gradient-to-r from-launch-purple to-launch-orange p-0.5">
-                    <div className="w-full h-full rounded-full bg-white flex items-center justify-center">
-                      <span className="text-xl font-bold bg-gradient-to-r from-launch-purple to-launch-orange bg-clip-text text-transparent">KK</span>
-                    </div>
+                    <img
+                      src="/lovable-uploads/a25b125a-4110-46e2-bf28-7cd7e60e633f.png"
+                      alt="Karen Kelly"
+                      className="w-full h-full rounded-full object-cover bg-white"
+                    />
                   </div>
                   <div>
                     <h3 className="text-2xl font-bold bg-gradient-to-r from-launch-purple to-launch-orange bg-clip-text text-transparent">
@@ -98,9 +100,11 @@ const ThoughtPartnership = () => {
               <CardContent className="p-8">
                 <div className="flex items-center gap-4 mb-6">
                   <div className="w-16 h-16 rounded-full bg-gradient-to-r from-launch-orange to-launch-purple p-0.5">
-                    <div className="w-full h-full rounded-full bg-white flex items-center justify-center">
-                      <span className="text-xl font-bold bg-gradient-to-r from-launch-orange to-launch-purple bg-clip-text text-transparent">SS</span>
-                    </div>
+                    <img
+                      src="/lovable-uploads/de950dd0-67d3-45fd-b2d5-e419d56f3c2e.png"
+                      alt="Stephan Smith"
+                      className="w-full h-full rounded-full object-cover bg-white"
+                    />
                   </div>
                   <div>
                     <h3 className="text-2xl font-bold bg-gradient-to-r from-launch-orange to-launch-purple bg-clip-text text-transparent">
