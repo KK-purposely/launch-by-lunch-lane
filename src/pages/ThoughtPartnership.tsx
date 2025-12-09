@@ -208,7 +208,7 @@ const ThoughtPartnership = () => {
         <div className="text-center">
           <h2 className="text-2xl md:text-3xl font-bold mb-4">
             <span className="bg-gradient-to-r from-launch-purple to-launch-orange bg-clip-text text-transparent">
-              Ready for a Thought Partnership?
+              Ready to Combine Forces?
             </span>
           </h2>
           <p className="text-lg text-gray-700 mb-8 max-w-2xl mx-auto">
