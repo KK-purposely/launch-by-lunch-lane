@@ -217,7 +217,10 @@ const ThoughtPartnership = () => {
           <Button 
             size="lg" 
             className="bg-gradient-to-r from-launch-purple to-launch-orange hover:from-launch-orange hover:to-launch-purple text-white rounded-full font-medium px-8 py-6 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
-            onClick={() => navigate('/contact')}
+            onClick={() => {
+              navigate('/contact');
+              window.scrollTo(0, 0);
+            }}
           >
             <span className="mr-2">Get in Touch</span>
             <ArrowUpRight className="h-5 w-5" />
