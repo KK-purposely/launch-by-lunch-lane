@@ -29,7 +29,7 @@ const handler = async (req: Request): Promise<Response> => {
     console.log("Sending contact notification for:", firstName, lastName, "from:", email);
 
     const emailResponse = await resend.emails.send({
-      from: "Launch by Lunch <onboarding@resend.dev>",
+      from: "Launch by Lunch <welcome@launchbylunch.co>",
       to: ["karen@launchbylunch.co"],
       subject: `New Contact Form Submission from ${firstName} ${lastName}`,
       html: `
