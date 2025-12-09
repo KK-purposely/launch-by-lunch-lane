@@ -57,7 +57,7 @@ const MainServicesSection = ({ onServiceClick }: MainServicesSectionProps) => {
         "**Everything in The Appetizer, plus:**",
         "**1 hour of group coaching each month**",
         "**Exclusive Low Code Cookbook Content** & Stack Reviews.",
-        "**Access to quarterly AI-Ecosystem Invite-Only Events**",
+        "**Early access to private in-person events**",
         "**Fireside chats with experts 3x a month** - from legal advice to AI productivity workflows"
       ],
       icon: Users,
