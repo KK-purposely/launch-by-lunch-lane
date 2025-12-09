@@ -66,19 +66,19 @@ const ThoughtPartnership = () => {
                 <div className="space-y-4">
                   <div className="flex items-start gap-3">
                     <Target className="h-5 w-5 text-launch-purple mt-1 flex-shrink-0" />
-                    <p className="text-gray-700">3x founder who understands the non-technical founder journey</p>
+                    <p className="text-gray-700 text-base">3x founder who understands the non-technical founder journey</p>
                   </div>
                   <div className="flex items-start gap-3">
                     <Lightbulb className="h-5 w-5 text-launch-purple mt-1 flex-shrink-0" />
-                    <p className="text-gray-700">Former CMO & martech president with go-to-market mastery</p>
+                    <p className="text-gray-700 text-base">Former CMO & martech president with go-to-market mastery</p>
                   </div>
                   <div className="flex items-start gap-3">
                     <Users className="h-5 w-5 text-launch-purple mt-1 flex-shrink-0" />
-                    <p className="text-gray-700">Deep network across Boston's startup ecosystem</p>
+                    <p className="text-gray-700 text-base">Deep network across Boston's startup ecosystem</p>
                   </div>
                   <div className="flex items-start gap-3">
                     <Handshake className="h-5 w-5 text-launch-purple mt-1 flex-shrink-0" />
-                    <p className="text-gray-700">"Find a way" mindset that drives creative problem-solving</p>
+                    <p className="text-gray-700 text-base">"Find a way" mindset that drives creative problem-solving</p>
                   </div>
                 </div>
                 
@@ -117,19 +117,19 @@ const ThoughtPartnership = () => {
                 <div className="space-y-4">
                   <div className="flex items-start gap-3">
                     <Target className="h-5 w-5 text-launch-orange mt-1 flex-shrink-0" />
-                    <p className="text-gray-700">Techstars alum with hands-on startup building experience</p>
+                    <p className="text-gray-700 text-base">Techstars alum with hands-on startup building experience</p>
                   </div>
                   <div className="flex items-start gap-3">
                     <Lightbulb className="h-5 w-5 text-launch-orange mt-1 flex-shrink-0" />
-                    <p className="text-gray-700">Deep expertise in AI, low-code, and modern tech stacks</p>
+                    <p className="text-gray-700 text-base">Deep expertise in AI, low-code, and modern tech stacks</p>
                   </div>
                   <div className="flex items-start gap-3">
                     <Users className="h-5 w-5 text-launch-orange mt-1 flex-shrink-0" />
-                    <p className="text-gray-700">Fractional CTO experience guiding non-technical founders</p>
+                    <p className="text-gray-700 text-base">Fractional CTO experience guiding non-technical founders</p>
                   </div>
                   <div className="flex items-start gap-3">
                     <Handshake className="h-5 w-5 text-launch-orange mt-1 flex-shrink-0" />
-                    <p className="text-gray-700">Bridges complex technology with practical execution</p>
+                    <p className="text-gray-700 text-base">Bridges complex technology with practical execution</p>
                   </div>
                 </div>
                 
