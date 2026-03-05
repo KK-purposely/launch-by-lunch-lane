@@ -84,7 +84,7 @@ const ClaudeCode = () => {
           <div className="absolute bottom-10 right-20 w-96 h-96 bg-launch-orange rounded-full blur-3xl" />
         </div>
         <div className="relative max-w-5xl mx-auto px-4 sm:px-6 py-20 md:py-28 text-center">
-          <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm rounded-full px-4 py-2 mb-8 text-base font-medium">
+          <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm rounded-full px-4 py-2 mb-8 text-lg font-medium">
             <Zap className="h-4 w-4 text-launch-orange" />
             Live, Hands-On Workshops
           </div>
@@ -124,7 +124,7 @@ const ClaudeCode = () => {
           {audienceItems.map((item, i) => (
             <div key={i} className="flex items-start gap-3 bg-launch-light rounded-xl p-5">
               <CheckCircle2 className="h-6 w-6 text-launch-orange mt-0.5 flex-shrink-0" />
-              <p className="text-gray-800 text-base font-medium">{item}</p>
+              <p className="text-gray-800 text-lg font-medium">{item}</p>
             </div>
           ))}
         </div>
@@ -148,7 +148,7 @@ const ClaudeCode = () => {
                     <ItemIcon className="h-7 w-7 text-white" />
                   </div>
                   <h3 className="text-lg font-bold text-launch-purple mb-2">{item.title}</h3>
-                  <p className="text-gray-600 text-base">{item.desc}</p>
+                  <p className="text-gray-600 text-lg">{item.desc}</p>
                 </div>
               );
             })}
@@ -186,10 +186,10 @@ const ClaudeCode = () => {
                     <Icon className="h-8 w-8 text-launch-purple" />
                   </div>
                   <h3 className="text-2xl font-bold text-launch-purple mb-2">{w.title}</h3>
-                  <p className="text-base text-gray-500 mb-5">{w.subtitle}</p>
+                  <p className="text-lg text-gray-500 mb-5">{w.subtitle}</p>
                   <div className="mb-5">
                     <span className="text-4xl font-bold text-launch-purple">{w.price}</span>
-                    {w.unit && <span className="text-base text-gray-500 ml-2">{w.unit}</span>}
+                    {w.unit && <span className="text-lg text-gray-500 ml-2">{w.unit}</span>}
                   </div>
                   <p className="text-gray-600 text-lg flex-1 mb-8">{w.description}</p>
                   <Button
@@ -212,7 +212,7 @@ const ClaudeCode = () => {
       {/* Bonus */}
       <section className="bg-gradient-to-r from-launch-purple to-launch-orange py-14">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 text-center text-white">
-          <div className="inline-flex items-center gap-2 bg-white/20 backdrop-blur-sm rounded-full px-4 py-2 mb-6 text-base font-bold uppercase tracking-wide">
+          <div className="inline-flex items-center gap-2 bg-white/20 backdrop-blur-sm rounded-full px-4 py-2 mb-6 text-lg font-bold uppercase tracking-wide">
             🎁 Bonus Included
           </div>
           <h3 className="text-2xl md:text-3xl font-bold mb-4">
@@ -233,7 +233,7 @@ const ClaudeCode = () => {
           Walk in curious.<br />
           <span className="text-launch-orange">Walk out operational.</span>
         </h2>
-        <p className="text-gray-500 text-base mb-8">Seats are limited to keep it hands-on.</p>
+        <p className="text-gray-500 text-lg mb-8">Seats are limited to keep it hands-on.</p>
         <Button
           size="lg"
           className="bg-launch-orange hover:bg-launch-orange/90 text-white px-10 py-4 text-lg rounded-full font-bold transition-all duration-300 shadow-xl hover:scale-105 group"
