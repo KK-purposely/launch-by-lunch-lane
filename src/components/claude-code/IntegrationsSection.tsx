@@ -15,7 +15,7 @@ const integrations = [
 
 const IntegrationsSection = () => {
   return (
-    <section className="py-16 md:py-20 bg-white">
+    <section className="py-16 md:py-20 bg-launch-light">
       <div className="max-w-5xl mx-auto px-4 sm:px-6 text-center">
         <h2 className="text-3xl md:text-4xl font-bold text-launch-purple mb-4">
           Connect the Tools You Already Use
