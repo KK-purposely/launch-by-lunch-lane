@@ -200,17 +200,8 @@ const ClaudeCode = () => {
             return (
               <Card
                 key={i}
-                className={`relative flex flex-col transition-all duration-300 hover:shadow-xl ${
-                  w.featured
-                    ? "border-2 border-launch-orange shadow-lg ring-1 ring-launch-orange/20"
-                    : "border border-gray-200 hover:border-launch-purple/30"
-                }`}
+                className="relative flex flex-col transition-all duration-300 border border-gray-200 hover:border-launch-orange hover:shadow-[0_0_20px_rgba(255,138,0,0.3)] hover:-translate-y-1"
               >
-                {w.featured && (
-                  <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-launch-orange text-white text-sm font-bold px-5 py-1.5 rounded-full">
-                    MOST POPULAR
-                  </div>
-                )}
                 <CardContent className="flex flex-col flex-1 p-8 pt-10">
                   <div className="w-16 h-16 bg-launch-light rounded-2xl flex items-center justify-center mb-5">
                     <Icon className="h-8 w-8 text-launch-purple" />
@@ -223,11 +214,7 @@ const ClaudeCode = () => {
                   </div>
                   <p className="text-gray-600 text-lg flex-1 mb-8">{w.description}</p>
                   <Button
-                    className={`w-full rounded-full font-semibold transition-all duration-300 ${
-                      w.featured
-                        ? "bg-launch-orange hover:bg-launch-orange/90 text-white"
-                        : "bg-launch-purple hover:bg-launch-purple/90 text-white"
-                    }`}
+                    className="w-full rounded-full font-semibold transition-all duration-300 bg-launch-purple hover:bg-launch-orange text-white"
                     onClick={() => window.open(w.ctaUrl, "_blank")}
                   >
                     {w.ctaText}
