@@ -19,6 +19,7 @@ import WomenInCommunity from "./pages/WomenInCommunity";
 import CommunityPartnerships from "./pages/CommunityPartnerships";
 import AIPowerHour from "./pages/AIPowerHour";
 import ThoughtPartnership from "./pages/ThoughtPartnership";
+import ClaudeCode from "./pages/ClaudeCode";
 import Navigation from "./components/Navigation";
 
 const queryClient = new QueryClient(); // Trigger GitHub sync
@@ -45,6 +46,7 @@ const App = () => (
             <Route path="/community-partnerships" element={<CommunityPartnerships />} />
             <Route path="/ai-power-hour" element={<AIPowerHour />} />
             <Route path="/thought-partnership" element={<ThoughtPartnership />} />
+            <Route path="/claude-code" element={<ClaudeCode />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>
