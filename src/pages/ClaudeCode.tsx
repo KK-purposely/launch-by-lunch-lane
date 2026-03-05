@@ -7,6 +7,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { ArrowRight, Users, User, Wrench, Building2, CheckCircle2, Zap, Laptop, Brain, Workflow, CalendarCheck, Newspaper, Rocket, Target } from "lucide-react";
 import Footer from "@/components/Footer";
 import IntegrationsSection from "@/components/claude-code/IntegrationsSection";
+import WorkshopTestimonials from "@/components/claude-code/WorkshopTestimonials";
 
 const workshops = [
   {
@@ -143,6 +144,13 @@ const ClaudeCode = () => {
         </div>
       </section>
 
+      {/* Testimonial - after audience */}
+      <section className="bg-white py-12 px-4 sm:px-6">
+        <WorkshopTestimonials testimonials={[
+          { quote: "This workshop was the bomb! It's exactly what I needed to kickstart AI into my day to day work!", name: "Alicia Tulsee" },
+        ]} />
+      </section>
+
       <IntegrationsSection />
 
       {/* What we build */}
@@ -169,6 +177,14 @@ const ClaudeCode = () => {
             })}
           </div>
         </div>
+      </section>
+
+      {/* Testimonials - before pricing */}
+      <section className="bg-gradient-to-r from-launch-orange/5 via-transparent to-launch-purple/5 py-12 px-4 sm:px-6">
+        <WorkshopTestimonials testimonials={[
+          { quote: "I would have just kept putting this off if I hadn't shown up here today. I needed to drive into Boston and sit on this couch to finally get it done!", name: "Jeff Wechsler" },
+          { quote: "Turns out I'd rather trudge through unplowed streets to get into Boston than figure out Claude Code in my pajamas at home...this was so much more efficient and fun than reading through docs on my own! I highly recommend it for anyone curious about how to kick off real workflow optimization as a solopreneur!", name: "Farah Hussain" },
+        ]} />
       </section>
 
       {/* Pricing */}
