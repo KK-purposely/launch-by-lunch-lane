@@ -147,7 +147,7 @@ const ClaudeCode = () => {
       {/* Testimonial - after audience */}
       <section className="bg-white py-12 px-4 sm:px-6">
         <WorkshopTestimonials testimonials={[
-          { quote: "This workshop was the bomb! It's exactly what I needed to kickstart AI into my day to day work!", name: "Alicia Tulsee" },
+          { quote: "Turns out I'd rather trudge through unplowed streets to get into Boston than figure out Claude Code in my pajamas at home...this was so much more efficient and fun than reading through docs on my own! I highly recommend it for anyone curious about how to kick off real workflow optimization as a solopreneur!", name: "Farah Hussain" },
         ]} />
       </section>
 
@@ -257,7 +257,7 @@ const ClaudeCode = () => {
       {/* Testimonial - after bonus */}
       <section className="bg-launch-light py-12 px-4 sm:px-6">
         <WorkshopTestimonials testimonials={[
-          { quote: "Turns out I'd rather trudge through unplowed streets to get into Boston than figure out Claude Code in my pajamas at home...this was so much more efficient and fun than reading through docs on my own! I highly recommend it for anyone curious about how to kick off real workflow optimization as a solopreneur!", name: "Farah Hussain" },
+          { quote: "This workshop was the bomb! It's exactly what I needed to kickstart AI into my day to day work!", name: "Alicia Tulsee" },
         ]} />
       </section>
 
