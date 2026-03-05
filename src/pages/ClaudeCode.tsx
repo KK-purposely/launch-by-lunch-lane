@@ -26,7 +26,7 @@ const workshops = [
     description: "Get dedicated, hands-on guidance tailored to your exact workflow and tech stack.",
     icon: User,
     ctaText: "Book Your Session",
-    ctaUrl: "https://calendly.com/d/cwr2-n7m-9gs/learn-more",
+    ctaUrl: "https://forms.gle/VX1z8FJfGSr8D1AD6",
     featured: true,
   },
   {
@@ -37,7 +37,7 @@ const workshops = [
     description: "We design and deploy your Claude Code Chief of Staff — fully configured around your priorities, data, and tools.",
     icon: Wrench,
     ctaText: "Get Started",
-    ctaUrl: "https://calendly.com/d/cwr2-n7m-9gs/learn-more",
+    ctaUrl: "https://forms.gle/VX1z8FJfGSr8D1AD6",
     featured: false,
   },
   {
