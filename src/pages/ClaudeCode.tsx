@@ -157,14 +157,14 @@ const ClaudeCode = () => {
       </section>
 
       {/* Pricing */}
-      <section id="pricing" className="max-w-7xl mx-auto px-4 sm:px-6 py-16 md:py-20">
-        <h2 className="text-3xl md:text-4xl font-bold text-launch-purple mb-4 text-center">
+      <section id="pricing" className="max-w-7xl mx-auto px-4 sm:px-6 py-20 md:py-28">
+        <h2 className="text-4xl md:text-5xl font-bold text-launch-purple mb-6 text-center">
           Choose Your Workshop
         </h2>
-        <p className="text-lg text-gray-600 text-center mb-12 max-w-2xl mx-auto">
+        <p className="text-xl text-gray-600 text-center mb-16 max-w-2xl mx-auto">
           From group sessions to fully built systems — pick the path that fits.
         </p>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {workshops.map((w, i) => {
             const Icon = w.icon;
             return (
@@ -177,21 +177,21 @@ const ClaudeCode = () => {
                 }`}
               >
                 {w.featured && (
-                  <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-launch-orange text-white text-xs font-bold px-4 py-1 rounded-full">
+                  <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-launch-orange text-white text-sm font-bold px-5 py-1.5 rounded-full">
                     MOST POPULAR
                   </div>
                 )}
-                <CardContent className="flex flex-col flex-1 p-6 pt-8">
-                  <div className="w-12 h-12 bg-launch-light rounded-xl flex items-center justify-center mb-4">
-                    <Icon className="h-6 w-6 text-launch-purple" />
+                <CardContent className="flex flex-col flex-1 p-8 pt-10">
+                  <div className="w-16 h-16 bg-launch-light rounded-2xl flex items-center justify-center mb-5">
+                    <Icon className="h-8 w-8 text-launch-purple" />
                   </div>
-                  <h3 className="text-xl font-bold text-launch-purple mb-1">{w.title}</h3>
-                  <p className="text-base text-gray-500 mb-4">{w.subtitle}</p>
-                  <div className="mb-4">
-                    <span className="text-3xl font-bold text-launch-purple">{w.price}</span>
-                    {w.unit && <span className="text-base text-gray-500 ml-1">{w.unit}</span>}
+                  <h3 className="text-2xl font-bold text-launch-purple mb-2">{w.title}</h3>
+                  <p className="text-base text-gray-500 mb-5">{w.subtitle}</p>
+                  <div className="mb-5">
+                    <span className="text-4xl font-bold text-launch-purple">{w.price}</span>
+                    {w.unit && <span className="text-base text-gray-500 ml-2">{w.unit}</span>}
                   </div>
-                  <p className="text-gray-600 text-base flex-1 mb-6">{w.description}</p>
+                  <p className="text-gray-600 text-lg flex-1 mb-8">{w.description}</p>
                   <Button
                     className={`w-full rounded-full font-semibold transition-all duration-300 ${
                       w.featured
