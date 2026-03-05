@@ -141,6 +141,8 @@ const ClaudeCode = () => {
         </div>
       </section>
 
+      <IntegrationsSection />
+
       {/* What we build */}
       <section className="bg-gray-200 py-16 md:py-20">
         <div className="max-w-6xl mx-auto px-4 sm:px-6">
@@ -166,7 +168,6 @@ const ClaudeCode = () => {
           </div>
         </div>
       </section>
-      <IntegrationsSection />
 
       {/* Pricing */}
       <section id="pricing" className="max-w-7xl mx-auto px-4 sm:px-6 py-20 md:py-28">
