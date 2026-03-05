@@ -179,11 +179,10 @@ const ClaudeCode = () => {
         </div>
       </section>
 
-      {/* Testimonials - before pricing */}
+      {/* Testimonial - before pricing */}
       <section className="bg-gradient-to-r from-launch-orange/5 via-transparent to-launch-purple/5 py-12 px-4 sm:px-6">
         <WorkshopTestimonials testimonials={[
           { quote: "I would have just kept putting this off if I hadn't shown up here today. I needed to drive into Boston and sit on this couch to finally get it done!", name: "Jeff Wechsler" },
-          { quote: "Turns out I'd rather trudge through unplowed streets to get into Boston than figure out Claude Code in my pajamas at home...this was so much more efficient and fun than reading through docs on my own! I highly recommend it for anyone curious about how to kick off real workflow optimization as a solopreneur!", name: "Farah Hussain" },
         ]} />
       </section>
 
@@ -255,7 +254,13 @@ const ClaudeCode = () => {
         </div>
       </section>
 
-      {/* Closing */}
+      {/* Testimonial - after bonus */}
+      <section className="bg-launch-light py-12 px-4 sm:px-6">
+        <WorkshopTestimonials testimonials={[
+          { quote: "Turns out I'd rather trudge through unplowed streets to get into Boston than figure out Claude Code in my pajamas at home...this was so much more efficient and fun than reading through docs on my own! I highly recommend it for anyone curious about how to kick off real workflow optimization as a solopreneur!", name: "Farah Hussain" },
+        ]} />
+      </section>
+
       <section className="max-w-4xl mx-auto px-4 sm:px-6 py-16 md:py-20 text-center">
         <div className="flex justify-center mb-6">
           <Laptop className="h-12 w-12 text-launch-orange" />
