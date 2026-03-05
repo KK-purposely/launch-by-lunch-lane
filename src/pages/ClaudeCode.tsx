@@ -52,7 +52,7 @@ const workshops = [
   {
     title: "Private Group Onboarding",
     subtitle: "We come to your team or community",
-    price: "$3,900",
+    price: "$4,500",
     unit: "per session",
     description: "We come to your accelerator, team, or community and deliver a 3-hour hands-on onboarding session for up to 12 people.",
     icon: Building2,
