@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { ArrowRight, Users, User, Wrench, Building2, CheckCircle2, Zap, Laptop, Brain, Workflow, CalendarCheck, Newspaper, Rocket, Target } from "lucide-react";
 import Footer from "@/components/Footer";
+import IntegrationsSection from "@/components/claude-code/IntegrationsSection";
 
 const workshops = [
   {
@@ -165,6 +166,7 @@ const ClaudeCode = () => {
           </div>
         </div>
       </section>
+      <IntegrationsSection />
 
       {/* Pricing */}
       <section id="pricing" className="max-w-7xl mx-auto px-4 sm:px-6 py-20 md:py-28">
