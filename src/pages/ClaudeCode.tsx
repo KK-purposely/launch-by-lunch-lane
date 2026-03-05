@@ -131,7 +131,7 @@ const ClaudeCode = () => {
       </section>
 
       {/* What we build */}
-      <section className="bg-gray-50 py-16 md:py-20">
+      <section className="bg-gray-200 py-16 md:py-20">
         <div className="max-w-6xl mx-auto px-4 sm:px-6">
           <h2 className="text-3xl md:text-4xl font-bold text-launch-purple mb-4 text-center">
             What We'll Build Together
