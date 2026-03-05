@@ -7,17 +7,17 @@ interface Testimonial {
 
 const WorkshopTestimonials = ({ testimonials }: { testimonials: Testimonial[] }) => {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-${testimonials.length} gap-6 max-w-5xl mx-auto">
+    <div className="max-w-3xl mx-auto">
       {testimonials.map((t, i) => (
         <div
           key={i}
-          className="relative bg-white/80 backdrop-blur-sm rounded-2xl p-6 border border-gray-100 shadow-sm"
+          className="relative bg-white/80 backdrop-blur-sm rounded-2xl p-10 border border-gray-100 shadow-sm text-center"
         >
-          <Quote className="h-5 w-5 text-launch-orange/30 absolute top-4 left-4" />
-          <blockquote className="text-gray-700 italic leading-relaxed mt-4 mb-4">
+          <Quote className="h-8 w-8 text-launch-orange/30 mx-auto mb-4" />
+          <blockquote className="text-xl md:text-2xl text-gray-700 italic leading-relaxed mb-6">
             "{t.quote}"
           </blockquote>
-          <p className="font-bold text-launch-purple text-sm">— {t.name}</p>
+          <p className="font-bold text-launch-purple text-lg">— {t.name}</p>
         </div>
       ))}
     </div>
