@@ -68,7 +68,7 @@ const Navigation = () => {
             <Button 
               size="sm" 
               className="bg-launch-orange hover:bg-launch-orange/90 text-white rounded-full font-medium transition-all duration-300"
-              onClick={() => window.open('https://learn.launchbylunch.co/subscribe', '_blank')}
+              onClick={() => window.open('https://learn.launchbylunch.co/', '_blank')}
             >
               Get Our Newsletter
             </Button>
@@ -140,7 +140,7 @@ const Navigation = () => {
                 
                 <DropdownMenuItem 
                   onClick={() => {
-                    window.open('https://learn.launchbylunch.co/subscribe', '_blank');
+                    window.open('https://learn.launchbylunch.co/', '_blank');
                     setIsMenuOpen(false);
                   }}
                   className="text-launch-orange font-medium"
