@@ -17,6 +17,8 @@ const workshops = [
     unit: "per seat",
     description: "Join a high-energy group session and build your Claude Code Chief of Staff alongside other founders and operators.",
     icon: Users,
+    iconBg: "bg-blue-100",
+    iconColor: "text-blue-600",
     ctaText: "Reserve Your Seat",
     ctaUrl: "https://luma.com/launchbylunch",
     featured: false,
@@ -28,6 +30,8 @@ const workshops = [
     unit: "",
     description: "Get dedicated, hands-on guidance tailored to your exact workflow and tech stack.",
     icon: User,
+    iconBg: "bg-orange-100",
+    iconColor: "text-launch-orange",
     ctaText: "Book Your Session",
     ctaUrl: "https://forms.gle/VX1z8FJfGSr8D1AD6",
     featured: true,
@@ -39,6 +43,8 @@ const workshops = [
     unit: "",
     description: "We design and deploy your Claude Code Chief of Staff — fully configured around your priorities, data, and tools.",
     icon: Wrench,
+    iconBg: "bg-emerald-100",
+    iconColor: "text-emerald-600",
     ctaText: "Get Started",
     ctaUrl: "https://forms.gle/VX1z8FJfGSr8D1AD6",
     featured: false,
@@ -50,6 +56,8 @@ const workshops = [
     unit: "per session",
     description: "We come to your accelerator, team, or community and deliver a 3-hour hands-on onboarding session for up to 12 people.",
     icon: Building2,
+    iconBg: "bg-purple-100",
+    iconColor: "text-launch-purple",
     ctaText: "Schedule for Your Group",
     ctaUrl: "https://forms.gle/VX1z8FJfGSr8D1AD6",
     featured: false,
@@ -203,8 +211,8 @@ const ClaudeCode = () => {
                 className="relative flex flex-col transition-all duration-300 border border-gray-200 hover:border-launch-orange hover:shadow-[0_0_20px_rgba(255,138,0,0.3)] hover:-translate-y-1"
               >
                 <CardContent className="flex flex-col flex-1 p-8 pt-10">
-                  <div className="w-16 h-16 bg-launch-light rounded-2xl flex items-center justify-center mb-5">
-                    <Icon className="h-8 w-8 text-launch-purple" />
+                  <div className={`w-16 h-16 ${w.iconBg} rounded-2xl flex items-center justify-center mb-5`}>
+                    <Icon className={`h-8 w-8 ${w.iconColor}`} />
                   </div>
                   <h3 className="text-2xl font-bold text-launch-purple mb-2">{w.title}</h3>
                   <p className="text-lg text-gray-500 mb-5">{w.subtitle}</p>
