@@ -42,10 +42,10 @@ const workshops = [
   },
   {
     title: "Private Group Onboarding",
-    subtitle: "Bring your team or community",
+    subtitle: "We come to your team or community",
     price: "$1,800",
     unit: "per session",
-    description: "We come to your accelerator, team, or community and deliver a 3-hour hands-on onboarding session.",
+    description: "We come to your accelerator, team, or community and deliver a 3-hour hands-on onboarding session for up to 12 people.",
     icon: Building2,
     ctaText: "Schedule for Your Group",
     ctaUrl: "https://calendly.com/d/cwr2-n7m-9gs/learn-more",
