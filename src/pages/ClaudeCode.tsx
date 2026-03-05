@@ -124,7 +124,8 @@ const ClaudeCode = () => {
       </section>
 
       {/* Who is this for */}
-      <section className="max-w-5xl mx-auto px-4 sm:px-6 py-16 md:py-20">
+      <section className="bg-launch-light py-16 md:py-20">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6">
         <h2 className="text-3xl md:text-4xl font-bold text-launch-purple mb-4 text-center">
           Is This Your Build Day?
         </h2>
@@ -133,11 +134,12 @@ const ClaudeCode = () => {
         </p>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-3xl mx-auto">
           {audienceItems.map((item, i) => (
-            <div key={i} className="flex items-start gap-3 bg-launch-light rounded-xl p-5">
+            <div key={i} className="flex items-start gap-3 bg-white rounded-xl p-5">
               <CheckCircle2 className="h-6 w-6 text-launch-orange mt-0.5 flex-shrink-0" />
               <p className="text-gray-800 text-lg font-medium">{item}</p>
             </div>
           ))}
+        </div>
         </div>
       </section>
 
