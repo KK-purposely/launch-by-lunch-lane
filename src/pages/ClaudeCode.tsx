@@ -23,7 +23,7 @@ const workshops = [
     subtitle: "Personalized build session",
     price: "$749",
     unit: "",
-    description: "Get dedicated, hands-on guidance tailored to your exact workflow and tech stack. Just you and our team.",
+    description: "Get dedicated, hands-on guidance tailored to your exact workflow and tech stack.",
     icon: User,
     ctaText: "Book Your Session",
     ctaUrl: "https://calendly.com/d/cwr2-n7m-9gs/learn-more",
