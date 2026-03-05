@@ -28,7 +28,7 @@ const IntegrationsSection = () => {
               key={item.name}
               className="flex flex-col items-center gap-2 group"
             >
-              <div className="w-14 h-14 flex items-center justify-center grayscale opacity-70 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-300">
+              <div className="w-14 h-14 flex items-center justify-center">
                 <img
                   src={item.logo}
                   alt={`${item.name} logo`}
