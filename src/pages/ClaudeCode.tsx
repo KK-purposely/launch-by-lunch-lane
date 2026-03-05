@@ -65,7 +65,7 @@ const buildItems = [
 const audienceItems = [
   "A founder juggling too many threads",
   "A consultant managing multiple clients",
-  "Someone who believes AI is way easier to learn with friends",
+  "A small team that knows they're losing runway without adding productivity gains now",
   "Someone who wants to learn but doesn't want to feel stupid in the process",
 ];
 
