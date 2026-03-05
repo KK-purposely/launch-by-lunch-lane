@@ -15,7 +15,7 @@ const workshops = [
     description: "Join a high-energy group session and build your Claude Code Chief of Staff alongside other founders and operators.",
     icon: Users,
     ctaText: "Reserve Your Seat",
-    ctaUrl: "https://calendly.com/d/cwr2-n7m-9gs/learn-more",
+    ctaUrl: "https://luma.com/launchbylunch",
     featured: false,
   },
   {
