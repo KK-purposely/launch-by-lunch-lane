@@ -3,7 +3,7 @@ import React from "react";
 import { Helmet } from "react-helmet-async";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { ArrowRight, Users, User, Wrench, Building2, CheckCircle2, Zap, Laptop, Brain, Workflow, CalendarCheck, Newspaper, Rocket } from "lucide-react";
+import { ArrowRight, Users, User, Wrench, Building2, CheckCircle2, Zap, Laptop, Brain, Workflow, CalendarCheck, Newspaper, Rocket, Target } from "lucide-react";
 import Footer from "@/components/Footer";
 
 const workshops = [
@@ -59,6 +59,7 @@ const buildItems = [
   { icon: CalendarCheck, title: "Daily Executive Briefing", desc: "Pulls tasks and commitments automatically so nothing slips" },
   { icon: Newspaper, title: "AI News Digest", desc: "A clean, consolidated feed so you stop drowning in information" },
   { icon: Rocket, title: "Working System", desc: "Refine and expand immediately — live before you leave" },
+  { icon: Target, title: "Built-In Accountability", desc: "Keeps you on track with your personal and professional goals — so nothing falls through the cracks" },
 ];
 
 const audienceItems = [
