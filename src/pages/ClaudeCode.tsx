@@ -237,10 +237,10 @@ const ClaudeCode = () => {
         <Button
           size="lg"
           className="bg-launch-orange hover:bg-launch-orange/90 text-white px-10 py-4 text-lg rounded-full font-bold transition-all duration-300 shadow-xl hover:scale-105 group"
-          onClick={() => document.getElementById("pricing")?.scrollIntoView({ behavior: "smooth" })}
+          onClick={() => window.open("https://calendly.com/karen-launchbylunch/30min", "_blank")}
         >
           <span className="flex items-center gap-3">
-            Reserve Your Spot
+            Schedule a Call
             <ArrowRight className="h-5 w-5 group-hover:translate-x-2 transition-transform duration-300" />
           </span>
         </Button>
