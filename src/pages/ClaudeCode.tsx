@@ -48,7 +48,7 @@ const workshops = [
     description: "We come to your accelerator, team, or community and deliver a 3-hour hands-on onboarding session for up to 12 people.",
     icon: Building2,
     ctaText: "Schedule for Your Group",
-    ctaUrl: "https://calendly.com/d/cwr2-n7m-9gs/learn-more",
+    ctaUrl: "https://forms.gle/VX1z8FJfGSr8D1AD6",
     featured: false,
   },
 ];
