@@ -116,7 +116,7 @@ const ClaudeCode = () => {
             <img
               src={blueBotImg}
               alt="Blue AI bot Chief of Staff assistant"
-              className="w-48 h-48 md:w-64 md:h-64 drop-shadow-2xl animate-bounce-slow"
+              className="w-52 h-52 md:w-72 md:h-72 drop-shadow-2xl animate-bounce-slow"
             />
           </div>
         </div>
