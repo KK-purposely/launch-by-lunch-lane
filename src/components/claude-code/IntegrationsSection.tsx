@@ -10,6 +10,7 @@ const integrations = [
   { name: "Trello", logo: "/logos/trello.svg" },
   { name: "Zapier", logo: "/logos/zapier.svg" },
   { name: "Asana", logo: "/logos/asana.svg" },
+  { name: "Fathom", logo: "/logos/fathom.png" },
 ];
 
 const IntegrationsSection = () => {
