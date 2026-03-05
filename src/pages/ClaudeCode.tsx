@@ -1,5 +1,6 @@
 
 import React from "react";
+import blueBotImg from "@/assets/blue-bot-chief-of-staff.png";
 import { Helmet } from "react-helmet-async";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
@@ -83,32 +84,41 @@ const ClaudeCode = () => {
           <div className="absolute top-20 left-10 w-72 h-72 bg-launch-orange rounded-full blur-3xl" />
           <div className="absolute bottom-10 right-20 w-96 h-96 bg-launch-orange rounded-full blur-3xl" />
         </div>
-        <div className="relative max-w-5xl mx-auto px-4 sm:px-6 py-20 md:py-28 text-center">
-          <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm rounded-full px-4 py-2 mb-8 text-lg font-medium">
-            <Zap className="h-4 w-4 text-launch-orange" />
-            Live, Hands-On Workshops
+        <div className="relative max-w-5xl mx-auto px-4 sm:px-6 py-20 md:py-28 flex flex-col md:flex-row items-center gap-10">
+          <div className="flex-1 text-center md:text-left">
+            <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm rounded-full px-4 py-2 mb-8 text-lg font-medium">
+              <Zap className="h-4 w-4 text-launch-orange" />
+              Live, Hands-On Workshops
+            </div>
+            <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
+              Build Your Claude Code<br />
+              <span className="text-launch-orange">Chief of Staff</span>
+            </h1>
+            <p className="text-xl md:text-2xl text-white/80 max-w-3xl mx-auto md:mx-0 mb-4 leading-relaxed">
+              The AI inbox system. The daily briefing. The place where your calendar, notes, CRM, and emails finally talk to each other.
+            </p>
+            <p className="text-lg text-white/60 max-w-2xl mx-auto md:mx-0 mb-10">
+              You've been meaning to set this up. Instead, you've been reading about it.<br />
+              <span className="text-launch-orange font-semibold">This workshop is where you stop reading — and build it.</span>
+            </p>
+            <Button
+              size="lg"
+              className="bg-launch-orange hover:bg-launch-orange/90 text-white px-10 py-4 text-lg rounded-full font-bold transition-all duration-300 shadow-2xl hover:scale-105 group"
+              onClick={() => document.getElementById("pricing")?.scrollIntoView({ behavior: "smooth" })}
+            >
+              <span className="flex items-center gap-3">
+                See Workshop Options
+                <ArrowRight className="h-5 w-5 group-hover:translate-x-2 transition-transform duration-300" />
+              </span>
+            </Button>
           </div>
-          <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
-            Build Your Claude Code<br />
-            <span className="text-launch-orange">Chief of Staff</span>
-          </h1>
-          <p className="text-xl md:text-2xl text-white/80 max-w-3xl mx-auto mb-4 leading-relaxed">
-            The AI inbox system. The daily briefing. The place where your calendar, notes, CRM, and emails finally talk to each other.
-          </p>
-          <p className="text-lg text-white/60 max-w-2xl mx-auto mb-10">
-            You've been meaning to set this up. Instead, you've been reading about it.<br />
-            <span className="text-launch-orange font-semibold">This workshop is where you stop reading — and build it.</span>
-          </p>
-          <Button
-            size="lg"
-            className="bg-launch-orange hover:bg-launch-orange/90 text-white px-10 py-4 text-lg rounded-full font-bold transition-all duration-300 shadow-2xl hover:scale-105 group"
-            onClick={() => document.getElementById("pricing")?.scrollIntoView({ behavior: "smooth" })}
-          >
-            <span className="flex items-center gap-3">
-              See Workshop Options
-              <ArrowRight className="h-5 w-5 group-hover:translate-x-2 transition-transform duration-300" />
-            </span>
-          </Button>
+          <div className="flex-shrink-0">
+            <img
+              src={blueBotImg}
+              alt="Blue AI bot Chief of Staff assistant"
+              className="w-48 h-48 md:w-64 md:h-64 drop-shadow-2xl animate-bounce-slow"
+            />
+          </div>
         </div>
       </section>
 
