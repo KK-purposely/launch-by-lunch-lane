@@ -111,16 +111,28 @@ const ClaudeCode = () => {
               You've been meaning to set this up. Instead, you've been reading about it.<br />
               <span className="text-launch-orange font-semibold">This workshop is where you stop reading — and build it.</span>
             </p>
-            <Button
-              size="lg"
-              className="bg-launch-orange hover:bg-launch-orange/90 text-white px-10 py-4 text-lg rounded-full font-bold transition-all duration-300 shadow-2xl hover:scale-105 group"
-              onClick={() => document.getElementById("pricing")?.scrollIntoView({ behavior: "smooth" })}
-            >
-              <span className="flex items-center gap-3">
-                See Workshop Options
-                <ArrowRight className="h-5 w-5 group-hover:translate-x-2 transition-transform duration-300" />
-              </span>
-            </Button>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+              <Button
+                size="lg"
+                className="bg-launch-orange hover:bg-launch-orange/90 text-white px-10 py-4 text-lg rounded-full font-bold transition-all duration-300 shadow-2xl hover:scale-105 group"
+                onClick={() => document.getElementById("pricing")?.scrollIntoView({ behavior: "smooth" })}
+              >
+                <span className="flex items-center gap-3">
+                  See Workshop Options
+                  <ArrowRight className="h-5 w-5 group-hover:translate-x-2 transition-transform duration-300" />
+                </span>
+              </Button>
+              <Button
+                size="lg"
+                className="bg-white hover:bg-white/90 text-launch-orange border-2 border-white hover:border-launch-orange px-10 py-4 text-lg rounded-full font-bold transition-all duration-300 shadow-2xl hover:scale-105 group"
+                onClick={() => window.open("https://marketplace.launchbylunch.co", "_blank")}
+              >
+                <span className="flex items-center gap-3">
+                  Download Our Bundles
+                  <ArrowRight className="h-5 w-5 group-hover:translate-x-2 transition-transform duration-300" />
+                </span>
+              </Button>
+            </div>
           </div>
           <div className="flex-shrink-0">
             <img
