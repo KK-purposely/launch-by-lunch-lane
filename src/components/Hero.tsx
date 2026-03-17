@@ -26,7 +26,7 @@ const Hero = ({ showButtons = true }: HeroProps) => {
             Practical AI Adoption for Modern Leadership
           </h1>
           <p className="text-lg md:text-xl text-muted-foreground mb-12 max-w-3xl mx-auto leading-relaxed">
-            AI is only powerful when it actually works with your team — not against it. We cut through the noise and give leaders the right tools, training, and strategy to adopt AI with confidence.
+            AI is only powerful when it works with your team — not against it. We cut through the noise and give leaders the right tools, training, and strategy to adopt AI with confidence.
           </p>
           
           {showButtons && (
