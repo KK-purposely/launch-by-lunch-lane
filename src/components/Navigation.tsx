@@ -126,6 +126,15 @@ const Navigation = () => {
                   </Link>
                 </DropdownMenuItem>
                 
+                <DropdownMenuItem 
+                  onClick={() => {
+                    window.open('https://luma.com/launchbylunch', '_blank');
+                    setIsMenuOpen(false);
+                  }}
+                >
+                  Events
+                </DropdownMenuItem>
+                
                 <DropdownMenuItem asChild>
                   <Link 
                     to="/contact" 
