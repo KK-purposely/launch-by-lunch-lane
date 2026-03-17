@@ -48,6 +48,15 @@ const Navigation = () => {
                   Claude Code
                 </Link>
 
+                <a 
+                  href="https://luma.com/launchbylunch" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-launch-orange"
+                >
+                  Events
+                </a>
+
                 <Link to="/contact" className="px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-launch-orange">
                   Contact
                 </Link>
@@ -115,6 +124,15 @@ const Navigation = () => {
                   >
                     Claude Code
                   </Link>
+                </DropdownMenuItem>
+                
+                <DropdownMenuItem 
+                  onClick={() => {
+                    window.open('https://luma.com/launchbylunch', '_blank');
+                    setIsMenuOpen(false);
+                  }}
+                >
+                  Events
                 </DropdownMenuItem>
                 
                 <DropdownMenuItem asChild>
