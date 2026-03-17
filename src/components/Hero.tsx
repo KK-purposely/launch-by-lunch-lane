@@ -23,7 +23,7 @@ const Hero = ({ showButtons = true }: HeroProps) => {
           </div>
           
           <h1 className="text-2xl md:text-4xl font-bold text-foreground mb-3 max-w-3xl mx-auto">
-            Practical AI Adoption for Modern Leaders
+            Practical AI Adoption for Modern Leadership
           </h1>
           <p className="text-lg md:text-xl text-muted-foreground mb-12 max-w-3xl mx-auto leading-relaxed">
             Giving teams the tools and confidence for successful AI adoption.
