@@ -48,7 +48,7 @@ const Hero = ({ showButtons = true }: HeroProps) => {
                 className="px-8 py-6 text-lg border-launch-orange text-launch-orange hover:bg-launch-orange hover:text-white rounded-full font-medium transition-all duration-300"
                 asChild
               >
-                <a href="/contact">Contact Us</a>
+                <a href="/claude-code">Claude Code</a>
               </Button>
             </div>
           )}
