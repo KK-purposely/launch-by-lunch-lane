@@ -29,8 +29,11 @@ const Hero = ({ showButtons = true }: HeroProps) => {
             </div>
           </div>
           
-          <p className="text-xl md:text-2xl text-gray-800 mb-12 max-w-3xl mx-auto leading-relaxed font-normal">
-            A new community of AI-first, non-technical founders and fractional experts who believe you don't need a tech team or investor dollars to launch something <strong className="text-launch-purple font-bold">real</strong> and <strong className="text-launch-purple font-bold">revenue generating</strong> today.
+          <h1 className="text-2xl md:text-4xl font-bold text-foreground mb-3 max-w-3xl mx-auto">
+            Practical AI Adoption for Modern Leaders
+          </h1>
+          <p className="text-lg md:text-xl text-muted-foreground mb-12 max-w-3xl mx-auto leading-relaxed">
+            Giving teams the tools and confidence for successful AI adoption.
           </p>
 
           {/* Founders Section */}
