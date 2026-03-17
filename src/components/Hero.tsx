@@ -7,13 +7,6 @@ interface HeroProps {
 }
 
 const Hero = ({ showButtons = true }: HeroProps) => {
-  const scrollToJoinWaitlist = () => {
-    const joinSection = document.querySelector('[data-section="join-waitlist"]');
-    if (joinSection) {
-      joinSection.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
-
   return (
     <div className="relative overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-r from-launch-purple/20 via-launch-orange/10 to-launch-orange/20" />
@@ -35,74 +28,16 @@ const Hero = ({ showButtons = true }: HeroProps) => {
           <p className="text-lg md:text-xl text-muted-foreground mb-12 max-w-3xl mx-auto leading-relaxed">
             Giving teams the tools and confidence for successful AI adoption.
           </p>
-
-          {/* Founders Section */}
-          <div className="mb-12">
-            <h2 className="text-lg font-semibold text-gray-700 mb-8 uppercase tracking-wide">Meet Our Founders</h2>
-            <div className="flex flex-col sm:flex-row justify-center items-center gap-12 mb-8">
-              <div className="group flex flex-col items-center">
-                <div className="relative mb-6">
-                  <div className="absolute -inset-1 bg-gradient-to-r from-launch-purple to-launch-orange rounded-full blur opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-pulse"></div>
-                  <div className="relative">
-                    <div className="w-28 h-28 md:w-36 md:h-36 rounded-full p-1 bg-gradient-to-r from-launch-purple via-launch-orange to-launch-purple">
-                      <img
-                        src="/lovable-uploads/a25b125a-4110-46e2-bf28-7cd7e60e633f.png"
-                        alt="Karen Kelly"
-                        className="w-full h-full rounded-full object-cover bg-white"
-                      />
-                    </div>
-                  </div>
-                </div>
-                <div className="text-center">
-                  <h3 className="font-bold text-xl text-launch-purple mb-2">
-                    <a href="https://www.linkedin.com/in/karen-kelly-daring-greatly/" target="_blank" rel="noopener noreferrer" className="hover:text-launch-orange transition-colors duration-300">
-                      Karen Kelly
-                    </a>
-                  </h3>
-                  <p className="text-launch-orange font-medium text-sm uppercase tracking-wider">CEO • AI-empowered Founder</p>
-                  <p className="text-gray-600 text-sm mt-2 max-w-[200px]">Proving you don't need code to build something amazing</p>
-                </div>
-              </div>
-              
-              <div className="hidden sm:block">
-                <div className="w-px h-24 bg-gradient-to-b from-launch-purple via-launch-orange to-launch-purple opacity-30"></div>
-              </div>
-              
-              <div className="group flex flex-col items-center">
-                <div className="relative mb-6">
-                  <div className="absolute -inset-1 bg-gradient-to-r from-launch-orange to-launch-purple rounded-full blur opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-pulse"></div>
-                  <div className="relative">
-                    <div className="w-28 h-28 md:w-36 md:h-36 rounded-full p-1 bg-gradient-to-r from-launch-orange via-launch-purple to-launch-orange">
-                      <img
-                        src="/lovable-uploads/de950dd0-67d3-45fd-b2d5-e419d56f3c2e.png"
-                        alt="Stephan Smith"
-                        className="w-full h-full rounded-full object-cover bg-white"
-                      />
-                    </div>
-                  </div>
-                </div>
-                <div className="text-center">
-                  <h3 className="font-bold text-xl text-launch-purple mb-2">
-                    <a href="https://www.linkedin.com/in/stephansmithbc93/" target="_blank" rel="noopener noreferrer" className="hover:text-launch-orange transition-colors duration-300">
-                      Stephan Smith
-                    </a>
-                  </h3>
-                  <p className="text-launch-orange font-medium text-sm uppercase tracking-wider">CTO • No-Code Champion</p>
-                  <p className="text-gray-600 text-sm mt-2 max-w-[200px]">Building the future with AI as your co-pilot</p>
-                </div>
-              </div>
-            </div>
-          </div>
           
           {showButtons && (
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <Button 
                 size="lg" 
                 className="group bg-gradient-to-r from-launch-purple to-launch-orange hover:from-launch-orange hover:to-launch-purple text-white px-8 py-6 text-lg rounded-full font-medium transition-all duration-300 shadow-lg hover:shadow-xl"
-                onClick={scrollToJoinWaitlist}
+                onClick={() => window.open("https://luma.com/launchbylunch", "_blank")}
               >
                 <span className="flex items-center gap-2">
-                  Join Our Community
+                  Upcoming Workshops
                   <ArrowRight className="h-5 w-5 group-hover:translate-x-1 transition-transform" />
                 </span>
               </Button>
@@ -111,9 +46,9 @@ const Hero = ({ showButtons = true }: HeroProps) => {
                 variant="outline" 
                 size="lg"
                 className="px-8 py-6 text-lg border-launch-orange text-launch-orange hover:bg-launch-orange hover:text-white rounded-full font-medium transition-all duration-300"
-                onClick={scrollToJoinWaitlist}
+                asChild
               >
-                Learn More
+                <a href="/contact">Contact Us</a>
               </Button>
             </div>
           )}
