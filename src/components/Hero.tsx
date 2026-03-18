@@ -22,8 +22,10 @@ const Hero = ({ showButtons = true }: HeroProps) => {
             </div>
           </div>
           
-          <h1 className="text-2xl md:text-4xl font-bold text-foreground mb-3 max-w-3xl mx-auto">
-            Practical AI Adoption for Modern Leadership
+          <h1 className="text-2xl md:text-4xl font-bold mb-3 max-w-3xl mx-auto">
+            <span className="bg-gradient-to-r from-launch-purple via-pink-500 to-launch-orange bg-clip-text text-transparent">
+              Practical AI Adoption for Modern Leadership
+            </span>
           </h1>
           <p className="text-lg md:text-xl text-muted-foreground mb-12 max-w-3xl mx-auto leading-relaxed">
             AI is only powerful when it works with your team — not against it. We cut through the noise and give leaders the right tools, training, and strategy to
