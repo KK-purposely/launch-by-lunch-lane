@@ -33,72 +33,65 @@ const About = () => {
       {/* Main Content */}
       <div className="max-w-4xl mx-auto px-4 sm:px-6 pb-16">
         {/* Team Photo and Bios Section */}
-        <div className="mb-12 flex flex-col lg:flex-row gap-8 items-stretch">
-          {/* Team Image */}
-          <div className="lg:w-1/2 w-full flex flex-col">
-            <img 
-              src="/lovable-uploads/team-photo-updated.jpg" 
-              alt="Karen Kelly and Stephan Smith, founders of Launch by Lunch" 
-              className="rounded-2xl shadow-lg w-full h-full object-cover flex-1"
-            />
-            <p className="text-sm text-gray-600 mt-4 italic text-center">
-              Karen Kelly and Stephan Smith, the founding team behind Launch by Lunch
-            </p>
+        <div className="mb-12 space-y-10">
+          {/* Karen Kelly */}
+          <div className="flex flex-col md:flex-row gap-8 items-stretch">
+            <div className="md:w-1/3 w-full">
+              <img 
+                src="/lovable-uploads/karen-kelly.jpg" 
+                alt="Karen Kelly, CEO of Launch by Lunch" 
+                className="rounded-2xl shadow-lg w-full h-full object-cover"
+              />
+            </div>
+            <div className="md:w-2/3 w-full flex">
+              <Card className="border-none shadow-lg bg-gradient-to-br from-white via-launch-light/20 to-white overflow-hidden w-full">
+                <CardContent className="p-6 md:p-8">
+                  <div className="flex items-start gap-4 mb-4">
+                    <div className="flex-1">
+                      <h3 className="text-xl font-bold mb-1">
+                        <a href="https://www.linkedin.com/in/karen-kelly-daring-greatly/" target="_blank" rel="noopener noreferrer" className="bg-gradient-to-r from-launch-purple to-launch-orange bg-clip-text text-transparent hover:opacity-80 transition-opacity">
+                          Karen Kelly
+                        </a>
+                      </h3>
+                      <p className="text-launch-orange font-semibold mb-2">CEO</p>
+                      <p className="text-gray-700 leading-relaxed text-base">
+                        Non-technical visionary who saw the democratization of technology coming. Karen is a 3x founder, former CMO, martech president and ex-advertising exec who brings startup strategy, "find a way" thinking and a passion for empowerment through access, education, and network.
+                      </p>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+            </div>
           </div>
-          
-          {/* Featured Founder Sections */}
-          <div className="lg:w-1/2 w-full space-y-6">
-            {/* Karen Kelly */}
-            <Card className="border-none shadow-lg bg-gradient-to-br from-white via-launch-light/20 to-white overflow-hidden">
-              <CardContent className="p-6 md:p-8">
-                <div className="flex items-start gap-4 mb-4">
-                  <div className="flex-shrink-0">
-                    <div className="w-16 h-16 rounded-full bg-gradient-to-r from-launch-purple to-launch-orange p-0.5">
-                      <div className="w-full h-full rounded-full bg-white flex items-center justify-center">
-                        <span className="text-xl font-bold bg-gradient-to-r from-launch-purple to-launch-orange bg-clip-text text-transparent">KK</span>
-                      </div>
+
+          {/* Ariel Galipeau */}
+          <div className="flex flex-col md:flex-row gap-8 items-stretch">
+            <div className="md:w-1/3 w-full">
+              <img 
+                src="/lovable-uploads/ariel-galipeau.jpg" 
+                alt="Ariel Galipeau, Director of AI Programs at Launch by Lunch" 
+                className="rounded-2xl shadow-lg w-full h-full object-cover"
+              />
+            </div>
+            <div className="md:w-2/3 w-full flex">
+              <Card className="border-none shadow-lg bg-gradient-to-br from-white via-launch-light/20 to-white overflow-hidden w-full">
+                <CardContent className="p-6 md:p-8">
+                  <div className="flex items-start gap-4 mb-4">
+                    <div className="flex-1">
+                      <h3 className="text-xl font-bold mb-1">
+                        <span className="bg-gradient-to-r from-launch-orange to-launch-purple bg-clip-text text-transparent">
+                          Ariel Galipeau
+                        </span>
+                      </h3>
+                      <p className="text-launch-orange font-semibold mb-2">Director of AI Programs</p>
+                      <p className="text-gray-700 leading-relaxed text-base">
+                        AI operations leader and coach who helps founders and teams turn ideas into executable plans, scalable systems, and consistent progress. With a decade inside fast-moving, mission-driven startups, she translates complexity into clear priorities and embeds AI into day-to-day workflows to improve decision-making, reduce friction, and drive real momentum. She has a particular interest in closing the AI adoption gap for women.
+                      </p>
                     </div>
                   </div>
-                  <div className="flex-1">
-                    <h3 className="text-xl font-bold mb-1">
-                      <a href="https://www.linkedin.com/in/karen-kelly-daring-greatly/" target="_blank" rel="noopener noreferrer" className="bg-gradient-to-r from-launch-purple to-launch-orange bg-clip-text text-transparent hover:opacity-80 transition-opacity">
-                        Karen Kelly
-                      </a>
-                    </h3>
-                    <p className="text-launch-orange font-semibold mb-2">CEO</p>
-                    <p className="text-gray-700 leading-relaxed text-base">
-                      Non-technical visionary who saw the democratization of technology coming. Karen is a 3x founder, former CMO, martech president and ex-advertising exec who brings startup strategy, "find a way" thinking and a passion for empowerment through access, education, and network.
-                    </p>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
-            
-            {/* Stephan Smith */}
-            <Card className="border-none shadow-lg bg-gradient-to-br from-white via-launch-light/20 to-white overflow-hidden">
-              <CardContent className="p-6 md:p-8">
-                <div className="flex items-start gap-4 mb-4">
-                  <div className="flex-shrink-0">
-                    <div className="w-16 h-16 rounded-full bg-gradient-to-r from-launch-orange to-launch-purple p-0.5">
-                      <div className="w-full h-full rounded-full bg-white flex items-center justify-center">
-                        <span className="text-xl font-bold bg-gradient-to-r from-launch-orange to-launch-purple bg-clip-text text-transparent">SS</span>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="flex-1">
-                    <h3 className="text-xl font-bold mb-1">
-                      <a href="https://www.linkedin.com/in/stephansmithbc93/" target="_blank" rel="noopener noreferrer" className="bg-gradient-to-r from-launch-orange to-launch-purple bg-clip-text text-transparent hover:opacity-80 transition-opacity">
-                        Stephan Smith
-                      </a>
-                    </h3>
-                    <p className="text-launch-orange font-semibold mb-2">CTO</p>
-                    <p className="text-gray-700 leading-relaxed text-base">
-                      Techstars alum and technical expert with deep AI and low-code experience. Stephan bridges the gap between complex technology and practical founder execution. Stephan was a fractional CTO at Karen's company prior to jumping into this new adventure together - democratizing access to AI for everyone, everywhere.
-                    </p>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
+                </CardContent>
+              </Card>
+            </div>
           </div>
         </div>
         
