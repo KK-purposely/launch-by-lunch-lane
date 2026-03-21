@@ -65,12 +65,12 @@ const About = () => {
           </div>
 
           {/* Ariel Galipeau */}
-          <div className="flex flex-col md:flex-row gap-8 items-stretch">
+          <div className="flex flex-col md:flex-row gap-8 items-start">
             <div className="md:w-1/3 w-full">
               <img 
                 src="/lovable-uploads/ariel-galipeau.jpg" 
                 alt="Ariel Galipeau, Director of AI Programs at Launch by Lunch" 
-                className="rounded-2xl shadow-lg w-full h-full object-cover"
+                className="rounded-2xl shadow-lg w-full h-auto"
               />
             </div>
             <div className="md:w-2/3 w-full flex">
