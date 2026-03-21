@@ -35,12 +35,12 @@ const About = () => {
         {/* Team Photo and Bios Section */}
         <div className="mb-12 space-y-10">
           {/* Karen Kelly */}
-          <div className="flex flex-col md:flex-row gap-8 items-start">
+          <div className="flex flex-col md:flex-row gap-8 items-stretch">
             <div className="md:w-1/3 w-full">
               <img 
                 src="/lovable-uploads/karen-kelly.jpg" 
                 alt="Karen Kelly, CEO of Launch by Lunch" 
-                className="rounded-2xl shadow-lg w-full h-auto"
+                className="rounded-2xl shadow-lg w-full h-full object-cover"
               />
             </div>
             <div className="md:w-2/3 w-full flex">
