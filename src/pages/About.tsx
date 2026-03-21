@@ -55,7 +55,7 @@ const About = () => {
                       </h3>
                       <p className="text-launch-orange font-semibold mb-2">CEO</p>
                       <p className="text-gray-700 leading-relaxed text-base">
-                        Non-technical visionary who saw the democratization of technology coming. Karen is a 3x founder, former CMO, martech president and ex-advertising exec who brings startup strategy, "find a way" thinking and a passion for empowerment through access, education, and network.
+                        Karen Kelly is a 3x founder and TEDx speaker helping leaders navigate the future of work in an AI-driven world. Karen founded Launch by Lunch as Boston's first AI community with the goal of enabling non-technical teams with the power of no code solutions. She has worked with dozens of Fortune 1000 organizations, making AI practical and accessible for non-technical executives while emphasizing judgment and communication as leadership advantages. A TEDx 2026 Global Editor's Pick, she advises and speaks to executive teams on AI adoption, culture strategy, and leading effectively without a playbook.
                       </p>
                     </div>
                   </div>
