@@ -105,7 +105,7 @@ const Index = () => {
                     <MessageSquare className="h-5 w-5 text-launch-purple/70" />
                   </div>
                   <p className="text-lg text-foreground font-medium leading-relaxed">
-                    It could look at past LinkedIn posts and create a new one in their voice, based on conversations they had that week.
+                    It could look at your past LinkedIn posts and create a new one in your voice, based on conversations you've had that week.
                   </p>
                 </CardContent>
               </Card>
