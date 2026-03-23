@@ -127,44 +127,52 @@ const HowYourBusinessChanges = () => {
         </div>
 
         {/* In practice */}
-        <div className="mb-16">
-          <h3 className="text-2xl font-bold text-launch-purple mb-6">
-            What that actually looks like in practice
-          </h3>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+        <div className="mb-20">
+          <div className="text-center mb-12">
+            <h3 className="text-3xl md:text-4xl font-bold text-launch-purple mb-3">
+              What that actually looks like in practice
+            </h3>
+            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">Real workflows. Real results. Every single day.</p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {inPractice.map((item, i) => {
               const ItemIcon = item.icon;
               return (
-                <Card key={i} className="border border-border hover:border-launch-purple/20 hover:shadow-lg transition-all duration-300">
-                  <CardContent className="p-6">
-                    <div className="flex items-start gap-4">
-                      <div className="w-10 h-10 bg-launch-purple/10 rounded-lg flex items-center justify-center flex-shrink-0">
-                        <ItemIcon className="h-5 w-5 text-launch-purple/70" />
-                      </div>
-                      <p className="text-foreground text-lg font-medium leading-relaxed">{item.text}</p>
-                    </div>
-                  </CardContent>
-                </Card>
+                <div key={i} className="group relative bg-card rounded-2xl p-8 border border-border hover:border-launch-purple/30 transition-all duration-500 hover:shadow-[0_8px_40px_-12px_hsl(var(--launch-purple)/0.25)] hover:-translate-y-1">
+                  <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-launch-purple to-launch-orange rounded-t-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                  <div className="w-14 h-14 bg-gradient-to-br from-launch-purple/15 to-launch-orange/10 rounded-2xl flex items-center justify-center mb-5 group-hover:scale-110 transition-transform duration-500">
+                    <ItemIcon className="h-7 w-7 text-launch-purple" />
+                  </div>
+                  <p className="text-foreground text-lg font-semibold leading-relaxed">{item.text}</p>
+                </div>
               );
             })}
           </div>
         </div>
 
         {/* What this unlocks */}
-        <div>
-          <h3 className="text-2xl font-bold text-launch-purple mb-6">
-            What this unlocks for your team
-          </h3>
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-            {unlocks.map((item, i) => {
-              const ItemIcon = item.icon;
-              return (
-                <div key={i} className="flex items-start gap-3 bg-card rounded-xl p-5 shadow-sm border border-border">
-                  <ItemIcon className="h-5 w-5 text-launch-orange mt-0.5 flex-shrink-0" />
-                  <p className="text-foreground text-lg font-medium">{item.text}</p>
-                </div>
-              );
-            })}
+        <div className="relative">
+          <div className="absolute inset-0 bg-gradient-to-br from-launch-purple/5 via-transparent to-launch-orange/5 rounded-3xl -m-4" />
+          <div className="relative bg-gradient-to-br from-launch-purple to-launch-purple/90 rounded-3xl p-10 md:p-14 text-white shadow-[0_20px_60px_-15px_hsl(var(--launch-purple)/0.4)]">
+            <div className="text-center mb-10">
+              <h3 className="text-3xl md:text-4xl font-bold mb-3">
+                What this unlocks for your team
+              </h3>
+              <p className="text-white/70 text-lg">The compounding advantage of connected intelligence.</p>
+            </div>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+              {unlocks.map((item, i) => {
+                const ItemIcon = item.icon;
+                return (
+                  <div key={i} className="flex items-start gap-4 bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/10 hover:bg-white/15 hover:border-white/20 transition-all duration-300">
+                    <div className="w-12 h-12 bg-launch-orange/20 rounded-xl flex items-center justify-center flex-shrink-0">
+                      <ItemIcon className="h-6 w-6 text-launch-orange" />
+                    </div>
+                    <p className="text-white text-lg font-semibold leading-snug">{item.text}</p>
+                  </div>
+                );
+              })}
+            </div>
           </div>
         </div>
       </div>
