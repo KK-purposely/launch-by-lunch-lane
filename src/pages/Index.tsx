@@ -23,12 +23,12 @@ const painPoints = [
   {
     icon: MessageSquare,
     title: "Cost of Implementation and Maintenance",
-    desc: "We start with the tools you already have and layer in AI where it saves you the most. No bloated contracts, no surprise fees — just a clear plan that fits your budget and grows with you.",
+    desc: "We start with the tools you already have and layer in AI where it saves you the most. No bloated contracts, no surprise fees. Just a clear plan that fits your budget and grows with you.",
   },
   {
     icon: Users,
     title: "Lack of Education and Technical Expertise",
-    desc: "You don't need a technical team to adopt AI. We provide hands-on training and workshops built for non-technical leaders and teams — so everyone walks away confident, not confused.",
+    desc: "You don't need a technical team to adopt AI. We provide hands-on training and workshops built for non-technical leaders and teams, so everyone walks away confident, not confused.",
   },
   {
     icon: Shield,
@@ -38,7 +38,7 @@ const painPoints = [
   {
     icon: Clock,
     title: "Difficulty Proving Immediate ROI",
-    desc: "We focus on quick wins first — automations and workflows that show measurable results in weeks, not months. You'll see the time saved and costs cut before you even finish onboarding.",
+    desc: "We focus on quick wins first; automations and workflows that show measurable results in weeks, not months. You'll see the time saved and costs cut before you even finish onboarding.",
   },
 ];
 
@@ -47,13 +47,13 @@ const whatWeDo = [
     step: "01",
     icon: Search,
     title: "AI Opportunity Audit",
-    desc: "We assess your business and identify the highest-impact places to use AI — so you start where it matters most.",
+    desc: "We assess your business and identify the highest-impact places to use AI, so you start where it matters most.",
   },
   {
     step: "02",
     icon: Wrench,
     title: "Implementation",
-    desc: "We build workflows, automations, and systems tailored to your team — not off-the-shelf solutions that don't fit.",
+    desc: "We build workflows, automations, and systems tailored to your team. No off-the-shelf solutions that don't fit.",
   },
   {
     step: "03",
@@ -65,7 +65,7 @@ const whatWeDo = [
     step: "04",
     icon: RefreshCw,
     title: "Ongoing Support",
-    desc: "We evolve your systems as tools and needs change — so you're never stuck with something outdated.",
+    desc: "We evolve your systems as tools and needs change, so you're never stuck with something outdated.",
     optional: true,
   },
 ];
@@ -105,13 +105,13 @@ const Index = () => {
     <>
       <Helmet>
         <title>Launch by Lunch - AI Adoption for SMBs</title>
-        <meta name="description" content="We help small and medium-sized businesses adopt AI in a way that actually makes sense — saving money, making teams happier, and future-proofing your business." />
+        <meta name="description" content="We help small and medium-sized businesses adopt AI in a way that actually makes sense, saving money, making teams happier, and future-proofing your business." />
         
         {/* Open Graph / Facebook */}
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://launchbylunch.com/" />
         <meta property="og:title" content="Launch by Lunch - AI Adoption for SMBs" />
-        <meta property="og:description" content="We help small and medium-sized businesses adopt AI in a way that actually makes sense — saving money, making teams happier, and future-proofing your business." />
+        <meta property="og:description" content="We help small and medium-sized businesses adopt AI in a way that actually makes sense, saving money, making teams happier, and future-proofing your business." />
         <meta property="og:image" content="https://cdn.lovable.app/lovable-uploads/8f3eba1c-0f11-4411-9774-5671f6239bf2.png" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
@@ -120,7 +120,7 @@ const Index = () => {
         <meta property="twitter:card" content="summary_large_image" />
         <meta property="twitter:url" content="https://launchbylunch.com/" />
         <meta property="twitter:title" content="Launch by Lunch - AI Adoption for SMBs" />
-        <meta property="twitter:description" content="We help small and medium-sized businesses adopt AI in a way that actually makes sense — saving money, making teams happier, and future-proofing your business." />
+        <meta property="twitter:description" content="We help small and medium-sized businesses adopt AI in a way that actually makes sense, saving money, making teams happier, and future-proofing your business." />
         <meta property="twitter:image" content="https://cdn.lovable.app/lovable-uploads/8f3eba1c-0f11-4411-9774-5671f6239bf2.png" />
       </Helmet>
       
@@ -136,7 +136,7 @@ const Index = () => {
                 <span className="text-launch-orange">Here's What It Actually Feels Like.</span>
               </h2>
               <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-                You know AI can help your business — but the path from "interested" to "implemented" is full of real challenges. We've seen them all.
+                You know AI can help your business, but the path from "interested" to "implemented" is full of real challenges. We've seen them all.
               </p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -168,7 +168,7 @@ const Index = () => {
               We Don't Just Talk About AI.<br />We Make It Work for Your Team.
             </h2>
             <p className="text-lg text-white/90 max-w-2xl mx-auto">
-              From your first conversation with us to a fully running system — we handle the strategy, the setup, and the training so your team hits the ground running.
+              From your first conversation with us to a fully running system, we handle the strategy, the setup, and the training so your team hits the ground running.
             </p>
           </div>
         </section>
@@ -181,7 +181,7 @@ const Index = () => {
                 What We Do
               </h2>
               <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-                A clear, repeatable process — from discovery to results.
+                A clear, repeatable process from discovery to results.
               </p>
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
@@ -264,7 +264,7 @@ const Index = () => {
             <span className="text-launch-orange">for Your Team?</span>
           </h2>
           <p className="text-gray-500 text-lg mb-8 max-w-2xl mx-auto">
-            No jargon. No enterprise sales pitch. Just a conversation about what your team actually needs — and how we can help you get there.
+            No jargon. No enterprise sales pitch. Just a conversation about what your team actually needs and how we can help you get there.
           </p>
           <Button
             size="lg"
