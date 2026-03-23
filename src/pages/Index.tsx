@@ -133,7 +133,7 @@ const Index = () => {
             <div className="text-center mb-14">
               <h2 className="text-3xl md:text-4xl font-bold text-launch-purple mb-4">
                 AI Sounds Great in Theory.<br />
-                <span className="text-launch-orange">Here's What It Actually Feels Like.</span>
+                <span className="text-launch-orange">Here's What It Can Feel Like.</span>
               </h2>
               <p className="text-lg text-gray-600 max-w-2xl mx-auto">
                 You know AI can help your business, but the path from "interested" to "implemented" is full of real challenges. We've seen them all.
