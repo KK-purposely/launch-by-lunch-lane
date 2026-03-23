@@ -14,28 +14,6 @@ import {
   Lightbulb,
 } from "lucide-react";
 
-const painPoints = [
-  {
-    icon: MessageSquare,
-    title: "Cost of Implementation and Maintenance",
-    desc: "We start with the tools you already have and layer in AI where it saves you the most. No bloated contracts, no surprise fees. Just a clear plan that fits your budget and grows with you.",
-  },
-  {
-    icon: Users,
-    title: "Lack of Education and Technical Expertise",
-    desc: "You don't need a technical team to adopt AI. We provide hands-on training and workshops built for non-technical leaders and teams, so everyone walks away confident, not confused.",
-  },
-  {
-    icon: Shield,
-    title: "Data Security and Privacy Concerns",
-    desc: "We take security seriously from day one. Every solution we build follows best practices for data privacy, and we help you understand exactly where your data lives and who has access.",
-  },
-  {
-    icon: Clock,
-    title: "Difficulty Proving Immediate ROI",
-    desc: "We focus on quick wins first; automations and workflows that show measurable results in weeks, not months. You'll see the time saved and costs cut before you even finish onboarding.",
-  },
-];
 
 
 const thisIsForYou = [
