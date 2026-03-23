@@ -38,7 +38,7 @@ const painPoints = [
   {
     icon: Clock,
     title: "Difficulty Proving Immediate ROI",
-    desc: "We focus on quick wins first — automations and workflows that show measurable results in weeks, not months. You'll see the time saved and costs cut before you even finish onboarding.",
+    desc: "We focus on quick wins first; automations and workflows that show measurable results in weeks, not months. You'll see the time saved and costs cut before you even finish onboarding.",
   },
 ];
 
