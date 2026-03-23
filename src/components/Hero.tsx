@@ -44,6 +44,11 @@ const Hero = ({ showButtons = true }: HeroProps) => {
             {/* Right: CTA Buttons */}
             {showButtons && (
               <div className="flex flex-col items-center md:items-end justify-center gap-5">
+                <img
+                  src="/lovable-uploads/8f3eba1c-0f11-4411-9774-5671f6239bf2.png"
+                  alt="Launch by Lunch Logo"
+                  className="h-24 md:h-32 w-auto"
+                />
                 <div className="bg-white/80 backdrop-blur-sm rounded-3xl p-8 md:p-10 shadow-lg border border-gray-100 flex flex-col items-center gap-6 w-full max-w-sm">
                   <p className="text-lg font-semibold text-launch-purple text-center">
                     Ready to get started?
