@@ -236,14 +236,20 @@ const Index = () => {
               What You Can Expect
             </h2>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-              {businessOutcomes.map((item, i) => (
-                <div key={i} className="bg-white rounded-2xl p-6 text-center shadow-sm border border-gray-100">
-                  <p className="text-2xl md:text-3xl font-bold bg-gradient-to-r from-launch-purple to-launch-orange bg-clip-text text-transparent mb-2">
-                    {item.stat}
-                  </p>
-                  <p className="text-gray-600 font-medium text-sm">{item.label}</p>
-                </div>
-              ))}
+              {businessOutcomes.map((item, i) => {
+                const ItemIcon = item.icon;
+                return (
+                  <div key={i} className="bg-white rounded-2xl p-6 text-center shadow-sm border border-gray-100 hover:shadow-lg hover:border-launch-purple/20 transition-all duration-300">
+                    <div className="w-12 h-12 bg-gradient-to-br from-launch-purple to-launch-orange rounded-xl flex items-center justify-center mx-auto mb-3">
+                      <ItemIcon className="h-6 w-6 text-white" />
+                    </div>
+                    <p className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-launch-purple to-launch-orange bg-clip-text text-transparent mb-1">
+                      {item.stat}
+                    </p>
+                    <p className="text-gray-600 font-medium text-sm">{item.label}</p>
+                  </div>
+                );
+              })}
             </div>
           </div>
         </section>
