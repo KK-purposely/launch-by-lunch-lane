@@ -141,11 +141,13 @@ const Index = () => {
                 return (
                   <Card key={i} className="border border-gray-100 hover:border-launch-purple/20 hover:shadow-lg transition-all duration-300">
                     <CardContent className="p-7">
-                      <div className="w-12 h-12 bg-gradient-to-br from-launch-purple to-launch-orange rounded-xl flex items-center justify-center mb-4">
-                        <ItemIcon className="h-6 w-6 text-white" />
+                      <div className="flex items-center gap-3 mb-3">
+                        <div className="w-10 h-10 bg-launch-purple/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                          <ItemIcon className="h-5 w-5 text-launch-purple/60" />
+                        </div>
+                        <p className="text-sm font-semibold text-launch-purple/50 uppercase tracking-wide">{item.title}</p>
                       </div>
-                      <h3 className="text-xl font-bold text-launch-purple mb-2">{item.title}</h3>
-                      <p className="text-gray-600 text-lg leading-relaxed">{item.desc}</p>
+                      <p className="text-lg text-foreground font-medium leading-relaxed">{item.desc}</p>
                     </CardContent>
                   </Card>
                 );
