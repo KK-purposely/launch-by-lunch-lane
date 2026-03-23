@@ -47,7 +47,7 @@ const whatWeDo = [
     step: "01",
     icon: Search,
     title: "AI Opportunity Audit",
-    desc: "We assess your business and identify the highest-impact places to use AI — so you start where it matters most.",
+    desc: "We assess your business and identify the highest-impact places to use AI, so you start where it matters most.",
   },
   {
     step: "02",
