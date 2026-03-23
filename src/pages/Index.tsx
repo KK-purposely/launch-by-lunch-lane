@@ -53,7 +53,7 @@ const whatWeDo = [
     step: "02",
     icon: Wrench,
     title: "Implementation",
-    desc: "We build workflows, automations, and systems tailored to your team — not off-the-shelf solutions that don't fit.",
+    desc: "We build workflows, automations, and systems tailored to your team. No off-the-shelf solutions that don't fit.",
   },
   {
     step: "03",
