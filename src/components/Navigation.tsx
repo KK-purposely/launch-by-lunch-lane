@@ -171,14 +171,14 @@ const Navigation = () => {
                 
                 <DropdownMenuSeparator />
                 
-                <DropdownMenuItem 
-                  onClick={() => {
-                    window.open('https://learn.launchbylunch.co/', '_blank');
-                    setIsMenuOpen(false);
-                  }}
-                  className="text-launch-orange font-medium"
-                >
-                  Get Our Newsletter
+                <DropdownMenuItem asChild>
+                  <Link 
+                    to="/contact" 
+                    className="w-full text-launch-orange font-medium"
+                    onClick={() => setIsMenuOpen(false)}
+                  >
+                    Contact
+                  </Link>
                 </DropdownMenuItem>
               </DropdownMenuContent>
             </DropdownMenu>
