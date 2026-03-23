@@ -25,19 +25,24 @@ const painPoints = [
     desc: "Not everyone's excited about AI — and that's normal. We help you bring your whole team along at a pace that builds confidence, not anxiety. No one gets left behind.",
   },
   {
-    icon: Heart,
-    title: "Make It a Win-Win (Because It Really Is)",
-    desc: "AI isn't about replacing people — it's about removing the parts of work nobody likes. When your team sees AI handling the tedious stuff, they get to focus on work that actually matters.",
+    icon: Shield,
+    title: "People Are Worried About What It Means for Their Job",
+    desc: "The fear is real — and it's valid. We help you introduce AI in a way that empowers your team instead of threatening them. When people see AI as a tool, not a replacement, everything changes.",
   },
   {
-    icon: TrendingUp,
-    title: "Get Ahead Before the Crowd",
-    desc: "The companies that figure out AI now won't just survive — they'll set the pace. We help you future-proof your business while your competitors are still Googling 'what is ChatGPT.'",
+    icon: Heart,
+    title: "People Just Don't Like Change",
+    desc: "New tools, new processes, new expectations — it's a lot. We meet your team where they are and make the transition feel manageable, not overwhelming.",
   },
   {
     icon: Clock,
-    title: "You Don't Have Time to Figure This Out Alone",
-    desc: "Between running your business and keeping up with AI news, who has the bandwidth? We cut through the noise so you don't have to become an AI expert to benefit from one.",
+    title: "It Feels Like a Never-Ending Amount to Learn",
+    desc: "A new AI tool launches every day. It's exhausting. We cut through the noise and focus on what actually matters for your business — so you're not chasing every shiny object.",
+  },
+  {
+    icon: MessageSquare,
+    title: "When Is the Right Time to Jump In?",
+    desc: "There's never a perfect moment — but there is a smart one. We help you find the right starting point for your team so you're not too early, not too late, and not doing it alone.",
   },
 ];
 
