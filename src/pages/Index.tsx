@@ -1,49 +1,104 @@
 import { Helmet } from "react-helmet-async";
 import Hero from "@/components/Hero";
-import Testimonials from "@/components/Testimonials";
-import Features from "@/components/Features";
 import Footer from "@/components/Footer";
-import FitSection from "@/components/FitSection";
-import HeroSection from "@/components/join/HeroSection";
-import MainServicesSection from "@/components/join/MainServicesSection";
-import FAQSection from "@/components/join/FAQSection";
-import BottomCTASection from "@/components/join/BottomCTASection";
-import ContactForm from "@/components/ContactForm";
-import YouTubePlayer from "@/components/YouTubePlayer";
-import { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { Button } from "@/components/ui/button";
+import { Card, CardContent } from "@/components/ui/card";
+import {
+  ArrowRight,
+  Brain,
+  Shield,
+  Users,
+  Zap,
+  CheckCircle2,
+  TrendingUp,
+  Heart,
+  Clock,
+  MessageSquare,
+  Lightbulb,
+  Target,
+} from "lucide-react";
+
+const painPoints = [
+  {
+    icon: Users,
+    title: "Some of Your Team Isn't Ready Yet",
+    desc: "Not everyone's excited about AI — and that's normal. We help you bring your whole team along at a pace that builds confidence, not anxiety. No one gets left behind.",
+  },
+  {
+    icon: Heart,
+    title: "Make It a Win-Win (Because It Really Is)",
+    desc: "AI isn't about replacing people — it's about removing the parts of work nobody likes. When your team sees AI handling the tedious stuff, they get to focus on work that actually matters.",
+  },
+  {
+    icon: TrendingUp,
+    title: "Get Ahead Before the Crowd",
+    desc: "The companies that figure out AI now won't just survive — they'll set the pace. We help you future-proof your business while your competitors are still Googling 'what is ChatGPT.'",
+  },
+  {
+    icon: Clock,
+    title: "You Don't Have Time to Figure This Out Alone",
+    desc: "Between running your business and keeping up with AI news, who has the bandwidth? We cut through the noise so you don't have to become an AI expert to benefit from one.",
+  },
+];
+
+const howWeHelp = [
+  {
+    icon: Brain,
+    title: "Build Your Company Brain",
+    desc: "A single source of truth for everything your company knows — searchable, accessible, and always up to date. New hires get answers on day one.",
+    link: "/enterprise-services",
+  },
+  {
+    icon: Zap,
+    title: "Automate What Slows You Down",
+    desc: "Your tools should talk to each other. We connect your CRM, email, calendar, and docs so the busywork disappears and your team focuses on real work.",
+    link: "/enterprise-services",
+  },
+  {
+    icon: Target,
+    title: "AI Strategy That Fits You",
+    desc: "No cookie-cutter playbooks. We look at your team, your tools, and your goals — then build a plan that makes sense for where you are right now.",
+    link: "/enterprise-services",
+  },
+  {
+    icon: Shield,
+    title: "Training That Sticks",
+    desc: "Workshops and hands-on sessions designed for non-technical teams. Your people walk away confident, not confused.",
+    link: "/claude-code",
+  },
+];
+
+const realResults = [
+  {
+    stat: "5+ hours",
+    label: "saved per team member per week",
+  },
+  {
+    stat: "Day 1",
+    label: "new hires find answers immediately",
+  },
+  {
+    stat: "Zero",
+    label: "coding skills required",
+  },
+  {
+    stat: "100%",
+    label: "of your existing tools — connected",
+  },
+];
 
 const Index = () => {
-  const navigate = useNavigate();
-  const [contactFormOpen, setContactFormOpen] = useState(false);
-  const [selectedService, setSelectedService] = useState("");
-
-  const handleServiceClick = (service: any) => {
-    if (service.isContact) {
-      setSelectedService(service.title);
-      setContactFormOpen(true);
-    } else if (service.ctaUrl === "https://calendly.com/karen-launchbylunch/ai-low-code-office-hours") {
-      window.open(service.ctaUrl, "_blank");
-    } else if (service.ctaUrl === "#") {
-      console.log(`Clicked ${service.title}`);
-    } else if (service.ctaUrl.startsWith("/")) {
-      navigate(service.ctaUrl);
-    } else {
-      window.open(service.ctaUrl, "_blank");
-    }
-  };
-
   return (
     <>
       <Helmet>
-        <title>Launch by Lunch - AI-First Founder Community</title>
-        <meta name="description" content="Join Launch by Lunch, the community for AI-first founders. Build, launch, and scale your startup without extensive coding knowledge." />
+        <title>Launch by Lunch - AI Adoption for SMBs</title>
+        <meta name="description" content="We help small and medium-sized businesses adopt AI in a way that actually makes sense — saving money, making teams happier, and future-proofing your business." />
         
         {/* Open Graph / Facebook */}
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://launchbylunch.com/" />
-        <meta property="og:title" content="Launch by Lunch - AI-First Founder Community" />
-        <meta property="og:description" content="Join Launch by Lunch, the community for AI-first founders. Build, launch, and scale your startup without extensive coding knowledge." />
+        <meta property="og:title" content="Launch by Lunch - AI Adoption for SMBs" />
+        <meta property="og:description" content="We help small and medium-sized businesses adopt AI in a way that actually makes sense — saving money, making teams happier, and future-proofing your business." />
         <meta property="og:image" content="https://cdn.lovable.app/lovable-uploads/8f3eba1c-0f11-4411-9774-5671f6239bf2.png" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
@@ -51,59 +106,134 @@ const Index = () => {
         {/* Twitter */}
         <meta property="twitter:card" content="summary_large_image" />
         <meta property="twitter:url" content="https://launchbylunch.com/" />
-        <meta property="twitter:title" content="Launch by Lunch - AI-First Founder Community" />
-        <meta property="twitter:description" content="Join Launch by Lunch, the community for AI-first founders. Build, launch, and scale your startup without extensive coding knowledge." />
+        <meta property="twitter:title" content="Launch by Lunch - AI Adoption for SMBs" />
+        <meta property="twitter:description" content="We help small and medium-sized businesses adopt AI in a way that actually makes sense — saving money, making teams happier, and future-proofing your business." />
         <meta property="twitter:image" content="https://cdn.lovable.app/lovable-uploads/8f3eba1c-0f11-4411-9774-5671f6239bf2.png" />
-
-        {/* LinkedIn */}
-        <meta property="linkedin:owner" content="" />
       </Helmet>
       
       <div className="min-h-screen flex flex-col bg-gradient-to-br from-launch-light via-white to-orange-50">
         <Hero />
-        
-        {/* YouTube Video Section */}
-        <section className="w-full py-16 px-4 sm:px-6 bg-white">
-          <div className="max-w-4xl mx-auto">
-            <div className="w-full mx-auto">
-              <div className="relative w-full" style={{ paddingBottom: '56.25%' }}>
-                <YouTubePlayer
-                  videoId="bOsbDXRda1g"
-                  className="absolute top-0 left-0 w-full h-full rounded-lg shadow-lg overflow-hidden"
-                />
-              </div>
+
+        {/* Pain Points Section */}
+        <section className="bg-white py-16 md:py-20">
+          <div className="max-w-5xl mx-auto px-4 sm:px-6">
+            <div className="text-center mb-14">
+              <h2 className="text-3xl md:text-4xl font-bold text-launch-purple mb-4">
+                AI Sounds Great in Theory.<br />
+                <span className="text-launch-orange">Here's What It Actually Feels Like.</span>
+              </h2>
+              <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+                You know AI can help your business — but the path from "interested" to "implemented" is full of real challenges. We've seen them all.
+              </p>
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+              {painPoints.map((item, i) => {
+                const ItemIcon = item.icon;
+                return (
+                  <Card key={i} className="border border-gray-100 hover:border-launch-purple/20 hover:shadow-lg transition-all duration-300">
+                    <CardContent className="p-7">
+                      <div className="w-12 h-12 bg-gradient-to-br from-launch-purple to-launch-orange rounded-xl flex items-center justify-center mb-4">
+                        <ItemIcon className="h-6 w-6 text-white" />
+                      </div>
+                      <h3 className="text-xl font-bold text-launch-purple mb-2">{item.title}</h3>
+                      <p className="text-gray-600 text-lg leading-relaxed">{item.desc}</p>
+                    </CardContent>
+                  </Card>
+                );
+              })}
             </div>
           </div>
         </section>
-        
-        {/* Partner Network Section */}
-        <section className="w-full py-16 px-4 sm:px-6 bg-white">
-          <div className="max-w-5xl mx-auto text-center">
-            <img 
-              src="/lovable-uploads/edf596a7-bfe1-43e4-a3c2-8d89f888d8d6.png" 
-              alt="Bringing access to founders through our global partner network: Founders EDGE, CIC, techstars, PastCTO, Silicon Society"
-              className="w-full h-auto max-w-4xl mx-auto"
-            />
+
+        {/* Transition Banner */}
+        <section className="bg-gradient-to-r from-launch-purple to-launch-orange py-14">
+          <div className="max-w-4xl mx-auto px-4 sm:px-6 text-center text-white">
+            <Lightbulb className="h-10 w-10 mx-auto mb-4 opacity-90" />
+            <h2 className="text-2xl md:text-4xl font-bold mb-4">
+              We Don't Just Talk About AI.<br />We Make It Work for Your Team.
+            </h2>
+            <p className="text-lg text-white/90 max-w-2xl mx-auto">
+              From your first conversation with us to a fully running system — we handle the strategy, the setup, and the training so your team hits the ground running.
+            </p>
           </div>
         </section>
-        
-        <Features />
-        <Testimonials />
-        <FitSection />
-        
-        {/* Join page content */}
-        <HeroSection />
-        <MainServicesSection onServiceClick={handleServiceClick} />
-        <FAQSection />
-        <div className="max-w-5xl mx-auto px-4 sm:px-6">
-          <BottomCTASection />
-          <ContactForm
-            isOpen={contactFormOpen}
-            onClose={() => setContactFormOpen(false)}
-            serviceTitle={selectedService}
-          />
-        </div>
-        
+
+        {/* How We Help */}
+        <section className="py-16 md:py-20">
+          <div className="max-w-6xl mx-auto px-4 sm:px-6">
+            <div className="text-center mb-14">
+              <h2 className="text-3xl md:text-4xl font-bold text-launch-purple mb-4">
+                How We Help You Get There
+              </h2>
+              <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+                Practical, hands-on AI adoption — built around your team, your tools, and your budget.
+              </p>
+            </div>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
+              {howWeHelp.map((item, i) => {
+                const ItemIcon = item.icon;
+                return (
+                  <div
+                    key={i}
+                    className="bg-white rounded-2xl p-7 shadow-sm border border-gray-100 hover:shadow-lg hover:border-launch-purple/20 transition-all duration-300 group"
+                  >
+                    <div className="w-14 h-14 bg-gradient-to-br from-launch-purple to-launch-orange rounded-2xl flex items-center justify-center mb-5 group-hover:scale-110 transition-transform duration-300">
+                      <ItemIcon className="h-7 w-7 text-white" />
+                    </div>
+                    <h3 className="text-xl font-bold text-launch-purple mb-2">{item.title}</h3>
+                    <p className="text-gray-600 text-lg mb-4">{item.desc}</p>
+                    <a href={item.link} className="inline-flex items-center gap-1 text-launch-orange font-semibold hover:gap-2 transition-all duration-200">
+                      Learn more <ArrowRight className="h-4 w-4" />
+                    </a>
+                  </div>
+                );
+              })}
+            </div>
+          </div>
+        </section>
+
+        {/* Results */}
+        <section className="bg-launch-light py-16 md:py-20">
+          <div className="max-w-5xl mx-auto px-4 sm:px-6">
+            <h2 className="text-3xl md:text-4xl font-bold text-launch-purple mb-12 text-center">
+              What Teams Walk Away With
+            </h2>
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+              {realResults.map((item, i) => (
+                <div key={i} className="bg-white rounded-2xl p-6 text-center shadow-sm">
+                  <p className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-launch-purple to-launch-orange bg-clip-text text-transparent mb-2">
+                    {item.stat}
+                  </p>
+                  <p className="text-gray-600 font-medium text-sm">{item.label}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Final CTA */}
+        <section className="max-w-4xl mx-auto px-4 sm:px-6 py-16 md:py-20 text-center">
+          <h2 className="text-3xl md:text-4xl font-bold text-launch-purple mb-4">
+            Ready to Make AI Work<br />
+            <span className="text-launch-orange">for Your Team?</span>
+          </h2>
+          <p className="text-gray-500 text-lg mb-8 max-w-2xl mx-auto">
+            No jargon. No enterprise sales pitch. Just a conversation about what your team actually needs — and how we can help you get there.
+          </p>
+          <Button
+            size="lg"
+            className="bg-launch-orange hover:bg-launch-orange/90 text-white px-10 py-4 text-lg rounded-full font-bold transition-all duration-300 shadow-xl hover:scale-105 group"
+            onClick={() =>
+              window.open("https://calendly.com/karen-launchbylunch/30min", "_blank")
+            }
+          >
+            <span className="flex items-center gap-3">
+              Let's Talk About Your Team
+              <ArrowRight className="h-5 w-5 group-hover:translate-x-2 transition-transform duration-300" />
+            </span>
+          </Button>
+        </section>
+
         <Footer />
       </div>
     </>
