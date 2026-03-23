@@ -103,21 +103,6 @@ const HowYourBusinessChanges = () => {
           </div>
         </div>
 
-        {/* What we build */}
-        <div className="mb-16">
-          <h3 className="text-2xl font-bold text-launch-purple mb-2">
-            What we build instead:
-          </h3>
-          <div className="bg-gradient-to-r from-launch-purple to-launch-orange rounded-2xl p-8 mt-6 text-white">
-            <Layers className="h-10 w-10 mb-4 opacity-90" />
-            <p className="text-xl font-semibold mb-3">
-              We create a centralized AI layer across your business.
-            </p>
-            <p className="text-lg text-white/90 leading-relaxed">
-              A single operational system that connects your tools, your data, and your workflows so your team can access information, take action, and move faster from one place.
-            </p>
-          </div>
-        </div>
 
         {/* We connect the tools you already use */}
         <div className="mb-16 text-center">
