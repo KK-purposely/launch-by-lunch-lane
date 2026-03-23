@@ -149,6 +149,9 @@ const Index = () => {
         {/* What We Do */}
         <HowYourBusinessChanges />
 
+        {/* Who We Are */}
+        <WhoWeAre />
+
         {/* Business Outcomes */}
         <section className="py-16 md:py-20">
           <div className="max-w-5xl mx-auto px-4 sm:px-6">
