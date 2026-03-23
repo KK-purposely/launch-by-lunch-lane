@@ -48,6 +48,10 @@ const Navigation = () => {
                   Claude Code
                 </Link>
 
+                <Link to="/community" className="px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-launch-orange">
+                  Community
+                </Link>
+
                 <a 
                   href="https://luma.com/launchbylunch" 
                   target="_blank" 
@@ -123,6 +127,16 @@ const Navigation = () => {
                     onClick={() => setIsMenuOpen(false)}
                   >
                     Claude Code
+                  </Link>
+                </DropdownMenuItem>
+
+                <DropdownMenuItem asChild>
+                  <Link 
+                    to="/community" 
+                    className="w-full"
+                    onClick={() => setIsMenuOpen(false)}
+                  >
+                    Community
                   </Link>
                 </DropdownMenuItem>
                 
