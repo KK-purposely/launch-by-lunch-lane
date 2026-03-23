@@ -88,7 +88,7 @@ const Index = () => {
                 One that knew everything happening across your business — and could actually do something with it.
               </p>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <Card className="border border-border hover:border-launch-purple/20 hover:shadow-lg transition-all duration-300">
                 <CardContent className="p-7">
                   <div className="w-10 h-10 bg-launch-purple/10 rounded-lg flex items-center justify-center mb-4">
