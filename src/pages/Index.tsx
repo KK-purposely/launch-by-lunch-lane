@@ -120,7 +120,7 @@ const Index = () => {
         <meta property="twitter:card" content="summary_large_image" />
         <meta property="twitter:url" content="https://launchbylunch.com/" />
         <meta property="twitter:title" content="Launch by Lunch - AI Adoption for SMBs" />
-        <meta property="twitter:description" content="We help small and medium-sized businesses adopt AI in a way that actually makes sense — saving money, making teams happier, and future-proofing your business." />
+        <meta property="twitter:description" content="We help small and medium-sized businesses adopt AI in a way that actually makes sense, saving money, making teams happier, and future-proofing your business." />
         <meta property="twitter:image" content="https://cdn.lovable.app/lovable-uploads/8f3eba1c-0f11-4411-9774-5671f6239bf2.png" />
       </Helmet>
       
