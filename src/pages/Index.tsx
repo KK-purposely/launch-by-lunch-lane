@@ -30,19 +30,14 @@ const painPoints = [
     desc: "The fear is real — and it's valid. We help you introduce AI in a way that empowers your team instead of threatening them. When people see AI as a tool, not a replacement, everything changes.",
   },
   {
-    icon: Heart,
-    title: "People Just Don't Like Change",
-    desc: "New tools, new processes, new expectations — it's a lot. We meet your team where they are and make the transition feel manageable, not overwhelming.",
-  },
-  {
     icon: Clock,
     title: "It Feels Like a Never-Ending Amount to Learn",
     desc: "A new AI tool launches every day. It's exhausting. We cut through the noise and focus on what actually matters for your business — so you're not chasing every shiny object.",
   },
   {
     icon: MessageSquare,
-    title: "When Is the Right Time to Jump In?",
-    desc: "There's never a perfect moment — but there is a smart one. We help you find the right starting point for your team so you're not too early, not too late, and not doing it alone.",
+    title: "I Don't Know What Tools to Start With or What It'll Cost",
+    desc: "There are thousands of AI tools out there — most of them you don't need. We help you pick the right ones for your team and budget, so you're not overspending on things that don't move the needle.",
   },
 ];
 
