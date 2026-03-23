@@ -98,35 +98,49 @@ const Index = () => {
       <div className="min-h-screen flex flex-col bg-gradient-to-br from-launch-light via-white to-orange-50">
         <Hero />
 
-        {/* Pain Points Section */}
+        {/* Second Brain Vision Section */}
         <section className="bg-white py-16 md:py-20">
-          <div className="max-w-5xl mx-auto px-4 sm:px-6">
-            <div className="text-center mb-14">
+          <div className="max-w-4xl mx-auto px-4 sm:px-6">
+            <div className="text-center mb-12">
               <h2 className="text-3xl md:text-4xl font-bold text-launch-purple mb-4">
-                AI Sounds Great in Theory.<br />
-                <span className="text-launch-orange">Here's What It Can Feel Like.</span>
+                What If Everyone on Your Team<br />
+                <span className="text-launch-orange">Had a Second Brain?</span>
               </h2>
-              <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-                You know AI can help your business, but the path from "interested" to "implemented" is full of real challenges. We've seen them all.
+              <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+                One that knew everything happening across your business — and could actually do something with it.
               </p>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              {painPoints.map((item, i) => {
-                const ItemIcon = item.icon;
-                return (
-                  <Card key={i} className="border border-gray-100 hover:border-launch-purple/20 hover:shadow-lg transition-all duration-300">
-                    <CardContent className="p-7">
-                      <div className="flex items-center gap-3 mb-3">
-                        <div className="w-10 h-10 bg-launch-purple/10 rounded-lg flex items-center justify-center flex-shrink-0">
-                          <ItemIcon className="h-5 w-5 text-launch-purple/60" />
-                        </div>
-                        <p className="text-sm font-semibold text-launch-purple/50 uppercase tracking-wide">{item.title}</p>
-                      </div>
-                      <p className="text-lg text-foreground font-medium leading-relaxed">{item.desc}</p>
-                    </CardContent>
-                  </Card>
-                );
-              })}
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              <Card className="border border-border hover:border-launch-purple/20 hover:shadow-lg transition-all duration-300">
+                <CardContent className="p-7">
+                  <div className="w-10 h-10 bg-launch-purple/10 rounded-lg flex items-center justify-center mb-4">
+                    <Brain className="h-5 w-5 text-launch-purple/70" />
+                  </div>
+                  <p className="text-lg text-foreground font-medium leading-relaxed">
+                    It could research every interaction your team has ever had with a given company or prospect — instantly.
+                  </p>
+                </CardContent>
+              </Card>
+              <Card className="border border-border hover:border-launch-purple/20 hover:shadow-lg transition-all duration-300">
+                <CardContent className="p-7">
+                  <div className="w-10 h-10 bg-launch-purple/10 rounded-lg flex items-center justify-center mb-4">
+                    <MessageSquare className="h-5 w-5 text-launch-purple/70" />
+                  </div>
+                  <p className="text-lg text-foreground font-medium leading-relaxed">
+                    It could look at past LinkedIn posts and create a new one in their voice, based on conversations they had that week.
+                  </p>
+                </CardContent>
+              </Card>
+              <Card className="border border-border hover:border-launch-purple/20 hover:shadow-lg transition-all duration-300">
+                <CardContent className="p-7">
+                  <div className="w-10 h-10 bg-launch-purple/10 rounded-lg flex items-center justify-center mb-4">
+                    <Zap className="h-5 w-5 text-launch-purple/70" />
+                  </div>
+                  <p className="text-lg text-foreground font-medium leading-relaxed">
+                    It could tell you exactly what to focus on today — and what's obviously getting in the way.
+                  </p>
+                </CardContent>
+              </Card>
             </div>
           </div>
         </section>
