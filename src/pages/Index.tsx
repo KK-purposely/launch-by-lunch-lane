@@ -119,6 +119,16 @@ const Index = () => {
                   </p>
                 </CardContent>
               </Card>
+              <Card className="border border-border hover:border-launch-purple/20 hover:shadow-lg transition-all duration-300">
+                <CardContent className="p-7">
+                  <div className="w-10 h-10 bg-launch-purple/10 rounded-lg flex items-center justify-center mb-4">
+                    <Lightbulb className="h-5 w-5 text-launch-purple/70" />
+                  </div>
+                  <p className="text-lg text-foreground font-medium leading-relaxed">
+                    It could create a presentation based on a conversation you'd had earlier that day in under five minutes.
+                  </p>
+                </CardContent>
+              </Card>
             </div>
           </div>
         </section>
