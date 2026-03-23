@@ -78,6 +78,7 @@ const Index = () => {
         <section className="bg-white py-16 md:py-20">
           <div className="max-w-4xl mx-auto px-4 sm:px-6">
             <div className="text-center mb-12">
+              <img src={secondBrainImg} alt="AI second brain illustration" loading="lazy" width={512} height={512} className="w-32 h-32 md:w-40 md:h-40 mx-auto mb-6 object-contain" />
               <h2 className="text-3xl md:text-4xl font-bold text-launch-purple mb-4">
                 What If Everyone on Your Team<br />
                 <span className="text-launch-orange">Had a Second Brain?</span>
