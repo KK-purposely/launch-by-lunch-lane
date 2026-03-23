@@ -78,13 +78,14 @@ const Navigation = () => {
           </div>
 
           <div className="hidden md:block">
-            <Button 
-              size="sm" 
-              className="bg-launch-orange hover:bg-launch-orange/90 text-white rounded-full font-medium transition-all duration-300"
-              onClick={() => window.open('https://learn.launchbylunch.co/', '_blank')}
-            >
-              Get Our Newsletter
-            </Button>
+            <Link to="/contact">
+              <Button 
+                size="sm" 
+                className="bg-launch-orange hover:bg-launch-orange/90 text-white rounded-full font-medium transition-all duration-300"
+              >
+                Contact
+              </Button>
+            </Link>
           </div>
 
           {/* Mobile menu button */}
