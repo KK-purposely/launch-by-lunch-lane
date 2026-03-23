@@ -213,7 +213,9 @@ const Index = () => {
           </div>
         </section>
 
-        {/* This Is for You If */}
+        {/* Who We Are */}
+        <WhoWeAre />
+
         <section className="bg-launch-light py-16 md:py-20">
           <div className="max-w-4xl mx-auto px-4 sm:px-6">
             <h2 className="text-3xl md:text-4xl font-bold text-launch-purple mb-10 text-center">
