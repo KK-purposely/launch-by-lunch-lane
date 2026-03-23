@@ -95,7 +95,6 @@ const businessOutcomes = [
     label: "consistency and accuracy",
   },
 ];
-];
 
 const Index = () => {
   return (
