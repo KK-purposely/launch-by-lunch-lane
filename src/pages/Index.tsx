@@ -1,4 +1,5 @@
 import { Helmet } from "react-helmet-async";
+import secondBrainImg from "@/assets/second-brain.png";
 import Hero from "@/components/Hero";
 import Footer from "@/components/Footer";
 import WhoWeAre from "@/components/WhoWeAre";
