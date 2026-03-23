@@ -10,12 +10,13 @@ import {
   Users,
   Zap,
   CheckCircle2,
-  TrendingUp,
-  Heart,
   Clock,
   MessageSquare,
   Lightbulb,
-  Target,
+  Search,
+  Wrench,
+  GraduationCap,
+  RefreshCw,
 } from "lucide-react";
 
 const painPoints = [
