@@ -14,7 +14,7 @@ const team = [
     title: "Director of AI Programs",
     image: "/lovable-uploads/ariel-galipeau.jpg",
     alt: "Ariel Galipeau, Director of AI Programs at Launch by Lunch",
-    bio: "Ariel Galipeau is an AI operations leader and coach who helps founders and teams turn ideas into executable plans, scalable systems, and consistent progress. With a decade inside fast-moving, mission-driven startups, she translates complexity into clear priorities and embeds AI into day-to-day workflows to improve decision-making, reduce friction, and drive real momentum.",
+    bio: "Ariel Galipeau is an AI operations leader and coach who helps founders and teams turn ideas into executable plans, scalable systems, and consistent progress. With a decade inside fast-moving, mission-driven startups, she translates complexity into clear priorities and embeds AI into day-to-day workflows to improve decision-making.",
   },
 ];
 
