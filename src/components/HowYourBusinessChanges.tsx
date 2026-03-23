@@ -8,17 +8,27 @@ import {
   ListChecks,
   Receipt,
   RefreshCw,
-  Mail,
-  Calendar,
-  FileIcon,
-  Users,
-  MessagesSquare,
   Clock,
   CheckCircle2,
   Brain,
   TrendingUp,
   Search,
 } from "lucide-react";
+
+const integrations = [
+  { name: "Gmail", logo: "/logos/gmail.svg" },
+  { name: "Google Calendar", logo: "/logos/google-calendar.svg" },
+  { name: "Google Drive", logo: "/logos/google-drive.webp" },
+  { name: "Slack", logo: "/logos/slack.svg" },
+  { name: "Notion", logo: "/logos/notion.svg" },
+  { name: "Zoom", logo: "/logos/zoom.svg" },
+  { name: "HubSpot", logo: "/logos/hubspot.svg" },
+  { name: "Airtable", logo: "/logos/airtable.svg" },
+  { name: "Trello", logo: "/logos/trello.svg" },
+  { name: "Zapier", logo: "/logos/zapier.svg" },
+  { name: "Asana", logo: "/logos/asana.svg" },
+  { name: "Fathom", logo: "/logos/fathom.png" },
+];
 
 const currentProblems = [
   "Information lives in emails, docs, Slack, and people's heads",
