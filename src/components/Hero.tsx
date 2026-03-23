@@ -1,6 +1,6 @@
 
 import { Button } from "@/components/ui/button";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, CheckCircle2 } from "lucide-react";
 
 interface HeroProps {
   showButtons?: boolean;
@@ -27,10 +27,23 @@ const Hero = ({ showButtons = true }: HeroProps) => {
               Practical AI Adoption for Modern Leadership
             </span>
           </h1>
-          <p className="text-lg md:text-xl text-muted-foreground mb-20 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-3xl mx-auto leading-relaxed">
             AI is only powerful when it works with your team — not against it. We cut through the noise and give leaders the right tools, training, and strategy to
             <br />adopt AI with confidence.
           </p>
+          
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-start sm:items-center mb-20 max-w-3xl mx-auto">
+            {[
+              "Identify where AI will actually move your business forward",
+              "Build and implement workflows tailored to your team",
+              "Train your staff so adoption sticks, not stalls",
+            ].map((item, i) => (
+              <div key={i} className="flex items-start gap-2 text-left">
+                <CheckCircle2 className="h-5 w-5 text-launch-orange mt-0.5 flex-shrink-0" />
+                <span className="text-sm md:text-base text-muted-foreground font-medium">{item}</span>
+              </div>
+            ))}
+          </div>
           
           {showButtons && (
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
