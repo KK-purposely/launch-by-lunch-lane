@@ -105,7 +105,7 @@ const Index = () => {
     <>
       <Helmet>
         <title>Launch by Lunch - AI Adoption for SMBs</title>
-        <meta name="description" content="We help small and medium-sized businesses adopt AI in a way that actually makes sense — saving money, making teams happier, and future-proofing your business." />
+        <meta name="description" content="We help small and medium-sized businesses adopt AI in a way that actually makes sense, saving money, making teams happier, and future-proofing your business." />
         
         {/* Open Graph / Facebook */}
         <meta property="og:type" content="website" />
