@@ -79,20 +79,24 @@ const thisIsForYou = [
 
 const businessOutcomes = [
   {
-    stat: "Reduce",
-    label: "manual, repetitive work",
+    icon: Zap,
+    stat: "60%",
+    label: "reduction in manual, repetitive tasks",
   },
   {
-    stat: "Save",
-    label: "hours per team member per week",
+    icon: Clock,
+    stat: "10+",
+    label: "hours saved per team member per week",
   },
   {
-    stat: "Speed up",
-    label: "execution across workflows",
+    icon: Brain,
+    stat: "3×",
+    label: "faster execution across workflows",
   },
   {
-    stat: "Improve",
-    label: "consistency and accuracy",
+    icon: Shield,
+    stat: "95%",
+    label: "improvement in consistency & accuracy",
   },
 ];
 
