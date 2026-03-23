@@ -88,14 +88,14 @@ const Index = () => {
                 One that knew everything happening across your business — and could actually do something with it.
               </p>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <Card className="border border-border hover:border-launch-purple/20 hover:shadow-lg transition-all duration-300">
                 <CardContent className="p-7">
                   <div className="w-10 h-10 bg-launch-purple/10 rounded-lg flex items-center justify-center mb-4">
                     <Brain className="h-5 w-5 text-launch-purple/70" />
                   </div>
                   <p className="text-lg text-foreground font-medium leading-relaxed">
-                    It could research every interaction your team has ever had with a given company or prospect — instantly.
+                    It could research every interaction your team has ever had with a given company or prospect and tell you how to best respond — instantly.
                   </p>
                 </CardContent>
               </Card>
@@ -105,7 +105,7 @@ const Index = () => {
                     <MessageSquare className="h-5 w-5 text-launch-purple/70" />
                   </div>
                   <p className="text-lg text-foreground font-medium leading-relaxed">
-                    It could look at past LinkedIn posts and create a new one in their voice, based on conversations they had that week.
+                    It could look at your past LinkedIn posts and create a new one in your voice, based on conversations you've had that week.
                   </p>
                 </CardContent>
               </Card>
@@ -116,6 +116,16 @@ const Index = () => {
                   </div>
                   <p className="text-lg text-foreground font-medium leading-relaxed">
                     It could tell you exactly what to focus on today — and what's obviously getting in the way.
+                  </p>
+                </CardContent>
+              </Card>
+              <Card className="border border-border hover:border-launch-purple/20 hover:shadow-lg transition-all duration-300">
+                <CardContent className="p-7">
+                  <div className="w-10 h-10 bg-launch-purple/10 rounded-lg flex items-center justify-center mb-4">
+                    <Lightbulb className="h-5 w-5 text-launch-purple/70" />
+                  </div>
+                  <p className="text-lg text-foreground font-medium leading-relaxed">
+                    It could create a presentation based on a conversation you'd had earlier that day in under five minutes.
                   </p>
                 </CardContent>
               </Card>
