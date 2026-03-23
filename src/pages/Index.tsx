@@ -8,6 +8,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import {
   ArrowRight,
   Brain,
+  Shield,
   Zap,
   Clock,
   MessageSquare,
