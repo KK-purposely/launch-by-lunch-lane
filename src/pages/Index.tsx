@@ -95,7 +95,7 @@ const Index = () => {
                     <Brain className="h-5 w-5 text-launch-purple/70" />
                   </div>
                   <p className="text-lg text-foreground font-medium leading-relaxed">
-                    It could research every interaction your team has ever had with a given company or prospect — instantly.
+                    It could research every interaction your team has ever had with a given company or prospect and tell you how to best respond — instantly.
                   </p>
                 </CardContent>
               </Card>
