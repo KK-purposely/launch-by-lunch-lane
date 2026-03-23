@@ -64,13 +64,6 @@ const inPractice = [
   },
 ];
 
-const connectedTools = [
-  { icon: Mail, label: "Email" },
-  { icon: Calendar, label: "Calendar" },
-  { icon: FileIcon, label: "Documents" },
-  { icon: Users, label: "CRM" },
-  { icon: MessagesSquare, label: "Internal communication tools" },
-];
 
 const unlocks = [
   { icon: Clock, text: "Less time searching, rewriting, and coordinating" },
