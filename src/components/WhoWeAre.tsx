@@ -27,7 +27,7 @@ const WhoWeAre = () => {
             Who We Are
           </h2>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-            A team that's taught over 100 AI courses, written millions of lines of code, and built hundreds of automations, all using only natural language. We are AI strategists, developers, and coaches that won't let you fail.
+            A female-led team that's taught over 100 AI courses, written millions of lines of code, and built hundreds of automations, all using only natural language. We are AI strategists, developers, and coaches that won't let you fail.
           </p>
         </div>
 
