@@ -147,15 +147,6 @@ const Navigation = () => {
                   Events
                 </DropdownMenuItem>
                 
-                <DropdownMenuItem asChild>
-                  <Link 
-                    to="/contact" 
-                    className="w-full"
-                    onClick={() => setIsMenuOpen(false)}
-                  >
-                    Contact
-                  </Link>
-                </DropdownMenuItem>
                 
                 <DropdownMenuItem 
                   onClick={() => {
