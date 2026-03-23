@@ -232,9 +232,12 @@ const Index = () => {
         {/* Business Outcomes */}
         <section className="py-16 md:py-20">
           <div className="max-w-5xl mx-auto px-4 sm:px-6">
-            <h2 className="text-3xl md:text-4xl font-bold text-launch-purple mb-12 text-center">
+            <h2 className="text-3xl md:text-4xl font-bold text-launch-purple mb-3 text-center">
               What You Can Expect
             </h2>
+            <p className="text-lg text-gray-600 text-center mb-12">
+              These are the average results we see from our clients.
+            </p>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
               {businessOutcomes.map((item, i) => {
                 const ItemIcon = item.icon;
