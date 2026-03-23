@@ -1,4 +1,5 @@
 import { Card, CardContent } from "@/components/ui/card";
+import secondBrainImg from "@/assets/second-brain.png";
 import {
   AlertCircle,
   Layers,
@@ -13,6 +14,8 @@ import {
   Brain,
   TrendingUp,
   Search,
+  Zap,
+  Lightbulb,
 } from "lucide-react";
 
 const integrations = [
