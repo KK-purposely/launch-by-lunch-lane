@@ -42,50 +42,59 @@ const painPoints = [
   },
 ];
 
-const howWeHelp = [
+const whatWeDo = [
   {
-    icon: Brain,
-    title: "Build Your Company Brain",
-    desc: "A single source of truth for everything your company knows — searchable, accessible, and always up to date. New hires get answers on day one.",
-    link: "/enterprise-services",
+    step: "01",
+    icon: Search,
+    title: "AI Opportunity Audit",
+    desc: "We assess your business and identify the highest-impact places to use AI — so you start where it matters most.",
   },
   {
-    icon: Zap,
-    title: "Automate What Slows You Down",
-    desc: "Your tools should talk to each other. We connect your CRM, email, calendar, and docs so the busywork disappears and your team focuses on real work.",
-    link: "/enterprise-services",
+    step: "02",
+    icon: Wrench,
+    title: "Implementation",
+    desc: "We build workflows, automations, and systems tailored to your team — not off-the-shelf solutions that don't fit.",
   },
   {
-    icon: Target,
-    title: "AI Strategy That Fits You",
-    desc: "No cookie-cutter playbooks. We look at your team, your tools, and your goals — then build a plan that makes sense for where you are right now.",
-    link: "/enterprise-services",
+    step: "03",
+    icon: GraduationCap,
+    title: "Team Training",
+    desc: "We train your team so they actually use what we build. No one gets left behind.",
   },
   {
-    icon: Shield,
-    title: "Training That Sticks",
-    desc: "Workshops and hands-on sessions designed for non-technical teams. Your people walk away confident, not confused.",
-    link: "/claude-code",
+    step: "04",
+    icon: RefreshCw,
+    title: "Ongoing Support",
+    desc: "We evolve your systems as tools and needs change — so you're never stuck with something outdated.",
+    optional: true,
   },
 ];
 
-const realResults = [
+const thisIsForYou = [
+  "Your team is talking about AI but not actually using it",
+  "You've tried tools but nothing has stuck",
+  "You don't have time to figure this out yourself",
+  "You need to move quickly without hiring a full technical team",
+];
+
+const businessOutcomes = [
   {
-    stat: "5+ hours",
-    label: "saved per team member per week",
+    stat: "Reduce",
+    label: "manual, repetitive work",
   },
   {
-    stat: "Day 1",
-    label: "new hires find answers immediately",
+    stat: "Save",
+    label: "hours per team member per week",
   },
   {
-    stat: "Zero",
-    label: "coding skills required",
+    stat: "Speed up",
+    label: "execution across workflows",
   },
   {
-    stat: "100%",
-    label: "of your existing tools — connected",
+    stat: "Improve",
+    label: "consistency and accuracy",
   },
+];
 ];
 
 const Index = () => {
