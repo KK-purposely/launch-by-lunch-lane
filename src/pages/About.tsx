@@ -26,6 +26,10 @@ const About = () => {
                 About Launch by Lunch
               </span>
             </h1>
+            <h2 className="text-2xl md:text-3xl font-bold text-launch-purple mb-4">Who We Are</h2>
+            <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
+              A female-led team that's taught over 100 AI courses, written millions of lines of code, and built hundreds of automations — all using only natural language. We are AI strategists, developers, and coaches that won't let you fail.
+            </p>
           </div>
         </div>
       </div>
