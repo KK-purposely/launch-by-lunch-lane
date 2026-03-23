@@ -1,6 +1,7 @@
 import { Helmet } from "react-helmet-async";
 import Hero from "@/components/Hero";
 import Footer from "@/components/Footer";
+import WhoWeAre from "@/components/WhoWeAre";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import {
