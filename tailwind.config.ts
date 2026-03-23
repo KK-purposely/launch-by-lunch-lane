@@ -112,11 +112,11 @@ export default {
 				},
 				'brain-glow': {
 					'0%, 100%': {
-						filter: 'drop-shadow(0 0 8px rgba(126, 34, 206, 0.3))',
-					},
-					'50%': {
-						filter: 'drop-shadow(0 0 20px rgba(126, 34, 206, 0.5)) drop-shadow(0 0 40px rgba(249, 115, 22, 0.25))',
-					}
+					filter: 'drop-shadow(0 0 12px rgba(126, 34, 206, 0.4)) brightness(0.95)',
+				},
+				'50%': {
+					filter: 'drop-shadow(0 0 35px rgba(126, 34, 206, 0.7)) drop-shadow(0 0 60px rgba(249, 115, 22, 0.4)) brightness(1.1)',
+				}
 				}
 			},
 			animation: {
