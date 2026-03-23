@@ -43,36 +43,32 @@ const Hero = ({ showButtons = true }: HeroProps) => {
 
             {/* Right: CTA Buttons */}
             {showButtons && (
-              <div className="flex flex-col items-center justify-center gap-5 w-full">
+              <div className="flex flex-col items-center justify-center gap-6 w-full">
                 <img
                   src="/lovable-uploads/8f3eba1c-0f11-4411-9774-5671f6239bf2.png"
                   alt="Launch by Lunch Logo"
-                  className="h-32 md:h-40 w-auto"
+                  className="h-32 md:h-40 w-auto mb-2"
                 />
-                <div className="bg-white/80 backdrop-blur-sm rounded-3xl p-8 md:p-10 shadow-lg border border-gray-100 flex flex-col items-center gap-6 w-full max-w-sm">
-                  <p className="text-lg font-semibold text-launch-purple text-center">
-                    Ready to get started?
-                  </p>
-                  <Button
-                    size="lg"
-                    className="group w-full bg-gradient-to-r from-launch-purple to-launch-orange hover:from-launch-orange hover:to-launch-purple text-white px-8 py-6 text-lg rounded-full font-medium transition-all duration-300 shadow-lg hover:shadow-xl"
-                    onClick={() => window.open("https://calendly.com/karen-launchbylunch/30min", "_blank")}
-                  >
-                    <span className="flex items-center gap-2">
-                      Book a Consultation
-                      <ArrowRight className="h-5 w-5 group-hover:translate-x-1 transition-transform" />
-                    </span>
-                  </Button>
 
-                  <Button
-                    variant="outline"
-                    size="lg"
-                    className="w-full px-8 py-6 text-lg border-launch-orange text-launch-orange hover:bg-launch-orange hover:text-white rounded-full font-medium transition-all duration-300"
-                    asChild
-                  >
-                    <a href="#what-we-do">What We Do</a>
-                  </Button>
-                </div>
+                <Button
+                  size="lg"
+                  className="group w-full max-w-sm bg-gradient-to-r from-launch-purple to-launch-orange hover:from-launch-orange hover:to-launch-purple text-white px-8 py-6 text-lg rounded-full font-medium transition-all duration-300 shadow-lg hover:shadow-xl"
+                  onClick={() => window.open("https://calendly.com/karen-launchbylunch/30min", "_blank")}
+                >
+                  <span className="flex items-center gap-2">
+                    Book a Consultation
+                    <ArrowRight className="h-5 w-5 group-hover:translate-x-1 transition-transform" />
+                  </span>
+                </Button>
+
+                <Button
+                  variant="outline"
+                  size="lg"
+                  className="w-full max-w-sm px-8 py-6 text-lg border-launch-orange text-launch-orange hover:bg-launch-orange hover:text-white rounded-full font-medium transition-all duration-300"
+                  asChild
+                >
+                  <a href="#what-we-do">What We Do</a>
+                </Button>
               </div>
             )}
           </div>
