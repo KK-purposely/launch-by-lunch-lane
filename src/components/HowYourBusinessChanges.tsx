@@ -107,8 +107,65 @@ const HowYourBusinessChanges = () => {
         </div>
 
 
+        {/* Second Brain Vision */}
+        <div className="mb-16 bg-gradient-to-br from-launch-light via-white to-orange-50 rounded-3xl p-8 md:p-12">
+          <div className="max-w-4xl mx-auto">
+            <div className="text-center mb-12">
+              <img src={secondBrainImg} alt="AI second brain illustration" loading="lazy" width={512} height={512} className="w-32 h-32 md:w-40 md:h-40 mx-auto mb-6 object-contain" style={{ filter: 'drop-shadow(0 0 35px rgba(126, 34, 206, 0.7)) drop-shadow(0 0 60px rgba(249, 115, 22, 0.4)) brightness(1.1)' }} />
+              <h2 className="text-3xl md:text-4xl font-bold text-launch-purple mb-4">
+                What If Everyone on Your Team<br />
+                <span className="text-launch-orange">Had a Second Brain?</span>
+              </h2>
+              <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+                One that knew everything happening across your business — and could actually do something with it.
+              </p>
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <Card className="border border-border hover:border-launch-purple/20 hover:shadow-lg transition-all duration-300">
+                <CardContent className="p-7">
+                  <div className="w-10 h-10 bg-launch-purple/10 rounded-lg flex items-center justify-center mb-4">
+                    <Brain className="h-5 w-5 text-launch-purple/70" />
+                  </div>
+                  <p className="text-lg text-foreground font-medium leading-relaxed">
+                    It could research every interaction your team has ever had with a given company or prospect and tell you how to best respond — instantly.
+                  </p>
+                </CardContent>
+              </Card>
+              <Card className="border border-border hover:border-launch-purple/20 hover:shadow-lg transition-all duration-300">
+                <CardContent className="p-7">
+                  <div className="w-10 h-10 bg-launch-purple/10 rounded-lg flex items-center justify-center mb-4">
+                    <MessageSquare className="h-5 w-5 text-launch-purple/70" />
+                  </div>
+                  <p className="text-lg text-foreground font-medium leading-relaxed">
+                    It could look at your past LinkedIn posts and create a new one in your voice, based on conversations you've had that week.
+                  </p>
+                </CardContent>
+              </Card>
+              <Card className="border border-border hover:border-launch-purple/20 hover:shadow-lg transition-all duration-300">
+                <CardContent className="p-7">
+                  <div className="w-10 h-10 bg-launch-purple/10 rounded-lg flex items-center justify-center mb-4">
+                    <Zap className="h-5 w-5 text-launch-purple/70" />
+                  </div>
+                  <p className="text-lg text-foreground font-medium leading-relaxed">
+                    It could tell you exactly what to focus on today — and what's obviously getting in the way.
+                  </p>
+                </CardContent>
+              </Card>
+              <Card className="border border-border hover:border-launch-purple/20 hover:shadow-lg transition-all duration-300">
+                <CardContent className="p-7">
+                  <div className="w-10 h-10 bg-launch-purple/10 rounded-lg flex items-center justify-center mb-4">
+                    <Lightbulb className="h-5 w-5 text-launch-purple/70" />
+                  </div>
+                  <p className="text-lg text-foreground font-medium leading-relaxed">
+                    It could create a presentation based on a conversation you'd had earlier that day in under five minutes.
+                  </p>
+                </CardContent>
+              </Card>
+            </div>
+          </div>
+        </div>
+
         {/* We connect the tools you already use */}
-        <div className="mb-16 text-center">
           <h3 className="text-3xl md:text-4xl font-bold text-launch-purple mb-4">
             We connect the tools you already use
           </h3>
