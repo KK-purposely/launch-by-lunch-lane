@@ -264,7 +264,7 @@ const Index = () => {
             <span className="text-launch-orange">for Your Team?</span>
           </h2>
           <p className="text-gray-500 text-lg mb-8 max-w-2xl mx-auto">
-            No jargon. No enterprise sales pitch. Just a conversation about what your team actually needs — and how we can help you get there.
+            No jargon. No enterprise sales pitch. Just a conversation about what your team actually needs and how we can help you get there.
           </p>
           <Button
             size="lg"
