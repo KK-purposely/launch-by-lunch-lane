@@ -65,7 +65,7 @@ const whatWeDo = [
     step: "04",
     icon: RefreshCw,
     title: "Ongoing Support",
-    desc: "We evolve your systems as tools and needs change — so you're never stuck with something outdated.",
+    desc: "We evolve your systems as tools and needs change, so you're never stuck with something outdated.",
     optional: true,
   },
 ];
