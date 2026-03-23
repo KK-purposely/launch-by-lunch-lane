@@ -48,10 +48,10 @@ const Hero = ({ showButtons = true }: HeroProps) => {
               <Button
                 size="lg"
                 className="group bg-gradient-to-r from-launch-purple to-launch-orange hover:from-launch-orange hover:to-launch-purple text-white px-8 py-6 text-lg rounded-full font-medium transition-all duration-300 shadow-lg hover:shadow-xl"
-                onClick={() => window.open("https://luma.com/launchbylunch", "_blank")}
+                onClick={() => window.open("https://calendly.com/karen-launchbylunch/30min", "_blank")}
               >
                 <span className="flex items-center gap-2">
-                  Upcoming Workshops
+                  Book a Consultation
                   <ArrowRight className="h-5 w-5 group-hover:translate-x-1 transition-transform" />
                 </span>
               </Button>
@@ -62,7 +62,7 @@ const Hero = ({ showButtons = true }: HeroProps) => {
                 className="px-8 py-6 text-lg border-launch-orange text-launch-orange hover:bg-launch-orange hover:text-white rounded-full font-medium transition-all duration-300"
                 asChild
               >
-                <a href="/claude-code">Claude Code</a>
+                <a href="#what-we-do">What We Do</a>
               </Button>
             </div>
           )}
