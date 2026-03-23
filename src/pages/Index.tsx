@@ -75,8 +75,11 @@ const Index = () => {
       <div className="min-h-screen flex flex-col bg-gradient-to-br from-launch-light via-white to-orange-50">
         <Hero />
 
+        {/* How Your Business is Working Today */}
+        <HowYourBusinessChanges />
+
         {/* Second Brain Vision Section */}
-        <section className="bg-white py-16 md:py-20">
+        <section className="bg-gradient-to-br from-launch-light via-white to-orange-50 py-16 md:py-20">
           <div className="max-w-4xl mx-auto px-4 sm:px-6">
             <div className="text-center mb-12">
               <img src={secondBrainImg} alt="AI second brain illustration" loading="lazy" width={512} height={512} className="w-32 h-32 md:w-40 md:h-40 mx-auto mb-6 object-contain" style={{ filter: 'drop-shadow(0 0 35px rgba(126, 34, 206, 0.7)) drop-shadow(0 0 60px rgba(249, 115, 22, 0.4)) brightness(1.1)' }} />
@@ -133,46 +136,32 @@ const Index = () => {
           </div>
         </section>
 
-        {/* Transition Banner */}
-        <section className="bg-gradient-to-r from-launch-purple to-launch-orange py-14">
-          <div className="max-w-4xl mx-auto px-4 sm:px-6 text-center text-white">
-            <Lightbulb className="h-10 w-10 mx-auto mb-4 opacity-90" />
-            <h2 className="text-2xl md:text-4xl font-bold mb-4">
-              We Don't Just Talk About AI.<br />We Make It Work for Your Team.
-            </h2>
-            <p className="text-lg text-white/90 max-w-2xl mx-auto">
-              From your first conversation with us to a fully running system, we handle the strategy, the setup, and the training so your team hits the ground running.
-            </p>
-          </div>
+        {/* Who We Are */}
+        <section className="bg-white">
+          <WhoWeAre />
         </section>
 
-        {/* What We Do */}
-        <HowYourBusinessChanges />
-
-        {/* Who We Are */}
-        <WhoWeAre />
-
         {/* Business Outcomes */}
-        <section className="py-16 md:py-20">
+        <section className="bg-gradient-to-br from-launch-light via-white to-orange-50 py-16 md:py-20">
           <div className="max-w-5xl mx-auto px-4 sm:px-6">
             <h2 className="text-3xl md:text-4xl font-bold text-launch-purple mb-3 text-center">
               What You Can Expect
             </h2>
-            <p className="text-lg text-gray-600 text-center mb-12">
+            <p className="text-lg text-muted-foreground text-center mb-12">
               These are the average results we see from our clients.
             </p>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
               {businessOutcomes.map((item, i) => {
                 const ItemIcon = item.icon;
                 return (
-                  <div key={i} className="bg-white rounded-2xl p-6 text-center shadow-sm border border-gray-100 hover:shadow-lg hover:border-launch-purple/20 transition-all duration-300">
+                  <div key={i} className="bg-card rounded-2xl p-6 text-center shadow-sm border border-border hover:shadow-lg hover:border-launch-purple/20 transition-all duration-300">
                     <div className="w-12 h-12 bg-gradient-to-br from-launch-purple to-launch-orange rounded-xl flex items-center justify-center mx-auto mb-3">
                       <ItemIcon className="h-6 w-6 text-white" />
                     </div>
                     <p className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-launch-purple to-launch-orange bg-clip-text text-transparent mb-1">
                       {item.stat}
                     </p>
-                    <p className="text-gray-600 font-medium text-sm">{item.label}</p>
+                    <p className="text-muted-foreground font-medium text-sm">{item.label}</p>
                   </div>
                 );
               })}
@@ -186,7 +175,7 @@ const Index = () => {
             Ready to Make AI Work<br />
             <span className="text-launch-orange">for Your Team?</span>
           </h2>
-          <p className="text-gray-500 text-lg mb-8 max-w-2xl mx-auto">
+          <p className="text-muted-foreground text-lg mb-8 max-w-2xl mx-auto">
             No jargon. No enterprise sales pitch. Just a conversation about what your team actually needs and how we can help you get there.
           </p>
           <Button
