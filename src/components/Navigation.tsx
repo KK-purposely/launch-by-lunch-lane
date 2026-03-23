@@ -61,9 +61,6 @@ const Navigation = () => {
                   Events
                 </a>
 
-                <Link to="/contact" className="px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-launch-orange">
-                  Contact
-                </Link>
 
                 <a 
                   href="https://innercircle.launchbylunch.co/" 
