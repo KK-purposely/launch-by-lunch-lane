@@ -119,6 +119,28 @@ const HowYourBusinessChanges = () => {
           </div>
         </div>
 
+        {/* We connect the tools you already use */}
+        <div className="mb-16 text-center">
+          <h3 className="text-2xl font-bold text-launch-purple mb-4">
+            We connect the tools you already use
+          </h3>
+          <p className="text-lg text-muted-foreground mb-10 max-w-2xl mx-auto">
+            So instead of jumping between platforms, your team operates from a single pane of glass.
+          </p>
+          <div className="flex flex-wrap justify-center items-center gap-10 md:gap-14">
+            {integrations.map((item) => (
+              <div key={item.name} className="flex flex-col items-center gap-2 group">
+                <div className="w-14 h-14 flex items-center justify-center">
+                  <img src={item.logo} alt={`${item.name} logo`} className="w-10 h-10 object-contain" />
+                </div>
+                <span className="text-sm text-muted-foreground font-medium group-hover:text-launch-purple transition-colors duration-300">
+                  {item.name}
+                </span>
+              </div>
+            ))}
+          </div>
+        </div>
+
         {/* In practice */}
         <div className="mb-16">
           <h3 className="text-2xl font-bold text-launch-purple mb-6">
@@ -140,28 +162,6 @@ const HowYourBusinessChanges = () => {
                 </Card>
               );
             })}
-          </div>
-        </div>
-
-        {/* We connect the tools you already use */}
-        <div className="mb-16 text-center">
-          <h3 className="text-2xl font-bold text-launch-purple mb-4">
-            We connect the tools you already use
-          </h3>
-          <p className="text-lg text-muted-foreground mb-10 max-w-2xl mx-auto">
-            So instead of jumping between platforms, your team operates from a single pane of glass.
-          </p>
-          <div className="flex flex-wrap justify-center items-center gap-10 md:gap-14">
-            {integrations.map((item) => (
-              <div key={item.name} className="flex flex-col items-center gap-2 group">
-                <div className="w-14 h-14 flex items-center justify-center">
-                  <img src={item.logo} alt={`${item.name} logo`} className="w-10 h-10 object-contain" />
-                </div>
-                <span className="text-sm text-muted-foreground font-medium group-hover:text-launch-purple transition-colors duration-300">
-                  {item.name}
-                </span>
-              </div>
-            ))}
           </div>
         </div>
 
