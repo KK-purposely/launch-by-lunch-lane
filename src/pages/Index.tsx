@@ -28,7 +28,7 @@ const painPoints = [
   {
     icon: Users,
     title: "Lack of Education and Technical Expertise",
-    desc: "You don't need a technical team to adopt AI. We provide hands-on training and workshops built for non-technical leaders and teams — so everyone walks away confident, not confused.",
+    desc: "You don't need a technical team to adopt AI. We provide hands-on training and workshops built for non-technical leaders and teams, so everyone walks away confident, not confused.",
   },
   {
     icon: Shield,
