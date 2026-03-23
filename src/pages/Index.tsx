@@ -23,7 +23,7 @@ const painPoints = [
   {
     icon: MessageSquare,
     title: "Cost of Implementation and Maintenance",
-    desc: "We start with the tools you already have and layer in AI where it saves you the most. No bloated contracts, no surprise fees — just a clear plan that fits your budget and grows with you.",
+    desc: "We start with the tools you already have and layer in AI where it saves you the most. No bloated contracts, no surprise fees. Just a clear plan that fits your budget and grows with you.",
   },
   {
     icon: Users,
