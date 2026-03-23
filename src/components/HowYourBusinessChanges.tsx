@@ -82,15 +82,19 @@ const HowYourBusinessChanges = () => {
         </div>
 
         {/* Current problems */}
-        <div className="mb-16">
-          <h3 className="text-2xl font-bold text-launch-purple mb-2">
-            Most teams are operating across disconnected tools:
-          </h3>
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-6">
+        <div className="mb-16 bg-red-950 rounded-2xl p-8 md:p-10 border border-red-800/50 shadow-[0_0_30px_-5px_rgba(220,38,38,0.15)]">
+          <div className="flex items-center gap-3 mb-2">
+            <AlertCircle className="h-7 w-7 text-red-400" />
+            <h3 className="text-2xl font-bold text-red-100">
+              Most teams are operating across disconnected tools:
+            </h3>
+          </div>
+          <p className="text-red-300/70 text-sm font-medium mb-6 ml-10">This is costing you time, money, and momentum every single day.</p>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             {currentProblems.map((problem, i) => (
-              <div key={i} className="flex items-start gap-3 bg-card rounded-xl p-5 shadow-sm border border-border">
-                <AlertCircle className="h-5 w-5 text-launch-orange mt-0.5 flex-shrink-0" />
-                <p className="text-foreground text-lg font-medium">{problem}</p>
+              <div key={i} className="flex items-start gap-3 bg-red-900/50 rounded-xl p-5 border border-red-800/40">
+                <AlertCircle className="h-5 w-5 text-red-400 mt-0.5 flex-shrink-0" />
+                <p className="text-red-100 text-lg font-medium">{problem}</p>
               </div>
             ))}
           </div>
