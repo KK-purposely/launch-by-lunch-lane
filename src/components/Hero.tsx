@@ -28,7 +28,7 @@ const Hero = ({ showButtons = true }: HeroProps) => {
               </h1>
 
               <p className="text-lg text-muted-foreground mb-8 leading-relaxed max-w-lg">
-                AI is only powerful when it works with your team — not against it. We cut through the noise and give leaders the right tools, training, and strategy to adopt AI with confidence.
+                AI is only powerful when it works with your team, not against it. We cut through the noise and give leaders the right tools, training, and strategy to adopt AI with confidence.
               </p>
 
               <div className="flex flex-col gap-3 mb-2">
