@@ -80,7 +80,7 @@ const HowYourBusinessChanges = () => {
         {/* Main heading */}
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-launch-purple mb-4">
-            How Your Business Actually Changes
+            How Your Business is Working Today
           </h2>
         </div>
 
