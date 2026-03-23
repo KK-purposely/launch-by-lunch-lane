@@ -129,6 +129,16 @@ const Navigation = () => {
                     Claude Code
                   </Link>
                 </DropdownMenuItem>
+
+                <DropdownMenuItem asChild>
+                  <Link 
+                    to="/community" 
+                    className="w-full"
+                    onClick={() => setIsMenuOpen(false)}
+                  >
+                    Community
+                  </Link>
+                </DropdownMenuItem>
                 
                 <DropdownMenuItem 
                   onClick={() => {
