@@ -111,7 +111,7 @@ const Index = () => {
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://launchbylunch.com/" />
         <meta property="og:title" content="Launch by Lunch - AI Adoption for SMBs" />
-        <meta property="og:description" content="We help small and medium-sized businesses adopt AI in a way that actually makes sense — saving money, making teams happier, and future-proofing your business." />
+        <meta property="og:description" content="We help small and medium-sized businesses adopt AI in a way that actually makes sense, saving money, making teams happier, and future-proofing your business." />
         <meta property="og:image" content="https://cdn.lovable.app/lovable-uploads/8f3eba1c-0f11-4411-9774-5671f6239bf2.png" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
