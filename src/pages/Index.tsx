@@ -2,6 +2,7 @@ import { Helmet } from "react-helmet-async";
 import Hero from "@/components/Hero";
 import Footer from "@/components/Footer";
 import WhoWeAre from "@/components/WhoWeAre";
+import HowYourBusinessChanges from "@/components/HowYourBusinessChanges";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import {
@@ -14,10 +15,6 @@ import {
   Clock,
   MessageSquare,
   Lightbulb,
-  Search,
-  Wrench,
-  GraduationCap,
-  RefreshCw,
 } from "lucide-react";
 
 const painPoints = [
@@ -43,33 +40,6 @@ const painPoints = [
   },
 ];
 
-const whatWeDo = [
-  {
-    step: "01",
-    icon: Search,
-    title: "AI Opportunity Audit",
-    desc: "We assess your business and identify the highest-impact places to use AI, so you start where it matters most.",
-  },
-  {
-    step: "02",
-    icon: Wrench,
-    title: "Implementation",
-    desc: "We build workflows, automations, and systems tailored to your team. No off-the-shelf solutions that don't fit.",
-  },
-  {
-    step: "03",
-    icon: GraduationCap,
-    title: "Team Training",
-    desc: "We train your team so they actually use what we build. No one gets left behind.",
-  },
-  {
-    step: "04",
-    icon: RefreshCw,
-    title: "Ongoing Support",
-    desc: "We evolve your systems as tools and needs change, so you're never stuck with something outdated.",
-    optional: true,
-  },
-];
 
 const thisIsForYou = [
   "Your team is talking about AI but not actually using it",
@@ -175,62 +145,7 @@ const Index = () => {
         </section>
 
         {/* What We Do */}
-        <section id="what-we-do" className="py-16 md:py-20">
-          <div className="max-w-6xl mx-auto px-4 sm:px-6">
-            <div className="text-center mb-14">
-              <h2 className="text-3xl md:text-4xl font-bold text-launch-purple mb-4">
-                What We Do
-              </h2>
-              <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-                A clear, repeatable process from discovery to results.
-              </p>
-            </div>
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
-              {whatWeDo.map((item, i) => {
-                const ItemIcon = item.icon;
-                return (
-                  <div
-                    key={i}
-                    className="bg-white rounded-2xl p-7 shadow-sm border border-gray-100 hover:shadow-lg hover:border-launch-purple/20 transition-all duration-300 group relative"
-                  >
-                    <div className="flex items-center gap-4 mb-4">
-                      <div className="w-14 h-14 bg-gradient-to-br from-launch-purple to-launch-orange rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-                        <ItemIcon className="h-7 w-7 text-white" />
-                      </div>
-                      <span className="text-4xl font-bold text-launch-purple/10">{item.step}</span>
-                    </div>
-                    <h3 className="text-xl font-bold text-launch-purple mb-2">
-                      {item.title}
-                      {item.optional && (
-                        <span className="ml-2 text-sm font-medium text-launch-orange">(optional but powerful)</span>
-                      )}
-                    </h3>
-                    <p className="text-gray-600 text-lg">{item.desc}</p>
-                  </div>
-                );
-              })}
-            </div>
-          </div>
-        </section>
-
-        {/* Who We Are */}
-        <WhoWeAre />
-
-        <section className="bg-launch-light py-16 md:py-20">
-          <div className="max-w-4xl mx-auto px-4 sm:px-6">
-            <h2 className="text-3xl md:text-4xl font-bold text-launch-purple mb-10 text-center">
-              This Is for You If...
-            </h2>
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
-              {thisIsForYou.map((item, i) => (
-                <div key={i} className="flex items-start gap-3 bg-white rounded-xl p-5 shadow-sm">
-                  <CheckCircle2 className="h-6 w-6 text-launch-orange mt-0.5 flex-shrink-0" />
-                  <p className="text-gray-800 text-lg font-medium">{item}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
+        <HowYourBusinessChanges />
 
         {/* Business Outcomes */}
         <section className="py-16 md:py-20">
