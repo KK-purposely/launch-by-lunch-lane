@@ -168,7 +168,7 @@ const Index = () => {
               We Don't Just Talk About AI.<br />We Make It Work for Your Team.
             </h2>
             <p className="text-lg text-white/90 max-w-2xl mx-auto">
-              From your first conversation with us to a fully running system — we handle the strategy, the setup, and the training so your team hits the ground running.
+              From your first conversation with us to a fully running system, we handle the strategy, the setup, and the training so your team hits the ground running.
             </p>
           </div>
         </section>
