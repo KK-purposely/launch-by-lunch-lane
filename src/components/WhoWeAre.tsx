@@ -58,7 +58,7 @@ const WhoWeAre = () => {
                     )}
                   </h3>
                   <p className="text-launch-orange font-semibold mb-3">{person.title}</p>
-                  <p className="text-gray-600 leading-relaxed text-base">{person.bio}</p>
+                  <p className="text-gray-600 leading-relaxed text-lg">{person.bio}</p>
                 </div>
               </CardContent>
             </Card>
