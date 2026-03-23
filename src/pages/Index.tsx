@@ -40,33 +40,6 @@ const painPoints = [
   },
 ];
 
-const whatWeDo = [
-  {
-    step: "01",
-    icon: Search,
-    title: "AI Opportunity Audit",
-    desc: "We assess your business and identify the highest-impact places to use AI, so you start where it matters most.",
-  },
-  {
-    step: "02",
-    icon: Wrench,
-    title: "Implementation",
-    desc: "We build workflows, automations, and systems tailored to your team. No off-the-shelf solutions that don't fit.",
-  },
-  {
-    step: "03",
-    icon: GraduationCap,
-    title: "Team Training",
-    desc: "We train your team so they actually use what we build. No one gets left behind.",
-  },
-  {
-    step: "04",
-    icon: RefreshCw,
-    title: "Ongoing Support",
-    desc: "We evolve your systems as tools and needs change, so you're never stuck with something outdated.",
-    optional: true,
-  },
-];
 
 const thisIsForYou = [
   "Your team is talking about AI but not actually using it",
