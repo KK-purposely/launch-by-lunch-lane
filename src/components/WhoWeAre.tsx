@@ -26,7 +26,7 @@ const WhoWeAre = () => {
           <h2 className="text-3xl md:text-4xl font-bold text-launch-purple mb-4">
             Who We Are
           </h2>
-          <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             A female-led team that's taught over 100 AI courses, written millions of lines of code, and built hundreds of automations, all using only natural language. We are AI strategists, developers, and coaches that won't let you fail.
           </p>
         </div>
@@ -58,7 +58,7 @@ const WhoWeAre = () => {
                     )}
                   </h3>
                   <p className="text-launch-orange font-semibold mb-3">{person.title}</p>
-                  <p className="text-gray-600 leading-relaxed text-base">{person.bio}</p>
+                  <p className="text-gray-600 leading-relaxed text-lg">{person.bio}</p>
                 </div>
               </CardContent>
             </Card>
