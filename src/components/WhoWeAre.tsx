@@ -6,7 +6,7 @@ const team = [
     title: "Founder, CEO",
     image: "/lovable-uploads/karen-kelly.jpg",
     alt: "Karen Kelly, CEO of Launch by Lunch",
-    bio: "Karen Kelly is a 3x founder and TEDx speaker helping leaders navigate the future of work in an AI-driven world. Named a Top 100 Innovator in 2026, Karen founded Launch by Lunch as Boston's first AI community with the goal of enabling non-technical teams with the power of no code solutions. She has worked with dozens of Fortune 1000 organizations, making AI practical and accessible for non-technical executives while emphasizing judgment and communication as leadership advantages.",
+    bio: "Karen Kelly is a 3x founder and TEDx speaker helping leaders navigate the future of work in an AI-driven world. Named a Top 100 Innovator in 2026, Karen founded Launch by Lunch as Boston's first AI community with the goal of enabling non-technical teams with the power of no code solutions.",
     linkedIn: "https://www.linkedin.com/in/karen-kelly-daring-greatly/",
   },
   {
