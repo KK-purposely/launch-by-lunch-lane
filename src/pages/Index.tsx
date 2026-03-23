@@ -136,7 +136,7 @@ const Index = () => {
                 <span className="text-launch-orange">Here's What It Actually Feels Like.</span>
               </h2>
               <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-                You know AI can help your business — but the path from "interested" to "implemented" is full of real challenges. We've seen them all.
+                You know AI can help your business, but the path from "interested" to "implemented" is full of real challenges. We've seen them all.
               </p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
