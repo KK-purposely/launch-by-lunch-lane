@@ -27,7 +27,7 @@ const Hero = ({ showButtons = true }: HeroProps) => {
                 </span>
               </h1>
 
-              <p className="text-xl md:text-2xl text-foreground font-bold leading-relaxed max-w-lg">
+              <p className="text-lg md:text-xl text-muted-foreground font-semibold leading-relaxed max-w-lg">
                 AI is only powerful when it works with your team, not against it. We cut through the noise and give leaders the right tools, training, and strategy to adopt AI with confidence.
               </p>
             </div>
