@@ -211,6 +211,16 @@ const HowYourBusinessChanges = () => {
           </div>
         </div>
 
+        {/* Second Brain Visual */}
+        <div className="mb-20 flex justify-center">
+          <img
+            src={secondBrainVisual}
+            alt="Three-step process: The Second Brain organizes company knowledge, Integrations connect your tools, Smart Automations power daily workflows"
+            className="w-full max-w-5xl rounded-2xl"
+            loading="lazy"
+          />
+        </div>
+
         {/* What this unlocks */}
         <div className="relative">
           <div className="absolute inset-0 bg-gradient-to-br from-launch-purple/5 via-transparent to-launch-orange/5 rounded-3xl -m-4" />
