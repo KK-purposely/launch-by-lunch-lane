@@ -1,5 +1,6 @@
 import { Card, CardContent } from "@/components/ui/card";
 import secondBrainImg from "@/assets/second-brain.png";
+import secondBrainVisual from "@/assets/second-brain-visual.png";
 import {
   AlertCircle,
   Layers,
@@ -209,6 +210,16 @@ const HowYourBusinessChanges = () => {
               );
             })}
           </div>
+        </div>
+
+        {/* Second Brain Visual */}
+        <div className="mb-20 flex justify-center">
+          <img
+            src={secondBrainVisual}
+            alt="Three-step process: The Second Brain organizes company knowledge, Integrations connect your tools, Smart Automations power daily workflows"
+            className="w-full max-w-5xl rounded-2xl"
+            loading="lazy"
+          />
         </div>
 
         {/* What this unlocks */}
