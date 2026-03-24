@@ -38,7 +38,7 @@ const Hero = ({ showButtons = true }: HeroProps) => {
                 <img
                   src="/lovable-uploads/8f3eba1c-0f11-4411-9774-5671f6239bf2.png"
                   alt="Launch by Lunch Logo"
-                  className="h-32 md:h-40 w-auto mb-2"
+                  className="h-[148px] md:h-[184px] w-auto mb-2"
                 />
 
                 <Button
