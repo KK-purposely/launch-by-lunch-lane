@@ -1,5 +1,6 @@
 import { Card, CardContent } from "@/components/ui/card";
 import secondBrainImg from "@/assets/second-brain.png";
+import secondBrainVisual from "@/assets/second-brain-visual.png";
 import {
   AlertCircle,
   Layers,
