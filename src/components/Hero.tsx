@@ -21,7 +21,7 @@ const Hero = ({ showButtons = true }: HeroProps) => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16 items-center">
             {/* Left: Text + Bullets */}
             <div>
-              <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-5 leading-tight">
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-5 leading-tight">
                 <span className="bg-gradient-to-r from-launch-purple via-pink-500 to-launch-orange bg-clip-text text-transparent">
                   Practical AI Adoption for Modern Leadership
                 </span>
