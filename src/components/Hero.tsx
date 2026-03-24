@@ -27,18 +27,9 @@ const Hero = ({ showButtons = true }: HeroProps) => {
                 </span>
               </h1>
 
-              <p className="text-lg text-muted-foreground mb-8 leading-relaxed max-w-lg">
+              <p className="text-xl md:text-2xl text-foreground font-bold leading-relaxed max-w-lg">
                 AI is only powerful when it works with your team, not against it. We cut through the noise and give leaders the right tools, training, and strategy to adopt AI with confidence.
               </p>
-
-              <div className="flex flex-col gap-3 mb-2">
-                {bullets.map((item, i) => (
-                  <div key={i} className="flex items-start gap-3">
-                    <CheckCircle2 className="h-5 w-5 text-launch-orange mt-0.5 flex-shrink-0" />
-                    <span className="text-base text-muted-foreground font-medium leading-snug">{item}</span>
-                  </div>
-                ))}
-              </div>
             </div>
 
             {/* Right: CTA Buttons */}
