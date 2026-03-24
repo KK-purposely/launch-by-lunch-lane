@@ -110,7 +110,7 @@ const HowYourBusinessChanges = () => {
 
 
         {/* Second Brain Vision */}
-        <div className="mb-16 bg-gradient-to-br from-launch-light via-white to-orange-50 rounded-3xl p-8 md:p-12">
+        <div id="second-brain" className="mb-16 bg-gradient-to-br from-launch-light via-white to-orange-50 rounded-3xl p-8 md:p-12">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-12">
               <img src={secondBrainImg} alt="AI second brain illustration" loading="lazy" width={512} height={512} className="w-32 h-32 md:w-40 md:h-40 mx-auto mb-6 object-contain" style={{ filter: 'drop-shadow(0 0 35px rgba(126, 34, 206, 0.7)) drop-shadow(0 0 60px rgba(249, 115, 22, 0.4)) brightness(1.1)' }} />
