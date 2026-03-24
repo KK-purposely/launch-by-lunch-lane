@@ -75,6 +75,7 @@ const unlocks = [
   { icon: Brain, text: "Faster decision-making with real context" },
   { icon: Search, text: "Reduced dependency on any one person holding information" },
   { icon: TrendingUp, text: "A system that improves as your business grows" },
+  { icon: Layers, text: "360° understanding of your entire business at any time" },
 ];
 
 const HowYourBusinessChanges = () => {
