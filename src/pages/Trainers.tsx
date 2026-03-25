@@ -119,9 +119,9 @@ const Trainers = () => {
             {/* Left: Big statement */}
             <AnimatedSection>
               <div>
-                <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-launch-purple mb-8 leading-[1.1]">
+                <h2 className="text-4xl md:text-[2.75rem] lg:text-5xl font-bold text-launch-purple mb-8 leading-[1.15]">
                   AI Fluency Is the<br />
-                  <span className="bg-gradient-to-r from-launch-orange to-amber-500 bg-clip-text text-transparent">Most In-Demand Skill</span><br />
+                  <span className="bg-gradient-to-r from-launch-orange to-amber-500 bg-clip-text text-transparent whitespace-nowrap">Most In-Demand Skill</span><br />
                   on the Planet
                 </h2>
                 <p className="text-2xl text-gray-600 leading-relaxed">
