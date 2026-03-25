@@ -77,7 +77,7 @@ const Trainers = () => {
           </h1>
 
           <p className="animate-fade-in text-xl md:text-2xl text-white/70 max-w-2xl mx-auto mb-10 leading-relaxed" style={{ animationDuration: "0.8s", animationDelay: "0.3s", animationFillMode: "both" }}>
-            We're building a community of expert AI trainers under the Launch by Lunch umbrella — people who show up, do great work, and get paid well while we handle everything else.
+            We're building a community of expert AI trainers under the Launch by Lunch umbrella. People who show up, do great work, and get paid well while we handle everything else.
           </p>
 
           <div className="animate-fade-in" style={{ animationDuration: "0.8s", animationDelay: "0.45s", animationFillMode: "both" }}>
@@ -102,10 +102,10 @@ const Trainers = () => {
               AI Fluency Is the Most In-Demand Skill on the Planet
             </h2>
             <p className="text-2xl text-gray-600 leading-relaxed mb-6">
-              Demand is outpacing our bandwidth — and that's where you come in.
+              Demand is outpacing our bandwidth, and that's where you come in.
             </p>
             <p className="text-2xl text-gray-600 leading-relaxed">
-              If you've been volunteering your time teaching AI to others and wondering when someone's going to actually pay you for it —
+              If you've been volunteering your time teaching AI to others and wondering when someone's going to actually pay you for it,
             </p>
             <p className="text-3xl font-bold text-launch-purple mt-4">
               this is your moment.
@@ -125,7 +125,7 @@ const Trainers = () => {
           <div className="grid md:grid-cols-3 gap-8">
             {[
               { icon: Users, title: "Lead Live Workshops", desc: "Run in-person AI workshops for founders, executives, and small teams ready to level up.", color: "from-launch-purple to-indigo-600" },
-              { icon: Brain, title: "Facilitate Corporate Sessions", desc: "Help companies actually use AI — not just talk about it. Real tools, real workflows, real results.", color: "from-launch-orange to-amber-500" },
+              { icon: Brain, title: "Facilitate Corporate Sessions", desc: "Help companies actually use AI, not just talk about it. Real tools, real workflows, real results.", color: "from-launch-orange to-amber-500" },
               { icon: Zap, title: "Run Follow-Up Sessions", desc: "Make sure people don't walk out and immediately forget everything they learned. Reinforce and build.", color: "from-launch-purple to-launch-orange" },
             ].map(({ icon: Icon, title, desc, color }, i) => (
               <AnimatedSection key={title} delay={i * 150}>
@@ -150,13 +150,13 @@ const Trainers = () => {
         <div className="max-w-5xl mx-auto px-4 sm:px-6">
           <AnimatedSection>
             <h2 className="text-4xl md:text-5xl font-bold text-launch-purple text-center mb-4">Who We're Looking For</h2>
-            <p className="text-xl text-gray-500 text-center mb-14 max-w-lg mx-auto">This isn't for everyone — and that's the point.</p>
+            <p className="text-xl text-gray-500 text-center mb-14 max-w-lg mx-auto">This isn't for everyone, and that's the point.</p>
           </AnimatedSection>
 
           <div className="grid sm:grid-cols-2 gap-6">
             {[
               { icon: Mic, title: "Strong Communicators", desc: "You own a room without breaking a sweat. Presence is your superpower.", accent: "launch-orange" },
-              { icon: Award, title: "Proven Facilitators", desc: "You've done paid professional work before — training, coaching, consulting, any of it.", accent: "launch-purple" },
+              { icon: Award, title: "Proven Facilitators", desc: "You've done paid professional work before. Training, coaching, consulting, any of it.", accent: "launch-purple" },
               { icon: Brain, title: "Builders", desc: "You don't have to be a developer, but you've built something real with AI.", accent: "launch-orange" },
               { icon: Heart, title: "Patient Explainers", desc: "The kind of person who lights up when a 60-year-old finally gets it.", accent: "launch-purple" },
             ].map(({ icon: Icon, title, desc, accent }, i) => (
@@ -194,7 +194,7 @@ const Trainers = () => {
             {[
               { icon: DollarSign, title: "Competitive Pay", desc: "Transparent, competitive hourly pay. No guessing games, no surprises." },
               { icon: Award, title: "LBL Certified Trainer", desc: "An official credential you can add to your LinkedIn and portfolio." },
-              { icon: TrendingUp, title: "Steady Client Flow", desc: "A constant stream of clients — without having to find a single one yourself." },
+              { icon: TrendingUp, title: "Steady Client Flow", desc: "A constant stream of clients, without having to find a single one yourself." },
               { icon: Handshake, title: "A Real Community", desc: "Like-minded people who are hungry to learn, share, and grow together." },
             ].map(({ icon: Icon, title, desc }, i) => (
               <AnimatedSection key={title} delay={i * 100}>
