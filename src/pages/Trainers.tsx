@@ -187,7 +187,7 @@ const Trainers = () => {
         <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6">
           <AnimatedSection>
             <h2 className="text-4xl md:text-5xl font-bold text-white text-center mb-4">What You Get</h2>
-            <p className="text-lg text-white/60 text-center mb-14 max-w-lg mx-auto">We don't just give you a title. We give you a career path.</p>
+            <p className="text-xl text-white/60 text-center mb-14 max-w-lg mx-auto">We don't just give you a title. We give you a career path.</p>
           </AnimatedSection>
 
           <div className="grid sm:grid-cols-2 gap-6">
