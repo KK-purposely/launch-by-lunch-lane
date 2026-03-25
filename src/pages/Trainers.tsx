@@ -91,27 +91,67 @@ const Trainers = () => {
         </div>
       </section>
 
-      {/* The Moment — editorial feel */}
-      <section className="py-16 md:py-20 bg-white">
-        <AnimatedSection>
-          <div className="max-w-3xl mx-auto px-4 sm:px-6 text-center">
-            <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-launch-orange/10 mb-8">
-              <Sparkles className="h-8 w-8 text-launch-orange" />
+      {/* AI Fluency Section */}
+      <section className="py-20 md:py-28 bg-gradient-to-b from-white via-launch-light to-white relative overflow-hidden">
+        {/* Floating animated elements */}
+        <div className="absolute inset-0 pointer-events-none">
+          <div className="absolute top-12 left-[10%] w-20 h-20 rounded-2xl bg-launch-orange/10 rotate-12 animate-[pulse_4s_ease-in-out_infinite]" />
+          <div className="absolute top-1/3 right-[8%] w-16 h-16 rounded-full bg-launch-purple/10 animate-[pulse_5s_ease-in-out_infinite_1s]" />
+          <div className="absolute bottom-20 left-[15%] w-12 h-12 rounded-lg bg-launch-orange/8 -rotate-6 animate-[pulse_6s_ease-in-out_infinite_0.5s]" />
+          <div className="absolute bottom-1/3 right-[12%] w-24 h-24 rounded-3xl bg-launch-purple/5 rotate-45 animate-[pulse_7s_ease-in-out_infinite_2s]" />
+        </div>
+
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 relative z-10">
+          {/* Animated counter-style stat */}
+          <AnimatedSection>
+            <div className="text-center mb-12">
+              <div className="inline-flex items-center gap-3 bg-launch-orange/10 border border-launch-orange/20 rounded-full px-6 py-3 mb-10">
+                <span className="relative flex h-3 w-3">
+                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-launch-orange opacity-75"></span>
+                  <span className="relative inline-flex rounded-full h-3 w-3 bg-launch-orange"></span>
+                </span>
+                <span className="text-lg font-semibold text-launch-orange">Demand is growing faster than we can keep up</span>
+              </div>
             </div>
-            <h2 className="text-4xl md:text-6xl font-bold text-launch-purple mb-8 leading-tight">
-              AI Fluency Is the Most In-Demand Skill on the Planet
-            </h2>
-            <p className="text-2xl text-gray-600 leading-relaxed mb-6">
-              Demand is outpacing our bandwidth, and that's where you come in.
-            </p>
-            <p className="text-2xl text-gray-600 leading-relaxed">
-              If you've been volunteering your time teaching AI to others and wondering when someone's going to actually pay you for it,
-            </p>
-            <p className="text-3xl font-bold text-launch-purple mt-4">
-              this is your moment.
-            </p>
+          </AnimatedSection>
+
+          <div className="grid md:grid-cols-2 gap-12 md:gap-16 items-center">
+            {/* Left: Big statement */}
+            <AnimatedSection>
+              <div>
+                <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-launch-purple mb-8 leading-[1.1]">
+                  AI Fluency Is the Most
+                  <span className="block bg-gradient-to-r from-launch-orange to-amber-500 bg-clip-text text-transparent mt-2">
+                    In-Demand Skill
+                  </span>
+                  on the Planet
+                </h2>
+                <p className="text-2xl text-gray-600 leading-relaxed">
+                  Demand is outpacing our bandwidth, and that's where you come in.
+                </p>
+              </div>
+            </AnimatedSection>
+
+            {/* Right: Highlighted quote card */}
+            <AnimatedSection delay={200}>
+              <div className="relative">
+                <div className="absolute -inset-4 bg-gradient-to-br from-launch-purple/10 via-launch-orange/10 to-launch-purple/5 rounded-3xl blur-xl" />
+                <div className="relative bg-white rounded-2xl p-10 shadow-xl border border-launch-orange/15">
+                  <div className="absolute -top-5 -left-3 text-8xl text-launch-orange/20 font-serif leading-none">"</div>
+                  <p className="text-2xl text-gray-700 leading-relaxed mb-6 relative z-10">
+                    If you've been volunteering your time teaching AI to others and wondering when someone's going to actually pay you for it,
+                  </p>
+                  <div className="relative z-10">
+                    <div className="h-1 w-16 bg-gradient-to-r from-launch-purple to-launch-orange rounded-full mb-4" />
+                    <p className="text-3xl font-bold bg-gradient-to-r from-launch-purple to-launch-orange bg-clip-text text-transparent">
+                      This is your moment.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </AnimatedSection>
           </div>
-        </AnimatedSection>
+        </div>
       </section>
 
       {/* What Trainers Do */}
