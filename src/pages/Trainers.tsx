@@ -77,7 +77,7 @@ const Trainers = () => {
           </h1>
 
           <p className="animate-fade-in text-xl md:text-2xl text-white/70 max-w-2xl mx-auto mb-10 leading-relaxed" style={{ animationDuration: "0.8s", animationDelay: "0.3s", animationFillMode: "both" }}>
-            We're building a community of expert AI trainers under the Launch by Lunch umbrella — people who show up, do great work, and get paid well while we handle everything else.
+            We're building a community of expert AI trainers under the Launch by Lunch umbrella. People who show up, do great work, and get paid well while we handle everything else.
           </p>
 
           <div className="animate-fade-in" style={{ animationDuration: "0.8s", animationDelay: "0.45s", animationFillMode: "both" }}>
