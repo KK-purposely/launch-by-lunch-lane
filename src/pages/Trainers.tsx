@@ -156,7 +156,7 @@ const Trainers = () => {
           <div className="grid sm:grid-cols-2 gap-6">
             {[
               { icon: Mic, title: "Strong Communicators", desc: "You own a room without breaking a sweat. Presence is your superpower.", accent: "launch-orange" },
-              { icon: Award, title: "Proven Facilitators", desc: "You've done paid professional work before — training, coaching, consulting, any of it.", accent: "launch-purple" },
+              { icon: Award, title: "Proven Facilitators", desc: "You've done paid professional work before. Training, coaching, consulting, any of it.", accent: "launch-purple" },
               { icon: Brain, title: "Builders", desc: "You don't have to be a developer, but you've built something real with AI.", accent: "launch-orange" },
               { icon: Heart, title: "Patient Explainers", desc: "The kind of person who lights up when a 60-year-old finally gets it.", accent: "launch-purple" },
             ].map(({ icon: Icon, title, desc, accent }, i) => (
