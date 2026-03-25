@@ -105,7 +105,7 @@ const Trainers = () => {
               Demand is outpacing our bandwidth, and that's where you come in.
             </p>
             <p className="text-2xl text-gray-600 leading-relaxed">
-              If you've been volunteering your time teaching AI to others and wondering when someone's going to actually pay you for it —
+              If you've been volunteering your time teaching AI to others and wondering when someone's going to actually pay you for it,
             </p>
             <p className="text-3xl font-bold text-launch-purple mt-4">
               this is your moment.
