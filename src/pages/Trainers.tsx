@@ -102,7 +102,7 @@ const Trainers = () => {
               AI Fluency Is the Most In-Demand Skill on the Planet
             </h2>
             <p className="text-2xl text-gray-600 leading-relaxed mb-6">
-              Demand is outpacing our bandwidth — and that's where you come in.
+              Demand is outpacing our bandwidth, and that's where you come in.
             </p>
             <p className="text-2xl text-gray-600 leading-relaxed">
               If you've been volunteering your time teaching AI to others and wondering when someone's going to actually pay you for it —
