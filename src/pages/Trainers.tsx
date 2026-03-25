@@ -196,7 +196,7 @@ const Trainers = () => {
               { icon: Mic, title: "Strong Communicators", desc: "You own a room without breaking a sweat. Presence is your superpower.", accent: "launch-orange" },
               { icon: Award, title: "Proven Facilitators", desc: "You've done paid professional work before. Training, coaching, consulting, any of it.", accent: "launch-purple" },
               { icon: Brain, title: "Builders", desc: "You don't have to be a developer, but you've built something real with AI.", accent: "launch-orange" },
-              { icon: Heart, title: "Patient Explainers", desc: "The kind of person who lights up when a 60-year-old finally gets it.", accent: "launch-purple" },
+              { icon: Heart, title: "Patient Explainers", desc: "The kind of person who lights up when the last person in the room finally gets it.", accent: "launch-purple" },
             ].map(({ icon: Icon, title, desc, accent }, i) => (
               <AnimatedSection key={title} delay={i * 100}>
                 <div className="group relative flex gap-5 p-7 rounded-2xl border border-gray-100 bg-white hover:border-launch-orange/30 hover:shadow-xl transition-all duration-500 h-full">
@@ -230,7 +230,7 @@ const Trainers = () => {
 
           <div className="grid sm:grid-cols-2 gap-6">
             {[
-              { icon: DollarSign, title: "Competitive Pay", desc: "Transparent, competitive hourly pay. No guessing games, no surprises." },
+              { icon: DollarSign, title: "Competitive Pay", desc: "Transparent, competitive hourly pay. $100 - $200/hour depending on experience and performance." },
               { icon: Award, title: "LBL Certified Trainer", desc: "An official credential you can add to your LinkedIn and portfolio." },
               { icon: TrendingUp, title: "Steady Client Flow", desc: "A constant stream of clients, without having to find a single one yourself." },
               { icon: Handshake, title: "A Real Community", desc: "Like-minded people who are hungry to learn, share, and grow together." },
