@@ -50,7 +50,7 @@ const Trainers = () => {
       </Helmet>
 
       {/* Hero — full viewport with animated elements */}
-      <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden bg-launch-purple">
+      <section className="relative py-20 md:py-24 flex items-center justify-center overflow-hidden bg-launch-purple">
         {/* Animated gradient blobs */}
         <div className="absolute inset-0">
           <div className="absolute top-1/4 -left-20 w-[500px] h-[500px] rounded-full bg-launch-orange/20 blur-[120px] animate-[pulse_6s_ease-in-out_infinite]" />
@@ -72,13 +72,13 @@ const Trainers = () => {
             </span>
           </div>
 
-          <h1 className="animate-fade-in text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-8 leading-[1.1] tracking-tight" style={{ animationDuration: "0.8s", animationDelay: "0.15s", animationFillMode: "both" }}>
+          <h1 className="animate-fade-in text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-[1.1] tracking-tight" style={{ animationDuration: "0.8s", animationDelay: "0.15s", animationFillMode: "both" }}>
             Teach AI.<br />
             <span className="bg-gradient-to-r from-launch-orange to-yellow-300 bg-clip-text text-transparent">Get Paid.</span><br />
             We Handle the Rest.
           </h1>
 
-          <p className="animate-fade-in text-lg md:text-xl text-white/70 max-w-2xl mx-auto mb-12 leading-relaxed" style={{ animationDuration: "0.8s", animationDelay: "0.3s", animationFillMode: "both" }}>
+          <p className="animate-fade-in text-lg md:text-xl text-white/70 max-w-2xl mx-auto mb-10 leading-relaxed" style={{ animationDuration: "0.8s", animationDelay: "0.3s", animationFillMode: "both" }}>
             We're building a community of expert AI trainers under the Launch by Lunch umbrella — people who show up, do great work, and get paid well while we handle everything else.
           </p>
 
@@ -91,11 +91,29 @@ const Trainers = () => {
             </a>
           </div>
         </div>
+      </section>
 
-        {/* Scroll indicator */}
-        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-[bounce_2s_ease-in-out_infinite]">
-          <ChevronDown className="h-6 w-6 text-white/40" />
-        </div>
+      {/* The Moment — editorial feel */}
+      <section className="py-16 md:py-20 bg-white">
+        <AnimatedSection>
+          <div className="max-w-3xl mx-auto px-4 sm:px-6 text-center">
+            <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-launch-orange/10 mb-8">
+              <Sparkles className="h-8 w-8 text-launch-orange" />
+            </div>
+            <h2 className="text-3xl md:text-5xl font-bold text-launch-purple mb-8 leading-tight">
+              AI Fluency Is the Most In-Demand Skill on the Planet
+            </h2>
+            <p className="text-xl text-gray-600 leading-relaxed mb-6">
+              Demand is outpacing our bandwidth — and that's where you come in.
+            </p>
+            <p className="text-xl text-gray-600 leading-relaxed">
+              If you've been volunteering your time teaching AI to others and wondering when someone's going to actually pay you for it —
+            </p>
+            <p className="text-2xl font-bold text-launch-purple mt-4">
+              this is your moment.
+            </p>
+          </div>
+        </AnimatedSection>
       </section>
 
       {/* You Just Teach — bold statement */}
@@ -217,28 +235,6 @@ const Trainers = () => {
         </div>
       </section>
 
-      {/* The Moment — editorial feel */}
-      <section className="py-24 md:py-32 bg-white">
-        <AnimatedSection>
-          <div className="max-w-3xl mx-auto px-4 sm:px-6 text-center">
-            <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-launch-orange/10 mb-8">
-              <Sparkles className="h-8 w-8 text-launch-orange" />
-            </div>
-            <h2 className="text-3xl md:text-5xl font-bold text-launch-purple mb-8 leading-tight">
-              AI Fluency Is the Most In-Demand Skill on the Planet
-            </h2>
-            <p className="text-xl text-gray-600 leading-relaxed mb-6">
-              Demand is outpacing our bandwidth — and that's where you come in.
-            </p>
-            <p className="text-xl text-gray-600 leading-relaxed">
-              If you've been volunteering your time teaching AI to others and wondering when someone's going to actually pay you for it —
-            </p>
-            <p className="text-2xl font-bold text-launch-purple mt-4">
-              this is your moment.
-            </p>
-          </div>
-        </AnimatedSection>
-      </section>
 
       {/* Final CTA */}
       <section className="relative py-24 md:py-32 overflow-hidden bg-launch-purple">
