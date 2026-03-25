@@ -150,7 +150,7 @@ const Trainers = () => {
         <div className="max-w-5xl mx-auto px-4 sm:px-6">
           <AnimatedSection>
             <h2 className="text-4xl md:text-5xl font-bold text-launch-purple text-center mb-4">Who We're Looking For</h2>
-            <p className="text-lg text-gray-500 text-center mb-14 max-w-lg mx-auto">This isn't for everyone — and that's the point.</p>
+            <p className="text-xl text-gray-500 text-center mb-14 max-w-lg mx-auto">This isn't for everyone — and that's the point.</p>
           </AnimatedSection>
 
           <div className="grid sm:grid-cols-2 gap-6">
