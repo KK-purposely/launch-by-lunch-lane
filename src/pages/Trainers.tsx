@@ -194,7 +194,7 @@ const Trainers = () => {
             {[
               { icon: DollarSign, title: "Competitive Pay", desc: "Transparent, competitive hourly pay. No guessing games, no surprises." },
               { icon: Award, title: "LBL Certified Trainer", desc: "An official credential you can add to your LinkedIn and portfolio." },
-              { icon: TrendingUp, title: "Steady Client Flow", desc: "A constant stream of clients — without having to find a single one yourself." },
+              { icon: TrendingUp, title: "Steady Client Flow", desc: "A constant stream of clients, without having to find a single one yourself." },
               { icon: Handshake, title: "A Real Community", desc: "Like-minded people who are hungry to learn, share, and grow together." },
             ].map(({ icon: Icon, title, desc }, i) => (
               <AnimatedSection key={title} delay={i * 100}>
