@@ -50,9 +50,9 @@ const Hero = ({ showButtons = true }: HeroProps) => {
                   variant="outline"
                   size="lg"
                   className="w-full max-w-sm px-8 py-6 text-lg border-launch-orange text-launch-orange hover:bg-launch-orange hover:text-white rounded-full font-medium transition-all duration-300"
-                  asChild
+                  onClick={() => window.open("https://learn.launchbylunch.co/?modal=signup", "_blank")}
                 >
-                  <a href="#second-brain">What We Do</a>
+                  Get Our Newsletter
                 </Button>
               </div>
             )}
