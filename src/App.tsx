@@ -21,6 +21,7 @@ import AIPowerHour from "./pages/AIPowerHour";
 import EnterpriseServices from "./pages/EnterpriseServices";
 
 import ClaudeCode from "./pages/ClaudeCode";
+import Trainers from "./pages/Trainers";
 import Navigation from "./components/Navigation";
 
 const queryClient = new QueryClient(); // Trigger GitHub sync
@@ -49,6 +50,7 @@ const App = () => (
             <Route path="/enterprise-services" element={<EnterpriseServices />} />
             
             <Route path="/claude-code" element={<ClaudeCode />} />
+            <Route path="/trainers" element={<Trainers />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>
