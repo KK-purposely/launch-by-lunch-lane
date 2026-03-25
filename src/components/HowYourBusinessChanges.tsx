@@ -167,6 +167,16 @@ const HowYourBusinessChanges = () => {
           </div>
         </div>
 
+        {/* Second Brain Visual */}
+        <div className="mb-16 flex justify-center">
+          <img
+            src={secondBrainVisual}
+            alt="Three-step process: The Second Brain organizes company knowledge, Integrations connect your tools, Smart Automations power daily workflows"
+            className="w-full max-w-5xl rounded-2xl"
+            loading="lazy"
+          />
+        </div>
+
         {/* We connect the tools you already use */}
         <div className="mb-16 text-center bg-white rounded-3xl p-8 md:p-12 border border-border">
           <h3 className="text-3xl md:text-4xl font-bold text-launch-purple mb-4">
