@@ -3,7 +3,7 @@ import React, { useEffect, useRef, useState } from "react";
 import { Helmet } from "react-helmet-async";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { Mic, Users, Brain, Heart, DollarSign, Award, TrendingUp, Handshake, Zap, ArrowRight, ChevronDown, Sparkles } from "lucide-react";
+import { Mic, Users, Brain, Heart, DollarSign, Award, TrendingUp, Handshake, Zap, ArrowRight, Sparkles } from "lucide-react";
 import Footer from "@/components/Footer";
 
 const APPLY_URL = "https://forms.gle/FvhQK1S1V5j438qbA";
@@ -49,16 +49,14 @@ const Trainers = () => {
         <meta name="description" content="Join the Launch by Lunch trainer network. Lead AI workshops, get paid well, and let us handle everything else." />
       </Helmet>
 
-      {/* Hero — full viewport with animated elements */}
+      {/* Hero */}
       <section className="relative py-20 md:py-24 flex items-center justify-center overflow-hidden bg-launch-purple">
-        {/* Animated gradient blobs */}
         <div className="absolute inset-0">
           <div className="absolute top-1/4 -left-20 w-[500px] h-[500px] rounded-full bg-launch-orange/20 blur-[120px] animate-[pulse_6s_ease-in-out_infinite]" />
           <div className="absolute bottom-1/4 -right-20 w-[400px] h-[400px] rounded-full bg-launch-orange/15 blur-[100px] animate-[pulse_8s_ease-in-out_infinite_1s]" />
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] rounded-full bg-white/5 blur-[80px]" />
         </div>
 
-        {/* Grid pattern overlay */}
         <div className="absolute inset-0 opacity-[0.03]" style={{
           backgroundImage: "linear-gradient(rgba(255,255,255,.5) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.5) 1px, transparent 1px)",
           backgroundSize: "60px 60px",
@@ -66,25 +64,25 @@ const Trainers = () => {
 
         <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 text-center">
           <div className="animate-fade-in" style={{ animationDuration: "0.6s" }}>
-            <span className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-md text-white text-sm font-semibold px-5 py-2 rounded-full mb-8 border border-white/20">
+            <span className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-md text-white text-base font-semibold px-5 py-2 rounded-full mb-8 border border-white/20">
               <Sparkles className="h-4 w-4 text-launch-orange" />
               NOW ACCEPTING APPLICATIONS
             </span>
           </div>
 
-          <h1 className="animate-fade-in text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-[1.1] tracking-tight" style={{ animationDuration: "0.8s", animationDelay: "0.15s", animationFillMode: "both" }}>
+          <h1 className="animate-fade-in text-6xl md:text-7xl lg:text-8xl font-bold text-white mb-6 leading-[1.1] tracking-tight" style={{ animationDuration: "0.8s", animationDelay: "0.15s", animationFillMode: "both" }}>
             Teach AI.<br />
             <span className="bg-gradient-to-r from-launch-orange to-yellow-300 bg-clip-text text-transparent">Get Paid.</span><br />
             We Handle the Rest.
           </h1>
 
-          <p className="animate-fade-in text-lg md:text-xl text-white/70 max-w-2xl mx-auto mb-10 leading-relaxed" style={{ animationDuration: "0.8s", animationDelay: "0.3s", animationFillMode: "both" }}>
+          <p className="animate-fade-in text-xl md:text-2xl text-white/70 max-w-2xl mx-auto mb-10 leading-relaxed" style={{ animationDuration: "0.8s", animationDelay: "0.3s", animationFillMode: "both" }}>
             We're building a community of expert AI trainers under the Launch by Lunch umbrella — people who show up, do great work, and get paid well while we handle everything else.
           </p>
 
           <div className="animate-fade-in" style={{ animationDuration: "0.8s", animationDelay: "0.45s", animationFillMode: "both" }}>
             <a href={APPLY_URL} target="_blank" rel="noopener noreferrer">
-              <Button size="lg" className="group bg-launch-orange hover:bg-launch-orange/90 text-white text-lg px-10 py-7 rounded-full shadow-[0_0_40px_rgba(255,107,0,0.3)] hover:shadow-[0_0_60px_rgba(255,107,0,0.5)] transition-all duration-500 hover:scale-105">
+              <Button size="lg" className="group bg-launch-orange hover:bg-launch-orange/90 text-white text-xl px-10 py-7 rounded-full shadow-[0_0_40px_rgba(255,107,0,0.3)] hover:shadow-[0_0_60px_rgba(255,107,0,0.5)] transition-all duration-500 hover:scale-105">
                 Apply to Become a Trainer
                 <ArrowRight className="ml-2 h-5 w-5 transition-transform duration-300 group-hover:translate-x-1" />
               </Button>
@@ -100,37 +98,17 @@ const Trainers = () => {
             <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-launch-orange/10 mb-8">
               <Sparkles className="h-8 w-8 text-launch-orange" />
             </div>
-            <h2 className="text-3xl md:text-5xl font-bold text-launch-purple mb-8 leading-tight">
+            <h2 className="text-4xl md:text-6xl font-bold text-launch-purple mb-8 leading-tight">
               AI Fluency Is the Most In-Demand Skill on the Planet
             </h2>
-            <p className="text-xl text-gray-600 leading-relaxed mb-6">
+            <p className="text-2xl text-gray-600 leading-relaxed mb-6">
               Demand is outpacing our bandwidth — and that's where you come in.
             </p>
-            <p className="text-xl text-gray-600 leading-relaxed">
+            <p className="text-2xl text-gray-600 leading-relaxed">
               If you've been volunteering your time teaching AI to others and wondering when someone's going to actually pay you for it —
             </p>
-            <p className="text-2xl font-bold text-launch-purple mt-4">
+            <p className="text-3xl font-bold text-launch-purple mt-4">
               this is your moment.
-            </p>
-          </div>
-        </AnimatedSection>
-      </section>
-
-      {/* You Just Teach — bold statement */}
-      <section className="py-20 md:py-28 bg-white relative overflow-hidden">
-        <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-launch-purple via-launch-orange to-launch-purple" />
-        <AnimatedSection>
-          <div className="max-w-4xl mx-auto px-4 sm:px-6 text-center">
-            <h2 className="text-4xl md:text-5xl font-bold text-launch-purple mb-8">You Just Teach</h2>
-            <div className="flex flex-wrap justify-center gap-4 mb-8">
-              {["Sales", "Marketing", "Logistics", "Client Management"].map((item) => (
-                <span key={item} className="px-5 py-2.5 bg-launch-purple/5 border border-launch-purple/15 rounded-full text-launch-purple font-medium text-sm line-through decoration-launch-orange decoration-2">
-                  {item}
-                </span>
-              ))}
-            </div>
-            <p className="text-xl text-gray-600 max-w-xl mx-auto">
-              All of it — <span className="font-semibold text-launch-purple">handled by us</span>. You focus on what you do best: lighting the room up.
             </p>
           </div>
         </AnimatedSection>
@@ -140,8 +118,8 @@ const Trainers = () => {
       <section className="py-20 md:py-24 bg-gray-50 relative">
         <div className="max-w-6xl mx-auto px-4 sm:px-6">
           <AnimatedSection>
-            <h2 className="text-3xl md:text-4xl font-bold text-launch-purple text-center mb-4">What Our Trainers Do</h2>
-            <p className="text-gray-500 text-center mb-14 max-w-lg mx-auto">Real work. Real impact. Not another theoretical AI talk.</p>
+            <h2 className="text-4xl md:text-5xl font-bold text-launch-purple text-center mb-4">What Our Trainers Do</h2>
+            <p className="text-lg text-gray-500 text-center mb-14 max-w-lg mx-auto">Real work. Real impact. Not another theoretical AI talk.</p>
           </AnimatedSection>
 
           <div className="grid md:grid-cols-3 gap-8">
@@ -157,8 +135,8 @@ const Trainers = () => {
                     <div className={`inline-flex items-center justify-center w-14 h-14 rounded-2xl bg-gradient-to-br ${color} mb-6 shadow-lg group-hover:scale-110 transition-transform duration-500`}>
                       <Icon className="h-7 w-7 text-white" />
                     </div>
-                    <h3 className="text-xl font-bold text-launch-purple mb-3">{title}</h3>
-                    <p className="text-gray-600 leading-relaxed">{desc}</p>
+                    <h3 className="text-2xl font-bold text-launch-purple mb-3">{title}</h3>
+                    <p className="text-lg text-gray-600 leading-relaxed">{desc}</p>
                   </CardContent>
                 </Card>
               </AnimatedSection>
@@ -171,8 +149,8 @@ const Trainers = () => {
       <section className="py-20 md:py-24 bg-white">
         <div className="max-w-5xl mx-auto px-4 sm:px-6">
           <AnimatedSection>
-            <h2 className="text-3xl md:text-4xl font-bold text-launch-purple text-center mb-4">Who We're Looking For</h2>
-            <p className="text-gray-500 text-center mb-14 max-w-lg mx-auto">This isn't for everyone — and that's the point.</p>
+            <h2 className="text-4xl md:text-5xl font-bold text-launch-purple text-center mb-4">Who We're Looking For</h2>
+            <p className="text-lg text-gray-500 text-center mb-14 max-w-lg mx-auto">This isn't for everyone — and that's the point.</p>
           </AnimatedSection>
 
           <div className="grid sm:grid-cols-2 gap-6">
@@ -189,8 +167,8 @@ const Trainers = () => {
                     <Icon className={`h-6 w-6 text-${accent}`} />
                   </div>
                   <div className="relative">
-                    <h3 className="font-bold text-launch-purple text-lg mb-2">{title}</h3>
-                    <p className="text-gray-600 leading-relaxed">{desc}</p>
+                    <h3 className="font-bold text-launch-purple text-xl mb-2">{title}</h3>
+                    <p className="text-lg text-gray-600 leading-relaxed">{desc}</p>
                   </div>
                 </div>
               </AnimatedSection>
@@ -199,7 +177,7 @@ const Trainers = () => {
         </div>
       </section>
 
-      {/* What You Get — dark section for contrast */}
+      {/* What You Get */}
       <section className="py-20 md:py-24 bg-launch-purple relative overflow-hidden">
         <div className="absolute inset-0">
           <div className="absolute top-0 right-0 w-[400px] h-[400px] rounded-full bg-launch-orange/10 blur-[120px]" />
@@ -208,8 +186,8 @@ const Trainers = () => {
 
         <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6">
           <AnimatedSection>
-            <h2 className="text-3xl md:text-4xl font-bold text-white text-center mb-4">What You Get</h2>
-            <p className="text-white/60 text-center mb-14 max-w-lg mx-auto">We don't just give you a title. We give you a career path.</p>
+            <h2 className="text-4xl md:text-5xl font-bold text-white text-center mb-4">What You Get</h2>
+            <p className="text-lg text-white/60 text-center mb-14 max-w-lg mx-auto">We don't just give you a title. We give you a career path.</p>
           </AnimatedSection>
 
           <div className="grid sm:grid-cols-2 gap-6">
@@ -225,8 +203,8 @@ const Trainers = () => {
                     <Icon className="h-6 w-6 text-launch-orange" />
                   </div>
                   <div>
-                    <h3 className="font-bold text-white text-lg mb-2">{title}</h3>
-                    <p className="text-white/60 leading-relaxed">{desc}</p>
+                    <h3 className="font-bold text-white text-xl mb-2">{title}</h3>
+                    <p className="text-lg text-white/60 leading-relaxed">{desc}</p>
                   </div>
                 </div>
               </AnimatedSection>
@@ -234,7 +212,6 @@ const Trainers = () => {
           </div>
         </div>
       </section>
-
 
       {/* Final CTA */}
       <section className="relative py-24 md:py-32 overflow-hidden bg-launch-purple">
@@ -245,12 +222,12 @@ const Trainers = () => {
 
         <AnimatedSection>
           <div className="relative z-10 max-w-3xl mx-auto px-4 sm:px-6 text-center">
-            <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">Ready to Get Started?</h2>
-            <p className="text-lg text-white/70 mb-12 max-w-xl mx-auto">
+            <h2 className="text-5xl md:text-6xl font-bold text-white mb-6">Ready to Get Started?</h2>
+            <p className="text-xl text-white/70 mb-12 max-w-xl mx-auto">
               Apply today. We'll review your application and get back to you soon.
             </p>
             <a href={APPLY_URL} target="_blank" rel="noopener noreferrer">
-              <Button size="lg" className="group bg-white text-launch-purple hover:bg-white/95 text-lg px-12 py-7 rounded-full shadow-[0_0_40px_rgba(255,255,255,0.15)] hover:shadow-[0_0_60px_rgba(255,255,255,0.25)] transition-all duration-500 hover:scale-105 font-bold">
+              <Button size="lg" className="group bg-white text-launch-purple hover:bg-white/95 text-xl px-12 py-7 rounded-full shadow-[0_0_40px_rgba(255,255,255,0.15)] hover:shadow-[0_0_60px_rgba(255,255,255,0.25)] transition-all duration-500 hover:scale-105 font-bold">
                 Apply Now
                 <ArrowRight className="ml-2 h-5 w-5 transition-transform duration-300 group-hover:translate-x-1" />
               </Button>
