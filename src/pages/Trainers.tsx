@@ -203,8 +203,8 @@ const Trainers = () => {
                     <Icon className="h-6 w-6 text-launch-orange" />
                   </div>
                   <div>
-                    <h3 className="font-bold text-white text-xl mb-2">{title}</h3>
-                    <p className="text-lg text-white/60 leading-relaxed">{desc}</p>
+                    <h3 className="font-bold text-white text-2xl mb-2">{title}</h3>
+                    <p className="text-xl text-white/60 leading-relaxed">{desc}</p>
                   </div>
                 </div>
               </AnimatedSection>
