@@ -164,13 +164,14 @@ const Navigation = () => {
                 </DropdownMenuItem>
                 
                 
-                <DropdownMenuItem 
-                  onClick={() => {
-                    window.open('https://innercircle.launchbylunch.co/', '_blank');
-                    setIsMenuOpen(false);
-                  }}
-                >
-                  Members Only
+                <DropdownMenuItem asChild>
+                  <Link 
+                    to="/trainers" 
+                    className="w-full"
+                    onClick={() => setIsMenuOpen(false)}
+                  >
+                    Trainers
+                  </Link>
                 </DropdownMenuItem>
                 
                 <DropdownMenuSeparator />
