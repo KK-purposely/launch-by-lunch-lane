@@ -149,6 +149,15 @@ const Navigation = () => {
                 
                 <DropdownMenuItem 
                   onClick={() => {
+                    window.open('https://marketplace.launchbylunch.co/', '_blank');
+                    setIsMenuOpen(false);
+                  }}
+                >
+                  Marketplace
+                </DropdownMenuItem>
+
+                <DropdownMenuItem 
+                  onClick={() => {
                     window.open('https://luma.com/launchbylunch', '_blank');
                     setIsMenuOpen(false);
                   }}
