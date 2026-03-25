@@ -125,7 +125,7 @@ const Trainers = () => {
           <div className="grid md:grid-cols-3 gap-8">
             {[
               { icon: Users, title: "Lead Live Workshops", desc: "Run in-person AI workshops for founders, executives, and small teams ready to level up.", color: "from-launch-purple to-indigo-600" },
-              { icon: Brain, title: "Facilitate Corporate Sessions", desc: "Help companies actually use AI — not just talk about it. Real tools, real workflows, real results.", color: "from-launch-orange to-amber-500" },
+              { icon: Brain, title: "Facilitate Corporate Sessions", desc: "Help companies actually use AI, not just talk about it. Real tools, real workflows, real results.", color: "from-launch-orange to-amber-500" },
               { icon: Zap, title: "Run Follow-Up Sessions", desc: "Make sure people don't walk out and immediately forget everything they learned. Reinforce and build.", color: "from-launch-purple to-launch-orange" },
             ].map(({ icon: Icon, title, desc, color }, i) => (
               <AnimatedSection key={title} delay={i * 150}>
