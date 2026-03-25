@@ -21,6 +21,7 @@ import AIPowerHour from "./pages/AIPowerHour";
 import EnterpriseServices from "./pages/EnterpriseServices";
 
 import ClaudeCode from "./pages/ClaudeCode";
+import Trainers from "./pages/Trainers";
 import Navigation from "./components/Navigation";
 
 const queryClient = new QueryClient(); // Trigger GitHub sync
