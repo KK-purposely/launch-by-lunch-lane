@@ -230,7 +230,7 @@ const Trainers = () => {
 
           <div className="grid sm:grid-cols-2 gap-6">
             {[
-              { icon: DollarSign, title: "Competitive Pay", desc: "Transparent, competitive hourly pay. No guessing games, no surprises." },
+              { icon: DollarSign, title: "Competitive Pay", desc: "Transparent, competitive hourly pay. $100 - $200/hour depending on experience and performance." },
               { icon: Award, title: "LBL Certified Trainer", desc: "An official credential you can add to your LinkedIn and portfolio." },
               { icon: TrendingUp, title: "Steady Client Flow", desc: "A constant stream of clients, without having to find a single one yourself." },
               { icon: Handshake, title: "A Real Community", desc: "Like-minded people who are hungry to learn, share, and grow together." },
