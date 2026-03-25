@@ -167,8 +167,8 @@ const Trainers = () => {
                     <Icon className={`h-6 w-6 text-${accent}`} />
                   </div>
                   <div className="relative">
-                    <h3 className="font-bold text-launch-purple text-xl mb-2">{title}</h3>
-                    <p className="text-lg text-gray-600 leading-relaxed">{desc}</p>
+                    <h3 className="font-bold text-launch-purple text-2xl mb-2">{title}</h3>
+                    <p className="text-xl text-gray-600 leading-relaxed">{desc}</p>
                   </div>
                 </div>
               </AnimatedSection>
