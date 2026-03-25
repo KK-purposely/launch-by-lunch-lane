@@ -136,7 +136,7 @@ const Trainers = () => {
                       <Icon className="h-7 w-7 text-white" />
                     </div>
                     <h3 className="text-2xl font-bold text-launch-purple mb-3">{title}</h3>
-                    <p className="text-lg text-gray-600 leading-relaxed">{desc}</p>
+                    <p className="text-xl text-gray-600 leading-relaxed">{desc}</p>
                   </CardContent>
                 </Card>
               </AnimatedSection>
