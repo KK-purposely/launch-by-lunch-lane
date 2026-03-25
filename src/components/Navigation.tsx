@@ -53,6 +53,15 @@ const Navigation = () => {
                 </Link>
 
                 <a 
+                  href="https://marketplace.launchbylunch.co/" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-launch-orange"
+                >
+                  Marketplace
+                </a>
+
+                <a 
                   href="https://luma.com/launchbylunch" 
                   target="_blank" 
                   rel="noopener noreferrer"
