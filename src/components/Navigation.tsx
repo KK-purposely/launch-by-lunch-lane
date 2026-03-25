@@ -71,14 +71,12 @@ const Navigation = () => {
                 </a>
 
 
-                <a 
-                  href="https://innercircle.launchbylunch.co/" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
+                <Link 
+                  to="/trainers" 
                   className="px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-launch-orange"
                 >
-                  Members Only
-                </a>
+                  Trainers
+                </Link>
               </div>
             </div>
           </div>
@@ -166,13 +164,14 @@ const Navigation = () => {
                 </DropdownMenuItem>
                 
                 
-                <DropdownMenuItem 
-                  onClick={() => {
-                    window.open('https://innercircle.launchbylunch.co/', '_blank');
-                    setIsMenuOpen(false);
-                  }}
-                >
-                  Members Only
+                <DropdownMenuItem asChild>
+                  <Link 
+                    to="/trainers" 
+                    className="w-full"
+                    onClick={() => setIsMenuOpen(false)}
+                  >
+                    Trainers
+                  </Link>
                 </DropdownMenuItem>
                 
                 <DropdownMenuSeparator />
