@@ -235,28 +235,6 @@ const Trainers = () => {
         </div>
       </section>
 
-      {/* The Moment — editorial feel */}
-      <section className="py-24 md:py-32 bg-white">
-        <AnimatedSection>
-          <div className="max-w-3xl mx-auto px-4 sm:px-6 text-center">
-            <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-launch-orange/10 mb-8">
-              <Sparkles className="h-8 w-8 text-launch-orange" />
-            </div>
-            <h2 className="text-3xl md:text-5xl font-bold text-launch-purple mb-8 leading-tight">
-              AI Fluency Is the Most In-Demand Skill on the Planet
-            </h2>
-            <p className="text-xl text-gray-600 leading-relaxed mb-6">
-              Demand is outpacing our bandwidth — and that's where you come in.
-            </p>
-            <p className="text-xl text-gray-600 leading-relaxed">
-              If you've been volunteering your time teaching AI to others and wondering when someone's going to actually pay you for it —
-            </p>
-            <p className="text-2xl font-bold text-launch-purple mt-4">
-              this is your moment.
-            </p>
-          </div>
-        </AnimatedSection>
-      </section>
 
       {/* Final CTA */}
       <section className="relative py-24 md:py-32 overflow-hidden bg-launch-purple">
