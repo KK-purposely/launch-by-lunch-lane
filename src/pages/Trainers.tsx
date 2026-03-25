@@ -120,10 +120,8 @@ const Trainers = () => {
             <AnimatedSection>
               <div>
                 <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-launch-purple mb-8 leading-[1.1]">
-                  AI Fluency Is the Most
-                  <span className="block bg-gradient-to-r from-launch-orange to-amber-500 bg-clip-text text-transparent mt-2">
-                    In-Demand Skill
-                  </span>
+                  AI Fluency Is the
+                  <span className="bg-gradient-to-r from-launch-orange to-amber-500 bg-clip-text text-transparent"> Most In-Demand Skill </span>
                   on the Planet
                 </h2>
                 <p className="text-2xl text-gray-600 leading-relaxed">
