@@ -119,7 +119,7 @@ const Trainers = () => {
         <div className="max-w-6xl mx-auto px-4 sm:px-6">
           <AnimatedSection>
             <h2 className="text-4xl md:text-5xl font-bold text-launch-purple text-center mb-4">What Our Trainers Do</h2>
-            <p className="text-lg text-gray-500 text-center mb-14 max-w-lg mx-auto">Real work. Real impact. Not another theoretical AI talk.</p>
+            <p className="text-xl text-gray-500 text-center mb-14 max-w-lg mx-auto">Real work. Real impact. Not another theoretical AI talk.</p>
           </AnimatedSection>
 
           <div className="grid md:grid-cols-3 gap-8">
@@ -136,7 +136,7 @@ const Trainers = () => {
                       <Icon className="h-7 w-7 text-white" />
                     </div>
                     <h3 className="text-2xl font-bold text-launch-purple mb-3">{title}</h3>
-                    <p className="text-lg text-gray-600 leading-relaxed">{desc}</p>
+                    <p className="text-xl text-gray-600 leading-relaxed">{desc}</p>
                   </CardContent>
                 </Card>
               </AnimatedSection>
@@ -150,7 +150,7 @@ const Trainers = () => {
         <div className="max-w-5xl mx-auto px-4 sm:px-6">
           <AnimatedSection>
             <h2 className="text-4xl md:text-5xl font-bold text-launch-purple text-center mb-4">Who We're Looking For</h2>
-            <p className="text-lg text-gray-500 text-center mb-14 max-w-lg mx-auto">This isn't for everyone — and that's the point.</p>
+            <p className="text-xl text-gray-500 text-center mb-14 max-w-lg mx-auto">This isn't for everyone — and that's the point.</p>
           </AnimatedSection>
 
           <div className="grid sm:grid-cols-2 gap-6">
@@ -167,8 +167,8 @@ const Trainers = () => {
                     <Icon className={`h-6 w-6 text-${accent}`} />
                   </div>
                   <div className="relative">
-                    <h3 className="font-bold text-launch-purple text-xl mb-2">{title}</h3>
-                    <p className="text-lg text-gray-600 leading-relaxed">{desc}</p>
+                    <h3 className="font-bold text-launch-purple text-2xl mb-2">{title}</h3>
+                    <p className="text-xl text-gray-600 leading-relaxed">{desc}</p>
                   </div>
                 </div>
               </AnimatedSection>
@@ -187,7 +187,7 @@ const Trainers = () => {
         <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6">
           <AnimatedSection>
             <h2 className="text-4xl md:text-5xl font-bold text-white text-center mb-4">What You Get</h2>
-            <p className="text-lg text-white/60 text-center mb-14 max-w-lg mx-auto">We don't just give you a title. We give you a career path.</p>
+            <p className="text-xl text-white/60 text-center mb-14 max-w-lg mx-auto">We don't just give you a title. We give you a career path.</p>
           </AnimatedSection>
 
           <div className="grid sm:grid-cols-2 gap-6">
@@ -203,8 +203,8 @@ const Trainers = () => {
                     <Icon className="h-6 w-6 text-launch-orange" />
                   </div>
                   <div>
-                    <h3 className="font-bold text-white text-xl mb-2">{title}</h3>
-                    <p className="text-lg text-white/60 leading-relaxed">{desc}</p>
+                    <h3 className="font-bold text-white text-2xl mb-2">{title}</h3>
+                    <p className="text-xl text-white/60 leading-relaxed">{desc}</p>
                   </div>
                 </div>
               </AnimatedSection>
