@@ -153,7 +153,7 @@ const Navigation = () => {
                     setIsMenuOpen(false);
                   }}
                 >
-                  Marketplace
+                  Automations
                 </DropdownMenuItem>
 
                 <DropdownMenuItem 
