@@ -143,13 +143,21 @@ const Index = () => {
                 </motion.div>
               </div>
 
-              {/* Right: Animated graphic */}
+              {/* Right: Warm illustration */}
               <motion.div
-                initial={{ opacity: 0, scale: 0.85 }}
-                animate={{ opacity: 1, scale: 1 }}
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.3, ease: "easeOut" }}
               >
-                <HeroGraphic />
+                <motion.img
+                  src={heroIllustration}
+                  alt="Diverse team collaborating around a table with laptops and coffee"
+                  className="w-full max-w-lg mx-auto"
+                  width={1024}
+                  height={768}
+                  animate={{ y: [0, -8, 0] }}
+                  transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
+                />
               </motion.div>
             </div>
           </div>
