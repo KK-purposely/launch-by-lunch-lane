@@ -70,6 +70,12 @@ const Navigation = () => {
                   Events
                 </a>
 
+                <Link 
+                  to="/enterprise" 
+                  className="px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-launch-orange"
+                >
+                  Enterprise
+                </Link>
 
                 <Link 
                   to="/trainers" 
@@ -163,6 +169,15 @@ const Navigation = () => {
                   Events
                 </DropdownMenuItem>
                 
+                <DropdownMenuItem asChild>
+                  <Link 
+                    to="/enterprise" 
+                    className="w-full"
+                    onClick={() => setIsMenuOpen(false)}
+                  >
+                    Enterprise
+                  </Link>
+                </DropdownMenuItem>
                 
                 <DropdownMenuItem asChild>
                   <Link 
