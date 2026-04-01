@@ -19,6 +19,7 @@ import WomenInCommunity from "./pages/WomenInCommunity";
 import CommunityPartnerships from "./pages/CommunityPartnerships";
 import AIPowerHour from "./pages/AIPowerHour";
 import EnterpriseServices from "./pages/EnterpriseServices";
+import Enterprise from "./pages/Enterprise";
 
 import ClaudeCode from "./pages/ClaudeCode";
 import Trainers from "./pages/Trainers";
