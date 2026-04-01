@@ -169,6 +169,15 @@ const Navigation = () => {
                   Events
                 </DropdownMenuItem>
                 
+                <DropdownMenuItem asChild>
+                  <Link 
+                    to="/enterprise" 
+                    className="w-full"
+                    onClick={() => setIsMenuOpen(false)}
+                  >
+                    Enterprise
+                  </Link>
+                </DropdownMenuItem>
                 
                 <DropdownMenuItem asChild>
                   <Link 
