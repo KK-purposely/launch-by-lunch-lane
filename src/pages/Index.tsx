@@ -3,6 +3,7 @@ import { Helmet } from "react-helmet-async";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 import { motion, useInView, useAnimation } from "framer-motion";
+import heroIllustration from "@/assets/hero-illustration.png";
 import Footer from "@/components/Footer";
 
 /* ── Scroll-triggered wrapper ── */
@@ -51,92 +52,7 @@ const steps = [
   { num: "03", title: "We stay until it sticks.", desc: "Implementation, habit building, and support until AI is part of how your team operates every day." },
 ];
 
-/* ── Animated hero graphic: orbiting nodes around a warm core ── */
-const HeroGraphic = () => {
-  const nodes = [
-    { label: "Team", angle: 0, color: "hsl(var(--launch-purple))" },
-    { label: "Tools", angle: 60, color: "hsl(24, 90%, 58%)" },
-    { label: "Data", angle: 120, color: "hsl(var(--launch-purple))" },
-    { label: "Goals", angle: 180, color: "hsl(24, 90%, 58%)" },
-    { label: "Ideas", angle: 240, color: "hsl(var(--launch-purple))" },
-    { label: "Growth", angle: 300, color: "hsl(24, 90%, 58%)" },
-  ];
-
-  const radius = 130;
-
-  return (
-    <div className="relative w-[340px] h-[340px] md:w-[420px] md:h-[420px] mx-auto">
-      {/* Soft glow */}
-      <motion.div
-        className="absolute inset-0 rounded-full"
-        style={{
-          background: "radial-gradient(circle, hsla(24, 90%, 58%, 0.15) 0%, transparent 70%)",
-        }}
-        animate={{ scale: [1, 1.08, 1] }}
-        transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
-      />
-
-      {/* Center core */}
-      <motion.div
-        className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-28 h-28 md:w-36 md:h-36 rounded-full bg-gradient-to-br from-launch-purple to-launch-orange shadow-2xl flex items-center justify-center z-10"
-        animate={{ scale: [1, 1.04, 1] }}
-        transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
-      >
-        <span className="text-white font-bold text-lg md:text-xl text-center leading-tight">Your<br />Business</span>
-      </motion.div>
-
-      {/* Orbiting ring */}
-      <motion.div
-        className="absolute inset-0"
-        animate={{ rotate: 360 }}
-        transition={{ duration: 60, repeat: Infinity, ease: "linear" }}
-      >
-        {nodes.map((node, i) => {
-          const rad = (node.angle * Math.PI) / 180;
-          const x = Math.cos(rad) * radius;
-          const y = Math.sin(rad) * radius;
-          return (
-            <motion.div
-              key={node.label}
-              className="absolute top-1/2 left-1/2 flex items-center justify-center"
-              style={{
-                x: x - 28,
-                y: y - 28,
-                width: 56,
-                height: 56,
-              }}
-              initial={{ opacity: 0, scale: 0 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ delay: 0.3 + i * 0.15, duration: 0.5, ease: "backOut" }}
-            >
-              {/* Counter-rotate so text stays upright */}
-              <motion.div
-                animate={{ rotate: -360 }}
-                transition={{ duration: 60, repeat: Infinity, ease: "linear" }}
-                className="w-14 h-14 md:w-16 md:h-16 rounded-full shadow-lg flex items-center justify-center text-white text-xs md:text-sm font-bold"
-                style={{ backgroundColor: node.color }}
-              >
-                {node.label}
-              </motion.div>
-            </motion.div>
-          );
-        })}
-      </motion.div>
-
-      {/* Connecting lines (decorative dashed ring) */}
-      <svg className="absolute inset-0 w-full h-full" viewBox="0 0 420 420">
-        <circle
-          cx="210" cy="210" r={radius}
-          fill="none"
-          stroke="hsl(var(--launch-purple))"
-          strokeWidth="1"
-          strokeDasharray="6 8"
-          opacity="0.2"
-        />
-      </svg>
-    </div>
-  );
-};
+/* Hero illustration imported at top */
 
 /* ── Page ── */
 const Index = () => {
@@ -227,13 +143,21 @@ const Index = () => {
                 </motion.div>
               </div>
 
-              {/* Right: Animated graphic */}
+              {/* Right: Warm illustration */}
               <motion.div
-                initial={{ opacity: 0, scale: 0.85 }}
-                animate={{ opacity: 1, scale: 1 }}
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.3, ease: "easeOut" }}
               >
-                <HeroGraphic />
+                <motion.img
+                  src={heroIllustration}
+                  alt="Diverse team collaborating around a table with laptops and coffee"
+                  className="w-full max-w-lg mx-auto"
+                  width={1024}
+                  height={768}
+                  animate={{ y: [0, -8, 0] }}
+                  transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
+                />
               </motion.div>
             </div>
           </div>
