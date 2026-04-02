@@ -84,7 +84,7 @@ const Index = () => {
     <>
       <Helmet>
         <title>Launch by Lunch - Approachable AI Innovation</title>
-        <meta name="description" content="Approachable innovation. AI built for your team, not around it. We help small and mid-sized businesses adopt AI in a practical, people-first way." />
+        <meta name="description" content="Approachable innovation. Same team, new superpowers. We help small and mid-sized businesses adopt AI in a practical, people-first way." />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://launchbylunch.com/" />
         <meta property="og:title" content="Launch by Lunch - Approachable AI Innovation" />
