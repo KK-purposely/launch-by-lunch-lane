@@ -390,7 +390,7 @@ const Index = () => {
           />
           <Reveal className="relative max-w-3xl mx-auto px-4 sm:px-6 text-center">
             <h2 className="text-3xl md:text-4xl font-bold mb-6">
-              Nobody got replaced. Everybody got better.
+              <span className="bg-gradient-to-r from-white via-launch-orange to-white bg-clip-text text-transparent">Nobody got replaced. Everybody got better.</span>
             </h2>
             <p className="text-lg md:text-xl text-white/80 leading-relaxed">
               Your people spend less time on the work that was eating their week. More time on the strategy, the relationships, the things that actually grow your business. That's what AI is supposed to do. That's what we're here to build.
