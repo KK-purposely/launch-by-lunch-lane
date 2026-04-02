@@ -118,12 +118,12 @@ const Index = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16 items-center">
               <div>
                 <motion.h1
-                  className="text-5xl md:text-6xl lg:text-7xl font-bold text-launch-purple mb-6 leading-[1.1]"
+                  className="text-5xl md:text-6xl lg:text-7xl font-bold mb-6 leading-[1.1]"
                   initial={{ opacity: 0, y: 30 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.7, ease: "easeOut" }}
                 >
-                  Approachable Innovation (AI).
+                  <span className="bg-gradient-to-r from-launch-purple via-pink-500 to-launch-orange bg-clip-text text-transparent">Approachable Innovation (AI).</span>
                 </motion.h1>
                 <motion.p
                   className="text-xl md:text-2xl text-muted-foreground max-w-lg mb-10 leading-relaxed"
