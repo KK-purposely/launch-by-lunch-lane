@@ -363,8 +363,8 @@ const Index = () => {
         <section id="how-it-works" className="py-16 md:py-24 bg-white">
           <div className="max-w-5xl mx-auto px-4 sm:px-6">
             <Reveal>
-              <h2 className="text-3xl md:text-4xl font-bold text-launch-purple mb-14 text-center">
-                Here's how it works.
+              <h2 className="text-3xl md:text-4xl font-bold mb-14 text-center">
+                <span className="bg-gradient-to-r from-launch-purple via-pink-500 to-launch-orange bg-clip-text text-transparent">Here's how it works.</span>
               </h2>
             </Reveal>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
