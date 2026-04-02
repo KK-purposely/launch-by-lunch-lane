@@ -3,7 +3,6 @@ import { Helmet } from "react-helmet-async";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Zap, Check, Target, Sprout, Handshake } from "lucide-react";
 import { motion, useInView, useAnimation } from "framer-motion";
-import heroIllustration from "@/assets/hero-illustration.png";
 import Footer from "@/components/Footer";
 
 /* ── Scroll-triggered wrapper ── */
@@ -119,12 +118,12 @@ const Index = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16 items-center">
               <div>
                 <motion.h1
-                  className="text-5xl md:text-6xl lg:text-7xl font-bold text-launch-purple mb-6 leading-[1.1]"
+                  className="text-5xl md:text-6xl lg:text-7xl font-bold mb-6 leading-[1.1]"
                   initial={{ opacity: 0, y: 30 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.7, ease: "easeOut" }}
                 >
-                  Approachable Innovation (AI).
+                  <span className="bg-gradient-to-r from-launch-purple via-pink-500 to-launch-orange bg-clip-text text-transparent">Approachable Innovation (AI).</span>
                 </motion.h1>
                 <motion.p
                   className="text-xl md:text-2xl text-muted-foreground max-w-lg mb-10 leading-relaxed"
@@ -166,19 +165,36 @@ const Index = () => {
               </div>
 
               <motion.div
+                className="flex flex-col items-center justify-center gap-6 w-full"
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.3, ease: "easeOut" }}
               >
-                <motion.img
-                  src={heroIllustration}
-                  alt="Diverse team collaborating around a table with laptops and coffee"
-                  className="w-full max-w-lg mx-auto"
-                  width={1024}
-                  height={768}
-                  animate={{ y: [0, -8, 0] }}
-                  transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
+                <img
+                  src="/lovable-uploads/8f3eba1c-0f11-4411-9774-5671f6239bf2.png"
+                  alt="Launch by Lunch Logo"
+                  className="h-[148px] md:h-[184px] w-auto mb-2"
                 />
+
+                <Button
+                  size="lg"
+                  className="group w-full max-w-sm bg-gradient-to-r from-launch-purple to-launch-orange hover:from-launch-orange hover:to-launch-purple text-white px-8 py-6 text-lg rounded-full font-medium transition-all duration-300 shadow-lg hover:shadow-xl"
+                  onClick={() => window.open("https://calendly.com/karen-launchbylunch/30min", "_blank")}
+                >
+                  <span className="flex items-center gap-2">
+                    Book a Consultation
+                    <ArrowRight className="h-5 w-5 group-hover:translate-x-1 transition-transform" />
+                  </span>
+                </Button>
+
+                <Button
+                  variant="outline"
+                  size="lg"
+                  className="w-full max-w-sm px-8 py-6 text-lg border-launch-orange text-launch-orange hover:bg-launch-orange hover:text-white rounded-full font-medium transition-all duration-300"
+                  onClick={() => window.open("https://learn.launchbylunch.co/?modal=signup", "_blank")}
+                >
+                  Get Our Newsletter
+                </Button>
               </motion.div>
             </div>
           </div>
@@ -191,8 +207,8 @@ const Index = () => {
               <p className="text-sm font-bold uppercase tracking-[0.2em] text-launch-orange text-center mb-4">
                 The real cost of the status quo
               </p>
-              <h2 className="text-3xl md:text-5xl font-bold text-launch-purple mb-4 text-center leading-tight">
-                This is how your business is probably working right now.
+              <h2 className="text-3xl md:text-5xl font-bold mb-4 text-center leading-tight">
+                <span className="bg-gradient-to-r from-launch-purple via-pink-500 to-launch-orange bg-clip-text text-transparent">This is how your business is probably working right now.</span>
               </h2>
               <p className="text-lg text-muted-foreground text-center max-w-3xl mx-auto mb-16 leading-relaxed">
                 Most teams are operating across a mess of disconnected tools. Information lives in emails, docs, Slack, and people's heads. Work gets duplicated, dropped, or delayed. Nobody has a clear view of what's actually happening.
@@ -243,11 +259,11 @@ const Index = () => {
                   <span className="inline-block bg-launch-orange text-white text-sm font-bold px-5 py-2 rounded-full mb-6">
                     The LBL difference
                   </span>
-                  <h2 className="text-3xl md:text-5xl font-bold text-launch-purple leading-tight mb-2">
-                    AI isn't coming for your team.
+                  <h2 className="text-3xl md:text-5xl font-bold leading-tight mb-2">
+                    <span className="bg-gradient-to-r from-launch-purple via-pink-500 to-launch-orange bg-clip-text text-transparent">AI isn't coming for your team.</span>
                   </h2>
-                  <h2 className="text-3xl md:text-5xl font-bold text-launch-orange leading-tight mb-6">
-                    It's coming for their to-do list.
+                  <h2 className="text-3xl md:text-5xl font-bold leading-tight mb-6">
+                    <span className="bg-gradient-to-r from-launch-orange via-pink-500 to-launch-purple bg-clip-text text-transparent">It's coming for their to-do list.</span>
                   </h2>
                   <p className="text-lg text-muted-foreground leading-relaxed">
                     The repetitive work. The stuff that eats hours without making you any money. That's what we help your team hand off, so they can get back to the work only they can do.
@@ -311,8 +327,8 @@ const Index = () => {
                   <p className="text-sm font-bold uppercase tracking-[0.2em] text-launch-orange mb-4">
                     What nobody else is saying
                   </p>
-                  <h2 className="text-3xl md:text-5xl font-bold text-white leading-tight mb-6">
-                    This is culture change. We treat it that way.
+                  <h2 className="text-3xl md:text-5xl font-bold leading-tight mb-6">
+                    <span className="bg-gradient-to-r from-white via-launch-orange to-white bg-clip-text text-transparent">This is culture change. We treat it that way.</span>
                   </h2>
                   <p className="text-lg text-white/70 leading-relaxed">
                     A new tool won't do it. A one-day training won't either. Real adoption is a shift in how your team thinks about their work. The habits they build. The confidence they develop. The shared language that makes it feel like theirs, not something handed down from the top. We help you build that together.
@@ -347,8 +363,8 @@ const Index = () => {
         <section id="how-it-works" className="py-16 md:py-24 bg-white">
           <div className="max-w-5xl mx-auto px-4 sm:px-6">
             <Reveal>
-              <h2 className="text-3xl md:text-4xl font-bold text-launch-purple mb-14 text-center">
-                Here's how it works.
+              <h2 className="text-3xl md:text-4xl font-bold mb-14 text-center">
+                <span className="bg-gradient-to-r from-launch-purple via-pink-500 to-launch-orange bg-clip-text text-transparent">Here's how it works.</span>
               </h2>
             </Reveal>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -374,7 +390,7 @@ const Index = () => {
           />
           <Reveal className="relative max-w-3xl mx-auto px-4 sm:px-6 text-center">
             <h2 className="text-3xl md:text-4xl font-bold mb-6">
-              Nobody got replaced. Everybody got better.
+              <span className="bg-gradient-to-r from-white via-launch-orange to-white bg-clip-text text-transparent">Nobody got replaced. Everybody got better.</span>
             </h2>
             <p className="text-lg md:text-xl text-white/80 leading-relaxed">
               Your people spend less time on the work that was eating their week. More time on the strategy, the relationships, the things that actually grow your business. That's what AI is supposed to do. That's what we're here to build.
@@ -385,8 +401,8 @@ const Index = () => {
         {/* ═══ FINAL CTA ═══ */}
         <section className="py-16 md:py-24 bg-gradient-to-br from-launch-light via-white to-orange-50">
           <Reveal className="max-w-3xl mx-auto px-4 sm:px-6 text-center">
-            <h2 className="text-3xl md:text-4xl font-bold text-launch-purple mb-4">
-              Most AI rollouts fail because nobody brought the people along.
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">
+              <span className="bg-gradient-to-r from-launch-purple via-pink-500 to-launch-orange bg-clip-text text-transparent">Most AI rollouts fail because nobody brought the people along.</span>
             </h2>
             <p className="text-xl md:text-2xl font-semibold text-launch-orange mb-8">
               We start there.
