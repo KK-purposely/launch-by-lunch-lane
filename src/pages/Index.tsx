@@ -84,7 +84,7 @@ const Index = () => {
     <>
       <Helmet>
         <title>Launch by Lunch - Approachable AI Innovation</title>
-        <meta name="description" content="Approachable innovation. AI built for your team, not around it. We help small and mid-sized businesses adopt AI in a practical, people-first way." />
+        <meta name="description" content="Approachable innovation. Same team, new superpowers. We help small and mid-sized businesses adopt AI in a practical, people-first way." />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://launchbylunch.com/" />
         <meta property="og:title" content="Launch by Lunch - Approachable AI Innovation" />
@@ -132,7 +132,7 @@ const Index = () => {
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.7, delay: 0.2, ease: "easeOut" }}
                 >
-                  Same team, new superpowers. Built for your team, not around it.
+                  Same team, new superpowers.
                 </motion.p>
                 <motion.div
                   className="flex flex-col sm:flex-row items-start gap-4"
