@@ -3,7 +3,6 @@ import { Helmet } from "react-helmet-async";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Zap, Check, Target, Sprout, Handshake } from "lucide-react";
 import { motion, useInView, useAnimation } from "framer-motion";
-import heroIllustration from "@/assets/hero-illustration.png";
 import Footer from "@/components/Footer";
 
 /* ── Scroll-triggered wrapper ── */
