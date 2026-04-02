@@ -1,7 +1,7 @@
 import { useRef, useEffect } from "react";
 import { Helmet } from "react-helmet-async";
 import { Button } from "@/components/ui/button";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, Zap, Check, Target, Sprout, Handshake } from "lucide-react";
 import { motion, useInView, useAnimation } from "framer-motion";
 import heroIllustration from "@/assets/hero-illustration.png";
 import Footer from "@/components/Footer";
@@ -33,26 +33,50 @@ const Reveal = ({ children, className = "", delay = 0 }: { children: React.React
 };
 
 /* ── Data ── */
-const stats = {
-  pain: [
-    { stat: "63%", text: "of employees say too many tech tools are actively disrupting their work." },
-    { stat: "53%", text: "say they spend a significant part of their day on busywork instead of real work." },
-    { stat: "4+", text: "hours a week wasted by teams duplicating work that already got done." },
-  ],
-  flip: [
-    { stat: "40%", text: "boost in productivity for teams that adopt AI the right way." },
-    { stat: "81%", text: "higher job satisfaction among employees who actually use AI in their work." },
-    { stat: "60%", text: "report meaningful stress reduction once the repetitive stuff gets handled." },
-  ],
-};
+const painStats = [
+  { stat: "63%", text: "of employees say too many tech tools are actively disrupting their work" },
+  { stat: "53%", text: "spend a significant part of their day on busywork instead of real work" },
+  { stat: "4+ hrs", text: "wasted every week duplicating work that already got done" },
+];
+
+const flipStats = [
+  { stat: "40%", text: "boost in productivity for teams that adopt AI the right way" },
+  { stat: "81%", text: "higher job satisfaction among employees who actually use AI in their work" },
+  { stat: "60%", text: "report meaningful stress reduction once the repetitive stuff gets handled" },
+];
+
+const culturePoints = [
+  {
+    icon: Target,
+    title: "We listen before we build anything",
+    desc: "Every team is different. We start with your hesitations, your goals, your people's reality before we recommend a single tool.",
+  },
+  {
+    icon: Sprout,
+    title: "Habits over one-time training",
+    desc: "We don't drop a playbook and disappear. We build the routines that make AI a natural part of how your team works every day.",
+  },
+  {
+    icon: Handshake,
+    title: "Your people come along for the ride",
+    desc: "Nobody gets left behind or blindsided. We bring your whole team forward together, at a pace that feels right.",
+  },
+];
+
+const aiTasks = [
+  { label: "Compiling weekly reports", ai: true },
+  { label: "Scheduling and follow-ups", ai: true },
+  { label: "Drafting first versions", ai: true },
+  { label: "Client strategy and relationships", ai: false },
+  { label: "Creative thinking and decisions", ai: false },
+  { label: "The work that actually grows the business", ai: false },
+];
 
 const steps = [
   { num: "01", title: "We listen.", desc: "To your team, your goals, your hesitations. All of it. Before we recommend anything." },
   { num: "02", title: "We build a plan that fits.", desc: "Not a template. A real plan built around the way you actually work." },
   { num: "03", title: "We stay until it sticks.", desc: "Implementation, habit building, and support until AI is part of how your team operates every day." },
 ];
-
-/* Hero illustration imported at top */
 
 /* ── Page ── */
 const Index = () => {
@@ -80,7 +104,6 @@ const Index = () => {
         {/* ═══ HERO ═══ */}
         <section className="relative overflow-hidden">
           <div className="absolute inset-0 bg-gradient-to-br from-launch-light via-white to-orange-50" />
-          {/* Decorative blobs */}
           <motion.div
             className="absolute -top-32 -left-32 w-96 h-96 rounded-full bg-launch-purple/5 blur-3xl"
             animate={{ x: [0, 30, 0], y: [0, 20, 0] }}
@@ -94,7 +117,6 @@ const Index = () => {
 
           <div className="relative max-w-6xl mx-auto px-4 sm:px-6 py-20 md:py-32">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16 items-center">
-              {/* Left: Copy */}
               <div>
                 <motion.h1
                   className="text-5xl md:text-6xl lg:text-7xl font-bold text-launch-purple mb-6 leading-[1.1]"
@@ -143,7 +165,6 @@ const Index = () => {
                 </motion.div>
               </div>
 
-              {/* Right: Warm illustration */}
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
@@ -163,70 +184,163 @@ const Index = () => {
           </div>
         </section>
 
-        {/* ═══ GUIDE ═══ */}
+        {/* ═══ STATS — THE REAL COST ═══ */}
         <section className="py-16 md:py-24 bg-white">
-          <Reveal className="max-w-3xl mx-auto px-4 sm:px-6 text-center">
-            <h2 className="text-3xl md:text-4xl font-bold text-launch-purple mb-6">
-              AI isn't coming for your team. It's coming for their to-do list.
-            </h2>
-            <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
-              The repetitive work. The stuff that eats hours without making you any money. That's what we help your team hand off, so they can get back to the work only they can do.
-            </p>
-          </Reveal>
-        </section>
-
-        {/* ═══ STATS ═══ */}
-        <section className="py-16 md:py-24 bg-launch-light">
-          <div className="max-w-5xl mx-auto px-4 sm:px-6">
+          <div className="max-w-6xl mx-auto px-4 sm:px-6">
             <Reveal>
-              <h2 className="text-3xl md:text-4xl font-bold text-launch-purple mb-4 text-center">
+              <p className="text-sm font-bold uppercase tracking-[0.2em] text-launch-orange text-center mb-4">
+                The real cost of the status quo
+              </p>
+              <h2 className="text-3xl md:text-5xl font-bold text-launch-purple mb-4 text-center leading-tight">
                 This is how your business is probably working right now.
               </h2>
-              <p className="text-lg text-muted-foreground text-center max-w-3xl mx-auto mb-14 leading-relaxed">
-                Most teams are operating across a mess of disconnected tools. Information lives in emails, docs, Slack, and people's heads. Work gets duplicated, dropped, or delayed. Nobody has a clear view of what's actually happening. Simple things take too long because nothing is connected. That's not a people problem. It's a systems problem. And it's costing you.
+              <p className="text-lg text-muted-foreground text-center max-w-3xl mx-auto mb-16 leading-relaxed">
+                Most teams are operating across a mess of disconnected tools. Information lives in emails, docs, Slack, and people's heads. Work gets duplicated, dropped, or delayed. Nobody has a clear view of what's actually happening.
               </p>
             </Reveal>
 
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-14">
-              {stats.pain.map((item, i) => (
-                <Reveal key={i} delay={i * 0.15}>
-                  <div className="bg-white rounded-2xl p-8 text-center shadow-sm border border-border h-full">
-                    <p className="text-4xl md:text-5xl font-bold text-launch-purple mb-3">{item.stat}</p>
-                    <p className="text-muted-foreground text-lg">{item.text}</p>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+              {/* TODAY card */}
+              <Reveal>
+                <div className="bg-gray-50 rounded-3xl p-8 md:p-10 h-full">
+                  <p className="text-xs font-bold uppercase tracking-[0.2em] text-muted-foreground mb-8">Today</p>
+                  <div className="space-y-8">
+                    {painStats.map((item, i) => (
+                      <div key={i}>
+                        <p className="text-4xl md:text-5xl font-bold text-gray-600 mb-2">{item.stat}</p>
+                        <p className="text-muted-foreground text-lg">{item.text}</p>
+                      </div>
+                    ))}
                   </div>
-                </Reveal>
-              ))}
+                </div>
+              </Reveal>
+
+              {/* AFTER LBL card */}
+              <Reveal delay={0.15}>
+                <div className="bg-launch-purple rounded-3xl p-8 md:p-10 h-full">
+                  <p className="text-xs font-bold uppercase tracking-[0.2em] text-white/60 mb-8">After LBL</p>
+                  <div className="space-y-8">
+                    {flipStats.map((item, i) => (
+                      <div key={i}>
+                        <p className="text-4xl md:text-5xl font-bold text-launch-orange mb-2">{item.stat}</p>
+                        <p className="text-white/80 text-lg">{item.text}</p>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              </Reveal>
             </div>
+          </div>
+        </section>
 
-            <Reveal>
-              <p className="text-2xl md:text-3xl font-bold text-launch-purple text-center mb-14">
-                Here's what changes when you get this right.
-              </p>
-            </Reveal>
+        {/* ═══ LBL DIFFERENCE — AI TASK LIST ═══ */}
+        <section className="py-16 md:py-24 bg-gray-50">
+          <div className="max-w-6xl mx-auto px-4 sm:px-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16 items-center">
+              {/* Left copy */}
+              <Reveal>
+                <div>
+                  <span className="inline-block bg-launch-orange text-white text-sm font-bold px-5 py-2 rounded-full mb-6">
+                    The LBL difference
+                  </span>
+                  <h2 className="text-3xl md:text-5xl font-bold text-launch-purple leading-tight mb-2">
+                    AI isn't coming for your team.
+                  </h2>
+                  <h2 className="text-3xl md:text-5xl font-bold text-launch-orange leading-tight mb-6">
+                    It's coming for their to-do list.
+                  </h2>
+                  <p className="text-lg text-muted-foreground leading-relaxed">
+                    The repetitive work. The stuff that eats hours without making you any money. That's what we help your team hand off, so they can get back to the work only they can do.
+                  </p>
+                </div>
+              </Reveal>
 
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              {stats.flip.map((item, i) => (
-                <Reveal key={i} delay={i * 0.15}>
-                  <div className="bg-white rounded-2xl p-8 text-center shadow-sm border border-launch-orange/20 h-full hover:shadow-lg hover:border-launch-orange/40 transition-all duration-300">
-                    <p className="text-4xl md:text-5xl font-bold text-launch-orange mb-3">{item.stat}</p>
-                    <p className="text-muted-foreground text-lg">{item.text}</p>
+              {/* Right task list */}
+              <Reveal delay={0.15}>
+                <div className="bg-white rounded-2xl p-8 shadow-lg border border-border">
+                  <p className="text-xs font-bold uppercase tracking-[0.2em] text-muted-foreground mb-6">
+                    Your team's week, reimagined
+                  </p>
+                  <div className="space-y-4">
+                    {aiTasks.map((task, i) => (
+                      <div
+                        key={i}
+                        className="flex items-center justify-between py-3 border-b border-border last:border-0"
+                      >
+                        <div className="flex items-center gap-3">
+                          <div className={`w-8 h-8 rounded-full flex items-center justify-center ${
+                            task.ai
+                              ? "bg-launch-orange/10"
+                              : "bg-green-100"
+                          }`}>
+                            {task.ai ? (
+                              <Zap className="h-4 w-4 text-launch-orange" />
+                            ) : (
+                              <Check className="h-4 w-4 text-green-600" />
+                            )}
+                          </div>
+                          <span className={`text-base font-medium ${
+                            task.ai ? "text-muted-foreground line-through" : "text-foreground"
+                          }`}>
+                            {task.label}
+                          </span>
+                        </div>
+                        <span className={`text-xs font-bold px-3 py-1 rounded-full ${
+                          task.ai
+                            ? "bg-launch-orange/10 text-launch-orange"
+                            : "bg-launch-purple/10 text-launch-purple"
+                        }`}>
+                          {task.ai ? "AI handles it" : "Your team"}
+                        </span>
+                      </div>
+                    ))}
                   </div>
-                </Reveal>
-              ))}
+                </div>
+              </Reveal>
             </div>
           </div>
         </section>
 
         {/* ═══ CULTURE CHANGE ═══ */}
-        <section className="py-16 md:py-24 bg-gradient-to-br from-orange-50 via-launch-light to-white">
-          <Reveal className="max-w-3xl mx-auto px-4 sm:px-6 text-center">
-            <h2 className="text-3xl md:text-4xl font-bold text-launch-purple mb-6">
-              This is culture change. We treat it that way.
-            </h2>
-            <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
-              A new tool won't do it. A one-day training won't either. Real adoption is a shift in how your team thinks about their work. The habits they build. The confidence they develop. The shared language that makes it feel like theirs, not something handed down from the top. We help you build that together.
-            </p>
-          </Reveal>
+        <section className="py-16 md:py-24 bg-launch-purple text-white">
+          <div className="max-w-6xl mx-auto px-4 sm:px-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16 items-start">
+              {/* Left copy */}
+              <Reveal>
+                <div>
+                  <p className="text-sm font-bold uppercase tracking-[0.2em] text-launch-orange mb-4">
+                    What nobody else is saying
+                  </p>
+                  <h2 className="text-3xl md:text-5xl font-bold text-white leading-tight mb-6">
+                    This is culture change. We treat it that way.
+                  </h2>
+                  <p className="text-lg text-white/70 leading-relaxed">
+                    A new tool won't do it. A one-day training won't either. Real adoption is a shift in how your team thinks about their work. The habits they build. The confidence they develop. The shared language that makes it feel like theirs, not something handed down from the top. We help you build that together.
+                  </p>
+                </div>
+              </Reveal>
+
+              {/* Right icon bullets */}
+              <Reveal delay={0.15}>
+                <div className="space-y-8">
+                  {culturePoints.map((point, i) => {
+                    const Icon = point.icon;
+                    return (
+                      <div key={i} className="flex items-start gap-4">
+                        <div className="w-12 h-12 rounded-xl bg-white/10 flex items-center justify-center flex-shrink-0">
+                          <Icon className="h-6 w-6 text-launch-orange" />
+                        </div>
+                        <div>
+                          <h3 className="text-lg font-bold text-white mb-1">{point.title}</h3>
+                          <p className="text-white/70 leading-relaxed">{point.desc}</p>
+                        </div>
+                      </div>
+                    );
+                  })}
+                </div>
+              </Reveal>
+            </div>
+          </div>
         </section>
 
         {/* ═══ HOW IT WORKS ═══ */}
@@ -265,20 +379,6 @@ const Index = () => {
             <p className="text-lg md:text-xl text-white/80 leading-relaxed">
               Your people spend less time on the work that was eating their week. More time on the strategy, the relationships, the things that actually grow your business. That's what AI is supposed to do. That's what we're here to build.
             </p>
-          </Reveal>
-        </section>
-
-        {/* ═══ SOCIAL PROOF ═══ */}
-        <section className="py-16 md:py-24 bg-white">
-          <Reveal className="max-w-4xl mx-auto px-4 sm:px-6 text-center">
-            <p className="text-lg text-muted-foreground mb-10">
-              We've helped dozens of small and mid-sized businesses move from AI-curious to AI-operational.
-            </p>
-            <div className="bg-launch-light rounded-2xl p-8 md:p-12 border border-border max-w-2xl mx-auto">
-              <p className="text-lg md:text-xl text-foreground italic leading-relaxed mb-4">
-                "Testimonials coming soon."
-              </p>
-            </div>
           </Reveal>
         </section>
 
