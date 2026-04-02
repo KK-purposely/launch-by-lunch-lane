@@ -131,7 +131,7 @@ const Index = () => {
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.7, delay: 0.2, ease: "easeOut" }}
                 >
-                  Same team, new superpowers. We cut through the noise and give leaders the right tools, training, and strategy to adopt AI with confidence.
+                  Your team, new superpowers. We cut through the noise and give leaders the right tools, training, and strategy to adopt AI with confidence.
                 </motion.p>
                 <motion.div
                   className="flex flex-col sm:flex-row items-start gap-4"
