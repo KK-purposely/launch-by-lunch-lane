@@ -110,7 +110,7 @@ const Index = () => {
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.7, delay: 0.2, ease: "easeOut" }}
                 >
-                  That's our kind of AI. Built for your team, not around it.
+                  Same team, new superpowers. Built for your team, not around it.
                 </motion.p>
                 <motion.div
                   className="flex flex-col sm:flex-row items-start gap-4"
