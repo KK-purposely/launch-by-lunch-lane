@@ -327,8 +327,8 @@ const Index = () => {
                   <p className="text-sm font-bold uppercase tracking-[0.2em] text-launch-orange mb-4">
                     What nobody else is saying
                   </p>
-                  <h2 className="text-3xl md:text-5xl font-bold text-white leading-tight mb-6">
-                    This is culture change. We treat it that way.
+                  <h2 className="text-3xl md:text-5xl font-bold leading-tight mb-6">
+                    <span className="bg-gradient-to-r from-white via-launch-orange to-white bg-clip-text text-transparent">This is culture change. We treat it that way.</span>
                   </h2>
                   <p className="text-lg text-white/70 leading-relaxed">
                     A new tool won't do it. A one-day training won't either. Real adoption is a shift in how your team thinks about their work. The habits they build. The confidence they develop. The shared language that makes it feel like theirs, not something handed down from the top. We help you build that together.
