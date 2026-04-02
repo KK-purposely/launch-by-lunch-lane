@@ -401,8 +401,8 @@ const Index = () => {
         {/* ═══ FINAL CTA ═══ */}
         <section className="py-16 md:py-24 bg-gradient-to-br from-launch-light via-white to-orange-50">
           <Reveal className="max-w-3xl mx-auto px-4 sm:px-6 text-center">
-            <h2 className="text-3xl md:text-4xl font-bold text-launch-purple mb-4">
-              Most AI rollouts fail because nobody brought the people along.
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">
+              <span className="bg-gradient-to-r from-launch-purple via-pink-500 to-launch-orange bg-clip-text text-transparent">Most AI rollouts fail because nobody brought the people along.</span>
             </h2>
             <p className="text-xl md:text-2xl font-semibold text-launch-orange mb-8">
               We start there.
