@@ -102,7 +102,7 @@ const Index = () => {
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.7, ease: "easeOut" }}
                 >
-                  Approachable Innovation.
+                  Approachable Innovation (AI).
                 </motion.h1>
                 <motion.p
                   className="text-xl md:text-2xl text-muted-foreground max-w-lg mb-10 leading-relaxed"
