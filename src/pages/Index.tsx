@@ -259,11 +259,11 @@ const Index = () => {
                   <span className="inline-block bg-launch-orange text-white text-sm font-bold px-5 py-2 rounded-full mb-6">
                     The LBL difference
                   </span>
-                  <h2 className="text-3xl md:text-5xl font-bold text-launch-purple leading-tight mb-2">
-                    AI isn't coming for your team.
+                  <h2 className="text-3xl md:text-5xl font-bold leading-tight mb-2">
+                    <span className="bg-gradient-to-r from-launch-purple via-pink-500 to-launch-orange bg-clip-text text-transparent">AI isn't coming for your team.</span>
                   </h2>
-                  <h2 className="text-3xl md:text-5xl font-bold text-launch-orange leading-tight mb-6">
-                    It's coming for their to-do list.
+                  <h2 className="text-3xl md:text-5xl font-bold leading-tight mb-6">
+                    <span className="bg-gradient-to-r from-launch-orange via-pink-500 to-launch-purple bg-clip-text text-transparent">It's coming for their to-do list.</span>
                   </h2>
                   <p className="text-lg text-muted-foreground leading-relaxed">
                     The repetitive work. The stuff that eats hours without making you any money. That's what we help your team hand off, so they can get back to the work only they can do.
