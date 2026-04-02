@@ -165,19 +165,36 @@ const Index = () => {
               </div>
 
               <motion.div
+                className="flex flex-col items-center justify-center gap-6 w-full"
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.3, ease: "easeOut" }}
               >
-                <motion.img
-                  src={heroIllustration}
-                  alt="Diverse team collaborating around a table with laptops and coffee"
-                  className="w-full max-w-lg mx-auto"
-                  width={1024}
-                  height={768}
-                  animate={{ y: [0, -8, 0] }}
-                  transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
+                <img
+                  src="/lovable-uploads/8f3eba1c-0f11-4411-9774-5671f6239bf2.png"
+                  alt="Launch by Lunch Logo"
+                  className="h-[148px] md:h-[184px] w-auto mb-2"
                 />
+
+                <Button
+                  size="lg"
+                  className="group w-full max-w-sm bg-gradient-to-r from-launch-purple to-launch-orange hover:from-launch-orange hover:to-launch-purple text-white px-8 py-6 text-lg rounded-full font-medium transition-all duration-300 shadow-lg hover:shadow-xl"
+                  onClick={() => window.open("https://calendly.com/karen-launchbylunch/30min", "_blank")}
+                >
+                  <span className="flex items-center gap-2">
+                    Book a Consultation
+                    <ArrowRight className="h-5 w-5 group-hover:translate-x-1 transition-transform" />
+                  </span>
+                </Button>
+
+                <Button
+                  variant="outline"
+                  size="lg"
+                  className="w-full max-w-sm px-8 py-6 text-lg border-launch-orange text-launch-orange hover:bg-launch-orange hover:text-white rounded-full font-medium transition-all duration-300"
+                  onClick={() => window.open("https://learn.launchbylunch.co/?modal=signup", "_blank")}
+                >
+                  Get Our Newsletter
+                </Button>
               </motion.div>
             </div>
           </div>
