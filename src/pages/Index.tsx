@@ -207,8 +207,8 @@ const Index = () => {
               <p className="text-sm font-bold uppercase tracking-[0.2em] text-launch-orange text-center mb-4">
                 The real cost of the status quo
               </p>
-              <h2 className="text-3xl md:text-5xl font-bold text-launch-purple mb-4 text-center leading-tight">
-                This is how your business is probably working right now.
+              <h2 className="text-3xl md:text-5xl font-bold mb-4 text-center leading-tight">
+                <span className="bg-gradient-to-r from-launch-purple via-pink-500 to-launch-orange bg-clip-text text-transparent">This is how your business is probably working right now.</span>
               </h2>
               <p className="text-lg text-muted-foreground text-center max-w-3xl mx-auto mb-16 leading-relaxed">
                 Most teams are operating across a mess of disconnected tools. Information lives in emails, docs, Slack, and people's heads. Work gets duplicated, dropped, or delayed. Nobody has a clear view of what's actually happening.
