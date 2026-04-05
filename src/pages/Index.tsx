@@ -128,7 +128,7 @@ const Index = () => {
                   <span className="bg-gradient-to-r from-launch-orange via-pink-500 to-launch-purple bg-clip-text text-transparent whitespace-nowrap">without the Anxiety.</span>
                 </motion.h1>
                 <motion.p
-                  className="font-subhead text-xl md:text-2xl lg:text-3xl text-launch-purple/70 max-w-xl mb-10 leading-snug italic"
+                  className="font-subhead text-lg md:text-xl lg:text-2xl text-launch-purple max-w-xl mb-10 leading-snug italic"
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.7, delay: 0.2, ease: "easeOut" }}
