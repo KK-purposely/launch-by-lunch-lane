@@ -1,4 +1,5 @@
 import { useRef, useEffect } from "react";
+import heroIllustration from "@/assets/hero-sunrise-illustration.png";
 import { Helmet } from "react-helmet-async";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Zap, Check, Target, Sprout, Handshake } from "lucide-react";
