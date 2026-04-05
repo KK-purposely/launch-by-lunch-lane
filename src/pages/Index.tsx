@@ -123,9 +123,9 @@ const Index = () => {
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.7, ease: "easeOut" }}
                 >
-                  <span className="bg-gradient-to-r from-launch-purple via-pink-500 to-launch-orange bg-clip-text text-transparent">Your Team,</span>
+                  <span className="bg-gradient-to-r from-launch-purple via-pink-500 to-launch-orange bg-clip-text text-transparent">AI Adoption</span>
                   <br />
-                  <span className="bg-gradient-to-r from-launch-orange via-pink-500 to-launch-purple bg-clip-text text-transparent whitespace-nowrap">New Superpowers.</span>
+                  <span className="bg-gradient-to-r from-launch-orange via-pink-500 to-launch-purple bg-clip-text text-transparent whitespace-nowrap">without the Anxiety.</span>
                 </motion.h1>
                 <motion.p
                   className="text-2xl md:text-3xl lg:text-4xl text-muted-foreground max-w-xl mb-10 leading-snug font-light italic"
@@ -133,7 +133,7 @@ const Index = () => {
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.7, delay: 0.2, ease: "easeOut" }}
                 >
-                  Strategic AI adoption mapping on the journey from overwhelmed to operational.
+                  We help teams move from overwhelmed to operational, one step at a time.
                 </motion.p>
                 <motion.div
                   className="flex flex-col sm:flex-row items-start gap-4"
