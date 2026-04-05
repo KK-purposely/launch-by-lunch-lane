@@ -133,7 +133,7 @@ const Index = () => {
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.7, delay: 0.2, ease: "easeOut" }}
                 >
-                  AI adoption for people-first teams. All the innovation without the intimidation.
+                  AI adoption guidance on the journey from overwhelmed to operational.
                 </motion.p>
                 <motion.div
                   className="flex flex-col sm:flex-row items-start gap-4"
