@@ -168,15 +168,15 @@ const Index = () => {
               </div>
 
               <motion.div
-                className="flex items-center justify-center w-full"
+                className="flex items-center justify-center w-full overflow-hidden"
                 initial={{ opacity: 0, scale: 0.95 }}
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.9, delay: 0.3, ease: "easeOut" }}
               >
                 <img
                   src={heroIllustration}
-                  alt="A small team looking toward a bright sunrise, representing a hopeful AI future"
-                  className="w-full max-w-md md:max-w-lg rounded-2xl shadow-xl"
+                  alt="A bright sunrise representing a hopeful future"
+                  className="w-full max-w-sm md:max-w-md rounded-2xl shadow-xl"
                   width={1024}
                   height={1024}
                 />
