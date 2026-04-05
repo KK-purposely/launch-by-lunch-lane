@@ -19,10 +19,6 @@ export default {
 			}
 		},
 		extend: {
-			fontFamily: {
-				heading: ['Nunito', 'ui-sans-serif', 'system-ui', 'sans-serif'],
-				subhead: ['Lora', 'ui-serif', 'Georgia', 'serif'],
-			},
 			colors: {
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',
