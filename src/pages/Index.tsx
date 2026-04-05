@@ -118,7 +118,7 @@ const Index = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16 items-center">
               <div>
                 <motion.h1
-                  className="text-5xl md:text-6xl lg:text-7xl font-bold mb-6 leading-[1.1]"
+                  className="font-heading text-5xl md:text-6xl lg:text-7xl font-extrabold mb-6 leading-[1.1]"
                   initial={{ opacity: 0, y: 30 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.7, ease: "easeOut" }}
@@ -128,7 +128,7 @@ const Index = () => {
                   <span className="bg-gradient-to-r from-launch-orange via-pink-500 to-launch-purple bg-clip-text text-transparent whitespace-nowrap">without the Anxiety.</span>
                 </motion.h1>
                 <motion.p
-                  className="text-xl md:text-2xl lg:text-3xl text-foreground max-w-xl mb-10 leading-snug font-semibold"
+                  className="font-subhead text-xl md:text-2xl lg:text-3xl text-launch-purple/70 max-w-xl mb-10 leading-snug italic"
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.7, delay: 0.2, ease: "easeOut" }}
