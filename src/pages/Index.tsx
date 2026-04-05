@@ -125,7 +125,7 @@ const Index = () => {
                 >
                   <span className="bg-gradient-to-r from-launch-purple via-pink-500 to-launch-orange bg-clip-text text-transparent">Your Team,</span>
                   <br />
-                  <span className="bg-gradient-to-r from-launch-orange via-pink-500 to-launch-purple bg-clip-text text-transparent">New Superpowers.</span>
+                  <span className="bg-gradient-to-r from-launch-orange via-pink-500 to-launch-purple bg-clip-text text-transparent whitespace-nowrap">New Superpowers.</span>
                 </motion.h1>
                 <motion.p
                   className="text-xl md:text-2xl text-muted-foreground max-w-lg mb-10 leading-relaxed"
