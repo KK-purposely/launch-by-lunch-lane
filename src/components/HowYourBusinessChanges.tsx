@@ -91,7 +91,7 @@ const HowYourBusinessChanges = () => {
 
         {/* Current problems */}
         <div className="mb-16 max-w-xl mx-auto">
-          <p className="text-lg md:text-xl lg:text-2xl text-launch-purple max-w-xl mb-10 leading-snug font-semibold">
+          <p className="text-xl md:text-2xl lg:text-3xl text-launch-purple max-w-xl mb-10 leading-snug font-semibold">
             Most teams are operating across a mess of disconnected tools. Information lives in emails, docs, Slack, and people's heads. Work gets duplicated, dropped, or delayed. Nobody has a clear view of what's actually happening.
           </p>
         </div>
