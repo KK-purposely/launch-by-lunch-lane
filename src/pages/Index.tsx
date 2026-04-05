@@ -123,7 +123,9 @@ const Index = () => {
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.7, ease: "easeOut" }}
                 >
-                  <span className="bg-gradient-to-r from-launch-purple via-pink-500 to-launch-orange bg-clip-text text-transparent">Approachable Innovation (AI).</span>
+                  <span className="bg-gradient-to-r from-launch-purple via-pink-500 to-launch-orange bg-clip-text text-transparent">Your Team,</span>
+                  <br />
+                  <span className="bg-gradient-to-r from-launch-orange via-pink-500 to-launch-purple bg-clip-text text-transparent">New Superpowers.</span>
                 </motion.h1>
                 <motion.p
                   className="text-xl md:text-2xl text-muted-foreground max-w-lg mb-10 leading-relaxed"
@@ -131,7 +133,7 @@ const Index = () => {
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.7, delay: 0.2, ease: "easeOut" }}
                 >
-                  Your team, new superpowers. We cut through the noise and give leaders the right tools, training, and strategy to adopt AI with confidence.
+                  Making AI Approachable Innovation.
                 </motion.p>
                 <motion.div
                   className="flex flex-col sm:flex-row items-start gap-4"
