@@ -117,7 +117,7 @@ const Index = () => {
             transition={{ duration: 10, repeat: Infinity, ease: "easeInOut" }}
           />
 
-          <div className="relative max-w-6xl mx-auto px-4 sm:px-6 py-20 md:py-32">
+          <div className="relative max-w-6xl mx-auto px-4 sm:px-6 py-12 md:py-20">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16 items-center">
               <div>
                 <motion.h1
