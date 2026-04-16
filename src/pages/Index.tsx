@@ -398,33 +398,101 @@ const Index = () => {
             </Reveal>
 
             <div className="relative max-w-4xl mx-auto">
-              {/* Vertical gradient line (centered on desktop, left on mobile) */}
-              <div className="absolute left-8 md:left-1/2 md:-translate-x-1/2 top-2 bottom-2 w-1 bg-gradient-to-b from-launch-purple via-pink-400 to-launch-orange rounded-full" />
+              {/* Winding road SVG (desktop only) */}
+              <svg
+                className="hidden md:block absolute inset-0 w-full h-full pointer-events-none"
+                viewBox="0 0 800 1200"
+                preserveAspectRatio="none"
+                aria-hidden="true"
+              >
+                <defs>
+                  <linearGradient id="roadGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                    <stop offset="0%" stopColor="hsl(270 60% 55%)" />
+                    <stop offset="50%" stopColor="hsl(330 80% 65%)" />
+                    <stop offset="100%" stopColor="hsl(25 95% 60%)" />
+                  </linearGradient>
+                  <linearGradient id="roadGradientGlow" x1="0%" y1="0%" x2="0%" y2="100%">
+                    <stop offset="0%" stopColor="hsl(270 60% 55%)" stopOpacity="0.3" />
+                    <stop offset="50%" stopColor="hsl(330 80% 65%)" stopOpacity="0.3" />
+                    <stop offset="100%" stopColor="hsl(25 95% 60%)" stopOpacity="0.3" />
+                  </linearGradient>
+                </defs>
+                {/* Glow layer */}
+                <path
+                  d="M 400 40 Q 200 180, 400 320 T 400 600 Q 600 740, 400 880 T 400 1160"
+                  stroke="url(#roadGradientGlow)"
+                  strokeWidth="32"
+                  fill="none"
+                  strokeLinecap="round"
+                />
+                {/* Main road */}
+                <path
+                  d="M 400 40 Q 200 180, 400 320 T 400 600 Q 600 740, 400 880 T 400 1160"
+                  stroke="url(#roadGradient)"
+                  strokeWidth="14"
+                  fill="none"
+                  strokeLinecap="round"
+                />
+                {/* Dashed centerline */}
+                <path
+                  d="M 400 40 Q 200 180, 400 320 T 400 600 Q 600 740, 400 880 T 400 1160"
+                  stroke="white"
+                  strokeWidth="2"
+                  strokeDasharray="10 14"
+                  fill="none"
+                  strokeLinecap="round"
+                  opacity="0.85"
+                />
+              </svg>
 
-              <div className="space-y-10 md:space-y-14">
+              {/* Mobile vertical road */}
+              <div className="md:hidden absolute left-8 top-2 bottom-2 w-3 bg-gradient-to-b from-launch-purple via-pink-400 to-launch-orange rounded-full shadow-lg" />
+              <div
+                className="md:hidden absolute left-[34px] top-2 bottom-2 w-px"
+                style={{
+                  backgroundImage: "repeating-linear-gradient(to bottom, white 0, white 8px, transparent 8px, transparent 18px)",
+                  opacity: 0.85,
+                }}
+              />
+
+              <div className="relative space-y-12 md:space-y-20">
                 {steps.map((step, i) => {
                   const isLeft = i % 2 === 0;
                   return (
                     <Reveal key={step.num} delay={i * 0.1}>
                       <div className={`relative flex items-center gap-6 md:gap-0 ${isLeft ? "md:flex-row" : "md:flex-row-reverse"}`}>
-                        {/* Number badge */}
+                        {/* Milestone marker */}
                         <div className="relative z-10 flex-shrink-0 md:absolute md:left-1/2 md:-translate-x-1/2">
+                          {/* Outer pulse ring */}
                           <motion.div
-                            className="absolute inset-0 rounded-full bg-gradient-to-br from-launch-purple to-launch-orange blur-md opacity-60"
-                            animate={{ scale: [1, 1.2, 1] }}
-                            transition={{ duration: 3, repeat: Infinity, ease: "easeInOut", delay: i * 0.3 }}
+                            className="absolute inset-0 rounded-full bg-gradient-to-br from-launch-purple to-launch-orange blur-lg opacity-70"
+                            animate={{ scale: [1, 1.35, 1], opacity: [0.5, 0.85, 0.5] }}
+                            transition={{ duration: 3, repeat: Infinity, ease: "easeInOut", delay: i * 0.4 }}
                           />
-                          <div className="relative w-16 h-16 md:w-20 md:h-20 rounded-full bg-gradient-to-br from-launch-purple to-launch-orange text-white font-bold flex items-center justify-center shadow-xl text-base md:text-lg ring-4 ring-white">
+                          {/* Pin shape */}
+                          <motion.div
+                            whileHover={{ scale: 1.1, rotate: -5 }}
+                            transition={{ type: "spring", stiffness: 300 }}
+                            className="relative w-16 h-16 md:w-20 md:h-20 rounded-full bg-gradient-to-br from-launch-purple via-pink-500 to-launch-orange text-white font-bold flex items-center justify-center shadow-2xl text-base md:text-xl ring-[6px] ring-white"
+                          >
                             {step.num}
-                          </div>
+                            {/* Inner highlight */}
+                            <div className="absolute top-2 left-3 w-3 h-3 md:w-4 md:h-4 rounded-full bg-white/40 blur-sm" />
+                          </motion.div>
                         </div>
 
                         {/* Card */}
-                        <div className={`flex-1 md:w-[calc(50%-3rem)] md:flex-none ${isLeft ? "md:mr-auto md:pr-12" : "md:ml-auto md:pl-12"}`}>
+                        <div className={`flex-1 md:w-[calc(50%-4rem)] md:flex-none ${isLeft ? "md:mr-auto md:pr-16" : "md:ml-auto md:pl-16"}`}>
                           <motion.div
-                            whileHover={{ y: -4 }}
-                            className="bg-white rounded-2xl p-7 md:p-8 border border-border shadow-md hover:shadow-2xl hover:border-launch-purple/30 transition-all duration-300 group"
+                            whileHover={{ y: -6, rotate: isLeft ? -0.5 : 0.5 }}
+                            className="relative bg-white rounded-2xl p-7 md:p-8 border border-border shadow-md hover:shadow-2xl hover:border-launch-purple/40 transition-all duration-300 group"
                           >
+                            {/* Connector arrow pointing toward the road */}
+                            <div
+                              className={`hidden md:block absolute top-1/2 -translate-y-1/2 w-3 h-3 rotate-45 bg-white border-border ${
+                                isLeft ? "-right-1.5 border-t-0 border-l-0 border-r border-b" : "-left-1.5 border-b-0 border-r-0 border-l border-t"
+                              }`}
+                            />
                             <h3 className="text-2xl md:text-3xl font-bold text-launch-purple mb-3 group-hover:translate-x-1 transition-transform duration-300">{step.title}</h3>
                             <p className="text-muted-foreground text-xl leading-relaxed">{step.desc}</p>
                           </motion.div>
@@ -434,6 +502,19 @@ const Index = () => {
                   );
                 })}
               </div>
+
+              {/* Destination flag at the end */}
+              <Reveal delay={0.6}>
+                <div className="relative flex justify-center mt-12 md:mt-16">
+                  <motion.div
+                    animate={{ y: [0, -6, 0] }}
+                    transition={{ duration: 2.5, repeat: Infinity, ease: "easeInOut" }}
+                    className="inline-flex items-center gap-2 bg-gradient-to-r from-launch-purple to-launch-orange text-white px-6 py-3 rounded-full font-bold text-lg shadow-xl"
+                  >
+                    🚩 You've arrived
+                  </motion.div>
+                </div>
+              </Reveal>
             </div>
           </div>
         </section>
