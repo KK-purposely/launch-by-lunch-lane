@@ -18,7 +18,7 @@ const Navigation = () => {
   };
 
   const servicesItems = [
-    { label: "Claude Code", to: "/claude-code", external: false },
+    { label: "Chief of Staff", to: "/claude-code", external: false },
     { label: "Community", to: "/community", external: false },
     { label: "Automations", to: "https://marketplace.launchbylunch.co/", external: true },
     { label: "Events", to: "https://luma.com/launchbylunch", external: true },
