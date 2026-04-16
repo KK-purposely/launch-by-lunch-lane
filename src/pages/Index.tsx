@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight, Zap, Check, Target, Sprout, Handshake } from "lucide-react";
 import { motion, useInView, useAnimation } from "framer-motion";
 import Footer from "@/components/Footer";
+import trustedByImg from "@/assets/trusted-by.png";
 
 /* ── Scroll-triggered wrapper ── */
 const Reveal = ({ children, className = "", delay = 0 }: { children: React.ReactNode; className?: string; delay?: number }) => {
