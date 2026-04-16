@@ -72,9 +72,11 @@ const aiTasks = [
 ];
 
 const steps = [
-  { num: "01", title: "We listen.", desc: "To your team, your goals, your hesitations. All of it. Before we recommend anything." },
-  { num: "02", title: "We build a plan that fits.", desc: "Not a template. A real plan built around the way you actually work." },
-  { num: "03", title: "We stay until it sticks.", desc: "Implementation, habit building, and support until AI is part of how your team operates every day." },
+  { num: "01", title: "Culture & Readiness Assessment", desc: "Map attitudes, fears, and opportunities. No assumptions, just listening." },
+  { num: "02", title: "Custom Adoption Roadmap", desc: "A phased plan built around your team's pace, starting with quick wins." },
+  { num: "03", title: "Hands-On Team Training", desc: "Role-specific workshops that meet every person where they are. No one gets left behind." },
+  { num: "04", title: "Leadership Coaching & Messaging", desc: "Help executives communicate the 'why' so AI feels like an upgrade, not a threat." },
+  { num: "05", title: "Measure, Iterate & Sustain", desc: "Ongoing check-ins to track what's landing and where to go next." },
 ];
 
 /* ── Page ── */
