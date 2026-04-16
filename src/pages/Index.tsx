@@ -41,7 +41,7 @@ const painStats = [
 
 const flipStats = [
   { stat: "40%", text: "boost in productivity for teams that adopt AI the right way" },
-  { stat: "81%", text: "believe that Artificial Intelligence (AI) improves their overall performance at work" },
+  { stat: "81%", text: "higher job satisfaction among employees who actually use AI in their work" },
   { stat: "60%", text: "report meaningful stress reduction once the repetitive stuff gets handled" },
 ];
 
