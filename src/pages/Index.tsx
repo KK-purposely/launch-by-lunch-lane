@@ -73,9 +73,9 @@ const aiTasks = [
 
 const steps = [
   { num: "01", title: "Culture & Readiness Assessment", desc: "Map attitudes, fears, and opportunities. No assumptions, just listening." },
-  { num: "02", title: "Custom Adoption Roadmap", desc: "A phased plan built around your team's pace, starting with quick wins." },
-  { num: "03", title: "Hands-On Team Training", desc: "Role-specific workshops that meet every person where they are. No one gets left behind." },
-  { num: "04", title: "Leadership Coaching & Messaging", desc: "Help executives communicate the 'why' so AI feels like an upgrade, not a threat." },
+  { num: "02", title: "Leadership Coaching & Messaging", desc: "Help executives communicate the 'why' so AI feels like an upgrade, not a threat." },
+  { num: "03", title: "Custom Adoption Roadmap", desc: "A phased plan built around your team's pace, starting with quick wins." },
+  { num: "04", title: "Hands-On Team Training", desc: "Role-specific workshops that meet every person where they are. No one gets left behind." },
   { num: "05", title: "Measure, Iterate & Sustain", desc: "Ongoing check-ins to track what's landing and where to go next." },
 ];
 
@@ -364,32 +364,62 @@ const Index = () => {
         </section>
 
         {/* ═══ HOW IT WORKS ═══ */}
-        <section id="how-it-works" className="py-16 md:py-24 bg-white">
-          <div className="max-w-5xl mx-auto px-4 sm:px-6">
+        <section id="how-it-works" className="py-16 md:py-24 bg-gradient-to-b from-white via-launch-light/40 to-white relative overflow-hidden">
+          {/* Decorative background blobs */}
+          <motion.div
+            className="absolute top-20 -left-20 w-72 h-72 rounded-full bg-launch-purple/10 blur-3xl"
+            animate={{ scale: [1, 1.15, 1], opacity: [0.5, 0.8, 0.5] }}
+            transition={{ duration: 8, repeat: Infinity, ease: "easeInOut" }}
+          />
+          <motion.div
+            className="absolute bottom-20 -right-20 w-72 h-72 rounded-full bg-launch-orange/10 blur-3xl"
+            animate={{ scale: [1, 1.2, 1], opacity: [0.5, 0.8, 0.5] }}
+            transition={{ duration: 10, repeat: Infinity, ease: "easeInOut", delay: 1 }}
+          />
+
+          <div className="relative max-w-5xl mx-auto px-4 sm:px-6">
             <Reveal>
-              <h2 className="text-3xl md:text-4xl font-bold mb-14 text-center">
+              <h2 className="text-4xl md:text-5xl font-bold mb-16 text-center">
                 <span className="bg-gradient-to-r from-launch-purple via-pink-500 to-launch-orange bg-clip-text text-transparent">Here's how it works.</span>
               </h2>
             </Reveal>
-            <div className="relative max-w-3xl mx-auto">
-              {/* Vertical line */}
-              <div className="absolute left-6 md:left-8 top-2 bottom-2 w-0.5 bg-gradient-to-b from-launch-purple via-pink-400 to-launch-orange" />
-              <div className="space-y-8">
-                {steps.map((step, i) => (
-                  <Reveal key={step.num} delay={i * 0.1}>
-                    <div className="relative flex items-start gap-6 md:gap-8">
-                      {/* Number badge */}
-                      <div className="relative z-10 flex-shrink-0 w-12 h-12 md:w-16 md:h-16 rounded-full bg-gradient-to-br from-launch-purple to-launch-orange text-white font-bold flex items-center justify-center shadow-lg text-sm md:text-base">
-                        {step.num}
+
+            <div className="relative max-w-4xl mx-auto">
+              {/* Vertical gradient line (centered on desktop, left on mobile) */}
+              <div className="absolute left-8 md:left-1/2 md:-translate-x-1/2 top-2 bottom-2 w-1 bg-gradient-to-b from-launch-purple via-pink-400 to-launch-orange rounded-full" />
+
+              <div className="space-y-10 md:space-y-14">
+                {steps.map((step, i) => {
+                  const isLeft = i % 2 === 0;
+                  return (
+                    <Reveal key={step.num} delay={i * 0.1}>
+                      <div className={`relative flex items-center gap-6 md:gap-0 ${isLeft ? "md:flex-row" : "md:flex-row-reverse"}`}>
+                        {/* Number badge */}
+                        <div className="relative z-10 flex-shrink-0 md:absolute md:left-1/2 md:-translate-x-1/2">
+                          <motion.div
+                            className="absolute inset-0 rounded-full bg-gradient-to-br from-launch-purple to-launch-orange blur-md opacity-60"
+                            animate={{ scale: [1, 1.2, 1] }}
+                            transition={{ duration: 3, repeat: Infinity, ease: "easeInOut", delay: i * 0.3 }}
+                          />
+                          <div className="relative w-16 h-16 md:w-20 md:h-20 rounded-full bg-gradient-to-br from-launch-purple to-launch-orange text-white font-bold flex items-center justify-center shadow-xl text-base md:text-lg ring-4 ring-white">
+                            {step.num}
+                          </div>
+                        </div>
+
+                        {/* Card */}
+                        <div className={`flex-1 md:w-[calc(50%-3rem)] md:flex-none ${isLeft ? "md:mr-auto md:pr-12" : "md:ml-auto md:pl-12"}`}>
+                          <motion.div
+                            whileHover={{ y: -4 }}
+                            className="bg-white rounded-2xl p-7 md:p-8 border border-border shadow-md hover:shadow-2xl hover:border-launch-purple/30 transition-all duration-300 group"
+                          >
+                            <h3 className="text-2xl md:text-3xl font-bold text-launch-purple mb-3 group-hover:translate-x-1 transition-transform duration-300">{step.title}</h3>
+                            <p className="text-muted-foreground text-xl leading-relaxed">{step.desc}</p>
+                          </motion.div>
+                        </div>
                       </div>
-                      {/* Card */}
-                      <div className="flex-1 bg-launch-light rounded-2xl p-6 md:p-7 border border-border hover:shadow-lg hover:border-launch-purple/20 transition-all duration-300 group">
-                        <h3 className="text-xl md:text-2xl font-bold text-launch-purple mb-2 group-hover:translate-x-1 transition-transform duration-300">{step.title}</h3>
-                        <p className="text-muted-foreground text-lg leading-relaxed">{step.desc}</p>
-                      </div>
-                    </div>
-                  </Reveal>
-                ))}
+                    </Reveal>
+                  );
+                })}
               </div>
             </div>
           </div>
