@@ -50,33 +50,6 @@ const Enterprise = () => {
           <WhoWeAre />
         </section>
 
-        <section className="bg-gradient-to-br from-launch-light via-white to-orange-50 py-16 md:py-20">
-          <div className="max-w-5xl mx-auto px-4 sm:px-6">
-            <h2 className="text-3xl md:text-4xl font-bold text-launch-purple mb-3 text-center">
-              What You Can Expect
-            </h2>
-            <p className="text-lg text-muted-foreground text-center mb-12">
-              These are the average results we see from our clients.
-            </p>
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-              {businessOutcomes.map((item, i) => {
-                const ItemIcon = item.icon;
-                return (
-                  <div key={i} className="bg-card rounded-2xl p-6 text-center shadow-sm border border-border hover:shadow-lg hover:border-launch-purple/20 transition-all duration-300">
-                    <div className="w-12 h-12 bg-gradient-to-br from-launch-purple to-launch-orange rounded-xl flex items-center justify-center mx-auto mb-3">
-                      <ItemIcon className="h-6 w-6 text-white" />
-                    </div>
-                    <p className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-launch-purple to-launch-orange bg-clip-text text-transparent mb-1">
-                      {item.stat}
-                    </p>
-                    <p className="text-muted-foreground font-medium text-sm">{item.label}</p>
-                  </div>
-                );
-              })}
-            </div>
-          </div>
-        </section>
-
         <section className="max-w-4xl mx-auto px-4 sm:px-6 py-16 md:py-20 text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-launch-purple mb-4">
             Ready to Make AI Work<br />
