@@ -82,21 +82,6 @@ const HowYourBusinessChanges = () => {
   return (
     <section id="what-we-do" className="py-16 md:py-20">
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
-        {/* Main heading */}
-        <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-launch-purple mb-4">
-            How Your Business is Working Today
-          </h2>
-        </div>
-
-        {/* Current problems */}
-        <div className="mb-16 max-w-xl mx-auto">
-          <p className="text-xl md:text-2xl lg:text-3xl text-launch-purple max-w-xl mb-10 leading-snug font-semibold">
-            Most teams are operating across a mess of disconnected tools. Information lives in emails, docs, Slack, and people's heads. Work gets duplicated, dropped, or delayed. Nobody has a clear view of what's actually happening.
-          </p>
-        </div>
-
-
         {/* Second Brain Vision */}
         <div id="second-brain" className="mb-16 bg-gradient-to-br from-launch-light via-white to-orange-50 rounded-3xl p-8 md:p-12">
           <div className="max-w-4xl mx-auto">
