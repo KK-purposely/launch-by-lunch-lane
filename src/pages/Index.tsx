@@ -350,7 +350,7 @@ const Index = () => {
                         </div>
                         <div>
                           <h3 className="text-lg font-bold text-white mb-1">{point.title}</h3>
-                          <p className="text-white/70 leading-relaxed">{point.desc}</p>
+                          <p className="text-lg text-white/70 leading-relaxed">{point.desc}</p>
                         </div>
                       </div>
                     );
