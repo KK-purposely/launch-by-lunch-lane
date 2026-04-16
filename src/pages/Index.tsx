@@ -560,7 +560,7 @@ const Index = () => {
                 <ArrowRight className="h-5 w-5 group-hover:translate-x-2 transition-transform duration-300" />
               </span>
             </Button>
-            <p className="text-muted-foreground mt-4 text-sm">No pressure. Just a real conversation.</p>
+            <p className="text-muted-foreground mt-4 text-sm">{"\n"}</p>
           </Reveal>
         </section>
 
