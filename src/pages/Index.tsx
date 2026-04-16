@@ -250,7 +250,7 @@ const Index = () => {
 
               {/* AFTER LBL card */}
               <Reveal delay={0.15}>
-                <div className="bg-launch-purple rounded-3xl p-8 md:p-10 h-full">
+                <div className="relative bg-launch-purple rounded-3xl p-8 md:p-10 h-full">
                   <p className="text-xs font-bold uppercase tracking-[0.2em] text-white/60 mb-8">After LBL</p>
                   <div className="space-y-8">
                     {flipStats.map((item, i) => (
@@ -260,6 +260,9 @@ const Index = () => {
                       </div>
                     ))}
                   </div>
+                  <p className="absolute bottom-4 right-5 text-[11px] uppercase tracking-wider text-white/40">
+                    Source: Gallup, 2026
+                  </p>
                 </div>
               </Reveal>
             </div>
