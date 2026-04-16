@@ -171,6 +171,13 @@ const HowYourBusinessChanges = () => {
               <div key={item.name} className="flex flex-col items-center gap-2 group">
                 <div className="w-14 h-14 flex items-center justify-center">
                   <img src={item.logo} alt={`${item.name} logo`} className="w-10 h-10 object-contain" />
+                </div>
+                <span className="text-sm text-muted-foreground font-medium group-hover:text-launch-purple transition-colors duration-300">
+                  {item.name}
+                </span>
+              </div>
+            ))}
+          </div>
         </div>
 
         {/* What You Can Expect */}
@@ -196,13 +203,6 @@ const HowYourBusinessChanges = () => {
                 </div>
               );
             })}
-          </div>
-        </div>
-                <span className="text-sm text-muted-foreground font-medium group-hover:text-launch-purple transition-colors duration-300">
-                  {item.name}
-                </span>
-              </div>
-            ))}
           </div>
         </div>
 
