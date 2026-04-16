@@ -371,7 +371,7 @@ const Index = () => {
                 <span className="bg-gradient-to-r from-launch-purple via-pink-500 to-launch-orange bg-clip-text text-transparent">Here's how it works.</span>
               </h2>
             </Reveal>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
               {steps.map((step, i) => (
                 <Reveal key={step.num} delay={i * 0.2}>
                   <div className="bg-launch-light rounded-2xl p-8 border border-border hover:shadow-lg hover:border-launch-purple/20 transition-all duration-300 h-full group">
