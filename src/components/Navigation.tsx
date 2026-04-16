@@ -143,6 +143,14 @@ const Navigation = () => {
                 <DropdownMenuSeparator />
 
                 <DropdownMenuItem asChild>
+                  <Link to="/enterprise" className="w-full" onClick={() => setIsMenuOpen(false)}>
+                    Enterprise
+                  </Link>
+                </DropdownMenuItem>
+
+                <DropdownMenuSeparator />
+
+                <DropdownMenuItem asChild>
                   <Link
                     to="/contact"
                     className="w-full text-launch-orange font-medium"
