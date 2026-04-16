@@ -371,16 +371,26 @@ const Index = () => {
                 <span className="bg-gradient-to-r from-launch-purple via-pink-500 to-launch-orange bg-clip-text text-transparent">Here's how it works.</span>
               </h2>
             </Reveal>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-              {steps.map((step, i) => (
-                <Reveal key={step.num} delay={i * 0.2}>
-                  <div className="bg-launch-light rounded-2xl p-8 border border-border hover:shadow-lg hover:border-launch-purple/20 transition-all duration-300 h-full group">
-                    <span className="text-sm font-bold text-launch-orange mb-4 block group-hover:translate-x-1 transition-transform duration-300">{step.num}</span>
-                    <h3 className="text-xl font-bold text-launch-purple mb-3">{step.title}</h3>
-                    <p className="text-muted-foreground text-lg leading-relaxed">{step.desc}</p>
-                  </div>
-                </Reveal>
-              ))}
+            <div className="relative max-w-3xl mx-auto">
+              {/* Vertical line */}
+              <div className="absolute left-6 md:left-8 top-2 bottom-2 w-0.5 bg-gradient-to-b from-launch-purple via-pink-400 to-launch-orange" />
+              <div className="space-y-8">
+                {steps.map((step, i) => (
+                  <Reveal key={step.num} delay={i * 0.1}>
+                    <div className="relative flex items-start gap-6 md:gap-8">
+                      {/* Number badge */}
+                      <div className="relative z-10 flex-shrink-0 w-12 h-12 md:w-16 md:h-16 rounded-full bg-gradient-to-br from-launch-purple to-launch-orange text-white font-bold flex items-center justify-center shadow-lg text-sm md:text-base">
+                        {step.num}
+                      </div>
+                      {/* Card */}
+                      <div className="flex-1 bg-launch-light rounded-2xl p-6 md:p-7 border border-border hover:shadow-lg hover:border-launch-purple/20 transition-all duration-300 group">
+                        <h3 className="text-xl md:text-2xl font-bold text-launch-purple mb-2 group-hover:translate-x-1 transition-transform duration-300">{step.title}</h3>
+                        <p className="text-muted-foreground text-lg leading-relaxed">{step.desc}</p>
+                      </div>
+                    </div>
+                  </Reveal>
+                ))}
+              </div>
             </div>
           </div>
         </section>
