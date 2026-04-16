@@ -40,9 +40,9 @@ const painStats = [
 ];
 
 const flipStats = [
-  { stat: "40%", text: "boost in productivity for teams that adopt AI the right way" },
   { stat: "81%", text: "higher job satisfaction among employees who actually use AI in their work" },
   { stat: "60%", text: "report meaningful stress reduction once the repetitive stuff gets handled" },
+  { stat: "40%", text: "boost in productivity for teams that adopt AI the right way, that's +15 hours per week/employee" },
 ];
 
 const culturePoints = [
@@ -126,9 +126,9 @@ const Index = () => {
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.7, ease: "easeOut" }}
                 >
-                  <span className="bg-gradient-to-r from-launch-purple via-pink-500 to-launch-orange bg-clip-text text-transparent">AI Adoption</span>
-                  <br />
-                  <span className="bg-gradient-to-r from-launch-orange via-pink-500 to-launch-purple bg-clip-text text-transparent whitespace-nowrap">without the Anxiety.</span>
+                  <span className="bg-gradient-to-r from-launch-purple via-pink-500 to-launch-orange bg-clip-text text-transparent leading-[1.1]">
+                    AI adoption for<br />people-first<br />teams.
+                  </span>
                 </motion.h1>
                 <motion.p
                   className="text-lg md:text-xl lg:text-2xl text-launch-purple max-w-xl mb-10 leading-snug font-semibold"
@@ -251,7 +251,7 @@ const Index = () => {
               {/* AFTER LBL card */}
               <Reveal delay={0.15}>
                 <div className="relative bg-launch-purple rounded-3xl p-8 md:p-10 h-full">
-                  <p className="text-xs font-bold uppercase tracking-[0.2em] text-white/60 mb-8">After LBL</p>
+                  <p className="text-xs font-bold uppercase tracking-[0.2em] text-white/60 mb-8">AFTER AI</p>
                   <div className="space-y-8">
                     {flipStats.map((item, i) => (
                       <div key={i}>
