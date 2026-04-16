@@ -1,7 +1,6 @@
-
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import { Menu } from "lucide-react";
+import { Menu, ChevronDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import {
   DropdownMenu,
@@ -15,9 +14,17 @@ const Navigation = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const handleLogoClick = () => {
-    // Scroll to top when clicking the logo
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
+
+  const servicesItems = [
+    { label: "Claude Code", to: "/claude-code", external: false },
+    { label: "Community", to: "/community", external: false },
+    { label: "Automations", to: "https://marketplace.launchbylunch.co/", external: true },
+    { label: "Events", to: "https://luma.com/launchbylunch", external: true },
+    { label: "Enterprise", to: "/enterprise", external: false },
+    { label: "Trainers", to: "/trainers", external: false },
+  ];
 
   return (
     <nav className="bg-white shadow-sm border-b border-gray-200 sticky top-0 z-50">
@@ -43,46 +50,30 @@ const Navigation = () => {
                   About
                 </Link>
 
-
-                <Link to="/claude-code" className="px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-launch-orange">
-                  Claude Code
-                </Link>
-
-                <Link to="/community" className="px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-launch-orange">
-                  Community
-                </Link>
-
-                <a 
-                  href="https://marketplace.launchbylunch.co/" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-launch-orange"
-                >
-                  Automations
-                </a>
-
-                <a 
-                  href="https://luma.com/launchbylunch" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-launch-orange"
-                >
-                  Events
-                </a>
-
-                <Link 
-                  to="/enterprise" 
-                  className="px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-launch-orange"
-                >
-                  Enterprise
-                </Link>
-
-                <Link 
-                  to="/trainers" 
-                  className="px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-launch-orange"
-                >
-                  Trainers
-                </Link>
+                <DropdownMenu>
+                  <DropdownMenuTrigger className="px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-launch-orange focus:outline-none inline-flex items-center gap-1">
+                    Services
+                    <ChevronDown className="h-4 w-4" />
+                  </DropdownMenuTrigger>
+                  <DropdownMenuContent align="start" className="w-48 bg-white">
+                    {servicesItems.map((item) =>
+                      item.external ? (
+                        <DropdownMenuItem
+                          key={item.label}
+                          onClick={() => window.open(item.to, '_blank')}
+                        >
+                          {item.label}
+                        </DropdownMenuItem>
+                      ) : (
+                        <DropdownMenuItem key={item.label} asChild>
+                          <Link to={item.to} className="w-full">
+                            {item.label}
+                          </Link>
+                        </DropdownMenuItem>
+                      )
+                    )}
+                  </DropdownMenuContent>
+                </DropdownMenu>
               </div>
             </div>
           </div>
@@ -109,91 +100,48 @@ const Navigation = () => {
               </DropdownMenuTrigger>
               <DropdownMenuContent align="end" className="w-56 bg-white">
                 <DropdownMenuItem asChild>
-                  <Link 
-                    to="/" 
-                    className="w-full"
-                    onClick={() => setIsMenuOpen(false)}
-                  >
+                  <Link to="/" className="w-full" onClick={() => setIsMenuOpen(false)}>
                     Home
                   </Link>
                 </DropdownMenuItem>
-                
-                <DropdownMenuSeparator />
-                
+
                 <DropdownMenuItem asChild>
-                  <Link 
-                    to="/about" 
-                    className="w-full"
-                    onClick={() => setIsMenuOpen(false)}
-                  >
+                  <Link to="/about" className="w-full" onClick={() => setIsMenuOpen(false)}>
                     About
                   </Link>
                 </DropdownMenuItem>
-                
 
-                <DropdownMenuItem asChild>
-                  <Link 
-                    to="/claude-code" 
-                    className="w-full"
-                    onClick={() => setIsMenuOpen(false)}
-                  >
-                    Claude Code
-                  </Link>
-                </DropdownMenuItem>
-
-                <DropdownMenuItem asChild>
-                  <Link 
-                    to="/community" 
-                    className="w-full"
-                    onClick={() => setIsMenuOpen(false)}
-                  >
-                    Community
-                  </Link>
-                </DropdownMenuItem>
-                
-                <DropdownMenuItem 
-                  onClick={() => {
-                    window.open('https://marketplace.launchbylunch.co/', '_blank');
-                    setIsMenuOpen(false);
-                  }}
-                >
-                  Automations
-                </DropdownMenuItem>
-
-                <DropdownMenuItem 
-                  onClick={() => {
-                    window.open('https://luma.com/launchbylunch', '_blank');
-                    setIsMenuOpen(false);
-                  }}
-                >
-                  Events
-                </DropdownMenuItem>
-                
-                <DropdownMenuItem asChild>
-                  <Link 
-                    to="/enterprise" 
-                    className="w-full"
-                    onClick={() => setIsMenuOpen(false)}
-                  >
-                    Enterprise
-                  </Link>
-                </DropdownMenuItem>
-                
-                <DropdownMenuItem asChild>
-                  <Link 
-                    to="/trainers" 
-                    className="w-full"
-                    onClick={() => setIsMenuOpen(false)}
-                  >
-                    Trainers
-                  </Link>
-                </DropdownMenuItem>
-                
                 <DropdownMenuSeparator />
-                
+
+                <div className="px-2 py-1.5 text-xs font-semibold text-gray-500 uppercase tracking-wide">
+                  Services
+                </div>
+
+                {servicesItems.map((item) =>
+                  item.external ? (
+                    <DropdownMenuItem
+                      key={item.label}
+                      onClick={() => {
+                        window.open(item.to, '_blank');
+                        setIsMenuOpen(false);
+                      }}
+                    >
+                      {item.label}
+                    </DropdownMenuItem>
+                  ) : (
+                    <DropdownMenuItem key={item.label} asChild>
+                      <Link to={item.to} className="w-full" onClick={() => setIsMenuOpen(false)}>
+                        {item.label}
+                      </Link>
+                    </DropdownMenuItem>
+                  )
+                )}
+
+                <DropdownMenuSeparator />
+
                 <DropdownMenuItem asChild>
-                  <Link 
-                    to="/contact" 
+                  <Link
+                    to="/contact"
                     className="w-full text-launch-orange font-medium"
                     onClick={() => setIsMenuOpen(false)}
                   >
