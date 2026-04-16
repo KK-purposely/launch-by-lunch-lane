@@ -267,7 +267,7 @@ const Index = () => {
                   <h2 className="text-3xl md:text-5xl font-bold leading-tight mb-6">
                     <span className="bg-gradient-to-r from-launch-orange via-pink-500 to-launch-purple bg-clip-text text-transparent">It's coming for their to-do list.</span>
                   </h2>
-                  <p className="text-lg text-muted-foreground leading-relaxed">
+                  <p className="text-xl md:text-2xl text-muted-foreground leading-relaxed">
                     The repetitive work. The stuff that eats hours without making you any money. That's what we help your team hand off, so they can get back to the work only they can do.
                   </p>
                 </div>
