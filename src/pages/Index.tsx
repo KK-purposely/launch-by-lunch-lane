@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight, Zap, Check, Target, Sprout, Handshake } from "lucide-react";
 import { motion, useInView, useAnimation } from "framer-motion";
 import Footer from "@/components/Footer";
+import trustedByImg from "@/assets/trusted-by.png";
 
 /* ── Scroll-triggered wrapper ── */
 const Reveal = ({ children, className = "", delay = 0 }: { children: React.ReactNode; className?: string; delay?: number }) => {
@@ -202,6 +203,18 @@ const Index = () => {
               </motion.div>
             </div>
           </div>
+        </section>
+
+        {/* ═══ TRUSTED BY ═══ */}
+        <section className="py-12 md:py-16 bg-white">
+          <Reveal className="max-w-6xl mx-auto px-4 sm:px-6">
+            <img
+              src={trustedByImg}
+              alt="Trusted by CIC, Techstars Startup Weekend Boston, KPMG, TEDx, Softheon, Boston Business Journal, Women Applying AI, Williams College, Harvard University, Startup Boston, Adobe, Creative Mornings, MassChallenge, and Building AI Boston"
+              className="w-full h-auto mx-auto"
+              loading="lazy"
+            />
+          </Reveal>
         </section>
 
         {/* ═══ STATS — THE REAL COST ═══ */}
