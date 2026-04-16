@@ -276,7 +276,7 @@ const Index = () => {
                   <span className="inline-block bg-launch-orange text-white text-sm font-bold px-5 py-2 rounded-full mb-6">
                     The LBL difference
                   </span>
-                  <h2 className="text-3xl md:text-5xl font-bold leading-tight mb-2">
+                  <h2 className="text-3xl md:text-5xl font-bold leading-tight mb-5">
                     <span className="bg-gradient-to-r from-launch-purple via-pink-500 to-launch-orange bg-clip-text text-transparent">AI isn't coming for<br />your team.</span>
                   </h2>
                   <h2 className="text-3xl md:text-5xl font-bold leading-tight mb-6">
