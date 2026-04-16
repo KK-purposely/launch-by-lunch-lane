@@ -17,7 +17,15 @@ import {
   Search,
   Zap,
   Lightbulb,
+  Shield,
 } from "lucide-react";
+
+const businessOutcomes = [
+  { icon: Zap, stat: "60%", label: "reduction in manual, repetitive tasks" },
+  { icon: Clock, stat: "10+", label: "hours saved per team member per week" },
+  { icon: Brain, stat: "3×", label: "faster execution across workflows" },
+  { icon: Shield, stat: "95%", label: "improvement in consistency & accuracy" },
+];
 
 const integrations = [
   { name: "Gmail", logo: "/logos/gmail.svg" },
