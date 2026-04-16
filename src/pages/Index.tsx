@@ -205,6 +205,18 @@ const Index = () => {
           </div>
         </section>
 
+        {/* ═══ TRUSTED BY ═══ */}
+        <section className="py-12 md:py-16 bg-white">
+          <Reveal className="max-w-6xl mx-auto px-4 sm:px-6">
+            <img
+              src={trustedByImg}
+              alt="Trusted by CIC, Techstars Startup Weekend Boston, KPMG, TEDx, Softheon, Boston Business Journal, Women Applying AI, Williams College, Harvard University, Startup Boston, Adobe, Creative Mornings, MassChallenge, and Building AI Boston"
+              className="w-full h-auto mx-auto"
+              loading="lazy"
+            />
+          </Reveal>
+        </section>
+
         {/* ═══ STATS — THE REAL COST ═══ */}
         <section className="py-16 md:py-24 bg-white">
           <div className="max-w-6xl mx-auto px-4 sm:px-6">
