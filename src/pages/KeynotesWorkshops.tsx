@@ -142,15 +142,25 @@ const KeynotesWorkshops = () => {
                 initial={{ opacity: 0, scale: 0.95 }}
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.7, delay: 0.2 }}
-                className="relative flex justify-center md:justify-end"
+                className="relative flex flex-col items-center md:items-end"
               >
-                <div className="absolute -inset-4 bg-gradient-to-br from-launch-purple/20 to-launch-orange/20 rounded-3xl blur-2xl" />
-                <div className="relative rounded-3xl overflow-hidden shadow-2xl bg-gradient-to-br from-launch-purple/5 to-launch-orange/5 border border-white/50 max-w-md w-full">
-                  <img
-                    src={karenSpeaker}
-                    alt="Karen Kelly, Founder and Speaker at Launch by Lunch"
-                    className="w-full h-auto object-cover"
-                  />
+                <div className="relative w-full max-w-md">
+                  <div className="absolute -inset-4 bg-gradient-to-br from-launch-purple/20 to-launch-orange/20 rounded-3xl blur-2xl" />
+                  <div className="relative rounded-3xl overflow-hidden shadow-2xl bg-gradient-to-br from-launch-purple/5 to-launch-orange/5 border border-white/50 w-full">
+                    <img
+                      src={karenSpeaker}
+                      alt="Karen Kelly, Co-Founder and CEO of Launch by Lunch"
+                      className="w-full h-auto object-cover"
+                    />
+                  </div>
+                  <div className="relative text-center mt-5">
+                    <p className="text-xl font-bold text-launch-purple leading-tight">
+                      Karen Kelly
+                    </p>
+                    <p className="text-base text-gray-700 mt-1">
+                      Co-Founder &amp; CEO of Launch by Lunch
+                    </p>
+                  </div>
                 </div>
               </motion.div>
             </div>
