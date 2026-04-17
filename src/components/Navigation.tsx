@@ -23,6 +23,7 @@ const Navigation = () => {
     { label: "Automations", to: "https://marketplace.launchbylunch.co/", external: true },
     { label: "Events", to: "https://luma.com/launchbylunch", external: true },
     { label: "Trainers", to: "/trainers", external: false },
+    { label: "Keynotes & Workshops", to: "/keynotes-workshops", external: false },
   ];
 
   return (
