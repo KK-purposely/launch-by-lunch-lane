@@ -11,9 +11,15 @@ const KeynotesWorkshops = () => {
   const topics = [
     {
       icon: Quote,
-      title: "Communication: Storytelling as a Superpower",
+      title: "Communication: Storytelling as a Superpower with AI",
       description:
-        "How to find your narrative, own your story, and use it as your most powerful trust-building tool, in pitches, on stages, and in life.",
+        "Your team won't adopt AI because of a tool, they'll adopt it because of a story. We dig into how to find your why, craft a repeatable narrative about how AI will empower your people at work, and turn that story into the trust-building tool that drives real adoption, in pitches, on stages, and in everyday team conversations.",
+      details: [
+        "Finding your personal and organizational why for AI",
+        "Building a repeatable narrative your team can echo",
+        "Translating technical change into human language",
+        "Storytelling frameworks for pitches, all-hands, and 1:1s",
+      ],
       gradient: "from-launch-purple to-launch-purple/70",
       bgGradient: "from-white to-launch-purple/5",
     },
@@ -22,6 +28,12 @@ const KeynotesWorkshops = () => {
       title: "AI & Leadership: Inspiring Teams in the AI Age",
       description:
         "Practical, no-hype guidance on how leaders can integrate AI to move faster, empower their teams, and stay ahead, without losing the human touch.",
+      details: [
+        "Leading change when half your team is excited and half is anxious",
+        "Where to start with AI: high-leverage workflows that build belief",
+        "Setting guardrails that protect culture, IP, and customer trust",
+        "Measuring what matters: revenue per employee, not tool count",
+      ],
       gradient: "from-launch-orange to-launch-orange/70",
       bgGradient: "from-white to-launch-orange/5",
     },
@@ -30,6 +42,12 @@ const KeynotesWorkshops = () => {
       title: "Resilience: Leading Effectively Without a Playbook",
       description:
         "A guide for the moments that don't make the highlight reel. How to communicate with clarity, trust your gut, and let your experience and relationships carry you through.",
+      details: [
+        "Decision-making under uncertainty when there's no precedent",
+        "Communicating hard truths without losing your team",
+        "Leaning on relationships and reputation as your real safety net",
+        "Personal practices that keep you grounded through the hard seasons",
+      ],
       gradient: "from-launch-purple to-launch-orange",
       bgGradient: "from-launch-purple/5 to-launch-orange/5",
     },
@@ -117,7 +135,7 @@ const KeynotesWorkshops = () => {
             </div>
             <h2 className="text-4xl md:text-5xl font-bold mb-5">
               <span className="bg-gradient-to-r from-launch-purple to-launch-orange bg-clip-text text-transparent">
-                Keynote & Workshop Topics
+                On Stage Topics
               </span>
             </h2>
             <p className="text-lg md:text-xl text-gray-700 max-w-3xl mx-auto">
@@ -152,9 +170,22 @@ const KeynotesWorkshops = () => {
                       <h3 className="text-xl font-bold text-launch-purple mb-3 leading-snug">
                         {topic.title}
                       </h3>
-                      <p className="text-base text-gray-700 leading-relaxed">
+                      <p className="text-base text-gray-700 leading-relaxed mb-4">
                         {topic.description}
                       </p>
+                      <ul className="space-y-2 pt-3 border-t border-gray-100">
+                        {topic.details.map((detail) => (
+                          <li
+                            key={detail}
+                            className="flex items-start gap-2 text-sm text-gray-700 leading-relaxed"
+                          >
+                            <span
+                              className={`mt-2 h-1.5 w-1.5 rounded-full bg-gradient-to-br ${topic.gradient} flex-shrink-0`}
+                            />
+                            <span>{detail}</span>
+                          </li>
+                        ))}
+                      </ul>
                     </CardContent>
                   </Card>
                 </motion.div>
