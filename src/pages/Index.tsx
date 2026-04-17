@@ -138,35 +138,6 @@ const Index = () => {
                 >
                   We help teams move from overwhelmed to operational, one step at a time.
                 </motion.p>
-                <motion.div
-                  className="flex flex-col sm:flex-row items-start gap-4"
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.7, delay: 0.4, ease: "easeOut" }}
-                >
-                  <Button
-                    size="lg"
-                    className="bg-launch-orange hover:bg-launch-orange/90 text-white px-10 py-4 text-lg rounded-full font-bold transition-all duration-300 shadow-xl hover:scale-105 group"
-                    onClick={() =>
-                      window.open("https://calendly.com/karen-launchbylunch/30min", "_blank")
-                    }
-                  >
-                    <span className="flex items-center gap-3">
-                      Let's Talk
-                      <ArrowRight className="h-5 w-5 group-hover:translate-x-2 transition-transform duration-300" />
-                    </span>
-                  </Button>
-                  <Button
-                    variant="ghost"
-                    size="lg"
-                    className="text-launch-purple hover:text-launch-orange text-lg font-semibold"
-                    onClick={() => {
-                      document.getElementById("how-it-works")?.scrollIntoView({ behavior: "smooth" });
-                    }}
-                  >
-                    See how it works
-                  </Button>
-                </motion.div>
               </div>
 
               <motion.div
@@ -196,9 +167,11 @@ const Index = () => {
                   variant="outline"
                   size="lg"
                   className="w-full max-w-sm px-8 py-6 text-lg border-launch-orange text-launch-orange hover:bg-launch-orange hover:text-white rounded-full font-medium transition-all duration-300"
-                  onClick={() => window.open("https://learn.launchbylunch.co/?modal=signup", "_blank")}
+                  onClick={() => {
+                    document.getElementById("how-it-works")?.scrollIntoView({ behavior: "smooth" });
+                  }}
                 >
-                  Get Our Newsletter
+                  See How It Works
                 </Button>
               </motion.div>
             </div>
