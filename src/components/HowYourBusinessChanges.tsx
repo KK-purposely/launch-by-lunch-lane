@@ -431,39 +431,42 @@ const HowYourBusinessChanges = () => {
       </div>
 
       <Dialog open={openIndex !== null} onOpenChange={(open) => !open && setOpenIndex(null)}>
-        <DialogContent className="max-w-2xl max-h-[85vh] overflow-y-auto">
+        <DialogContent className="max-w-2xl max-h-[85vh] overflow-y-auto p-0">
           {activeExample && (
             <>
-              <DialogHeader>
-                <div className="flex items-center gap-3 mb-2">
-                  <div className="w-11 h-11 bg-gradient-to-br from-launch-purple/15 to-launch-orange/10 rounded-xl flex items-center justify-center flex-shrink-0">
-                    {ActiveIcon && <ActiveIcon className="h-5 w-5 text-launch-purple" />}
+              {theme && <div className={`h-1.5 w-full ${theme.accentBar}`} />}
+              <div className="p-6">
+                <DialogHeader>
+                  <div className="flex items-center gap-3 mb-2">
+                    <div className={`w-11 h-11 rounded-xl flex items-center justify-center flex-shrink-0 ${theme ? theme.iconWrap : "bg-gradient-to-br from-launch-purple/15 to-launch-orange/10"}`}>
+                      {ActiveIcon && <ActiveIcon className={`h-5 w-5 ${theme ? "text-white" : "text-launch-purple"}`} />}
+                    </div>
+                    <DialogTitle className="text-xl text-launch-purple text-left">
+                      {activeExample.exampleTitle}
+                    </DialogTitle>
                   </div>
-                  <DialogTitle className="text-xl text-launch-purple text-left">
-                    {activeExample.exampleTitle}
-                  </DialogTitle>
-                </div>
-                <DialogDescription className="text-left text-base">
-                  An illustrative example of what your team's AI second brain might generate.
-                </DialogDescription>
-              </DialogHeader>
+                  <DialogDescription className="text-left text-base">
+                    An illustrative example of what your team's AI second brain might generate.
+                  </DialogDescription>
+                </DialogHeader>
 
-              <div className="mt-4 space-y-4">
-                <div className="rounded-xl border border-border bg-muted/40 p-4">
-                  <p className="text-xs font-semibold uppercase tracking-wide text-muted-foreground mb-1">
-                    You ask
-                  </p>
-                  <p className="text-foreground font-medium">{activeExample.examplePrompt}</p>
-                </div>
+                <div className="mt-4 space-y-4">
+                  <div className={`rounded-xl border p-4 ${theme ? theme.promptBox : "border-border bg-muted/40"}`}>
+                    <p className={`text-xs font-semibold uppercase tracking-wide mb-1 ${theme ? theme.promptLabel : "text-muted-foreground"}`}>
+                      You ask
+                    </p>
+                    <p className="text-foreground font-medium">{activeExample.examplePrompt}</p>
+                  </div>
 
-                <div className="rounded-xl border border-launch-purple/20 bg-gradient-to-br from-launch-light/40 via-white to-orange-50/40 p-5">
-                  <p className="text-xs font-semibold uppercase tracking-wide text-launch-purple mb-2 flex items-center gap-1.5">
-                    <Sparkles className="h-3.5 w-3.5" />
-                    AI response
-                  </p>
-                  <pre className="whitespace-pre-wrap font-sans text-foreground text-base leading-relaxed">
-                    {activeExample.exampleOutput}
-                  </pre>
+                  <div className={`rounded-xl border p-5 ${theme ? theme.responseBox : "border-launch-purple/20 bg-gradient-to-br from-launch-light/40 via-white to-orange-50/40"}`}>
+                    <p className={`text-xs font-semibold uppercase tracking-wide mb-2 flex items-center gap-1.5 ${theme ? theme.responseLabel : "text-launch-purple"}`}>
+                      <Sparkles className="h-3.5 w-3.5" />
+                      AI response
+                    </p>
+                    <pre className="whitespace-pre-wrap font-sans text-foreground text-base leading-relaxed">
+                      {activeExample.exampleOutput}
+                    </pre>
+                  </div>
                 </div>
               </div>
             </>
