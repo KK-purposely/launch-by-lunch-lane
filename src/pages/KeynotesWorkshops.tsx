@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import Footer from "@/components/Footer";
 import { Link } from "react-router-dom";
+import karenSpeaker from "@/assets/karen-kelly-speaker.jpg";
 
 const KeynotesWorkshops = () => {
   const topics = [
