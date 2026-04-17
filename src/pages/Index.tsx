@@ -138,25 +138,6 @@ const Index = () => {
                 >
                   We help teams move from overwhelmed to operational, one step at a time.
                 </motion.p>
-                <motion.div
-                  className="flex flex-col sm:flex-row items-start gap-4"
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.7, delay: 0.4, ease: "easeOut" }}
-                >
-                  <Button
-                    size="lg"
-                    className="bg-launch-orange hover:bg-launch-orange/90 text-white px-10 py-4 text-lg rounded-full font-bold transition-all duration-300 shadow-xl hover:scale-105 group"
-                    onClick={() => {
-                      document.getElementById("how-it-works")?.scrollIntoView({ behavior: "smooth" });
-                    }}
-                  >
-                    <span className="flex items-center gap-3">
-                      See How It Works
-                      <ArrowRight className="h-5 w-5 group-hover:translate-x-2 transition-transform duration-300" />
-                    </span>
-                  </Button>
-                </motion.div>
               </div>
 
               <motion.div
