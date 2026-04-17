@@ -13,7 +13,7 @@ const workshops = [
   {
     title: "Group Workshop",
     subtitle: "Learn with a cohort",
-    price: "$249",
+    price: "$299",
     unit: "per seat",
     description: "Join a high-energy group session and build your Claude Code Chief of Staff alongside other founders and operators.",
     icon: Users,
