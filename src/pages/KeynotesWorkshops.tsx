@@ -233,7 +233,7 @@ const KeynotesWorkshops = () => {
                   <p className="text-xs font-bold uppercase tracking-wider text-gray-500 mb-4">
                     {t.tag}
                   </p>
-                  <p className="text-base text-gray-700 leading-relaxed mb-5">
+                  <p className="text-lg text-gray-700 leading-relaxed mb-5">
                     "{t.quote}
                     <span className="font-bold text-launch-purple">
                       {t.highlight}
