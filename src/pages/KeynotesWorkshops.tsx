@@ -370,17 +370,16 @@ const KeynotesWorkshops = () => {
                 Let's talk about your event, your audience, and the conversation you
                 want to start.
               </p>
-              <Link to="/contact">
-                <Button
-                  size="lg"
-                  className="bg-white text-launch-purple hover:bg-white/90 px-8 py-6 text-lg rounded-full font-bold shadow-xl hover:scale-105 transition-all duration-300 group"
-                >
-                  <span className="flex items-center gap-2">
-                    Book a Conversation
-                    <ArrowRight className="h-5 w-5 group-hover:translate-x-1 transition-transform" />
-                  </span>
-                </Button>
-              </Link>
+              <Button
+                size="lg"
+                onClick={() => window.open("https://calendly.com/karen-launchbylunch/30min", "_blank")}
+                className="bg-white text-launch-purple hover:bg-white/90 px-8 py-6 text-lg rounded-full font-bold shadow-xl hover:scale-105 transition-all duration-300 group"
+              >
+                <span className="flex items-center gap-2">
+                  Book a Conversation
+                  <ArrowRight className="h-5 w-5 group-hover:translate-x-1 transition-transform" />
+                </span>
+              </Button>
             </div>
           </motion.div>
         </div>
