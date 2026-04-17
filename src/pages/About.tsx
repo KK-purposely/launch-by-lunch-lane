@@ -74,7 +74,7 @@ const About = () => {
           <div className="flex flex-col md:flex-row gap-8 items-start">
             <div className="md:w-1/3 w-full">
               <img 
-                src="/lovable-uploads/ariel-galipeau.jpg" 
+                src="/lovable-uploads/ariel-galipeau-final.png" 
                 alt="Ariel Galipeau, Director of AI Programs at Launch by Lunch" 
                 className="rounded-2xl shadow-lg w-full h-auto"
               />
