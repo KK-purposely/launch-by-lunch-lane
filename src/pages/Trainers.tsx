@@ -45,7 +45,7 @@ const Trainers = () => {
   return (
     <>
       <Helmet>
-        <title>Become a Trainer | Launch by Lunch</title>
+        <title>Trainer Application | Launch by Lunch</title>
         <meta name="description" content="Join the Launch by Lunch trainer network. Lead AI workshops, get paid well, and let us handle everything else." />
       </Helmet>
 

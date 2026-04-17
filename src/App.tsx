@@ -3,7 +3,7 @@ import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import { HelmetProvider } from "react-helmet-async";
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
@@ -55,7 +55,8 @@ const App = () => (
             <Route path="/enterprise" element={<Enterprise />} />
             
             <Route path="/claude-code" element={<ClaudeCode />} />
-            <Route path="/trainers" element={<Trainers />} />
+            <Route path="/trainer-application" element={<Trainers />} />
+            <Route path="/trainers" element={<Navigate to="/trainer-application" replace />} />
             <Route path="/keynotes-workshops" element={<KeynotesWorkshops />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />

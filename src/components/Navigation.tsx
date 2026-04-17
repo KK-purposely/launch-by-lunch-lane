@@ -22,7 +22,7 @@ const Navigation = () => {
     { label: "Community", to: "/community", external: false },
     { label: "Automations", to: "https://marketplace.launchbylunch.co/", external: true },
     { label: "Events", to: "https://luma.com/launchbylunch", external: true },
-    { label: "Trainers", to: "/trainers", external: false },
+    { label: "Trainer Application", to: "/trainer-application", external: false },
     { label: "Keynotes & Workshops", to: "/keynotes-workshops", external: false },
   ];
 
