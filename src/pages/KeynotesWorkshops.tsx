@@ -257,10 +257,10 @@ const KeynotesWorkshops = () => {
                       <div className="h-12 w-12 rounded-full bg-gradient-to-br from-launch-purple/20 via-pink-500/20 to-launch-orange/20 ring-2 ring-launch-purple/20 flex-shrink-0" />
                     )}
                     <div>
-                      <p className="text-sm font-bold text-launch-purple">
+                      <p className="text-lg font-bold text-launch-purple">
                         — {t.name}
                       </p>
-                      <p className="text-sm text-gray-600 mt-0.5">{t.role}</p>
+                      <p className="text-lg text-gray-600 mt-0.5">{t.role}</p>
                     </div>
                   </div>
                 </div>
@@ -331,7 +331,7 @@ const KeynotesWorkshops = () => {
                         {topic.details.map((detail) => (
                           <li
                             key={detail}
-                            className="flex items-start gap-2 text-base text-gray-700 leading-relaxed"
+                            className="flex items-start gap-2 text-lg text-gray-700 leading-relaxed"
                           >
                             <span
                               className={`mt-2 h-1.5 w-1.5 rounded-full bg-gradient-to-br ${topic.gradient} flex-shrink-0`}
