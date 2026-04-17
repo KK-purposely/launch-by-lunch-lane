@@ -9,6 +9,8 @@ import { Link } from "react-router-dom";
 import karenSpeaker from "@/assets/karen-kelly-speaker.jpg";
 import karenCredentials from "@/assets/karen-credentials.png";
 import katLazell from "@/assets/testimonial-kat-lazell.jpg";
+import amandaSwiatocha from "@/assets/testimonial-amanda-swiatocha.jpg";
+import jessLynch from "@/assets/testimonial-jess-lynch.jpg";
 
 const KeynotesWorkshops = () => {
   const topics = [
@@ -201,7 +203,7 @@ const KeynotesWorkshops = () => {
                   "She received the highest scores of any meeting we had ever had.",
                 name: "Amanda Swiatocha",
                 role: "Chief Marketing Officer, Softheon",
-                image: null as string | null,
+                image: amandaSwiatocha as string | null,
               },
               {
                 tag: "Interactive AI Keynote",
@@ -211,7 +213,7 @@ const KeynotesWorkshops = () => {
                   "She's incredibly relatable and makes the complex seem easy, leading to her session being the most talked about of the day!",
                 name: "Jess Lynch",
                 role: "Founding Partner, FoundersEdge VC",
-                image: null as string | null,
+                image: jessLynch as string | null,
               },
               {
                 tag: "Startup AI Instructor",
