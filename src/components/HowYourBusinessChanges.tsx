@@ -327,7 +327,7 @@ const HowYourBusinessChanges = () => {
           <h3 className="text-3xl md:text-4xl font-bold text-launch-purple mb-4">
             We connect the tools you already use
           </h3>
-          <p className="text-lg text-muted-foreground mb-10 max-w-2xl mx-auto">
+          <p className="text-xl text-muted-foreground mb-10 max-w-2xl mx-auto">
             So instead of jumping between platforms, your team operates from a single pane of glass.
           </p>
           <div className="flex flex-wrap justify-center items-center gap-10 md:gap-14">
