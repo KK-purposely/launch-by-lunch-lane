@@ -409,7 +409,7 @@ const HowYourBusinessChanges = () => {
           <div className="absolute -bottom-16 -left-16 w-64 h-64 bg-launch-purple/10 rounded-full blur-3xl pointer-events-none" />
 
           <div className="relative">
-            <h3 className="text-4xl md:text-6xl font-extrabold text-launch-purple mb-4 text-center tracking-tight">
+            <h3 className="text-3xl md:text-4xl font-bold text-launch-purple mb-4 text-center">
               What You Can Expect
             </h3>
             <p className="text-xl text-muted-foreground text-center mb-14 max-w-2xl mx-auto">
