@@ -212,10 +212,41 @@ const unlocks = [
   { icon: Layers, text: "360° understanding of your entire business at any time" },
 ];
 
+const exampleThemes = [
+  // 0: purple
+  {
+    accentBar: "bg-gradient-to-r from-launch-purple to-launch-purple/40",
+    iconWrap: "bg-gradient-to-br from-launch-purple to-launch-purple/70 shadow-md shadow-launch-purple/20",
+    promptBox: "border-launch-purple/15 bg-launch-purple/5",
+    promptLabel: "text-launch-purple",
+    responseBox: "border-launch-purple/25 bg-gradient-to-br from-launch-light via-white to-launch-purple/5",
+    responseLabel: "text-launch-purple",
+  },
+  // 1: orange
+  {
+    accentBar: "bg-gradient-to-r from-launch-orange to-launch-orange/40",
+    iconWrap: "bg-gradient-to-br from-launch-orange to-launch-orange/70 shadow-md shadow-launch-orange/20",
+    promptBox: "border-launch-orange/20 bg-launch-orange/5",
+    promptLabel: "text-launch-orange",
+    responseBox: "border-launch-orange/25 bg-gradient-to-br from-orange-50 via-white to-launch-orange/5",
+    responseLabel: "text-launch-orange",
+  },
+  // 2: purple + orange blend
+  {
+    accentBar: "bg-gradient-to-r from-launch-purple to-launch-orange",
+    iconWrap: "bg-gradient-to-br from-launch-purple to-launch-orange shadow-md shadow-launch-purple/20",
+    promptBox: "border-launch-purple/15 bg-gradient-to-br from-launch-purple/5 to-launch-orange/5",
+    promptLabel: "text-launch-purple",
+    responseBox: "border-launch-purple/20 bg-gradient-to-br from-launch-light via-white to-orange-50",
+    responseLabel: "text-launch-purple",
+  },
+];
+
 const HowYourBusinessChanges = () => {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
   const activeExample = openIndex !== null ? inPractice[openIndex] : null;
   const ActiveIcon = activeExample?.icon;
+  const theme = openIndex !== null && openIndex < exampleThemes.length ? exampleThemes[openIndex] : null;
 
   return (
     <section id="what-we-do" className="py-16 md:py-20">
@@ -400,39 +431,42 @@ const HowYourBusinessChanges = () => {
       </div>
 
       <Dialog open={openIndex !== null} onOpenChange={(open) => !open && setOpenIndex(null)}>
-        <DialogContent className="max-w-2xl max-h-[85vh] overflow-y-auto">
+        <DialogContent className="max-w-2xl max-h-[85vh] overflow-y-auto p-0">
           {activeExample && (
             <>
-              <DialogHeader>
-                <div className="flex items-center gap-3 mb-2">
-                  <div className="w-11 h-11 bg-gradient-to-br from-launch-purple/15 to-launch-orange/10 rounded-xl flex items-center justify-center flex-shrink-0">
-                    {ActiveIcon && <ActiveIcon className="h-5 w-5 text-launch-purple" />}
+              {theme && <div className={`h-1.5 w-full ${theme.accentBar}`} />}
+              <div className="p-6">
+                <DialogHeader>
+                  <div className="flex items-center gap-3 mb-2">
+                    <div className={`w-11 h-11 rounded-xl flex items-center justify-center flex-shrink-0 ${theme ? theme.iconWrap : "bg-gradient-to-br from-launch-purple/15 to-launch-orange/10"}`}>
+                      {ActiveIcon && <ActiveIcon className={`h-5 w-5 ${theme ? "text-white" : "text-launch-purple"}`} />}
+                    </div>
+                    <DialogTitle className="text-xl text-launch-purple text-left">
+                      {activeExample.exampleTitle}
+                    </DialogTitle>
                   </div>
-                  <DialogTitle className="text-xl text-launch-purple text-left">
-                    {activeExample.exampleTitle}
-                  </DialogTitle>
-                </div>
-                <DialogDescription className="text-left text-base">
-                  An illustrative example of what your team's AI second brain might generate.
-                </DialogDescription>
-              </DialogHeader>
+                  <DialogDescription className="text-left text-base">
+                    An illustrative example of what your team's AI second brain might generate.
+                  </DialogDescription>
+                </DialogHeader>
 
-              <div className="mt-4 space-y-4">
-                <div className="rounded-xl border border-border bg-muted/40 p-4">
-                  <p className="text-xs font-semibold uppercase tracking-wide text-muted-foreground mb-1">
-                    You ask
-                  </p>
-                  <p className="text-foreground font-medium">{activeExample.examplePrompt}</p>
-                </div>
+                <div className="mt-4 space-y-4">
+                  <div className={`rounded-xl border p-4 ${theme ? theme.promptBox : "border-border bg-muted/40"}`}>
+                    <p className={`text-xs font-semibold uppercase tracking-wide mb-1 ${theme ? theme.promptLabel : "text-muted-foreground"}`}>
+                      You ask
+                    </p>
+                    <p className="text-foreground font-medium">{activeExample.examplePrompt}</p>
+                  </div>
 
-                <div className="rounded-xl border border-launch-purple/20 bg-gradient-to-br from-launch-light/40 via-white to-orange-50/40 p-5">
-                  <p className="text-xs font-semibold uppercase tracking-wide text-launch-purple mb-2 flex items-center gap-1.5">
-                    <Sparkles className="h-3.5 w-3.5" />
-                    AI response
-                  </p>
-                  <pre className="whitespace-pre-wrap font-sans text-foreground text-base leading-relaxed">
-                    {activeExample.exampleOutput}
-                  </pre>
+                  <div className={`rounded-xl border p-5 ${theme ? theme.responseBox : "border-launch-purple/20 bg-gradient-to-br from-launch-light/40 via-white to-orange-50/40"}`}>
+                    <p className={`text-xs font-semibold uppercase tracking-wide mb-2 flex items-center gap-1.5 ${theme ? theme.responseLabel : "text-launch-purple"}`}>
+                      <Sparkles className="h-3.5 w-3.5" />
+                      AI response
+                    </p>
+                    <pre className="whitespace-pre-wrap font-sans text-foreground text-base leading-relaxed">
+                      {activeExample.exampleOutput}
+                    </pre>
+                  </div>
                 </div>
               </div>
             </>
