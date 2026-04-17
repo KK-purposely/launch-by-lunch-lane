@@ -322,13 +322,22 @@ const HowYourBusinessChanges = () => {
             {inPractice.map((item, i) => {
               const ItemIcon = item.icon;
               return (
-                <div key={i} className="group relative bg-card rounded-2xl p-8 border border-border hover:border-launch-purple/30 transition-all duration-500 hover:shadow-[0_8px_40px_-12px_hsl(var(--launch-purple)/0.25)] hover:-translate-y-1">
+                <button
+                  key={i}
+                  type="button"
+                  onClick={() => setOpenIndex(i)}
+                  className="group relative text-left bg-card rounded-2xl p-8 border border-border hover:border-launch-purple/30 transition-all duration-500 hover:shadow-[0_8px_40px_-12px_hsl(var(--launch-purple)/0.25)] hover:-translate-y-1 focus:outline-none focus-visible:ring-2 focus-visible:ring-launch-purple"
+                >
                   <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-launch-purple to-launch-orange rounded-t-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
                   <div className="w-14 h-14 bg-gradient-to-br from-launch-purple/15 to-launch-orange/10 rounded-2xl flex items-center justify-center mb-5 group-hover:scale-110 transition-transform duration-500">
                     <ItemIcon className="h-7 w-7 text-launch-purple" />
                   </div>
-                  <p className="text-foreground text-lg font-semibold leading-relaxed">{item.text}</p>
-                </div>
+                  <p className="text-foreground text-lg font-semibold leading-relaxed mb-4">{item.text}</p>
+                  <span className="inline-flex items-center gap-1.5 text-sm font-semibold text-launch-orange opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    <Sparkles className="h-4 w-4" />
+                    See an example
+                  </span>
+                </button>
               );
             })}
           </div>
