@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import Footer from "@/components/Footer";
 import { Link } from "react-router-dom";
+import karenSpeaker from "@/assets/karen-kelly-speaker.jpg";
 
 const KeynotesWorkshops = () => {
   const topics = [
@@ -140,8 +141,8 @@ const KeynotesWorkshops = () => {
               </span>
             </h2>
             <p className="text-lg md:text-xl text-gray-700 max-w-3xl mx-auto">
-              I bring raw honesty, strategic clarity, and contagious energy to every
-              stage. These are my most frequently requested topics.
+              We bring raw honesty, strategic clarity, and contagious energy to every
+              stage. These are our most frequently requested topics.
             </p>
           </motion.div>
 
