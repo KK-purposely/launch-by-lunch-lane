@@ -21,8 +21,8 @@ const KeynotesWorkshops = () => {
         "Translating technical change into human language",
         "Storytelling frameworks for pitches, all-hands, and 1:1s",
       ],
-      gradient: "from-launch-purple to-launch-purple/70",
-      bgGradient: "from-white to-launch-purple/5",
+      gradient: "from-launch-purple via-pink-500 to-launch-orange",
+      bgGradient: "from-launch-purple/5 via-pink-500/5 to-launch-orange/5",
     },
     {
       icon: Sparkles,
@@ -35,8 +35,8 @@ const KeynotesWorkshops = () => {
         "Setting guardrails that protect culture, IP, and customer trust",
         "Measuring what matters: reducing costs, improving employee satisfaction, and creating scalable change",
       ],
-      gradient: "from-launch-orange to-launch-orange/70",
-      bgGradient: "from-white to-launch-orange/5",
+      gradient: "from-launch-purple via-pink-500 to-launch-orange",
+      bgGradient: "from-launch-purple/5 via-pink-500/5 to-launch-orange/5",
     },
     {
       icon: Shield,
@@ -49,8 +49,8 @@ const KeynotesWorkshops = () => {
         "Leaning on relationships and reputation as your real safety net",
         "Personal practices that keep you grounded through the hard seasons",
       ],
-      gradient: "from-launch-purple to-launch-orange",
-      bgGradient: "from-launch-purple/5 to-launch-orange/5",
+      gradient: "from-launch-purple via-pink-500 to-launch-orange",
+      bgGradient: "from-launch-purple/5 via-pink-500/5 to-launch-orange/5",
     },
   ];
 
@@ -145,8 +145,9 @@ const KeynotesWorkshops = () => {
       </section>
 
       {/* On Stage Section */}
-      <section className="py-20 bg-gradient-to-br from-launch-purple/5 via-white to-launch-orange/5">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6">
+      <section className="relative overflow-hidden py-20">
+        <div className="absolute inset-0 bg-gradient-to-br from-launch-purple/10 via-white to-launch-orange/10" />
+        <div className="relative max-w-6xl mx-auto px-4 sm:px-6">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
