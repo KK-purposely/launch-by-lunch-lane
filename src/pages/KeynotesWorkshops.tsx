@@ -168,17 +168,17 @@ const KeynotesWorkshops = () => {
                       >
                         <Icon className="h-6 w-6 text-white" />
                       </div>
-                      <h3 className="text-xl font-bold text-launch-purple mb-3 leading-snug">
+                      <h3 className="text-2xl font-bold text-launch-purple mb-3 leading-snug">
                         {topic.title}
                       </h3>
-                      <p className="text-base text-gray-700 leading-relaxed mb-4">
+                      <p className="text-lg text-gray-700 leading-relaxed mb-4">
                         {topic.description}
                       </p>
                       <ul className="space-y-2 pt-3 border-t border-gray-100">
                         {topic.details.map((detail) => (
                           <li
                             key={detail}
-                            className="flex items-start gap-2 text-sm text-gray-700 leading-relaxed"
+                            className="flex items-start gap-2 text-base text-gray-700 leading-relaxed"
                           >
                             <span
                               className={`mt-2 h-1.5 w-1.5 rounded-full bg-gradient-to-br ${topic.gradient} flex-shrink-0`}
