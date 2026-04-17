@@ -271,6 +271,7 @@ const HowYourBusinessChanges = () => {
                   <div className="w-11 h-11 bg-gradient-to-br from-launch-purple to-launch-purple/70 rounded-xl flex items-center justify-center mb-4 shadow-md shadow-launch-purple/20">
                     <Brain className="h-5 w-5 text-white" />
                   </div>
+                  <h4 className="text-sm font-bold uppercase tracking-wider text-launch-purple mb-2">Research</h4>
                   <p className="text-lg text-foreground font-medium leading-relaxed">
                     It could research every interaction your team has ever had with a given company or prospect and tell you how to best respond, instantly.
                   </p>
@@ -282,6 +283,7 @@ const HowYourBusinessChanges = () => {
                   <div className="w-11 h-11 bg-gradient-to-br from-launch-orange to-launch-orange/70 rounded-xl flex items-center justify-center mb-4 shadow-md shadow-launch-orange/20">
                     <MessageSquare className="h-5 w-5 text-white" />
                   </div>
+                  <h4 className="text-sm font-bold uppercase tracking-wider text-launch-orange mb-2">Social Media</h4>
                   <p className="text-lg text-foreground font-medium leading-relaxed">
                     It could look at your past LinkedIn posts and create a new one in your voice, based on conversations you've had that week.
                   </p>
@@ -293,16 +295,19 @@ const HowYourBusinessChanges = () => {
                   <div className="w-11 h-11 bg-gradient-to-br from-launch-purple to-launch-orange rounded-xl flex items-center justify-center mb-4 shadow-md shadow-launch-purple/20">
                     <Zap className="h-5 w-5 text-white" />
                   </div>
+                  <h4 className="text-sm font-bold uppercase tracking-wider bg-gradient-to-r from-launch-purple to-launch-orange bg-clip-text text-transparent mb-2">Goals</h4>
                   <p className="text-lg text-foreground font-medium leading-relaxed">
                     It could tell you exactly what to focus on today, and what's obviously getting in the way.
                   </p>
                 </CardContent>
               </Card>
-              <Card className="border border-border hover:border-launch-purple/20 hover:shadow-lg transition-all duration-300">
+              <Card className="relative overflow-hidden bg-gradient-to-br from-white to-launch-orange/5 border border-launch-orange/20 hover:border-launch-orange/50 hover:shadow-[0_8px_30px_-10px_hsl(24,87%,58%/0.25)] hover:-translate-y-0.5 transition-all duration-300">
+                <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-launch-orange/40 to-launch-orange" />
                 <CardContent className="p-7">
-                  <div className="w-10 h-10 bg-launch-purple/10 rounded-lg flex items-center justify-center mb-4">
-                    <Lightbulb className="h-5 w-5 text-launch-purple/70" />
+                  <div className="w-11 h-11 bg-gradient-to-br from-launch-orange/70 to-launch-orange rounded-xl flex items-center justify-center mb-4 shadow-md shadow-launch-orange/20">
+                    <Lightbulb className="h-5 w-5 text-white" />
                   </div>
+                  <h4 className="text-sm font-bold uppercase tracking-wider text-launch-orange mb-2">Sales</h4>
                   <p className="text-lg text-foreground font-medium leading-relaxed">
                     It could create a presentation based on a conversation you'd had earlier that day in under five minutes.
                   </p>
