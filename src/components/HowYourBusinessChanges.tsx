@@ -353,7 +353,7 @@ const HowYourBusinessChanges = () => {
         <div className="mb-20">
           <div className="text-center mb-12">
             <h3 className="text-3xl md:text-4xl font-bold text-launch-purple mb-3">
-              What that actually looks like in practice
+              For a 360° understanding of your business
             </h3>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">Cost savings. Happier employees. Thrilled customers.</p>
           </div>
