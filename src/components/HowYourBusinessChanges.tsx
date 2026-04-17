@@ -24,10 +24,10 @@ import {
 } from "lucide-react";
 
 const businessOutcomes = [
-  { icon: Zap, stat: "60%", label: "reduction in manual, repetitive tasks" },
+  { icon: Zap, stat: "45%", label: "reduction in manual, repetitive tasks" },
   { icon: Clock, stat: "10+", label: "hours saved per team member per week" },
   { icon: Brain, stat: "3×", label: "faster execution across workflows" },
-  { icon: Shield, stat: "95%", label: "improvement in consistency & accuracy" },
+  { icon: Shield, stat: "87%", label: "improvement in consistency & accuracy" },
 ];
 
 const integrations = [
@@ -261,7 +261,7 @@ const HowYourBusinessChanges = () => {
                 <span className="text-launch-orange">Had a Second Brain?</span>
               </h2>
               <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-                One that knew everything happening across your business — and could actually do something with it.
+                {"\n"}
               </p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
