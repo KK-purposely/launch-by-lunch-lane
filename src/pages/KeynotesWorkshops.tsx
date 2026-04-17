@@ -32,7 +32,7 @@ const KeynotesWorkshops = () => {
         "Leading change when half your team is excited and half is anxious",
         "Where to start with AI: high-leverage workflows that build belief",
         "Setting guardrails that protect culture, IP, and customer trust",
-        "Measuring what matters: revenue per employee, not tool count",
+        "Measuring what matters: reducing costs, improving employee satisfaction, and creating scalable change",
       ],
       gradient: "from-launch-orange to-launch-orange/70",
       bgGradient: "from-white to-launch-orange/5",
