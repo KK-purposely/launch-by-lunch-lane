@@ -212,10 +212,41 @@ const unlocks = [
   { icon: Layers, text: "360° understanding of your entire business at any time" },
 ];
 
+const exampleThemes = [
+  // 0: purple
+  {
+    accentBar: "bg-gradient-to-r from-launch-purple to-launch-purple/40",
+    iconWrap: "bg-gradient-to-br from-launch-purple to-launch-purple/70 shadow-md shadow-launch-purple/20",
+    promptBox: "border-launch-purple/15 bg-launch-purple/5",
+    promptLabel: "text-launch-purple",
+    responseBox: "border-launch-purple/25 bg-gradient-to-br from-launch-light via-white to-launch-purple/5",
+    responseLabel: "text-launch-purple",
+  },
+  // 1: orange
+  {
+    accentBar: "bg-gradient-to-r from-launch-orange to-launch-orange/40",
+    iconWrap: "bg-gradient-to-br from-launch-orange to-launch-orange/70 shadow-md shadow-launch-orange/20",
+    promptBox: "border-launch-orange/20 bg-launch-orange/5",
+    promptLabel: "text-launch-orange",
+    responseBox: "border-launch-orange/25 bg-gradient-to-br from-orange-50 via-white to-launch-orange/5",
+    responseLabel: "text-launch-orange",
+  },
+  // 2: purple + orange blend
+  {
+    accentBar: "bg-gradient-to-r from-launch-purple to-launch-orange",
+    iconWrap: "bg-gradient-to-br from-launch-purple to-launch-orange shadow-md shadow-launch-purple/20",
+    promptBox: "border-launch-purple/15 bg-gradient-to-br from-launch-purple/5 to-launch-orange/5",
+    promptLabel: "text-launch-purple",
+    responseBox: "border-launch-purple/20 bg-gradient-to-br from-launch-light via-white to-orange-50",
+    responseLabel: "text-launch-purple",
+  },
+];
+
 const HowYourBusinessChanges = () => {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
   const activeExample = openIndex !== null ? inPractice[openIndex] : null;
   const ActiveIcon = activeExample?.icon;
+  const theme = openIndex !== null && openIndex < exampleThemes.length ? exampleThemes[openIndex] : null;
 
   return (
     <section id="what-we-do" className="py-16 md:py-20">
