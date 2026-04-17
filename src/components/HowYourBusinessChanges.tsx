@@ -213,6 +213,10 @@ const unlocks = [
 ];
 
 const HowYourBusinessChanges = () => {
+  const [openIndex, setOpenIndex] = useState<number | null>(null);
+  const activeExample = openIndex !== null ? inPractice[openIndex] : null;
+  const ActiveIcon = activeExample?.icon;
+
   return (
     <section id="what-we-do" className="py-16 md:py-20">
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
