@@ -101,7 +101,7 @@ const KeynotesWorkshops = () => {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="text-2xl md:text-3xl font-semibold text-launch-purple mb-6"
           >
-            AI That Fits Your Culture
+            No matter where you are, you're not behind.
           </motion.p>
 
           <motion.p
@@ -110,9 +110,10 @@ const KeynotesWorkshops = () => {
             transition={{ duration: 0.6, delay: 0.3 }}
             className="text-lg md:text-xl text-gray-700 max-w-3xl mx-auto leading-relaxed"
           >
-            Every organization has a different relationship with change. Some teams are
-            eager. Some are skeptical. Most are somewhere in between, and that's
-            exactly where I start.
+            Every organization comes to AI differently. I build custom adoption
+            programs and deliver inspirational keynotes that meet your culture where
+            it is, so you and your team can move into the future with confidence,
+            not fear.
           </motion.p>
         </div>
       </section>
