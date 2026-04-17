@@ -168,6 +168,91 @@ const KeynotesWorkshops = () => {
         </div>
       </section>
 
+      {/* What People Say Section */}
+      <section className="py-20 bg-white">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="text-center mb-12"
+          >
+            <p className="text-sm font-bold uppercase tracking-wider text-launch-purple mb-5">
+              What People Say
+            </p>
+            <h2 className="text-3xl md:text-5xl font-bold text-launch-purple max-w-4xl mx-auto leading-tight">
+              "She received the highest feedback scores of any workshop we've ever
+              had."
+            </h2>
+            <p className="text-base md:text-lg text-gray-600 mt-5">
+              — Amanda Swiatocha, Chief Marketing Officer, Softheon
+            </p>
+          </motion.div>
+
+          <div className="grid md:grid-cols-3 gap-6 mt-12">
+            {[
+              {
+                tag: "ERG Workshop",
+                quote:
+                  "We brought Karen in to speak to our EmpowerHER female employee resource group. I had high expectations but she surpassed all of them. ",
+                highlight:
+                  "She received the highest scores of any meeting we had ever had.",
+                name: "Amanda Swiatocha",
+                role: "Chief Marketing Officer, Softheon",
+              },
+              {
+                tag: "Interactive AI Keynote",
+                quote:
+                  "We were so lucky to have Karen speak at our women's only conference for elite founders and investors. Within 45 minutes we had built our first app with AI! ",
+                highlight:
+                  "She's incredibly relatable and makes the complex seem easy, leading to her session being the most talked about of the day!",
+                name: "Jess Lynch",
+                role: "Founding Partner, FoundersEdge VC",
+              },
+              {
+                tag: "Startup AI Instructor",
+                quote:
+                  "Karen's AI workshop at the CIC accelerator was invigorating and clarifying for many non-technical founders in the room. ",
+                highlight:
+                  "You could feel the energy shift from intimidation to curiosity, to momentum.",
+                name: "Kat Lazell",
+                role: "Senior Program Manager, Cambridge Innovation Center (CiC)",
+              },
+            ].map((t, i) => (
+              <motion.div
+                key={t.name}
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: i * 0.1 }}
+                className="relative rounded-2xl bg-white border border-gray-100 shadow-sm hover:shadow-lg transition-shadow overflow-hidden"
+              >
+                <div className="absolute top-0 bottom-0 left-0 w-1 bg-gradient-to-b from-launch-purple via-pink-500 to-launch-orange" />
+                <div className="p-7 pl-8">
+                  <p className="text-xs font-bold uppercase tracking-wider text-gray-500 mb-4">
+                    {t.tag}
+                  </p>
+                  <p className="text-base text-gray-700 leading-relaxed mb-5">
+                    "{t.quote}
+                    <span className="font-bold text-launch-purple">
+                      {t.highlight}
+                    </span>
+                    "
+                  </p>
+                  <div className="pt-4 border-t border-gray-100">
+                    <p className="text-sm font-bold text-launch-purple">
+                      — {t.name}
+                    </p>
+                    <p className="text-sm text-gray-600 mt-1">{t.role}</p>
+                  </div>
+                </div>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* On Stage Section */}
       <section className="relative overflow-hidden py-20">
         <div className="absolute inset-0 bg-gradient-to-br from-launch-purple/10 via-white to-launch-orange/10" />
