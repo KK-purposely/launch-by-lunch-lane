@@ -167,9 +167,11 @@ const Index = () => {
                   variant="outline"
                   size="lg"
                   className="w-full max-w-sm px-8 py-6 text-lg border-launch-orange text-launch-orange hover:bg-launch-orange hover:text-white rounded-full font-medium transition-all duration-300"
-                  onClick={() => window.open("https://learn.launchbylunch.co/?modal=signup", "_blank")}
+                  onClick={() => {
+                    document.getElementById("how-it-works")?.scrollIntoView({ behavior: "smooth" });
+                  }}
                 >
-                  Get Our Newsletter
+                  See How It Works
                 </Button>
               </motion.div>
             </div>
