@@ -1,4 +1,6 @@
+import { useState } from "react";
 import { Card, CardContent } from "@/components/ui/card";
+import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription } from "@/components/ui/dialog";
 import secondBrainImg from "@/assets/second-brain.png";
 import secondBrainVisual from "@/assets/second-brain-visual.png";
 import {
@@ -18,6 +20,7 @@ import {
   Zap,
   Lightbulb,
   Shield,
+  Sparkles,
 } from "lucide-react";
 
 const businessOutcomes = [
