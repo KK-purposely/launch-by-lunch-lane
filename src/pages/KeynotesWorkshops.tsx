@@ -8,6 +8,7 @@ import Footer from "@/components/Footer";
 import { Link } from "react-router-dom";
 import karenSpeaker from "@/assets/karen-kelly-speaker.jpg";
 import karenCredentials from "@/assets/karen-credentials.png";
+import katLazell from "@/assets/testimonial-kat-lazell.jpg";
 
 const KeynotesWorkshops = () => {
   const topics = [
@@ -200,6 +201,7 @@ const KeynotesWorkshops = () => {
                   "She received the highest scores of any meeting we had ever had.",
                 name: "Amanda Swiatocha",
                 role: "Chief Marketing Officer, Softheon",
+                image: null as string | null,
               },
               {
                 tag: "Interactive AI Keynote",
@@ -209,6 +211,7 @@ const KeynotesWorkshops = () => {
                   "She's incredibly relatable and makes the complex seem easy, leading to her session being the most talked about of the day!",
                 name: "Jess Lynch",
                 role: "Founding Partner, FoundersEdge VC",
+                image: null as string | null,
               },
               {
                 tag: "Startup AI Instructor",
@@ -218,6 +221,7 @@ const KeynotesWorkshops = () => {
                   "You could feel the energy shift from intimidation to curiosity, to momentum.",
                 name: "Kat Lazell",
                 role: "Senior Program Manager, Cambridge Innovation Center (CiC)",
+                image: katLazell,
               },
             ].map((t, i) => (
               <motion.div
@@ -240,11 +244,22 @@ const KeynotesWorkshops = () => {
                     </span>
                     "
                   </p>
-                  <div className="pt-4 border-t border-gray-100">
-                    <p className="text-sm font-bold text-launch-purple">
-                      — {t.name}
-                    </p>
-                    <p className="text-sm text-gray-600 mt-1">{t.role}</p>
+                  <div className="pt-4 border-t border-gray-100 flex items-center gap-3">
+                    {t.image ? (
+                      <img
+                        src={t.image}
+                        alt={t.name}
+                        className="h-12 w-12 rounded-full object-cover ring-2 ring-launch-purple/20 flex-shrink-0"
+                      />
+                    ) : (
+                      <div className="h-12 w-12 rounded-full bg-gradient-to-br from-launch-purple/20 via-pink-500/20 to-launch-orange/20 ring-2 ring-launch-purple/20 flex-shrink-0" />
+                    )}
+                    <div>
+                      <p className="text-sm font-bold text-launch-purple">
+                        — {t.name}
+                      </p>
+                      <p className="text-sm text-gray-600 mt-0.5">{t.role}</p>
+                    </div>
                   </div>
                 </div>
               </motion.div>
