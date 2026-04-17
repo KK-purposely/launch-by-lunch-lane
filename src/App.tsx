@@ -23,6 +23,7 @@ import Enterprise from "./pages/Enterprise";
 
 import ClaudeCode from "./pages/ClaudeCode";
 import Trainers from "./pages/Trainers";
+import KeynotesWorkshops from "./pages/KeynotesWorkshops";
 import Navigation from "./components/Navigation";
 
 const queryClient = new QueryClient(); // Trigger GitHub sync
@@ -53,6 +54,7 @@ const App = () => (
             
             <Route path="/claude-code" element={<ClaudeCode />} />
             <Route path="/trainers" element={<Trainers />} />
+            <Route path="/keynotes-workshops" element={<KeynotesWorkshops />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>
