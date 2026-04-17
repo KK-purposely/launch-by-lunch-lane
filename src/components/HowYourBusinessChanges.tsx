@@ -234,33 +234,36 @@ const HowYourBusinessChanges = () => {
               </p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <Card className="border border-border hover:border-launch-purple/20 hover:shadow-lg transition-all duration-300">
+              <Card className="relative overflow-hidden bg-gradient-to-br from-white to-launch-purple/5 border border-launch-purple/15 hover:border-launch-purple/40 hover:shadow-[0_8px_30px_-10px_hsl(var(--launch-purple)/0.25)] hover:-translate-y-0.5 transition-all duration-300">
+                <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-launch-purple to-launch-purple/40" />
                 <CardContent className="p-7">
-                  <div className="w-10 h-10 bg-launch-purple/10 rounded-lg flex items-center justify-center mb-4">
-                    <Brain className="h-5 w-5 text-launch-purple/70" />
+                  <div className="w-11 h-11 bg-gradient-to-br from-launch-purple to-launch-purple/70 rounded-xl flex items-center justify-center mb-4 shadow-md shadow-launch-purple/20">
+                    <Brain className="h-5 w-5 text-white" />
                   </div>
                   <p className="text-lg text-foreground font-medium leading-relaxed">
-                    It could research every interaction your team has ever had with a given company or prospect and tell you how to best respond — instantly.
+                    It could research every interaction your team has ever had with a given company or prospect and tell you how to best respond, instantly.
                   </p>
                 </CardContent>
               </Card>
-              <Card className="border border-border hover:border-launch-purple/20 hover:shadow-lg transition-all duration-300">
+              <Card className="relative overflow-hidden bg-gradient-to-br from-white to-launch-orange/5 border border-launch-orange/20 hover:border-launch-orange/50 hover:shadow-[0_8px_30px_-10px_hsl(24,87%,58%/0.25)] hover:-translate-y-0.5 transition-all duration-300">
+                <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-launch-orange to-launch-orange/40" />
                 <CardContent className="p-7">
-                  <div className="w-10 h-10 bg-launch-purple/10 rounded-lg flex items-center justify-center mb-4">
-                    <MessageSquare className="h-5 w-5 text-launch-purple/70" />
+                  <div className="w-11 h-11 bg-gradient-to-br from-launch-orange to-launch-orange/70 rounded-xl flex items-center justify-center mb-4 shadow-md shadow-launch-orange/20">
+                    <MessageSquare className="h-5 w-5 text-white" />
                   </div>
                   <p className="text-lg text-foreground font-medium leading-relaxed">
                     It could look at your past LinkedIn posts and create a new one in your voice, based on conversations you've had that week.
                   </p>
                 </CardContent>
               </Card>
-              <Card className="border border-border hover:border-launch-purple/20 hover:shadow-lg transition-all duration-300">
+              <Card className="relative overflow-hidden bg-gradient-to-br from-white via-launch-purple/5 to-launch-orange/5 border border-launch-purple/20 hover:border-launch-orange/40 hover:shadow-[0_8px_30px_-10px_hsl(var(--launch-purple)/0.25)] hover:-translate-y-0.5 transition-all duration-300">
+                <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-launch-purple to-launch-orange" />
                 <CardContent className="p-7">
-                  <div className="w-10 h-10 bg-launch-purple/10 rounded-lg flex items-center justify-center mb-4">
-                    <Zap className="h-5 w-5 text-launch-purple/70" />
+                  <div className="w-11 h-11 bg-gradient-to-br from-launch-purple to-launch-orange rounded-xl flex items-center justify-center mb-4 shadow-md shadow-launch-purple/20">
+                    <Zap className="h-5 w-5 text-white" />
                   </div>
                   <p className="text-lg text-foreground font-medium leading-relaxed">
-                    It could tell you exactly what to focus on today — and what's obviously getting in the way.
+                    It could tell you exactly what to focus on today, and what's obviously getting in the way.
                   </p>
                 </CardContent>
               </Card>
