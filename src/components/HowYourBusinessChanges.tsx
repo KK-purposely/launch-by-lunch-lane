@@ -1,4 +1,6 @@
+import { useState } from "react";
 import { Card, CardContent } from "@/components/ui/card";
+import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription } from "@/components/ui/dialog";
 import secondBrainImg from "@/assets/second-brain.png";
 import secondBrainVisual from "@/assets/second-brain-visual.png";
 import {
@@ -18,6 +20,7 @@ import {
   Zap,
   Lightbulb,
   Shield,
+  Sparkles,
 } from "lucide-react";
 
 const businessOutcomes = [
@@ -53,26 +56,149 @@ const inPractice = [
   {
     icon: MessageSquare,
     text: "Ask a question about a client, project, or deal and get an immediate, accurate answer",
+    exampleTitle: "Ask: \"What's the latest with Acme Corp?\"",
+    examplePrompt: "What's the latest with Acme Corp?",
+    exampleOutput: `Acme Corp — Account Snapshot
+
+• Stage: Contract review (sent Tuesday by Sarah)
+• Last touch: Zoom call on April 11 with their CTO, Marcus. He flagged concerns about onboarding timeline.
+• Open items:
+   - Marcus is waiting on revised SOW (assigned to you, due Friday)
+   - Legal review pending from their side, ETA next Monday
+• Recent context:
+   - Slack thread in #acme-deal mentions a possible expansion into their EU team (3 seats)
+   - Email from their CFO on April 9 confirmed budget approved for Q2
+• Suggested next step: Send the revised SOW today and offer a 15-min call early next week to align on onboarding.`,
   },
   {
     icon: FileText,
     text: "Generate presentations, summaries, or updates using your company's real data",
+    exampleTitle: "Generate: Q1 Board Update Deck",
+    examplePrompt: "Create a Q1 board update deck using our real numbers and recent wins.",
+    exampleOutput: `Q1 Board Update — Draft Deck (8 slides)
+
+1. Q1 At a Glance
+   Revenue: $1.42M (+18% QoQ), New logos: 7, NRR: 112%
+
+2. Wins
+   • Closed Acme Corp ($240K ACV)
+   • Expanded Northstar by 2x seats
+   • Launched v2 of the analytics module
+
+3. Pipeline
+   $3.8M qualified, 22 opps in late stage, forecast $1.6M for Q2
+
+4. Product
+   Shipped 14 features, 2 highlighted: AI summaries, SSO
+
+5. Team
+   Hired 3 (eng, CS, sales), 2 promotions
+
+6. Risks
+   • Onboarding capacity tight at >5 new clients/month
+   • One renewal at risk (Globex), mitigation in motion
+
+7. Asks
+   • Approve hiring plan for 2 additional CS roles
+   • Greenlight EU pilot
+
+8. Appendix
+   Detailed financials, cohort retention, CSAT trends`,
   },
   {
     icon: CalendarCheck,
     text: "Automatically prep for meetings and send follow-ups without manual work",
+    exampleTitle: "Prep: 10am call with Northstar",
+    examplePrompt: "Prep me for my 10am with Northstar and draft the follow-up.",
+    exampleOutput: `Meeting Prep, Northstar (10:00 AM)
+
+Attendees: Priya (VP Ops), James (CTO)
+
+Context to know:
+• Last call (March 28): Discussed rolling out to their support team (12 seats)
+• Open question from James: Can we integrate with their internal ticketing tool?
+• Priya mentioned their fiscal year ends June 30, pressure to wrap before then
+
+Suggested talking points:
+1. Confirm pilot results from the ops team (NPS jumped 14 points)
+2. Walk through ticketing integration options (Zapier today, native by Q3)
+3. Propose a 12-seat expansion at $X with a June 1 start date
+
+Follow-up email (drafted, ready to send after the call):
+"Hi Priya & James, great talking today. As discussed, I'll send over the pilot results, the integration roadmap, and a proposal for the 12-seat expansion by EOD tomorrow. Looking forward to getting this live before your fiscal year wraps."`,
   },
   {
     icon: ListChecks,
     text: "Create and track team-wide to-dos that update across systems",
+    exampleTitle: "Team To-Dos, synced across Asana, Notion, Slack",
+    examplePrompt: "Show me what the team owes this week, with status.",
+    exampleOutput: `Team To-Dos, Week of April 14
+
+Sarah (Sales)
+✅ Send revised SOW to Acme, done Tuesday
+🟡 Follow up with Globex re: renewal, due Thursday
+⏳ Q2 forecast review, due Friday
+
+Marcus (Eng)
+✅ Ship SSO bug fix, done Monday
+🟡 Draft RFC for ticketing integration, due Friday
+🔴 Code review backlog, 4 open, oldest 6 days
+
+Jen (CS)
+✅ Onboarded Acme kickoff call, done
+🟡 QBR prep deck for Northstar, due Wednesday
+⏳ CSAT survey send, scheduled for Thursday
+
+Auto-synced from: Asana (12 tasks), Notion (4 docs), Slack (#standup thread)
+Next nudge: Marcus on the code review backlog (Slack DM, 4pm today)`,
   },
   {
     icon: Receipt,
     text: "Generate invoices, reports, or client communications in seconds",
+    exampleTitle: "Generate: April invoice for Northstar",
+    examplePrompt: "Generate the April invoice for Northstar.",
+    exampleOutput: `INVOICE #2024-0417
+Bill to: Northstar Inc.
+Date: April 30, 2024 · Due: May 30, 2024 (Net 30)
+
+Line items:
+1. Monthly platform subscription (12 seats)        $4,800.00
+2. Premium support add-on                            $750.00
+3. Q1 strategy workshop (delivered April 8)        $2,500.00
+
+Subtotal:                                          $8,050.00
+Tax (0%):                                              $0.00
+Total Due:                                         $8,050.00
+
+Payment: ACH or credit card via the link below.
+Notes: Per our agreement, the strategy workshop fee is one-time. Subscription auto-renews May 1.
+
+Ready to send to: priya@northstar.com, accounting@northstar.com
+Logged in: QuickBooks · CRM updated · Slack #finance notified`,
   },
   {
     icon: RefreshCw,
     text: "Keep projects updated without chasing people for status",
+    exampleTitle: "Project Status, auto-compiled, no chasing",
+    examplePrompt: "Give me a status across all active client projects.",
+    exampleOutput: `Active Projects, Status Roll-Up (auto-compiled this morning)
+
+🟢 Acme Corp, Onboarding
+   On track. Kickoff complete. Next milestone: data import April 22.
+   Source: Asana board + last 3 Slack messages in #acme-impl
+
+🟡 Northstar, Expansion Pilot
+   Slightly behind. Waiting on James for ticketing integration sign-off.
+   Last update: April 14. Suggested action: Nudge James (drafted DM ready).
+
+🟢 Globex, Renewal
+   On track. Renewal call booked April 25. CSAT trending up (+9 pts).
+
+🔴 Initech, Implementation
+   At risk. No client response in 8 days. Escalation: notify Sarah + schedule check-in.
+
+Compiled from: Asana, HubSpot, Slack, Gmail, last team standup notes.
+No one was asked for an update.`,
   },
 ];
 
@@ -87,6 +213,10 @@ const unlocks = [
 ];
 
 const HowYourBusinessChanges = () => {
+  const [openIndex, setOpenIndex] = useState<number | null>(null);
+  const activeExample = openIndex !== null ? inPractice[openIndex] : null;
+  const ActiveIcon = activeExample?.icon;
+
   return (
     <section id="what-we-do" className="py-16 md:py-20">
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
@@ -192,13 +322,22 @@ const HowYourBusinessChanges = () => {
             {inPractice.map((item, i) => {
               const ItemIcon = item.icon;
               return (
-                <div key={i} className="group relative bg-card rounded-2xl p-8 border border-border hover:border-launch-purple/30 transition-all duration-500 hover:shadow-[0_8px_40px_-12px_hsl(var(--launch-purple)/0.25)] hover:-translate-y-1">
+                <button
+                  key={i}
+                  type="button"
+                  onClick={() => setOpenIndex(i)}
+                  className="group relative text-left bg-card rounded-2xl p-8 border border-border hover:border-launch-purple/30 transition-all duration-500 hover:shadow-[0_8px_40px_-12px_hsl(var(--launch-purple)/0.25)] hover:-translate-y-1 focus:outline-none focus-visible:ring-2 focus-visible:ring-launch-purple"
+                >
                   <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-launch-purple to-launch-orange rounded-t-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
                   <div className="w-14 h-14 bg-gradient-to-br from-launch-purple/15 to-launch-orange/10 rounded-2xl flex items-center justify-center mb-5 group-hover:scale-110 transition-transform duration-500">
                     <ItemIcon className="h-7 w-7 text-launch-purple" />
                   </div>
-                  <p className="text-foreground text-lg font-semibold leading-relaxed">{item.text}</p>
-                </div>
+                  <p className="text-foreground text-lg font-semibold leading-relaxed mb-4">{item.text}</p>
+                  <span className="inline-flex items-center gap-1.5 text-sm font-semibold text-launch-orange opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    <Sparkles className="h-4 w-4" />
+                    See an example
+                  </span>
+                </button>
               );
             })}
           </div>
@@ -256,6 +395,47 @@ const HowYourBusinessChanges = () => {
           </div>
         </div>
       </div>
+
+      <Dialog open={openIndex !== null} onOpenChange={(open) => !open && setOpenIndex(null)}>
+        <DialogContent className="max-w-2xl max-h-[85vh] overflow-y-auto">
+          {activeExample && (
+            <>
+              <DialogHeader>
+                <div className="flex items-center gap-3 mb-2">
+                  <div className="w-11 h-11 bg-gradient-to-br from-launch-purple/15 to-launch-orange/10 rounded-xl flex items-center justify-center flex-shrink-0">
+                    {ActiveIcon && <ActiveIcon className="h-5 w-5 text-launch-purple" />}
+                  </div>
+                  <DialogTitle className="text-xl text-launch-purple text-left">
+                    {activeExample.exampleTitle}
+                  </DialogTitle>
+                </div>
+                <DialogDescription className="text-left text-base">
+                  An illustrative example of what your team's AI second brain might generate.
+                </DialogDescription>
+              </DialogHeader>
+
+              <div className="mt-4 space-y-4">
+                <div className="rounded-xl border border-border bg-muted/40 p-4">
+                  <p className="text-xs font-semibold uppercase tracking-wide text-muted-foreground mb-1">
+                    You ask
+                  </p>
+                  <p className="text-foreground font-medium">{activeExample.examplePrompt}</p>
+                </div>
+
+                <div className="rounded-xl border border-launch-purple/20 bg-gradient-to-br from-launch-light/40 via-white to-orange-50/40 p-5">
+                  <p className="text-xs font-semibold uppercase tracking-wide text-launch-purple mb-2 flex items-center gap-1.5">
+                    <Sparkles className="h-3.5 w-3.5" />
+                    AI response
+                  </p>
+                  <pre className="whitespace-pre-wrap font-sans text-foreground text-base leading-relaxed">
+                    {activeExample.exampleOutput}
+                  </pre>
+                </div>
+              </div>
+            </>
+          )}
+        </DialogContent>
+      </Dialog>
     </section>
   );
 };
