@@ -372,7 +372,7 @@ const HowYourBusinessChanges = () => {
                     <ItemIcon className="h-7 w-7 text-launch-purple" />
                   </div>
                   <p className="text-foreground text-lg font-semibold leading-relaxed mb-4">{item.text}</p>
-                  <span className="inline-flex items-center gap-1.5 text-sm font-semibold text-launch-orange opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  <span className="inline-flex items-center gap-1.5 text-sm font-semibold text-launch-orange">
                     <Sparkles className="h-4 w-4" />
                     See an example
                   </span>
