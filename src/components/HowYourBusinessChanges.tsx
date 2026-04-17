@@ -350,7 +350,7 @@ const HowYourBusinessChanges = () => {
             <h3 className="text-3xl md:text-4xl font-bold text-launch-purple mb-3">
               What that actually looks like in practice
             </h3>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">Real workflows. Real results. Every single day.</p>
+            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">Time & cost savings. Happier employees. Thrilled customers.</p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {inPractice.map((item, i) => {
