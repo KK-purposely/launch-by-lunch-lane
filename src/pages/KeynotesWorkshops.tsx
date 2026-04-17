@@ -66,56 +66,81 @@ const KeynotesWorkshops = () => {
       </Helmet>
 
       {/* Hero Section */}
-      <section className="relative overflow-hidden bg-gradient-to-br from-launch-purple/5 via-white to-launch-orange/5 py-20 md:py-28">
+      <section className="relative overflow-hidden py-16 md:py-24">
+        <div className="absolute inset-0 bg-gradient-to-br from-launch-purple/10 via-white to-launch-orange/10" />
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
           <div className="absolute -top-32 -right-32 w-96 h-96 bg-launch-orange/10 rounded-full blur-3xl" />
           <div className="absolute -bottom-32 -left-32 w-96 h-96 bg-launch-purple/10 rounded-full blur-3xl" />
         </div>
 
-        <div className="relative max-w-5xl mx-auto px-4 sm:px-6 text-center">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-            className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white border border-launch-purple/20 shadow-sm mb-6"
-          >
-            <Mic className="h-4 w-4 text-launch-orange" />
-            <span className="text-sm font-medium text-launch-purple">
-              Keynotes & Workshops
-            </span>
-          </motion.div>
+        <div className="relative w-full px-4 sm:px-6">
+          <div className="max-w-6xl mx-auto">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16 items-center">
+              {/* Left: Text */}
+              <div>
+                <motion.div
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.6 }}
+                  className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white border border-launch-purple/20 shadow-sm mb-6"
+                >
+                  <Mic className="h-4 w-4 text-launch-orange" />
+                  <span className="text-sm font-medium text-launch-purple">
+                    Keynotes & Workshops
+                  </span>
+                </motion.div>
 
-          <motion.h1
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.1 }}
-            className="text-5xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight"
-          >
-            <span className="bg-gradient-to-r from-launch-purple to-launch-orange bg-clip-text text-transparent">
-              Keynotes and Workshops
-            </span>
-          </motion.h1>
+                <motion.h1
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.6, delay: 0.1 }}
+                  className="text-4xl md:text-5xl lg:text-6xl font-bold mb-5 leading-tight"
+                >
+                  <span className="bg-gradient-to-r from-launch-purple via-pink-500 to-launch-orange bg-clip-text text-transparent">
+                    Keynotes and Workshops
+                  </span>
+                </motion.h1>
 
-          <motion.p
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.2 }}
-            className="text-2xl md:text-3xl font-semibold text-launch-purple mb-6"
-          >
-            No matter where you are, you're not behind.
-          </motion.p>
+                <motion.p
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.6, delay: 0.2 }}
+                  className="text-2xl md:text-3xl font-semibold text-launch-purple mb-5"
+                >
+                  No matter where you are, you're not behind.
+                </motion.p>
 
-          <motion.p
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.3 }}
-            className="text-lg md:text-xl text-gray-700 max-w-3xl mx-auto leading-relaxed"
-          >
-            Every organization comes to AI differently. I build custom adoption
-            programs and deliver inspirational keynotes that meet your culture where
-            it is, so you and your team can move into the future with confidence,
-            not fear.
-          </motion.p>
+                <motion.p
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.6, delay: 0.3 }}
+                  className="text-lg md:text-xl text-gray-700 leading-relaxed"
+                >
+                  Every organization comes to AI differently. We build custom
+                  adoption programs and deliver inspirational keynotes that meet
+                  your culture where it is, so you and your team can move into the
+                  future with confidence, not fear.
+                </motion.p>
+              </div>
+
+              {/* Right: Speaker Image */}
+              <motion.div
+                initial={{ opacity: 0, scale: 0.95 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{ duration: 0.7, delay: 0.2 }}
+                className="relative flex justify-center md:justify-end"
+              >
+                <div className="absolute -inset-4 bg-gradient-to-br from-launch-purple/20 to-launch-orange/20 rounded-3xl blur-2xl" />
+                <div className="relative rounded-3xl overflow-hidden shadow-2xl bg-gradient-to-br from-launch-purple/5 to-launch-orange/5 border border-white/50 max-w-md w-full">
+                  <img
+                    src={karenSpeaker}
+                    alt="Karen Kelly, Founder and Speaker at Launch by Lunch"
+                    className="w-full h-auto object-cover"
+                  />
+                </div>
+              </motion.div>
+            </div>
+          </div>
         </div>
       </section>
 
