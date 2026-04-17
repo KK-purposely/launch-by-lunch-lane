@@ -7,6 +7,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import Footer from "@/components/Footer";
 import { Link } from "react-router-dom";
 import karenSpeaker from "@/assets/karen-kelly-speaker.jpg";
+import karenCredentials from "@/assets/karen-credentials.png";
 
 const KeynotesWorkshops = () => {
   const topics = [
@@ -121,6 +122,19 @@ const KeynotesWorkshops = () => {
                   your culture where it is, so you and your team can move into the
                   future with confidence, not fear.
                 </motion.p>
+
+                <motion.div
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.6, delay: 0.4 }}
+                  className="mt-7 rounded-2xl bg-white/70 backdrop-blur-sm border border-launch-purple/10 shadow-sm p-4"
+                >
+                  <img
+                    src={karenCredentials}
+                    alt="Credentials: TEDx Editor's Pick (selected by TEDx Global, 2026) and Top 100 Innovator (Redwood Media's Top 100 Magazine, 2026)"
+                    className="w-full h-auto"
+                  />
+                </motion.div>
               </div>
 
               {/* Right: Speaker Image */}
