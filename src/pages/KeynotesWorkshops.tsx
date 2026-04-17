@@ -73,7 +73,7 @@ const KeynotesWorkshops = () => {
             className="text-5xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight"
           >
             <span className="bg-gradient-to-r from-launch-purple to-launch-orange bg-clip-text text-transparent">
-              AI Adoption
+              Keynotes and Workshops
             </span>
           </motion.h1>
 
@@ -96,51 +96,6 @@ const KeynotesWorkshops = () => {
             eager. Some are skeptical. Most are somewhere in between, and that's
             exactly where I start.
           </motion.p>
-        </div>
-      </section>
-
-      {/* Philosophy Section */}
-      <section className="py-20 bg-white">
-        <div className="max-w-5xl mx-auto px-4 sm:px-6">
-          <div className="grid md:grid-cols-2 gap-10 items-start">
-            <motion.div
-              initial={{ opacity: 0, x: -20 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6 }}
-            >
-              <div className="w-12 h-12 bg-gradient-to-br from-launch-purple to-launch-purple/70 rounded-xl flex items-center justify-center mb-5 shadow-lg">
-                <Users className="h-6 w-6 text-white" />
-              </div>
-              <h2 className="text-3xl md:text-4xl font-bold text-launch-purple mb-4">
-                Fit before speed
-              </h2>
-              <p className="text-lg text-gray-700 leading-relaxed">
-                Before recommending a single tool, I get to know your leaders, your
-                culture, and your people's attitudes toward AI. The goal isn't speed,
-                it's fit.
-              </p>
-            </motion.div>
-
-            <motion.div
-              initial={{ opacity: 0, x: 20 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6, delay: 0.1 }}
-            >
-              <div className="w-12 h-12 bg-gradient-to-br from-launch-orange to-launch-orange/70 rounded-xl flex items-center justify-center mb-5 shadow-lg">
-                <Sparkles className="h-6 w-6 text-white" />
-              </div>
-              <h2 className="text-3xl md:text-4xl font-bold text-launch-orange mb-4">
-                More powerful, not replaceable
-              </h2>
-              <p className="text-lg text-gray-700 leading-relaxed">
-                The mission: increase revenue per employee, not eliminate employees.
-                AI adoption done right makes your people more powerful, not more
-                replaceable.
-              </p>
-            </motion.div>
-          </div>
         </div>
       </section>
 
