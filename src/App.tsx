@@ -25,6 +25,7 @@ import ClaudeCode from "./pages/ClaudeCode";
 import Trainers from "./pages/Trainers";
 import KeynotesWorkshops from "./pages/KeynotesWorkshops";
 import Navigation from "./components/Navigation";
+import ScrollToTop from "./components/ScrollToTop";
 
 const queryClient = new QueryClient(); // Trigger GitHub sync
 
@@ -35,6 +36,7 @@ const App = () => (
         <Toaster />
         <Sonner />
         <BrowserRouter>
+          <ScrollToTop />
           <Navigation />
           <Routes>
             <Route path="/" element={<Index />} />
