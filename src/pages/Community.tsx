@@ -75,19 +75,6 @@ const Community = () => {
       <HeroSection />
       <MainServicesSection onServiceClick={handleServiceClick} />
       <FAQSection />
-      <div className="max-w-5xl mx-auto px-4 sm:px-6">
-        <BottomCTASection />
-        <ContactForm
-          isOpen={contactFormOpen}
-          onClose={() => setContactFormOpen(false)}
-          serviceTitle={selectedService}
-        />
-      </div>
-
-      {/* Community Application Form */}
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 pb-16 pt-12">
-        <CommunityForm />
-      </div>
 
       <Footer />
     </div>
