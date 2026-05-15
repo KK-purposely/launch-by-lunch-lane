@@ -21,7 +21,6 @@ const Navigation = () => {
     { label: "Keynotes & Workshops", to: "/keynotes-workshops", external: false },
     { label: "Events", to: "https://luma.com/launchbylunch", external: true },
     { label: "Chief of Staff", to: "/claude-code", external: false },
-    { label: "Community", to: "/community", external: false },
     { label: "Automations", to: "https://marketplace.launchbylunch.co/", external: true },
     { label: "Trainer Application", to: "/trainer-application", external: false },
   ];
