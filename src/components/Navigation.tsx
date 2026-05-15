@@ -151,6 +151,12 @@ const Navigation = () => {
                   </Link>
                 </DropdownMenuItem>
 
+                <DropdownMenuItem asChild>
+                  <Link to="/community" className="w-full" onClick={() => setIsMenuOpen(false)}>
+                    Community
+                  </Link>
+                </DropdownMenuItem>
+
                 <DropdownMenuSeparator />
 
                 <DropdownMenuItem asChild>
