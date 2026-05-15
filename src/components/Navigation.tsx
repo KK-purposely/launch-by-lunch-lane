@@ -77,6 +77,10 @@ const Navigation = () => {
                 <Link to="/enterprise" className="px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-launch-orange">
                   Enterprise
                 </Link>
+
+                <Link to="/community" className="px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-launch-orange">
+                  Community
+                </Link>
               </div>
             </div>
           </div>
