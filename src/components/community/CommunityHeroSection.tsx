@@ -1,6 +1,7 @@
 
 import React from "react";
 import { Sparkles } from "lucide-react";
+import { Button } from "@/components/ui/button";
 
 const CommunityHeroSection = () => {
   return (
@@ -19,16 +20,31 @@ const CommunityHeroSection = () => {
             </span>
           </h1>
           <div className="mb-5">
-            <p className="text-base font-semibold text-launch-orange mb-2">
-              COMING SUMMER 2025
-            </p>
-            <p className="text-lg md:text-xl text-gray-700 mb-3 max-w-3xl mx-auto leading-relaxed">
-              Where the new eco-system of founders, fractionals, and investors build, scale and fund the next generation of 
+            <p className="text-lg md:text-xl text-gray-700 mb-6 max-w-3xl mx-auto leading-relaxed">
+              Where the new eco-system of founders, fractionals, and investors build, scale and fund the next generation of
               <span className="text-launch-orange font-semibold"> AI-first startups</span>
             </p>
-            <p className="text-base font-medium text-launch-purple">
-              Get our early bird rates for the next 60 days.
-            </p>
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+              <Button
+                variant="outline"
+                size="lg"
+                className="border-launch-orange text-launch-orange hover:bg-launch-orange hover:text-white rounded-full px-8 font-medium transition-all duration-300"
+                onClick={() =>
+                  window.open("https://login.circle.so/sign_in?request_host=innercircle.launchbylunch.co#email", "_blank")
+                }
+              >
+                Sign In
+              </Button>
+              <Button
+                size="lg"
+                className="bg-launch-orange hover:bg-launch-orange/90 text-white rounded-full px-8 font-medium transition-all duration-300"
+                onClick={() =>
+                  document.getElementById("join-community")?.scrollIntoView({ behavior: "smooth" })
+                }
+              >
+                Sign Up
+              </Button>
+            </div>
           </div>
         </div>
       </div>
