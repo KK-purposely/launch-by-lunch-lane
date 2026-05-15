@@ -21,7 +21,6 @@ const Navigation = () => {
     { label: "Keynotes & Workshops", to: "/keynotes-workshops", external: false },
     { label: "Events", to: "https://luma.com/launchbylunch", external: true },
     { label: "Chief of Staff", to: "/claude-code", external: false },
-    { label: "Community", to: "/community", external: false },
     { label: "Automations", to: "https://marketplace.launchbylunch.co/", external: true },
     { label: "Trainer Application", to: "/trainer-application", external: false },
   ];
@@ -77,6 +76,10 @@ const Navigation = () => {
 
                 <Link to="/enterprise" className="px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-launch-orange">
                   Enterprise
+                </Link>
+
+                <Link to="/community" className="px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-launch-orange">
+                  Community
                 </Link>
               </div>
             </div>
@@ -145,6 +148,12 @@ const Navigation = () => {
                 <DropdownMenuItem asChild>
                   <Link to="/enterprise" className="w-full" onClick={() => setIsMenuOpen(false)}>
                     Enterprise
+                  </Link>
+                </DropdownMenuItem>
+
+                <DropdownMenuItem asChild>
+                  <Link to="/community" className="w-full" onClick={() => setIsMenuOpen(false)}>
+                    Community
                   </Link>
                 </DropdownMenuItem>
 
