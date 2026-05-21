@@ -140,6 +140,13 @@ const Index = () => {
                     </span>
                   </motion.h1>
                 </div>
+                <motion.div
+                  className="h-[3px] w-24 rounded-full bg-gradient-to-r from-launch-purple via-pink-500 to-launch-orange"
+                  initial={{ opacity: 0, scaleX: 0 }}
+                  animate={{ opacity: 1, scaleX: 1 }}
+                  transition={{ duration: 0.7, delay: 0.15, ease: "easeOut" }}
+                  style={{ transformOrigin: "left" }}
+                />
                 <div className="min-h-[72px] flex items-center">
                   <motion.p
                     className="text-2xl md:text-3xl lg:text-4xl text-launch-purple max-w-xl leading-snug font-semibold"
