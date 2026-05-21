@@ -131,7 +131,7 @@ const Index = () => {
                   </span>
                 </motion.h1>
                 <motion.p
-                  className="text-lg md:text-xl lg:text-2xl text-launch-purple max-w-xl mb-10 leading-snug font-semibold"
+                  className="text-xl md:text-2xl lg:text-3xl text-launch-purple max-w-xl mb-10 leading-snug font-semibold"
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.7, delay: 0.2, ease: "easeOut" }}
