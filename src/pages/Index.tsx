@@ -120,7 +120,15 @@ const Index = () => {
           <div className="relative max-w-6xl mx-auto px-4 sm:px-6 py-12 md:py-20">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16 items-start">
               <div className="flex flex-col gap-6 w-full">
-                <div className="min-h-[156px] md:min-h-[192px] flex items-center">
+                <div className="min-h-[156px] md:min-h-[192px] flex flex-col justify-center gap-4">
+                  <motion.span
+                    className="inline-flex items-center self-start px-4 py-1.5 rounded-full bg-launch-cream border border-launch-orange/30 text-launch-orange text-sm md:text-base font-semibold tracking-wider uppercase"
+                    initial={{ opacity: 0, y: 10 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.5, ease: "easeOut" }}
+                  >
+                    AI for Small Business
+                  </motion.span>
                   <motion.h1
                     className="text-4xl md:text-5xl lg:text-6xl font-bold leading-[1.1]"
                     initial={{ opacity: 0, y: 30 }}
