@@ -127,7 +127,7 @@ const Index = () => {
                   transition={{ duration: 0.7, ease: "easeOut" }}
                 >
                   <span className="bg-gradient-to-r from-launch-purple via-pink-500 to-launch-orange bg-clip-text text-transparent leading-[1.1]">
-                    Helping small businesses<br />save and scale<br />with AI.
+                    Same Team.<br />New Superpowers.
                   </span>
                 </motion.h1>
                 <motion.p
@@ -136,7 +136,7 @@ const Index = () => {
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.7, delay: 0.2, ease: "easeOut" }}
                 >
-                  We help teams move from overwhelmed to operational, one step at a time.
+                  Helping small businesses save and scale with AI.
                 </motion.p>
               </div>
 
