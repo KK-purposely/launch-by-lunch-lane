@@ -121,7 +121,7 @@ const Index = () => {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16 items-center">
               <div>
                 <motion.h1
-                  className="text-5xl md:text-6xl lg:text-7xl font-bold mb-10 md:mb-12 leading-[1.1]"
+                  className="text-4xl md:text-5xl lg:text-6xl font-bold mb-10 md:mb-12 leading-[1.1]"
                   initial={{ opacity: 0, y: 30 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.7, ease: "easeOut" }}
