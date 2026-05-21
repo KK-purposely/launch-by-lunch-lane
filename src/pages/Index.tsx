@@ -127,7 +127,7 @@ const Index = () => {
                   transition={{ duration: 0.7, ease: "easeOut" }}
                 >
                   <span className="bg-gradient-to-r from-launch-purple via-pink-500 to-launch-orange bg-clip-text text-transparent leading-[1.1]">
-                    Helping small<br />business to save<br />and scale with AI.
+                    Helping small businesses<br />save and scale<br />with AI.
                   </span>
                 </motion.h1>
                 <motion.p
