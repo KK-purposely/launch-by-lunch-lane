@@ -120,7 +120,16 @@ const Index = () => {
           <div className="relative max-w-6xl mx-auto px-4 sm:px-6 py-12 md:py-20">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16 items-start">
               <div className="flex flex-col gap-6 w-full">
-                <div className="min-h-[156px] md:min-h-[192px] flex items-center">
+                <div className="min-h-[156px] md:min-h-[192px] flex flex-col justify-center gap-4">
+                  <motion.span
+                    className="inline-flex items-center self-start gap-2 px-3 py-1 rounded-full bg-launch-orange/10 border border-launch-orange/30 text-launch-orange text-xs md:text-sm font-semibold uppercase tracking-wider"
+                    initial={{ opacity: 0, y: 10 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.5, ease: "easeOut" }}
+                  >
+                    <span className="h-1.5 w-1.5 rounded-full bg-launch-orange" />
+                    AI for small business
+                  </motion.span>
                   <motion.h1
                     className="text-4xl md:text-5xl lg:text-6xl font-bold leading-[1.1]"
                     initial={{ opacity: 0, y: 30 }}
@@ -128,10 +137,14 @@ const Index = () => {
                     transition={{ duration: 0.7, ease: "easeOut" }}
                   >
                     <span className="bg-gradient-to-r from-launch-purple via-pink-500 to-launch-orange bg-clip-text text-transparent leading-[1.1]">
-                      Same Team.<br /><span className="whitespace-nowrap">New Superpowers.</span>
+                      Same Team.<br /><span className="whitespace-nowrap relative inline-block">
+                        New Superpowers.
+                        <span aria-hidden className="absolute left-0 right-0 -bottom-1 h-[3px] rounded-full bg-gradient-to-r from-launch-purple via-pink-500 to-launch-orange" />
+                      </span>
                     </span>
                   </motion.h1>
                 </div>
+
                 <div className="min-h-[72px] flex items-center">
                   <motion.p
                     className="text-2xl md:text-3xl lg:text-4xl text-launch-purple max-w-xl leading-snug font-semibold"
