@@ -128,7 +128,7 @@ const Index = () => {
                     transition={{ duration: 0.7, ease: "easeOut" }}
                   >
                     <span className="bg-gradient-to-r from-launch-purple via-pink-500 to-launch-orange bg-clip-text text-transparent leading-[1.1]">
-                      Same Team.<br /><span className="whitespace-nowrap">New Superpowers.</span>
+                      Same Team.<br /><span className="whitespace-nowrap">New <span className="relative inline-block">Superpowers.<span aria-hidden="true" className="pointer-events-none absolute left-0 right-2 -bottom-1 h-[6px] rounded-full bg-gradient-to-r from-launch-purple via-pink-500 to-launch-orange opacity-80" /></span></span>
                     </span>
                   </motion.h1>
                 </div>
