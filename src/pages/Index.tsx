@@ -183,7 +183,7 @@ const Index = () => {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.5, ease: "easeOut" }}
                   >
-                    AI for Small Business
+                    AI Automation for Small Business
                   </motion.span>
                   <motion.h1
                     className="text-4xl md:text-5xl lg:text-6xl font-bold leading-[1.1]"
