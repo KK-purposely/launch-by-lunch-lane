@@ -2,6 +2,12 @@ import { useRef, useEffect } from "react";
 import { Helmet } from "react-helmet-async";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Zap, Check, Target, Sprout, Handshake } from "lucide-react";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
 import { motion, useInView, useAnimation } from "framer-motion";
 import Footer from "@/components/Footer";
 import trustedByImg from "@/assets/trusted-by.png";
@@ -587,6 +593,70 @@ const Index = () => {
             </p>
           </Reveal>
         </section>
+
+        {/* ═══ FAQ ═══ */}
+        <section className="py-16 md:py-24 bg-gradient-to-br from-orange-50 via-white to-launch-light">
+          <div className="max-w-4xl mx-auto px-4 sm:px-6">
+            <Reveal className="text-center mb-12">
+              <h2 className="text-3xl md:text-4xl font-bold mb-4">
+                <span className="bg-gradient-to-r from-launch-purple via-pink-500 to-launch-orange bg-clip-text text-transparent">
+                  AI Automation for Small Business, Answered
+                </span>
+              </h2>
+              <p className="text-lg text-muted-foreground">
+                How Claude becomes the single pane of glass that ties your business together.
+              </p>
+            </Reveal>
+            <Reveal>
+              <Accordion type="single" collapsible className="w-full space-y-4">
+                {[
+                  {
+                    q: "What is AI automation for small business?",
+                    a: "AI automation for small business means using AI, with Claude as a central intelligence layer, to connect the tools you already use (email, calendar, CRM, docs, Slack) so they can talk to each other. Instead of jumping between apps, you get a single pane of glass where AI handles the repetitive work across all of them.",
+                  },
+                  {
+                    q: "How can a small business owner actually start using AI?",
+                    a: "Start by picking one or two repetitive workflows (inbox triage, follow-ups, reporting) and let Claude orchestrate them across your existing tools. Because Claude can connect to nearly every tool you already pay for, you don't need to rip anything out. You add an intelligence layer on top that ties them together.",
+                  },
+                  {
+                    q: "Do I need new software or expensive tools to add AI to my business?",
+                    a: "No. Most small businesses already have what they need. We use Claude as the connective tissue between your existing tools, giving you one place to ask questions, take action, and get work done across email, docs, calendar, CRM, and more, without buying a stack of new software.",
+                  },
+                  {
+                    q: "What is a single pane of glass for AI?",
+                    a: "A single pane of glass means one interface, powered by Claude, where you can see and act on information from every tool your business runs on. Instead of context-switching between ten tabs, you ask once and Claude pulls, summarizes, drafts, or executes across all connected systems.",
+                  },
+                  {
+                    q: "Is AI safe for a small business to adopt?",
+                    a: "Yes, when it's set up thoughtfully. We help small business owners adopt AI in a people-first way, with clear guardrails, role-based access, and a phased rollout so your team trusts the system and your data stays protected.",
+                  },
+                  {
+                    q: "How long does it take to see results from AI automation?",
+                    a: "Most small businesses see meaningful time savings within the first few weeks. Once Claude is wired into your core tools as a single pane of glass, the repetitive work that used to eat hours, reports, scheduling, follow-ups, gets handled automatically.",
+                  },
+                ].map((item, i) => (
+                  <AccordionItem
+                    key={i}
+                    value={`faq-${i}`}
+                    className="bg-white rounded-lg shadow-sm border border-gray-100 overflow-hidden"
+                  >
+                    <AccordionTrigger className="px-6 py-4 text-left hover:no-underline hover:bg-gray-50">
+                      <span className="text-launch-purple font-semibold text-lg pr-4">
+                        {item.q}
+                      </span>
+                    </AccordionTrigger>
+                    <AccordionContent className="px-6 pb-4 pt-0">
+                      <p className="text-muted-foreground text-lg leading-relaxed">
+                        {item.a}
+                      </p>
+                    </AccordionContent>
+                  </AccordionItem>
+                ))}
+              </Accordion>
+            </Reveal>
+          </div>
+        </section>
+
 
         {/* ═══ FINAL CTA ═══ */}
         <section className="py-16 md:py-24 bg-gradient-to-br from-launch-light via-white to-orange-50">
