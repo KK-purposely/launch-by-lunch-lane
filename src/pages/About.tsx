@@ -1,5 +1,6 @@
 
 import React from "react";
+import { Helmet } from "react-helmet-async";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { ArrowUpRight, Sparkles } from "lucide-react";
@@ -11,7 +12,17 @@ const About = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-launch-light via-white to-orange-50">
+      <Helmet>
+        <title>About Launch by Lunch | Our Story & Mission</title>
+        <meta name="description" content="Meet the team behind Launch by Lunch. Our mission is to make AI practical and people-first for the small and mid-sized businesses we serve." />
+        <link rel="canonical" href="https://launchbylunch.co/about" />
+        <meta property="og:title" content="About Launch by Lunch | Our Story & Mission" />
+        <meta property="og:description" content="The story behind Launch by Lunch and our mission to bring approachable AI to growing teams." />
+        <meta property="og:url" content="https://launchbylunch.co/about" />
+        <meta property="og:type" content="website" />
+      </Helmet>
       {/* Hero Section */}
+
       <div className="relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-r from-launch-purple/10 via-transparent to-launch-orange/10" />
         <div className="relative max-w-4xl mx-auto px-4 sm:px-6 py-16">
