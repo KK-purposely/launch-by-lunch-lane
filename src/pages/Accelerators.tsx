@@ -1,8 +1,10 @@
 import React, { useEffect, useState } from "react";
+import { Helmet } from "react-helmet-async";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { ArrowUpRight, Sparkles, Rocket, CheckCircle } from "lucide-react";
 import WaitlistModal from "@/components/WaitlistModal";
+
 
 const Accelerators = () => {
   const [isWaitlistOpen, setIsWaitlistOpen] = useState(false);
@@ -98,7 +100,11 @@ const Accelerators = () => {
 
       {/* Cohorts Section */}
       <div className="max-w-5xl mx-auto px-4 sm:px-6 pb-8">
+        <h2 className="text-3xl md:text-4xl font-bold text-center mb-8 text-launch-purple">
+          Upcoming Cohorts
+        </h2>
         <div className="space-y-8">
+
           {cohorts.map((cohort, index) => (
             <Card 
               key={cohort.id}
