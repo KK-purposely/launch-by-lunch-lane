@@ -22,7 +22,7 @@ const Hero = ({ showButtons = true }: HeroProps) => {
               </h1>
 
               <p className="text-lg md:text-xl text-muted-foreground font-semibold leading-relaxed max-w-lg">
-                We help small businesses adopt AI without leaving anyone behind — saving time, cutting busywork, and helping you get back to the work you love.
+                AI is only powerful when it works with your team, not against it. We cut through the noise and give leaders the right tools, training, and strategy to adopt AI with confidence.
               </p>
             </div>
 
