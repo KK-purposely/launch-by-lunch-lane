@@ -209,14 +209,14 @@ const Index = () => {
                   transition={{ duration: 0.7, delay: 0.15, ease: "easeOut" }}
                   style={{ transformOrigin: "left" }}
                 />
-                <div className="min-h-[72px] flex items-center">
+                <div className="flex items-center">
                   <motion.p
-                    className="text-2xl md:text-3xl lg:text-4xl text-launch-purple max-w-xl leading-snug font-semibold"
+                    className="text-lg md:text-xl lg:text-2xl text-launch-purple max-w-xl leading-relaxed font-semibold"
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.7, delay: 0.2, ease: "easeOut" }}
                   >
-                    Helping small businesses save and scale with AI.
+                    We help small businesses adopt AI without leaving anyone behind, saving time, cutting busywork, and helping you get back to the work you love.
                   </motion.p>
                 </div>
               </div>
