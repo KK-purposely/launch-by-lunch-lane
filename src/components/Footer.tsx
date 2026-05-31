@@ -7,7 +7,7 @@ const Footer = () => {
       <div className="max-w-6xl mx-auto flex flex-col items-center justify-center">
         <div className="mb-4 text-center">
           <p className="text-xl font-bold">Launch by Lunch</p>
-          <p className="text-sm text-white/70">The no-code fast lane</p>
+          <p className="text-sm text-white/70">Empowering Main Street America with AI</p>
         </div>
         
         <div className="mb-4 text-sm text-center">
@@ -27,9 +27,6 @@ const Footer = () => {
           </a>
           <a href="https://status.launchbylunch.co/" className="underline hover:text-launch-orange transition-colors" target="_blank" rel="noopener noreferrer">
             Status
-          </a>
-          <a href="https://sponsorship.launchbylunch.co/" className="underline hover:text-launch-orange transition-colors" target="_blank" rel="noopener noreferrer">
-            Sponsorship
           </a>
         </div>
         
