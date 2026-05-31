@@ -1,5 +1,6 @@
 
 import React, { useState, useEffect } from "react";
+import { Helmet } from "react-helmet-async";
 import { toast } from "@/components/ui/sonner";
 import { supabase } from "@/integrations/supabase/client";
 import PasswordForm from "@/components/members/PasswordForm";
@@ -7,6 +8,17 @@ import MembersAreaHeader from "@/components/members/MembersAreaHeader";
 import MemberWelcomeCard from "@/components/members/MemberWelcomeCard";
 import MemberResourcesCard from "@/components/members/MemberResourcesCard";
 import MemberVideoSection from "@/components/members/MemberVideoSection";
+
+const MembersHead = () => (
+  <Helmet>
+    <title>Members Area | Launch by Lunch</title>
+    <meta name="description" content="Password-protected members area for the Launch by Lunch community with exclusive videos, resources, and learning content." />
+    <meta name="robots" content="noindex,nofollow" />
+    <link rel="canonical" href="https://launchbylunch.co/members" />
+  </Helmet>
+);
+
+
 
 const MembersOnly = () => {
   const [password, setPassword] = useState("");
@@ -86,20 +98,25 @@ const MembersOnly = () => {
 
   if (!isAuthenticated) {
     return (
-      <PasswordForm 
-        password={password}
-        setPassword={setPassword}
-        onSubmit={handleSubmit}
-        isLoading={isLoading}
-      />
+      <>
+        <MembersHead />
+        <PasswordForm 
+          password={password}
+          setPassword={setPassword}
+          onSubmit={handleSubmit}
+          isLoading={isLoading}
+        />
+      </>
     );
   }
 
   return (
     <div className="bg-white min-h-screen">
+      <MembersHead />
       <div className="max-w-7xl mx-auto px-4 sm:px-6 py-16">
         <MembersAreaHeader onLogout={handleLogout} />
         
+        <h2 className="sr-only">Member Resources</h2>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
           <MemberWelcomeCard />
           <MemberResourcesCard />
@@ -112,5 +129,6 @@ const MembersOnly = () => {
     </div>
   );
 };
+
 
 export default MembersOnly;

@@ -1,5 +1,6 @@
 
 import React, { useState } from "react";
+import { Helmet } from "react-helmet-async";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
@@ -9,6 +10,7 @@ import { supabase } from "@/integrations/supabase/client";
 import { useToast } from "@/hooks/use-toast";
 
 const Contact = () => {
+
   const [formData, setFormData] = useState({
     firstName: "",
     lastName: "",
@@ -104,8 +106,18 @@ const Contact = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-launch-light via-white to-orange-50">
+      <Helmet>
+        <title>Contact Launch by Lunch | Talk to Our Team</title>
+        <meta name="description" content="Reach out to Launch by Lunch about AI advisory, accelerators, workshops, or partnerships. We respond to every inquiry and help connect you with the right next step." />
+        <link rel="canonical" href="https://launchbylunch.co/contact" />
+        <meta property="og:title" content="Contact Launch by Lunch | Talk to Our Team" />
+        <meta property="og:description" content="Get in touch about AI advisory, accelerators, workshops, or partnerships." />
+        <meta property="og:url" content="https://launchbylunch.co/contact" />
+        <meta property="og:type" content="website" />
+      </Helmet>
       {/* Hero Section */}
       <div className="relative overflow-hidden">
+
         <div className="absolute inset-0 bg-gradient-to-r from-launch-purple/10 via-transparent to-launch-orange/10" />
         <div className="relative max-w-4xl mx-auto px-4 sm:px-6 py-16">
           <div className="text-center mb-8">

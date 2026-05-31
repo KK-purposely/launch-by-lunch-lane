@@ -26,9 +26,11 @@ const PasswordForm = ({ password, setPassword, onSubmit, isLoading = false }: Pa
           <p className="text-xl text-gray-600">This area is password-protected. Please enter the password to continue.</p>
         </div>
         
+        <h2 className="sr-only">Member Login</h2>
         <Card className="shadow-lg border-launch-purple/10">
           <CardHeader className="text-center">
             <CardTitle className="text-launch-purple">Access Required</CardTitle>
+
             <CardDescription>Enter your password to access exclusive member content</CardDescription>
           </CardHeader>
           <CardContent>

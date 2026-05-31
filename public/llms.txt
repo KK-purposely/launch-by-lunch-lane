@@ -1,0 +1,24 @@
+# Launch by Lunch
+
+> Approachable AI innovation for small and mid-sized businesses. Same team, new superpowers — we help teams adopt practical, people-first AI that saves time and scales operations.
+
+Launch by Lunch is a consultancy and community that helps non-technical founders, operators, and SMBs put AI to work. We run accelerators, enterprise advisory engagements, office hours, workshops, and keynotes.
+
+## Pages
+
+- [Home](/): Overview of Launch by Lunch — approachable AI for real teams.
+- [About](/about): Our story, mission, and the people behind Launch by Lunch.
+- [Services](/services): Packages and engagements for SMBs adopting AI.
+- [Enterprise](/enterprise): AI advisory and implementation for established teams.
+- [Enterprise Services](/enterprise-services): Detailed enterprise offerings.
+- [Accelerators](/accelerators): Cohort-based programs to ship an AI-powered prototype fast.
+- [AI Power Hour](/ai-power-hour): One-hour focused sessions to unblock your AI roadmap.
+- [Office Hours](/office-hours): Weekly drop-in sessions for non-technical founders.
+- [Teardown](/teardown): Expert review of your product, workflow, or AI implementation.
+- [Keynotes & Workshops](/keynotes-workshops): Speaking and hands-on workshop offerings.
+- [Claude Code](/claude-code): Workshops and resources for Claude Code.
+- [Community](/community): The elite network for the AI-first community.
+- [Community Partnerships](/community-partnerships): Partner with our community.
+- [Women in Community](/women-in-community): Programs supporting women in AI.
+- [Trainer Application](/trainer-application): Apply to become a Launch by Lunch trainer.
+- [Contact](/contact): Get in touch with the team.
