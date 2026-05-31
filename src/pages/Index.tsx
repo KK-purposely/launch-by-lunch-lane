@@ -2,6 +2,12 @@ import { useRef, useEffect } from "react";
 import { Helmet } from "react-helmet-async";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Zap, Check, Target, Sprout, Handshake } from "lucide-react";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
 import { motion, useInView, useAnimation } from "framer-motion";
 import Footer from "@/components/Footer";
 import trustedByImg from "@/assets/trusted-by.png";
