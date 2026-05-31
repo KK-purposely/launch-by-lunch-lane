@@ -1,5 +1,6 @@
 
 import React, { useState, useEffect } from "react";
+import { Helmet } from "react-helmet-async";
 import { toast } from "@/components/ui/sonner";
 import { supabase } from "@/integrations/supabase/client";
 import PasswordForm from "@/components/members/PasswordForm";
@@ -7,6 +8,17 @@ import MembersAreaHeader from "@/components/members/MembersAreaHeader";
 import MemberWelcomeCard from "@/components/members/MemberWelcomeCard";
 import MemberResourcesCard from "@/components/members/MemberResourcesCard";
 import MemberVideoSection from "@/components/members/MemberVideoSection";
+
+const MembersHead = () => (
+  <Helmet>
+    <title>Members Area | Launch by Lunch</title>
+    <meta name="description" content="Password-protected members area for the Launch by Lunch community with exclusive videos, resources, and learning content." />
+    <meta name="robots" content="noindex,nofollow" />
+    <link rel="canonical" href="https://launchbylunch.co/members" />
+  </Helmet>
+);
+
+
 
 const MembersOnly = () => {
   const [password, setPassword] = useState("");

@@ -69,6 +69,16 @@ const Accelerators = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-launch-light via-white to-orange-50">
+      <Helmet>
+        <title>AI Accelerators & Cohorts | Launch by Lunch</title>
+        <meta name="description" content="Join a Launch by Lunch accelerator cohort and vibe code a working AI prototype in hours, not months. Built for non-technical founders and operators." />
+        <link rel="canonical" href="https://launchbylunch.co/accelerators" />
+        <meta property="og:title" content="AI Accelerators & Cohorts | Launch by Lunch" />
+        <meta property="og:description" content="Ship a working AI prototype in hours with our cohort-based accelerators." />
+        <meta property="og:url" content="https://launchbylunch.co/accelerators" />
+        <meta property="og:type" content="website" />
+      </Helmet>
+
       {/* Hero Section with Gradient */}
       <div className="relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-r from-launch-purple/10 via-transparent to-launch-orange/10" />
