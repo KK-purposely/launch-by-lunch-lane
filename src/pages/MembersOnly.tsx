@@ -98,20 +98,25 @@ const MembersOnly = () => {
 
   if (!isAuthenticated) {
     return (
-      <PasswordForm 
-        password={password}
-        setPassword={setPassword}
-        onSubmit={handleSubmit}
-        isLoading={isLoading}
-      />
+      <>
+        <MembersHead />
+        <PasswordForm 
+          password={password}
+          setPassword={setPassword}
+          onSubmit={handleSubmit}
+          isLoading={isLoading}
+        />
+      </>
     );
   }
 
   return (
     <div className="bg-white min-h-screen">
+      <MembersHead />
       <div className="max-w-7xl mx-auto px-4 sm:px-6 py-16">
         <MembersAreaHeader onLogout={handleLogout} />
         
+        <h2 className="sr-only">Member Resources</h2>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
           <MemberWelcomeCard />
           <MemberResourcesCard />
@@ -124,5 +129,6 @@ const MembersOnly = () => {
     </div>
   );
 };
+
 
 export default MembersOnly;
