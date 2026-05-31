@@ -216,7 +216,7 @@ const Index = () => {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.7, delay: 0.2, ease: "easeOut" }}
                   >
-                    Helping small businesses save and scale with AI.
+                    We help small businesses adopt AI without leaving anyone behind, saving time, cutting busywork, and helping you get back to the work you love.
                   </motion.p>
                 </div>
               </div>
