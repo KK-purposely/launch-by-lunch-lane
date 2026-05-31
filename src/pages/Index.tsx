@@ -85,22 +85,76 @@ const Index = () => {
   return (
     <>
       <Helmet>
-        <title>Launch by Lunch - Approachable AI Innovation</title>
+        <title>Launch by Lunch - AI Automation for Small Business Owners</title>
         <meta name="description" content="Approachable innovation. Same team, new superpowers. We help small and mid-sized businesses adopt AI in a practical, people-first way." />
         <meta property="og:type" content="website" />
         <link rel="canonical" href="https://launchbylunch.co/" />
         <meta property="og:url" content="https://launchbylunch.co/" />
 
-        <meta property="og:title" content="Launch by Lunch - Approachable AI Innovation" />
+        <meta property="og:title" content="Launch by Lunch - AI Automation for Small Business Owners" />
         <meta property="og:description" content="Approachable innovation. AI built for your team, not around it." />
         <meta property="og:image" content="https://cdn.lovable.app/lovable-uploads/8f3eba1c-0f11-4411-9774-5671f6239bf2.png" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
         <meta property="twitter:card" content="summary_large_image" />
         <meta property="twitter:url" content="https://launchbylunch.com/" />
-        <meta property="twitter:title" content="Launch by Lunch - Approachable AI Innovation" />
+        <meta property="twitter:title" content="Launch by Lunch - AI Automation for Small Business Owners" />
         <meta property="twitter:description" content="Approachable innovation. AI built for your team, not around it." />
         <meta property="twitter:image" content="https://cdn.lovable.app/lovable-uploads/8f3eba1c-0f11-4411-9774-5671f6239bf2.png" />
+        <script type="application/ld+json">{JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "What is AI automation for small business?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "AI automation for small business means using AI, with Claude as a central intelligence layer, to connect the tools you already use (email, calendar, CRM, docs, Slack) so they can talk to each other. Instead of jumping between apps, you get a single pane of glass where AI handles the repetitive work across all of them."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How can a small business owner actually start using AI?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Start by picking one or two repetitive workflows (inbox triage, follow-ups, reporting) and let Claude orchestrate them across your existing tools. Because Claude can connect to nearly every tool you already pay for, you don't need to rip anything out. You add an intelligence layer on top that ties them together."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Do I need new software or expensive tools to add AI to my business?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "No. Most small businesses already have what they need. We use Claude as the connective tissue between your existing tools, giving you one place to ask questions, take action, and get work done across email, docs, calendar, CRM, and more, without buying a stack of new software."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What is a single pane of glass for AI?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "A single pane of glass means one interface, powered by Claude, where you can see and act on information from every tool your business runs on. Instead of context-switching between ten tabs, you ask once and Claude pulls, summarizes, drafts, or executes across all connected systems."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is AI safe for a small business to adopt?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes, when it's set up thoughtfully. We help small business owners adopt AI in a people-first way, with clear guardrails, role-based access, and a phased rollout so your team trusts the system and your data stays protected."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How long does it take to see results from AI automation?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Most small businesses see meaningful time savings within the first few weeks. Once Claude is wired into your core tools as a single pane of glass, the repetitive work that used to eat hours, reports, scheduling, follow-ups, gets handled automatically."
+              }
+            }
+          ]
+        })}</script>
       </Helmet>
 
       <div className="min-h-screen flex flex-col bg-white">
@@ -129,7 +183,7 @@ const Index = () => {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.5, ease: "easeOut" }}
                   >
-                    AI for Small Business
+                    AI Automation for Small Business
                   </motion.span>
                   <motion.h1
                     className="text-4xl md:text-5xl lg:text-6xl font-bold leading-[1.1]"
