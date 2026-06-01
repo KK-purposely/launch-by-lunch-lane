@@ -608,7 +608,7 @@ const Index = () => {
               </p>
             </Reveal>
             <Reveal>
-              <Accordion type="single" collapsible className="w-full space-y-4">
+              <div className="space-y-6">
                 {[
                   {
                     q: "What is AI automation for small business?",
@@ -635,24 +635,19 @@ const Index = () => {
                     a: "Most small businesses see meaningful time savings within the first few weeks of implementation. Once Claude is wired into your core tools as a single pane of glass, the repetitive work that used to eat hours of your week, generating reports, scheduling meetings, drafting follow-up emails, routing leads, updating spreadsheets, gets handled automatically or with minimal input. The timeline depends on the complexity of your workflows, but because we build on top of tools your team already uses, there is no steep learning curve or months-long migration. Your people continue working the way they always have, except now Claude is working alongside them, handling the busywork so they can focus on the strategy, the relationships, and the creative problem-solving that actually grows the business.",
                   },
                 ].map((item, i) => (
-                  <AccordionItem
+                  <article
                     key={i}
-                    value={`faq-${i}`}
-                    className="bg-white rounded-lg shadow-sm border border-gray-100 overflow-hidden"
+                    className="bg-white rounded-lg shadow-sm border border-gray-100 p-6 md:p-8"
                   >
-                    <AccordionTrigger className="px-6 py-4 text-left hover:no-underline hover:bg-gray-50">
-                      <span className="text-launch-purple font-semibold text-lg pr-4">
-                        {item.q}
-                      </span>
-                    </AccordionTrigger>
-                    <AccordionContent className="px-6 pb-4 pt-0">
-                      <p className="text-muted-foreground text-lg leading-relaxed">
-                        {item.a}
-                      </p>
-                    </AccordionContent>
-                  </AccordionItem>
+                    <h3 className="text-launch-purple font-semibold text-xl md:text-2xl mb-3">
+                      {item.q}
+                    </h3>
+                    <p className="text-muted-foreground text-lg leading-relaxed">
+                      {item.a}
+                    </p>
+                  </article>
                 ))}
-              </Accordion>
+              </div>
             </Reveal>
           </div>
         </section>
