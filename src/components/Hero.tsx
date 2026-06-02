@@ -15,14 +15,16 @@ const Hero = ({ showButtons = true }: HeroProps) => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16 items-center">
             {/* Left: Text */}
             <div>
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-5 leading-tight">
-                <span className="bg-gradient-to-r from-lbl-ink via-lbl-magenta to-lbl-orange bg-clip-text text-transparent">
-                  Practical AI Adoption for Modern Leadership
-                </span>
+              <h1 className="text-5xl md:text-6xl lg:text-7xl font-extrabold leading-[1.05] tracking-tight mb-4">
+                <span className="text-lbl-eggplant">Same Team.</span>
+                <br />
+                <span className="bg-grad-brand bg-clip-text text-transparent">New Superpowers.</span>
               </h1>
 
-              <p className="text-lg md:text-xl text-muted-foreground font-semibold leading-relaxed max-w-lg">
-                AI is only powerful when it works with your team, not against it. We cut through the noise and give leaders the right tools, training, and strategy to adopt AI with confidence.
+              <hr className="brand-rule mb-5" />
+
+              <p className="text-lg md:text-xl text-lbl-ink/80 font-medium leading-relaxed max-w-lg">
+                Helping small businesses save and scale with AI.
               </p>
             </div>
 
