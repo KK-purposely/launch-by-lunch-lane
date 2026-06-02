@@ -5,13 +5,13 @@ import { User, Shield } from "lucide-react";
 
 const FormHeader = () => {
   return (
-    <CardHeader className="bg-gradient-to-r from-launch-purple/10 via-launch-orange/5 to-launch-purple/10 border-b border-launch-orange/20">
+    <CardHeader className="bg-gradient-to-r from-lbl-ink/10 via-lbl-orange/5 to-lbl-ink/10 border-b border-lbl-orange/20">
       <div className="flex items-center gap-4">
-        <div className="p-3 bg-gradient-to-r from-launch-purple to-launch-orange rounded-xl shadow-md">
+        <div className="p-3 bg-gradient-to-r from-lbl-ink to-lbl-orange rounded-xl shadow-md">
           <User className="h-6 w-6 text-white" />
         </div>
         <div className="flex-1">
-          <CardTitle className="text-2xl text-launch-purple mb-2">Join Our Community</CardTitle>
+          <CardTitle className="text-2xl text-lbl-ink mb-2">Join Our Community</CardTitle>
           <CardDescription className="text-base text-gray-600">
             Tell us about yourself to get started with your membership.
           </CardDescription>

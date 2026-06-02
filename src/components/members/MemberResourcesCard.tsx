@@ -38,13 +38,13 @@ const MemberResourcesCard = () => {
   ];
 
   return (
-    <Card className="shadow-lg border-launch-purple/10">
+    <Card className="shadow-lg border-lbl-ink/10">
       <CardHeader>
         <div className="flex items-center gap-3 mb-2">
-          <div className="bg-launch-light p-2 rounded-lg">
-            <BookOpen className="w-6 h-6 text-launch-purple" />
+          <div className="bg-lbl-paper p-2 rounded-lg">
+            <BookOpen className="w-6 h-6 text-lbl-ink" />
           </div>
-          <CardTitle className="text-launch-purple">Member Resources</CardTitle>
+          <CardTitle className="text-lbl-ink">Member Resources</CardTitle>
         </div>
         <CardDescription>
           Helpful resources for your no-code journey
@@ -53,7 +53,7 @@ const MemberResourcesCard = () => {
       <CardContent>
         <div className="space-y-6">
           {resources.map((resource, index) => (
-            <div key={index} className="border border-gray-200 rounded-lg p-4 hover:border-launch-purple/30 transition-colors">
+            <div key={index} className="border border-gray-200 rounded-lg p-4 hover:border-lbl-ink/30 transition-colors">
               <a 
                 href={resource.url} 
                 target="_blank"
@@ -61,14 +61,14 @@ const MemberResourcesCard = () => {
                 className="flex items-center justify-between group"
               >
                 <div>
-                  <h3 className="font-medium text-launch-purple group-hover:text-launch-purple/80 mb-1">
+                  <h3 className="font-medium text-lbl-ink group-hover:text-lbl-ink/80 mb-1">
                     {resource.title}
                   </h3>
                   <p className="text-gray-600 text-sm">
                     {resource.description}
                   </p>
                 </div>
-                <ExternalLink className="w-5 h-5 text-gray-400 group-hover:text-launch-purple" />
+                <ExternalLink className="w-5 h-5 text-gray-400 group-hover:text-lbl-ink" />
               </a>
             </div>
           ))}

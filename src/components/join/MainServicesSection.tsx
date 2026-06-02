@@ -101,24 +101,24 @@ const MainServicesSection = ({ onServiceClick }: MainServicesSectionProps) => {
       <div className="flex flex-col items-center text-center space-y-8 px-6 py-8">
         <div className="flex justify-center mb-4">
           <div className="relative">
-            <div className="absolute inset-0 bg-gradient-to-r from-launch-purple to-launch-orange rounded-3xl blur-xl opacity-30" />
-            <div className="relative w-16 h-16 bg-gradient-to-r from-launch-purple to-launch-orange rounded-3xl flex items-center justify-center shadow-2xl">
+            <div className="absolute inset-0 bg-gradient-to-r from-lbl-ink to-lbl-orange rounded-3xl blur-xl opacity-30" />
+            <div className="relative w-16 h-16 bg-gradient-to-r from-lbl-ink to-lbl-orange rounded-3xl flex items-center justify-center shadow-2xl">
               <Rocket className="h-8 w-8 text-white" />
             </div>
           </div>
         </div>
         
         <h4 className="text-3xl md:text-5xl font-bold leading-tight">
-          <span className="bg-gradient-to-r from-launch-purple to-launch-orange bg-clip-text text-transparent">
+          <span className="bg-gradient-to-r from-lbl-ink to-lbl-orange bg-clip-text text-transparent">
             Not sure if it's a good fit? Schedule a call with us.
           </span>
         </h4>
         
         <div className="relative inline-block mt-8">
-          <div className="absolute inset-0 bg-gradient-to-r from-launch-purple to-launch-orange rounded-full blur-xl opacity-40 animate-pulse" />
+          <div className="absolute inset-0 bg-gradient-to-r from-lbl-ink to-lbl-orange rounded-full blur-xl opacity-40 animate-pulse" />
           <Button 
             size="lg" 
-            className="relative bg-gradient-to-r from-launch-purple to-launch-orange hover:from-launch-orange hover:to-launch-purple text-white px-10 py-4 text-lg rounded-full font-bold transition-all duration-300 shadow-2xl hover:shadow-3xl hover:scale-110 group"
+            className="relative bg-gradient-to-r from-lbl-ink to-lbl-orange hover:from-lbl-orange hover:to-lbl-ink text-white px-10 py-4 text-lg rounded-full font-bold transition-all duration-300 shadow-2xl hover:shadow-3xl hover:scale-110 group"
             onClick={handleAcceleratorClick}
           >
             <span className="flex items-center gap-3">

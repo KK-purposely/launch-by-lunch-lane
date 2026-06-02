@@ -23,7 +23,7 @@ const WhoWeAre = () => {
     <section className="bg-white py-16 md:py-20">
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         <div className="text-center mb-14">
-          <h2 className="text-3xl md:text-4xl font-bold text-launch-purple mb-4">
+          <h2 className="text-3xl md:text-4xl font-bold text-lbl-ink mb-4">
             Who We Are
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
@@ -33,7 +33,7 @@ const WhoWeAre = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {team.map((person, i) => (
-            <Card key={i} className="border-none shadow-lg bg-gradient-to-br from-white via-launch-light/20 to-white overflow-hidden">
+            <Card key={i} className="border-none shadow-lg bg-gradient-to-br from-white via-lbl-paper/20 to-white overflow-hidden">
               <CardContent className="p-6 md:p-8">
                 <div className="flex flex-col items-center text-center">
                   <img
@@ -47,17 +47,17 @@ const WhoWeAre = () => {
                         href={person.linkedIn}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="bg-gradient-to-r from-launch-purple to-launch-orange bg-clip-text text-transparent hover:opacity-80 transition-opacity"
+                        className="bg-gradient-to-r from-lbl-ink to-lbl-orange bg-clip-text text-transparent hover:opacity-80 transition-opacity"
                       >
                         {person.name}
                       </a>
                     ) : (
-                      <span className="bg-gradient-to-r from-launch-purple to-launch-orange bg-clip-text text-transparent">
+                      <span className="bg-gradient-to-r from-lbl-ink to-lbl-orange bg-clip-text text-transparent">
                         {person.name}
                       </span>
                     )}
                   </h3>
-                  <p className="text-launch-orange font-semibold mb-3">{person.title}</p>
+                  <p className="text-lbl-orange font-semibold mb-3">{person.title}</p>
                   <p className="text-gray-600 leading-relaxed text-lg">{person.bio}</p>
                 </div>
               </CardContent>

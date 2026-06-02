@@ -45,7 +45,7 @@ const PointOfServiceSection = ({ onServiceClick }: PointOfServiceSectionProps) =
             href="https://www.linkedin.com/in/karen-kelly-daring-greatly/" 
             target="_blank" 
             rel="noopener noreferrer" 
-            className="text-launch-orange font-semibold hover:text-launch-purple transition-colors duration-300 hover:underline"
+            className="text-lbl-orange font-semibold hover:text-lbl-ink transition-colors duration-300 hover:underline"
           >
             Karen Kelly
           </a>{" "}
@@ -54,7 +54,7 @@ const PointOfServiceSection = ({ onServiceClick }: PointOfServiceSectionProps) =
             href="https://www.linkedin.com/in/stephansmithbc93/" 
             target="_blank" 
             rel="noopener noreferrer" 
-            className="text-launch-orange font-semibold hover:text-launch-purple transition-colors duration-300 hover:underline"
+            className="text-lbl-orange font-semibold hover:text-lbl-ink transition-colors duration-300 hover:underline"
           >
             Stephan Smith
           </a>{" "}
@@ -71,7 +71,7 @@ const PointOfServiceSection = ({ onServiceClick }: PointOfServiceSectionProps) =
     <div className="max-w-5xl mx-auto px-4 sm:px-6 pb-16">
       <div className="mb-12">
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-4">
-          <span className="bg-gradient-to-r from-launch-purple to-launch-orange bg-clip-text text-transparent">
+          <span className="bg-gradient-to-r from-lbl-ink to-lbl-orange bg-clip-text text-transparent">
             Point of Service
           </span>
         </h2>

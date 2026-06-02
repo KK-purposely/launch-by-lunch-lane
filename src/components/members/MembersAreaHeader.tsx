@@ -10,13 +10,13 @@ const MembersAreaHeader = ({ onLogout }: MembersAreaHeaderProps) => {
   return (
     <div className="flex justify-between items-center mb-12">
       <div>
-        <h1 className="text-4xl md:text-5xl font-bold text-launch-purple mb-4">Members Area</h1>
+        <h1 className="text-4xl md:text-5xl font-bold text-lbl-ink mb-4">Members Area</h1>
         <p className="text-xl text-gray-600">Welcome to your exclusive member portal.</p>
       </div>
       <Button 
         onClick={onLogout} 
         variant="outline" 
-        className="border-launch-purple text-launch-purple hover:bg-launch-purple/10"
+        className="border-lbl-ink text-lbl-ink hover:bg-lbl-ink/10"
       >
         Logout
       </Button>

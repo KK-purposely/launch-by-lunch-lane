@@ -68,7 +68,7 @@ const Accelerators = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-launch-light via-white to-orange-50">
+    <div className="min-h-screen bg-gradient-to-br from-lbl-paper via-white to-orange-50">
       <Helmet>
         <title>AI Accelerators & Cohorts | Launch by Lunch</title>
         <meta name="description" content="Join a Launch by Lunch accelerator cohort and vibe code a working AI prototype in hours, not months. Built for non-technical founders and operators." />
@@ -81,22 +81,22 @@ const Accelerators = () => {
 
       {/* Hero Section with Gradient */}
       <div className="relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-r from-launch-purple/10 via-transparent to-launch-orange/10" />
+        <div className="absolute inset-0 bg-gradient-to-r from-lbl-ink/10 via-transparent to-lbl-orange/10" />
         <div className="relative max-w-4xl mx-auto px-4 sm:px-6 py-16">
           <div className="text-center mb-8">
-            <div className="inline-flex items-center gap-2 bg-gradient-to-r from-launch-purple to-launch-orange bg-clip-text text-transparent mb-4">
-              <Sparkles className="h-6 w-6 text-launch-orange animate-pulse" />
+            <div className="inline-flex items-center gap-2 bg-gradient-to-r from-lbl-ink to-lbl-orange bg-clip-text text-transparent mb-4">
+              <Sparkles className="h-6 w-6 text-lbl-orange animate-pulse" />
               <span className="text-sm font-semibold uppercase tracking-wide">Launch by Lunch Accelerators</span>
-              <Sparkles className="h-6 w-6 text-launch-purple animate-pulse" />
+              <Sparkles className="h-6 w-6 text-lbl-ink animate-pulse" />
             </div>
             <h1 className="text-4xl md:text-6xl font-bold mb-6">
-              <span className="bg-gradient-to-r from-launch-purple via-launch-orange to-launch-purple bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-lbl-ink via-lbl-orange to-lbl-ink bg-clip-text text-transparent">
                 Vibe Code Your Vision
               </span>
             </h1>
             <p className="text-xl md:text-2xl text-gray-700 mb-4 max-w-3xl mx-auto leading-relaxed">
               If code and cost stands between you and your vision, this accelerator is for you. 
-              <span className="text-launch-orange font-semibold"> Learn how to vibe code a working prototype in just an hour or two.</span>
+              <span className="text-lbl-orange font-semibold"> Learn how to vibe code a working prototype in just an hour or two.</span>
             </p>
             <div className="bg-gradient-to-r from-red-50 to-orange-50 border border-red-200 rounded-xl p-4 max-w-2xl mx-auto">
               <p className="text-lg font-medium text-red-700 flex items-center justify-center gap-2">
@@ -110,7 +110,7 @@ const Accelerators = () => {
 
       {/* Cohorts Section */}
       <div className="max-w-5xl mx-auto px-4 sm:px-6 pb-8">
-        <h2 className="text-3xl md:text-4xl font-bold text-center mb-8 text-launch-purple">
+        <h2 className="text-3xl md:text-4xl font-bold text-center mb-8 text-lbl-ink">
           Upcoming Cohorts
         </h2>
         <div className="space-y-8">
@@ -122,8 +122,8 @@ const Accelerators = () => {
                 cohort.isWaitlist
                   ? 'border-gradient-to-r from-blue-400 to-purple-400 shadow-xl bg-gradient-to-br from-white via-blue-50 to-white'
                   : cohort.isActive 
-                  ? 'border-gradient-to-r from-launch-purple to-launch-orange shadow-xl bg-gradient-to-br from-white via-launch-light to-white' 
-                  : 'border-gray-200 hover:border-launch-orange bg-white/60 backdrop-blur-sm'
+                  ? 'border-gradient-to-r from-lbl-ink to-lbl-orange shadow-xl bg-gradient-to-br from-white via-lbl-paper to-white' 
+                  : 'border-gray-200 hover:border-lbl-orange bg-white/60 backdrop-blur-sm'
               }`}
               style={{
                 animation: `fade-in 0.6s ease-out ${index * 0.1}s both`
@@ -134,24 +134,24 @@ const Accelerators = () => {
                   <div className={`text-white px-6 py-2 rounded-full text-sm font-bold shadow-lg ${
                     cohort.isWaitlist 
                       ? 'bg-gradient-to-r from-blue-500 to-purple-500' 
-                      : 'bg-gradient-to-r from-launch-purple to-launch-orange'
+                      : 'bg-gradient-to-r from-lbl-ink to-lbl-orange'
                   }`}>
                     {cohort.isWaitlist ? '🔔 Join Waitlist' : '🚀 Apply Now'}
                   </div>
                 </div>
               )}
               
-              <CardHeader className={`${(cohort.isActive || cohort.isWaitlist) ? 'bg-gradient-to-r from-launch-purple/5 to-launch-orange/5' : 'bg-gray-50/80'} relative overflow-hidden`}>
+              <CardHeader className={`${(cohort.isActive || cohort.isWaitlist) ? 'bg-gradient-to-r from-lbl-ink/5 to-lbl-orange/5' : 'bg-gray-50/80'} relative overflow-hidden`}>
                 <div className="absolute top-0 right-0 w-32 h-32 opacity-10">
-                  <Rocket className="w-full h-full text-launch-orange" />
+                  <Rocket className="w-full h-full text-lbl-orange" />
                 </div>
                 <div className="relative z-10">
                   <div className="flex justify-between items-center">
                     <div className="flex items-center gap-3">
-                      <div className={`p-3 rounded-full ${(cohort.isActive || cohort.isWaitlist) ? 'bg-gradient-to-r from-launch-purple to-launch-orange' : 'bg-gray-400'} shadow-lg`}>
+                      <div className={`p-3 rounded-full ${(cohort.isActive || cohort.isWaitlist) ? 'bg-gradient-to-r from-lbl-ink to-lbl-orange' : 'bg-gray-400'} shadow-lg`}>
                         <Rocket className="h-6 w-6 text-white" />
                       </div>
-                      <CardTitle className={`text-2xl md:text-3xl ${(cohort.isActive || cohort.isWaitlist) ? 'bg-gradient-to-r from-launch-purple to-launch-orange bg-clip-text text-transparent' : 'text-gray-600'}`}>
+                      <CardTitle className={`text-2xl md:text-3xl ${(cohort.isActive || cohort.isWaitlist) ? 'bg-gradient-to-r from-lbl-ink to-lbl-orange bg-clip-text text-transparent' : 'text-gray-600'}`}>
                         {cohort.name}
                       </CardTitle>
                     </div>
@@ -212,7 +212,7 @@ const Accelerators = () => {
                       cohort.isWaitlist
                         ? 'bg-gradient-to-r from-blue-500 to-purple-500 hover:from-purple-500 hover:to-blue-500 text-white shadow-lg hover:shadow-xl'
                         : cohort.isActive 
-                        ? 'bg-gradient-to-r from-launch-purple to-launch-orange hover:from-launch-orange hover:to-launch-purple text-white shadow-lg hover:shadow-xl' 
+                        ? 'bg-gradient-to-r from-lbl-ink to-lbl-orange hover:from-lbl-orange hover:to-lbl-ink text-white shadow-lg hover:shadow-xl' 
                         : 'text-gray-500'
                     }`}
                     onClick={() => cohort.isWaitlist ? setIsWaitlistOpen(true) : window.open(cohort.url, '_blank')}
@@ -240,9 +240,9 @@ const Accelerators = () => {
 
         {/* Bottom CTA Section */}
         <div className="mt-16 text-center">
-          <div className="bg-gradient-to-r from-launch-purple/10 via-launch-orange/10 to-launch-purple/10 rounded-3xl p-8 md:p-12">
+          <div className="bg-gradient-to-r from-lbl-ink/10 via-lbl-orange/10 to-lbl-ink/10 rounded-3xl p-8 md:p-12">
             <h2 className="text-2xl md:text-3xl font-bold mb-4">
-              <span className="bg-gradient-to-r from-launch-purple to-launch-orange bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-lbl-ink to-lbl-orange bg-clip-text text-transparent">
                 Ready to Build Your Vision?
               </span>
             </h2>

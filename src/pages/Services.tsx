@@ -17,7 +17,7 @@ const Services = () => {
         <meta property="og:type" content="website" />
       </Helmet>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 py-16">
-        <h1 className="text-4xl md:text-5xl font-bold mb-12 text-center text-launch-purple">Our Services</h1>
+        <h1 className="text-4xl md:text-5xl font-bold mb-12 text-center text-lbl-ink">Our Services</h1>
         
         {/* Services Packages Section */}
         <PackagesSection />

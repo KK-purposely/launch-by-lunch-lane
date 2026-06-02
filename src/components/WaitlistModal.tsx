@@ -74,8 +74,8 @@ const WaitlistModal = ({ isOpen, onClose }: WaitlistModalProps) => {
       <DialogContent className="sm:max-w-md">
         <DialogHeader>
           <DialogTitle className="flex items-center gap-2 text-2xl">
-            <Sparkles className="h-6 w-6 text-launch-orange" />
-            <span className="bg-gradient-to-r from-launch-purple to-launch-orange bg-clip-text text-transparent">
+            <Sparkles className="h-6 w-6 text-lbl-orange" />
+            <span className="bg-gradient-to-r from-lbl-ink to-lbl-orange bg-clip-text text-transparent">
               Join the Waitlist
             </span>
           </DialogTitle>
@@ -126,7 +126,7 @@ const WaitlistModal = ({ isOpen, onClose }: WaitlistModalProps) => {
               <Button
                 type="submit"
                 disabled={isSubmitting}
-                className="flex-1 bg-gradient-to-r from-launch-purple to-launch-orange hover:from-launch-orange hover:to-launch-purple text-white"
+                className="flex-1 bg-gradient-to-r from-lbl-ink to-lbl-orange hover:from-lbl-orange hover:to-lbl-ink text-white"
               >
                 {isSubmitting ? (
                   <>

@@ -43,7 +43,7 @@ const Enterprise = () => {
         <meta name="description" content="We help small and medium-sized businesses adopt AI in a way that actually makes sense, saving money, making teams happier, and future-proofing your business." />
       </Helmet>
       
-      <div className="min-h-screen flex flex-col bg-gradient-to-br from-launch-light via-white to-orange-50">
+      <div className="min-h-screen flex flex-col bg-gradient-to-br from-lbl-paper via-white to-orange-50">
         <HowYourBusinessChanges />
 
         <section className="bg-white">
@@ -51,16 +51,16 @@ const Enterprise = () => {
         </section>
 
         <section className="max-w-4xl mx-auto px-4 sm:px-6 py-16 md:py-20 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold text-launch-purple mb-4">
+          <h2 className="text-3xl md:text-4xl font-bold text-lbl-ink mb-4">
             Ready to Make AI Work<br />
-            <span className="text-launch-orange">for Your Team?</span>
+            <span className="text-lbl-orange">for Your Team?</span>
           </h2>
           <p className="text-muted-foreground text-lg mb-8 max-w-2xl mx-auto">
             No jargon. No enterprise sales pitch. Just a conversation about what your team actually needs and how we can help you get there.
           </p>
           <Button
             size="lg"
-            className="bg-launch-orange hover:bg-launch-orange/90 text-white px-10 py-4 text-lg rounded-full font-bold transition-all duration-300 shadow-xl hover:scale-105 group"
+            className="bg-lbl-orange hover:bg-lbl-orange/90 text-white px-10 py-4 text-lg rounded-full font-bold transition-all duration-300 shadow-xl hover:scale-105 group"
             onClick={() =>
               window.open("https://calendly.com/karen-launchbylunch/30min", "_blank")
             }

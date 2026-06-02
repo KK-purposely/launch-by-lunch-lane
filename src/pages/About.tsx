@@ -11,7 +11,7 @@ const About = () => {
   const navigate = useNavigate();
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-launch-light via-white to-orange-50">
+    <div className="min-h-screen bg-gradient-to-br from-lbl-paper via-white to-orange-50">
       <Helmet>
         <title>About Launch by Lunch | Our Story & Mission</title>
         <meta name="description" content="Meet the team behind Launch by Lunch. Our mission is to make AI practical and people-first for the small and mid-sized businesses we serve." />
@@ -24,16 +24,16 @@ const About = () => {
       {/* Hero Section */}
 
       <div className="relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-r from-launch-purple/10 via-transparent to-launch-orange/10" />
+        <div className="absolute inset-0 bg-gradient-to-r from-lbl-ink/10 via-transparent to-lbl-orange/10" />
         <div className="relative max-w-4xl mx-auto px-4 sm:px-6 py-16">
           <div className="text-center mb-8">
-            <div className="inline-flex items-center gap-2 bg-gradient-to-r from-launch-purple to-launch-orange bg-clip-text text-transparent mb-4">
-              <Sparkles className="h-6 w-6 text-launch-orange animate-pulse" />
+            <div className="inline-flex items-center gap-2 bg-gradient-to-r from-lbl-ink to-lbl-orange bg-clip-text text-transparent mb-4">
+              <Sparkles className="h-6 w-6 text-lbl-orange animate-pulse" />
               <span className="text-sm font-semibold uppercase tracking-wide">Our Story</span>
-              <Sparkles className="h-6 w-6 text-launch-purple animate-pulse" />
+              <Sparkles className="h-6 w-6 text-lbl-ink animate-pulse" />
             </div>
             <h1 className="text-4xl md:text-6xl font-bold mb-6">
-              <span className="bg-gradient-to-r from-launch-purple to-launch-orange bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-lbl-ink to-lbl-orange bg-clip-text text-transparent">
                 About Launch by Lunch
               </span>
             </h1>
@@ -44,7 +44,7 @@ const About = () => {
       {/* Main Content */}
       <div className="max-w-4xl mx-auto px-4 sm:px-6 pb-16">
         <div className="text-center mb-10 mt-4">
-          <h2 className="text-2xl md:text-3xl font-bold bg-gradient-to-r from-launch-purple to-launch-orange bg-clip-text text-transparent mb-4">Who We Are</h2>
+          <h2 className="text-2xl md:text-3xl font-bold bg-gradient-to-r from-lbl-ink to-lbl-orange bg-clip-text text-transparent mb-4">Who We Are</h2>
           <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
             A female-led team that's taught over 100 AI courses, written millions of lines of code, and built hundreds of automations, all using only natural language. We are AI strategists, developers, and coaches that won't let you fail.
           </p>
@@ -61,16 +61,16 @@ const About = () => {
               />
             </div>
             <div className="md:w-2/3 w-full flex">
-              <Card className="border-none shadow-lg bg-gradient-to-br from-white via-launch-light/20 to-white overflow-hidden w-full">
+              <Card className="border-none shadow-lg bg-gradient-to-br from-white via-lbl-paper/20 to-white overflow-hidden w-full">
                 <CardContent className="p-6 md:p-8">
                   <div className="flex items-start gap-4 mb-4">
                     <div className="flex-1">
                       <h3 className="text-xl font-bold mb-1">
-                        <a href="https://www.linkedin.com/in/karen-kelly-daring-greatly/" target="_blank" rel="noopener noreferrer" className="bg-gradient-to-r from-launch-purple to-launch-orange bg-clip-text text-transparent hover:opacity-80 transition-opacity">
+                        <a href="https://www.linkedin.com/in/karen-kelly-daring-greatly/" target="_blank" rel="noopener noreferrer" className="bg-gradient-to-r from-lbl-ink to-lbl-orange bg-clip-text text-transparent hover:opacity-80 transition-opacity">
                           Karen Kelly
                         </a>
                       </h3>
-                      <p className="text-launch-orange font-semibold mb-2">Founder, CEO</p>
+                      <p className="text-lbl-orange font-semibold mb-2">Founder, CEO</p>
                       <p className="text-gray-700 leading-relaxed text-base">
                         Karen Kelly is a 3x founder and TEDx speaker helping leaders navigate the future of work in an AI-driven world. Named a Top 100 Innovator in 2026, Karen founded Launch by Lunch as Boston's first AI community with the goal of enabling non-technical teams with the power of no code solutions. She has worked with dozens of Fortune 1000 organizations, making AI practical and accessible for non-technical executives while emphasizing judgment and communication as leadership advantages.
                       </p>
@@ -91,16 +91,16 @@ const About = () => {
               />
             </div>
             <div className="md:w-2/3 w-full flex">
-              <Card className="border-none shadow-lg bg-gradient-to-br from-white via-launch-light/20 to-white overflow-hidden w-full">
+              <Card className="border-none shadow-lg bg-gradient-to-br from-white via-lbl-paper/20 to-white overflow-hidden w-full">
                 <CardContent className="p-6 md:p-8">
                   <div className="flex items-start gap-4 mb-4">
                     <div className="flex-1">
                       <h3 className="text-xl font-bold mb-1">
-                        <span className="bg-gradient-to-r from-launch-orange to-launch-purple bg-clip-text text-transparent">
+                        <span className="bg-gradient-to-r from-lbl-orange to-lbl-ink bg-clip-text text-transparent">
                           Ariel Galipeau
                         </span>
                       </h3>
-                      <p className="text-launch-orange font-semibold mb-2">Director of AI Programs</p>
+                      <p className="text-lbl-orange font-semibold mb-2">Director of AI Programs</p>
                       <p className="text-gray-700 leading-relaxed text-base">
                         Ariel Galipeau is an AI operations leader and coach who helps founders and teams turn ideas into executable plans, scalable systems, and consistent progress. With a decade inside fast-moving, mission-driven startups, she translates complexity into clear priorities and embeds AI into day-to-day workflows to improve decision-making, reduce friction, and drive real momentum. She has a particular interest in closing the AI adoption gap for women.
                       </p>
@@ -115,9 +115,9 @@ const About = () => {
         
         {/* CTA Section */}
         <div className="text-center">
-          <div className="bg-gradient-to-r from-launch-purple/10 via-launch-orange/10 to-launch-purple/10 rounded-3xl p-8 md:p-12 mb-8">
+          <div className="bg-gradient-to-r from-lbl-ink/10 via-lbl-orange/10 to-lbl-ink/10 rounded-3xl p-8 md:p-12 mb-8">
             <h2 className="text-2xl md:text-3xl font-bold mb-4">
-              <span className="bg-gradient-to-r from-launch-purple to-launch-orange bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-lbl-ink to-lbl-orange bg-clip-text text-transparent">
                 Ready to Transform Your Vision?
               </span>
             </h2>
@@ -126,7 +126,7 @@ const About = () => {
             </p>
             <Button 
               size="lg" 
-              className="bg-gradient-to-r from-launch-purple to-launch-orange hover:from-launch-orange hover:to-launch-purple text-white rounded-full font-medium px-8 py-6 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
+              className="bg-gradient-to-r from-lbl-ink to-lbl-orange hover:from-lbl-orange hover:to-lbl-ink text-white rounded-full font-medium px-8 py-6 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
               onClick={() => navigate('/contact')}
             >
               <span className="mr-2">Talk to Us</span>

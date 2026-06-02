@@ -30,11 +30,11 @@ const WomenInCommunity = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-launch-light via-white to-orange-50">
+    <div className="min-h-screen bg-gradient-to-br from-lbl-paper via-white to-orange-50">
       {/* Unified Hero and Content Section */}
       <div className="relative overflow-hidden">
         {/* Background gradient overlay */}
-        <div className="absolute inset-0 bg-gradient-to-b from-launch-purple/10 via-launch-orange/5 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-b from-lbl-ink/10 via-lbl-orange/5 to-transparent" />
         
         <div className="relative w-full">
           {/* Logo Section */}
@@ -51,7 +51,7 @@ const WomenInCommunity = () => {
           {/* Main Content Section - seamlessly connected */}
           <div className="max-w-6xl mx-auto px-4 sm:px-6 pb-16 pt-8">
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">
-          <span className="bg-gradient-to-r from-launch-purple to-launch-orange bg-clip-text text-transparent">
+          <span className="bg-gradient-to-r from-lbl-ink to-lbl-orange bg-clip-text text-transparent">
             Tap to Hear From 4 AI-First Women in our Community
           </span>
         </h2>
@@ -60,14 +60,14 @@ const WomenInCommunity = () => {
           {placeholderWomen.map((woman) => (
             <div
               key={woman.id}
-              className="group relative bg-gradient-to-br from-white to-orange-50/30 rounded-2xl p-8 hover:shadow-2xl transition-all duration-500 border-2 border-transparent hover:border-launch-purple/20 hover:scale-[1.02] overflow-hidden"
+              className="group relative bg-gradient-to-br from-white to-orange-50/30 rounded-2xl p-8 hover:shadow-2xl transition-all duration-500 border-2 border-transparent hover:border-lbl-ink/20 hover:scale-[1.02] overflow-hidden"
             >
               {/* Decorative gradient overlay */}
-              <div className="absolute inset-0 bg-gradient-to-br from-launch-purple/5 to-launch-orange/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-2xl" />
+              <div className="absolute inset-0 bg-gradient-to-br from-lbl-ink/5 to-lbl-orange/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-2xl" />
               {/* Photo */}
               <div className="relative z-10">
                 {woman.photo ? (
-                  <div className="w-36 h-36 mx-auto mb-6 rounded-full overflow-hidden ring-4 ring-launch-purple/10 group-hover:ring-launch-purple/30 transition-all duration-500 group-hover:scale-105">
+                  <div className="w-36 h-36 mx-auto mb-6 rounded-full overflow-hidden ring-4 ring-lbl-ink/10 group-hover:ring-lbl-ink/30 transition-all duration-500 group-hover:scale-105">
                     <img 
                       src={woman.photo} 
                       alt={woman.name}
@@ -75,8 +75,8 @@ const WomenInCommunity = () => {
                     />
                   </div>
                 ) : (
-                  <div className="w-36 h-36 mx-auto mb-6 rounded-full bg-gradient-to-br from-launch-purple/20 to-launch-orange/20 flex items-center justify-center ring-4 ring-launch-purple/10 group-hover:ring-launch-purple/30 transition-all duration-500">
-                    <User className="w-16 h-16 text-launch-purple" />
+                  <div className="w-36 h-36 mx-auto mb-6 rounded-full bg-gradient-to-br from-lbl-ink/20 to-lbl-orange/20 flex items-center justify-center ring-4 ring-lbl-ink/10 group-hover:ring-lbl-ink/30 transition-all duration-500">
+                    <User className="w-16 h-16 text-lbl-ink" />
                   </div>
                 )}
               </div>
@@ -88,7 +88,7 @@ const WomenInCommunity = () => {
                       href={woman.linkedinUrl} 
                       target="_blank" 
                       rel="noopener noreferrer"
-                      className="hover:text-launch-purple transition-colors relative inline-block after:content-[''] after:absolute after:w-full after:scale-x-0 after:h-0.5 after:bottom-0 after:left-0 after:bg-launch-purple after:origin-bottom-right after:transition-transform after:duration-300 hover:after:scale-x-100 hover:after:origin-bottom-left"
+                      className="hover:text-lbl-ink transition-colors relative inline-block after:content-[''] after:absolute after:w-full after:scale-x-0 after:h-0.5 after:bottom-0 after:left-0 after:bg-lbl-ink after:origin-bottom-right after:transition-transform after:duration-300 hover:after:scale-x-100 hover:after:origin-bottom-left"
                     >
                       {woman.name}
                     </a>
@@ -106,12 +106,12 @@ const WomenInCommunity = () => {
                 <div className="relative z-10 flex flex-col items-center justify-center gap-3 mt-6">
                   <p className="text-xs text-gray-500 font-medium">30 second pitch</p>
                   <div className="flex items-center gap-3">
-                    <div className="flex items-center justify-center w-10 h-10 rounded-full bg-gradient-to-br from-launch-purple/10 to-launch-orange/10 group-hover:from-launch-purple/20 group-hover:to-launch-orange/20 transition-all duration-300">
-                      <Volume2 className="w-5 h-5 text-launch-purple" />
+                    <div className="flex items-center justify-center w-10 h-10 rounded-full bg-gradient-to-br from-lbl-ink/10 to-lbl-orange/10 group-hover:from-lbl-ink/20 group-hover:to-lbl-orange/20 transition-all duration-300">
+                      <Volume2 className="w-5 h-5 text-lbl-ink" />
                     </div>
                     <button
                       onClick={() => toggleAudio(woman.id)}
-                      className="flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-launch-purple to-launch-orange hover:from-launch-orange hover:to-launch-purple text-white rounded-full transition-all duration-300 shadow-md hover:shadow-lg transform hover:scale-105"
+                      className="flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-lbl-ink to-lbl-orange hover:from-lbl-orange hover:to-lbl-ink text-white rounded-full transition-all duration-300 shadow-md hover:shadow-lg transform hover:scale-105"
                     >
                       {playingAudio === woman.id ? (
                         <>
@@ -141,7 +141,7 @@ const WomenInCommunity = () => {
         <div className="flex justify-center mt-12">
           <Button 
             size="lg" 
-            className="group bg-gradient-to-r from-launch-purple to-launch-orange hover:from-launch-orange hover:to-launch-purple text-white px-8 py-6 text-lg rounded-full font-medium transition-all duration-300 shadow-lg hover:shadow-xl"
+            className="group bg-gradient-to-r from-lbl-ink to-lbl-orange hover:from-lbl-orange hover:to-lbl-ink text-white px-8 py-6 text-lg rounded-full font-medium transition-all duration-300 shadow-lg hover:shadow-xl"
             onClick={() => window.open('https://innercircle.launchbylunch.co/checkout/inner-circle-membership', '_blank')}
           >
             <span className="flex items-center gap-2">

@@ -34,8 +34,8 @@ const ServiceCard = ({ service, index, onServiceClick }: ServiceCardProps) => {
     <Card 
       className={`group relative border-2 transition-all duration-500 hover:shadow-2xl transform hover:-translate-y-2 flex flex-col h-full ${
         service.featured 
-          ? 'border-gradient-to-r from-launch-purple to-launch-orange shadow-xl bg-gradient-to-br from-white via-launch-light to-white lg:scale-105' 
-          : 'border-gray-200 hover:border-launch-orange bg-white'
+          ? 'border-gradient-to-r from-lbl-ink to-lbl-orange shadow-xl bg-gradient-to-br from-white via-lbl-paper to-white lg:scale-105' 
+          : 'border-gray-200 hover:border-lbl-orange bg-white'
       }`}
       style={{
         animation: `fade-in 0.6s ease-out ${index * 0.1}s both`
@@ -43,37 +43,37 @@ const ServiceCard = ({ service, index, onServiceClick }: ServiceCardProps) => {
     >
       {service.featured && (
         <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
-          <div className="bg-gradient-to-r from-launch-purple to-launch-orange text-white px-6 py-2 rounded-full text-sm font-bold shadow-lg">
+          <div className="bg-gradient-to-r from-lbl-ink to-lbl-orange text-white px-6 py-2 rounded-full text-sm font-bold shadow-lg">
             🌟 Most Popular
           </div>
         </div>
       )}
       
-      <CardHeader className={`${service.featured ? 'bg-gradient-to-r from-launch-purple/5 to-launch-orange/5' : 'bg-gray-50'} relative overflow-hidden p-8`}>
+      <CardHeader className={`${service.featured ? 'bg-gradient-to-r from-lbl-ink/5 to-lbl-orange/5' : 'bg-gray-50'} relative overflow-hidden p-8`}>
         <div className="absolute top-0 right-0 w-32 h-32 opacity-10">
-          <service.icon className="w-full h-full text-launch-orange" />
+          <service.icon className="w-full h-full text-lbl-orange" />
         </div>
         <div className="relative z-10">
           {service.subtitle ? (
             <>
               <div className="flex items-center gap-3 mb-3">
-                <div className={`p-3 rounded-full ${service.featured ? 'bg-gradient-to-r from-launch-purple to-launch-orange' : 'bg-launch-orange'} shadow-lg`}>
+                <div className={`p-3 rounded-full ${service.featured ? 'bg-gradient-to-r from-lbl-ink to-lbl-orange' : 'bg-lbl-orange'} shadow-lg`}>
                   <service.icon className="h-6 w-6 text-white" />
                 </div>
-                <h2 className="text-2xl md:text-3xl font-bold bg-gradient-to-r from-launch-purple to-launch-orange bg-clip-text text-transparent">
+                <h2 className="text-2xl md:text-3xl font-bold bg-gradient-to-r from-lbl-ink to-lbl-orange bg-clip-text text-transparent">
                   {service.subtitle}
                 </h2>
               </div>
-              <CardTitle className="text-xl md:text-2xl text-launch-purple mb-4">
+              <CardTitle className="text-xl md:text-2xl text-lbl-ink mb-4">
                 {service.title}
               </CardTitle>
             </>
           ) : (
             <div className="flex items-center gap-3 mb-4">
-              <div className={`p-3 rounded-full ${service.featured ? 'bg-gradient-to-r from-launch-purple to-launch-orange' : 'bg-launch-orange'} shadow-lg`}>
+              <div className={`p-3 rounded-full ${service.featured ? 'bg-gradient-to-r from-lbl-ink to-lbl-orange' : 'bg-lbl-orange'} shadow-lg`}>
                 <service.icon className="h-6 w-6 text-white" />
               </div>
-              <CardTitle className={`text-xl md:text-2xl ${service.featured ? 'bg-gradient-to-r from-launch-purple to-launch-orange bg-clip-text text-transparent' : 'text-launch-purple'}`}>
+              <CardTitle className={`text-xl md:text-2xl ${service.featured ? 'bg-gradient-to-r from-lbl-ink to-lbl-orange bg-clip-text text-transparent' : 'text-lbl-ink'}`}>
                 {service.title}
               </CardTitle>
             </div>
@@ -84,7 +84,7 @@ const ServiceCard = ({ service, index, onServiceClick }: ServiceCardProps) => {
                 {service.originalPrice}
               </p>
             )}
-            <p className={`text-3xl md:text-4xl font-bold ${service.featured ? 'bg-gradient-to-r from-launch-orange to-launch-purple bg-clip-text text-transparent' : 'text-launch-orange'}`}>
+            <p className={`text-3xl md:text-4xl font-bold ${service.featured ? 'bg-gradient-to-r from-lbl-orange to-lbl-ink bg-clip-text text-transparent' : 'text-lbl-orange'}`}>
               {service.price}
             </p>
             {service.savings && (
@@ -148,8 +148,8 @@ const ServiceCard = ({ service, index, onServiceClick }: ServiceCardProps) => {
           <Button
             className={`w-full group text-lg py-6 transition-all duration-300 ${
               service.featured 
-                ? 'bg-gradient-to-r from-launch-purple to-launch-orange hover:from-launch-orange hover:to-launch-purple text-white shadow-lg hover:shadow-xl' 
-                : 'bg-launch-purple hover:bg-launch-purple/90 text-white'
+                ? 'bg-gradient-to-r from-lbl-ink to-lbl-orange hover:from-lbl-orange hover:to-lbl-ink text-white shadow-lg hover:shadow-xl' 
+                : 'bg-lbl-ink hover:bg-lbl-ink/90 text-white'
             }`}
             onClick={() => onServiceClick(service)}
           >

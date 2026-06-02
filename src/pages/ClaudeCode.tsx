@@ -31,7 +31,7 @@ const workshops = [
     description: "Get dedicated, hands-on guidance tailored to your exact workflow and tech stack.",
     icon: User,
     iconBg: "bg-orange-100",
-    iconColor: "text-launch-orange",
+    iconColor: "text-lbl-orange",
     ctaText: "Book Your Session",
     ctaUrl: "https://forms.gle/VX1z8FJfGSr8D1AD6",
     featured: true,
@@ -57,7 +57,7 @@ const workshops = [
     description: "We come to your accelerator, team, or community and deliver a 3-hour hands-on onboarding session for up to 12 people.",
     icon: Building2,
     iconBg: "bg-purple-100",
-    iconColor: "text-launch-purple",
+    iconColor: "text-lbl-ink",
     ctaText: "Schedule for Your Group",
     ctaUrl: "https://forms.gle/VX1z8FJfGSr8D1AD6",
     featured: false,
@@ -89,32 +89,32 @@ const ClaudeCode = () => {
       </Helmet>
 
       {/* Hero */}
-      <section className="relative overflow-hidden bg-gradient-to-br from-launch-purple via-launch-purple to-launch-purple/90 text-white">
+      <section className="relative overflow-hidden bg-gradient-to-br from-lbl-ink via-lbl-ink to-lbl-ink/90 text-white">
         <div className="absolute inset-0 opacity-10">
-          <div className="absolute top-20 left-10 w-72 h-72 bg-launch-orange rounded-full blur-3xl" />
-          <div className="absolute bottom-10 right-20 w-96 h-96 bg-launch-orange rounded-full blur-3xl" />
+          <div className="absolute top-20 left-10 w-72 h-72 bg-lbl-orange rounded-full blur-3xl" />
+          <div className="absolute bottom-10 right-20 w-96 h-96 bg-lbl-orange rounded-full blur-3xl" />
         </div>
         <div className="relative max-w-5xl mx-auto px-4 sm:px-6 py-20 md:py-28 flex flex-col md:flex-row items-center gap-10">
           <div className="flex-1 text-center md:text-left">
             <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm rounded-full px-4 py-2 mb-8 text-lg font-medium">
-              <Zap className="h-4 w-4 text-launch-orange" />
+              <Zap className="h-4 w-4 text-lbl-orange" />
               Live, Hands-On Workshops
             </div>
             <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
               Build Your Claude Code<br />
-              <span className="text-launch-orange">Chief of Staff</span>
+              <span className="text-lbl-orange">Chief of Staff</span>
             </h1>
             <p className="text-xl md:text-2xl text-white/80 max-w-3xl mx-auto md:mx-0 mb-4 leading-relaxed">
               The AI inbox system. The daily briefing. The place where your calendar, notes, CRM, and emails finally talk to each other.
             </p>
             <p className="text-lg text-white/60 max-w-2xl mx-auto md:mx-0 mb-10">
               You've been meaning to set this up. Instead, you've been reading about it.<br />
-              <span className="text-launch-orange font-semibold">This workshop is where you stop reading — and build it.</span>
+              <span className="text-lbl-orange font-semibold">This workshop is where you stop reading — and build it.</span>
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
               <Button
                 size="lg"
-                className="bg-launch-orange hover:bg-launch-orange/90 text-white px-10 py-4 text-lg rounded-full font-bold transition-all duration-300 shadow-2xl hover:scale-105 group"
+                className="bg-lbl-orange hover:bg-lbl-orange/90 text-white px-10 py-4 text-lg rounded-full font-bold transition-all duration-300 shadow-2xl hover:scale-105 group"
                 onClick={() => document.getElementById("pricing")?.scrollIntoView({ behavior: "smooth" })}
               >
                 <span className="flex items-center gap-3">
@@ -124,7 +124,7 @@ const ClaudeCode = () => {
               </Button>
               <Button
                 size="lg"
-                className="bg-white hover:bg-white/90 text-launch-orange border-2 border-white hover:border-launch-orange px-10 py-4 text-lg rounded-full font-bold transition-all duration-300 shadow-2xl hover:scale-105 group"
+                className="bg-white hover:bg-white/90 text-lbl-orange border-2 border-white hover:border-lbl-orange px-10 py-4 text-lg rounded-full font-bold transition-all duration-300 shadow-2xl hover:scale-105 group"
                 onClick={() => window.open("https://marketplace.launchbylunch.co", "_blank")}
               >
                 <span className="flex items-center gap-3">
@@ -145,9 +145,9 @@ const ClaudeCode = () => {
       </section>
 
       {/* Who is this for */}
-      <section className="bg-launch-light py-16 md:py-20">
+      <section className="bg-lbl-paper py-16 md:py-20">
         <div className="max-w-5xl mx-auto px-4 sm:px-6">
-        <h2 className="text-3xl md:text-4xl font-bold text-launch-purple mb-4 text-center">
+        <h2 className="text-3xl md:text-4xl font-bold text-lbl-ink mb-4 text-center">
           Is This Your Build Day?
         </h2>
         <p className="text-lg text-gray-600 text-center mb-10 max-w-2xl mx-auto">
@@ -156,7 +156,7 @@ const ClaudeCode = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-3xl mx-auto">
           {audienceItems.map((item, i) => (
             <div key={i} className="flex items-start gap-3 bg-white rounded-xl p-5">
-              <CheckCircle2 className="h-6 w-6 text-launch-orange mt-0.5 flex-shrink-0" />
+              <CheckCircle2 className="h-6 w-6 text-lbl-orange mt-0.5 flex-shrink-0" />
               <p className="text-gray-800 text-lg font-medium">{item}</p>
             </div>
           ))}
@@ -174,9 +174,9 @@ const ClaudeCode = () => {
       <IntegrationsSection />
 
       {/* What we build */}
-      <section className="bg-launch-light py-16 md:py-20">
+      <section className="bg-lbl-paper py-16 md:py-20">
         <div className="max-w-6xl mx-auto px-4 sm:px-6">
-          <h2 className="text-3xl md:text-4xl font-bold text-launch-purple mb-4 text-center">
+          <h2 className="text-3xl md:text-4xl font-bold text-lbl-ink mb-4 text-center">
             What We'll Build Together
           </h2>
           <p className="text-lg text-gray-600 text-center mb-14 max-w-2xl mx-auto">
@@ -186,11 +186,11 @@ const ClaudeCode = () => {
             {buildItems.map((item, i) => {
               const ItemIcon = item.icon;
               return (
-                <div key={i} className="bg-white rounded-2xl p-7 shadow-sm border border-gray-100 hover:shadow-lg hover:border-launch-purple/20 transition-all duration-300 group">
-                  <div className="w-14 h-14 bg-gradient-to-br from-launch-purple to-launch-orange rounded-2xl flex items-center justify-center mb-5 group-hover:scale-110 transition-transform duration-300">
+                <div key={i} className="bg-white rounded-2xl p-7 shadow-sm border border-gray-100 hover:shadow-lg hover:border-lbl-ink/20 transition-all duration-300 group">
+                  <div className="w-14 h-14 bg-gradient-to-br from-lbl-ink to-lbl-orange rounded-2xl flex items-center justify-center mb-5 group-hover:scale-110 transition-transform duration-300">
                     <ItemIcon className="h-7 w-7 text-white" />
                   </div>
-                  <h3 className="text-lg font-bold text-launch-purple mb-2">{item.title}</h3>
+                  <h3 className="text-lg font-bold text-lbl-ink mb-2">{item.title}</h3>
                   <p className="text-gray-600 text-lg">{item.desc}</p>
                 </div>
               );
@@ -200,7 +200,7 @@ const ClaudeCode = () => {
       </section>
 
       {/* Testimonial - before pricing */}
-      <section className="bg-gradient-to-r from-launch-orange/5 via-transparent to-launch-purple/5 py-12 px-4 sm:px-6">
+      <section className="bg-gradient-to-r from-lbl-orange/5 via-transparent to-lbl-ink/5 py-12 px-4 sm:px-6">
         <WorkshopTestimonials testimonials={[
           { quote: "I would have just kept putting this off if I hadn't shown up here today. I needed to drive into Boston and sit on this couch to finally get it done!", name: "Jeff Wechsler" },
         ]} />
@@ -208,7 +208,7 @@ const ClaudeCode = () => {
 
       {/* Pricing */}
       <section id="pricing" className="max-w-7xl mx-auto px-4 sm:px-6 py-20 md:py-28">
-        <h2 className="text-4xl md:text-5xl font-bold text-launch-purple mb-6 text-center">
+        <h2 className="text-4xl md:text-5xl font-bold text-lbl-ink mb-6 text-center">
           Choose Your Workshop
         </h2>
         <p className="text-xl text-gray-600 text-center mb-16 max-w-2xl mx-auto">
@@ -220,21 +220,21 @@ const ClaudeCode = () => {
             return (
               <Card
                 key={i}
-                className="relative flex flex-col transition-all duration-300 border border-gray-200 hover:border-launch-orange hover:shadow-[0_0_20px_rgba(255,138,0,0.3)] hover:-translate-y-1"
+                className="relative flex flex-col transition-all duration-300 border border-gray-200 hover:border-lbl-orange hover:shadow-[0_0_20px_rgba(255,138,0,0.3)] hover:-translate-y-1"
               >
                 <CardContent className="flex flex-col flex-1 p-8 pt-10">
                   <div className={`w-16 h-16 ${w.iconBg} rounded-2xl flex items-center justify-center mb-5`}>
                     <Icon className={`h-8 w-8 ${w.iconColor}`} />
                   </div>
-                  <h3 className="text-2xl font-bold text-launch-purple mb-2">{w.title}</h3>
+                  <h3 className="text-2xl font-bold text-lbl-ink mb-2">{w.title}</h3>
                   <p className="text-lg text-gray-500 mb-5">{w.subtitle}</p>
                   <div className="mb-5">
-                    <span className="text-4xl font-bold text-launch-purple">{w.price}</span>
+                    <span className="text-4xl font-bold text-lbl-ink">{w.price}</span>
                     {w.unit && <span className="text-lg text-gray-500 ml-2">{w.unit}</span>}
                   </div>
                   <p className="text-gray-600 text-lg flex-1 mb-8">{w.description}</p>
                   <Button
-                    className="w-full rounded-full font-semibold transition-all duration-300 bg-launch-purple hover:bg-launch-orange text-white"
+                    className="w-full rounded-full font-semibold transition-all duration-300 bg-lbl-ink hover:bg-lbl-orange text-white"
                     onClick={() => window.open(w.ctaUrl, "_blank")}
                   >
                     {w.ctaText}
@@ -247,7 +247,7 @@ const ClaudeCode = () => {
       </section>
 
       {/* Bonus */}
-      <section className="bg-gradient-to-r from-launch-purple to-launch-orange py-14">
+      <section className="bg-gradient-to-r from-lbl-ink to-lbl-orange py-14">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 text-center text-white">
           <div className="inline-flex items-center gap-2 bg-white/20 backdrop-blur-sm rounded-full px-4 py-2 mb-6 text-lg font-bold uppercase tracking-wide">
             🎁 Bonus Included
@@ -262,7 +262,7 @@ const ClaudeCode = () => {
       </section>
 
       {/* Testimonial - after bonus */}
-      <section className="bg-launch-light py-12 px-4 sm:px-6">
+      <section className="bg-lbl-paper py-12 px-4 sm:px-6">
         <WorkshopTestimonials testimonials={[
           { quote: "This workshop was the bomb! It's exactly what I needed to kickstart AI into my day to day work!", name: "Alicia Tulsee" },
         ]} />
@@ -270,16 +270,16 @@ const ClaudeCode = () => {
 
       <section className="max-w-4xl mx-auto px-4 sm:px-6 py-16 md:py-20 text-center">
         <div className="flex justify-center mb-6">
-          <Laptop className="h-12 w-12 text-launch-orange" />
+          <Laptop className="h-12 w-12 text-lbl-orange" />
         </div>
-        <h2 className="text-3xl md:text-4xl font-bold text-launch-purple mb-4">
+        <h2 className="text-3xl md:text-4xl font-bold text-lbl-ink mb-4">
           Walk in curious.<br />
-          <span className="text-launch-orange">Walk out operational.</span>
+          <span className="text-lbl-orange">Walk out operational.</span>
         </h2>
         <p className="text-gray-500 text-lg mb-8">Seats are limited to keep it hands-on.</p>
         <Button
           size="lg"
-          className="bg-launch-orange hover:bg-launch-orange/90 text-white px-10 py-4 text-lg rounded-full font-bold transition-all duration-300 shadow-xl hover:scale-105 group"
+          className="bg-lbl-orange hover:bg-lbl-orange/90 text-white px-10 py-4 text-lg rounded-full font-bold transition-all duration-300 shadow-xl hover:scale-105 group"
           onClick={() => window.open("https://calendly.com/karen-launchbylunch/30min", "_blank")}
         >
           <span className="flex items-center gap-3">

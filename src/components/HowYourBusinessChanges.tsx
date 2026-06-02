@@ -215,30 +215,30 @@ const unlocks = [
 const exampleThemes = [
   // 0: purple
   {
-    accentBar: "bg-gradient-to-r from-launch-purple to-launch-purple/40",
-    iconWrap: "bg-gradient-to-br from-launch-purple to-launch-purple/70 shadow-md shadow-launch-purple/20",
-    promptBox: "border-launch-purple/15 bg-launch-purple/5",
-    promptLabel: "text-launch-purple",
-    responseBox: "border-launch-purple/25 bg-gradient-to-br from-launch-light via-white to-launch-purple/5",
-    responseLabel: "text-launch-purple",
+    accentBar: "bg-gradient-to-r from-lbl-ink to-lbl-ink/40",
+    iconWrap: "bg-gradient-to-br from-lbl-ink to-lbl-ink/70 shadow-md shadow-lbl-ink/20",
+    promptBox: "border-lbl-ink/15 bg-lbl-ink/5",
+    promptLabel: "text-lbl-ink",
+    responseBox: "border-lbl-ink/25 bg-gradient-to-br from-lbl-paper via-white to-lbl-ink/5",
+    responseLabel: "text-lbl-ink",
   },
   // 1: orange
   {
-    accentBar: "bg-gradient-to-r from-launch-orange to-launch-orange/40",
-    iconWrap: "bg-gradient-to-br from-launch-orange to-launch-orange/70 shadow-md shadow-launch-orange/20",
-    promptBox: "border-launch-orange/20 bg-launch-orange/5",
-    promptLabel: "text-launch-orange",
-    responseBox: "border-launch-orange/25 bg-gradient-to-br from-orange-50 via-white to-launch-orange/5",
-    responseLabel: "text-launch-orange",
+    accentBar: "bg-gradient-to-r from-lbl-orange to-lbl-orange/40",
+    iconWrap: "bg-gradient-to-br from-lbl-orange to-lbl-orange/70 shadow-md shadow-lbl-orange/20",
+    promptBox: "border-lbl-orange/20 bg-lbl-orange/5",
+    promptLabel: "text-lbl-orange",
+    responseBox: "border-lbl-orange/25 bg-gradient-to-br from-orange-50 via-white to-lbl-orange/5",
+    responseLabel: "text-lbl-orange",
   },
   // 2: purple + orange blend
   {
-    accentBar: "bg-gradient-to-r from-launch-purple to-launch-orange",
-    iconWrap: "bg-gradient-to-br from-launch-purple to-launch-orange shadow-md shadow-launch-purple/20",
-    promptBox: "border-launch-purple/15 bg-gradient-to-br from-launch-purple/5 to-launch-orange/5",
-    promptLabel: "text-launch-purple",
-    responseBox: "border-launch-purple/20 bg-gradient-to-br from-launch-light via-white to-orange-50",
-    responseLabel: "text-launch-purple",
+    accentBar: "bg-gradient-to-r from-lbl-ink to-lbl-orange",
+    iconWrap: "bg-gradient-to-br from-lbl-ink to-lbl-orange shadow-md shadow-lbl-ink/20",
+    promptBox: "border-lbl-ink/15 bg-gradient-to-br from-lbl-ink/5 to-lbl-orange/5",
+    promptLabel: "text-lbl-ink",
+    responseBox: "border-lbl-ink/20 bg-gradient-to-br from-lbl-paper via-white to-orange-50",
+    responseLabel: "text-lbl-ink",
   },
 ];
 
@@ -252,62 +252,62 @@ const HowYourBusinessChanges = () => {
     <section id="what-we-do" className="py-16 md:py-20">
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         {/* Second Brain Vision */}
-        <div id="second-brain" className="mb-16 bg-gradient-to-br from-launch-light via-white to-orange-50 rounded-3xl p-8 md:p-12">
+        <div id="second-brain" className="mb-16 bg-gradient-to-br from-lbl-paper via-white to-orange-50 rounded-3xl p-8 md:p-12">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-12">
               <img src={secondBrainImg} alt="AI second brain illustration" loading="lazy" width={512} height={512} className="w-32 h-32 md:w-40 md:h-40 mx-auto mb-6 object-contain" style={{ filter: 'drop-shadow(0 0 35px rgba(126, 34, 206, 0.7)) drop-shadow(0 0 60px rgba(249, 115, 22, 0.4)) brightness(1.1)' }} />
-              <h2 className="text-3xl md:text-4xl font-bold text-launch-purple mb-4">
+              <h2 className="text-3xl md:text-4xl font-bold text-lbl-ink mb-4">
                 What If Everyone on Your Team<br />
-                <span className="text-launch-orange">Had a Second Brain?</span>
+                <span className="text-lbl-orange">Had a Second Brain?</span>
               </h2>
               <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
                 {"\n"}
               </p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <Card className="relative overflow-hidden bg-gradient-to-br from-white to-launch-purple/5 border border-launch-purple/15 hover:border-launch-purple/40 hover:shadow-[0_8px_30px_-10px_hsl(var(--launch-purple)/0.25)] hover:-translate-y-0.5 transition-all duration-300">
-                <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-launch-purple to-launch-purple/40" />
+              <Card className="relative overflow-hidden bg-gradient-to-br from-white to-lbl-ink/5 border border-lbl-ink/15 hover:border-lbl-ink/40 hover:shadow-[0_8px_30px_-10px_hsl(var(--lbl-ink)/0.25)] hover:-translate-y-0.5 transition-all duration-300">
+                <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-lbl-ink to-lbl-ink/40" />
                 <CardContent className="p-7">
-                  <div className="w-11 h-11 bg-gradient-to-br from-launch-purple to-launch-purple/70 rounded-xl flex items-center justify-center mb-4 shadow-md shadow-launch-purple/20">
+                  <div className="w-11 h-11 bg-gradient-to-br from-lbl-ink to-lbl-ink/70 rounded-xl flex items-center justify-center mb-4 shadow-md shadow-lbl-ink/20">
                     <Brain className="h-5 w-5 text-white" />
                   </div>
-                  <h4 className="text-sm font-bold uppercase tracking-wider text-launch-purple mb-2">Research</h4>
+                  <h4 className="text-sm font-bold uppercase tracking-wider text-lbl-ink mb-2">Research</h4>
                   <p className="text-lg text-foreground font-medium leading-relaxed">
                     It could research every interaction your team has ever had with a given company or prospect and tell you how to best respond, instantly.
                   </p>
                 </CardContent>
               </Card>
-              <Card className="relative overflow-hidden bg-gradient-to-br from-white to-launch-orange/5 border border-launch-orange/20 hover:border-launch-orange/50 hover:shadow-[0_8px_30px_-10px_hsl(24,87%,58%/0.25)] hover:-translate-y-0.5 transition-all duration-300">
-                <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-launch-orange to-launch-orange/40" />
+              <Card className="relative overflow-hidden bg-gradient-to-br from-white to-lbl-orange/5 border border-lbl-orange/20 hover:border-lbl-orange/50 hover:shadow-[0_8px_30px_-10px_hsl(24,87%,58%/0.25)] hover:-translate-y-0.5 transition-all duration-300">
+                <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-lbl-orange to-lbl-orange/40" />
                 <CardContent className="p-7">
-                  <div className="w-11 h-11 bg-gradient-to-br from-launch-orange to-launch-orange/70 rounded-xl flex items-center justify-center mb-4 shadow-md shadow-launch-orange/20">
+                  <div className="w-11 h-11 bg-gradient-to-br from-lbl-orange to-lbl-orange/70 rounded-xl flex items-center justify-center mb-4 shadow-md shadow-lbl-orange/20">
                     <MessageSquare className="h-5 w-5 text-white" />
                   </div>
-                  <h4 className="text-sm font-bold uppercase tracking-wider text-launch-orange mb-2">Social Media</h4>
+                  <h4 className="text-sm font-bold uppercase tracking-wider text-lbl-orange mb-2">Social Media</h4>
                   <p className="text-lg text-foreground font-medium leading-relaxed">
                     It could look at your past LinkedIn posts and create a new one in your voice, based on conversations you've had that week.
                   </p>
                 </CardContent>
               </Card>
-              <Card className="relative overflow-hidden bg-gradient-to-br from-white via-launch-purple/5 to-launch-orange/5 border border-launch-purple/20 hover:border-launch-orange/40 hover:shadow-[0_8px_30px_-10px_hsl(var(--launch-purple)/0.25)] hover:-translate-y-0.5 transition-all duration-300">
-                <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-launch-purple to-launch-orange" />
+              <Card className="relative overflow-hidden bg-gradient-to-br from-white via-lbl-ink/5 to-lbl-orange/5 border border-lbl-ink/20 hover:border-lbl-orange/40 hover:shadow-[0_8px_30px_-10px_hsl(var(--lbl-ink)/0.25)] hover:-translate-y-0.5 transition-all duration-300">
+                <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-lbl-ink to-lbl-orange" />
                 <CardContent className="p-7">
-                  <div className="w-11 h-11 bg-gradient-to-br from-launch-purple to-launch-orange rounded-xl flex items-center justify-center mb-4 shadow-md shadow-launch-purple/20">
+                  <div className="w-11 h-11 bg-gradient-to-br from-lbl-ink to-lbl-orange rounded-xl flex items-center justify-center mb-4 shadow-md shadow-lbl-ink/20">
                     <Zap className="h-5 w-5 text-white" />
                   </div>
-                  <h4 className="text-sm font-bold uppercase tracking-wider bg-gradient-to-r from-launch-purple to-launch-orange bg-clip-text text-transparent mb-2">Goals</h4>
+                  <h4 className="text-sm font-bold uppercase tracking-wider bg-gradient-to-r from-lbl-ink to-lbl-orange bg-clip-text text-transparent mb-2">Goals</h4>
                   <p className="text-lg text-foreground font-medium leading-relaxed">
                     It could tell you exactly what to focus on today, and what's obviously getting in the way.
                   </p>
                 </CardContent>
               </Card>
-              <Card className="relative overflow-hidden bg-gradient-to-br from-white to-launch-orange/5 border border-launch-orange/20 hover:border-launch-orange/50 hover:shadow-[0_8px_30px_-10px_hsl(24,87%,58%/0.25)] hover:-translate-y-0.5 transition-all duration-300">
-                <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-launch-orange/40 to-launch-orange" />
+              <Card className="relative overflow-hidden bg-gradient-to-br from-white to-lbl-orange/5 border border-lbl-orange/20 hover:border-lbl-orange/50 hover:shadow-[0_8px_30px_-10px_hsl(24,87%,58%/0.25)] hover:-translate-y-0.5 transition-all duration-300">
+                <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-lbl-orange/40 to-lbl-orange" />
                 <CardContent className="p-7">
-                  <div className="w-11 h-11 bg-gradient-to-br from-launch-orange/70 to-launch-orange rounded-xl flex items-center justify-center mb-4 shadow-md shadow-launch-orange/20">
+                  <div className="w-11 h-11 bg-gradient-to-br from-lbl-orange/70 to-lbl-orange rounded-xl flex items-center justify-center mb-4 shadow-md shadow-lbl-orange/20">
                     <Lightbulb className="h-5 w-5 text-white" />
                   </div>
-                  <h4 className="text-sm font-bold uppercase tracking-wider text-launch-orange mb-2">Sales</h4>
+                  <h4 className="text-sm font-bold uppercase tracking-wider text-lbl-orange mb-2">Sales</h4>
                   <p className="text-lg text-foreground font-medium leading-relaxed">
                     It could create a presentation based on a conversation you'd had earlier that day in under five minutes.
                   </p>
@@ -329,7 +329,7 @@ const HowYourBusinessChanges = () => {
 
         {/* We connect the tools you already use */}
         <div className="mb-16 text-center bg-white rounded-3xl p-8 md:p-12 border border-border">
-          <h3 className="text-3xl md:text-4xl font-bold text-launch-purple mb-4">
+          <h3 className="text-3xl md:text-4xl font-bold text-lbl-ink mb-4">
             We connect the tools you already use
           </h3>
           <p className="text-xl text-muted-foreground mb-10 max-w-2xl mx-auto">
@@ -341,7 +341,7 @@ const HowYourBusinessChanges = () => {
                 <div className="w-14 h-14 flex items-center justify-center">
                   <img src={item.logo} alt={`${item.name} logo`} className="w-10 h-10 object-contain" />
                 </div>
-                <span className="text-sm text-muted-foreground font-medium group-hover:text-launch-purple transition-colors duration-300">
+                <span className="text-sm text-muted-foreground font-medium group-hover:text-lbl-ink transition-colors duration-300">
                   {item.name}
                 </span>
               </div>
@@ -352,7 +352,7 @@ const HowYourBusinessChanges = () => {
         {/* In practice */}
         <div className="mb-20">
           <div className="text-center mb-12">
-            <h3 className="text-3xl md:text-4xl font-bold text-launch-purple mb-3">
+            <h3 className="text-3xl md:text-4xl font-bold text-lbl-ink mb-3">
               For a 360° understanding of your business
             </h3>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">Cost savings. Happier employees. Thrilled customers.</p>
@@ -365,14 +365,14 @@ const HowYourBusinessChanges = () => {
                   key={i}
                   type="button"
                   onClick={() => setOpenIndex(i)}
-                  className="group relative text-left bg-card rounded-2xl p-8 border border-border hover:border-launch-purple/30 transition-all duration-500 hover:shadow-[0_8px_40px_-12px_hsl(var(--launch-purple)/0.25)] hover:-translate-y-1 focus:outline-none focus-visible:ring-2 focus-visible:ring-launch-purple"
+                  className="group relative text-left bg-card rounded-2xl p-8 border border-border hover:border-lbl-ink/30 transition-all duration-500 hover:shadow-[0_8px_40px_-12px_hsl(var(--lbl-ink)/0.25)] hover:-translate-y-1 focus:outline-none focus-visible:ring-2 focus-visible:ring-lbl-ink"
                 >
-                  <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-launch-purple to-launch-orange rounded-t-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-                  <div className="w-14 h-14 bg-gradient-to-br from-launch-purple/15 to-launch-orange/10 rounded-2xl flex items-center justify-center mb-5 group-hover:scale-110 transition-transform duration-500">
-                    <ItemIcon className="h-7 w-7 text-launch-purple" />
+                  <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-lbl-ink to-lbl-orange rounded-t-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                  <div className="w-14 h-14 bg-gradient-to-br from-lbl-ink/15 to-lbl-orange/10 rounded-2xl flex items-center justify-center mb-5 group-hover:scale-110 transition-transform duration-500">
+                    <ItemIcon className="h-7 w-7 text-lbl-ink" />
                   </div>
                   <p className="text-foreground text-lg font-semibold leading-relaxed mb-4">{item.text}</p>
-                  <span className="inline-flex items-center gap-1.5 text-sm font-semibold text-launch-orange">
+                  <span className="inline-flex items-center gap-1.5 text-sm font-semibold text-lbl-orange">
                     <Sparkles className="h-4 w-4" />
                     See an example
                   </span>
@@ -384,8 +384,8 @@ const HowYourBusinessChanges = () => {
 
         {/* What this unlocks */}
         <div className="relative mb-16">
-          <div className="absolute inset-0 bg-gradient-to-br from-launch-purple/5 via-transparent to-launch-orange/5 rounded-3xl -m-4" />
-          <div className="relative bg-gradient-to-br from-launch-purple to-launch-purple/90 rounded-3xl p-10 md:p-14 text-white shadow-[0_20px_60px_-15px_hsl(var(--launch-purple)/0.4)]">
+          <div className="absolute inset-0 bg-gradient-to-br from-lbl-ink/5 via-transparent to-lbl-orange/5 rounded-3xl -m-4" />
+          <div className="relative bg-gradient-to-br from-lbl-ink to-lbl-ink/90 rounded-3xl p-10 md:p-14 text-white shadow-[0_20px_60px_-15px_hsl(var(--lbl-ink)/0.4)]">
             <div className="text-center mb-10">
               <h3 className="text-3xl md:text-4xl font-bold mb-3">
                 What this unlocks for your team
@@ -397,8 +397,8 @@ const HowYourBusinessChanges = () => {
                 const ItemIcon = item.icon;
                 return (
                   <div key={i} className="flex items-start gap-4 bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/10 hover:bg-white/15 hover:border-white/20 transition-all duration-300">
-                    <div className="w-12 h-12 bg-launch-orange/20 rounded-xl flex items-center justify-center flex-shrink-0">
-                      <ItemIcon className="h-6 w-6 text-launch-orange" />
+                    <div className="w-12 h-12 bg-lbl-orange/20 rounded-xl flex items-center justify-center flex-shrink-0">
+                      <ItemIcon className="h-6 w-6 text-lbl-orange" />
                     </div>
                     <p className="text-white text-lg font-semibold leading-snug">{item.text}</p>
                   </div>
@@ -409,12 +409,12 @@ const HowYourBusinessChanges = () => {
         </div>
 
         {/* What You Can Expect */}
-        <div className="relative bg-gradient-to-br from-launch-light via-white to-orange-50 rounded-3xl p-8 md:p-14 overflow-hidden">
-          <div className="absolute -top-16 -right-16 w-64 h-64 bg-launch-orange/10 rounded-full blur-3xl pointer-events-none" />
-          <div className="absolute -bottom-16 -left-16 w-64 h-64 bg-launch-purple/10 rounded-full blur-3xl pointer-events-none" />
+        <div className="relative bg-gradient-to-br from-lbl-paper via-white to-orange-50 rounded-3xl p-8 md:p-14 overflow-hidden">
+          <div className="absolute -top-16 -right-16 w-64 h-64 bg-lbl-orange/10 rounded-full blur-3xl pointer-events-none" />
+          <div className="absolute -bottom-16 -left-16 w-64 h-64 bg-lbl-ink/10 rounded-full blur-3xl pointer-events-none" />
 
           <div className="relative">
-            <h3 className="text-3xl md:text-4xl font-bold text-launch-purple mb-4 text-center">
+            <h3 className="text-3xl md:text-4xl font-bold text-lbl-ink mb-4 text-center">
               What You Can Expect
             </h3>
             <p className="text-xl text-muted-foreground text-center mb-14 max-w-2xl mx-auto">
@@ -425,31 +425,31 @@ const HowYourBusinessChanges = () => {
                 const ItemIcon = item.icon;
                 const variants = [
                   {
-                    card: "bg-gradient-to-br from-launch-purple to-launch-purple/80 text-white border-transparent",
+                    card: "bg-gradient-to-br from-lbl-ink to-lbl-ink/80 text-white border-transparent",
                     iconWrap: "bg-white/15 backdrop-blur-sm",
                     icon: "text-white",
                     stat: "text-white",
                     label: "text-white/80",
                   },
                   {
-                    card: "bg-card border-2 border-launch-orange/30",
-                    iconWrap: "bg-gradient-to-br from-launch-orange to-launch-orange/70",
+                    card: "bg-card border-2 border-lbl-orange/30",
+                    iconWrap: "bg-gradient-to-br from-lbl-orange to-lbl-orange/70",
                     icon: "text-white",
-                    stat: "bg-gradient-to-r from-launch-orange to-launch-purple bg-clip-text text-transparent",
+                    stat: "bg-gradient-to-r from-lbl-orange to-lbl-ink bg-clip-text text-transparent",
                     label: "text-muted-foreground",
                   },
                   {
-                    card: "bg-gradient-to-br from-launch-orange to-launch-orange/80 text-white border-transparent",
+                    card: "bg-gradient-to-br from-lbl-orange to-lbl-orange/80 text-white border-transparent",
                     iconWrap: "bg-white/15 backdrop-blur-sm",
                     icon: "text-white",
                     stat: "text-white",
                     label: "text-white/85",
                   },
                   {
-                    card: "bg-card border-2 border-launch-purple/30",
-                    iconWrap: "bg-gradient-to-br from-launch-purple to-launch-orange",
+                    card: "bg-card border-2 border-lbl-ink/30",
+                    iconWrap: "bg-gradient-to-br from-lbl-ink to-lbl-orange",
                     icon: "text-white",
-                    stat: "bg-gradient-to-r from-launch-purple to-launch-orange bg-clip-text text-transparent",
+                    stat: "bg-gradient-to-r from-lbl-ink to-lbl-orange bg-clip-text text-transparent",
                     label: "text-muted-foreground",
                   },
                 ];
@@ -482,10 +482,10 @@ const HowYourBusinessChanges = () => {
               <div className="p-6">
                 <DialogHeader>
                   <div className="flex items-center gap-3 mb-2">
-                    <div className={`w-11 h-11 rounded-xl flex items-center justify-center flex-shrink-0 ${theme ? theme.iconWrap : "bg-gradient-to-br from-launch-purple/15 to-launch-orange/10"}`}>
-                      {ActiveIcon && <ActiveIcon className={`h-5 w-5 ${theme ? "text-white" : "text-launch-purple"}`} />}
+                    <div className={`w-11 h-11 rounded-xl flex items-center justify-center flex-shrink-0 ${theme ? theme.iconWrap : "bg-gradient-to-br from-lbl-ink/15 to-lbl-orange/10"}`}>
+                      {ActiveIcon && <ActiveIcon className={`h-5 w-5 ${theme ? "text-white" : "text-lbl-ink"}`} />}
                     </div>
-                    <DialogTitle className="text-xl text-launch-purple text-left">
+                    <DialogTitle className="text-xl text-lbl-ink text-left">
                       {activeExample.exampleTitle}
                     </DialogTitle>
                   </div>
@@ -502,8 +502,8 @@ const HowYourBusinessChanges = () => {
                     <p className="text-foreground font-medium">{activeExample.examplePrompt}</p>
                   </div>
 
-                  <div className={`rounded-xl border p-5 ${theme ? theme.responseBox : "border-launch-purple/20 bg-gradient-to-br from-launch-light/40 via-white to-orange-50/40"}`}>
-                    <p className={`text-xs font-semibold uppercase tracking-wide mb-2 flex items-center gap-1.5 ${theme ? theme.responseLabel : "text-launch-purple"}`}>
+                  <div className={`rounded-xl border p-5 ${theme ? theme.responseBox : "border-lbl-ink/20 bg-gradient-to-br from-lbl-paper/40 via-white to-orange-50/40"}`}>
+                    <p className={`text-xs font-semibold uppercase tracking-wide mb-2 flex items-center gap-1.5 ${theme ? theme.responseLabel : "text-lbl-ink"}`}>
                       <Sparkles className="h-3.5 w-3.5" />
                       AI response
                     </p>

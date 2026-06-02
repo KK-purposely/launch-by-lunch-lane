@@ -41,16 +41,16 @@ const Navigation = () => {
             {/* Desktop Navigation */}
             <div className="hidden md:block ml-10">
               <div className="flex items-baseline space-x-8">
-                <Link to="/" className="px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-launch-orange">
+                <Link to="/" className="px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-lbl-orange">
                   Home
                 </Link>
 
-                <Link to="/about" className="px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-launch-orange">
+                <Link to="/about" className="px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-lbl-orange">
                   About
                 </Link>
 
                 <DropdownMenu>
-                  <DropdownMenuTrigger className="px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-launch-orange focus:outline-none inline-flex items-center gap-1">
+                  <DropdownMenuTrigger className="px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-lbl-orange focus:outline-none inline-flex items-center gap-1">
                     Services
                     <ChevronDown className="h-4 w-4" />
                   </DropdownMenuTrigger>
@@ -74,11 +74,11 @@ const Navigation = () => {
                   </DropdownMenuContent>
                 </DropdownMenu>
 
-                <Link to="/enterprise" className="px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-launch-orange">
+                <Link to="/enterprise" className="px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-lbl-orange">
                   Enterprise
                 </Link>
 
-                <Link to="/community" className="px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-launch-orange">
+                <Link to="/community" className="px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-lbl-orange">
                   Community
                 </Link>
               </div>
@@ -88,7 +88,7 @@ const Navigation = () => {
           <div className="hidden md:block">
             <Button
               size="sm"
-              className="bg-launch-orange hover:bg-launch-orange/90 text-white rounded-full font-medium transition-all duration-300"
+              className="bg-lbl-orange hover:bg-lbl-orange/90 text-white rounded-full font-medium transition-all duration-300"
               onClick={() => window.open("https://learn.launchbylunch.co/?modal=signup", "_blank")}
             >
               Get Our Newsletter
@@ -99,7 +99,7 @@ const Navigation = () => {
           <div className="md:hidden">
             <DropdownMenu open={isMenuOpen} onOpenChange={setIsMenuOpen}>
               <DropdownMenuTrigger asChild>
-                <button className="inline-flex items-center justify-center p-2 rounded-md text-gray-700 hover:text-launch-purple hover:bg-gray-100 focus:outline-none">
+                <button className="inline-flex items-center justify-center p-2 rounded-md text-gray-700 hover:text-lbl-ink hover:bg-gray-100 focus:outline-none">
                   <span className="sr-only">Open main menu</span>
                   <Menu className="block h-6 w-6" />
                 </button>
@@ -162,7 +162,7 @@ const Navigation = () => {
                 <DropdownMenuItem asChild>
                   <Link
                     to="/contact"
-                    className="w-full text-launch-orange font-medium"
+                    className="w-full text-lbl-orange font-medium"
                     onClick={() => setIsMenuOpen(false)}
                   >
                     Contact

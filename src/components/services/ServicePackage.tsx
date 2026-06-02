@@ -23,11 +23,11 @@ const ServicePackage: React.FC<ServicePackageProps> = ({
   icon: Icon,
 }) => {
   return (
-    <Card className="mb-12 border-2 border-gray-200 hover:border-launch-purple transition-all duration-300">
+    <Card className="mb-12 border-2 border-gray-200 hover:border-lbl-ink transition-all duration-300">
       <CardHeader className="bg-gray-50">
         <div className="flex items-center gap-3 mb-2">
-          <Icon className="h-6 w-6 text-launch-orange" />
-          <CardTitle className="text-2xl text-launch-purple">{title}</CardTitle>
+          <Icon className="h-6 w-6 text-lbl-orange" />
+          <CardTitle className="text-2xl text-lbl-ink">{title}</CardTitle>
         </div>
         <CardDescription className="text-xl font-medium">
           {description}

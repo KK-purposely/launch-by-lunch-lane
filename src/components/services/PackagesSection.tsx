@@ -6,7 +6,7 @@ import { Layers, ChartBar } from "lucide-react";
 const PackagesSection = () => {
   return (
     <section className="mb-20">
-      <h2 className="text-3xl font-bold text-launch-purple mb-8">Our Packages</h2>
+      <h2 className="text-3xl font-bold text-lbl-ink mb-8">Our Packages</h2>
       
       {/* Momentum Builder */}
       <ServicePackage

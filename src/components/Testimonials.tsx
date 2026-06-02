@@ -25,11 +25,11 @@ const Testimonials = () => {
 
   return (
     <section className="w-full py-20 px-4 sm:px-6 relative overflow-hidden">
-      <div className="absolute inset-0 bg-gradient-to-r from-launch-orange/5 via-transparent to-launch-purple/5" />
+      <div className="absolute inset-0 bg-gradient-to-r from-lbl-orange/5 via-transparent to-lbl-ink/5" />
       <div className="relative max-w-6xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
-            <span className="bg-gradient-to-r from-launch-purple to-launch-orange bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-lbl-ink to-lbl-orange bg-clip-text text-transparent">
               What People are Saying
             </span>
           </h2>
@@ -42,19 +42,19 @@ const Testimonials = () => {
           {testimonials.map((testimonial, index) => (
             <div 
               key={testimonial.name}
-              className="group text-center p-8 bg-white/80 backdrop-blur-sm rounded-2xl shadow-sm border border-gray-100 hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 hover:border-launch-orange relative"
+              className="group text-center p-8 bg-white/80 backdrop-blur-sm rounded-2xl shadow-sm border border-gray-100 hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 hover:border-lbl-orange relative"
               style={{
                 animation: `fade-in 0.6s ease-out ${index * 0.2}s both`
               }}
             >
               {/* Quote Icon */}
               <div className="absolute top-4 left-4">
-                <Quote className="h-6 w-6 text-launch-orange/30" />
+                <Quote className="h-6 w-6 text-lbl-orange/30" />
               </div>
               
               {/* Profile Image */}
               <div className="relative mb-6">
-                <div className="w-20 h-20 md:w-24 md:h-24 rounded-full p-1 bg-gradient-to-r from-launch-purple via-launch-orange to-launch-purple mx-auto">
+                <div className="w-20 h-20 md:w-24 md:h-24 rounded-full p-1 bg-gradient-to-r from-lbl-ink via-lbl-orange to-lbl-ink mx-auto">
                   <img
                     src={testimonial.image}
                     alt={testimonial.name}
@@ -70,8 +70,8 @@ const Testimonials = () => {
               
               {/* Name and Title */}
               <div className="text-center">
-                <h3 className="font-bold text-lg text-launch-purple mb-1">{testimonial.name}</h3>
-                <p className="text-launch-orange font-medium text-sm">{testimonial.title}</p>
+                <h3 className="font-bold text-lg text-lbl-ink mb-1">{testimonial.name}</h3>
+                <p className="text-lbl-orange font-medium text-sm">{testimonial.title}</p>
               </div>
             </div>
           ))}

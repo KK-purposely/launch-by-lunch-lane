@@ -17,7 +17,7 @@ const IntegrationsSection = () => {
   return (
     <section className="py-16 md:py-20 bg-white">
       <div className="max-w-5xl mx-auto px-4 sm:px-6 text-center">
-        <h2 className="text-3xl md:text-4xl font-bold text-launch-purple mb-4">
+        <h2 className="text-3xl md:text-4xl font-bold text-lbl-ink mb-4">
           Connect the Tools You Already Use
         </h2>
         <p className="text-lg text-gray-600 mb-14 max-w-2xl mx-auto">
@@ -36,7 +36,7 @@ const IntegrationsSection = () => {
                   className="w-10 h-10 object-contain"
                 />
               </div>
-              <span className="text-sm text-gray-500 font-medium group-hover:text-launch-purple transition-colors duration-300">
+              <span className="text-sm text-gray-500 font-medium group-hover:text-lbl-ink transition-colors duration-300">
                 {item.name}
               </span>
             </div>

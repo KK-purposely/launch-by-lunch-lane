@@ -70,7 +70,7 @@ const InviteRequestModal = ({ open, onOpenChange }: InviteRequestModalProps) => 
     <Dialog open={open} onOpenChange={onOpenChange}>
       <DialogContent className="sm:max-w-md">
         <DialogHeader>
-          <DialogTitle className="text-2xl font-bold bg-gradient-to-r from-launch-purple to-launch-orange bg-clip-text text-transparent">
+          <DialogTitle className="text-2xl font-bold bg-gradient-to-r from-lbl-ink to-lbl-orange bg-clip-text text-transparent">
             Request an Invite
           </DialogTitle>
           <DialogDescription>
@@ -112,7 +112,7 @@ const InviteRequestModal = ({ open, onOpenChange }: InviteRequestModalProps) => 
           <Button
             type="submit"
             disabled={isSubmitting}
-            className="w-full bg-gradient-to-r from-launch-purple to-launch-orange hover:from-launch-orange hover:to-launch-purple text-white"
+            className="w-full bg-gradient-to-r from-lbl-ink to-lbl-orange hover:from-lbl-orange hover:to-lbl-ink text-white"
           >
             {isSubmitting ? "Submitting..." : "Submit Request"}
           </Button>

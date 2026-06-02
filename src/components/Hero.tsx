@@ -9,14 +9,14 @@ interface HeroProps {
 const Hero = ({ showButtons = true }: HeroProps) => {
   return (
     <div className="relative overflow-hidden">
-      <div className="absolute inset-0 bg-gradient-to-br from-launch-purple/10 via-white to-launch-orange/10" />
+      <div className="absolute inset-0 bg-gradient-to-br from-lbl-ink/10 via-white to-lbl-orange/10" />
       <div className="relative w-full px-4 sm:px-6 py-16 md:py-24">
         <div className="max-w-6xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16 items-center">
             {/* Left: Text */}
             <div>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-5 leading-tight">
-                <span className="bg-gradient-to-r from-launch-purple via-pink-500 to-launch-orange bg-clip-text text-transparent">
+                <span className="bg-gradient-to-r from-lbl-ink via-lbl-magenta to-lbl-orange bg-clip-text text-transparent">
                   Practical AI Adoption for Modern Leadership
                 </span>
               </h1>
@@ -37,7 +37,7 @@ const Hero = ({ showButtons = true }: HeroProps) => {
 
                 <Button
                   size="lg"
-                  className="group w-full max-w-sm bg-gradient-to-r from-launch-purple to-launch-orange hover:from-launch-orange hover:to-launch-purple text-white px-8 py-6 text-lg rounded-full font-medium transition-all duration-300 shadow-lg hover:shadow-xl"
+                  className="group w-full max-w-sm bg-gradient-to-r from-lbl-ink to-lbl-orange hover:from-lbl-orange hover:to-lbl-ink text-white px-8 py-6 text-lg rounded-full font-medium transition-all duration-300 shadow-lg hover:shadow-xl"
                   onClick={() => window.open("https://calendly.com/karen-launchbylunch/30min", "_blank")}
                 >
                   <span className="flex items-center gap-2">
@@ -49,7 +49,7 @@ const Hero = ({ showButtons = true }: HeroProps) => {
                 <Button
                   variant="outline"
                   size="lg"
-                  className="w-full max-w-sm px-8 py-6 text-lg border-launch-orange text-launch-orange hover:bg-launch-orange hover:text-white rounded-full font-medium transition-all duration-300"
+                  className="w-full max-w-sm px-8 py-6 text-lg border-lbl-orange text-lbl-orange hover:bg-lbl-orange hover:text-white rounded-full font-medium transition-all duration-300"
                   onClick={() => window.open("https://learn.launchbylunch.co/?modal=signup", "_blank")}
                 >
                   Get Our Newsletter

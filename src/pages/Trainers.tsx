@@ -50,10 +50,10 @@ const Trainers = () => {
       </Helmet>
 
       {/* Hero */}
-      <section className="relative py-20 md:py-24 flex items-center justify-center overflow-hidden bg-launch-purple">
+      <section className="relative py-20 md:py-24 flex items-center justify-center overflow-hidden bg-lbl-ink">
         <div className="absolute inset-0">
-          <div className="absolute top-1/4 -left-20 w-[500px] h-[500px] rounded-full bg-launch-orange/20 blur-[120px] animate-[pulse_6s_ease-in-out_infinite]" />
-          <div className="absolute bottom-1/4 -right-20 w-[400px] h-[400px] rounded-full bg-launch-orange/15 blur-[100px] animate-[pulse_8s_ease-in-out_infinite_1s]" />
+          <div className="absolute top-1/4 -left-20 w-[500px] h-[500px] rounded-full bg-lbl-orange/20 blur-[120px] animate-[pulse_6s_ease-in-out_infinite]" />
+          <div className="absolute bottom-1/4 -right-20 w-[400px] h-[400px] rounded-full bg-lbl-orange/15 blur-[100px] animate-[pulse_8s_ease-in-out_infinite_1s]" />
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] rounded-full bg-white/5 blur-[80px]" />
         </div>
 
@@ -65,14 +65,14 @@ const Trainers = () => {
         <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 text-center">
           <div className="animate-fade-in" style={{ animationDuration: "0.6s" }}>
             <span className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-md text-white text-base font-semibold px-5 py-2 rounded-full mb-8 border border-white/20">
-              <Sparkles className="h-4 w-4 text-launch-orange" />
+              <Sparkles className="h-4 w-4 text-lbl-orange" />
               NOW ACCEPTING APPLICATIONS
             </span>
           </div>
 
           <h1 className="animate-fade-in text-6xl md:text-7xl lg:text-8xl font-bold text-white mb-6 leading-[1.1] tracking-tight" style={{ animationDuration: "0.8s", animationDelay: "0.15s", animationFillMode: "both" }}>
             Teach AI.<br />
-            <span className="bg-gradient-to-r from-launch-orange to-yellow-300 bg-clip-text text-transparent">Get Paid.</span><br />
+            <span className="bg-gradient-to-r from-lbl-orange to-yellow-300 bg-clip-text text-transparent">Get Paid.</span><br />
             We Handle the Rest.
           </h1>
 
@@ -82,7 +82,7 @@ const Trainers = () => {
 
           <div className="animate-fade-in" style={{ animationDuration: "0.8s", animationDelay: "0.45s", animationFillMode: "both" }}>
             <a href={APPLY_URL} target="_blank" rel="noopener noreferrer">
-              <Button size="lg" className="group bg-launch-orange hover:bg-launch-orange/90 text-white text-xl px-10 py-7 rounded-full shadow-[0_0_40px_rgba(255,107,0,0.3)] hover:shadow-[0_0_60px_rgba(255,107,0,0.5)] transition-all duration-500 hover:scale-105">
+              <Button size="lg" className="group bg-lbl-orange hover:bg-lbl-orange/90 text-white text-xl px-10 py-7 rounded-full shadow-[0_0_40px_rgba(255,107,0,0.3)] hover:shadow-[0_0_60px_rgba(255,107,0,0.5)] transition-all duration-500 hover:scale-105">
                 Apply to Become a Trainer
                 <ArrowRight className="ml-2 h-5 w-5 transition-transform duration-300 group-hover:translate-x-1" />
               </Button>
@@ -92,25 +92,25 @@ const Trainers = () => {
       </section>
 
       {/* AI Fluency Section */}
-      <section className="py-20 md:py-28 bg-gradient-to-b from-white via-launch-light to-white relative overflow-hidden">
+      <section className="py-20 md:py-28 bg-gradient-to-b from-white via-lbl-paper to-white relative overflow-hidden">
         {/* Floating animated elements */}
         <div className="absolute inset-0 pointer-events-none">
-          <div className="absolute top-12 left-[10%] w-20 h-20 rounded-2xl bg-launch-orange/10 rotate-12 animate-[pulse_4s_ease-in-out_infinite]" />
-          <div className="absolute top-1/3 right-[8%] w-16 h-16 rounded-full bg-launch-purple/10 animate-[pulse_5s_ease-in-out_infinite_1s]" />
-          <div className="absolute bottom-20 left-[15%] w-12 h-12 rounded-lg bg-launch-orange/8 -rotate-6 animate-[pulse_6s_ease-in-out_infinite_0.5s]" />
-          <div className="absolute bottom-1/3 right-[12%] w-24 h-24 rounded-3xl bg-launch-purple/5 rotate-45 animate-[pulse_7s_ease-in-out_infinite_2s]" />
+          <div className="absolute top-12 left-[10%] w-20 h-20 rounded-2xl bg-lbl-orange/10 rotate-12 animate-[pulse_4s_ease-in-out_infinite]" />
+          <div className="absolute top-1/3 right-[8%] w-16 h-16 rounded-full bg-lbl-ink/10 animate-[pulse_5s_ease-in-out_infinite_1s]" />
+          <div className="absolute bottom-20 left-[15%] w-12 h-12 rounded-lg bg-lbl-orange/8 -rotate-6 animate-[pulse_6s_ease-in-out_infinite_0.5s]" />
+          <div className="absolute bottom-1/3 right-[12%] w-24 h-24 rounded-3xl bg-lbl-ink/5 rotate-45 animate-[pulse_7s_ease-in-out_infinite_2s]" />
         </div>
 
         <div className="max-w-5xl mx-auto px-4 sm:px-6 relative z-10">
           {/* Animated counter-style stat */}
           <AnimatedSection>
             <div className="text-center mb-12">
-              <div className="inline-flex items-center gap-3 bg-launch-orange/10 border border-launch-orange/20 rounded-full px-6 py-3 mb-10">
+              <div className="inline-flex items-center gap-3 bg-lbl-orange/10 border border-lbl-orange/20 rounded-full px-6 py-3 mb-10">
                 <span className="relative flex h-3 w-3">
-                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-launch-orange opacity-75"></span>
-                  <span className="relative inline-flex rounded-full h-3 w-3 bg-launch-orange"></span>
+                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-lbl-orange opacity-75"></span>
+                  <span className="relative inline-flex rounded-full h-3 w-3 bg-lbl-orange"></span>
                 </span>
-                <span className="text-lg font-semibold text-launch-orange">Demand is growing faster than we can keep up</span>
+                <span className="text-lg font-semibold text-lbl-orange">Demand is growing faster than we can keep up</span>
               </div>
             </div>
           </AnimatedSection>
@@ -119,9 +119,9 @@ const Trainers = () => {
             {/* Left: Big statement */}
             <AnimatedSection>
               <div>
-                <h2 className="text-4xl md:text-[2.75rem] lg:text-5xl font-bold text-launch-purple mb-8 leading-[1.15]">
+                <h2 className="text-4xl md:text-[2.75rem] lg:text-5xl font-bold text-lbl-ink mb-8 leading-[1.15]">
                   AI Fluency Is the<br />
-                  <span className="bg-gradient-to-r from-launch-orange to-amber-500 bg-clip-text text-transparent whitespace-nowrap">Most In-Demand Skill</span><br />
+                  <span className="bg-gradient-to-r from-lbl-orange to-amber-500 bg-clip-text text-transparent whitespace-nowrap">Most In-Demand Skill</span><br />
                   on the Planet
                 </h2>
                 <p className="text-2xl text-gray-600 leading-relaxed">
@@ -133,15 +133,15 @@ const Trainers = () => {
             {/* Right: Highlighted quote card */}
             <AnimatedSection delay={200}>
               <div className="relative">
-                <div className="absolute -inset-4 bg-gradient-to-br from-launch-purple/10 via-launch-orange/10 to-launch-purple/5 rounded-3xl blur-xl" />
-                <div className="relative bg-white rounded-2xl p-10 shadow-xl border border-launch-orange/15">
-                  <div className="absolute -top-5 -left-3 text-8xl text-launch-orange/20 font-serif leading-none">"</div>
+                <div className="absolute -inset-4 bg-gradient-to-br from-lbl-ink/10 via-lbl-orange/10 to-lbl-ink/5 rounded-3xl blur-xl" />
+                <div className="relative bg-white rounded-2xl p-10 shadow-xl border border-lbl-orange/15">
+                  <div className="absolute -top-5 -left-3 text-8xl text-lbl-orange/20 font-serif leading-none">"</div>
                   <p className="text-2xl text-gray-700 leading-relaxed mb-6 relative z-10">
                     If you've been volunteering your time teaching AI to others and wondering when someone's going to actually pay you for it,
                   </p>
                   <div className="relative z-10">
-                    <div className="h-1 w-16 bg-gradient-to-r from-launch-purple to-launch-orange rounded-full mb-4" />
-                    <p className="text-3xl font-bold bg-gradient-to-r from-launch-purple to-launch-orange bg-clip-text text-transparent">
+                    <div className="h-1 w-16 bg-gradient-to-r from-lbl-ink to-lbl-orange rounded-full mb-4" />
+                    <p className="text-3xl font-bold bg-gradient-to-r from-lbl-ink to-lbl-orange bg-clip-text text-transparent">
                       This is your moment.
                     </p>
                   </div>
@@ -156,15 +156,15 @@ const Trainers = () => {
       <section className="py-20 md:py-24 bg-gray-50 relative">
         <div className="max-w-6xl mx-auto px-4 sm:px-6">
           <AnimatedSection>
-            <h2 className="text-4xl md:text-5xl font-bold text-launch-purple text-center mb-4">What Our Trainers Do</h2>
+            <h2 className="text-4xl md:text-5xl font-bold text-lbl-ink text-center mb-4">What Our Trainers Do</h2>
             <p className="text-xl text-gray-500 text-center mb-14 max-w-lg mx-auto">Real work. Real impact. Not another theoretical AI talk.</p>
           </AnimatedSection>
 
           <div className="grid md:grid-cols-3 gap-8">
             {[
-              { icon: Users, title: "Lead Live Workshops", desc: "Run in-person AI workshops for founders, executives, and small teams ready to level up.", color: "from-launch-purple to-indigo-600" },
-              { icon: Brain, title: "Facilitate Corporate Sessions", desc: "Help companies actually use AI, not just talk about it. Real tools, real workflows, real results.", color: "from-launch-orange to-amber-500" },
-              { icon: Zap, title: "Run Follow-Up Sessions", desc: "Make sure people don't walk out and immediately forget everything they learned. Reinforce and build.", color: "from-launch-purple to-launch-orange" },
+              { icon: Users, title: "Lead Live Workshops", desc: "Run in-person AI workshops for founders, executives, and small teams ready to level up.", color: "from-lbl-ink to-indigo-600" },
+              { icon: Brain, title: "Facilitate Corporate Sessions", desc: "Help companies actually use AI, not just talk about it. Real tools, real workflows, real results.", color: "from-lbl-orange to-amber-500" },
+              { icon: Zap, title: "Run Follow-Up Sessions", desc: "Make sure people don't walk out and immediately forget everything they learned. Reinforce and build.", color: "from-lbl-ink to-lbl-orange" },
             ].map(({ icon: Icon, title, desc, color }, i) => (
               <AnimatedSection key={title} delay={i * 150}>
                 <Card className="group border-none shadow-lg hover:shadow-2xl transition-all duration-500 bg-white overflow-hidden h-full hover:-translate-y-2">
@@ -173,7 +173,7 @@ const Trainers = () => {
                     <div className={`inline-flex items-center justify-center w-14 h-14 rounded-2xl bg-gradient-to-br ${color} mb-6 shadow-lg group-hover:scale-110 transition-transform duration-500`}>
                       <Icon className="h-7 w-7 text-white" />
                     </div>
-                    <h3 className="text-2xl font-bold text-launch-purple mb-3">{title}</h3>
+                    <h3 className="text-2xl font-bold text-lbl-ink mb-3">{title}</h3>
                     <p className="text-xl text-gray-600 leading-relaxed">{desc}</p>
                   </CardContent>
                 </Card>
@@ -187,25 +187,25 @@ const Trainers = () => {
       <section className="py-20 md:py-24 bg-white">
         <div className="max-w-5xl mx-auto px-4 sm:px-6">
           <AnimatedSection>
-            <h2 className="text-4xl md:text-5xl font-bold text-launch-purple text-center mb-4">Who We're Looking For</h2>
+            <h2 className="text-4xl md:text-5xl font-bold text-lbl-ink text-center mb-4">Who We're Looking For</h2>
             <p className="text-xl text-gray-500 text-center mb-14 max-w-lg mx-auto">This isn't for everyone, and that's the point.</p>
           </AnimatedSection>
 
           <div className="grid sm:grid-cols-2 gap-6">
             {[
-              { icon: Mic, title: "Strong Communicators", desc: "You own a room without breaking a sweat. Presence is your superpower.", accent: "launch-orange" },
-              { icon: Award, title: "Proven Facilitators", desc: "You've done paid professional work before. Training, coaching, consulting, any of it.", accent: "launch-purple" },
-              { icon: Brain, title: "Builders", desc: "You don't have to be a developer, but you've built something real with AI.", accent: "launch-orange" },
-              { icon: Heart, title: "Patient Explainers", desc: "The kind of person who lights up when the last person in the room finally gets it.", accent: "launch-purple" },
+              { icon: Mic, title: "Strong Communicators", desc: "You own a room without breaking a sweat. Presence is your superpower.", accent: "lbl-orange" },
+              { icon: Award, title: "Proven Facilitators", desc: "You've done paid professional work before. Training, coaching, consulting, any of it.", accent: "lbl-ink" },
+              { icon: Brain, title: "Builders", desc: "You don't have to be a developer, but you've built something real with AI.", accent: "lbl-orange" },
+              { icon: Heart, title: "Patient Explainers", desc: "The kind of person who lights up when the last person in the room finally gets it.", accent: "lbl-ink" },
             ].map(({ icon: Icon, title, desc, accent }, i) => (
               <AnimatedSection key={title} delay={i * 100}>
-                <div className="group relative flex gap-5 p-7 rounded-2xl border border-gray-100 bg-white hover:border-launch-orange/30 hover:shadow-xl transition-all duration-500 h-full">
-                  <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-launch-orange/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                <div className="group relative flex gap-5 p-7 rounded-2xl border border-gray-100 bg-white hover:border-lbl-orange/30 hover:shadow-xl transition-all duration-500 h-full">
+                  <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-lbl-orange/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
                   <div className={`relative flex-shrink-0 w-14 h-14 rounded-xl bg-${accent}/10 flex items-center justify-center group-hover:scale-110 transition-transform duration-300`}>
                     <Icon className={`h-6 w-6 text-${accent}`} />
                   </div>
                   <div className="relative">
-                    <h3 className="font-bold text-launch-purple text-2xl mb-2">{title}</h3>
+                    <h3 className="font-bold text-lbl-ink text-2xl mb-2">{title}</h3>
                     <p className="text-xl text-gray-600 leading-relaxed">{desc}</p>
                   </div>
                 </div>
@@ -216,9 +216,9 @@ const Trainers = () => {
       </section>
 
       {/* What You Get */}
-      <section className="py-20 md:py-24 bg-launch-purple relative overflow-hidden">
+      <section className="py-20 md:py-24 bg-lbl-ink relative overflow-hidden">
         <div className="absolute inset-0">
-          <div className="absolute top-0 right-0 w-[400px] h-[400px] rounded-full bg-launch-orange/10 blur-[120px]" />
+          <div className="absolute top-0 right-0 w-[400px] h-[400px] rounded-full bg-lbl-orange/10 blur-[120px]" />
           <div className="absolute bottom-0 left-0 w-[300px] h-[300px] rounded-full bg-white/5 blur-[100px]" />
         </div>
 
@@ -237,8 +237,8 @@ const Trainers = () => {
             ].map(({ icon: Icon, title, desc }, i) => (
               <AnimatedSection key={title} delay={i * 100}>
                 <div className="group flex gap-5 p-7 rounded-2xl bg-white/[0.07] border border-white/10 backdrop-blur-sm hover:bg-white/[0.12] hover:border-white/20 transition-all duration-500">
-                  <div className="flex-shrink-0 w-14 h-14 rounded-xl bg-launch-orange/20 flex items-center justify-center group-hover:bg-launch-orange/30 transition-colors duration-300">
-                    <Icon className="h-6 w-6 text-launch-orange" />
+                  <div className="flex-shrink-0 w-14 h-14 rounded-xl bg-lbl-orange/20 flex items-center justify-center group-hover:bg-lbl-orange/30 transition-colors duration-300">
+                    <Icon className="h-6 w-6 text-lbl-orange" />
                   </div>
                   <div>
                     <h3 className="font-bold text-white text-2xl mb-2">{title}</h3>
@@ -252,10 +252,10 @@ const Trainers = () => {
       </section>
 
       {/* Final CTA */}
-      <section className="relative py-24 md:py-32 overflow-hidden bg-launch-purple">
+      <section className="relative py-24 md:py-32 overflow-hidden bg-lbl-ink">
         <div className="absolute inset-0">
-          <div className="absolute inset-0 bg-gradient-to-br from-launch-purple via-launch-purple/95 to-launch-orange/60" />
-          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] rounded-full bg-launch-orange/10 blur-[150px]" />
+          <div className="absolute inset-0 bg-gradient-to-br from-lbl-ink via-lbl-ink/95 to-lbl-orange/60" />
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] rounded-full bg-lbl-orange/10 blur-[150px]" />
         </div>
 
         <AnimatedSection>
@@ -265,7 +265,7 @@ const Trainers = () => {
               Apply today. We'll review your application and get back to you soon.
             </p>
             <a href={APPLY_URL} target="_blank" rel="noopener noreferrer">
-              <Button size="lg" className="group bg-white text-launch-purple hover:bg-white/95 text-xl px-12 py-7 rounded-full shadow-[0_0_40px_rgba(255,255,255,0.15)] hover:shadow-[0_0_60px_rgba(255,255,255,0.25)] transition-all duration-500 hover:scale-105 font-bold">
+              <Button size="lg" className="group bg-white text-lbl-ink hover:bg-white/95 text-xl px-12 py-7 rounded-full shadow-[0_0_40px_rgba(255,255,255,0.15)] hover:shadow-[0_0_60px_rgba(255,255,255,0.25)] transition-all duration-500 hover:scale-105 font-bold">
                 Apply Now
                 <ArrowRight className="ml-2 h-5 w-5 transition-transform duration-300 group-hover:translate-x-1" />
               </Button>

@@ -11,8 +11,8 @@ const CTA = () => {
   };
 
   return (
-    <section className="w-full py-20 px-4 sm:px-6 bg-gradient-to-r from-launch-orange via-launch-orange to-launch-purple relative overflow-hidden">
-      <div className="absolute inset-0 bg-gradient-to-r from-launch-orange/90 to-launch-purple/90" />
+    <section className="w-full py-20 px-4 sm:px-6 bg-gradient-to-r from-lbl-orange via-lbl-orange to-lbl-ink relative overflow-hidden">
+      <div className="absolute inset-0 bg-gradient-to-r from-lbl-orange/90 to-lbl-ink/90" />
       <div className="relative max-w-4xl mx-auto text-center">
         <div className="inline-flex items-center gap-2 text-white/80 mb-6">
           <Sparkles className="h-6 w-6 animate-pulse" />
@@ -32,7 +32,7 @@ const CTA = () => {
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
           <Button 
             size="lg" 
-            className="group bg-white text-launch-orange hover:bg-white/90 px-8 py-6 text-lg rounded-full font-medium transition-all duration-300 shadow-lg hover:shadow-xl"
+            className="group bg-white text-lbl-orange hover:bg-white/90 px-8 py-6 text-lg rounded-full font-medium transition-all duration-300 shadow-lg hover:shadow-xl"
             onClick={() => window.open('https://learn.launchbylunch.co/subscribe', '_blank')}
           >
             <span className="flex items-center gap-2">
@@ -44,7 +44,7 @@ const CTA = () => {
           <Button 
             variant="outline" 
             size="lg"
-            className="px-8 py-6 text-lg border-white text-white hover:bg-white hover:text-launch-orange rounded-full font-medium transition-all duration-300"
+            className="px-8 py-6 text-lg border-white text-white hover:bg-white hover:text-lbl-orange rounded-full font-medium transition-all duration-300"
             onClick={scrollToJoinWaitlist}
           >
             Learn More

@@ -25,8 +25,8 @@ const KeynotesWorkshops = () => {
         "Translating technical change into human language",
         "Storytelling frameworks for pitches, all-hands, and 1:1s",
       ],
-      gradient: "from-launch-purple via-pink-500 to-launch-orange",
-      bgGradient: "from-launch-purple/5 via-pink-500/5 to-launch-orange/5",
+      gradient: "from-lbl-ink via-lbl-magenta to-lbl-orange",
+      bgGradient: "from-lbl-ink/5 via-lbl-magenta/5 to-lbl-orange/5",
     },
     {
       icon: Sparkles,
@@ -39,8 +39,8 @@ const KeynotesWorkshops = () => {
         "Setting guardrails that protect culture, IP, and customer trust",
         "Measuring what matters: reducing costs, improving employee satisfaction, and creating scalable change",
       ],
-      gradient: "from-launch-purple via-pink-500 to-launch-orange",
-      bgGradient: "from-launch-purple/5 via-pink-500/5 to-launch-orange/5",
+      gradient: "from-lbl-ink via-lbl-magenta to-lbl-orange",
+      bgGradient: "from-lbl-ink/5 via-lbl-magenta/5 to-lbl-orange/5",
     },
     {
       icon: Shield,
@@ -53,8 +53,8 @@ const KeynotesWorkshops = () => {
         "Leaning on relationships and reputation as your real safety net",
         "Personal practices that keep you grounded through the hard seasons",
       ],
-      gradient: "from-launch-purple via-pink-500 to-launch-orange",
-      bgGradient: "from-launch-purple/5 via-pink-500/5 to-launch-orange/5",
+      gradient: "from-lbl-ink via-lbl-magenta to-lbl-orange",
+      bgGradient: "from-lbl-ink/5 via-lbl-magenta/5 to-lbl-orange/5",
     },
   ];
 
@@ -71,10 +71,10 @@ const KeynotesWorkshops = () => {
 
       {/* Hero Section */}
       <section className="relative overflow-hidden py-16 md:py-24">
-        <div className="absolute inset-0 bg-gradient-to-br from-launch-purple/10 via-white to-launch-orange/10" />
+        <div className="absolute inset-0 bg-gradient-to-br from-lbl-ink/10 via-white to-lbl-orange/10" />
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
-          <div className="absolute -top-32 -right-32 w-96 h-96 bg-launch-orange/10 rounded-full blur-3xl" />
-          <div className="absolute -bottom-32 -left-32 w-96 h-96 bg-launch-purple/10 rounded-full blur-3xl" />
+          <div className="absolute -top-32 -right-32 w-96 h-96 bg-lbl-orange/10 rounded-full blur-3xl" />
+          <div className="absolute -bottom-32 -left-32 w-96 h-96 bg-lbl-ink/10 rounded-full blur-3xl" />
         </div>
 
         <div className="relative w-full px-4 sm:px-6">
@@ -86,10 +86,10 @@ const KeynotesWorkshops = () => {
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.6 }}
-                  className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white border border-launch-purple/20 shadow-sm mb-6"
+                  className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white border border-lbl-ink/20 shadow-sm mb-6"
                 >
-                  <Mic className="h-4 w-4 text-launch-orange" />
-                  <span className="text-sm font-medium text-launch-purple">
+                  <Mic className="h-4 w-4 text-lbl-orange" />
+                  <span className="text-sm font-medium text-lbl-ink">
                     Keynotes & Workshops
                   </span>
                 </motion.div>
@@ -100,7 +100,7 @@ const KeynotesWorkshops = () => {
                   transition={{ duration: 0.6, delay: 0.1 }}
                   className="text-4xl md:text-5xl lg:text-6xl font-bold mb-5 leading-tight"
                 >
-                  <span className="bg-gradient-to-r from-launch-purple via-pink-500 to-launch-orange bg-clip-text text-transparent">
+                  <span className="bg-gradient-to-r from-lbl-ink via-lbl-magenta to-lbl-orange bg-clip-text text-transparent">
                     Keynotes and Workshops
                   </span>
                 </motion.h1>
@@ -109,7 +109,7 @@ const KeynotesWorkshops = () => {
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.6, delay: 0.2 }}
-                  className="text-2xl md:text-3xl font-semibold text-launch-purple mb-5"
+                  className="text-2xl md:text-3xl font-semibold text-lbl-ink mb-5"
                 >
                   No matter where you are, you're not behind.
                 </motion.p>
@@ -130,7 +130,7 @@ const KeynotesWorkshops = () => {
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.6, delay: 0.4 }}
-                  className="mt-7 rounded-2xl bg-white/70 backdrop-blur-sm border border-launch-purple/10 shadow-sm p-4"
+                  className="mt-7 rounded-2xl bg-white/70 backdrop-blur-sm border border-lbl-ink/10 shadow-sm p-4"
                 >
                   <img
                     src={karenCredentials}
@@ -148,8 +148,8 @@ const KeynotesWorkshops = () => {
                 className="relative flex flex-col items-center md:items-end"
               >
                 <div className="relative w-full max-w-md">
-                  <div className="absolute -inset-4 bg-gradient-to-br from-launch-purple/20 to-launch-orange/20 rounded-3xl blur-2xl" />
-                  <div className="relative rounded-3xl overflow-hidden shadow-2xl bg-gradient-to-br from-launch-purple/5 to-launch-orange/5 border border-white/50 w-full">
+                  <div className="absolute -inset-4 bg-gradient-to-br from-lbl-ink/20 to-lbl-orange/20 rounded-3xl blur-2xl" />
+                  <div className="relative rounded-3xl overflow-hidden shadow-2xl bg-gradient-to-br from-lbl-ink/5 to-lbl-orange/5 border border-white/50 w-full">
                     <img
                       src={karenSpeaker}
                       alt="Karen Kelly, Co-Founder and CEO of Launch by Lunch"
@@ -157,7 +157,7 @@ const KeynotesWorkshops = () => {
                     />
                   </div>
                   <div className="relative text-center mt-5">
-                    <p className="text-xl font-bold text-launch-purple leading-tight">
+                    <p className="text-xl font-bold text-lbl-ink leading-tight">
                       Karen Kelly
                     </p>
                     <p className="text-base text-gray-700 mt-1">
@@ -181,10 +181,10 @@ const KeynotesWorkshops = () => {
             transition={{ duration: 0.6 }}
             className="text-center mb-12"
           >
-            <p className="text-sm font-bold uppercase tracking-wider text-launch-purple mb-5">
+            <p className="text-sm font-bold uppercase tracking-wider text-lbl-ink mb-5">
               What People Say
             </p>
-            <h2 className="text-3xl md:text-5xl font-bold text-launch-purple max-w-4xl mx-auto leading-tight">
+            <h2 className="text-3xl md:text-5xl font-bold text-lbl-ink max-w-4xl mx-auto leading-tight">
               "She received the highest feedback scores of any workshop we've ever
               had."
             </h2>
@@ -234,14 +234,14 @@ const KeynotesWorkshops = () => {
                 transition={{ duration: 0.5, delay: i * 0.1 }}
                 className="relative rounded-2xl bg-white border border-gray-100 shadow-sm hover:shadow-lg transition-shadow overflow-hidden"
               >
-                <div className="absolute top-0 bottom-0 left-0 w-1 bg-gradient-to-b from-launch-purple via-pink-500 to-launch-orange" />
+                <div className="absolute top-0 bottom-0 left-0 w-1 bg-gradient-to-b from-lbl-ink via-lbl-magenta to-lbl-orange" />
                 <div className="p-7 pl-8">
                   <p className="text-xs font-bold uppercase tracking-wider text-gray-500 mb-4">
                     {t.tag}
                   </p>
                   <p className="text-lg text-gray-700 leading-relaxed mb-5">
                     "{t.quote}
-                    <span className="font-bold text-launch-purple">
+                    <span className="font-bold text-lbl-ink">
                       {t.highlight}
                     </span>
                     "
@@ -251,13 +251,13 @@ const KeynotesWorkshops = () => {
                       <img
                         src={t.image}
                         alt={t.name}
-                        className="h-12 w-12 rounded-full object-cover ring-2 ring-launch-purple/20 flex-shrink-0"
+                        className="h-12 w-12 rounded-full object-cover ring-2 ring-lbl-ink/20 flex-shrink-0"
                       />
                     ) : (
-                      <div className="h-12 w-12 rounded-full bg-gradient-to-br from-launch-purple/20 via-pink-500/20 to-launch-orange/20 ring-2 ring-launch-purple/20 flex-shrink-0" />
+                      <div className="h-12 w-12 rounded-full bg-gradient-to-br from-lbl-ink/20 via-lbl-magenta/20 to-lbl-orange/20 ring-2 ring-lbl-ink/20 flex-shrink-0" />
                     )}
                     <div>
-                      <p className="text-lg font-bold text-launch-purple">
+                      <p className="text-lg font-bold text-lbl-ink">
                         — {t.name}
                       </p>
                       <p className="text-lg text-gray-600 mt-0.5">{t.role}</p>
@@ -272,7 +272,7 @@ const KeynotesWorkshops = () => {
 
       {/* On Stage Section */}
       <section className="relative overflow-hidden py-20">
-        <div className="absolute inset-0 bg-gradient-to-br from-launch-purple/10 via-white to-launch-orange/10" />
+        <div className="absolute inset-0 bg-gradient-to-br from-lbl-ink/10 via-white to-lbl-orange/10" />
         <div className="relative max-w-6xl mx-auto px-4 sm:px-6">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
@@ -281,14 +281,14 @@ const KeynotesWorkshops = () => {
             transition={{ duration: 0.6 }}
             className="text-center mb-14"
           >
-            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white border border-launch-orange/20 shadow-sm mb-5">
-              <Mic className="h-4 w-4 text-launch-orange" />
-              <span className="text-sm font-bold uppercase tracking-wider text-launch-purple">
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white border border-lbl-orange/20 shadow-sm mb-5">
+              <Mic className="h-4 w-4 text-lbl-orange" />
+              <span className="text-sm font-bold uppercase tracking-wider text-lbl-ink">
                 On Stage
               </span>
             </div>
             <h2 className="text-4xl md:text-5xl font-bold mb-5">
-              <span className="bg-gradient-to-r from-launch-purple to-launch-orange bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-lbl-ink to-lbl-orange bg-clip-text text-transparent">
                 On Stage Topics
               </span>
             </h2>
@@ -310,7 +310,7 @@ const KeynotesWorkshops = () => {
                   transition={{ duration: 0.5, delay: index * 0.1 }}
                 >
                   <Card
-                    className={`relative overflow-hidden h-full bg-gradient-to-br ${topic.bgGradient} border-2 border-gray-100 hover:border-launch-orange/30 hover:shadow-xl transition-all duration-300 group`}
+                    className={`relative overflow-hidden h-full bg-gradient-to-br ${topic.bgGradient} border-2 border-gray-100 hover:border-lbl-orange/30 hover:shadow-xl transition-all duration-300 group`}
                   >
                     <div
                       className={`absolute top-0 left-0 right-0 h-1 bg-gradient-to-r ${topic.gradient}`}
@@ -321,7 +321,7 @@ const KeynotesWorkshops = () => {
                       >
                         <Icon className="h-6 w-6 text-white" />
                       </div>
-                      <h3 className="text-2xl font-bold text-launch-purple mb-3 leading-snug">
+                      <h3 className="text-2xl font-bold text-lbl-ink mb-3 leading-snug">
                         {topic.title}
                       </h3>
                       <p className="text-lg text-gray-700 leading-relaxed mb-4">
@@ -357,7 +357,7 @@ const KeynotesWorkshops = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="relative rounded-3xl bg-gradient-to-br from-launch-purple to-launch-orange p-10 md:p-14 shadow-2xl overflow-hidden"
+            className="relative rounded-3xl bg-gradient-to-br from-lbl-ink to-lbl-orange p-10 md:p-14 shadow-2xl overflow-hidden"
           >
             <div className="absolute -top-20 -right-20 w-64 h-64 bg-white/10 rounded-full blur-3xl" />
             <div className="absolute -bottom-20 -left-20 w-64 h-64 bg-white/10 rounded-full blur-3xl" />
@@ -373,7 +373,7 @@ const KeynotesWorkshops = () => {
               <Button
                 size="lg"
                 onClick={() => window.open("https://calendly.com/karen-launchbylunch/30min", "_blank")}
-                className="bg-white text-launch-purple hover:bg-white/90 px-8 py-6 text-lg rounded-full font-bold shadow-xl hover:scale-105 transition-all duration-300 group"
+                className="bg-white text-lbl-ink hover:bg-white/90 px-8 py-6 text-lg rounded-full font-bold shadow-xl hover:scale-105 transition-all duration-300 group"
               >
                 <span className="flex items-center gap-2">
                   Book a Conversation

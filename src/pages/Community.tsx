@@ -39,7 +39,7 @@ const Community = () => {
   };
 
   return (
-    <div className="min-h-screen flex flex-col bg-gradient-to-br from-launch-light via-white to-orange-50">
+    <div className="min-h-screen flex flex-col bg-gradient-to-br from-lbl-paper via-white to-orange-50">
       <CommunityHeroSection />
 
       {/* YouTube Video Section */}

@@ -103,14 +103,14 @@ const MemberVideoSection = () => {
             />
             <div className="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-colors flex items-center justify-center">
               <div className="bg-white/90 rounded-full p-3 group-hover:scale-110 transition-transform">
-                <Play className="w-6 h-6 text-launch-purple" />
+                <Play className="w-6 h-6 text-lbl-ink" />
               </div>
             </div>
             <div className="absolute bottom-2 right-2 bg-black/70 text-white text-xs px-2 py-1 rounded">
               {video.duration}
             </div>
           </div>
-          <h3 className="font-medium text-launch-purple group-hover:text-launch-purple/80 mb-1">
+          <h3 className="font-medium text-lbl-ink group-hover:text-lbl-ink/80 mb-1">
             {video.title}
           </h3>
           <p className="text-gray-600 text-sm">
@@ -122,13 +122,13 @@ const MemberVideoSection = () => {
   );
 
   return (
-    <Card className="shadow-lg border-launch-purple/10">
+    <Card className="shadow-lg border-lbl-ink/10">
       <CardHeader>
         <div className="flex items-center gap-3 mb-2">
-          <div className="bg-launch-light p-2 rounded-lg">
-            <Video className="w-6 h-6 text-launch-purple" />
+          <div className="bg-lbl-paper p-2 rounded-lg">
+            <Video className="w-6 h-6 text-lbl-ink" />
           </div>
-          <CardTitle className="text-launch-purple">Exclusive Video Content</CardTitle>
+          <CardTitle className="text-lbl-ink">Exclusive Video Content</CardTitle>
         </div>
         <CardDescription>
           Access our premium video library with tutorials and insights
@@ -136,12 +136,12 @@ const MemberVideoSection = () => {
       </CardHeader>
       <CardContent>
         <div className="mb-8">
-          <h2 className="text-2xl font-bold text-launch-purple mb-6">Learning Github</h2>
+          <h2 className="text-2xl font-bold text-lbl-ink mb-6">Learning Github</h2>
           <VideoGrid videos={githubVideos} />
         </div>
         
         <div>
-          <h2 className="text-2xl font-bold text-launch-purple mb-6">Learning Supabase</h2>
+          <h2 className="text-2xl font-bold text-lbl-ink mb-6">Learning Supabase</h2>
           <VideoGrid videos={supabaseVideos} />
         </div>
       </CardContent>

@@ -98,7 +98,7 @@ const CommunityForm = () => {
   const isSubmitting = form.formState.isSubmitting;
 
   return (
-    <Card className="mb-12 border-launch-orange/30 shadow-xl bg-gradient-to-br from-white to-launch-light">
+    <Card className="mb-12 border-lbl-orange/30 shadow-xl bg-gradient-to-br from-white to-lbl-paper">
       <FormHeader />
       
       <CardContent className="pt-8 px-8 pb-8">
@@ -112,7 +112,7 @@ const CommunityForm = () => {
                 type="submit"
                 size="lg"
                 disabled={isSubmitting}
-                className="w-full bg-gradient-to-r from-launch-purple to-launch-orange hover:from-launch-orange hover:to-launch-purple text-white py-4 text-lg font-medium shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-[1.02] disabled:opacity-50 disabled:cursor-not-allowed disabled:transform-none"
+                className="w-full bg-gradient-to-r from-lbl-ink to-lbl-orange hover:from-lbl-orange hover:to-lbl-ink text-white py-4 text-lg font-medium shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-[1.02] disabled:opacity-50 disabled:cursor-not-allowed disabled:transform-none"
               >
                 {isSubmitting ? "Submitting..." : "Submit Application"}
               </Button>

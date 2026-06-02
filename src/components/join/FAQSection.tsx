@@ -17,7 +17,7 @@ const FAQSection = () => {
             href="https://sponsorship.launchbylunch.co/" 
             target="_blank" 
             rel="noopener noreferrer"
-            className="text-launch-orange font-medium hover:underline"
+            className="text-lbl-orange font-medium hover:underline"
           >
             here
           </a>
@@ -60,19 +60,19 @@ const FAQSection = () => {
   ];
 
   return (
-    <section className="w-full py-20 px-4 sm:px-6 bg-gradient-to-br from-orange-50 to-launch-light">
+    <section className="w-full py-20 px-4 sm:px-6 bg-gradient-to-br from-orange-50 to-lbl-paper">
       <div className="max-w-6xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
           {/* Left side - Title and description */}
           <div className="lg:col-span-1">
-            <h2 className="text-4xl md:text-5xl font-bold text-launch-purple mb-6">
+            <h2 className="text-4xl md:text-5xl font-bold text-lbl-ink mb-6">
               Frequently Asked Questions
             </h2>
             <p className="text-gray-600 text-lg leading-relaxed">
               If you have any further questions, please email us at{" "}
               <a 
                 href="mailto:welcome@launchbylunch.co"
-                className="text-launch-orange font-medium hover:underline"
+                className="text-lbl-orange font-medium hover:underline"
               >
                 welcome@launchbylunch.co
               </a>
@@ -90,7 +90,7 @@ const FAQSection = () => {
                   className="bg-white rounded-lg shadow-sm border border-gray-100 overflow-hidden"
                 >
                   <AccordionTrigger className="px-6 py-4 text-left hover:no-underline hover:bg-gray-50 transition-colors">
-                    <span className="text-launch-purple font-semibold text-lg pr-4">
+                    <span className="text-lbl-ink font-semibold text-lg pr-4">
                       {faq.question}
                     </span>
                   </AccordionTrigger>

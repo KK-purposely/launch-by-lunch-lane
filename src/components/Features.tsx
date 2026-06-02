@@ -36,12 +36,12 @@ const Features = () => {
   return (
     <section className="w-full py-20 px-4 sm:px-6 relative overflow-hidden">
       {/* Enhanced background with multiple gradient layers */}
-      <div className="absolute inset-0 bg-gradient-to-r from-launch-purple/5 via-transparent to-launch-orange/5" />
-      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-launch-orange/3 via-transparent to-launch-purple/3" />
+      <div className="absolute inset-0 bg-gradient-to-r from-lbl-ink/5 via-transparent to-lbl-orange/5" />
+      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-lbl-orange/3 via-transparent to-lbl-ink/3" />
       
       {/* Decorative geometric shapes */}
-      <div className="absolute top-10 left-10 w-20 h-20 bg-gradient-to-br from-launch-purple/10 to-launch-orange/10 rounded-full blur-xl" />
-      <div className="absolute top-32 right-20 w-32 h-32 bg-gradient-to-br from-launch-orange/10 to-launch-purple/10 rounded-full blur-2xl" />
+      <div className="absolute top-10 left-10 w-20 h-20 bg-gradient-to-br from-lbl-ink/10 to-lbl-orange/10 rounded-full blur-xl" />
+      <div className="absolute top-32 right-20 w-32 h-32 bg-gradient-to-br from-lbl-orange/10 to-lbl-ink/10 rounded-full blur-2xl" />
       <div className="absolute bottom-20 left-1/4 w-16 h-16 bg-gradient-to-br from-pink-300/20 to-orange-300/20 rounded-full blur-lg" />
       
       <div className="relative max-w-7xl mx-auto">
@@ -49,24 +49,24 @@ const Features = () => {
         <div>
           {/* Enhanced header with decorative elements */}
           <div className="text-center mb-20 relative">
-            <div className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-4 w-24 h-1 bg-gradient-to-r from-launch-purple to-launch-orange rounded-full opacity-60" />
+            <div className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-4 w-24 h-1 bg-gradient-to-r from-lbl-ink to-lbl-orange rounded-full opacity-60" />
             
-            <div className="inline-flex items-center gap-3 text-launch-orange/70 mb-6">
-              <div className="w-8 h-px bg-gradient-to-r from-transparent via-launch-orange to-transparent" />
+            <div className="inline-flex items-center gap-3 text-lbl-orange/70 mb-6">
+              <div className="w-8 h-px bg-gradient-to-r from-transparent via-lbl-orange to-transparent" />
               <span className="text-sm font-semibold uppercase tracking-widest">What Sets Us Apart</span>
-              <div className="w-8 h-px bg-gradient-to-r from-transparent via-launch-orange to-transparent" />
+              <div className="w-8 h-px bg-gradient-to-r from-transparent via-lbl-orange to-transparent" />
             </div>
             
             <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-8 relative">
-              <span className="bg-gradient-to-r from-launch-purple via-pink-500 to-launch-orange bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-lbl-ink via-lbl-magenta to-lbl-orange bg-clip-text text-transparent">
                 What makes us different.
               </span>
-              <div className="absolute -bottom-4 left-1/2 transform -translate-x-1/2 w-32 h-1 bg-gradient-to-r from-launch-purple to-launch-orange rounded-full opacity-30" />
+              <div className="absolute -bottom-4 left-1/2 transform -translate-x-1/2 w-32 h-1 bg-gradient-to-r from-lbl-ink to-lbl-orange rounded-full opacity-30" />
             </h2>
             
             <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
               Welcome to the new eco-system of founders, fractionals, and investors 
-              <span className="text-launch-orange font-semibold"> funding the next generation of AI-first startups.</span>
+              <span className="text-lbl-orange font-semibold"> funding the next generation of AI-first startups.</span>
             </p>
           </div>
           
@@ -98,7 +98,7 @@ const Features = () => {
                 </div>
                 
                 {/* Enhanced typography */}
-                <h3 className="text-2xl lg:text-3xl font-bold text-launch-purple mb-6 group-hover:bg-gradient-to-r group-hover:from-launch-purple group-hover:to-launch-orange group-hover:bg-clip-text group-hover:text-transparent transition-all duration-500">
+                <h3 className="text-2xl lg:text-3xl font-bold text-lbl-ink mb-6 group-hover:bg-gradient-to-r group-hover:from-lbl-ink group-hover:to-lbl-orange group-hover:bg-clip-text group-hover:text-transparent transition-all duration-500">
                   {item.title}
                 </h3>
                 
@@ -115,10 +115,10 @@ const Features = () => {
           {/* Enhanced CTA section */}
           <div className="text-center relative">
             <div className="inline-block relative">
-              <div className="absolute inset-0 bg-gradient-to-r from-launch-purple to-launch-orange rounded-full blur-lg opacity-30 animate-pulse" />
+              <div className="absolute inset-0 bg-gradient-to-r from-lbl-ink to-lbl-orange rounded-full blur-lg opacity-30 animate-pulse" />
               <Button 
                 size="lg" 
-                className="relative bg-gradient-to-r from-launch-purple to-launch-orange hover:from-launch-orange hover:to-launch-purple text-white px-12 py-6 text-xl rounded-full font-semibold transition-all duration-300 shadow-xl hover:shadow-2xl hover:scale-105 group"
+                className="relative bg-gradient-to-r from-lbl-ink to-lbl-orange hover:from-lbl-orange hover:to-lbl-ink text-white px-12 py-6 text-xl rounded-full font-semibold transition-all duration-300 shadow-xl hover:shadow-2xl hover:scale-105 group"
                 onClick={scrollToJoinWaitlist}
               >
                 <span className="flex items-center gap-3">

@@ -25,8 +25,8 @@ interface PersonalInfoSectionProps {
 const PersonalInfoSection = ({ control }: PersonalInfoSectionProps) => {
   return (
     <div className="space-y-6">
-      <div className="border-l-4 border-launch-orange pl-4">
-        <h3 className="text-lg font-semibold text-launch-purple mb-1">Personal Information</h3>
+      <div className="border-l-4 border-lbl-orange pl-4">
+        <h3 className="text-lg font-semibold text-lbl-ink mb-1">Personal Information</h3>
         <p className="text-sm text-gray-600">Basic details to get to know you.</p>
       </div>
       
@@ -37,11 +37,11 @@ const PersonalInfoSection = ({ control }: PersonalInfoSectionProps) => {
           rules={{ required: "First name is required" }}
           render={({ field }) => (
             <FormItem>
-              <FormLabel className="text-launch-purple font-medium">First Name *</FormLabel>
+              <FormLabel className="text-lbl-ink font-medium">First Name *</FormLabel>
               <FormControl>
                 <Input 
                   placeholder="Enter your first name" 
-                  className="border-gray-300 focus:border-launch-orange focus:ring-launch-orange/20" 
+                  className="border-gray-300 focus:border-lbl-orange focus:ring-lbl-orange/20" 
                   {...field} 
                 />
               </FormControl>
@@ -56,11 +56,11 @@ const PersonalInfoSection = ({ control }: PersonalInfoSectionProps) => {
           rules={{ required: "Last name is required" }}
           render={({ field }) => (
             <FormItem>
-              <FormLabel className="text-launch-purple font-medium">Last Name *</FormLabel>
+              <FormLabel className="text-lbl-ink font-medium">Last Name *</FormLabel>
               <FormControl>
                 <Input 
                   placeholder="Enter your last name" 
-                  className="border-gray-300 focus:border-launch-orange focus:ring-launch-orange/20"
+                  className="border-gray-300 focus:border-lbl-orange focus:ring-lbl-orange/20"
                   {...field} 
                 />
               </FormControl>
@@ -82,12 +82,12 @@ const PersonalInfoSection = ({ control }: PersonalInfoSectionProps) => {
         }}
         render={({ field }) => (
           <FormItem>
-            <FormLabel className="text-launch-purple font-medium">Email Address *</FormLabel>
+            <FormLabel className="text-lbl-ink font-medium">Email Address *</FormLabel>
             <FormControl>
               <Input 
                 type="email" 
                 placeholder="Enter your email" 
-                className="border-gray-300 focus:border-launch-orange focus:ring-launch-orange/20"
+                className="border-gray-300 focus:border-lbl-orange focus:ring-lbl-orange/20"
                 {...field} 
               />
             </FormControl>
@@ -102,14 +102,14 @@ const PersonalInfoSection = ({ control }: PersonalInfoSectionProps) => {
         rules={{ required: "LinkedIn profile is required" }}
         render={({ field }) => (
           <FormItem>
-            <FormLabel className="flex items-center gap-2 text-launch-purple font-medium">
+            <FormLabel className="flex items-center gap-2 text-lbl-ink font-medium">
               <Linkedin className="h-4 w-4 text-blue-600" />
               LinkedIn Profile *
             </FormLabel>
             <FormControl>
               <Input 
                 placeholder="https://linkedin.com/in/yourprofile" 
-                className="border-gray-300 focus:border-launch-orange focus:ring-launch-orange/20"
+                className="border-gray-300 focus:border-lbl-orange focus:ring-lbl-orange/20"
                 {...field} 
               />
             </FormControl>

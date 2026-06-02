@@ -101,19 +101,19 @@ const EnterpriseServices = () => {
       </Helmet>
 
       {/* Hero */}
-      <section className="relative overflow-hidden bg-gradient-to-br from-launch-purple via-launch-purple to-launch-purple/90 text-white">
+      <section className="relative overflow-hidden bg-gradient-to-br from-lbl-ink via-lbl-ink to-lbl-ink/90 text-white">
         <div className="absolute inset-0 opacity-10">
-          <div className="absolute top-20 left-10 w-72 h-72 bg-launch-orange rounded-full blur-3xl" />
-          <div className="absolute bottom-10 right-20 w-96 h-96 bg-launch-orange rounded-full blur-3xl" />
+          <div className="absolute top-20 left-10 w-72 h-72 bg-lbl-orange rounded-full blur-3xl" />
+          <div className="absolute bottom-10 right-20 w-96 h-96 bg-lbl-orange rounded-full blur-3xl" />
         </div>
         <div className="relative max-w-5xl mx-auto px-4 sm:px-6 py-20 md:py-28 text-center">
           <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm rounded-full px-4 py-2 mb-8 text-lg font-medium">
-            <Zap className="h-4 w-4 text-launch-orange" />
+            <Zap className="h-4 w-4 text-lbl-orange" />
             AI That Fits Your Business
           </div>
           <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
             Stop Overthinking AI.<br />
-            <span className="text-launch-orange">Start Using It.</span>
+            <span className="text-lbl-orange">Start Using It.</span>
           </h1>
           <p className="text-xl md:text-2xl text-white/80 max-w-3xl mx-auto mb-4 leading-relaxed">
             We help small and medium-sized businesses adopt AI in a way that
@@ -127,7 +127,7 @@ const EnterpriseServices = () => {
           </p>
           <Button
             size="lg"
-            className="bg-launch-orange hover:bg-launch-orange/90 text-white px-10 py-4 text-lg rounded-full font-bold transition-all duration-300 shadow-2xl hover:scale-105 group"
+            className="bg-lbl-orange hover:bg-lbl-orange/90 text-white px-10 py-4 text-lg rounded-full font-bold transition-all duration-300 shadow-2xl hover:scale-105 group"
             onClick={() =>
               window.open(
                 "https://calendly.com/karen-launchbylunch/30min",
@@ -144,9 +144,9 @@ const EnterpriseServices = () => {
       </section>
 
       {/* Pain Points */}
-      <section className="bg-launch-light py-16 md:py-20">
+      <section className="bg-lbl-paper py-16 md:py-20">
         <div className="max-w-5xl mx-auto px-4 sm:px-6">
-          <h2 className="text-3xl md:text-4xl font-bold text-launch-purple mb-4 text-center">
+          <h2 className="text-3xl md:text-4xl font-bold text-lbl-ink mb-4 text-center">
             Sound Familiar?
           </h2>
           <p className="text-lg text-gray-600 text-center mb-10 max-w-2xl mx-auto">
@@ -158,7 +158,7 @@ const EnterpriseServices = () => {
                 key={i}
                 className="flex items-start gap-3 bg-white rounded-xl p-5"
               >
-                <CheckCircle2 className="h-6 w-6 text-launch-orange mt-0.5 flex-shrink-0" />
+                <CheckCircle2 className="h-6 w-6 text-lbl-orange mt-0.5 flex-shrink-0" />
                 <p className="text-gray-800 text-lg font-medium">{item}</p>
               </div>
             ))}
@@ -170,11 +170,11 @@ const EnterpriseServices = () => {
       <section className="py-16 md:py-20">
         <div className="max-w-6xl mx-auto px-4 sm:px-6">
           <div className="text-center mb-14">
-            <div className="inline-flex items-center gap-2 bg-launch-light rounded-full px-4 py-2 mb-6 text-launch-purple font-semibold">
-              <Brain className="h-5 w-5 text-launch-orange" />
+            <div className="inline-flex items-center gap-2 bg-lbl-paper rounded-full px-4 py-2 mb-6 text-lbl-ink font-semibold">
+              <Brain className="h-5 w-5 text-lbl-orange" />
               Service One
             </div>
-            <h2 className="text-3xl md:text-4xl font-bold text-launch-purple mb-4">
+            <h2 className="text-3xl md:text-4xl font-bold text-lbl-ink mb-4">
               Build Your Company Brain
             </h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
@@ -189,12 +189,12 @@ const EnterpriseServices = () => {
               return (
                 <div
                   key={i}
-                  className="bg-white rounded-2xl p-7 shadow-sm border border-gray-100 hover:shadow-lg hover:border-launch-purple/20 transition-all duration-300 group"
+                  className="bg-white rounded-2xl p-7 shadow-sm border border-gray-100 hover:shadow-lg hover:border-lbl-ink/20 transition-all duration-300 group"
                 >
-                  <div className="w-14 h-14 bg-gradient-to-br from-launch-purple to-launch-orange rounded-2xl flex items-center justify-center mb-5 group-hover:scale-110 transition-transform duration-300">
+                  <div className="w-14 h-14 bg-gradient-to-br from-lbl-ink to-lbl-orange rounded-2xl flex items-center justify-center mb-5 group-hover:scale-110 transition-transform duration-300">
                     <ItemIcon className="h-7 w-7 text-white" />
                   </div>
-                  <h3 className="text-lg font-bold text-launch-purple mb-2">
+                  <h3 className="text-lg font-bold text-lbl-ink mb-2">
                     {item.title}
                   </h3>
                   <p className="text-gray-600 text-lg">{item.desc}</p>
@@ -206,7 +206,7 @@ const EnterpriseServices = () => {
       </section>
 
       {/* Automations Intro */}
-      <section className="bg-gradient-to-r from-launch-purple to-launch-orange py-14">
+      <section className="bg-gradient-to-r from-lbl-ink to-lbl-orange py-14">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 text-center text-white">
           <div className="inline-flex items-center gap-2 bg-white/20 backdrop-blur-sm rounded-full px-4 py-2 mb-6 text-lg font-semibold">
             <Zap className="h-5 w-5" />
@@ -227,9 +227,9 @@ const EnterpriseServices = () => {
       <IntegrationsSection />
 
       {/* Automation Examples */}
-      <section className="bg-launch-light py-16 md:py-20">
+      <section className="bg-lbl-paper py-16 md:py-20">
         <div className="max-w-6xl mx-auto px-4 sm:px-6">
-          <h2 className="text-3xl md:text-4xl font-bold text-launch-purple mb-4 text-center">
+          <h2 className="text-3xl md:text-4xl font-bold text-lbl-ink mb-4 text-center">
             What This Looks Like in Practice
           </h2>
           <p className="text-lg text-gray-600 text-center mb-14 max-w-2xl mx-auto">
@@ -242,17 +242,17 @@ const EnterpriseServices = () => {
               return (
                 <Card
                   key={i}
-                  className="border border-gray-200 hover:border-launch-orange hover:shadow-[0_0_20px_rgba(242,123,53,0.15)] transition-all duration-300 hover:-translate-y-1"
+                  className="border border-gray-200 hover:border-lbl-orange hover:shadow-[0_0_20px_rgba(242,123,53,0.15)] transition-all duration-300 hover:-translate-y-1"
                 >
                   <CardContent className="p-7">
-                    <div className="w-12 h-12 bg-gradient-to-br from-launch-purple to-launch-orange rounded-xl flex items-center justify-center mb-4">
+                    <div className="w-12 h-12 bg-gradient-to-br from-lbl-ink to-lbl-orange rounded-xl flex items-center justify-center mb-4">
                       <ItemIcon className="h-6 w-6 text-white" />
                     </div>
-                    <h3 className="text-lg font-bold text-launch-purple mb-2">
+                    <h3 className="text-lg font-bold text-lbl-ink mb-2">
                       {item.title}
                     </h3>
                     <p className="text-gray-600 mb-4">{item.desc}</p>
-                    <span className="inline-block text-sm font-medium text-launch-orange bg-launch-orange/10 rounded-full px-3 py-1">
+                    <span className="inline-block text-sm font-medium text-lbl-orange bg-lbl-orange/10 rounded-full px-3 py-1">
                       {item.tools}
                     </span>
                   </CardContent>
@@ -265,9 +265,9 @@ const EnterpriseServices = () => {
 
       {/* CTA */}
       <section className="max-w-4xl mx-auto px-4 sm:px-6 py-16 md:py-20 text-center">
-        <h2 className="text-3xl md:text-4xl font-bold text-launch-purple mb-4">
+        <h2 className="text-3xl md:text-4xl font-bold text-lbl-ink mb-4">
           Ready to Make AI Work<br />
-          <span className="text-launch-orange">for Your Team?</span>
+          <span className="text-lbl-orange">for Your Team?</span>
         </h2>
         <p className="text-gray-500 text-lg mb-8 max-w-2xl mx-auto">
           No pitch decks. No upsells. Just a conversation about what your team
@@ -275,7 +275,7 @@ const EnterpriseServices = () => {
         </p>
         <Button
           size="lg"
-          className="bg-launch-orange hover:bg-launch-orange/90 text-white px-10 py-4 text-lg rounded-full font-bold transition-all duration-300 shadow-xl hover:scale-105 group"
+          className="bg-lbl-orange hover:bg-lbl-orange/90 text-white px-10 py-4 text-lg rounded-full font-bold transition-all duration-300 shadow-xl hover:scale-105 group"
           onClick={() =>
             window.open(
               "https://calendly.com/karen-launchbylunch/30min",

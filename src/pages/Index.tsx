@@ -167,14 +167,14 @@ const Index = () => {
 
         {/* ═══ HERO ═══ */}
         <section className="relative overflow-hidden">
-          <div className="absolute inset-0 bg-gradient-to-br from-launch-light via-white to-orange-50" />
+          <div className="absolute inset-0 bg-gradient-to-br from-lbl-paper via-white to-orange-50" />
           <motion.div
-            className="absolute -top-32 -left-32 w-96 h-96 rounded-full bg-launch-purple/5 blur-3xl"
+            className="absolute -top-32 -left-32 w-96 h-96 rounded-full bg-lbl-ink/5 blur-3xl"
             animate={{ x: [0, 30, 0], y: [0, 20, 0] }}
             transition={{ duration: 8, repeat: Infinity, ease: "easeInOut" }}
           />
           <motion.div
-            className="absolute -bottom-32 -right-32 w-96 h-96 rounded-full bg-launch-orange/5 blur-3xl"
+            className="absolute -bottom-32 -right-32 w-96 h-96 rounded-full bg-lbl-orange/5 blur-3xl"
             animate={{ x: [0, -30, 0], y: [0, -20, 0] }}
             transition={{ duration: 10, repeat: Infinity, ease: "easeInOut" }}
           />
@@ -184,7 +184,7 @@ const Index = () => {
               <div className="flex flex-col gap-6 w-full">
                 <div className="min-h-[156px] md:min-h-[192px] flex flex-col justify-center gap-4">
                   <motion.span
-                    className="inline-flex items-center self-start px-4 py-1.5 rounded-full bg-launch-orange/10 border border-launch-orange/30 text-launch-orange text-sm md:text-base font-semibold tracking-wider uppercase"
+                    className="inline-flex items-center self-start px-4 py-1.5 rounded-full bg-lbl-orange/10 border border-lbl-orange/30 text-lbl-orange text-sm md:text-base font-semibold tracking-wider uppercase"
                     initial={{ opacity: 0, y: 10 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.5, ease: "easeOut" }}
@@ -197,13 +197,13 @@ const Index = () => {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.7, ease: "easeOut" }}
                   >
-                    <span className="bg-gradient-to-r from-launch-purple via-pink-500 to-launch-orange bg-clip-text text-transparent leading-[1.1]">
+                    <span className="bg-gradient-to-r from-lbl-ink via-lbl-magenta to-lbl-orange bg-clip-text text-transparent leading-[1.1]">
                       Same Team.<br /><span className="whitespace-nowrap">New Superpowers.</span>
                     </span>
                   </motion.h1>
                 </div>
                 <motion.div
-                  className="h-[3px] w-24 rounded-full bg-gradient-to-r from-launch-purple via-pink-500 to-launch-orange"
+                  className="h-[3px] w-24 rounded-full bg-gradient-to-r from-lbl-ink via-lbl-magenta to-lbl-orange"
                   initial={{ opacity: 0, scaleX: 0 }}
                   animate={{ opacity: 1, scaleX: 1 }}
                   transition={{ duration: 0.7, delay: 0.15, ease: "easeOut" }}
@@ -211,7 +211,7 @@ const Index = () => {
                 />
                 <div className="min-h-[72px] flex items-center">
                   <motion.p
-                    className="text-2xl md:text-3xl lg:text-4xl text-launch-purple max-w-xl leading-snug font-semibold"
+                    className="text-2xl md:text-3xl lg:text-4xl text-lbl-ink max-w-xl leading-snug font-semibold"
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.7, delay: 0.2, ease: "easeOut" }}
@@ -236,7 +236,7 @@ const Index = () => {
 
                 <Button
                   size="lg"
-                  className="group w-full max-w-sm bg-gradient-to-r from-launch-purple to-launch-orange hover:from-launch-orange hover:to-launch-purple text-white px-8 py-6 text-lg rounded-full font-medium transition-all duration-300 shadow-lg hover:shadow-xl"
+                  className="group w-full max-w-sm bg-gradient-to-r from-lbl-ink to-lbl-orange hover:from-lbl-orange hover:to-lbl-ink text-white px-8 py-6 text-lg rounded-full font-medium transition-all duration-300 shadow-lg hover:shadow-xl"
                   onClick={() => window.open("https://calendly.com/karen-launchbylunch/30min", "_blank")}
                 >
                   <span className="flex items-center gap-2">
@@ -248,7 +248,7 @@ const Index = () => {
                 <Button
                   variant="outline"
                   size="lg"
-                  className="w-full max-w-sm px-8 py-6 text-lg border-launch-orange text-launch-orange hover:bg-launch-orange hover:text-white rounded-full font-medium transition-all duration-300"
+                  className="w-full max-w-sm px-8 py-6 text-lg border-lbl-orange text-lbl-orange hover:bg-lbl-orange hover:text-white rounded-full font-medium transition-all duration-300"
                   onClick={() => {
                     document.getElementById("how-it-works")?.scrollIntoView({ behavior: "smooth" });
                   }}
@@ -276,11 +276,11 @@ const Index = () => {
         <section className="py-16 md:py-24 bg-white">
           <div className="max-w-6xl mx-auto px-4 sm:px-6">
             <Reveal>
-              <p className="text-sm font-bold uppercase tracking-[0.2em] text-launch-orange text-center mb-4">
+              <p className="text-sm font-bold uppercase tracking-[0.2em] text-lbl-orange text-center mb-4">
                 The real cost of the status quo
               </p>
               <h2 className="text-3xl md:text-5xl font-bold mb-4 text-center leading-tight">
-                <span className="bg-gradient-to-r from-launch-purple via-pink-500 to-launch-orange bg-clip-text text-transparent">How your business is probably working right now.</span>
+                <span className="bg-gradient-to-r from-lbl-ink via-lbl-magenta to-lbl-orange bg-clip-text text-transparent">How your business is probably working right now.</span>
               </h2>
               <p className="text-xl md:text-2xl text-muted-foreground text-center max-w-3xl mx-auto mb-16 leading-relaxed">
                 Most teams are operating across a mess of disconnected tools. Information lives in emails, docs, Slack, and people's heads. Work gets duplicated, dropped, or delayed. Nobody has a clear view of what's actually happening.
@@ -305,12 +305,12 @@ const Index = () => {
 
               {/* AFTER LBL card */}
               <Reveal delay={0.15}>
-                <div className="relative bg-launch-purple rounded-3xl p-8 md:p-10 h-full">
+                <div className="relative bg-lbl-ink rounded-3xl p-8 md:p-10 h-full">
                   <p className="text-xs font-bold uppercase tracking-[0.2em] text-white/60 mb-8">AFTER AI</p>
                   <div className="space-y-8">
                     {flipStats.map((item, i) => (
                       <div key={i}>
-                        <p className="text-4xl md:text-5xl font-bold text-launch-orange mb-2">{item.stat}</p>
+                        <p className="text-4xl md:text-5xl font-bold text-lbl-orange mb-2">{item.stat}</p>
                         <p className="text-white/80 text-lg">{item.text}</p>
                       </div>
                     ))}
@@ -331,14 +331,14 @@ const Index = () => {
               {/* Left copy */}
               <Reveal>
                 <div>
-                  <span className="inline-block bg-launch-orange text-white text-sm font-bold px-5 py-2 rounded-full mb-6">
+                  <span className="inline-block bg-lbl-orange text-white text-sm font-bold px-5 py-2 rounded-full mb-6">
                     The LBL difference
                   </span>
                   <h2 className="text-3xl md:text-5xl font-bold leading-tight mb-5">
-                    <span className="bg-gradient-to-r from-launch-purple via-pink-500 to-launch-orange bg-clip-text text-transparent">AI isn't coming for<br />your team.</span>
+                    <span className="bg-gradient-to-r from-lbl-ink via-lbl-magenta to-lbl-orange bg-clip-text text-transparent">AI isn't coming for<br />your team.</span>
                   </h2>
                   <h2 className="text-3xl md:text-5xl font-bold leading-tight mb-6">
-                    <span className="bg-gradient-to-r from-launch-orange via-pink-500 to-launch-purple bg-clip-text text-transparent">It's coming for their<br />to-do list.</span>
+                    <span className="bg-gradient-to-r from-lbl-orange via-lbl-magenta to-lbl-ink bg-clip-text text-transparent">It's coming for their<br />to-do list.</span>
                   </h2>
                   <p className="text-xl md:text-2xl text-muted-foreground leading-relaxed">
                     The repetitive work. The stuff that eats hours without making you any money. That's what we help your team hand off, so they can get back to the work only they can do.
@@ -361,11 +361,11 @@ const Index = () => {
                         <div className="flex items-center gap-3">
                           <div className={`w-8 h-8 rounded-full flex items-center justify-center ${
                             task.ai
-                              ? "bg-launch-orange/10"
+                              ? "bg-lbl-orange/10"
                               : "bg-green-100"
                           }`}>
                             {task.ai ? (
-                              <Zap className="h-4 w-4 text-launch-orange" />
+                              <Zap className="h-4 w-4 text-lbl-orange" />
                             ) : (
                               <Check className="h-4 w-4 text-green-600" />
                             )}
@@ -378,8 +378,8 @@ const Index = () => {
                         </div>
                         <span className={`text-xs font-bold px-3 py-1 rounded-full ${
                           task.ai
-                            ? "bg-launch-orange/10 text-launch-orange"
-                            : "bg-launch-purple/10 text-launch-purple"
+                            ? "bg-lbl-orange/10 text-lbl-orange"
+                            : "bg-lbl-ink/10 text-lbl-ink"
                         }`}>
                           {task.ai ? "AI handles it" : "Your team"}
                         </span>
@@ -393,17 +393,17 @@ const Index = () => {
         </section>
 
         {/* ═══ CULTURE CHANGE ═══ */}
-        <section className="py-16 md:py-24 bg-launch-purple text-white">
+        <section className="py-16 md:py-24 bg-lbl-ink text-white">
           <div className="max-w-6xl mx-auto px-4 sm:px-6">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16 items-start">
               {/* Left copy */}
               <Reveal>
                 <div>
-                  <p className="text-sm font-bold uppercase tracking-[0.2em] text-launch-orange mb-4">
+                  <p className="text-sm font-bold uppercase tracking-[0.2em] text-lbl-orange mb-4">
                     What nobody else is saying
                   </p>
                   <h2 className="text-3xl md:text-5xl font-bold leading-tight mb-6">
-                    <span className="bg-gradient-to-r from-white via-launch-orange to-white bg-clip-text text-transparent">This is culture change. We treat it that way.</span>
+                    <span className="bg-gradient-to-r from-white via-lbl-orange to-white bg-clip-text text-transparent">This is culture change. We treat it that way.</span>
                   </h2>
                   <p className="text-xl md:text-2xl text-white/70 leading-relaxed">
                     A new tool won't do it. A one-day training won't either. Real adoption is a shift in how your team thinks about their work. The habits they build. The confidence they develop. The shared language that makes it feel like theirs, not something handed down from the top. We help you build that together.
@@ -419,7 +419,7 @@ const Index = () => {
                     return (
                       <div key={i} className="flex items-start gap-4">
                         <div className="w-12 h-12 rounded-xl bg-white/10 flex items-center justify-center flex-shrink-0">
-                          <Icon className="h-6 w-6 text-launch-orange" />
+                          <Icon className="h-6 w-6 text-lbl-orange" />
                         </div>
                         <div>
                           <h3 className="text-lg font-bold text-white mb-1">{point.title}</h3>
@@ -435,15 +435,15 @@ const Index = () => {
         </section>
 
         {/* ═══ HOW IT WORKS ═══ */}
-        <section id="how-it-works" className="py-16 md:py-24 bg-gradient-to-b from-white via-launch-light/40 to-white relative overflow-hidden">
+        <section id="how-it-works" className="py-16 md:py-24 bg-gradient-to-b from-white via-lbl-paper/40 to-white relative overflow-hidden">
           {/* Decorative background blobs */}
           <motion.div
-            className="absolute top-20 -left-20 w-72 h-72 rounded-full bg-launch-purple/10 blur-3xl"
+            className="absolute top-20 -left-20 w-72 h-72 rounded-full bg-lbl-ink/10 blur-3xl"
             animate={{ scale: [1, 1.15, 1], opacity: [0.5, 0.8, 0.5] }}
             transition={{ duration: 8, repeat: Infinity, ease: "easeInOut" }}
           />
           <motion.div
-            className="absolute bottom-20 -right-20 w-72 h-72 rounded-full bg-launch-orange/10 blur-3xl"
+            className="absolute bottom-20 -right-20 w-72 h-72 rounded-full bg-lbl-orange/10 blur-3xl"
             animate={{ scale: [1, 1.2, 1], opacity: [0.5, 0.8, 0.5] }}
             transition={{ duration: 10, repeat: Infinity, ease: "easeInOut", delay: 1 }}
           />
@@ -451,7 +451,7 @@ const Index = () => {
           <div className="relative max-w-5xl mx-auto px-4 sm:px-6">
             <Reveal>
               <h2 className="text-4xl md:text-5xl font-bold mb-16 text-center">
-                <span className="bg-gradient-to-r from-launch-purple via-pink-500 to-launch-orange bg-clip-text text-transparent">Here's how it works.</span>
+                <span className="bg-gradient-to-r from-lbl-ink via-lbl-magenta to-lbl-orange bg-clip-text text-transparent">Here's how it works.</span>
               </h2>
             </Reveal>
 
@@ -504,7 +504,7 @@ const Index = () => {
               </svg>
 
               {/* Mobile vertical road */}
-              <div className="md:hidden absolute left-8 top-2 bottom-2 w-3 bg-gradient-to-b from-launch-purple via-pink-400 to-launch-orange rounded-full shadow-lg" />
+              <div className="md:hidden absolute left-8 top-2 bottom-2 w-3 bg-gradient-to-b from-lbl-ink via-pink-400 to-lbl-orange rounded-full shadow-lg" />
               <div
                 className="md:hidden absolute left-[34px] top-2 bottom-2 w-px"
                 style={{
@@ -523,7 +523,7 @@ const Index = () => {
                         <div className="relative z-10 flex-shrink-0 md:absolute md:left-1/2 md:-translate-x-1/2">
                           {/* Outer pulse ring */}
                           <motion.div
-                            className="absolute inset-0 rounded-full bg-gradient-to-br from-launch-purple to-launch-orange blur-lg opacity-70"
+                            className="absolute inset-0 rounded-full bg-gradient-to-br from-lbl-ink to-lbl-orange blur-lg opacity-70"
                             animate={{ scale: [1, 1.35, 1], opacity: [0.5, 0.85, 0.5] }}
                             transition={{ duration: 3, repeat: Infinity, ease: "easeInOut", delay: i * 0.4 }}
                           />
@@ -531,7 +531,7 @@ const Index = () => {
                           <motion.div
                             whileHover={{ scale: 1.1, rotate: -5 }}
                             transition={{ type: "spring", stiffness: 300 }}
-                            className="relative w-16 h-16 md:w-20 md:h-20 rounded-full bg-gradient-to-br from-launch-purple via-pink-500 to-launch-orange text-white font-bold flex items-center justify-center shadow-2xl text-base md:text-xl ring-[6px] ring-white"
+                            className="relative w-16 h-16 md:w-20 md:h-20 rounded-full bg-gradient-to-br from-lbl-ink via-lbl-magenta to-lbl-orange text-white font-bold flex items-center justify-center shadow-2xl text-base md:text-xl ring-[6px] ring-white"
                           >
                             {step.num}
                             {/* Inner highlight */}
@@ -543,7 +543,7 @@ const Index = () => {
                         <div className={`flex-1 md:w-[calc(50%-4rem)] md:flex-none ${isLeft ? "md:mr-auto md:pr-16" : "md:ml-auto md:pl-16"}`}>
                           <motion.div
                             whileHover={{ y: -6, rotate: isLeft ? -0.5 : 0.5 }}
-                            className="relative bg-white rounded-2xl p-7 md:p-8 border border-border shadow-md hover:shadow-2xl hover:border-launch-purple/40 transition-all duration-300 group"
+                            className="relative bg-white rounded-2xl p-7 md:p-8 border border-border shadow-md hover:shadow-2xl hover:border-lbl-ink/40 transition-all duration-300 group"
                           >
                             {/* Connector arrow pointing toward the road */}
                             <div
@@ -551,7 +551,7 @@ const Index = () => {
                                 isLeft ? "-right-1.5 border-t-0 border-l-0 border-r border-b" : "-left-1.5 border-b-0 border-r-0 border-l border-t"
                               }`}
                             />
-                            <h3 className="text-2xl md:text-3xl font-bold text-launch-purple mb-3 group-hover:translate-x-1 transition-transform duration-300">{step.title}</h3>
+                            <h3 className="text-2xl md:text-3xl font-bold text-lbl-ink mb-3 group-hover:translate-x-1 transition-transform duration-300">{step.title}</h3>
                             <p className="text-muted-foreground text-xl leading-relaxed">{step.desc}</p>
                           </motion.div>
                         </div>
@@ -567,7 +567,7 @@ const Index = () => {
                   <motion.div
                     animate={{ y: [0, -6, 0] }}
                     transition={{ duration: 2.5, repeat: Infinity, ease: "easeInOut" }}
-                    className="inline-flex items-center gap-2 bg-gradient-to-r from-launch-purple to-launch-orange text-white px-6 py-3 rounded-full font-bold text-lg shadow-xl"
+                    className="inline-flex items-center gap-2 bg-gradient-to-r from-lbl-ink to-lbl-orange text-white px-6 py-3 rounded-full font-bold text-lg shadow-xl"
                   >
                     🚩 You've arrived
                   </motion.div>
@@ -578,15 +578,15 @@ const Index = () => {
         </section>
 
         {/* ═══ TRANSFORMATION ═══ */}
-        <section className="py-16 md:py-24 bg-gradient-to-br from-launch-purple to-launch-purple/90 text-white relative overflow-hidden">
+        <section className="py-16 md:py-24 bg-gradient-to-br from-lbl-ink to-lbl-ink/90 text-white relative overflow-hidden">
           <motion.div
-            className="absolute -top-20 -right-20 w-72 h-72 rounded-full bg-launch-orange/10 blur-3xl"
+            className="absolute -top-20 -right-20 w-72 h-72 rounded-full bg-lbl-orange/10 blur-3xl"
             animate={{ scale: [1, 1.2, 1] }}
             transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
           />
           <Reveal className="relative max-w-3xl mx-auto px-4 sm:px-6 text-center">
             <h2 className="text-3xl md:text-4xl font-bold mb-6">
-              <span className="bg-gradient-to-r from-white via-launch-orange to-white bg-clip-text text-transparent">Nobody got replaced. Everybody got better.</span>
+              <span className="bg-gradient-to-r from-white via-lbl-orange to-white bg-clip-text text-transparent">Nobody got replaced. Everybody got better.</span>
             </h2>
             <p className="text-lg md:text-xl text-white/80 leading-relaxed">
               Your people spend less time on the work that was eating their week. More time on the strategy, the relationships, the things that actually grow your business. That's what AI is supposed to do. That's what we're here to build.
@@ -595,11 +595,11 @@ const Index = () => {
         </section>
 
         {/* ═══ FAQ ═══ */}
-        <section className="py-16 md:py-24 bg-gradient-to-br from-orange-50 via-white to-launch-light">
+        <section className="py-16 md:py-24 bg-gradient-to-br from-orange-50 via-white to-lbl-paper">
           <div className="max-w-4xl mx-auto px-4 sm:px-6">
             <Reveal className="text-center mb-12">
               <h2 className="text-3xl md:text-4xl font-bold mb-4">
-                <span className="bg-gradient-to-r from-launch-purple via-pink-500 to-launch-orange bg-clip-text text-transparent">
+                <span className="bg-gradient-to-r from-lbl-ink via-lbl-magenta to-lbl-orange bg-clip-text text-transparent">
                   AI Automation for Small Business, Answered
                 </span>
               </h2>
@@ -639,7 +639,7 @@ const Index = () => {
                     key={i}
                     className="bg-white rounded-lg shadow-sm border border-gray-100 p-6 md:p-8"
                   >
-                    <h3 className="text-launch-purple font-semibold text-xl md:text-2xl mb-3">
+                    <h3 className="text-lbl-ink font-semibold text-xl md:text-2xl mb-3">
                       {item.q}
                     </h3>
                     <p className="text-muted-foreground text-lg leading-relaxed">
@@ -654,17 +654,17 @@ const Index = () => {
 
 
         {/* ═══ FINAL CTA ═══ */}
-        <section className="py-16 md:py-24 bg-gradient-to-br from-launch-light via-white to-orange-50">
+        <section className="py-16 md:py-24 bg-gradient-to-br from-lbl-paper via-white to-orange-50">
           <Reveal className="max-w-3xl mx-auto px-4 sm:px-6 text-center">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              <span className="bg-gradient-to-r from-launch-purple via-pink-500 to-launch-orange bg-clip-text text-transparent">Most AI rollouts fail because nobody brought the people along.</span>
+              <span className="bg-gradient-to-r from-lbl-ink via-lbl-magenta to-lbl-orange bg-clip-text text-transparent">Most AI rollouts fail because nobody brought the people along.</span>
             </h2>
-            <p className="text-xl md:text-2xl font-semibold text-launch-orange mb-8">
+            <p className="text-xl md:text-2xl font-semibold text-lbl-orange mb-8">
               We start there.
             </p>
             <Button
               size="lg"
-              className="bg-launch-orange hover:bg-launch-orange/90 text-white px-10 py-4 text-lg rounded-full font-bold transition-all duration-300 shadow-xl hover:scale-105 group"
+              className="bg-lbl-orange hover:bg-lbl-orange/90 text-white px-10 py-4 text-lg rounded-full font-bold transition-all duration-300 shadow-xl hover:scale-105 group"
               onClick={() =>
                 window.open("https://calendly.com/karen-launchbylunch/30min", "_blank")
               }

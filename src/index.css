@@ -1,9 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Fraunces:ital,wght@1,400;1,500;1,600&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer base {
   :root {
+    /* ── LBL brand tokens ── */
+    --lbl-eggplant:   #421f52;
+    --lbl-ink:        #2a1748;
+    --lbl-orange:     #fc8817;
+    --lbl-magenta:    #ec4795;
+    --lbl-lilac:      #c4b1d9;
+    --lbl-paper:      #f7f7f7;
+    --lbl-green:      #22c55e;
+
+    --grad-brand:      linear-gradient(96deg, #421f52 0%, #ec4795 50%, #fc8817 100%);
+    --grad-brand-warm: linear-gradient(96deg, #ec4795 0%, #fc8817 100%);
+    --grad-cta:        linear-gradient(90deg, #2a1748 0%, #fc8817 100%);
+    --grad-hero-soft:  linear-gradient(120deg, #f1ebf7 0%, #faf0ec 55%, #ffffff 100%);
+    --grad-divider:    linear-gradient(90deg, #ec4795 0%, #fc8817 100%);
+
+    /* ── shadcn/ui semantic tokens (mapped to LBL palette) ── */
     --background: 0 0% 100%;
     --foreground: 222.2 84% 4.9%;
 
@@ -111,4 +129,65 @@
 
 .animate-bounce-slow {
   animation: bounce-slow 3s ease-in-out infinite;
+}
+
+/* ── LBL utility classes ── */
+
+/* Signature gradient text — eggplant → magenta → orange clipped to glyphs */
+.gradient-text {
+  background: var(--grad-brand);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+.gradient-text.grad-warm {
+  background-image: var(--grad-brand-warm);
+}
+
+/* Thin brand accent rule under hero headlines */
+.brand-rule {
+  width: 96px; height: 4px; border: 0; border-radius: 999px;
+  background: var(--grad-divider);
+  display: block;
+}
+
+/* Primary gradient CTA (dark → orange capsule) */
+.btn-cta {
+  display: inline-flex; align-items: center; gap: 8px;
+  height: 52px; padding: 0 28px; border: none; border-radius: 999px;
+  font-family: 'Inter', sans-serif; font-weight: 700; font-size: 1rem;
+  line-height: 1; color: #ffffff;
+  background: var(--grad-cta); cursor: pointer;
+  box-shadow: 0 8px 30px rgba(252,136,23,0.35);
+  transition: transform 200ms cubic-bezier(0.2,0.8,0.2,1);
+  text-decoration: none;
+}
+.btn-cta:active { transform: scale(0.98); }
+.btn-cta:hover  { filter: brightness(1.08); }
+
+/* Eyebrow label — uppercase orange caption above headlines */
+.eyebrow {
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--lbl-orange);
+}
+
+/* Curly-brace serif accent — {inner circle} style flourish in Fraunces italic */
+.serif-accent {
+  font-family: 'Fraunces', Georgia, serif;
+  font-style: italic;
+  font-weight: 500;
+}
+
+/* Hero page wash background */
+.bg-hero-soft {
+  background: var(--grad-hero-soft);
+}
+
+/* Dark product section surface */
+.bg-ink {
+  background-color: var(--lbl-ink);
 }
