@@ -24,6 +24,7 @@ import Enterprise from "./pages/Enterprise";
 import ClaudeCode from "./pages/ClaudeCode";
 import Trainers from "./pages/Trainers";
 import KeynotesWorkshops from "./pages/KeynotesWorkshops";
+import FreeUpskillingMA from "./pages/FreeUpskillingMA";
 import Navigation from "./components/Navigation";
 import ScrollToTop from "./components/ScrollToTop";
 
@@ -58,6 +59,7 @@ const App = () => (
             <Route path="/trainer-application" element={<Trainers />} />
             <Route path="/trainers" element={<Navigate to="/trainer-application" replace />} />
             <Route path="/keynotes-workshops" element={<KeynotesWorkshops />} />
+            <Route path="/free-upskilling-ma" element={<FreeUpskillingMA />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>
