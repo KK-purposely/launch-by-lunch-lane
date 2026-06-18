@@ -124,7 +124,7 @@ const FreeUpskillingMA = () => {
           >
             <div style={{ position: "relative", paddingBottom: "50.52083333333333%", height: 0 }}>
               <iframe
-                src="https://www.loom.com/embed/d4139caaf1184028be542bffbc6c0606"
+                src="https://www.loom.com/embed/d4139caaf1184028be542bffbc6c0606?speed=1"
                 title="Free Upskilling MA program overview"
                 frameBorder={0}
                 allowFullScreen
