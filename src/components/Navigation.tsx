@@ -74,9 +74,6 @@ const Navigation = () => {
                   </DropdownMenuContent>
                 </DropdownMenu>
 
-                <Link to="/enterprise" className="px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-lbl-orange">
-                  Enterprise
-                </Link>
 
                 <Link to="/community" className="px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-lbl-orange">
                   Community
@@ -145,11 +142,6 @@ const Navigation = () => {
 
                 <DropdownMenuSeparator />
 
-                <DropdownMenuItem asChild>
-                  <Link to="/enterprise" className="w-full" onClick={() => setIsMenuOpen(false)}>
-                    Enterprise
-                  </Link>
-                </DropdownMenuItem>
 
                 <DropdownMenuItem asChild>
                   <Link to="/community" className="w-full" onClick={() => setIsMenuOpen(false)}>
