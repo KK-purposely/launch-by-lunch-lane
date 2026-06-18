@@ -74,6 +74,7 @@ const Navigation = () => {
                   </DropdownMenuContent>
                 </DropdownMenu>
 
+                <Link to="/community" className="px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-lbl-orange">
                   Community
                 </Link>
               </div>
