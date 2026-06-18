@@ -18,8 +18,8 @@ const Navigation = () => {
   };
 
   const servicesItems = [
-    { label: "Keynotes & Workshops", to: "/keynotes-workshops", external: false },
     { label: "Public Events", to: "https://luma.com/launchbylunch", external: true },
+    { label: "Keynotes & Workshops", to: "/keynotes-workshops", external: false },
     { label: "Chief of Staff", to: "/claude-code", external: false },
     { label: "Automations", to: "https://marketplace.launchbylunch.co/", external: true },
     { label: "Trainer Application", to: "/trainer-application", external: false },
