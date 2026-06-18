@@ -18,8 +18,6 @@ import Contact from "./pages/Contact";
 import WomenInCommunity from "./pages/WomenInCommunity";
 import CommunityPartnerships from "./pages/CommunityPartnerships";
 import AIPowerHour from "./pages/AIPowerHour";
-import EnterpriseServices from "./pages/EnterpriseServices";
-import Enterprise from "./pages/Enterprise";
 
 import ClaudeCode from "./pages/ClaudeCode";
 import Trainers from "./pages/Trainers";
@@ -51,8 +49,6 @@ const App = () => (
             <Route path="/women-in-community" element={<WomenInCommunity />} />
             <Route path="/community-partnerships" element={<CommunityPartnerships />} />
             <Route path="/ai-power-hour" element={<AIPowerHour />} />
-            <Route path="/enterprise-services" element={<EnterpriseServices />} />
-            <Route path="/enterprise" element={<Enterprise />} />
             
             <Route path="/claude-code" element={<ClaudeCode />} />
             <Route path="/trainer-application" element={<Trainers />} />
