@@ -18,7 +18,7 @@ const FreeUpskillingMA = () => {
     {
       icon: Search,
       title: "Course Finder",
-      description: "Browse the official Express Directory of approved courses, including Launch by Lunch trainings.",
+      description: "Browse the official Express Directory and search \"Launch by Lunch\" in the Training Provider Name field to find our courses.",
       href: "https://commcorp.org/subprogram/wtfp-express-directory/",
     },
     {
