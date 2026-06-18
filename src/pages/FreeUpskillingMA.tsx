@@ -5,7 +5,6 @@ import { GraduationCap, DollarSign, Building2, CheckCircle2, ArrowRight, FileTex
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import Footer from "@/components/Footer";
-import { Link } from "react-router-dom";
 import commCorpLogo from "@/assets/commonwealth-corporation-logo.png.asset.json";
 
 const FreeUpskillingMA = () => {
@@ -291,7 +290,13 @@ const FreeUpskillingMA = () => {
               size="lg"
               className="rounded-full border-lbl-ink text-lbl-ink hover:bg-lbl-ink hover:text-white"
             >
-              <Link to="/contact">Talk to our team</Link>
+              <a
+                href="https://calendly.com/karen-launchbylunch/30min"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Talk to our team
+              </a>
             </Button>
           </div>
         </div>
