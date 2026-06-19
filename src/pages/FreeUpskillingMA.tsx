@@ -54,6 +54,15 @@ const FreeUpskillingMA = () => {
     },
   ];
 
+  const courses = [
+    { number: "C-15543", title: "AI Essentials: Your New Co-Worker Is Claude" },
+    { number: "C-15681", title: "AI for HR Operations and Internal Documentation" },
+    { number: "C-15682", title: "AI for Sales: From Prospecting to Proposal" },
+    { number: "C-15683", title: "Learn to Build Your Own Website with AI" },
+    { number: "C-15684", title: "AI for Customer Service and Client Communication" },
+    { number: "C-15685", title: "AI for Marketing and Content Creation" },
+  ];
+
   return (
     <div className="bg-white min-h-screen">
       <Helmet>
