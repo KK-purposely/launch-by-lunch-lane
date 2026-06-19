@@ -26,7 +26,7 @@ const workshops = [
   {
     title: "1-on-1 Workshop",
     subtitle: "Personalized build session",
-    price: "$749",
+    price: "$1,200",
     unit: "",
     description: "Get dedicated, hands-on guidance tailored to your exact workflow and tech stack.",
     icon: User,
@@ -39,7 +39,7 @@ const workshops = [
   {
     title: "Done-For-You Build",
     subtitle: "We build it for you",
-    price: "$1,200",
+    price: "$3,500",
     unit: "",
     description: "We design and deploy your Claude Code Chief of Staff — fully configured around your priorities, data, and tools.",
     icon: Wrench,
@@ -52,7 +52,7 @@ const workshops = [
   {
     title: "Private Group Onboarding",
     subtitle: "We come to your team or community",
-    price: "$4,500",
+    price: "$5,000",
     unit: "per session",
     description: "We come to your accelerator, team, or community and deliver a 3-hour hands-on onboarding session for up to 12 people.",
     icon: Building2,

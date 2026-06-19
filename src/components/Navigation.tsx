@@ -19,7 +19,6 @@ const Navigation = () => {
 
   const servicesItems = [
     { label: "Public Events", to: "https://luma.com/launchbylunch", external: true },
-    { label: "Free Upskilling MA", to: "/free-upskilling-ma", external: false },
     { label: "Keynotes & Workshops", to: "/keynotes-workshops", external: false },
     { label: "Chief of Staff", to: "/claude-code", external: false },
     { label: "Automations", to: "https://marketplace.launchbylunch.co/", external: true },
@@ -75,6 +74,9 @@ const Navigation = () => {
                   </DropdownMenuContent>
                 </DropdownMenu>
 
+                <Link to="/free-upskilling-ma" className="px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-lbl-orange">
+                  Free Upskilling MA
+                </Link>
 
                 <Link to="/community" className="px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-lbl-orange">
                   Community
