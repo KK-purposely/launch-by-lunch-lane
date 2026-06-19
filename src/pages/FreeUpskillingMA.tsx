@@ -72,6 +72,44 @@ const FreeUpskillingMA = () => {
           content="Massachusetts small businesses can access up to $15,000 per year in free AI and workforce upskilling through the Workforce Training Fund Express Program. Launch by Lunch is an official partner."
         />
         <link rel="canonical" href="https://launchbylunch.co/free-upskilling-ma" />
+        <meta property="og:title" content="Free Upskilling MA | Workforce Training Fund Program | Launch by Lunch" />
+        <meta property="og:description" content="Massachusetts small businesses can access up to $15,000 per year in free AI and workforce upskilling through the Workforce Training Fund Express Program. Launch by Lunch is an official partner." />
+        <meta property="og:url" content="https://launchbylunch.co/free-upskilling-ma" />
+        <meta property="og:type" content="website" />
+        <meta name="twitter:title" content="Free Upskilling MA | Workforce Training Fund Program | Launch by Lunch" />
+        <meta name="twitter:description" content="Massachusetts small businesses can access up to $15,000 per year in free AI and workforce upskilling through the Workforce Training Fund Express Program. Launch by Lunch is an official partner." />
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "WebPage",
+            name: "Free AI Upskilling for Massachusetts Small Businesses",
+            description: "Massachusetts small businesses can access up to $15,000 per year in free AI and workforce upskilling through the Workforce Training Fund Express Program.",
+            url: "https://launchbylunch.co/free-upskilling-ma",
+            mainEntity: {
+              "@type": "GovernmentService",
+              name: "Massachusetts Workforce Training Fund Express Program",
+              description: "A state initiative administered by Commonwealth Corporation that helps Massachusetts small businesses with 100 or fewer employees access up to $15,000 per year in fully funded training and AI upskilling.",
+              provider: {
+                "@type": "GovernmentOrganization",
+                name: "Commonwealth Corporation",
+                url: "https://commcorp.org",
+              },
+              serviceOperator: {
+                "@type": "Organization",
+                name: "Launch by Lunch",
+                url: "https://launchbylunch.co",
+              },
+              areaServed: {
+                "@type": "State",
+                name: "Massachusetts",
+              },
+              audience: {
+                "@type": "Audience",
+                audienceType: "Massachusetts small businesses with 100 or fewer employees",
+              },
+            },
+          })}
+        </script>
       </Helmet>
 
       {/* Hero Section */}
