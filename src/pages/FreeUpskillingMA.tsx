@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import Footer from "@/components/Footer";
 import commCorpLogo from "@/assets/commonwealth-corporation-logo.png.asset.json";
+import ogImage from "@/assets/og-free-upskilling.jpg.asset.json";
 
 const FreeUpskillingMA = () => {
   const resources = [
@@ -76,8 +77,13 @@ const FreeUpskillingMA = () => {
         <meta property="og:description" content="Massachusetts small businesses can access up to $15,000 per year in free AI and workforce upskilling through the Workforce Training Fund Express Program. Launch by Lunch is an official partner." />
         <meta property="og:url" content="https://launchbylunch.co/free-upskilling-ma" />
         <meta property="og:type" content="website" />
+        <meta property="og:image" content={`https://launchbylunch.co${ogImage.url}`} />
+        <meta property="og:image:width" content="1216" />
+        <meta property="og:image:height" content="640" />
+        <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Free Upskilling MA | Workforce Training Fund | Launch by Lunch" />
         <meta name="twitter:description" content="Massachusetts small businesses can access up to $15,000 per year in free AI and workforce upskilling through the Workforce Training Fund Express Program. Launch by Lunch is an official partner." />
+        <meta name="twitter:image" content={`https://launchbylunch.co${ogImage.url}`} />
         <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org",
