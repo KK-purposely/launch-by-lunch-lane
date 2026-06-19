@@ -18,6 +18,7 @@ const Navigation = () => {
   };
 
   const servicesItems = [
+    { label: "Free AI Upskilling", to: "/free-upskilling-ma", external: false },
     { label: "Public Events", to: "https://luma.com/launchbylunch", external: true },
     { label: "Keynotes & Workshops", to: "/keynotes-workshops", external: false },
     { label: "Chief of Staff", to: "/claude-code", external: false },
@@ -75,7 +76,7 @@ const Navigation = () => {
                 </DropdownMenu>
 
                 <Link to="/free-upskilling-ma" className="px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-lbl-orange">
-                  Free Upskilling MA
+                  Free AI Upskilling
                 </Link>
 
                 <Link to="/community" className="px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-lbl-orange">
@@ -145,6 +146,11 @@ const Navigation = () => {
 
                 <DropdownMenuSeparator />
 
+                <DropdownMenuItem asChild>
+                  <Link to="/free-upskilling-ma" className="w-full" onClick={() => setIsMenuOpen(false)}>
+                    Free AI Upskilling
+                  </Link>
+                </DropdownMenuItem>
 
                 <DropdownMenuItem asChild>
                   <Link to="/community" className="w-full" onClick={() => setIsMenuOpen(false)}>
