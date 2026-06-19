@@ -26,7 +26,7 @@ const workshops = [
   {
     title: "1-on-1 Workshop",
     subtitle: "Personalized build session",
-    price: "$749",
+    price: "$1,200",
     unit: "",
     description: "Get dedicated, hands-on guidance tailored to your exact workflow and tech stack.",
     icon: User,
