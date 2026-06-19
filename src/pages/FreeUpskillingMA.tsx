@@ -93,8 +93,10 @@ const FreeUpskillingMA = () => {
               <Sparkles className="h-5 w-5" />
               Launched April 1, 2026
             </div>
-            <h1 className="text-4xl md:text-6xl font-bold text-lbl-ink mb-6 leading-tight">
-              Free AI Upskilling for Massachusetts Small Businesses
+            <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
+              <span className="bg-gradient-to-r from-lbl-ink via-lbl-magenta to-lbl-orange bg-clip-text text-transparent leading-[1.1]">
+                Free AI Upskilling for Massachusetts Small Businesses
+              </span>
             </h1>
             <p className="text-lg md:text-2xl text-gray-700 max-w-3xl mx-auto leading-relaxed">
               Through the Massachusetts Workforce Training Fund Express Program, your team can access up to{" "}
