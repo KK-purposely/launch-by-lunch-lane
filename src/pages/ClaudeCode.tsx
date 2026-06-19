@@ -39,7 +39,7 @@ const workshops = [
   {
     title: "Done-For-You Build",
     subtitle: "We build it for you",
-    price: "$1,200",
+    price: "$3,500",
     unit: "",
     description: "We design and deploy your Claude Code Chief of Staff — fully configured around your priorities, data, and tools.",
     icon: Wrench,
