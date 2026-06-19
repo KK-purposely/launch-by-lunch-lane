@@ -66,17 +66,17 @@ const FreeUpskillingMA = () => {
   return (
     <div className="bg-white min-h-screen">
       <Helmet>
-        <title>Free Upskilling MA | Workforce Training Fund Program | Launch by Lunch</title>
+        <title>Free Upskilling MA | Workforce Training Fund | Launch by Lunch</title>
         <meta
           name="description"
           content="Massachusetts small businesses can access up to $15,000 per year in free AI and workforce upskilling through the Workforce Training Fund Express Program. Launch by Lunch is an official partner."
         />
         <link rel="canonical" href="https://launchbylunch.co/free-upskilling-ma" />
-        <meta property="og:title" content="Free Upskilling MA | Workforce Training Fund Program | Launch by Lunch" />
+        <meta property="og:title" content="Free Upskilling MA | Workforce Training Fund | Launch by Lunch" />
         <meta property="og:description" content="Massachusetts small businesses can access up to $15,000 per year in free AI and workforce upskilling through the Workforce Training Fund Express Program. Launch by Lunch is an official partner." />
         <meta property="og:url" content="https://launchbylunch.co/free-upskilling-ma" />
         <meta property="og:type" content="website" />
-        <meta name="twitter:title" content="Free Upskilling MA | Workforce Training Fund Program | Launch by Lunch" />
+        <meta name="twitter:title" content="Free Upskilling MA | Workforce Training Fund | Launch by Lunch" />
         <meta name="twitter:description" content="Massachusetts small businesses can access up to $15,000 per year in free AI and workforce upskilling through the Workforce Training Fund Express Program. Launch by Lunch is an official partner." />
         <script type="application/ld+json">
           {JSON.stringify({

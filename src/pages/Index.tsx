@@ -103,7 +103,7 @@ const Index = () => {
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
         <meta property="twitter:card" content="summary_large_image" />
-        <meta property="twitter:url" content="https://launchbylunch.com/" />
+        <meta property="twitter:url" content="https://launchbylunch.co/" />
         <meta property="twitter:title" content="Launch by Lunch - AI Automation for Small Business Owners" />
         <meta property="twitter:description" content="Approachable innovation. AI built for your team, not around it." />
         <meta property="twitter:image" content="https://cdn.lovable.app/lovable-uploads/8f3eba1c-0f11-4411-9774-5671f6239bf2.png" />
