@@ -187,9 +187,6 @@ const FreeUpskillingMA = () => {
               />
             </div>
           </motion.div>
-          <p className="mt-4 text-center text-lg text-lbl-ink/60">
-            Loom defaults to 1.2× playback. Click the gear icon in the player and select 1× if the video sounds too fast.
-          </p>
         </div>
       </section>
 
