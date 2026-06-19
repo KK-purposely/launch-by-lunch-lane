@@ -191,6 +191,38 @@ const FreeUpskillingMA = () => {
               </motion.div>
             ))}
           </div>
+
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, delay: 0.3 }}
+            className="mt-10"
+          >
+            <Card className="border-gray-200">
+              <CardContent className="p-6 md:p-8">
+                <h3 className="text-xl md:text-2xl font-semibold text-lbl-ink mb-2">
+                  Launch by Lunch courses in the Express Directory
+                </h3>
+                <p className="text-base text-gray-600 mb-6">
+                  These courses are pre-approved for the grant and available to any eligible Massachusetts small business.
+                </p>
+                <div className="grid sm:grid-cols-2 gap-4">
+                  {courses.map((course) => (
+                    <div
+                      key={course.number}
+                      className="flex items-start gap-3 p-3 rounded-xl bg-lbl-orange/5"
+                    >
+                      <span className="inline-flex items-center px-2.5 py-1 rounded-md bg-lbl-orange/10 text-lbl-orange font-semibold text-sm whitespace-nowrap">
+                        {course.number}
+                      </span>
+                      <span className="text-base text-lbl-ink leading-snug">{course.title}</span>
+                    </div>
+                  ))}
+                </div>
+              </CardContent>
+            </Card>
+          </motion.div>
         </div>
       </section>
 
