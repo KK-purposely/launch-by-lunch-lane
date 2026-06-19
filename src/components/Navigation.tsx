@@ -74,6 +74,9 @@ const Navigation = () => {
                   </DropdownMenuContent>
                 </DropdownMenu>
 
+                <Link to="/free-upskilling-ma" className="px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-lbl-orange">
+                  Free Upskilling MA
+                </Link>
 
                 <Link to="/community" className="px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-lbl-orange">
                   Community
