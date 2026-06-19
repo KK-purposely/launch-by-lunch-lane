@@ -122,16 +122,6 @@ const ClaudeCode = () => {
                   <ArrowRight className="h-5 w-5 group-hover:translate-x-2 transition-transform duration-300" />
                 </span>
               </Button>
-              <Button
-                size="lg"
-                className="bg-white hover:bg-white/90 text-lbl-orange border-2 border-white hover:border-lbl-orange px-10 py-4 text-lg rounded-full font-bold transition-all duration-300 shadow-2xl hover:scale-105 group"
-                onClick={() => window.open("https://marketplace.launchbylunch.co", "_blank")}
-              >
-                <span className="flex items-center gap-3">
-                  Download Our Bundles
-                  <ArrowRight className="h-5 w-5 group-hover:translate-x-2 transition-transform duration-300" />
-                </span>
-              </Button>
             </div>
           </div>
           <div className="flex-shrink-0">
