@@ -8,6 +8,8 @@ import Footer from "@/components/Footer";
 import commCorpLogo from "@/assets/commonwealth-corporation-logo.png.asset.json";
 import ogImage from "@/assets/og-free-upskilling.jpg.asset.json";
 import amandaSwiatocha from "@/assets/testimonial-amanda-swiatocha.jpg";
+import mollyPapermaster from "@/assets/molly-papermaster.png.asset.json";
+
 
 
 const FreeUpskillingMA = () => {
@@ -244,13 +246,25 @@ const FreeUpskillingMA = () => {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="mt-10 max-w-4xl mx-auto bg-lbl-orange/5 border-l-4 border-lbl-orange rounded-xl p-6 md:p-8"
           >
-            <blockquote className="text-lg md:text-xl text-lbl-ink leading-relaxed italic">
-              "I honestly wasn't sure we'd see real adoption. Getting a busy team to change how they work is its own challenge. But people picked this up quickly because it was built around what they were already doing. Watching the team get time back in their week to focus on the work that actually moves the needle for our company has been the real win."
-            </blockquote>
-            <figcaption className="mt-4 text-base font-semibold text-lbl-ink">
-              Molly Papermaster, <span className="font-normal text-gray-600">Chief of Staff, The Engine (Cambridge)</span>
-            </figcaption>
+            <div className="flex flex-col md:flex-row items-start gap-6">
+              <img
+                src={mollyPapermaster.url}
+                alt="Molly Papermaster, Chief of Staff at The Engine"
+                className="w-20 h-20 md:w-24 md:h-24 rounded-full object-cover flex-shrink-0"
+                loading="lazy"
+              />
+              <div>
+                <blockquote className="text-lg md:text-xl text-lbl-ink leading-relaxed italic">
+                  "I honestly wasn't sure we'd see real adoption. Getting a busy team to change how they work is its own challenge. But people picked this up quickly because it was built around what they were already doing. Watching the team get time back in their week to focus on the work that actually moves the needle for our company has been the real win."
+                </blockquote>
+                <figcaption className="mt-4 text-base font-semibold text-lbl-ink">
+                  Molly Papermaster
+                  <span className="block font-normal text-gray-600">Chief of Staff, The Engine (Cambridge)</span>
+                </figcaption>
+              </div>
+            </div>
           </motion.figure>
+
 
 
           <motion.div
