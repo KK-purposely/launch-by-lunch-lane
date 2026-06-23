@@ -7,6 +7,8 @@ import { Card, CardContent } from "@/components/ui/card";
 import Footer from "@/components/Footer";
 import commCorpLogo from "@/assets/commonwealth-corporation-logo.png.asset.json";
 import ogImage from "@/assets/og-free-upskilling.jpg.asset.json";
+import amandaSwiatocha from "@/assets/testimonial-amanda-swiatocha.jpg";
+
 
 const FreeUpskillingMA = () => {
   const resources = [
@@ -358,7 +360,35 @@ const FreeUpskillingMA = () => {
             </Card>
           </div>
         </div>
+
+
+        <motion.figure
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+          className="max-w-4xl mx-auto px-4 sm:px-6 mt-12"
+        >
+          <div className="bg-white border-l-4 border-lbl-orange rounded-xl p-6 md:p-8 shadow-sm flex flex-col md:flex-row items-start gap-6">
+            <img
+              src={amandaSwiatocha}
+              alt="Amanda Swiatocha, Chief Marketing Officer at Softheon"
+              className="w-20 h-20 md:w-24 md:h-24 rounded-full object-cover flex-shrink-0"
+              loading="lazy"
+            />
+            <div>
+              <blockquote className="text-lg md:text-xl text-lbl-ink leading-relaxed italic">
+                "We brought Karen in to speak to our EmpowerHER female employee resource group. I had high expectations but she surpassed all of them. She received the highest scores of any meeting we had ever had."
+              </blockquote>
+              <figcaption className="mt-4 text-base font-semibold text-lbl-ink">
+                Amanda Swiatocha
+                <span className="block font-normal text-gray-600">Chief Marketing Officer, Softheon</span>
+              </figcaption>
+            </div>
+          </div>
+        </motion.figure>
       </section>
+
 
       {/* How LBL fits */}
       <section className="py-16 md:py-24">
