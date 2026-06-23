@@ -235,6 +235,22 @@ const FreeUpskillingMA = () => {
             ))}
           </div>
 
+          <motion.figure
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, delay: 0.2 }}
+            className="mt-10 max-w-4xl mx-auto bg-lbl-orange/5 border-l-4 border-lbl-orange rounded-xl p-6 md:p-8"
+          >
+            <blockquote className="text-lg md:text-xl text-lbl-ink leading-relaxed italic">
+              "I honestly wasn't sure we'd see real adoption. Getting a busy team to change how they work is its own challenge. But people picked this up quickly because it was built around what they were already doing. Watching the team get time back in their week to focus on the work that actually moves the needle for our company has been the real win."
+            </blockquote>
+            <figcaption className="mt-4 text-base font-semibold text-lbl-ink">
+              Molly Papermaster, <span className="font-normal text-gray-600">Chief of Staff, The Engine (Cambridge)</span>
+            </figcaption>
+          </motion.figure>
+
+
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
