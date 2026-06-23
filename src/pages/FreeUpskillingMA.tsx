@@ -7,6 +7,8 @@ import { Card, CardContent } from "@/components/ui/card";
 import Footer from "@/components/Footer";
 import commCorpLogo from "@/assets/commonwealth-corporation-logo.png.asset.json";
 import ogImage from "@/assets/og-free-upskilling.jpg.asset.json";
+import amandaSwiatocha from "@/assets/testimonial-amanda-swiatocha.jpg";
+
 
 const FreeUpskillingMA = () => {
   const resources = [
