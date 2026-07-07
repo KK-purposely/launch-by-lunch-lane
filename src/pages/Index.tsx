@@ -12,6 +12,7 @@ import {
 import { motion, useInView, useAnimation } from "framer-motion";
 import Footer from "@/components/Footer";
 import trustedByImg from "@/assets/trusted-by.png";
+import mollyPapermaster from "@/assets/molly-papermaster.png.asset.json";
 
 /* ── Scroll-triggered wrapper ── */
 const Reveal = ({ children, className = "", delay = 0 }: { children: React.ReactNode; className?: string; delay?: number }) => {
@@ -322,6 +323,33 @@ const Index = () => {
                 </div>
               </Reveal>
             </div>
+          </div>
+        </section>
+
+        {/* ═══ MOLLY QUOTE ═══ */}
+        <section className="py-16 md:py-24 bg-white">
+          <div className="max-w-4xl mx-auto px-4 sm:px-6">
+            <Reveal>
+              <figure className="bg-lbl-orange/5 border-l-4 border-lbl-orange rounded-2xl p-8 md:p-10">
+                <div className="flex flex-col md:flex-row items-start gap-6">
+                  <img
+                    src={mollyPapermaster.url}
+                    alt="Molly Papermaster, Chief of Staff at The Engine"
+                    className="w-24 h-24 md:w-28 md:h-28 rounded-full object-cover flex-shrink-0"
+                    loading="lazy"
+                  />
+                  <div>
+                    <blockquote className="text-lg md:text-xl text-lbl-ink leading-relaxed italic">
+                      "What Launch by Lunch built has two layers, the first is a shared knowledge base so anyone on the team can find answers without tracking down the one person who knows. The second is department-specific: each team got workflows built around how they actually operate. It feels like each team got something made for them."
+                    </blockquote>
+                    <figcaption className="mt-4 text-base font-semibold text-lbl-ink">
+                      Molly Papermaster
+                      <span className="block font-normal text-gray-600">Chief of Staff, The Engine</span>
+                    </figcaption>
+                  </div>
+                </div>
+              </figure>
+            </Reveal>
           </div>
         </section>
 
