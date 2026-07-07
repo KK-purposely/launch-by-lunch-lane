@@ -77,8 +77,8 @@ const Navigation = () => {
                   Free AI Upskilling
                 </Link>
 
-                <Link to="/community" className="px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-lbl-orange">
-                  Community
+                <Link to="/contact" className="px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-lbl-orange">
+                  Contact Us
                 </Link>
               </div>
             </div>
@@ -151,22 +151,11 @@ const Navigation = () => {
                 </DropdownMenuItem>
 
                 <DropdownMenuItem asChild>
-                  <Link to="/community" className="w-full" onClick={() => setIsMenuOpen(false)}>
-                    Community
+                  <Link to="/contact" className="w-full" onClick={() => setIsMenuOpen(false)}>
+                    Contact Us
                   </Link>
                 </DropdownMenuItem>
 
-                <DropdownMenuSeparator />
-
-                <DropdownMenuItem asChild>
-                  <Link
-                    to="/contact"
-                    className="w-full text-lbl-orange font-medium"
-                    onClick={() => setIsMenuOpen(false)}
-                  >
-                    Contact
-                  </Link>
-                </DropdownMenuItem>
               </DropdownMenuContent>
             </DropdownMenu>
           </div>
