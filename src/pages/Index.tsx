@@ -410,6 +410,26 @@ const Index = () => {
               <p className="text-xl md:text-2xl text-muted-foreground mb-10 leading-relaxed">
                 Every team is different. Tell us what you're working on and we'll help you find the right starting point.
               </p>
+              <div className="flex flex-col sm:flex-row items-center justify-center gap-8 mb-10">
+                <div className="text-center">
+                  <img
+                    src="/lovable-uploads/karen-kelly.jpg"
+                    alt="Karen Kelly, Founder and CEO of Launch by Lunch"
+                    className="w-24 h-24 md:w-32 md:h-32 rounded-full object-cover mx-auto mb-3 shadow-lg border-4 border-white"
+                  />
+                  <h3 className="text-lg font-bold text-gray-900">Karen Kelly</h3>
+                  <p className="text-lbl-orange font-semibold">Founder, CEO</p>
+                </div>
+                <div className="text-center">
+                  <img
+                    src="/lovable-uploads/ariel-galipeau-final.png"
+                    alt="Ariel Galipeau, Director of AI Programs at Launch by Lunch"
+                    className="w-24 h-24 md:w-32 md:h-32 rounded-full object-cover mx-auto mb-3 shadow-lg border-4 border-white"
+                  />
+                  <h3 className="text-lg font-bold text-gray-900">Ariel Galipeau</h3>
+                  <p className="text-lbl-orange font-semibold">Director of AI Programs</p>
+                </div>
+              </div>
               <Link to="/contact">
                 <Button
                   size="lg"
