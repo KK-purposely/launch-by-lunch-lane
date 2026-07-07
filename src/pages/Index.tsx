@@ -339,7 +339,7 @@ const Index = () => {
                 />
                 <div>
                   <blockquote className="text-lg md:text-xl text-lbl-ink leading-relaxed italic">
-                    "What Launch by Lunch built has two layers, the first is a shared knowledge base so anyone on the team can find answers without tracking down the one person who knows. The second is department-specific: each team got workflows built around how they actually operate. It feels like each team got something made for them."
+                    "Launch by Lunch addressed 2 critical AI initiatives for us. The first was a shared knowledge base so anyone on the team can find answers without chasing colleagues down. The second was the creation of team-based workflows built around how we actually operate. It feels like each team got something made for them."
                   </blockquote>
                   <figcaption className="mt-3 text-base font-semibold text-lbl-ink">
                     Molly Papermaster
