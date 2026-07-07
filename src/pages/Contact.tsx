@@ -115,43 +115,24 @@ const Contact = () => {
         <meta property="og:url" content="https://launchbylunch.co/contact" />
         <meta property="og:type" content="website" />
       </Helmet>
-      {/* Hero Section */}
-      <div className="relative overflow-hidden">
-
-        <div className="absolute inset-0 bg-gradient-to-r from-lbl-ink/10 via-transparent to-lbl-orange/10" />
-        <div className="relative max-w-4xl mx-auto px-4 sm:px-6 py-16">
-          <div className="text-center mb-8">
-            <div className="inline-flex items-center gap-2 bg-gradient-to-r from-lbl-ink to-lbl-orange bg-clip-text text-transparent mb-4">
-              <Mail className="h-6 w-6 text-lbl-orange animate-pulse" />
-              <span className="text-sm font-semibold uppercase tracking-wide">Get in Touch</span>
-              <Mail className="h-6 w-6 text-lbl-ink animate-pulse" />
-            </div>
-            <h1 className="text-4xl md:text-6xl font-bold mb-6">
-              <span className="bg-gradient-to-r from-lbl-ink to-lbl-orange bg-clip-text text-transparent">
-                Contact Us
-              </span>
-            </h1>
-            <p className="text-xl md:text-2xl text-gray-700 mb-8 max-w-3xl mx-auto leading-relaxed">
-              We're grateful for the number of people hoping to work with us. Although our time is limited, we interview with every applicant to understand their needs and make referrals when necessary.
-            </p>
+      <div className="max-w-3xl mx-auto px-4 sm:px-6 py-16">
+        <div className="text-center mb-8">
+          <div className="inline-flex items-center gap-2 bg-gradient-to-r from-lbl-ink to-lbl-orange bg-clip-text text-transparent mb-4">
+            <Mail className="h-6 w-6 text-lbl-orange animate-pulse" />
+            <span className="text-sm font-semibold uppercase tracking-wide">Get in Touch</span>
+            <Mail className="h-6 w-6 text-lbl-ink animate-pulse" />
           </div>
+          <h1 className="text-3xl font-bold mb-4">
+            <span className="bg-gradient-to-r from-lbl-ink to-lbl-orange bg-clip-text text-transparent">
+              How Can We Help?
+            </span>
+          </h1>
+          <p className="text-gray-600">
+            Fill out the form below and we'll get back to you within 24 hours.
+          </p>
         </div>
-      </div>
 
-      {/* Contact Form Section */}
-      <div className="max-w-3xl mx-auto px-4 sm:px-6 pb-16">
         <div className="bg-white rounded-3xl shadow-xl p-8 md:p-12 border border-gray-100">
-          <div className="text-center mb-8">
-            <h2 className="text-3xl font-bold mb-4">
-              <span className="bg-gradient-to-r from-lbl-ink to-lbl-orange bg-clip-text text-transparent">
-                How Can We Help?
-              </span>
-            </h2>
-            <p className="text-gray-600">
-              Fill out the form below and we'll get back to you within 24 hours.
-            </p>
-          </div>
-
           <form onSubmit={handleSubmit} className="space-y-6">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div>
