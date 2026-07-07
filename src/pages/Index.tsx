@@ -1,7 +1,8 @@
 import { useRef, useEffect } from "react";
 import { Helmet } from "react-helmet-async";
+import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Zap, Check, Target, Sprout, Handshake } from "lucide-react";
+import { ArrowRight, Zap, Check, Target, Sprout, Handshake, MessageCircle } from "lucide-react";
 import {
   Accordion,
   AccordionContent,
@@ -389,6 +390,38 @@ const Index = () => {
                 </div>
               </Reveal>
             </div>
+          </div>
+        </section>
+
+        {/* ═══ CONTACT CTA ═══ */}
+        <section className="py-16 md:py-24 bg-white">
+          <div className="max-w-4xl mx-auto px-4 sm:px-6 text-center">
+            <Reveal>
+              <div className="inline-flex items-center gap-2 text-lbl-orange mb-6">
+                <MessageCircle className="h-6 w-6 animate-pulse" />
+                <span className="text-sm font-semibold uppercase tracking-wide">Talk to Us</span>
+                <MessageCircle className="h-6 w-6 animate-pulse" />
+              </div>
+              <h2 className="text-3xl md:text-5xl font-bold mb-6">
+                <span className="bg-gradient-to-r from-lbl-ink via-lbl-magenta to-lbl-orange bg-clip-text text-transparent">
+                  Want to see what this could look like for your team?
+                </span>
+              </h2>
+              <p className="text-xl md:text-2xl text-muted-foreground mb-10 leading-relaxed">
+                Every team is different. Tell us what you're working on and we'll help you find the right starting point.
+              </p>
+              <Link to="/contact">
+                <Button
+                  size="lg"
+                  className="group bg-gradient-to-r from-lbl-ink to-lbl-orange hover:from-lbl-ink/90 hover:to-lbl-orange/90 text-white px-8 py-6 text-lg rounded-full font-medium transition-all duration-300 shadow-lg hover:shadow-xl"
+                >
+                  <span className="flex items-center gap-2">
+                    Contact Us
+                    <ArrowRight className="h-5 w-5 group-hover:translate-x-1 transition-transform" />
+                  </span>
+                </Button>
+              </Link>
+            </Reveal>
           </div>
         </section>
 
