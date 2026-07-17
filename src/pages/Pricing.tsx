@@ -275,12 +275,12 @@ const stats = [
 ];
 
 const logos: { name: string; src?: string }[] = [
-  { name: "Adobe", src: "https://upload.wikimedia.org/wikipedia/commons/8/8d/Adobe_Corporate_logo.svg" },
-  { name: "KPMG", src: "https://upload.wikimedia.org/wikipedia/commons/0/0d/KPMG_logo.svg" },
-  { name: "Harvard", src: "https://upload.wikimedia.org/wikipedia/commons/c/cc/Harvard_University_logo.svg" },
-  { name: "TEDx", src: "https://upload.wikimedia.org/wikipedia/commons/1/1e/TEDx_logo.svg" },
+  { name: "Adobe", src: "https://upload.wikimedia.org/wikipedia/commons/6/6e/Adobe_Corporate_logo.svg" },
+  { name: "KPMG", src: "https://upload.wikimedia.org/wikipedia/commons/d/db/KPMG_blue_logo.svg" },
+  { name: "Harvard", src: "https://upload.wikimedia.org/wikipedia/commons/7/70/Harvard_University_logo.svg" },
+  { name: "TEDx", src: "https://upload.wikimedia.org/wikipedia/commons/7/7e/TEDx_Logo_White_Background_Single_Line.png" },
   { name: "Bank of America", src: "https://upload.wikimedia.org/wikipedia/commons/2/20/Bank_of_America_logo.svg" },
-  { name: "Techstars", src: "https://upload.wikimedia.org/wikipedia/commons/6/61/Techstars-logo-primary-full-color-rgb.svg" },
+  { name: "Techstars", src: "https://upload.wikimedia.org/wikipedia/commons/4/48/Techstars_logo.png" },
   { name: "MassChallenge" },
   { name: "CIC" },
   { name: "Softheon" },
