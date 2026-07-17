@@ -259,6 +259,12 @@ const logos = [
   "MassChallenge",
   "Boston Business Journal",
   "Startup Boston",
+  "Greater Boston Chamber of Commerce",
+  "Bank of America",
+  "Founder's Edge",
+  "Elixr",
+  "Proverb",
+  "Surfside Capital",
 ];
 
 const testimonials = [
