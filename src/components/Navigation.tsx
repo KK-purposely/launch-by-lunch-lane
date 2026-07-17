@@ -42,38 +42,18 @@ const Navigation = () => {
                   About
                 </Link>
 
-                <DropdownMenu>
-                  <DropdownMenuTrigger className="px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-lbl-orange focus:outline-none inline-flex items-center gap-1">
-                    Services
-                    <ChevronDown className="h-4 w-4" />
-                  </DropdownMenuTrigger>
-                  <DropdownMenuContent align="start" className="w-48 bg-white">
-                    {servicesItems.map((item) =>
-                      item.external ? (
-                        <DropdownMenuItem
-                          key={item.label}
-                          onClick={() => window.open(item.to, '_blank')}
-                        >
-                          {item.label}
-                        </DropdownMenuItem>
-                      ) : (
-                        <DropdownMenuItem key={item.label} asChild>
-                          <Link to={item.to} className="w-full">
-                            {item.label}
-                          </Link>
-                        </DropdownMenuItem>
-                      )
-                    )}
-                  </DropdownMenuContent>
-                </DropdownMenu>
+                <Link to="/keynotes-workshops" className="px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-lbl-orange">
+                  Keynotes
+                </Link>
 
                 <Link to="/pricing" className="px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-lbl-orange">
-                  Pricing
+                  Services
                 </Link>
 
                 <Link to="/free-upskilling-ma" className="px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-lbl-orange">
                   Free AI Upskilling
                 </Link>
+
 
                 <Link to="/contact" className="px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-lbl-orange">
                   Contact Us
