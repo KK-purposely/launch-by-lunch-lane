@@ -467,7 +467,7 @@ const Pricing = () => {
                 className="bg-white rounded-2xl p-8 border border-[var(--lbl-lilac)]/40"
                 style={{ boxShadow: "0 8px 24px rgba(23,10,31,0.06)" }}
               >
-                <h3 className="text-xl font-bold text-[var(--lbl-eggplant)] mb-3">{b.title}</h3>
+                <h3 className="text-xl font-semibold text-[var(--lbl-eggplant)] mb-3">{b.title}</h3>
                 <p className="text-lg text-gray-700 leading-relaxed">{b.body}</p>
               </div>
             ))}
@@ -487,7 +487,7 @@ const Pricing = () => {
             {stats.map((s) => (
               <div key={s.label}>
                 <div
-                  className="text-[42px] sm:text-[56px] font-bold leading-none tracking-tight text-[var(--lbl-orange)]"
+                  className="text-[42px] sm:text-[56px] font-semibold leading-none tracking-tight text-[var(--lbl-orange)]"
                   style={{ fontWeight: 700 }}
                 >
                   {s.num}
@@ -534,7 +534,7 @@ const Pricing = () => {
                   &ldquo;{t.quote}&rdquo;
                 </blockquote>
                 <figcaption>
-                  <div className="font-bold text-white">{t.name}</div>
+                  <div className="font-semibold text-white">{t.name}</div>
                   <div className="text-sm text-[var(--lbl-lilac)]">{t.title}</div>
                 </figcaption>
               </figure>
@@ -558,7 +558,7 @@ const Pricing = () => {
                 key={f.q}
                 className="bg-[var(--lbl-paper)] rounded-2xl p-7 sm:p-8 border border-[var(--lbl-lilac)]/40"
               >
-                <h3 className="text-xl sm:text-2xl font-bold text-[var(--lbl-eggplant)] mb-3">
+                <h3 className="text-xl sm:text-2xl font-semibold text-[var(--lbl-eggplant)] mb-3">
                   {f.q}
                 </h3>
                 <p className="text-lg text-gray-700 leading-relaxed">{f.a}</p>
