@@ -561,11 +561,6 @@ const Pricing = () => {
             ))}
           </div>
 
-          <p className="text-[var(--lbl-lilac)] text-lg max-w-3xl">
-            Global Editors&apos; Pick TEDx speaker. Millions of lines of code and hundreds of
-            automations built in plain English.
-          </p>
-
           {/* trusted-by strip */}
           <div className="mt-14 pt-10 border-t border-white/10">
             <div className="text-xs uppercase tracking-widest text-[var(--lbl-lilac)]/70 mb-5">
