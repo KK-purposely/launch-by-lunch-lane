@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
 import {
@@ -17,6 +17,32 @@ import Footer from "@/components/Footer";
 
 const DISCOVERY_URL = "https://calendly.com/karen-launchbylunch/30min";
 const LUMA_URL = "https://luma.com/launchbylunch";
+
+function LogoMark({ name, src }: { name: string; src?: string }) {
+  const [failed, setFailed] = useState(false);
+  const showImage = src && !failed;
+  return (
+    <div
+      className="flex items-center justify-center h-12 sm:h-14 px-2 group"
+      title={name}
+    >
+      {showImage ? (
+        <img
+          src={src}
+          alt={name}
+          onError={() => setFailed(true)}
+          loading="lazy"
+          className="max-h-full max-w-[140px] w-auto object-contain opacity-60 group-hover:opacity-100 transition-opacity duration-300"
+          style={{ filter: "grayscale(1) brightness(0) invert(1)" }}
+        />
+      ) : (
+        <span className="text-center text-white/60 group-hover:text-white transition-colors duration-300 text-sm sm:text-base font-semibold uppercase tracking-[0.14em] leading-tight">
+          {name}
+        </span>
+      )}
+    </div>
+  );
+}
 
 type Card = {
   eyebrow?: string;
@@ -248,23 +274,23 @@ const stats = [
   { num: "Top 100", label: "Voice, Massachusetts AI Coalition (Karen Kelly)" },
 ];
 
-const logos = [
-  "CIC",
-  "Techstars",
-  "KPMG",
-  "TEDx",
-  "Softheon",
-  "Harvard",
-  "Adobe",
-  "MassChallenge",
-  "Boston Business Journal",
-  "Startup Boston",
-  "Greater Boston Chamber of Commerce",
-  "Bank of America",
-  "Founder's Edge",
-  "Elixr",
-  "Proverb",
-  "Surfside Capital",
+const logos: { name: string; src?: string }[] = [
+  { name: "Adobe", src: "https://upload.wikimedia.org/wikipedia/commons/8/8d/Adobe_Corporate_logo.svg" },
+  { name: "KPMG", src: "https://upload.wikimedia.org/wikipedia/commons/0/0d/KPMG_logo.svg" },
+  { name: "Harvard", src: "https://upload.wikimedia.org/wikipedia/commons/c/cc/Harvard_University_logo.svg" },
+  { name: "TEDx", src: "https://upload.wikimedia.org/wikipedia/commons/1/1e/TEDx_logo.svg" },
+  { name: "Bank of America", src: "https://upload.wikimedia.org/wikipedia/commons/2/20/Bank_of_America_logo.svg" },
+  { name: "Techstars", src: "https://upload.wikimedia.org/wikipedia/commons/6/61/Techstars-logo-primary-full-color-rgb.svg" },
+  { name: "MassChallenge" },
+  { name: "CIC" },
+  { name: "Softheon" },
+  { name: "Boston Business Journal" },
+  { name: "Startup Boston" },
+  { name: "Greater Boston Chamber" },
+  { name: "Founder's Edge" },
+  { name: "Elixr" },
+  { name: "Proverb" },
+  { name: "Surfside Capital" },
 ];
 
 const testimonials = [
@@ -572,15 +598,9 @@ const Pricing = () => {
             <div className="text-xs uppercase tracking-widest text-[var(--lbl-lilac)]/70 mb-5">
               Trusted by teams at
             </div>
-            <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-5 text-[var(--lbl-lilac)] text-center">
-              {logos.map((l, i) => (
-                <span
-                  key={l}
-                  className="text-base sm:text-lg font-semibold opacity-80 py-2 sm:py-3 px-2 rounded-lg transition-all duration-300 hover:opacity-100 hover:text-white hover:scale-105 hover:bg-white/5"
-                  style={{ animationDelay: `${i * 40}ms` }}
-                >
-                  {l}
-                </span>
+            <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-x-6 gap-y-8 items-center">
+              {logos.map((l) => (
+                <LogoMark key={l.name} name={l.name} src={l.src} />
               ))}
             </div>
           </div>
