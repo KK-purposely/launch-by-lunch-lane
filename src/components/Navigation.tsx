@@ -18,7 +18,6 @@ const Navigation = () => {
   };
 
   const servicesItems = [
-    { label: "Services & Pricing", to: "/services", external: false },
     { label: "Free AI Upskilling", to: "/free-upskilling-ma", external: false },
     { label: "Public Events", to: "https://luma.com/launchbylunch", external: true },
     { label: "Keynotes & Workshops", to: "/keynotes-workshops", external: false },
