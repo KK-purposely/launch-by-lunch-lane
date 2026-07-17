@@ -73,6 +73,10 @@ const Navigation = () => {
                   </DropdownMenuContent>
                 </DropdownMenu>
 
+                <Link to="/pricing" className="px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-lbl-orange">
+                  Pricing
+                </Link>
+
                 <Link to="/free-upskilling-ma" className="px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-lbl-orange">
                   Free AI Upskilling
                 </Link>
