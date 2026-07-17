@@ -414,7 +414,7 @@ const Pricing = () => {
       <section className="bg-hero-soft">
         <div className="max-w-[1120px] mx-auto px-4 sm:px-6 pt-20 pb-16 sm:pt-28 sm:pb-24">
           <div className="max-w-3xl">
-            <div className="eyebrow mb-5">SERVICES</div>
+            <div className="eyebrow mb-5">PRICING</div>
             <h1
               className="gradient-text text-[44px] sm:text-[64px] lg:text-[76px] font-extrabold leading-[1.05] tracking-[-0.02em] mb-6"
             >
