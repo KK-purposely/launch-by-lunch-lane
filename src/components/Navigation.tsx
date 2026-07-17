@@ -96,35 +96,15 @@ const Navigation = () => {
 
                 <DropdownMenuSeparator />
 
-                <div className="px-2 py-1.5 text-xs font-semibold text-gray-500 uppercase tracking-wide">
-                  Services
-                </div>
-
-                {servicesItems.map((item) =>
-                  item.external ? (
-                    <DropdownMenuItem
-                      key={item.label}
-                      onClick={() => {
-                        window.open(item.to, '_blank');
-                        setIsMenuOpen(false);
-                      }}
-                    >
-                      {item.label}
-                    </DropdownMenuItem>
-                  ) : (
-                    <DropdownMenuItem key={item.label} asChild>
-                      <Link to={item.to} className="w-full" onClick={() => setIsMenuOpen(false)}>
-                        {item.label}
-                      </Link>
-                    </DropdownMenuItem>
-                  )
-                )}
-
-                <DropdownMenuSeparator />
+                <DropdownMenuItem asChild>
+                  <Link to="/keynotes-workshops" className="w-full" onClick={() => setIsMenuOpen(false)}>
+                    Keynotes
+                  </Link>
+                </DropdownMenuItem>
 
                 <DropdownMenuItem asChild>
                   <Link to="/pricing" className="w-full" onClick={() => setIsMenuOpen(false)}>
-                    Pricing
+                    Services
                   </Link>
                 </DropdownMenuItem>
 
@@ -133,6 +113,7 @@ const Navigation = () => {
                     Free AI Upskilling
                   </Link>
                 </DropdownMenuItem>
+
 
                 <DropdownMenuItem asChild>
                   <Link to="/contact" className="w-full" onClick={() => setIsMenuOpen(false)}>
