@@ -391,22 +391,22 @@ const ServiceCard = ({ card }: { card: Card }) => {
   );
 };
 
-const Services = () => {
+const Pricing = () => {
   return (
     <div className="min-h-screen font-sans" style={{ fontFamily: "'Inter', system-ui, sans-serif", background: "var(--lbl-paper)" }}>
       <Helmet>
-        <title>Services & Pricing | Launch by Lunch</title>
+        <title>Pricing | Launch by Lunch</title>
         <meta
           name="description"
           content="Practical AI services for small businesses. Discovery calls, hands-on workshops, custom-built AI Chief of Staff, readiness assessments, private team trainings, strategic implementations, and monthly advisory."
         />
-        <link rel="canonical" href="https://launchbylunch.co/services" />
-        <meta property="og:title" content="Services & Pricing | Launch by Lunch" />
+        <link rel="canonical" href="https://launchbylunch.co/pricing" />
+        <meta property="og:title" content="Pricing | Launch by Lunch" />
         <meta
           property="og:description"
           content="Priced-plainly AI services for small businesses. From a free discovery call to fully built systems."
         />
-        <meta property="og:url" content="https://launchbylunch.co/services" />
+        <meta property="og:url" content="https://launchbylunch.co/pricing" />
         <meta property="og:type" content="website" />
       </Helmet>
 
@@ -603,4 +603,4 @@ const Services = () => {
   );
 };
 
-export default Services;
+export default Pricing;
