@@ -383,6 +383,19 @@ const ServiceCard = ({ card }: { card: Card }) => {
           <p className="text-lg text-gray-700 leading-relaxed mt-4 mb-6">
             {card.desc}
           </p>
+
+          {card.quote && (
+            <blockquote className="relative mt-2 mb-8 pl-5 border-l-[3px] border-[var(--lbl-orange)]">
+              <p className="text-[17px] italic text-gray-700 leading-relaxed mb-3">
+                &ldquo;{card.quote.text}&rdquo;
+              </p>
+              <footer>
+                <div className="font-semibold text-[var(--lbl-eggplant)] text-base">{card.quote.name}</div>
+                <div className="text-sm text-gray-500">{card.quote.title}</div>
+              </footer>
+            </blockquote>
+          )}
+
           <div className="mt-auto pt-2">
             <CTAButton card={card} />
           </div>
