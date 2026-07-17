@@ -339,15 +339,15 @@ const CTAButton = ({
 
 const ServiceCard = ({ card }: { card: Card }) => {
   const Icon = card.icon;
+  const theme = CARD_THEMES[card.name] ?? CARD_THEMES["Discovery Call"];
   return (
     <article
-      className="relative bg-white rounded-2xl overflow-hidden border border-[var(--lbl-lilac)]/40"
+      className={`relative ${theme.surface} rounded-2xl overflow-hidden border border-[var(--lbl-lilac)]/50`}
       style={{ boxShadow: "0 8px 24px rgba(23,10,31,0.10)" }}
     >
       {/* gradient top border */}
       <div
-        className="h-[5px] w-full"
-        style={{ background: "var(--grad-brand)" }}
+        className={`h-[5px] w-full ${theme.bar}`}
         aria-hidden
       />
       <div className="p-8 sm:p-10 grid gap-8 md:grid-cols-[1fr_1.4fr]">
@@ -355,8 +355,7 @@ const ServiceCard = ({ card }: { card: Card }) => {
         <div className="flex flex-col">
           <div className="flex items-start gap-4 mb-5">
             <div
-              className="shrink-0 w-12 h-12 rounded-[14px] flex items-center justify-center text-white"
-              style={{ background: "var(--grad-brand)" }}
+              className={`shrink-0 w-12 h-12 rounded-[14px] flex items-center justify-center text-white ${theme.bar}`}
             >
               <Icon className="h-6 w-6" />
             </div>
@@ -384,7 +383,7 @@ const ServiceCard = ({ card }: { card: Card }) => {
         </div>
 
         {/* right: included / deliverables / best for */}
-        <div className="md:border-l md:border-[var(--lbl-lilac)]/40 md:pl-10">
+        <div className={`md:border-l ${theme.divider} md:pl-10`}>
           <div className="text-xs font-bold uppercase tracking-widest text-[var(--lbl-orange)] mb-3">
             What&apos;s included
           </div>
