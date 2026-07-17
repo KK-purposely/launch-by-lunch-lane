@@ -32,6 +32,7 @@ type Card = {
   note?: string;
   cta: { label: string; href: string; external?: boolean; internal?: boolean };
   footnote?: React.ReactNode;
+  quote?: { text: string; name: string; title: string };
 };
 
 type CardTheme = {
@@ -47,32 +48,32 @@ const CARD_THEMES: Record<string, CardTheme> = {
     divider: "border-lbl-ink/10",
   },
   "Join a Public Workshop": {
-    surface: "bg-lbl-orange-scale-50",
+    surface: "bg-white",
     bar: "bg-gradient-to-r from-lbl-magenta to-lbl-orange",
     divider: "border-lbl-orange/10",
   },
   "Custom-Built Chief of Staff": {
-    surface: "bg-lbl-magenta-scale-50",
+    surface: "bg-white",
     bar: "bg-gradient-to-r from-lbl-eggplant via-lbl-magenta to-lbl-orange",
     divider: "border-lbl-magenta/10",
   },
   "AI Readiness Assessment": {
-    surface: "bg-eggplant-50",
+    surface: "bg-white",
     bar: "bg-gradient-to-r from-lbl-eggplant to-lbl-magenta",
     divider: "border-lbl-eggplant/10",
   },
   "Private Team Workshop": {
-    surface: "bg-eggplant-100",
+    surface: "bg-white",
     bar: "bg-gradient-to-r from-lbl-orange to-lbl-magenta",
     divider: "border-lbl-orange/10",
   },
   "Strategic Implementation": {
-    surface: "bg-lbl-orange-scale-100",
+    surface: "bg-white",
     bar: "bg-gradient-to-r from-lbl-ink to-lbl-magenta",
     divider: "border-lbl-ink/10",
   },
   "Monthly AI Advisory Retainer": {
-    surface: "bg-lbl-magenta-scale-100",
+    surface: "bg-white",
     bar: "bg-gradient-to-r from-lbl-magenta to-lbl-ink",
     divider: "border-lbl-magenta/10",
   },
@@ -125,6 +126,11 @@ const cards: Card[] = [
       "Bonus: one year of Launch by Lunch community access, events, and office hours",
     ],
     bestFor: "Founders, consultants, and solo operators juggling many priorities.",
+    quote: {
+      text: "It's been a huge help. I've been focused on capacity lately, and finding real solutions to the load I carry every day. My Chief of Staff lets me put down the weight until I need to pick it back up.",
+      name: "Simone Bernstein",
+      title: "CEO, Wellth Society",
+    },
     cta: { label: "See how it works", href: "/claude-code", internal: true },
   },
   {
@@ -377,6 +383,19 @@ const ServiceCard = ({ card }: { card: Card }) => {
           <p className="text-lg text-gray-700 leading-relaxed mt-4 mb-6">
             {card.desc}
           </p>
+
+          {card.quote && (
+            <blockquote className="relative mt-2 mb-8 pl-5 border-l-[3px] border-[var(--lbl-orange)]">
+              <p className="text-[17px] italic text-gray-700 leading-relaxed mb-3">
+                &ldquo;{card.quote.text}&rdquo;
+              </p>
+              <footer>
+                <div className="font-semibold text-[var(--lbl-eggplant)] text-base">{card.quote.name}</div>
+                <div className="text-sm text-gray-500">{card.quote.title}</div>
+              </footer>
+            </blockquote>
+          )}
+
           <div className="mt-auto pt-2">
             <CTAButton card={card} />
           </div>
@@ -541,11 +560,6 @@ const Pricing = () => {
               </div>
             ))}
           </div>
-
-          <p className="text-[var(--lbl-lilac)] text-lg max-w-3xl">
-            Global Editors&apos; Pick TEDx speaker. Millions of lines of code and hundreds of
-            automations built in plain English.
-          </p>
 
           {/* trusted-by strip */}
           <div className="mt-14 pt-10 border-t border-white/10">
