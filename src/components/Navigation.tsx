@@ -17,12 +17,6 @@ const Navigation = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
-  const servicesItems = [
-    { label: "Free AI Upskilling", to: "/free-upskilling-ma", external: false },
-    { label: "Public Events", to: "https://luma.com/launchbylunch", external: true },
-    { label: "Keynotes & Workshops", to: "/keynotes-workshops", external: false },
-    { label: "Chief of Staff", to: "/claude-code", external: false },
-  ];
 
   return (
     <nav className="bg-white shadow-sm border-b border-gray-200 sticky top-0 z-50">
