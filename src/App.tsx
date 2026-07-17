@@ -8,6 +8,7 @@ import { HelmetProvider } from "react-helmet-async";
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 import Services from "./pages/Services";
+import Pricing from "./pages/Pricing";
 import Accelerators from "./pages/Accelerators";
 import About from "./pages/About";
 import MembersOnly from "./pages/MembersOnly";
