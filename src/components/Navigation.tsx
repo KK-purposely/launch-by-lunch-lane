@@ -149,6 +149,12 @@ const Navigation = () => {
                 <DropdownMenuSeparator />
 
                 <DropdownMenuItem asChild>
+                  <Link to="/pricing" className="w-full" onClick={() => setIsMenuOpen(false)}>
+                    Pricing
+                  </Link>
+                </DropdownMenuItem>
+
+                <DropdownMenuItem asChild>
                   <Link to="/free-upskilling-ma" className="w-full" onClick={() => setIsMenuOpen(false)}>
                     Free AI Upskilling
                   </Link>
