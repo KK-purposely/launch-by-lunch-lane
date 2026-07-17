@@ -572,9 +572,13 @@ const Pricing = () => {
             <div className="text-xs uppercase tracking-widest text-[var(--lbl-lilac)]/70 mb-5">
               Trusted by teams at
             </div>
-            <div className="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-8 gap-4 text-[var(--lbl-lilac)] text-center">
-              {logos.map((l) => (
-                <span key={l} className="text-sm font-semibold opacity-80 py-1">
+            <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-5 text-[var(--lbl-lilac)] text-center">
+              {logos.map((l, i) => (
+                <span
+                  key={l}
+                  className="text-base sm:text-lg font-semibold opacity-80 py-2 sm:py-3 px-2 rounded-lg transition-all duration-300 hover:opacity-100 hover:text-white hover:scale-105 hover:bg-white/5"
+                  style={{ animationDelay: `${i * 40}ms` }}
+                >
                   {l}
                 </span>
               ))}
