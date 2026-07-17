@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import { Menu, ChevronDown } from "lucide-react";
+import { Menu } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import {
   DropdownMenu,
@@ -17,12 +17,6 @@ const Navigation = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
-  const servicesItems = [
-    { label: "Free AI Upskilling", to: "/free-upskilling-ma", external: false },
-    { label: "Public Events", to: "https://luma.com/launchbylunch", external: true },
-    { label: "Keynotes & Workshops", to: "/keynotes-workshops", external: false },
-    { label: "Chief of Staff", to: "/claude-code", external: false },
-  ];
 
   return (
     <nav className="bg-white shadow-sm border-b border-gray-200 sticky top-0 z-50">
@@ -48,38 +42,18 @@ const Navigation = () => {
                   About
                 </Link>
 
-                <DropdownMenu>
-                  <DropdownMenuTrigger className="px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-lbl-orange focus:outline-none inline-flex items-center gap-1">
-                    Services
-                    <ChevronDown className="h-4 w-4" />
-                  </DropdownMenuTrigger>
-                  <DropdownMenuContent align="start" className="w-48 bg-white">
-                    {servicesItems.map((item) =>
-                      item.external ? (
-                        <DropdownMenuItem
-                          key={item.label}
-                          onClick={() => window.open(item.to, '_blank')}
-                        >
-                          {item.label}
-                        </DropdownMenuItem>
-                      ) : (
-                        <DropdownMenuItem key={item.label} asChild>
-                          <Link to={item.to} className="w-full">
-                            {item.label}
-                          </Link>
-                        </DropdownMenuItem>
-                      )
-                    )}
-                  </DropdownMenuContent>
-                </DropdownMenu>
+                <Link to="/keynotes-workshops" className="px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-lbl-orange">
+                  Keynotes
+                </Link>
 
                 <Link to="/pricing" className="px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-lbl-orange">
-                  Pricing
+                  Services
                 </Link>
 
                 <Link to="/free-upskilling-ma" className="px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-lbl-orange">
                   Free AI Upskilling
                 </Link>
+
 
                 <Link to="/contact" className="px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-lbl-orange">
                   Contact Us
@@ -122,35 +96,15 @@ const Navigation = () => {
 
                 <DropdownMenuSeparator />
 
-                <div className="px-2 py-1.5 text-xs font-semibold text-gray-500 uppercase tracking-wide">
-                  Services
-                </div>
-
-                {servicesItems.map((item) =>
-                  item.external ? (
-                    <DropdownMenuItem
-                      key={item.label}
-                      onClick={() => {
-                        window.open(item.to, '_blank');
-                        setIsMenuOpen(false);
-                      }}
-                    >
-                      {item.label}
-                    </DropdownMenuItem>
-                  ) : (
-                    <DropdownMenuItem key={item.label} asChild>
-                      <Link to={item.to} className="w-full" onClick={() => setIsMenuOpen(false)}>
-                        {item.label}
-                      </Link>
-                    </DropdownMenuItem>
-                  )
-                )}
-
-                <DropdownMenuSeparator />
+                <DropdownMenuItem asChild>
+                  <Link to="/keynotes-workshops" className="w-full" onClick={() => setIsMenuOpen(false)}>
+                    Keynotes
+                  </Link>
+                </DropdownMenuItem>
 
                 <DropdownMenuItem asChild>
                   <Link to="/pricing" className="w-full" onClick={() => setIsMenuOpen(false)}>
-                    Pricing
+                    Services
                   </Link>
                 </DropdownMenuItem>
 
@@ -159,6 +113,7 @@ const Navigation = () => {
                     Free AI Upskilling
                   </Link>
                 </DropdownMenuItem>
+
 
                 <DropdownMenuItem asChild>
                   <Link to="/contact" className="w-full" onClick={() => setIsMenuOpen(false)}>
