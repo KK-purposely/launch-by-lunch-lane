@@ -18,6 +18,32 @@ import Footer from "@/components/Footer";
 const DISCOVERY_URL = "https://calendly.com/karen-launchbylunch/30min";
 const LUMA_URL = "https://luma.com/launchbylunch";
 
+function LogoMark({ name, src }: { name: string; src?: string }) {
+  const [failed, setFailed] = useState(false);
+  const showImage = src && !failed;
+  return (
+    <div
+      className="flex items-center justify-center h-12 sm:h-14 px-2 group"
+      title={name}
+    >
+      {showImage ? (
+        <img
+          src={src}
+          alt={name}
+          onError={() => setFailed(true)}
+          loading="lazy"
+          className="max-h-full max-w-[140px] w-auto object-contain opacity-60 group-hover:opacity-100 transition-opacity duration-300"
+          style={{ filter: "grayscale(1) brightness(0) invert(1)" }}
+        />
+      ) : (
+        <span className="text-center text-white/60 group-hover:text-white transition-colors duration-300 text-sm sm:text-base font-semibold uppercase tracking-[0.14em] leading-tight">
+          {name}
+        </span>
+      )}
+    </div>
+  );
+}
+
 type Card = {
   eyebrow?: string;
   name: string;
