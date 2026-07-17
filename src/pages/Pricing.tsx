@@ -415,10 +415,10 @@ const Pricing = () => {
         <div className="max-w-[1120px] mx-auto px-4 sm:px-6 pt-20 pb-16 sm:pt-28 sm:pb-24">
           <div className="max-w-3xl">
             <div className="eyebrow mb-5">PRICING</div>
-            <h1
-              className="gradient-text text-[44px] sm:text-[64px] lg:text-[76px] font-semibold leading-[1.05] tracking-[-0.02em] mb-6"
-            >
-              Practical AI, priced plainly.
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-[1.1] mb-6">
+              <span className="bg-gradient-to-r from-lbl-ink via-lbl-magenta to-lbl-orange bg-clip-text text-transparent leading-[1.1]">
+                Practical AI,<br /><span className="whitespace-nowrap">priced plainly.</span>
+              </span>
             </h1>
             <hr className="brand-rule mb-8" />
             <p className="text-xl sm:text-[22px] leading-relaxed text-[var(--lbl-eggplant)] mb-10">
