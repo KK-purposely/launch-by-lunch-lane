@@ -322,11 +322,11 @@ const ServiceCard = ({ card }: { card: Card }) => {
               </span>
             )}
           </div>
-          <h3 className="text-2xl sm:text-3xl font-extrabold text-[var(--lbl-eggplant)] tracking-tight leading-tight mb-3">
+          <h3 className="text-2xl sm:text-3xl font-semibold text-[var(--lbl-eggplant)] tracking-tight leading-tight mb-3">
             {card.name}
           </h3>
           <div className="mb-2">
-            <div className="text-3xl font-extrabold text-[var(--lbl-ink)] tracking-tight">
+            <div className="text-3xl font-semibold text-[var(--lbl-ink)] tracking-tight">
               {card.price}
             </div>
             <div className="text-sm text-gray-600 mt-1">{card.meta}</div>
@@ -416,7 +416,7 @@ const Pricing = () => {
           <div className="max-w-3xl">
             <div className="eyebrow mb-5">PRICING</div>
             <h1
-              className="gradient-text text-[44px] sm:text-[64px] lg:text-[76px] font-extrabold leading-[1.05] tracking-[-0.02em] mb-6"
+              className="gradient-text text-[44px] sm:text-[64px] lg:text-[76px] font-semibold leading-[1.05] tracking-[-0.02em] mb-6"
             >
               Practical AI, priced plainly.
             </h1>
@@ -456,7 +456,7 @@ const Pricing = () => {
         <div className="max-w-[1120px] mx-auto px-4 sm:px-6">
           <div className="max-w-2xl mb-14">
             <div className="eyebrow mb-4">INVESTMENT</div>
-            <h2 className="text-[36px] sm:text-[52px] font-extrabold leading-[1.05] tracking-[-0.02em] text-[var(--lbl-eggplant)]">
+            <h2 className="text-[36px] sm:text-[52px] font-semibold leading-[1.05] tracking-[-0.02em] text-[var(--lbl-eggplant)]">
               How we think about <span className="gradient-text grad-warm">investment</span>.
             </h2>
           </div>
@@ -479,7 +479,7 @@ const Pricing = () => {
       <section id="proof" className="py-20 sm:py-28 bg-ink text-white">
         <div className="max-w-[1120px] mx-auto px-4 sm:px-6">
           <div className="eyebrow mb-4">TRACK RECORD</div>
-          <h2 className="gradient-text grad-warm text-[40px] sm:text-[64px] font-extrabold leading-[1.05] tracking-[-0.02em] mb-6">
+          <h2 className="gradient-text grad-warm text-[40px] sm:text-[64px] font-semibold leading-[1.05] tracking-[-0.02em] mb-6">
             The receipts.
           </h2>
 
@@ -487,8 +487,8 @@ const Pricing = () => {
             {stats.map((s) => (
               <div key={s.label}>
                 <div
-                  className="text-[42px] sm:text-[56px] font-black leading-none tracking-tight text-[var(--lbl-orange)]"
-                  style={{ fontWeight: 900 }}
+                  className="text-[42px] sm:text-[56px] font-bold leading-none tracking-tight text-[var(--lbl-orange)]"
+                  style={{ fontWeight: 700 }}
                 >
                   {s.num}
                 </div>
@@ -548,7 +548,7 @@ const Pricing = () => {
         <div className="max-w-[1120px] mx-auto px-4 sm:px-6">
           <div className="max-w-2xl mb-14">
             <div className="eyebrow mb-4">FAQ</div>
-            <h2 className="text-[36px] sm:text-[52px] font-extrabold leading-[1.05] tracking-[-0.02em] text-[var(--lbl-eggplant)]">
+            <h2 className="text-[36px] sm:text-[52px] font-semibold leading-[1.05] tracking-[-0.02em] text-[var(--lbl-eggplant)]">
               Common <span className="gradient-text grad-warm">questions</span>.
             </h2>
           </div>
@@ -574,7 +574,7 @@ const Pricing = () => {
         style={{ background: "linear-gradient(120deg, #f1ebf7 0%, #faf0ec 55%, #ffffff 100%)" }}
       >
         <div className="max-w-[1120px] mx-auto px-4 sm:px-6 text-center">
-          <h2 className="gradient-text text-[42px] sm:text-[68px] font-extrabold leading-[1.05] tracking-[-0.02em] mb-8 max-w-3xl mx-auto">
+          <h2 className="gradient-text text-[42px] sm:text-[68px] font-semibold leading-[1.05] tracking-[-0.02em] mb-8 max-w-3xl mx-auto">
             Ready to put AI to work?
           </h2>
           <div className="flex flex-wrap items-center justify-center gap-5 mb-8">
