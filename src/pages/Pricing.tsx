@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
+import tedxLogo from "@/assets/tedx-logo.jpg.asset.json";
 import {
   Flame,
   Check,
