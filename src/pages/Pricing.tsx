@@ -248,23 +248,23 @@ const stats = [
   { num: "Top 100", label: "Voice, Massachusetts AI Coalition (Karen Kelly)" },
 ];
 
-const logos = [
-  "CIC",
-  "Techstars",
-  "KPMG",
-  "TEDx",
-  "Softheon",
-  "Harvard",
-  "Adobe",
-  "MassChallenge",
-  "Boston Business Journal",
-  "Startup Boston",
-  "Greater Boston Chamber of Commerce",
-  "Bank of America",
-  "Founder's Edge",
-  "Elixr",
-  "Proverb",
-  "Surfside Capital",
+const logos: { name: string; src?: string }[] = [
+  { name: "Adobe", src: "https://upload.wikimedia.org/wikipedia/commons/8/8d/Adobe_Corporate_logo.svg" },
+  { name: "KPMG", src: "https://upload.wikimedia.org/wikipedia/commons/0/0d/KPMG_logo.svg" },
+  { name: "Harvard", src: "https://upload.wikimedia.org/wikipedia/commons/c/cc/Harvard_University_logo.svg" },
+  { name: "TEDx", src: "https://upload.wikimedia.org/wikipedia/commons/1/1e/TEDx_logo.svg" },
+  { name: "Bank of America", src: "https://upload.wikimedia.org/wikipedia/commons/2/20/Bank_of_America_logo.svg" },
+  { name: "Techstars", src: "https://upload.wikimedia.org/wikipedia/commons/6/61/Techstars-logo-primary-full-color-rgb.svg" },
+  { name: "MassChallenge" },
+  { name: "CIC" },
+  { name: "Softheon" },
+  { name: "Boston Business Journal" },
+  { name: "Startup Boston" },
+  { name: "Greater Boston Chamber" },
+  { name: "Founder's Edge" },
+  { name: "Elixr" },
+  { name: "Proverb" },
+  { name: "Surfside Capital" },
 ];
 
 const testimonials = [
