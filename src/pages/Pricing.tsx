@@ -34,6 +34,50 @@ type Card = {
   footnote?: React.ReactNode;
 };
 
+type CardTheme = {
+  surface: string;
+  bar: string;
+  divider: string;
+};
+
+const CARD_THEMES: Record<string, CardTheme> = {
+  "Discovery Call": {
+    surface: "bg-white",
+    bar: "bg-gradient-to-r from-lbl-ink to-lbl-eggplant",
+    divider: "border-lbl-ink/10",
+  },
+  "Join a Public Workshop": {
+    surface: "bg-lbl-orange-scale-50",
+    bar: "bg-gradient-to-r from-lbl-magenta to-lbl-orange",
+    divider: "border-lbl-orange/10",
+  },
+  "Custom-Built Chief of Staff": {
+    surface: "bg-lbl-magenta-scale-50",
+    bar: "bg-gradient-to-r from-lbl-eggplant via-lbl-magenta to-lbl-orange",
+    divider: "border-lbl-magenta/10",
+  },
+  "AI Readiness Assessment": {
+    surface: "bg-eggplant-50",
+    bar: "bg-gradient-to-r from-lbl-eggplant to-lbl-magenta",
+    divider: "border-lbl-eggplant/10",
+  },
+  "Private Team Workshop": {
+    surface: "bg-eggplant-100",
+    bar: "bg-gradient-to-r from-lbl-orange to-lbl-magenta",
+    divider: "border-lbl-orange/10",
+  },
+  "Strategic Implementation": {
+    surface: "bg-lbl-orange-scale-100",
+    bar: "bg-gradient-to-r from-lbl-ink to-lbl-magenta",
+    divider: "border-lbl-ink/10",
+  },
+  "Monthly AI Advisory Retainer": {
+    surface: "bg-lbl-magenta-scale-100",
+    bar: "bg-gradient-to-r from-lbl-magenta to-lbl-ink",
+    divider: "border-lbl-magenta/10",
+  },
+};
+
 const cards: Card[] = [
   {
     name: "Discovery Call",
