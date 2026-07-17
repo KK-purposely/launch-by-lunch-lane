@@ -126,6 +126,11 @@ const cards: Card[] = [
       "Bonus: one year of Launch by Lunch community access, events, and office hours",
     ],
     bestFor: "Founders, consultants, and solo operators juggling many priorities.",
+    quote: {
+      text: "It's been a huge help. I've been focused on capacity lately, and finding real solutions to the load I carry every day. My Chief of Staff lets me put down the weight until I need to pick it back up.",
+      name: "Simone Bernstein",
+      title: "CEO, Wellth Society",
+    },
     cta: { label: "See how it works", href: "/claude-code", internal: true },
   },
   {
