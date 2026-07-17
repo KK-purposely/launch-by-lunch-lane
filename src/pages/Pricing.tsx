@@ -572,9 +572,9 @@ const Pricing = () => {
             <div className="text-xs uppercase tracking-widest text-[var(--lbl-lilac)]/70 mb-5">
               Trusted by teams at
             </div>
-            <div className="flex flex-wrap gap-x-8 gap-y-4 text-[var(--lbl-lilac)]">
+            <div className="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-8 gap-4 text-[var(--lbl-lilac)] text-center">
               {logos.map((l) => (
-                <span key={l} className="text-lg font-semibold opacity-80">
+                <span key={l} className="text-sm font-semibold opacity-80 py-1">
                   {l}
                 </span>
               ))}
