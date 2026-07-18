@@ -11,6 +11,7 @@ import elixrLogo from "@/assets/elixr-logo.png.asset.json";
 import theEngineLogo from "@/assets/the-engine-logo.png.asset.json";
 import womenApplyingAiLogo from "@/assets/women-applying-ai-logo.png.asset.json";
 import greaterBostonChamberLogo from "@/assets/greater-boston-chamber.png.asset.json";
+import simoneBernsteinPhoto from "@/assets/simone-bernstein.png.asset.json";
 import katLazellPhoto from "@/assets/testimonial-kat-lazell.jpg";
 import amandaSwiatochaPhoto from "@/assets/testimonial-amanda-swiatocha.jpg";
 import jessLynchPhoto from "@/assets/testimonial-jess-lynch.jpg";
@@ -81,7 +82,7 @@ type Card = {
   note?: string;
   cta: { label: string; href: string; external?: boolean; internal?: boolean };
   footnote?: React.ReactNode;
-  quote?: { text: string; name: string; title: string };
+  quote?: { text: string; name: string; title: string; image?: string };
 };
 
 type CardTheme = {
@@ -179,6 +180,7 @@ const cards: Card[] = [
       text: "It's been a huge help. I've been focused on capacity lately, and finding real solutions to the load I carry every day. My Chief of Staff lets me put down the weight until I need to pick it back up.",
       name: "Simone Bernstein",
       title: "CEO, Wellth Society",
+      image: simoneBernsteinPhoto.url,
     },
     cta: { label: "See how it works", href: "/claude-code", internal: true },
   },
@@ -442,9 +444,19 @@ const ServiceCard = ({ card }: { card: Card }) => {
               <p className="text-[17px] italic text-gray-700 leading-relaxed mb-3">
                 &ldquo;{card.quote.text}&rdquo;
               </p>
-              <footer>
-                <div className="font-semibold text-[var(--lbl-eggplant)] text-base">{card.quote.name}</div>
-                <div className="text-sm text-gray-500">{card.quote.title}</div>
+              <footer className="flex items-center gap-3">
+                {card.quote.image && (
+                  <img
+                    src={card.quote.image}
+                    alt={card.quote.name}
+                    className="h-12 w-12 rounded-full object-cover ring-2 ring-[var(--lbl-orange)]/20 flex-shrink-0"
+                    loading="lazy"
+                  />
+                )}
+                <div>
+                  <div className="font-semibold text-[var(--lbl-eggplant)] text-base">{card.quote.name}</div>
+                  <div className="text-sm text-gray-500">{card.quote.title}</div>
+                </div>
               </footer>
             </blockquote>
           )}
