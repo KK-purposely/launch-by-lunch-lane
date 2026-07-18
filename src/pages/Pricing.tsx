@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
+import katLazellPhoto from "@/assets/kat-lazell.jpg.asset.json";
 import anthropicLogo from "@/assets/anthropic-certified.png.asset.json";
 import harvardLogo from "@/assets/harvard-logo.png.asset.json";
 import cicLogo from "@/assets/cic-logo.png.asset.json";
@@ -299,22 +300,16 @@ const logos: { name: string; src?: string; scale?: number; filter?: string }[] =
   { name: "Harvard", src: harvardLogo.url, filter: "none" },
   { name: "Bank of America", src: "https://upload.wikimedia.org/wikipedia/commons/2/20/Bank_of_America_logo.svg" },
   { name: "Techstars", src: "https://upload.wikimedia.org/wikipedia/commons/4/48/Techstars_logo.png" },
-  { name: "CIC", src: cicLogo.url },
+  { name: "Greater Boston Chamber of Commerce", src: greaterBostonChamberLogo.url, scale: 1.5 },
   { name: "Softheon", src: softheonLogo.url },
   { name: "The Engine", src: theEngineLogo.url, scale: 1.5 },
   { name: "Women Applying AI", src: womenApplyingAiLogo.url },
   { name: "Elixr", src: elixrLogo.url, filter: "none" },
   { name: "Surfside Capital", src: surfsideLogo.url },
-  { name: "Greater Boston Chamber of Commerce", src: greaterBostonChamberLogo.url, scale: 1.5 },
+  { name: "CIC", src: cicLogo.url },
 ];
 
 const testimonials = [
-  {
-    quote:
-      "Karen's AI workshop at the CIC accelerator was invigorating and clarifying for many non-technical founders in the room. You could feel the energy shift from intimidation to curiosity, to momentum.",
-    name: "Kat Lazell",
-    title: "Senior Program Manager, Cambridge Innovation Center",
-  },
   {
     quote:
       "Within 45 minutes we had built our first app with AI. She's incredibly relatable and makes the complex seem easy, leading to her session being the most talked about of the day.",
@@ -617,6 +612,27 @@ const Pricing = () => {
               </div>
             ))}
           </div>
+
+          {/* featured Kat Lazell quote */}
+          <figure className="mt-16 max-w-4xl mx-auto bg-white/5 backdrop-blur-sm border-l-4 border-[var(--lbl-orange)] rounded-2xl p-6 md:p-8">
+            <div className="flex flex-col md:flex-row items-start gap-6">
+              <img
+                src={katLazellPhoto.url}
+                alt="Kat Lazell, Senior Program Manager at Cambridge Innovation Center"
+                className="w-20 h-20 md:w-24 md:h-24 rounded-full object-cover flex-shrink-0"
+                loading="lazy"
+              />
+              <div>
+                <blockquote className="text-lg md:text-xl text-white/90 leading-relaxed italic">
+                  &ldquo;Karen&rsquo;s AI workshop at the CIC accelerator was invigorating and clarifying for many non-technical founders in the room. You could feel the energy shift from intimidation to curiosity, to momentum.&rdquo;
+                </blockquote>
+                <figcaption className="mt-4 text-base font-semibold text-white">
+                  Kat Lazell
+                  <span className="block font-normal text-[var(--lbl-lilac)]">Senior Program Manager, Cambridge Innovation Center</span>
+                </figcaption>
+              </div>
+            </div>
+          </figure>
 
           {/* trusted-by strip */}
           <div className="mt-14 pt-10 border-t border-white/10">
