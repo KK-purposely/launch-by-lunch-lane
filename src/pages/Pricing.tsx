@@ -312,12 +312,6 @@ const logos: { name: string; src?: string; scale?: number; filter?: string }[] =
 const testimonials = [
   {
     quote:
-      "Karen's AI workshop at the CIC accelerator was invigorating and clarifying for many non-technical founders in the room. You could feel the energy shift from intimidation to curiosity, to momentum.",
-    name: "Kat Lazell",
-    title: "Senior Program Manager, Cambridge Innovation Center",
-  },
-  {
-    quote:
       "Within 45 minutes we had built our first app with AI. She's incredibly relatable and makes the complex seem easy, leading to her session being the most talked about of the day.",
     name: "Jess Lynch",
     title: "Founding Partner, FoundersEdge",
