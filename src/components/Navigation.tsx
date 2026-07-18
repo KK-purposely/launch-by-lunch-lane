@@ -38,16 +38,16 @@ const Navigation = () => {
                   About
                 </Link>
 
-                <Link to="/keynotes-workshops" className="px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-lbl-orange">
-                  Keynotes
-                </Link>
-
                 <Link to="/pricing" className="px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-lbl-orange">
                   Services
                 </Link>
 
                 <Link to="/comm-corp-express-ai-training-in-ma" className="px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-lbl-orange">
                   Free AI Upskilling
+                </Link>
+
+                <Link to="/keynotes-workshops" className="px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-lbl-orange">
+                  Keynotes
                 </Link>
 
                 <Link to="/contact" className="px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-lbl-orange">
@@ -84,12 +84,6 @@ const Navigation = () => {
                 </DropdownMenuItem>
 
                 <DropdownMenuItem asChild>
-                  <Link to="/keynotes-workshops" className="w-full" onClick={() => setIsMenuOpen(false)}>
-                    Keynotes
-                  </Link>
-                </DropdownMenuItem>
-
-                <DropdownMenuItem asChild>
                   <Link to="/pricing" className="w-full" onClick={() => setIsMenuOpen(false)}>
                     Services
                   </Link>
@@ -98,6 +92,12 @@ const Navigation = () => {
                 <DropdownMenuItem asChild>
                   <Link to="/comm-corp-express-ai-training-in-ma" className="w-full" onClick={() => setIsMenuOpen(false)}>
                     Free AI Upskilling
+                  </Link>
+                </DropdownMenuItem>
+
+                <DropdownMenuItem asChild>
+                  <Link to="/keynotes-workshops" className="w-full" onClick={() => setIsMenuOpen(false)}>
+                    Keynotes
                   </Link>
                 </DropdownMenuItem>
 
