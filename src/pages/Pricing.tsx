@@ -1,8 +1,14 @@
 import React, { useState } from "react";
 import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
-import tedxLogo from "@/assets/tedx-logo.png.asset.json";
 import anthropicLogo from "@/assets/anthropic-certified.png.asset.json";
+import harvardLogo from "@/assets/harvard-logo.png.asset.json";
+import cicLogo from "@/assets/cic-logo.png.asset.json";
+import softheonLogo from "@/assets/softheon-logo.png.asset.json";
+import surfsideLogo from "@/assets/surfside-logo.png.asset.json";
+import foundersEdgeLogo from "@/assets/founders-edge-logo.png.asset.json";
+import theEngineLogo from "@/assets/the-engine-logo.png.asset.json";
+import womenApplyingAiLogo from "@/assets/women-applying-ai-logo.png.asset.json";
 import {
   Flame,
   Check,
@@ -279,20 +285,15 @@ const stats = [
 const logos: { name: string; src?: string }[] = [
   { name: "Adobe", src: "https://upload.wikimedia.org/wikipedia/commons/6/6e/Adobe_Corporate_logo.svg" },
   { name: "KPMG", src: "https://upload.wikimedia.org/wikipedia/commons/d/db/KPMG_blue_logo.svg" },
-  { name: "Harvard", src: "https://upload.wikimedia.org/wikipedia/commons/7/70/Harvard_University_logo.svg" },
-  { name: "TEDx", src: tedxLogo.url },
+  { name: "Harvard", src: harvardLogo.url },
   { name: "Bank of America", src: "https://upload.wikimedia.org/wikipedia/commons/2/20/Bank_of_America_logo.svg" },
   { name: "Techstars", src: "https://upload.wikimedia.org/wikipedia/commons/4/48/Techstars_logo.png" },
-  { name: "MassChallenge" },
-  { name: "CIC" },
-  { name: "Softheon" },
-  { name: "Boston Business Journal" },
-  { name: "Startup Boston" },
-  { name: "Greater Boston Chamber" },
-  { name: "Founder's Edge" },
-  { name: "Elixr" },
-  { name: "Proverb" },
-  { name: "Surfside Capital" },
+  { name: "CIC", src: cicLogo.url },
+  { name: "Softheon", src: softheonLogo.url },
+  { name: "The Engine", src: theEngineLogo.url },
+  { name: "Women Applying AI", src: womenApplyingAiLogo.url },
+  { name: "Founder's Edge", src: foundersEdgeLogo.url },
+  { name: "Surfside Capital", src: surfsideLogo.url },
 ];
 
 const testimonials = [
