@@ -197,24 +197,24 @@ const Industries = () => {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {verticals.map((v) => (
               <div
                 key={v.name}
-                className="group relative bg-white rounded-3xl border-2 border-gray-200 p-8 hover:border-lbl-orange hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 flex flex-col"
+                className="group relative bg-white rounded-3xl border-2 border-gray-200 p-6 hover:border-lbl-orange hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 flex flex-col"
               >
-                <div className="flex items-center gap-4 mb-4">
+                <div className="flex items-center gap-4 mb-3">
                   <div className="p-3 rounded-2xl bg-gradient-to-br from-lbl-ink to-lbl-orange">
                     <v.icon className="h-6 w-6 text-white" />
                   </div>
                   <div>
-                    <h3 className="text-2xl font-bold text-lbl-ink">{v.name}</h3>
+                    <h3 className="text-xl font-bold text-lbl-ink">{v.name}</h3>
                     <p className="text-sm text-lbl-ink/60">{v.audience}</p>
                   </div>
                 </div>
-                <p className="text-lg font-semibold text-lbl-eggplant mb-3">{v.hook}</p>
-                <p className="text-base text-lbl-ink/75 leading-relaxed mb-6">{v.detail}</p>
-                <div className="flex flex-wrap gap-2 mb-6 mt-auto">
+                <p className="text-lg font-semibold text-lbl-eggplant mb-2">{v.hook}</p>
+                <p className="text-lg text-lbl-ink/75 leading-relaxed mb-5">{v.detail}</p>
+                <div className="flex flex-wrap gap-2 mb-5 mt-auto">
                   {v.tags.map((t) => (
                     <span key={t} className="px-3 py-1 rounded-full text-xs font-medium bg-lbl-paper text-lbl-ink border border-gray-200">
                       {t}
