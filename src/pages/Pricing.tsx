@@ -409,44 +409,44 @@ const ServiceCard = ({ card }: { card: Card }) => {
   return (
     <article
       className={`relative ${theme.surface} rounded-2xl overflow-hidden border border-[var(--lbl-lilac)]/50`}
-      style={{ boxShadow: "0 8px 24px rgba(23,10,31,0.10)" }}
+      style={{ boxShadow: "0 6px 18px rgba(23,10,31,0.08)" }}
     >
       {/* gradient top border */}
       <div
-        className={`h-[5px] w-full ${theme.bar}`}
+        className={`h-[4px] w-full ${theme.bar}`}
         aria-hidden
       />
-      <div className="p-8 sm:p-10 grid gap-8 md:grid-cols-[1fr_1.4fr]">
+      <div className="p-5 sm:p-7 grid gap-6 md:grid-cols-[1fr_1.4fr]">
         {/* left: name / price / cta */}
         <div className="flex flex-col">
-          <div className="flex items-start gap-4 mb-5">
+          <div className="flex items-start gap-3 mb-4">
             <div
-              className={`shrink-0 w-12 h-12 rounded-[14px] flex items-center justify-center text-white ${theme.bar}`}
+              className={`shrink-0 w-10 h-10 rounded-[12px] flex items-center justify-center text-white ${theme.bar}`}
             >
-              <Icon className="h-6 w-6" />
+              <Icon className="h-5 w-5" />
             </div>
             {card.badge && (
-              <span className="inline-flex items-center h-7 px-3 rounded-full text-xs font-bold uppercase tracking-wider bg-[var(--lbl-orange)]/10 text-[var(--lbl-orange)]">
+              <span className="inline-flex items-center h-6 px-2.5 rounded-full text-[11px] font-bold uppercase tracking-wider bg-[var(--lbl-orange)]/10 text-[var(--lbl-orange)]">
                 {card.badge}
               </span>
             )}
           </div>
-          <h3 className="text-2xl sm:text-3xl font-semibold text-[var(--lbl-eggplant)] tracking-tight leading-tight mb-3">
+          <h3 className="text-xl sm:text-2xl font-semibold text-[var(--lbl-eggplant)] tracking-tight leading-tight mb-2">
             {card.name}
           </h3>
           <div className="mb-2">
-            <div className="text-3xl font-semibold text-[var(--lbl-ink)] tracking-tight">
+            <div className="text-2xl font-semibold text-[var(--lbl-ink)] tracking-tight">
               {card.price}
             </div>
             <div className="text-sm text-gray-600 mt-1">{card.meta}</div>
           </div>
-          <p className="text-lg text-gray-700 leading-relaxed mt-4 mb-6">
+          <p className="text-base text-gray-700 leading-relaxed mt-3 mb-5">
             {card.desc}
           </p>
 
           {card.quote && (
-            <blockquote className="relative mt-2 mb-8 pl-5 border-l-[3px] border-[var(--lbl-orange)]">
-              <p className="text-[17px] italic text-gray-700 leading-relaxed mb-3">
+            <blockquote className="relative mt-2 mb-6 pl-4 border-l-[3px] border-[var(--lbl-orange)]">
+              <p className="text-base italic text-gray-700 leading-relaxed mb-3">
                 &ldquo;{card.quote.text}&rdquo;
               </p>
               <footer className="flex items-center gap-3">
@@ -454,7 +454,7 @@ const ServiceCard = ({ card }: { card: Card }) => {
                   <img
                     src={card.quote.image}
                     alt={card.quote.name}
-                    className="h-12 w-12 rounded-full object-cover ring-2 ring-[var(--lbl-orange)]/20 flex-shrink-0"
+                    className="h-10 w-10 rounded-full object-cover ring-2 ring-[var(--lbl-orange)]/20 flex-shrink-0"
                     loading="lazy"
                   />
                 )}
@@ -472,21 +472,21 @@ const ServiceCard = ({ card }: { card: Card }) => {
         </div>
 
         {/* right: included / deliverables / best for */}
-        <div className={`md:border-l ${theme.divider} md:pl-10`}>
+        <div className={`md:border-l ${theme.divider} md:pl-8`}>
           <div className="text-xs font-bold uppercase tracking-widest text-[var(--lbl-orange)] mb-3">
             What&apos;s included
           </div>
-          <ul className="space-y-3 mb-6">
+          <ul className="space-y-2 mb-5">
             {card.included.map((item, i) => (
-              <li key={i} className="flex gap-3 text-[17px] text-gray-800 leading-relaxed">
-                <Flame className="h-5 w-5 shrink-0 mt-0.5 text-[var(--lbl-orange)]" />
+              <li key={i} className="flex gap-3 text-base text-gray-800 leading-relaxed">
+                <Flame className="h-4 w-4 shrink-0 mt-0.5 text-[var(--lbl-orange)]" />
                 <span>{item}</span>
               </li>
             ))}
           </ul>
 
           {card.deliverables && (
-            <div className="mb-6">
+            <div className="mb-5">
               <div className="text-xs font-bold uppercase tracking-widest text-[var(--lbl-eggplant)] mb-3">
                 {card.name === "AI Readiness Assessment" ? "Deliverables" : "Common projects"}
               </div>
@@ -494,7 +494,7 @@ const ServiceCard = ({ card }: { card: Card }) => {
                 {card.deliverables.map((d) => (
                   <span
                     key={d}
-                    className="inline-flex items-center h-8 px-3 rounded-full text-sm font-medium bg-[var(--lbl-lilac)]/25 text-[var(--lbl-eggplant)] border border-[var(--lbl-lilac)]/60"
+                    className="inline-flex items-center h-7 px-3 rounded-full text-sm font-medium bg-[var(--lbl-lilac)]/25 text-[var(--lbl-eggplant)] border border-[var(--lbl-lilac)]/60"
                   >
                     {d}
                   </span>
@@ -504,18 +504,18 @@ const ServiceCard = ({ card }: { card: Card }) => {
           )}
 
           {card.note && (
-            <p className="text-sm text-gray-600 italic mb-6">{card.note}</p>
+            <p className="text-sm text-gray-600 italic mb-5">{card.note}</p>
           )}
 
-          <div className="pt-5 border-t border-[var(--lbl-lilac)]/40">
+          <div className="pt-4 border-t border-[var(--lbl-lilac)]/40">
             <div className="text-xs font-bold uppercase tracking-widest text-[var(--lbl-eggplant)] mb-2">
               Best for
             </div>
-            <p className="text-[17px] text-gray-800">{card.bestFor}</p>
+            <p className="text-base text-gray-800">{card.bestFor}</p>
           </div>
 
           {card.footnote && (
-            <p className="mt-5 text-sm text-gray-500 leading-relaxed">{card.footnote}</p>
+            <p className="mt-4 text-sm text-gray-500 leading-relaxed">{card.footnote}</p>
           )}
         </div>
       </div>
