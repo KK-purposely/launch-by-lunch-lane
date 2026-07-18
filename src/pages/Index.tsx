@@ -184,7 +184,7 @@ const Index = () => {
 
           <div className="relative max-w-6xl mx-auto px-4 sm:px-6 py-12 md:py-20">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16 items-start">
-              <div className="flex flex-col gap-6 w-full">
+              <div className="flex flex-col gap-6 w-full order-2 md:order-1">
                 <div className="min-h-[156px] md:min-h-[192px] flex flex-col justify-center gap-4">
                   <motion.span
                     className="inline-flex items-center self-start px-4 py-1.5 rounded-full bg-lbl-orange/10 border border-lbl-orange/30 text-lbl-orange text-sm md:text-base font-semibold tracking-wider uppercase"
@@ -244,7 +244,7 @@ const Index = () => {
 
 
               <motion.div
-                className="flex flex-col items-center justify-center gap-6 w-full"
+                className="flex flex-col items-center justify-center gap-6 w-full order-1 md:order-2"
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.3, ease: "easeOut" }}
