@@ -59,15 +59,9 @@ const About = () => {
               Join us for a public workshop, monthly AI co-working, or ask how we can bring your business into the new world of work.
             </p>
           </div>
-          <div className="mt-10 flex flex-col items-center">
-            <img
-              src="/lovable-uploads/karen-kelly.jpg"
-              alt="Karen Kelly, Founder and CEO of Launch by Lunch"
-              className="w-32 h-32 rounded-full object-cover shadow-lg mb-3"
-            />
-            <p className="font-bold text-lbl-ink text-lg">Karen Kelly</p>
-            <p className="text-lbl-orange font-semibold text-lg">Founder, CEO</p>
-          </div>
+          <p className="mt-10 text-lbl-ink font-semibold text-lg">
+            - Karen Kelly, Founder/CEO
+          </p>
         </div>
 
         {/* Team Photo and Bios Section */}
