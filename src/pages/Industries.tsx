@@ -126,9 +126,9 @@ const Industries = () => {
             Industries of every shape & size
           </p>
           <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
-            <span className="text-lbl-eggplant">Built by operators.</span>
+            <span className="text-lbl-eggplant">Built by operators</span>
             <br />
-            <span className="bg-grad-brand bg-clip-text text-transparent">Tuned to your world.</span>
+            <span className="bg-grad-brand bg-clip-text text-transparent">tuned to your world.</span>
           </h1>
           <p className="text-lg md:text-xl text-lbl-ink/80 leading-relaxed max-w-3xl">
             Our core team has spent careers inside advertising, media, healthcare, coaching, HR, technology, education, and finance. We think like small business owners because we are small business owners, and we've spent most of our collective careers either running one or working shoulder-to-shoulder inside one.
