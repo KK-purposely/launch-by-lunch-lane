@@ -326,30 +326,6 @@ const Index = () => {
           </div>
         </section>
 
-        {/* ═══ MOLLY QUOTE ═══ */}
-        <section className="py-10 md:py-14 bg-lbl-orange/5 border-y border-lbl-orange/10">
-          <div className="max-w-6xl mx-auto px-4 sm:px-6">
-            <Reveal>
-              <figure className="flex flex-col md:flex-row items-start gap-6">
-                <img
-                  src={mollyPapermaster.url}
-                  alt="Molly Papermaster, Chief of Staff at The Engine"
-                  className="w-20 h-20 md:w-24 md:h-24 rounded-full object-cover flex-shrink-0"
-                  loading="lazy"
-                />
-                <div>
-                  <blockquote className="text-lg md:text-xl text-lbl-ink leading-relaxed italic">
-                    "Launch by Lunch addressed 2 critical AI initiatives for us. The first was a shared knowledge base so anyone on the team can find answers without chasing colleagues down. The second was the creation of team-based workflows built around how we actually operate. It feels like each team got something made for them."
-                  </blockquote>
-                  <figcaption className="mt-3 text-base font-semibold text-lbl-ink">
-                    Molly Papermaster
-                    <span className="block font-normal text-gray-600">Chief of Staff, The Engine</span>
-                  </figcaption>
-                </div>
-              </figure>
-            </Reveal>
-          </div>
-        </section>
 
         {/* ═══ LBL DIFFERENCE — AI TASK LIST ═══ */}
         <section className="py-16 md:py-24 bg-gray-50">
