@@ -160,7 +160,7 @@ const cards: Card[] = [
     meta: "Done-for-you build, plus follow-up sessions",
     badge: "Most individualized",
     icon: Sparkles,
-    desc: "We build your personal AI Chief of Staff for you, fully configured and live. An AI briefing hub that pulls your calendar, email, notes, and CRM into one place.",
+    desc: "We build your personal AI Chief of Staff for you, fully configured and live. An AI briefing hub that pulls your calendar, email, notes, and CRM into a single pane of glass in Claude.",
     included: [
       "A roughly 90-minute deep dive into how you work, where your gaps are, and what you want AI to take off your plate",
       "Built-in context for you, your work, and your goals, so it makes decisions the way you would",
@@ -168,7 +168,7 @@ const cards: Card[] = [
       "A daily executive briefing that surfaces your tasks automatically, plus an AI news digest and a built-in accountability system",
       "Works with Gmail, Google Calendar, Drive, Slack, Notion, Zoom, HubSpot, Airtable, Trello, Asana, Zapier, and Fathom",
       "Two one-hour implementation sessions after the build, so the system fits the way you actually work",
-      "Bonus: one year of Launch by Lunch community access, events, and office hours",
+      
     ],
     bestFor: "Founders, consultants, and solo operators juggling many priorities.",
     quote: {
