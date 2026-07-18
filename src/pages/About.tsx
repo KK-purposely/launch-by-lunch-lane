@@ -34,7 +34,7 @@ const About = () => {
             </div>
             <h1 className="text-4xl md:text-6xl font-bold mb-6">
               <span className="bg-gradient-to-r from-lbl-ink to-lbl-orange bg-clip-text text-transparent">
-                About Launch by Lunch
+                Why We Exist
               </span>
             </h1>
           </div>
