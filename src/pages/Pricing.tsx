@@ -1,5 +1,6 @@
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import { Helmet } from "react-helmet-async";
+import { motion, useInView } from "framer-motion";
 import { Link } from "react-router-dom";
 import katherineOtwayPhoto from "@/assets/katherine-otway.jpg.asset.json";
 import anthropicLogo from "@/assets/anthropic-certified.png.asset.json";
