@@ -6,7 +6,7 @@ import harvardLogo from "@/assets/harvard-logo.png.asset.json";
 import cicLogo from "@/assets/cic-logo.png.asset.json";
 import softheonLogo from "@/assets/softheon-logo.png.asset.json";
 import surfsideLogo from "@/assets/surfside-logo.png.asset.json";
-import proverbLogo from "@/assets/proverb-logo.png.asset.json";
+import elixrLogo from "@/assets/elixr-logo.png.asset.json";
 import theEngineLogo from "@/assets/the-engine-logo.png.asset.json";
 import womenApplyingAiLogo from "@/assets/women-applying-ai-logo.png.asset.json";
 import greaterBostonChamberLogo from "@/assets/greater-boston-chamber.png.asset.json";
