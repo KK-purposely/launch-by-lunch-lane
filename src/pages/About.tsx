@@ -60,7 +60,7 @@ const About = () => {
             </p>
           </div>
           <p className="mt-10 text-lbl-ink font-semibold text-lg">
-            - Karen Kelly, Founder/CEO
+            - Karen Kelly, Founder, CEO
           </p>
         </div>
 
