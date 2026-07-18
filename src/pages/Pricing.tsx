@@ -374,6 +374,8 @@ const processSteps = [
   { num: "05", title: "Measure, Iterate & Sustain", icon: RefreshCw, desc: "Ongoing check-ins to track what's landing and where to go next." },
 ];
 
+const phaseLabels = ["One", "Two", "Three", "Four", "Five"];
+
 const ProcessTimeline = () => {
   const ref = useRef<HTMLDivElement>(null);
   const isInView = useInView(ref, { once: true, margin: "-100px" });
@@ -389,14 +391,29 @@ const ProcessTimeline = () => {
         </div>
 
         <div className="relative">
-          {/* Desktop connecting track */}
-          <div className="hidden md:block absolute top-9 left-[10%] right-[10%] h-1 bg-[var(--lbl-lilac)]/30 rounded-full" />
-          <motion.div
-            className="hidden md:block absolute top-9 left-[10%] h-1 bg-gradient-to-r from-lbl-ink via-lbl-magenta to-lbl-orange rounded-full"
-            initial={{ width: 0 }}
-            animate={isInView ? { width: "80%" } : { width: 0 }}
-            transition={{ duration: 1.4, ease: "easeInOut" }}
-          />
+          {/* Desktop decorative curved path */}
+          <svg
+            className="hidden md:block absolute top-[48px] left-0 w-full h-16 pointer-events-none"
+            preserveAspectRatio="none"
+            viewBox="0 0 1200 64"
+            aria-hidden="true"
+          >
+            <defs>
+              <linearGradient id="timelinePath" x1="0%" y1="0%" x2="100%" y2="0%">
+                <stop offset="0%" stopColor="var(--lbl-ink)" />
+                <stop offset="50%" stopColor="var(--lbl-magenta)" />
+                <stop offset="100%" stopColor="var(--lbl-orange)" />
+              </linearGradient>
+            </defs>
+            <path
+              d="M0 32C100 32 140 0 240 0C340 0 380 64 480 64C580 64 620 0 720 0C820 0 860 64 960 64C1060 64 1100 32 1200 32"
+              fill="none"
+              stroke="url(#timelinePath)"
+              strokeWidth="1.5"
+              strokeDasharray="8 6"
+              opacity="0.4"
+            />
+          </svg>
 
           {/* Mobile vertical track */}
           <div className="md:hidden absolute left-8 top-2 bottom-2 w-1 bg-[var(--lbl-lilac)]/30 rounded-full" />
@@ -407,25 +424,31 @@ const ProcessTimeline = () => {
             transition={{ duration: 1.4, ease: "easeInOut" }}
           />
 
-          <div className="grid grid-cols-1 md:grid-cols-5 gap-8 md:gap-4">
+          <div className="relative flex flex-col md:flex-row justify-between items-start gap-10 md:gap-4">
             {processSteps.map((step, i) => {
-              const Icon = step.icon;
+              const isEven = i % 2 === 1;
               return (
                 <motion.div
                   key={step.num}
                   initial={{ opacity: 0, y: 24 }}
                   animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 24 }}
                   transition={{ duration: 0.55, delay: 0.25 + i * 0.18, ease: "easeOut" }}
-                  className="relative flex md:flex-col items-start md:items-center gap-5 md:gap-0 text-left md:text-center group"
+                  className={`relative flex-1 flex flex-row md:flex-col items-start md:items-center gap-5 md:gap-0 text-left md:text-center group ${isEven ? "md:mt-16" : ""}`}
                 >
-                  <div className="relative z-10 flex-shrink-0 w-16 h-16 md:w-[72px] md:h-[72px] rounded-full bg-gradient-to-br from-lbl-ink via-lbl-magenta to-lbl-orange text-white flex items-center justify-center shadow-xl ring-[6px] ring-white mb-0 md:mb-5 group-hover:scale-110 transition-transform duration-300">
-                    <Icon className="h-7 w-7 md:h-8 md:w-8" />
+                  <div className="relative z-10 flex-shrink-0 w-14 h-14 md:w-[72px] md:h-[72px] rounded-2xl bg-gradient-to-br from-lbl-ink via-lbl-magenta to-lbl-orange text-white flex items-center justify-center text-lg md:text-xl font-extrabold shadow-xl shadow-lbl-ink/10 mb-0 md:mb-8 group-hover:-translate-y-1 transition-transform duration-300">
+                    {parseInt(step.num)}
                     <div className="absolute top-2 left-3 w-3 h-3 md:w-4 md:h-4 rounded-full bg-white/40 blur-sm" />
                   </div>
                   <div className="flex-1 pt-1 md:pt-0">
-                    <div className="text-sm font-bold text-[var(--lbl-orange)] mb-1.5">{step.num}</div>
-                    <h3 className="text-lg font-semibold text-[var(--lbl-eggplant)] mb-2 leading-tight">{step.title}</h3>
-                    <p className="text-base text-gray-700 leading-relaxed">{step.desc}</p>
+                    <p className="text-[10px] md:text-xs font-extrabold uppercase tracking-[0.2em] text-[var(--lbl-orange)] opacity-80 mb-1.5">
+                      Phase {phaseLabels[i]}
+                    </p>
+                    <h3 className="text-base md:text-lg font-semibold text-[var(--lbl-eggplant)] mb-1.5 leading-tight">
+                      {step.title}
+                    </h3>
+                    <p className="text-sm text-gray-600 leading-relaxed max-w-[220px]">
+                      {step.desc}
+                    </p>
                   </div>
                 </motion.div>
               );
