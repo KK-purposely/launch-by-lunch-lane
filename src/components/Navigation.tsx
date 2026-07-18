@@ -50,9 +50,9 @@ const Navigation = () => {
                   Free AI Upskilling
                 </Link>
 
-                <Link to="/keynotes-workshops" className="px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-lbl-orange">
-                  Keynotes
-                </Link>
+                <a href="https://luma.com/launchbylunch" target="_blank" rel="noopener noreferrer" className="px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-lbl-orange">
+                  Public Events
+                </a>
 
                 <Link to="/contact" className="px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-lbl-orange">
                   Contact Us
@@ -106,9 +106,9 @@ const Navigation = () => {
                 </DropdownMenuItem>
 
                 <DropdownMenuItem asChild>
-                  <Link to="/keynotes-workshops" className="w-full" onClick={() => setIsMenuOpen(false)}>
-                    Keynotes
-                  </Link>
+                  <a href="https://luma.com/launchbylunch" target="_blank" rel="noopener noreferrer" className="w-full" onClick={() => setIsMenuOpen(false)}>
+                    Public Events
+                  </a>
                 </DropdownMenuItem>
 
                 <DropdownMenuItem asChild>
