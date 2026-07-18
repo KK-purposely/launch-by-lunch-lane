@@ -283,7 +283,7 @@ const stats = [
   { num: "Top 100", label: "Voice, Massachusetts AI Coalition (Karen Kelly)" },
 ];
 
-const logos: { name: string; src?: string }[] = [
+const logos: { name: string; src?: string; scale?: number }[] = [
   { name: "Adobe", src: "https://upload.wikimedia.org/wikipedia/commons/6/6e/Adobe_Corporate_logo.svg" },
   { name: "KPMG", src: "https://upload.wikimedia.org/wikipedia/commons/d/db/KPMG_blue_logo.svg" },
   { name: "Harvard", src: harvardLogo.url },
@@ -291,11 +291,11 @@ const logos: { name: string; src?: string }[] = [
   { name: "Techstars", src: "https://upload.wikimedia.org/wikipedia/commons/4/48/Techstars_logo.png" },
   { name: "CIC", src: cicLogo.url },
   { name: "Softheon", src: softheonLogo.url },
-  { name: "The Engine", src: theEngineLogo.url },
+  { name: "The Engine", src: theEngineLogo.url, scale: 1.25 },
   { name: "Women Applying AI", src: womenApplyingAiLogo.url },
   { name: "Founder's Edge", src: foundersEdgeLogo.url },
   { name: "Surfside Capital", src: surfsideLogo.url },
-  { name: "Greater Boston Chamber of Commerce", src: greaterBostonChamberLogo.url },
+  { name: "Greater Boston Chamber of Commerce", src: greaterBostonChamberLogo.url, scale: 1.25 },
 ];
 
 const testimonials = [
