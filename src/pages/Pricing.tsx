@@ -300,7 +300,7 @@ const logos: { name: string; src?: string; scale?: number; filter?: string }[] =
   { name: "Harvard", src: harvardLogo.url, filter: "none" },
   { name: "Bank of America", src: "https://upload.wikimedia.org/wikipedia/commons/2/20/Bank_of_America_logo.svg" },
   { name: "Techstars", src: "https://upload.wikimedia.org/wikipedia/commons/4/48/Techstars_logo.png" },
-  { name: "CIC", src: cicLogo.url },
+  { name: "Greater Boston Chamber of Commerce", src: greaterBostonChamberLogo.url, scale: 1.5 },
   { name: "Softheon", src: softheonLogo.url },
   { name: "The Engine", src: theEngineLogo.url, scale: 1.5 },
   { name: "Women Applying AI", src: womenApplyingAiLogo.url },
