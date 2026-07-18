@@ -7,7 +7,6 @@ import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import { HelmetProvider } from "react-helmet-async";
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
-import Services from "./pages/Services";
 import Pricing from "./pages/Pricing";
 import Accelerators from "./pages/Accelerators";
 import About from "./pages/About";
@@ -43,8 +42,8 @@ const App = () => (
           <Navigation />
           <Routes>
             <Route path="/" element={<Index />} />
-            <Route path="/services" element={<Services />} />
-            <Route path="/pricing" element={<Pricing />} />
+            <Route path="/services" element={<Pricing />} />
+            <Route path="/pricing" element={<Navigate to="/services" replace />} />
             <Route path="/accelerators" element={<Accelerators />} />
             <Route path="/about" element={<About />} />
             <Route path="/members" element={<MembersOnly />} />

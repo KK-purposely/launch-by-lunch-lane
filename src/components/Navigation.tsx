@@ -38,7 +38,7 @@ const Navigation = () => {
                   About
                 </Link>
 
-                <Link to="/pricing" className="px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-lbl-orange">
+                <Link to="/services" className="px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-lbl-orange">
                   Services
                 </Link>
 
@@ -84,7 +84,7 @@ const Navigation = () => {
                 </DropdownMenuItem>
 
                 <DropdownMenuItem asChild>
-                  <Link to="/pricing" className="w-full" onClick={() => setIsMenuOpen(false)}>
+                  <Link to="/services" className="w-full" onClick={() => setIsMenuOpen(false)}>
                     Services
                   </Link>
                 </DropdownMenuItem>
