@@ -317,12 +317,21 @@ const testimonials = [
       "Within 45 minutes we had built our first app with AI. She's incredibly relatable and makes the complex seem easy, leading to her session being the most talked about of the day.",
     name: "Jess Lynch",
     title: "Founding Partner, FoundersEdge",
+    image: jessLynchPhoto,
   },
   {
     quote:
       "I had high expectations but she surpassed all of them. She received the highest scores of any meeting we had ever had.",
     name: "Amanda Swiatocha",
     title: "CMO, Softheon (EmpowerHER)",
+    image: amandaSwiatochaPhoto,
+  },
+  {
+    quote:
+      "Karen's AI workshop at the CIC accelerator was invigorating and clarifying for many non-technical founders in the room. You could feel the energy shift from intimidation to curiosity, to momentum.",
+    name: "Kat Lazell",
+    title: "Senior Program Manager, Cambridge Innovation Center (CiC)",
+    image: katLazellPhoto,
   },
 ];
 
