@@ -303,7 +303,7 @@ const logos: { name: string; src?: string; scale?: number; filter?: string }[] =
   { name: "Softheon", src: softheonLogo.url },
   { name: "The Engine", src: theEngineLogo.url, scale: 1.5 },
   { name: "Women Applying AI", src: womenApplyingAiLogo.url },
-  { name: "Founder's Edge", src: foundersEdgeLogo.url, filter: "none" },
+  { name: "Proverb", src: proverbLogo.url, filter: "none" },
   { name: "Surfside Capital", src: surfsideLogo.url },
   { name: "Greater Boston Chamber of Commerce", src: greaterBostonChamberLogo.url, scale: 1.5 },
 ];
