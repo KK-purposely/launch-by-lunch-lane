@@ -34,7 +34,7 @@ const About = () => {
             </div>
             <h1 className="text-4xl md:text-6xl font-bold mb-6">
               <span className="bg-gradient-to-r from-lbl-ink to-lbl-orange bg-clip-text text-transparent">
-                About Launch by Lunch
+                Why We Exist
               </span>
             </h1>
           </div>
@@ -45,9 +45,6 @@ const About = () => {
       <div className="max-w-4xl mx-auto px-4 sm:px-6 pb-16">
         {/* Why We Exist Section */}
         <div className="text-center mb-10 mt-4">
-          <h2 className="text-2xl md:text-3xl font-bold bg-gradient-to-r from-lbl-ink to-lbl-orange bg-clip-text text-transparent mb-6">
-            Why We Exist
-          </h2>
           <div className="max-w-3xl mx-auto text-lg md:text-xl text-muted-foreground leading-relaxed space-y-6">
             <p>
               When I founded Launch by Lunch in 2024, my goal was simple: help non-technical founders build with AI. Since then, it has evolved into more than 2,500 IRL community members, monthly AI coworking events, and bespoke AI solutions and{" "}
