@@ -293,6 +293,7 @@ const investmentBlocks = [
 ];
 
 const stats = [
+  { num: "2,500+", label: "Automations built" },
   { num: "100+", label: "AI courses and workshops taught" },
   { num: "Certified", label: "Anthropic Certified Partner" },
   { num: "Top 100", label: "Voice, Massachusetts AI Coalition (Karen Kelly)" },
