@@ -412,6 +412,7 @@ const ProcessTimeline = () => {
               strokeWidth="1.5"
               strokeDasharray="8 6"
               opacity="0.4"
+              className="animate-dash-flow"
             />
           </svg>
 
