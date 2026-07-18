@@ -366,6 +366,77 @@ const faqs = [
   },
 ];
 
+const processSteps = [
+  { num: "01", title: "Leadership Coaching & Messaging", icon: Compass, desc: "Help executives communicate the 'why' so AI feels like an upgrade, not a threat." },
+  { num: "02", title: "Tool and Process Audit", icon: ClipboardList, desc: "Helps us understand how you work and what subscriptions you can drop." },
+  { num: "03", title: "Custom Build & Adoption Roadmap", icon: Workflow, desc: "A phased plan built around your team's pace, starting with quick wins." },
+  { num: "04", title: "Hands-On Team Training", icon: Presentation, desc: "Role-specific workshops that meet every person where they are. No one gets left behind." },
+  { num: "05", title: "Measure, Iterate & Sustain", icon: RefreshCw, desc: "Ongoing check-ins to track what's landing and where to go next." },
+];
+
+const ProcessTimeline = () => {
+  const ref = useRef<HTMLDivElement>(null);
+  const isInView = useInView(ref, { once: true, margin: "-100px" });
+
+  return (
+    <section ref={ref} className="py-16 sm:py-20 bg-white border-b border-[var(--lbl-lilac)]/20">
+      <div className="max-w-[1120px] mx-auto px-4 sm:px-6">
+        <div className="text-center mb-12 sm:mb-16">
+          <div className="eyebrow mb-3">YOUR PATH</div>
+          <h2 className="text-3xl sm:text-4xl font-semibold text-[var(--lbl-eggplant)]">
+            How we work with you.
+          </h2>
+        </div>
+
+        <div className="relative">
+          {/* Desktop connecting track */}
+          <div className="hidden md:block absolute top-9 left-[10%] right-[10%] h-1 bg-[var(--lbl-lilac)]/30 rounded-full" />
+          <motion.div
+            className="hidden md:block absolute top-9 left-[10%] h-1 bg-gradient-to-r from-lbl-ink via-lbl-magenta to-lbl-orange rounded-full"
+            initial={{ width: 0 }}
+            animate={isInView ? { width: "80%" } : { width: 0 }}
+            transition={{ duration: 1.4, ease: "easeInOut" }}
+          />
+
+          {/* Mobile vertical track */}
+          <div className="md:hidden absolute left-8 top-2 bottom-2 w-1 bg-[var(--lbl-lilac)]/30 rounded-full" />
+          <motion.div
+            className="md:hidden absolute left-8 top-2 w-1 bg-gradient-to-b from-lbl-ink via-lbl-magenta to-lbl-orange rounded-full"
+            initial={{ height: 0 }}
+            animate={isInView ? { height: "calc(100% - 1rem)" } : { height: 0 }}
+            transition={{ duration: 1.4, ease: "easeInOut" }}
+          />
+
+          <div className="grid grid-cols-1 md:grid-cols-5 gap-8 md:gap-4">
+            {processSteps.map((step, i) => {
+              const Icon = step.icon;
+              return (
+                <motion.div
+                  key={step.num}
+                  initial={{ opacity: 0, y: 24 }}
+                  animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 24 }}
+                  transition={{ duration: 0.55, delay: 0.25 + i * 0.18, ease: "easeOut" }}
+                  className="relative flex md:flex-col items-start md:items-center gap-5 md:gap-0 text-left md:text-center group"
+                >
+                  <div className="relative z-10 flex-shrink-0 w-16 h-16 md:w-[72px] md:h-[72px] rounded-full bg-gradient-to-br from-lbl-ink via-lbl-magenta to-lbl-orange text-white flex items-center justify-center shadow-xl ring-[6px] ring-white mb-0 md:mb-5 group-hover:scale-110 transition-transform duration-300">
+                    <Icon className="h-7 w-7 md:h-8 md:w-8" />
+                    <div className="absolute top-2 left-3 w-3 h-3 md:w-4 md:h-4 rounded-full bg-white/40 blur-sm" />
+                  </div>
+                  <div className="flex-1 pt-1 md:pt-0">
+                    <div className="text-sm font-bold text-[var(--lbl-orange)] mb-1.5">{step.num}</div>
+                    <h3 className="text-lg font-semibold text-[var(--lbl-eggplant)] mb-2 leading-tight">{step.title}</h3>
+                    <p className="text-lg text-gray-600 leading-relaxed">{step.desc}</p>
+                  </div>
+                </motion.div>
+              );
+            })}
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
 /* --- shared bits --- */
 
 const CTAButton = ({
