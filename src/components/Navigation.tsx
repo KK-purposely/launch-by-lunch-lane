@@ -42,6 +42,10 @@ const Navigation = () => {
                   Services
                 </Link>
 
+                <Link to="/industries" className="px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-lbl-orange">
+                  Industries
+                </Link>
+
                 <Link to="/comm-corp-express-ai-training-in-ma" className="px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-lbl-orange">
                   Free AI Upskilling
                 </Link>
