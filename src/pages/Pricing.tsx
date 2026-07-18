@@ -291,11 +291,11 @@ const logos: { name: string; src?: string; scale?: number }[] = [
   { name: "Techstars", src: "https://upload.wikimedia.org/wikipedia/commons/4/48/Techstars_logo.png" },
   { name: "CIC", src: cicLogo.url },
   { name: "Softheon", src: softheonLogo.url },
-  { name: "The Engine", src: theEngineLogo.url, scale: 1.25 },
+  { name: "The Engine", src: theEngineLogo.url, scale: 1.5 },
   { name: "Women Applying AI", src: womenApplyingAiLogo.url },
   { name: "Founder's Edge", src: foundersEdgeLogo.url },
   { name: "Surfside Capital", src: surfsideLogo.url },
-  { name: "Greater Boston Chamber of Commerce", src: greaterBostonChamberLogo.url, scale: 1.25 },
+  { name: "Greater Boston Chamber of Commerce", src: greaterBostonChamberLogo.url, scale: 1.5 },
 ];
 
 const testimonials = [
