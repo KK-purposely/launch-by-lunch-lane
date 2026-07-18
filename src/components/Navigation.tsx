@@ -94,6 +94,12 @@ const Navigation = () => {
                 </DropdownMenuItem>
 
                 <DropdownMenuItem asChild>
+                  <Link to="/industries" className="w-full" onClick={() => setIsMenuOpen(false)}>
+                    Industries
+                  </Link>
+                </DropdownMenuItem>
+
+                <DropdownMenuItem asChild>
                   <Link to="/comm-corp-express-ai-training-in-ma" className="w-full" onClick={() => setIsMenuOpen(false)}>
                     Free AI Upskilling
                   </Link>
