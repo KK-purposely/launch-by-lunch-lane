@@ -225,7 +225,7 @@ const Index = () => {
                 </div>
 
                 <motion.div
-                  className="mt-6 inline-flex items-center gap-3 px-4 py-2 rounded-full bg-background border border-lbl-lilac/40 shadow-sm transition-colors duration-300 hover:border-lbl-orange/40"
+                  className="mt-6 inline-flex items-center gap-3 pl-4 pr-2 py-2 rounded-full bg-background border border-lbl-lilac/40 shadow-sm transition-colors duration-300 hover:border-lbl-orange/40"
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.7, delay: 0.25, ease: "easeOut" }}
