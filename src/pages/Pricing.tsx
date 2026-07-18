@@ -189,7 +189,7 @@ const cards: Card[] = [
     included: [
       "A working session with your team",
       "An audit of your current tools and workflows",
-      "A competitive read on what peers are doing",
+      "AI automation recommendations",
       "Realistic ROI projections",
       "A plain-English executive summary",
     ],
@@ -289,7 +289,6 @@ const investmentBlocks = [
 
 const stats = [
   { num: "100+", label: "AI courses and workshops taught" },
-  { num: "3 wks → 3 days", label: "Research time cut for Elixr Solutions" },
   { num: "Certified", label: "Anthropic Certified Partner" },
   { num: "Top 100", label: "Voice, Massachusetts AI Coalition (Karen Kelly)" },
 ];
