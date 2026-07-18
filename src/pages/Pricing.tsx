@@ -444,9 +444,19 @@ const ServiceCard = ({ card }: { card: Card }) => {
               <p className="text-[17px] italic text-gray-700 leading-relaxed mb-3">
                 &ldquo;{card.quote.text}&rdquo;
               </p>
-              <footer>
-                <div className="font-semibold text-[var(--lbl-eggplant)] text-base">{card.quote.name}</div>
-                <div className="text-sm text-gray-500">{card.quote.title}</div>
+              <footer className="flex items-center gap-3">
+                {card.quote.image && (
+                  <img
+                    src={card.quote.image}
+                    alt={card.quote.name}
+                    className="h-12 w-12 rounded-full object-cover ring-2 ring-[var(--lbl-orange)]/20 flex-shrink-0"
+                    loading="lazy"
+                  />
+                )}
+                <div>
+                  <div className="font-semibold text-[var(--lbl-eggplant)] text-base">{card.quote.name}</div>
+                  <div className="text-sm text-gray-500">{card.quote.title}</div>
+                </div>
               </footer>
             </blockquote>
           )}
