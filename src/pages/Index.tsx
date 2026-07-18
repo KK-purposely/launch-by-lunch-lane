@@ -13,6 +13,7 @@ import { motion, useInView, useAnimation } from "framer-motion";
 import Footer from "@/components/Footer";
 import trustedByImg from "@/assets/trusted-by.png";
 import mollyPapermaster from "@/assets/molly-papermaster.png.asset.json";
+import commCorpLogo from "@/assets/commonwealth-corporation-logo.png.asset.json";
 
 /* ── Scroll-triggered wrapper ── */
 const Reveal = ({ children, className = "", delay = 0 }: { children: React.ReactNode; className?: string; delay?: number }) => {
