@@ -125,16 +125,13 @@ const Industries = () => {
           <p className="text-sm font-semibold uppercase tracking-widest text-lbl-orange mb-4">
             Industries of every shape & size
           </p>
-          <h1 className="text-4xl md:text-6xl lg:text-7xl font-extrabold leading-[1.05] tracking-tight mb-6">
+          <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
             <span className="text-lbl-eggplant">Built by operators.</span>
             <br />
             <span className="bg-grad-brand bg-clip-text text-transparent">Tuned to your world.</span>
           </h1>
           <p className="text-lg md:text-xl text-lbl-ink/80 leading-relaxed max-w-3xl">
             Our core team has spent careers inside advertising, media, healthcare, coaching, HR, technology, education, and finance. We've been small business owners ourselves, and we still are, right alongside you. We think like small business owners because we are small business owners, and we've spent most of our collective careers either running one or working shoulder-to-shoulder inside one.
-          </p>
-          <p className="text-lg md:text-xl text-lbl-ink/80 leading-relaxed max-w-3xl mt-4">
-            That's why the AI we build fits how your industry actually works, not a generic template retrofitted after the fact.
           </p>
           <div className="mt-8 flex flex-col sm:flex-row gap-4">
             <Button
