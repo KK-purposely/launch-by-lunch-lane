@@ -50,7 +50,7 @@ const Navigation = () => {
                   Services
                 </Link>
 
-                <Link to="/free-upskilling-ma" className="px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-lbl-orange">
+                <Link to="/comm-corp-express-ai-training-in-ma" className="px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-lbl-orange">
                   Free AI Upskilling
                 </Link>
 
@@ -109,7 +109,7 @@ const Navigation = () => {
                 </DropdownMenuItem>
 
                 <DropdownMenuItem asChild>
-                  <Link to="/free-upskilling-ma" className="w-full" onClick={() => setIsMenuOpen(false)}>
+                  <Link to="/comm-corp-express-ai-training-in-ma" className="w-full" onClick={() => setIsMenuOpen(false)}>
                     Free AI Upskilling
                   </Link>
                 </DropdownMenuItem>
