@@ -9,6 +9,7 @@ import surfsideLogo from "@/assets/surfside-logo.png.asset.json";
 import foundersEdgeLogo from "@/assets/founders-edge-logo.png.asset.json";
 import theEngineLogo from "@/assets/the-engine-logo.png.asset.json";
 import womenApplyingAiLogo from "@/assets/women-applying-ai-logo.png.asset.json";
+import greaterBostonChamberLogo from "@/assets/greater-boston-chamber.png.asset.json";
 import {
   Flame,
   Check,
@@ -294,6 +295,7 @@ const logos: { name: string; src?: string }[] = [
   { name: "Women Applying AI", src: womenApplyingAiLogo.url },
   { name: "Founder's Edge", src: foundersEdgeLogo.url },
   { name: "Surfside Capital", src: surfsideLogo.url },
+  { name: "Greater Boston Chamber of Commerce", src: greaterBostonChamberLogo.url },
 ];
 
 const testimonials = [
