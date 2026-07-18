@@ -30,10 +30,10 @@ const CTA = () => {
         </p>
         
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-          <Button 
-            size="lg" 
+          <Button
+            size="lg"
             className="group bg-white text-lbl-orange hover:bg-white/90 px-8 py-6 text-lg rounded-full font-medium transition-all duration-300 shadow-lg hover:shadow-xl"
-            onClick={() => window.open('https://learn.launchbylunch.co/subscribe', '_blank')}
+            onClick={() => window.open('https://newsletter.launchbylunch.co', '_blank')}
           >
             <span className="flex items-center gap-2">
               Subscribe to our Newsletter
