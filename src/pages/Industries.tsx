@@ -163,19 +163,19 @@ const Industries = () => {
             </h2>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {builds.map((b) => (
               <div
                 key={b.n}
-                className="group relative bg-white rounded-3xl border border-gray-200 p-8 hover:border-lbl-orange hover:shadow-xl transition-all duration-300"
+                className="group relative bg-white rounded-3xl border border-gray-200 p-6 hover:border-lbl-orange hover:shadow-xl transition-all duration-300"
               >
-                <div className="flex items-start justify-between mb-6">
-                  <span className="text-5xl font-extrabold bg-grad-brand bg-clip-text text-transparent">{b.n}</span>
+                <div className="flex items-start justify-between mb-5">
+                  <span className="text-4xl font-extrabold bg-grad-brand bg-clip-text text-transparent">{b.n}</span>
                   <div className="p-3 rounded-2xl bg-lbl-paper group-hover:bg-lbl-orange/10 transition-colors">
                     <b.icon className="h-6 w-6 text-lbl-orange" />
                   </div>
                 </div>
-                <h3 className="text-2xl font-bold text-lbl-ink mb-3">{b.title}</h3>
+                <h3 className="text-xl font-bold text-lbl-ink mb-2">{b.title}</h3>
                 <p className="text-lg text-lbl-ink/75 leading-relaxed">{b.desc}</p>
               </div>
             ))}
