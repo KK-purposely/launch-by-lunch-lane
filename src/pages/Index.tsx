@@ -225,19 +225,19 @@ const Index = () => {
                 </div>
 
                 <motion.div
-                  className="mt-6 inline-flex items-center gap-4 px-5 py-2.5 rounded-full bg-background border border-lbl-lilac/40 shadow-sm transition-colors duration-300 hover:border-lbl-orange/40"
+                  className="mt-6 inline-flex items-center gap-3 px-4 py-2 rounded-full bg-background border border-lbl-lilac/40 shadow-sm transition-colors duration-300 hover:border-lbl-orange/40"
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.7, delay: 0.25, ease: "easeOut" }}
                 >
-                  <span className="text-sm md:text-base font-bold tracking-widest uppercase text-lbl-ink/70">
+                  <span className="text-xs md:text-sm font-bold tracking-widest uppercase text-lbl-ink/70">
                     Proudly certified
                   </span>
-                  <div className="h-5 w-px bg-lbl-lilac/50" />
+                  <div className="h-4 w-px bg-lbl-lilac/50" />
                   <img
                     src={claudePartnerNetwork.url}
                     alt="Claude Partner Network logo"
-                    className="h-14 md:h-16 w-auto"
+                    className="h-12 md:h-14 w-auto"
                   />
                 </motion.div>
               </div>
