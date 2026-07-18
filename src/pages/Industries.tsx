@@ -242,21 +242,13 @@ const Industries = () => {
           <p className="text-lg md:text-xl text-white/90 mb-8 leading-relaxed">
             Book a 30-minute discovery call. We'll dig into your workflows, spot the highest-ROI opportunities, and map a plan tailored to how your business actually runs.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <div className="flex justify-center">
             <Button
               size="lg"
               className="bg-white text-lbl-orange hover:bg-white/90 rounded-full px-8"
               onClick={() => window.open("https://calendly.com/karen-launchbylunch/30min", "_blank")}
             >
               Book a Consultation <ArrowRight className="ml-2 h-5 w-5" />
-            </Button>
-            <Button
-              asChild
-              size="lg"
-              variant="outline"
-              className="rounded-full border-white text-white hover:bg-white hover:text-lbl-orange px-8"
-            >
-              <Link to="/contact">Contact Us</Link>
             </Button>
           </div>
         </div>
