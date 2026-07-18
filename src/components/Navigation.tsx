@@ -34,10 +34,6 @@ const Navigation = () => {
             {/* Desktop Navigation */}
             <div className="hidden md:block ml-10">
               <div className="flex items-baseline space-x-8">
-                <Link to="/" className="px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-lbl-orange">
-                  Home
-                </Link>
-
                 <Link to="/about" className="px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-lbl-orange">
                   About
                 </Link>
@@ -53,7 +49,6 @@ const Navigation = () => {
                 <Link to="/comm-corp-express-ai-training-in-ma" className="px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-lbl-orange">
                   Free AI Upskilling
                 </Link>
-
 
                 <Link to="/contact" className="px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-lbl-orange">
                   Contact Us
@@ -83,18 +78,10 @@ const Navigation = () => {
               </DropdownMenuTrigger>
               <DropdownMenuContent align="end" className="w-56 bg-white">
                 <DropdownMenuItem asChild>
-                  <Link to="/" className="w-full" onClick={() => setIsMenuOpen(false)}>
-                    Home
-                  </Link>
-                </DropdownMenuItem>
-
-                <DropdownMenuItem asChild>
                   <Link to="/about" className="w-full" onClick={() => setIsMenuOpen(false)}>
                     About
                   </Link>
                 </DropdownMenuItem>
-
-                <DropdownMenuSeparator />
 
                 <DropdownMenuItem asChild>
                   <Link to="/keynotes-workshops" className="w-full" onClick={() => setIsMenuOpen(false)}>
@@ -114,13 +101,11 @@ const Navigation = () => {
                   </Link>
                 </DropdownMenuItem>
 
-
                 <DropdownMenuItem asChild>
                   <Link to="/contact" className="w-full" onClick={() => setIsMenuOpen(false)}>
                     Contact Us
                   </Link>
                 </DropdownMenuItem>
-
               </DropdownMenuContent>
             </DropdownMenu>
           </div>
