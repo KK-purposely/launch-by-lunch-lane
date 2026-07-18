@@ -27,7 +27,7 @@ import Footer from "@/components/Footer";
 const DISCOVERY_URL = "https://calendly.com/karen-launchbylunch/30min";
 const LUMA_URL = "https://luma.com/launchbylunch";
 
-function LogoMark({ name, src }: { name: string; src?: string }) {
+function LogoMark({ name, src, scale = 1 }: { name: string; src?: string; scale?: number }) {
   const [failed, setFailed] = useState(false);
   const showImage = src && !failed;
   return (
@@ -42,7 +42,7 @@ function LogoMark({ name, src }: { name: string; src?: string }) {
           onError={() => setFailed(true)}
           loading="lazy"
           className="max-h-full max-w-[140px] w-auto object-contain opacity-60 group-hover:opacity-100 transition-opacity duration-300"
-          style={{ filter: "grayscale(1) brightness(0) invert(1)" }}
+          style={{ filter: "grayscale(1) brightness(0) invert(1)", transform: `scale(${scale})` }}
         />
       ) : (
         <span className="text-center text-white/60 group-hover:text-white transition-colors duration-300 text-sm sm:text-base font-semibold uppercase tracking-[0.14em] leading-tight">
@@ -283,7 +283,7 @@ const stats = [
   { num: "Top 100", label: "Voice, Massachusetts AI Coalition (Karen Kelly)" },
 ];
 
-const logos: { name: string; src?: string }[] = [
+const logos: { name: string; src?: string; scale?: number }[] = [
   { name: "Adobe", src: "https://upload.wikimedia.org/wikipedia/commons/6/6e/Adobe_Corporate_logo.svg" },
   { name: "KPMG", src: "https://upload.wikimedia.org/wikipedia/commons/d/db/KPMG_blue_logo.svg" },
   { name: "Harvard", src: harvardLogo.url },
@@ -291,11 +291,11 @@ const logos: { name: string; src?: string }[] = [
   { name: "Techstars", src: "https://upload.wikimedia.org/wikipedia/commons/4/48/Techstars_logo.png" },
   { name: "CIC", src: cicLogo.url },
   { name: "Softheon", src: softheonLogo.url },
-  { name: "The Engine", src: theEngineLogo.url },
+  { name: "The Engine", src: theEngineLogo.url, scale: 1.25 },
   { name: "Women Applying AI", src: womenApplyingAiLogo.url },
   { name: "Founder's Edge", src: foundersEdgeLogo.url },
   { name: "Surfside Capital", src: surfsideLogo.url },
-  { name: "Greater Boston Chamber of Commerce", src: greaterBostonChamberLogo.url },
+  { name: "Greater Boston Chamber of Commerce", src: greaterBostonChamberLogo.url, scale: 1.25 },
 ];
 
 const testimonials = [
@@ -615,7 +615,7 @@ const Pricing = () => {
             </div>
             <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-x-6 gap-y-8 items-center">
               {logos.map((l) => (
-                <LogoMark key={l.name} name={l.name} src={l.src} />
+                <LogoMark key={l.name} name={l.name} src={l.src} scale={l.scale} />
               ))}
             </div>
           </div>
