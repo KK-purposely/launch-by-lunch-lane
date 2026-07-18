@@ -592,12 +592,14 @@ const Pricing = () => {
                   {s.label}
                 </div>
                 {s.label === "Anthropic Certified Partner" && (
-                  <img
-                    src={anthropicLogo.url}
-                    alt="Anthropic Certified Partner"
-                    className="mt-4 h-12 w-auto opacity-90"
-                    loading="lazy"
-                  />
+                  <div className="mt-4 flex justify-center">
+                    <img
+                      src={anthropicLogo.url}
+                      alt="Anthropic Certified Partner"
+                      className="h-12 w-auto opacity-90"
+                      loading="lazy"
+                    />
+                  </div>
                 )}
               </div>
             ))}
