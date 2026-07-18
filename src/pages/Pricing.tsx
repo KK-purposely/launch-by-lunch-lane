@@ -425,7 +425,7 @@ const ProcessTimeline = () => {
                   <div className="flex-1 pt-1 md:pt-0">
                     <div className="text-sm font-bold text-[var(--lbl-orange)] mb-1.5">{step.num}</div>
                     <h3 className="text-lg font-semibold text-[var(--lbl-eggplant)] mb-2 leading-tight">{step.title}</h3>
-                    <p className="text-lg text-gray-600 leading-relaxed">{step.desc}</p>
+                    <p className="text-base text-gray-700 leading-relaxed">{step.desc}</p>
                   </div>
                 </motion.div>
               );
