@@ -613,22 +613,22 @@ const Pricing = () => {
             ))}
           </div>
 
-          {/* featured Kat Lazell quote */}
+          {/* featured Katherine Otway quote */}
           <figure className="mt-16 max-w-4xl mx-auto bg-white/5 backdrop-blur-sm border-l-4 border-[var(--lbl-orange)] rounded-2xl p-6 md:p-8">
             <div className="flex flex-col md:flex-row items-start gap-6">
               <img
-                src={katLazellPhoto.url}
-                alt="Kat Lazell, Senior Program Manager at Cambridge Innovation Center"
+                src={katherineOtwayPhoto.url}
+                alt="Katherine Otway, Chief Marketing Officer at The Engine"
                 className="w-20 h-20 md:w-24 md:h-24 rounded-full object-cover flex-shrink-0"
                 loading="lazy"
               />
               <div>
                 <blockquote className="text-lg md:text-xl text-white/90 leading-relaxed italic">
-                  &ldquo;Karen&rsquo;s AI workshop at the CIC accelerator was invigorating and clarifying for many non-technical founders in the room. You could feel the energy shift from intimidation to curiosity, to momentum.&rdquo;
+                  &ldquo;The Engine exists to support companies pushing the boundaries of what&apos;s possible creatively and operationally, and how we use AI internally should reflect that. Launch by Lunch built something that fits how we actually work, not a generic tool people open twice and forget. And that makes the investment worth it.&rdquo;
                 </blockquote>
                 <figcaption className="mt-4 text-base font-semibold text-white">
-                  Kat Lazell
-                  <span className="block font-normal text-[var(--lbl-lilac)]">Senior Program Manager, Cambridge Innovation Center</span>
+                  Katherine Otway
+                  <span className="block font-normal text-[var(--lbl-lilac)]">Chief Marketing Officer, The Engine</span>
                 </figcaption>
               </div>
             </div>
