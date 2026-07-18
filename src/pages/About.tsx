@@ -1,7 +1,6 @@
 
 import React from "react";
 import { Helmet } from "react-helmet-async";
-import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { ArrowUpRight, Sparkles } from "lucide-react";
 import { useNavigate } from "react-router-dom";
@@ -43,74 +42,33 @@ const About = () => {
 
       {/* Main Content */}
       <div className="max-w-4xl mx-auto px-4 sm:px-6 pb-16">
+        {/* Why We Exist Section */}
         <div className="text-center mb-10 mt-4">
-          <h2 className="text-2xl md:text-3xl font-bold bg-gradient-to-r from-lbl-ink to-lbl-orange bg-clip-text text-transparent mb-4">Who We Are</h2>
-          <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            A female-led team that's taught over 100 AI courses, written millions of lines of code, and built hundreds of automations, all using only natural language. We are AI strategists, developers, and coaches that won't let you fail.
-          </p>
-        </div>
-        {/* Team Photo and Bios Section */}
-        <div className="mb-12 space-y-10">
-          {/* Karen Kelly */}
-          <div className="flex flex-col md:flex-row gap-8 items-start">
-            <div className="md:w-1/3 w-full">
-              <img 
-                src="/lovable-uploads/karen-kelly.jpg" 
-                alt="Karen Kelly, CEO of Launch by Lunch" 
-                className="rounded-2xl shadow-lg w-full h-auto"
-              />
-            </div>
-            <div className="md:w-2/3 w-full flex">
-              <Card className="border-none shadow-lg bg-gradient-to-br from-white via-lbl-paper/20 to-white overflow-hidden w-full">
-                <CardContent className="p-6 md:p-8">
-                  <div className="flex items-start gap-4 mb-4">
-                    <div className="flex-1">
-                      <h3 className="text-xl font-bold mb-1">
-                        <a href="https://www.linkedin.com/in/karen-kelly-daring-greatly/" target="_blank" rel="noopener noreferrer" className="bg-gradient-to-r from-lbl-ink to-lbl-orange bg-clip-text text-transparent hover:opacity-80 transition-opacity">
-                          Karen Kelly
-                        </a>
-                      </h3>
-                      <p className="text-lbl-orange font-semibold mb-2">Founder, CEO</p>
-                      <p className="text-gray-700 leading-relaxed text-base">
-                        Karen Kelly is a 3x founder and TEDx speaker helping leaders navigate the future of work in an AI-driven world. Named a Top 100 Innovator in 2026, Karen founded Launch by Lunch as Boston's first AI community with the goal of enabling non-technical teams with the power of no code solutions. She has worked with dozens of Fortune 1000 organizations, making AI practical and accessible for non-technical executives while emphasizing judgment and communication as leadership advantages.
-                      </p>
-                    </div>
-                  </div>
-                </CardContent>
-              </Card>
-            </div>
+          <h2 className="text-2xl md:text-3xl font-bold bg-gradient-to-r from-lbl-ink to-lbl-orange bg-clip-text text-transparent mb-6">
+            Why We Exist
+          </h2>
+          <div className="max-w-3xl mx-auto text-lg md:text-xl text-muted-foreground leading-relaxed space-y-6">
+            <p>
+              When I founded Launch by Lunch in 2024, my goal was simple: help non-technical founders build with AI. Since then, it has evolved into more than 2,500 IRL community members, monthly AI coworking events, and bespoke AI solutions and training for small business owners.
+            </p>
+            <p>
+              We are grounded in the belief that AI can support our ability to be more human as leaders, friends, parents, and colleagues. We exist to build community through AI and ensure that no business is left behind in the greatest evolution of opportunity our economy has ever seen.
+            </p>
+            <p>
+              Join us for a public workshop, monthly AI co-working, or ask how we can bring your business into the new world of work.
+            </p>
           </div>
-
-          {/* Ariel Galipeau */}
-          <div className="flex flex-col md:flex-row gap-8 items-start">
-            <div className="md:w-1/3 w-full">
-              <img 
-                src="/lovable-uploads/ariel-galipeau-final.png" 
-                alt="Ariel Galipeau, Director of AI Programs at Launch by Lunch" 
-                className="rounded-2xl shadow-lg w-full h-auto"
-              />
-            </div>
-            <div className="md:w-2/3 w-full flex">
-              <Card className="border-none shadow-lg bg-gradient-to-br from-white via-lbl-paper/20 to-white overflow-hidden w-full">
-                <CardContent className="p-6 md:p-8">
-                  <div className="flex items-start gap-4 mb-4">
-                    <div className="flex-1">
-                      <h3 className="text-xl font-bold mb-1">
-                        <span className="bg-gradient-to-r from-lbl-orange to-lbl-ink bg-clip-text text-transparent">
-                          Ariel Galipeau
-                        </span>
-                      </h3>
-                      <p className="text-lbl-orange font-semibold mb-2">Director of AI Programs</p>
-                      <p className="text-gray-700 leading-relaxed text-base">
-                        Ariel Galipeau is an AI operations leader and coach who helps founders and teams turn ideas into executable plans, scalable systems, and consistent progress. With a decade inside fast-moving, mission-driven startups, she translates complexity into clear priorities and embeds AI into day-to-day workflows to improve decision-making, reduce friction, and drive real momentum. She has a particular interest in closing the AI adoption gap for women.
-                      </p>
-                    </div>
-                  </div>
-                </CardContent>
-              </Card>
-            </div>
+          <div className="mt-10 flex flex-col items-center">
+            <img
+              src="/lovable-uploads/karen-kelly.jpg"
+              alt="Karen Kelly, Founder and CEO of Launch by Lunch"
+              className="w-32 h-32 rounded-full object-cover shadow-lg mb-3"
+            />
+            <p className="font-bold text-lbl-ink text-lg">Karen Kelly</p>
+            <p className="text-lbl-orange font-semibold text-lg">Founder, CEO</p>
           </div>
         </div>
+        
         
         
         {/* CTA Section */}
