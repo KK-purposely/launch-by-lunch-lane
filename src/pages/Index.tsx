@@ -246,7 +246,7 @@ const Index = () => {
                       />
                     </a>
                   </div>
-                  <div className="flex flex-col items-start gap-2">
+                  <div className="flex items-center gap-4 flex-wrap">
                     <p className="text-base text-gray-500">Proudly certified</p>
                     <img
                       src={claudePartnerNetwork.url}
