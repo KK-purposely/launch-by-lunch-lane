@@ -295,6 +295,7 @@ const logos: { name: string; src?: string }[] = [
   { name: "Women Applying AI", src: womenApplyingAiLogo.url },
   { name: "Founder's Edge", src: foundersEdgeLogo.url },
   { name: "Surfside Capital", src: surfsideLogo.url },
+  { name: "Greater Boston Chamber of Commerce", src: greaterBostonChamberLogo.url },
 ];
 
 const testimonials = [
