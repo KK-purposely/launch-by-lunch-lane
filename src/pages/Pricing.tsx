@@ -11,6 +11,9 @@ import elixrLogo from "@/assets/elixr-logo.png.asset.json";
 import theEngineLogo from "@/assets/the-engine-logo.png.asset.json";
 import womenApplyingAiLogo from "@/assets/women-applying-ai-logo.png.asset.json";
 import greaterBostonChamberLogo from "@/assets/greater-boston-chamber.png.asset.json";
+import katLazellPhoto from "@/assets/testimonial-kat-lazell.jpg";
+import amandaSwiatochaPhoto from "@/assets/testimonial-amanda-swiatocha.jpg";
+import jessLynchPhoto from "@/assets/testimonial-jess-lynch.jpg";
 import {
   Flame,
   Check,
@@ -314,12 +317,21 @@ const testimonials = [
       "Within 45 minutes we had built our first app with AI. She's incredibly relatable and makes the complex seem easy, leading to her session being the most talked about of the day.",
     name: "Jess Lynch",
     title: "Founding Partner, FoundersEdge",
+    image: jessLynchPhoto,
   },
   {
     quote:
       "I had high expectations but she surpassed all of them. She received the highest scores of any meeting we had ever had.",
     name: "Amanda Swiatocha",
     title: "CMO, Softheon (EmpowerHER)",
+    image: amandaSwiatochaPhoto,
+  },
+  {
+    quote:
+      "Karen's AI workshop at the CIC accelerator was invigorating and clarifying for many non-technical founders in the room. You could feel the energy shift from intimidation to curiosity, to momentum.",
+    name: "Kat Lazell",
+    title: "Senior Program Manager, Cambridge Innovation Center (CiC)",
+    image: katLazellPhoto,
   },
 ];
 
@@ -660,9 +672,17 @@ const Pricing = () => {
                 <blockquote className="text-lg leading-relaxed text-white/90 mb-5">
                   &ldquo;{t.quote}&rdquo;
                 </blockquote>
-                <figcaption>
-                  <div className="font-semibold text-white">{t.name}</div>
-                  <div className="text-sm text-[var(--lbl-lilac)]">{t.title}</div>
+                <figcaption className="flex items-center gap-3">
+                  <img
+                    src={t.image}
+                    alt={t.name}
+                    className="h-12 w-12 rounded-full object-cover ring-2 ring-white/20 flex-shrink-0"
+                    loading="lazy"
+                  />
+                  <div>
+                    <div className="font-semibold text-white">{t.name}</div>
+                    <div className="text-sm text-[var(--lbl-lilac)]">{t.title}</div>
+                  </div>
                 </figcaption>
               </figure>
             ))}
