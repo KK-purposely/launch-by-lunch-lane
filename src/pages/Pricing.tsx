@@ -646,6 +646,8 @@ const Pricing = () => {
         </div>
       </section>
 
+      <ProcessTimeline />
+
       {/* ── Service cards stack ── */}
       <section className="py-16 sm:py-24">
         <div className="max-w-[1120px] mx-auto px-4 sm:px-6 space-y-12 sm:space-y-16">
