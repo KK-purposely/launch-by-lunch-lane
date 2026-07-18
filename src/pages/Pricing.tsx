@@ -640,8 +640,8 @@ const Pricing = () => {
       </Helmet>
 
       {/* ── Hero ── */}
-      <section className="bg-hero-soft overflow-hidden">
-        <div className="relative max-w-[1120px] mx-auto px-4 sm:px-6 pt-20 pb-16 sm:pt-28 sm:pb-24">
+      <section className="bg-hero-soft">
+        <div className="max-w-[1120px] mx-auto px-4 sm:px-6 pt-20 pb-16 sm:pt-28 sm:pb-24">
           <div className="max-w-3xl">
             <div className="eyebrow mb-5">PRICING</div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-[1.1] mb-6">
@@ -668,14 +668,6 @@ const Pricing = () => {
               </a>
             </div>
           </div>
-
-          {/* Animated flaming pizza logo */}
-          <img
-            src={flamingPizzaLogo.url}
-            alt="Launch by Lunch flaming pizza logo"
-            className="hidden lg:block absolute right-0 top-8 xl:-top-2 w-48 xl:w-56 h-auto flame-flicker"
-            loading="eager"
-          />
         </div>
       </section>
 
