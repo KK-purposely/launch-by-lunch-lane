@@ -306,7 +306,7 @@ const logos: { name: string; src?: string; scale?: number; filter?: string }[] =
   { name: "Women Applying AI", src: womenApplyingAiLogo.url },
   { name: "Elixr", src: elixrLogo.url, filter: "none" },
   { name: "Surfside Capital", src: surfsideLogo.url },
-  { name: "Greater Boston Chamber of Commerce", src: greaterBostonChamberLogo.url, scale: 1.5 },
+  { name: "CIC", src: cicLogo.url },
 ];
 
 const testimonials = [
