@@ -613,6 +613,27 @@ const Pricing = () => {
             ))}
           </div>
 
+          {/* featured Kat Lazell quote */}
+          <figure className="mt-16 max-w-4xl mx-auto bg-white/5 backdrop-blur-sm border-l-4 border-[var(--lbl-orange)] rounded-2xl p-6 md:p-8">
+            <div className="flex flex-col md:flex-row items-start gap-6">
+              <img
+                src={katLazellPhoto.url}
+                alt="Kat Lazell, Senior Program Manager at Cambridge Innovation Center"
+                className="w-20 h-20 md:w-24 md:h-24 rounded-full object-cover flex-shrink-0"
+                loading="lazy"
+              />
+              <div>
+                <blockquote className="text-lg md:text-xl text-white/90 leading-relaxed italic">
+                  &ldquo;Karen&rsquo;s AI workshop at the CIC accelerator was invigorating and clarifying for many non-technical founders in the room. You could feel the energy shift from intimidation to curiosity, to momentum.&rdquo;
+                </blockquote>
+                <figcaption className="mt-4 text-base font-semibold text-white">
+                  Kat Lazell
+                  <span className="block font-normal text-[var(--lbl-lilac)]">Senior Program Manager, Cambridge Innovation Center</span>
+                </figcaption>
+              </div>
+            </div>
+          </figure>
+
           {/* trusted-by strip */}
           <div className="mt-14 pt-10 border-t border-white/10">
             <div className="text-xs uppercase tracking-widest text-[var(--lbl-lilac)]/70 mb-5">
