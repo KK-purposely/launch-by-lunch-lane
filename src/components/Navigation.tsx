@@ -84,12 +84,6 @@ const Navigation = () => {
                 </DropdownMenuItem>
 
                 <DropdownMenuItem asChild>
-                  <Link to="/keynotes-workshops" className="w-full" onClick={() => setIsMenuOpen(false)}>
-                    Keynotes
-                  </Link>
-                </DropdownMenuItem>
-
-                <DropdownMenuItem asChild>
                   <Link to="/pricing" className="w-full" onClick={() => setIsMenuOpen(false)}>
                     Services
                   </Link>
@@ -98,6 +92,12 @@ const Navigation = () => {
                 <DropdownMenuItem asChild>
                   <Link to="/comm-corp-express-ai-training-in-ma" className="w-full" onClick={() => setIsMenuOpen(false)}>
                     Free AI Upskilling
+                  </Link>
+                </DropdownMenuItem>
+
+                <DropdownMenuItem asChild>
+                  <Link to="/keynotes-workshops" className="w-full" onClick={() => setIsMenuOpen(false)}>
+                    Keynotes
                   </Link>
                 </DropdownMenuItem>
 
