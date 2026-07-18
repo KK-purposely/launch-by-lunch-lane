@@ -1,6 +1,7 @@
 
 import React from "react";
 import { Helmet } from "react-helmet-async";
+import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { ArrowUpRight, Sparkles } from "lucide-react";
 import { useNavigate } from "react-router-dom";
@@ -68,9 +69,70 @@ const About = () => {
             <p className="text-lbl-orange font-semibold text-lg">Founder, CEO</p>
           </div>
         </div>
-        
-        
-        
+
+        {/* Team Photo and Bios Section */}
+        <div className="mb-12 space-y-10">
+          {/* Karen Kelly */}
+          <div className="flex flex-col md:flex-row gap-8 items-start">
+            <div className="md:w-1/3 w-full">
+              <img
+                src="/lovable-uploads/karen-kelly.jpg"
+                alt="Karen Kelly, CEO of Launch by Lunch"
+                className="rounded-2xl shadow-lg w-full h-auto"
+              />
+            </div>
+            <div className="md:w-2/3 w-full flex">
+              <Card className="border-none shadow-lg bg-gradient-to-br from-white via-lbl-paper/20 to-white overflow-hidden w-full">
+                <CardContent className="p-6 md:p-8">
+                  <div className="flex items-start gap-4 mb-4">
+                    <div className="flex-1">
+                      <h3 className="text-xl font-bold mb-1">
+                        <a href="https://www.linkedin.com/in/karen-kelly-daring-greatly/" target="_blank" rel="noopener noreferrer" className="bg-gradient-to-r from-lbl-ink to-lbl-orange bg-clip-text text-transparent hover:opacity-80 transition-opacity">
+                          Karen Kelly
+                        </a>
+                      </h3>
+                      <p className="text-lbl-orange font-semibold mb-2">Founder, CEO</p>
+                      <p className="text-gray-700 leading-relaxed text-base">
+                        Karen Kelly is a 3x founder and TEDx speaker helping leaders navigate the future of work in an AI-driven world. Named a Top 100 Innovator in 2026, Karen founded Launch by Lunch as Boston's first AI community with the goal of enabling non-technical teams with the power of no code solutions. She has worked with dozens of Fortune 1000 organizations, making AI practical and accessible for non-technical executives while emphasizing judgment and communication as leadership advantages.
+                      </p>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+            </div>
+          </div>
+
+          {/* Ariel Galipeau */}
+          <div className="flex flex-col md:flex-row gap-8 items-start">
+            <div className="md:w-1/3 w-full">
+              <img
+                src="/lovable-uploads/ariel-galipeau-final.png"
+                alt="Ariel Galipeau, Director of AI Programs at Launch by Lunch"
+                className="rounded-2xl shadow-lg w-full h-auto"
+              />
+            </div>
+            <div className="md:w-2/3 w-full flex">
+              <Card className="border-none shadow-lg bg-gradient-to-br from-white via-lbl-paper/20 to-white overflow-hidden w-full">
+                <CardContent className="p-6 md:p-8">
+                  <div className="flex items-start gap-4 mb-4">
+                    <div className="flex-1">
+                      <h3 className="text-xl font-bold mb-1">
+                        <span className="bg-gradient-to-r from-lbl-orange to-lbl-ink bg-clip-text text-transparent">
+                          Ariel Galipeau
+                        </span>
+                      </h3>
+                      <p className="text-lbl-orange font-semibold mb-2">Director of AI Programs</p>
+                      <p className="text-gray-700 leading-relaxed text-base">
+                        Ariel Galipeau is an AI operations leader and coach who helps founders and teams turn ideas into executable plans, scalable systems, and consistent progress. With a decade inside fast-moving, mission-driven startups, she translates complexity into clear priorities and embeds AI into day-to-day workflows to improve decision-making, reduce friction, and drive real momentum. She has a particular interest in closing the AI adoption gap for women.
+                      </p>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+            </div>
+          </div>
+        </div>
+
         {/* CTA Section */}
         <div className="text-center">
           <div className="bg-gradient-to-r from-lbl-ink/10 via-lbl-orange/10 to-lbl-ink/10 rounded-3xl p-8 md:p-12 mb-8">
