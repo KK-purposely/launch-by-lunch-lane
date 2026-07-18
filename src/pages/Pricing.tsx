@@ -642,7 +642,7 @@ const Pricing = () => {
       <section className="bg-hero-soft">
         <div className="max-w-[1120px] mx-auto px-4 sm:px-6 pt-20 pb-16 sm:pt-28 sm:pb-24">
           <div className="max-w-3xl">
-            <div className="eyebrow mb-5">PRICING</div>
+            <div className="eyebrow mb-5">SERVICES</div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-[1.1] mb-6">
               <span className="bg-gradient-to-r from-lbl-ink via-lbl-magenta to-lbl-orange bg-clip-text text-transparent leading-[1.1]">
                 Approachable AI,<br /><span className="whitespace-nowrap">sticky results.</span>
