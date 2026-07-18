@@ -234,9 +234,10 @@ const Index = () => {
                   </span>
                   <div className="h-4 w-px bg-lbl-lilac/50" />
                   <img
-                    src={claudePartnerNetwork.url}
+                    src="/lovable-uploads/claude-partner-network.png"
                     alt="Claude Partner Network logo"
                     className="h-12 md:h-14 w-auto"
+                    loading="lazy"
                   />
                 </motion.div>
               </div>
