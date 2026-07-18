@@ -121,9 +121,9 @@ const About = () => {
                           Ariel Galipeau
                         </span>
                       </h3>
-                      <p className="text-lbl-orange font-semibold mb-2">Director of AI Programs</p>
+                      <p className="text-lbl-orange font-semibold mb-2">Director of AI Programs, CCA-F</p>
                       <p className="text-gray-700 leading-relaxed text-base">
-                        Ariel Galipeau is an AI operations leader and coach who helps founders and teams turn ideas into executable plans, scalable systems, and consistent progress. With a decade inside fast-moving, mission-driven startups, she translates complexity into clear priorities and embeds AI into day-to-day workflows to improve decision-making, reduce friction, and drive real momentum. She has a particular interest in closing the AI adoption gap for women.
+                        Ariel Galipeau is a certified cloud architect and coach who helps founders and teams turn ideas into executable plans, scalable systems, and consistent progress. With a decade inside fast-moving, mission-driven startups, she translates complexity into clear priorities and embeds AI into day-to-day workflows to improve decision-making, reduce friction, and drive real momentum. She has a particular interest in closing the AI adoption gap for women.
                       </p>
                     </div>
                   </div>
