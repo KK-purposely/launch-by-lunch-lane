@@ -56,7 +56,32 @@ const About = () => {
               We are grounded in the belief that AI can support our ability to be more human as leaders, friends, parents, and colleagues. We exist to build community through AI and ensure that no business is left behind in the greatest evolution of opportunity our economy has ever seen.
             </p>
             <p>
-              Join us for a public workshop, monthly AI co-working, or ask how we can bring your business into the new world of work.
+              Join us for a{" "}
+              <a
+                href="https://luma.com/launchbylunch"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-lbl-orange underline underline-offset-2 hover:text-lbl-ink transition-colors"
+              >
+                public workshop
+              </a>
+              ,{" "}
+              <a
+                href="https://luma.com/launchbylunch"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-lbl-orange underline underline-offset-2 hover:text-lbl-ink transition-colors"
+              >
+                monthly AI co-working
+              </a>
+              , or{" "}
+              <a
+                href="/contact"
+                className="text-lbl-orange underline underline-offset-2 hover:text-lbl-ink transition-colors"
+              >
+                ask how
+              </a>{" "}
+              we can bring your business into the new world of work.
             </p>
           </div>
           <p className="mt-10 text-lbl-ink font-semibold text-lg">
