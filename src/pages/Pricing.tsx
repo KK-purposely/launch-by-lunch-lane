@@ -166,7 +166,7 @@ const cards: Card[] = [
       "Built-in context for you, your work, and your goals, so it makes decisions the way you would",
       "A context-rich Chief of Staff that pulls your calendar, email, notes, and CRM into one daily briefing",
       "A daily executive briefing that surfaces your tasks automatically, plus an AI news digest and a built-in accountability system",
-      "Works with Gmail, Google Calendar, Drive, Slack, Notion, Zoom, HubSpot, Airtable, Trello, Asana, Zapier, and Fathom",
+      "Works with hundreds of tools like Gmail, Google Calendar, Drive, Slack, Notion, Zoom, HubSpot, Airtable, Trello, Asana, Zapier, and Fathom",
       "Two one-hour implementation sessions after the build, so the system fits the way you actually work",
       
     ],
