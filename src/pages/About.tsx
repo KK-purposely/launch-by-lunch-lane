@@ -25,73 +25,70 @@ const About = () => {
 
       <div className="relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-r from-lbl-ink/10 via-transparent to-lbl-orange/10" />
-        <div className="relative max-w-4xl mx-auto px-4 sm:px-6 py-16">
-          <div className="text-center mb-8">
+        <div className="relative max-w-4xl mx-auto px-4 sm:px-6 pt-16 pb-20">
+          <div className="text-center">
             <div className="inline-flex items-center gap-2 bg-gradient-to-r from-lbl-ink to-lbl-orange bg-clip-text text-transparent mb-4">
               <Sparkles className="h-6 w-6 text-lbl-orange animate-pulse" />
               <span className="text-sm font-semibold uppercase tracking-wide">Our Story</span>
               <Sparkles className="h-6 w-6 text-lbl-ink animate-pulse" />
             </div>
-            <h1 className="text-4xl md:text-6xl font-bold mb-6">
+            <h1 className="text-4xl md:text-6xl font-bold mb-10">
               <span className="bg-gradient-to-r from-lbl-ink to-lbl-orange bg-clip-text text-transparent">
                 Why We Exist
               </span>
             </h1>
+            <div className="max-w-3xl mx-auto text-lg md:text-xl text-muted-foreground leading-relaxed space-y-6">
+              <p>
+                When I founded Launch by Lunch in 2024, my goal was simple: help non-technical founders build with AI. Since then, it has evolved into more than 2,500 IRL community members, monthly AI coworking events, and bespoke AI solutions and{" "}
+                <a
+                  href="/comm-corp-express-ai-training-in-ma"
+                  className="text-lbl-orange underline underline-offset-2 hover:text-lbl-ink transition-colors"
+                >
+                  training
+                </a>{" "}
+                for small business owners.
+              </p>
+              <p>
+                We are grounded in the belief that AI can support our ability to be more human as leaders, friends, parents, and colleagues. We exist to build community through AI and ensure that no business is left behind in the greatest evolution of opportunity our economy has ever seen.
+              </p>
+              <p>
+                Join us for a{" "}
+                <a
+                  href="https://luma.com/launchbylunch"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-lbl-orange underline underline-offset-2 hover:text-lbl-ink transition-colors"
+                >
+                  public workshop
+                </a>
+                ,{" "}
+                <a
+                  href="https://luma.com/launchbylunch"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-lbl-orange underline underline-offset-2 hover:text-lbl-ink transition-colors"
+                >
+                  monthly AI co-working
+                </a>
+                , or{" "}
+                <a
+                  href="/contact"
+                  className="text-lbl-orange underline underline-offset-2 hover:text-lbl-ink transition-colors"
+                >
+                  ask how
+                </a>{" "}
+                we can bring your business into the new world of work.
+              </p>
+            </div>
+            <p className="mt-10 text-lbl-ink font-semibold text-lg">
+              - Karen Kelly, Founder, CEO
+            </p>
           </div>
         </div>
       </div>
 
       {/* Main Content */}
       <div className="max-w-4xl mx-auto px-4 sm:px-6 pb-16">
-        {/* Why We Exist Section */}
-        <div className="text-center mb-10 mt-4">
-          <div className="max-w-3xl mx-auto text-lg md:text-xl text-muted-foreground leading-relaxed space-y-6">
-            <p>
-              When I founded Launch by Lunch in 2024, my goal was simple: help non-technical founders build with AI. Since then, it has evolved into more than 2,500 IRL community members, monthly AI coworking events, and bespoke AI solutions and{" "}
-              <a
-                href="/comm-corp-express-ai-training-in-ma"
-                className="text-lbl-orange underline underline-offset-2 hover:text-lbl-ink transition-colors"
-              >
-                training
-              </a>{" "}
-              for small business owners.
-            </p>
-            <p>
-              We are grounded in the belief that AI can support our ability to be more human as leaders, friends, parents, and colleagues. We exist to build community through AI and ensure that no business is left behind in the greatest evolution of opportunity our economy has ever seen.
-            </p>
-            <p>
-              Join us for a{" "}
-              <a
-                href="https://luma.com/launchbylunch"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-lbl-orange underline underline-offset-2 hover:text-lbl-ink transition-colors"
-              >
-                public workshop
-              </a>
-              ,{" "}
-              <a
-                href="https://luma.com/launchbylunch"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-lbl-orange underline underline-offset-2 hover:text-lbl-ink transition-colors"
-              >
-                monthly AI co-working
-              </a>
-              , or{" "}
-              <a
-                href="/contact"
-                className="text-lbl-orange underline underline-offset-2 hover:text-lbl-ink transition-colors"
-              >
-                ask how
-              </a>{" "}
-              we can bring your business into the new world of work.
-            </p>
-          </div>
-          <p className="mt-10 text-lbl-ink font-semibold text-lg">
-            - Karen Kelly, Founder, CEO
-          </p>
-        </div>
 
         {/* Team Photo and Bios Section */}
         <div className="mb-12 space-y-10">
