@@ -82,7 +82,7 @@ type Card = {
   note?: string;
   cta: { label: string; href: string; external?: boolean; internal?: boolean };
   footnote?: React.ReactNode;
-  quote?: { text: string; name: string; title: string };
+  quote?: { text: string; name: string; title: string; image?: string };
 };
 
 type CardTheme = {
