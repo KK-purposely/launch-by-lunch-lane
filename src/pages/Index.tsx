@@ -14,6 +14,7 @@ import Footer from "@/components/Footer";
 import trustedByImg from "@/assets/trusted-by.png";
 import mollyPapermaster from "@/assets/molly-papermaster.png.asset.json";
 import commCorpLogo from "@/assets/commonwealth-corporation-logo.png.asset.json";
+import claudePartnerNetwork from "@/assets/claude-partner-network.png.asset.json";
 
 /* ── Scroll-triggered wrapper ── */
 const Reveal = ({ children, className = "", delay = 0 }: { children: React.ReactNode; className?: string; delay?: number }) => {
@@ -224,25 +225,35 @@ const Index = () => {
                 </div>
 
                 <motion.div
-                  className="mt-6 flex items-center gap-4 flex-wrap"
+                  className="mt-6 flex flex-col gap-5"
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.7, delay: 0.25, ease: "easeOut" }}
                 >
-                  <p className="text-base text-gray-500">In partnership with</p>
-                  <a
-                    href="https://commcorp.org/subprogram/wtfp-express-program/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-block"
-                    aria-label="Commonwealth Corporation"
-                  >
+                  <div className="flex items-center gap-4 flex-wrap">
+                    <p className="text-base text-gray-500">In partnership with</p>
+                    <a
+                      href="https://commcorp.org/subprogram/wtfp-express-program/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-block"
+                      aria-label="Commonwealth Corporation"
+                    >
+                      <img
+                        src={commCorpLogo.url}
+                        alt="Commonwealth Corporation logo"
+                        className="h-10 md:h-12 w-auto"
+                      />
+                    </a>
+                  </div>
+                  <div className="flex flex-col items-start gap-2">
+                    <p className="text-base text-gray-500">Proudly certified</p>
                     <img
-                      src={commCorpLogo.url}
-                      alt="Commonwealth Corporation logo"
-                      className="h-10 md:h-12 w-auto"
+                      src={claudePartnerNetwork.url}
+                      alt="Claude Partner Network logo"
+                      className="h-12 md:h-14 w-auto"
                     />
-                  </a>
+                  </div>
                 </motion.div>
               </div>
 
