@@ -13,6 +13,7 @@ import theEngineLogo from "@/assets/the-engine-logo.png.asset.json";
 import womenApplyingAiLogo from "@/assets/women-applying-ai-logo.png.asset.json";
 import greaterBostonChamberLogo from "@/assets/greater-boston-chamber.png.asset.json";
 import simoneBernsteinPhoto from "@/assets/simone-bernstein.png.asset.json";
+import flamingPizzaLogo from "@/assets/flaming-pizza-logo.png.asset.json";
 import katLazellPhoto from "@/assets/testimonial-kat-lazell.jpg";
 import amandaSwiatochaPhoto from "@/assets/testimonial-amanda-swiatocha.jpg";
 import jessLynchPhoto from "@/assets/testimonial-jess-lynch.jpg";
@@ -639,8 +640,8 @@ const Pricing = () => {
       </Helmet>
 
       {/* ── Hero ── */}
-      <section className="bg-hero-soft">
-        <div className="max-w-[1120px] mx-auto px-4 sm:px-6 pt-20 pb-16 sm:pt-28 sm:pb-24">
+      <section className="bg-hero-soft overflow-hidden">
+        <div className="relative max-w-[1120px] mx-auto px-4 sm:px-6 pt-20 pb-16 sm:pt-28 sm:pb-24">
           <div className="max-w-3xl">
             <div className="eyebrow mb-5">PRICING</div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-[1.1] mb-6">
@@ -667,6 +668,14 @@ const Pricing = () => {
               </a>
             </div>
           </div>
+
+          {/* Animated flaming pizza logo */}
+          <img
+            src={flamingPizzaLogo.url}
+            alt="Launch by Lunch flaming pizza logo"
+            className="hidden lg:block absolute right-0 top-8 xl:-top-2 w-48 xl:w-56 h-auto flame-flicker"
+            loading="eager"
+          />
         </div>
       </section>
 

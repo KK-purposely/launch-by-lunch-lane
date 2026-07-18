@@ -141,6 +141,34 @@
   animation: dash-flow 1.4s linear infinite;
 }
 
+@keyframes flame-flicker {
+  0%, 100% {
+    transform: scale(1) rotate(-1deg);
+    filter: drop-shadow(0 0 12px rgba(252, 136, 23, 0.35)) drop-shadow(0 0 24px rgba(252, 136, 23, 0.15));
+  }
+  20% {
+    transform: scale(1.03) rotate(0.5deg);
+    filter: drop-shadow(0 0 16px rgba(252, 136, 23, 0.5)) drop-shadow(0 0 32px rgba(252, 136, 23, 0.25));
+  }
+  40% {
+    transform: scale(1.01) rotate(-0.5deg);
+    filter: drop-shadow(0 0 14px rgba(252, 136, 23, 0.4)) drop-shadow(0 0 28px rgba(252, 136, 23, 0.2));
+  }
+  60% {
+    transform: scale(1.05) rotate(1deg);
+    filter: drop-shadow(0 0 20px rgba(252, 136, 23, 0.6)) drop-shadow(0 0 38px rgba(252, 136, 23, 0.3));
+  }
+  80% {
+    transform: scale(1.02) rotate(-0.3deg);
+    filter: drop-shadow(0 0 15px rgba(252, 136, 23, 0.45)) drop-shadow(0 0 30px rgba(252, 136, 23, 0.22));
+  }
+}
+
+.flame-flicker {
+  transform-origin: center bottom;
+  animation: flame-flicker 2.2s ease-in-out infinite;
+}
+
 /* ── LBL utility classes ── */
 
 /* Signature gradient text — eggplant → magenta → orange clipped to glyphs */
