@@ -11,6 +11,7 @@ import elixrLogo from "@/assets/elixr-logo.png.asset.json";
 import theEngineLogo from "@/assets/the-engine-logo.png.asset.json";
 import womenApplyingAiLogo from "@/assets/women-applying-ai-logo.png.asset.json";
 import greaterBostonChamberLogo from "@/assets/greater-boston-chamber.png.asset.json";
+import simoneBernsteinPhoto from "@/assets/simone-bernstein.png.asset.json";
 import katLazellPhoto from "@/assets/testimonial-kat-lazell.jpg";
 import amandaSwiatochaPhoto from "@/assets/testimonial-amanda-swiatocha.jpg";
 import jessLynchPhoto from "@/assets/testimonial-jess-lynch.jpg";
