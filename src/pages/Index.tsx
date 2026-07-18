@@ -251,11 +251,9 @@ const Index = () => {
                   variant="outline"
                   size="lg"
                   className="w-full max-w-sm px-8 py-6 text-lg border-lbl-orange text-lbl-orange hover:bg-lbl-orange hover:text-white rounded-full font-medium transition-all duration-300"
-                  onClick={() => {
-                    document.getElementById("how-it-works")?.scrollIntoView({ behavior: "smooth" });
-                  }}
+                  asChild
                 >
-                  See How It Works
+                  <Link to="/services">See What We Do</Link>
                 </Button>
               </motion.div>
             </div>
