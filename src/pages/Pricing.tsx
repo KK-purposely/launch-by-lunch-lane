@@ -340,24 +340,28 @@ const testimonials = [
 
 const faqs = [
   {
-    q: "Who do you work with?",
-    a: "Small businesses and non-technical owners. That is our whole focus. If you run a lean team and need AI to pay for itself, you are who we build for.",
+    q: "What is AI automation for small business?",
+    a: "AI automation for small business means using artificial intelligence to handle repetitive, time-consuming tasks that currently drain your team's energy. At Launch by Lunch, we use Claude as a central intelligence layer that connects the tools you already use, your email, calendar, CRM, documents, Slack, and more, so they can communicate with each other seamlessly. Instead of jumping between a dozen apps to find information or complete a workflow, you get a single pane of glass where AI handles the repetitive work across all of them. This means less manual data entry, fewer missed follow-ups, faster response times to customers, and more hours in your week to focus on growing the business rather than managing it.",
   },
   {
-    q: "How fast will we see results?",
-    a: "Most people leave a workshop using AI the same week. An assessment takes one to two weeks and points you at the wins that matter first.",
+    q: "How can a small business owner actually start using AI?",
+    a: "The best way to start is by picking one or two repetitive workflows that are eating up your team's time, things like inbox triage, meeting follow-ups, daily reporting, or lead routing. We help you map those workflows and then let Claude orchestrate them across your existing tools. Because Claude can connect to nearly every platform you already pay for, you don't need to rip anything out or buy a whole new software stack. You simply add an intelligence layer on top that ties everything together. Most small business owners are surprised by how quickly they see results, often within the first few weeks, because the AI is working with the tools and processes your team already knows.",
   },
   {
-    q: "Do we need to buy new software?",
-    a: "Usually not. We lead with Claude as one place that connects the tools you already use, and we often find subscriptions you can cut.",
+    q: "Do I need new software or expensive tools to add AI to my business?",
+    a: "No. One of the biggest misconceptions about AI for small business is that you need to invest in expensive new software or rip out your existing systems. The reality is that most small businesses already have the tools they need. We use Claude as the connective tissue between your existing platforms, giving you one place to ask questions, take action, and get work done across email, documents, calendar, CRM, project management, and more. You don't need to buy a stack of new software or pay for another dozen subscriptions. The value comes from making what you already own work together intelligently, not from adding more complexity to your tech stack.",
   },
   {
-    q: "What if AI is not worth it for us?",
-    a: "We will tell you plainly. We do not train owners to admire AI, we train them to put it to work and keep the results.",
+    q: "What is a single pane of glass for AI?",
+    a: "A single pane of glass means one unified interface, powered by Claude, where you can see, understand, and act on information from every tool your business runs on. Instead of context-switching between ten different browser tabs, five apps, and a scattered inbox, you ask once and Claude pulls the right data, summarizes it, drafts a response, schedules a meeting, or executes a workflow across all connected systems. For a small business owner, this is transformative. You no longer have to hunt through spreadsheets for a customer note or dig through Slack to find a decision. Everything is accessible, actionable, and connected in one intelligent workspace.",
   },
   {
-    q: "Do we stay dependent on you?",
-    a: "No. Every engagement is built so your team can do the work themselves. That is the point.",
+    q: "Is AI safe for a small business to adopt?",
+    a: "Yes, when it is set up thoughtfully and with the right guardrails. We help small business owners adopt AI in a people-first way, which means clear role-based access controls, data privacy protections, and a phased rollout that brings your team along rather than surprising them. Claude operates within the permissions of the tools you already use, so it cannot access what your employees cannot access. We also help you establish review checkpoints for high-stakes workflows, like customer communications or financial reporting, so a human stays in the loop where it matters. The goal is to make your business faster and more efficient without ever compromising trust, accuracy, or security.",
+  },
+  {
+    q: "How long does it take to see results from AI automation?",
+    a: "Most small businesses see meaningful time savings within the first few weeks of implementation. Once Claude is wired into your core tools as a single pane of glass, the repetitive work that used to eat hours of your week, generating reports, scheduling meetings, drafting follow-up emails, routing leads, updating spreadsheets, gets handled automatically or with minimal input. The timeline depends on the complexity of your workflows, but because we build on top of tools your team already uses, there is no steep learning curve or months-long migration. Your people continue working the way they always have, except now Claude is working alongside them, handling the busywork so they can focus on the strategy, the relationships, and the creative problem-solving that actually grows the business.",
   },
 ];
 
