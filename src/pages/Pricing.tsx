@@ -672,9 +672,17 @@ const Pricing = () => {
                 <blockquote className="text-lg leading-relaxed text-white/90 mb-5">
                   &ldquo;{t.quote}&rdquo;
                 </blockquote>
-                <figcaption>
-                  <div className="font-semibold text-white">{t.name}</div>
-                  <div className="text-sm text-[var(--lbl-lilac)]">{t.title}</div>
+                <figcaption className="flex items-center gap-3">
+                  <img
+                    src={t.image}
+                    alt={t.name}
+                    className="h-12 w-12 rounded-full object-cover ring-2 ring-white/20 flex-shrink-0"
+                    loading="lazy"
+                  />
+                  <div>
+                    <div className="font-semibold text-white">{t.name}</div>
+                    <div className="text-sm text-[var(--lbl-lilac)]">{t.title}</div>
+                  </div>
                 </figcaption>
               </figure>
             ))}
