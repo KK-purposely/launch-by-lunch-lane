@@ -156,7 +156,7 @@ const Industries = () => {
       {/* Most requested builds */}
       <section id="builds" className="py-20 md:py-28 bg-lbl-paper/40">
         <div className="max-w-6xl mx-auto px-4 sm:px-6">
-          <div className="mb-14 text-center">
+          <div className="mb-14 max-w-3xl">
             <p className="text-sm font-semibold uppercase tracking-widest text-lbl-orange mb-3">Our most requested builds</p>
             <h2 className="text-3xl md:text-5xl font-bold">
               <span className="bg-grad-brand bg-clip-text text-transparent">Five builds that quietly run the business.</span>
