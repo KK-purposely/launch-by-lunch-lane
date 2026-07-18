@@ -225,35 +225,17 @@ const Index = () => {
                 </div>
 
                 <motion.div
-                  className="mt-6 flex flex-col gap-5"
+                  className="mt-6 flex items-center gap-4 flex-wrap"
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.7, delay: 0.25, ease: "easeOut" }}
                 >
-                  <div className="flex items-center gap-4 flex-wrap">
-                    <p className="text-base text-gray-500">In partnership with</p>
-                    <a
-                      href="https://commcorp.org/subprogram/wtfp-express-program/"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="inline-block"
-                      aria-label="Commonwealth Corporation"
-                    >
-                      <img
-                        src={commCorpLogo.url}
-                        alt="Commonwealth Corporation logo"
-                        className="h-10 md:h-12 w-auto"
-                      />
-                    </a>
-                  </div>
-                  <div className="flex items-center gap-4 flex-wrap">
-                    <p className="text-base text-gray-500">Proudly certified</p>
-                    <img
-                      src={claudePartnerNetwork.url}
-                      alt="Claude Partner Network logo"
-                      className="h-12 md:h-14 w-auto"
-                    />
-                  </div>
+                  <p className="text-lg md:text-xl text-gray-500">Proudly certified</p>
+                  <img
+                    src={claudePartnerNetwork.url}
+                    alt="Claude Partner Network logo"
+                    className="h-14 md:h-16 w-auto"
+                  />
                 </motion.div>
               </div>
 
