@@ -14,7 +14,6 @@ import Footer from "@/components/Footer";
 import trustedByImg from "@/assets/trusted-by.png";
 import mollyPapermaster from "@/assets/molly-papermaster.png.asset.json";
 import commCorpLogo from "@/assets/commonwealth-corporation-logo.png.asset.json";
-import claudePartnerNetwork from "@/assets/claude-partner-network.png.asset.json";
 
 /* ── Scroll-triggered wrapper ── */
 const Reveal = ({ children, className = "", delay = 0 }: { children: React.ReactNode; className?: string; delay?: number }) => {
@@ -235,9 +234,10 @@ const Index = () => {
                   </span>
                   <div className="h-4 w-px bg-lbl-lilac/50" />
                   <img
-                    src={claudePartnerNetwork.url}
+                    src="/lovable-uploads/claude-partner-network.png"
                     alt="Claude Partner Network logo"
                     className="h-12 md:h-14 w-auto"
+                    loading="lazy"
                   />
                 </motion.div>
               </div>
