@@ -65,7 +65,7 @@ const Navigation = () => {
             <Button
               size="sm"
               className="bg-lbl-orange hover:bg-lbl-orange/90 text-white rounded-full font-medium transition-all duration-300"
-              onClick={() => window.open("https://learn.launchbylunch.co/?modal=signup", "_blank")}
+              onClick={() => window.open("https://newsletter.launchbylunch.co", "_blank")}
             >
               Get Our Newsletter
             </Button>
