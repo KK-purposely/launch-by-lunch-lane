@@ -76,10 +76,10 @@ const FreeUpskillingMA = () => {
           name="description"
           content="Massachusetts small businesses can access up to $15,000 per year in free AI and workforce upskilling through the Workforce Training Fund Express Program. Launch by Lunch is an official partner."
         />
-        <link rel="canonical" href="https://launchbylunch.co/free-upskilling-ma" />
+        <link rel="canonical" href="https://launchbylunch.co/comm-corp-express-ai-training-in-ma" />
         <meta property="og:title" content="Free Upskilling MA | Workforce Training Fund | Launch by Lunch" />
         <meta property="og:description" content="Massachusetts small businesses can access up to $15,000 per year in free AI and workforce upskilling through the Workforce Training Fund Express Program. Launch by Lunch is an official partner." />
-        <meta property="og:url" content="https://launchbylunch.co/free-upskilling-ma" />
+        <meta property="og:url" content="https://launchbylunch.co/comm-corp-express-ai-training-in-ma" />
         <meta property="og:type" content="website" />
         <meta property="og:image" content={`https://launchbylunch.co${ogImage.url}`} />
         <meta property="og:image:width" content="1216" />
@@ -94,7 +94,7 @@ const FreeUpskillingMA = () => {
             "@type": "WebPage",
             name: "Free AI Upskilling for Massachusetts Small Businesses",
             description: "Massachusetts small businesses can access up to $15,000 per year in free AI and workforce upskilling through the Workforce Training Fund Express Program.",
-            url: "https://launchbylunch.co/free-upskilling-ma",
+            url: "https://launchbylunch.co/comm-corp-express-ai-training-in-ma",
             mainEntity: {
               "@type": "GovernmentService",
               name: "Massachusetts Workforce Training Fund Express Program",

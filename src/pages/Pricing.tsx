@@ -195,7 +195,7 @@ const cards: Card[] = [
     footnote: (
       <>
         Curious about upskilling your whole team on a budget? See our{" "}
-        <Link to="/free-upskilling-ma" className="text-lbl-orange font-medium hover:underline">
+        <Link to="/comm-corp-express-ai-training-in-ma" className="text-lbl-orange font-medium hover:underline">
           free AI upskilling program
         </Link>
         . If you&apos;re in MA, ask us about the free mini-grant program for on-site AI education.
