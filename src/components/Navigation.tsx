@@ -34,10 +34,6 @@ const Navigation = () => {
             {/* Desktop Navigation */}
             <div className="hidden md:block ml-10">
               <div className="flex items-baseline space-x-8">
-                <Link to="/" className="px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-lbl-orange">
-                  Home
-                </Link>
-
                 <Link to="/about" className="px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-lbl-orange">
                   About
                 </Link>
@@ -53,7 +49,6 @@ const Navigation = () => {
                 <Link to="/comm-corp-express-ai-training-in-ma" className="px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-lbl-orange">
                   Free AI Upskilling
                 </Link>
-
 
                 <Link to="/contact" className="px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-lbl-orange">
                   Contact Us
