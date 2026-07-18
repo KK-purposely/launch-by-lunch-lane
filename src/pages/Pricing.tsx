@@ -576,7 +576,7 @@ const Pricing = () => {
 
       {/* ── Service cards stack ── */}
       <section className="py-16 sm:py-24">
-        <div className="max-w-[1120px] mx-auto px-4 sm:px-6 space-y-8 sm:space-y-10">
+        <div className="max-w-[1120px] mx-auto px-4 sm:px-6 space-y-12 sm:space-y-16">
           {cards.map((c) => (
             <ServiceCard key={c.name} card={c} />
           ))}
