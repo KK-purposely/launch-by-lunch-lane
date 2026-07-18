@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
 import tedxLogo from "@/assets/tedx-logo.png.asset.json";
+import anthropicLogo from "@/assets/anthropic-certified.png.asset.json";
 import {
   Flame,
   Check,
@@ -590,6 +591,14 @@ const Pricing = () => {
                 <div className="mt-3 text-[var(--lbl-lilac)] text-base leading-snug">
                   {s.label}
                 </div>
+                {s.label === "Anthropic Certified Partner" && (
+                  <img
+                    src={anthropicLogo.url}
+                    alt="Anthropic Certified Partner"
+                    className="mt-4 h-12 w-auto opacity-90"
+                    loading="lazy"
+                  />
+                )}
               </div>
             ))}
           </div>
