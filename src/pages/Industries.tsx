@@ -131,7 +131,7 @@ const Industries = () => {
             <span className="bg-grad-brand bg-clip-text text-transparent">Tuned to your world.</span>
           </h1>
           <p className="text-lg md:text-xl text-lbl-ink/80 leading-relaxed max-w-3xl">
-            Our core team has spent careers inside advertising, media, healthcare, coaching, HR, technology, education, and finance. We've been small business owners ourselves, and we still are, right alongside you. We think like small business owners because we are small business owners, and we've spent most of our collective careers either running one or working shoulder-to-shoulder inside one.
+            Our core team has spent careers inside advertising, media, healthcare, coaching, HR, technology, education, and finance. We think like small business owners because we are small business owners, and we've spent most of our collective careers either running one or working shoulder-to-shoulder inside one.
           </p>
           <div className="mt-8 flex flex-col sm:flex-row gap-4">
             <Button
