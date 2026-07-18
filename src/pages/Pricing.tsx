@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
+import katLazellPhoto from "@/assets/kat-lazell.jpg.asset.json";
 import anthropicLogo from "@/assets/anthropic-certified.png.asset.json";
 import harvardLogo from "@/assets/harvard-logo.png.asset.json";
 import cicLogo from "@/assets/cic-logo.png.asset.json";
