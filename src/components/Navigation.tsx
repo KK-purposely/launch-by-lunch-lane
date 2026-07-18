@@ -78,18 +78,10 @@ const Navigation = () => {
               </DropdownMenuTrigger>
               <DropdownMenuContent align="end" className="w-56 bg-white">
                 <DropdownMenuItem asChild>
-                  <Link to="/" className="w-full" onClick={() => setIsMenuOpen(false)}>
-                    Home
-                  </Link>
-                </DropdownMenuItem>
-
-                <DropdownMenuItem asChild>
                   <Link to="/about" className="w-full" onClick={() => setIsMenuOpen(false)}>
                     About
                   </Link>
                 </DropdownMenuItem>
-
-                <DropdownMenuSeparator />
 
                 <DropdownMenuItem asChild>
                   <Link to="/keynotes-workshops" className="w-full" onClick={() => setIsMenuOpen(false)}>
@@ -109,13 +101,11 @@ const Navigation = () => {
                   </Link>
                 </DropdownMenuItem>
 
-
                 <DropdownMenuItem asChild>
                   <Link to="/contact" className="w-full" onClick={() => setIsMenuOpen(false)}>
                     Contact Us
                   </Link>
                 </DropdownMenuItem>
-
               </DropdownMenuContent>
             </DropdownMenu>
           </div>
