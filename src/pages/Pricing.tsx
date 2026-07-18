@@ -317,7 +317,7 @@ const logos: { name: string; src?: string; scale?: number; filter?: string }[] =
 const testimonials = [
   {
     quote:
-      "Within 45 minutes we had built our first app with AI. She's incredibly relatable and makes the complex seem easy, leading to her session being the most talked about of the day.",
+      "Within 45 minutes we had built our first app with AI. Karen is incredibly relatable and makes the complex seem easy, leading to her session being the most talked about of the day.",
     name: "Jess Lynch",
     title: "Founding Partner, FoundersEdge",
     image: jessLynchPhoto,
