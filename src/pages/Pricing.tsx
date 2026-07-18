@@ -512,7 +512,7 @@ const Pricing = () => {
             <div className="eyebrow mb-5">PRICING</div>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-[1.1] mb-6">
               <span className="bg-gradient-to-r from-lbl-ink via-lbl-magenta to-lbl-orange bg-clip-text text-transparent leading-[1.1]">
-                Practical AI,<br /><span className="whitespace-nowrap">priced plainly.</span>
+                Approachable AI,<br /><span className="whitespace-nowrap">sticky results.</span>
               </span>
             </h1>
             <hr className="brand-rule mb-8" />
