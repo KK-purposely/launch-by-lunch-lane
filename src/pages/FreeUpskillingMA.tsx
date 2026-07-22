@@ -314,17 +314,36 @@ const FreeUpskillingMA = () => {
                 <p className="text-base text-gray-600 mb-6">
                   These courses are pre-approved for the grant and available to any eligible Massachusetts small business.
                 </p>
-                <div className="grid sm:grid-cols-2 gap-4">
+                <div className="space-y-3">
                   {courses.map((course) => (
-                    <div
+                    <details
                       key={course.number}
-                      className="flex items-start gap-3 p-3 rounded-xl bg-lbl-orange/5"
+                      className="group rounded-xl bg-lbl-orange/5 border border-lbl-orange/10 open:bg-lbl-orange/10 transition-colors"
                     >
-                      <span className="inline-flex items-center px-2.5 py-1 rounded-md bg-lbl-orange/10 text-lbl-orange font-semibold text-sm whitespace-nowrap">
-                        {course.number}
-                      </span>
-                      <span className="text-base text-lbl-ink leading-snug">{course.title}</span>
-                    </div>
+                      <summary className="flex items-start gap-3 p-4 cursor-pointer list-none [&::-webkit-details-marker]:hidden">
+                        <span className="inline-flex items-center px-2.5 py-1 rounded-md bg-lbl-orange/10 text-lbl-orange font-semibold text-sm whitespace-nowrap">
+                          {course.number}
+                        </span>
+                        <span className="flex-1 text-base text-lbl-ink leading-snug font-medium">
+                          {course.title}
+                        </span>
+                        <ArrowRight className="h-5 w-5 text-lbl-orange flex-shrink-0 mt-1 transition-transform duration-200 group-open:rotate-90" />
+                      </summary>
+                      <div className="px-4 pb-5 pt-1 space-y-3 text-base text-gray-700 leading-relaxed">
+                        <p className="text-sm font-medium text-lbl-ink/80">{course.meta}</p>
+                        <p>{course.description}</p>
+                        <p>
+                          <span className="font-semibold text-lbl-ink">In the room: </span>
+                          {course.inRoom}
+                        </p>
+                        {course.prerequisite && (
+                          <p>
+                            <span className="font-semibold text-lbl-ink">Prerequisite: </span>
+                            {course.prerequisite}
+                          </p>
+                        )}
+                      </div>
+                    </details>
                   ))}
                 </div>
               </CardContent>
