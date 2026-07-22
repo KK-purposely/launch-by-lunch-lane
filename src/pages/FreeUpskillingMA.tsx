@@ -1,7 +1,7 @@
 import React from "react";
 import { Helmet } from "react-helmet-async";
 import { motion } from "framer-motion";
-import { GraduationCap, DollarSign, Building2, CheckCircle2, ArrowRight, FileText, Search, ClipboardList, Sparkles } from "lucide-react";
+import { GraduationCap, DollarSign, Building2, CheckCircle2, ArrowRight, ChevronDown, FileText, Search, ClipboardList, Sparkles } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import Footer from "@/components/Footer";
@@ -327,7 +327,7 @@ const FreeUpskillingMA = () => {
                         <span className="flex-1 text-base text-lbl-ink leading-snug font-medium">
                           {course.title}
                         </span>
-                        <ArrowRight className="h-5 w-5 text-lbl-orange flex-shrink-0 mt-1 transition-transform duration-200 group-open:rotate-90" />
+                        <ChevronDown className="h-5 w-5 text-lbl-orange flex-shrink-0 mt-1 transition-transform duration-200 group-open:rotate-180" />
                       </summary>
                       <div className="px-4 pb-5 pt-1 space-y-3 text-base text-gray-700 leading-relaxed">
                         <p className="text-sm font-medium text-lbl-ink/80">{course.meta}</p>
