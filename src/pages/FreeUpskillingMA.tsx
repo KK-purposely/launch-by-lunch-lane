@@ -59,13 +59,73 @@ const FreeUpskillingMA = () => {
     },
   ];
 
-  const courses = [
-    { number: "C-15543", title: "AI Essentials: Your New Co-Worker Is Claude" },
-    { number: "C-15681", title: "AI for HR Operations and Internal Documentation" },
-    { number: "C-15682", title: "AI for Sales: From Prospecting to Proposal" },
-    { number: "C-15683", title: "Learn to Build Your Own Website with AI" },
-    { number: "C-15684", title: "AI for Customer Service and Client Communication" },
-    { number: "C-15685", title: "AI for Marketing and Content Creation" },
+  const courses: { number: string; title: string; meta: string; description: string; inRoom: string; prerequisite?: string }[] = [
+    {
+      number: "C-15866",
+      title: "AI Leadership Alignment: Assessing Readiness and Leading Adoption",
+      meta: "3 hours | In-person or live virtual · Up to 10 participants · $4,500 per cohort | $749/person (open enrollment)",
+      description:
+        "The leadership course that comes before any rollout. AI initiatives rarely stall on technology; they stall because the leadership team isn't aligned on where they're going or how to get there. This session gives senior leaders a shared language and a repeatable method for leading AI adoption, built on four established frameworks: the 5A adoption model, Rogers' Diffusion of Innovations curve, the Brynjolfsson productivity J-curve, and the difference between sponsoring a change and actively leading it. Participants work through a guided readiness assessment, analyze where AI shifts how their organization competes, and examine the gap between the AI behaviors their teams have actually seen them model and the ones that would inspire others to follow. They leave able to lead adoption deliberately instead of leaving it to scattered individual experimentation.",
+      inRoom:
+        "AI-readiness pulse check, framework walkthroughs, think-pair-share strategy exercises, modeling self-assessment, structured behavioral goal-setting. All exercises use instructor-provided frameworks and practice prompts.",
+    },
+    {
+      number: "C-15543",
+      title: "AI Essentials: Your New Co-Worker Is Claude",
+      meta: "Half-day workshop (4 hours) | In-person or live virtual · Up to 15 participants · $5,000 per cohort | $525/person (open enrollment)",
+      description:
+        "The \"start here\" course for any employee in any department. Most people know they should be using AI, they just don't know where to begin. This workshop removes the anxiety and builds a working foundation in one morning. Participants spend the first hour understanding what Claude is and how to talk to it effectively. The rest of the session is hands-on: drafting emails, summarizing documents, preparing for meetings, and answering business questions in real time. Everyone leaves with a personal prompt library they built themselves and can use immediately.",
+      inRoom: "Prompt-writing exercises, live demos, small group practice, personal prompt library built during class.",
+    },
+    {
+      number: "C-15859",
+      title: "Beyond Claude Chat: Skills, Routines, and a Connected Toolkit",
+      meta: "Half-day 4 hours | In-person or live virtual · Up to 15 participants · $5,000 per cohort | $525/person (open enrollment)",
+      description:
+        "The \"next step\" course for anyone who's already using Claude and wants to move past one-off prompts. Most people who've adopted AI hit the same wall: they get value from chatting with Claude but still copy-paste between tools, retype the same context every week, and miss the real leverage that comes from a connected setup. This workshop closes that gap in half a day. Participants spend the session understanding how to build an operating system within Claude. We'll cover how to design reusable skills and routines so Claude handles repetitive work without re-explaining it, how to connect your everyday tools (email, calendar, Drive, Notion, and more) so Claude can act across them, key commands for managing token usage so longer sessions stay fast and affordable, and best practices for organizing projects and workstreams so each piece of work has the right context loaded. Everyone leaves with the knowledge to connect their tools in Claude, an example starter set of skills, and the muscle to add more on their own.",
+      inRoom: "Demonstrate tool connections, demo of building a skill and routine, project structure templates, review of common commands.",
+      prerequisite: "Comfort using Claude for everyday tasks (drafting, summarizing, Q&A). The AI Essentials course or equivalent daily use is recommended.",
+    },
+    {
+      number: "C-15685",
+      title: "AI for Marketing and Content Creation",
+      meta: "Full-day workshop (7 hours) | In-person or live virtual · Up to 12 participants · $8,250 per cohort | $925/person (open enrollment)",
+      description:
+        "Massachusetts SMBs often have one person doing the job of three when it comes to marketing. This full-day course teaches teams how to produce more content in less time without sacrificing quality or brand voice. Morning session covers social media posts, email campaigns, and blog content. Afternoon covers repurposing one asset into multiple formats, writing ad copy, and building a reusable content system. Participants work on real content for their actual businesses throughout the day.",
+      inRoom: "Live content creation in Claude, brand voice exercises, 90-day content calendar built during class, reusable prompt templates for every content type.",
+    },
+    {
+      number: "C-15684",
+      title: "AI for Customer Service and Client Communication",
+      meta: "Half-day workshop (4 hours) | In-person or live virtual · Up to 15 participants · $5,300 per cohort | $565/person (open enrollment)",
+      description:
+        "Slow response times and inconsistent messaging cost customers, and Massachusetts businesses in hospitality, retail, healthcare admin, and professional services feel this acutely. This workshop teaches front-line staff how to draft professional, on-brand replies quickly, handle complaints with the right tone, respond to reviews, and build a shared FAQ library the whole team can use. Participants practice with real scenarios from their industry and leave with a ready-to-use response library.",
+      inRoom: "Live response drafting, tone calibration exercises, complaint-handling practice, shared response library built as a team.",
+    },
+    {
+      number: "C-15682",
+      title: "AI for Sales: From Prospecting to Proposal",
+      meta: "Full-day workshop (7 hours) | In-person or live virtual · Up to 12 participants · $9,350 per cohort | $1,050/person (open enrollment)",
+      description:
+        "This course gives sales teams a repeatable AI-assisted workflow from first touch to signed proposal. Morning covers prospect research, personalized outreach, and follow-up sequences that don't sound like templates. Afternoon covers proposal writing, objection preparation, and post-call summaries. Participants practice on real accounts and prospects during the day, so the work is immediately applicable. Especially relevant for B2B services, professional services firms, and innovation-economy companies across the state.",
+      inRoom: "Live prospect research and outreach drafting, proposal workshop, objection prep exercises, three completed proposal templates.",
+    },
+    {
+      number: "C-15681",
+      title: "AI for HR Operations and Internal Documentation",
+      meta: "Full-day workshop (7 hours) | In-person or live virtual · Up to 15 participants · $8,250 per cohort | $790/person (open enrollment)",
+      description:
+        "The invisible work of running a business, SOPs, onboarding guides, training materials, meeting notes, employee policies, consumes enormous time and often never gets done well. This course teaches operations and admin teams how to turn rough notes into clean procedures, build onboarding materials that actually hold up, and maintain living documentation that doesn't go stale. Ideal for manufacturing, construction, healthcare, and any business scaling past five employees. Participants complete three real internal documents during the day.",
+      inRoom: "SOP drafting from rough notes, onboarding checklist creation, policy writing exercises, documentation system setup.",
+    },
+    {
+      number: "C-15683",
+      title: "Build Your Own Website with AI",
+      meta: "Half-day workshop (4 hours) | In-person or live virtual · Up to 12 participants · $5,750 per cohort | $655/person (open enrollment)",
+      description:
+        "Most Massachusetts small businesses either pay an agency thousands for a basic site or settle for a template they can't update on their own. This workshop teaches owners and operators how to build a working business website using AI. Participants start with a clear sitemap, draft homepage and service-page copy in their own voice, and use Claude alongside an AI website builder to publish a live site by the end of the session. Especially relevant for home services, professional services, retail, and consultants who need a credible web presence without an ongoing agency retainer.",
+      inRoom: "Sitemap planning, homepage and service-page copy drafted live, AI-assisted page build, published site live by end of class.",
+    },
   ];
 
   return (
@@ -254,17 +314,36 @@ const FreeUpskillingMA = () => {
                 <p className="text-base text-gray-600 mb-6">
                   These courses are pre-approved for the grant and available to any eligible Massachusetts small business.
                 </p>
-                <div className="grid sm:grid-cols-2 gap-4">
+                <div className="space-y-3">
                   {courses.map((course) => (
-                    <div
+                    <details
                       key={course.number}
-                      className="flex items-start gap-3 p-3 rounded-xl bg-lbl-orange/5"
+                      className="group rounded-xl bg-lbl-orange/5 border border-lbl-orange/10 open:bg-lbl-orange/10 transition-colors"
                     >
-                      <span className="inline-flex items-center px-2.5 py-1 rounded-md bg-lbl-orange/10 text-lbl-orange font-semibold text-sm whitespace-nowrap">
-                        {course.number}
-                      </span>
-                      <span className="text-base text-lbl-ink leading-snug">{course.title}</span>
-                    </div>
+                      <summary className="flex items-start gap-3 p-4 cursor-pointer list-none [&::-webkit-details-marker]:hidden">
+                        <span className="inline-flex items-center px-2.5 py-1 rounded-md bg-lbl-orange/10 text-lbl-orange font-semibold text-sm whitespace-nowrap">
+                          {course.number}
+                        </span>
+                        <span className="flex-1 text-base text-lbl-ink leading-snug font-medium">
+                          {course.title}
+                        </span>
+                        <ArrowRight className="h-5 w-5 text-lbl-orange flex-shrink-0 mt-1 transition-transform duration-200 group-open:rotate-90" />
+                      </summary>
+                      <div className="px-4 pb-5 pt-1 space-y-3 text-base text-gray-700 leading-relaxed">
+                        <p className="text-sm font-medium text-lbl-ink/80">{course.meta}</p>
+                        <p>{course.description}</p>
+                        <p>
+                          <span className="font-semibold text-lbl-ink">In the room: </span>
+                          {course.inRoom}
+                        </p>
+                        {course.prerequisite && (
+                          <p>
+                            <span className="font-semibold text-lbl-ink">Prerequisite: </span>
+                            {course.prerequisite}
+                          </p>
+                        )}
+                      </div>
+                    </details>
                   ))}
                 </div>
               </CardContent>
