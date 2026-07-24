@@ -26,6 +26,7 @@ import Trainers from "./pages/Trainers";
 import KeynotesWorkshops from "./pages/KeynotesWorkshops";
 import FreeUpskillingMA from "./pages/FreeUpskillingMA";
 import Industries from "./pages/Industries";
+import Dashboard from "./pages/Dashboard";
 import Navigation from "./components/Navigation";
 import ScrollToTop from "./components/ScrollToTop";
 
