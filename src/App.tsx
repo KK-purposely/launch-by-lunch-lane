@@ -26,6 +26,7 @@ import Trainers from "./pages/Trainers";
 import KeynotesWorkshops from "./pages/KeynotesWorkshops";
 import FreeUpskillingMA from "./pages/FreeUpskillingMA";
 import Industries from "./pages/Industries";
+import Dashboard from "./pages/Dashboard";
 import Navigation from "./components/Navigation";
 import ScrollToTop from "./components/ScrollToTop";
 
@@ -64,6 +65,7 @@ const App = () => (
             <Route path="/comm-corp-express-ai-training-in-ma" element={<FreeUpskillingMA />} />
             <Route path="/free-upskilling-ma" element={<Navigate to="/comm-corp-express-ai-training-in-ma" replace />} />
             <Route path="/industries" element={<Industries />} />
+            <Route path="/dashboard" element={<Dashboard />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>
