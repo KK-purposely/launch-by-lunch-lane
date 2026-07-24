@@ -14,20 +14,27 @@ import {
 import Footer from "@/components/Footer";
 import dashboardImage from "@/assets/evergreen-dashboard.png.asset.json";
 
+const GILBARBARA = "https://cdn.jsdelivr.net/gh/gilbarbara/logos@master/logos";
+const SVGL = "https://raw.githubusercontent.com/pheralb/svgl/main/static/library";
+
 const connectors = [
-  { name: "Stripe", slug: "stripe", color: "635BFF" },
-  { name: "QuickBooks", slug: "quickbooks", color: "2CA01C" },
-  { name: "Google Analytics", slug: "googleanalytics", color: "E37400" },
-  { name: "HubSpot", slug: "hubspot", color: "FF7A59" },
-  { name: "Google Sheets", slug: "googlesheets", color: "34A853" },
-  { name: "Shopify", slug: "shopify", color: "7AB55C" },
-  { name: "Airtable", slug: "airtable", color: "18BFFF" },
-  { name: "Notion", slug: "notion", color: "000000" },
-  { name: "Luma", slug: "lumen", color: "FF6B4A" },
-  { name: "LinkedIn", slug: "linkedin", color: "0A66C2" },
-  { name: "Instagram", slug: "instagram", color: "E4405F" },
-  { name: "Gmail", slug: "gmail", color: "EA4335" },
+  { name: "Stripe", src: `${GILBARBARA}/stripe.svg` },
+  { name: "QuickBooks", src: "/logos/quickbooks.svg" },
+  { name: "Google Analytics", src: `${GILBARBARA}/google-analytics.svg` },
+  { name: "HubSpot", src: `${GILBARBARA}/hubspot.svg` },
+  { name: "Google Sheets", src: `${SVGL}/google-sheets.svg` },
+  { name: "Shopify", src: `${GILBARBARA}/shopify.svg` },
+  { name: "Airtable", src: `${GILBARBARA}/airtable.svg` },
+  { name: "Notion", src: `${GILBARBARA}/notion.svg` },
+  { name: "Luma", src: "/logos/luma.svg" },
+  { name: "LinkedIn", src: `${GILBARBARA}/linkedin-icon.svg` },
+  { name: "Instagram", src: `${GILBARBARA}/instagram-icon.svg` },
+  { name: "Gmail", src: `${GILBARBARA}/google-gmail.svg` },
 ];
+
+const scrollToPricing = () => {
+  document.getElementById("pricing")?.scrollIntoView({ behavior: "smooth", block: "start" });
+};
 
 const painPoints = [
   "You get to the end of the month and realize three invoices are overdue, and now you cannot pay your team.",
@@ -147,7 +154,7 @@ const Dashboard = () => {
                 size="lg"
                 className="group rounded-full px-8 py-6 text-lg font-semibold text-white shadow-xl transition-all hover:shadow-2xl"
                 style={{ background: "linear-gradient(90deg, #fc8817, #ec4795)" }}
-                onClick={() => window.open("https://calendly.com/karen-launchbylunch/30min", "_blank")}
+                onClick={scrollToPricing}
               >
                 Build Your Dashboard
                 <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
@@ -326,9 +333,9 @@ const Dashboard = () => {
               <div key={c.name} className="bg-white rounded-2xl border border-gray-100 shadow-sm p-4 flex flex-col items-center gap-2 hover:shadow-md transition-shadow">
                 <div className="h-12 w-12 rounded-xl bg-gray-50 flex items-center justify-center">
                   <img
-                    src={`https://cdn.simpleicons.org/${c.slug}/${c.color}`}
-                    alt={c.name}
-                    className="h-7 w-7"
+                    src={c.src}
+                    alt={`${c.name} logo`}
+                    className="h-7 w-7 object-contain"
                     loading="lazy"
                   />
                 </div>
@@ -389,7 +396,8 @@ const Dashboard = () => {
       </section>
 
       {/* WHAT'S INCLUDED */}
-      <section className="bg-lbl-paper py-20 md:py-24 px-4 sm:px-6">
+      <section id="pricing" className="bg-lbl-paper py-20 md:py-24 px-4 sm:px-6 scroll-mt-20">
+
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
             <div className="text-xs font-bold uppercase tracking-wider text-lbl-orange mb-3">Simple pricing</div>
@@ -499,7 +507,7 @@ const Dashboard = () => {
           <Button
             size="lg"
             className="rounded-full px-10 py-6 text-lg font-semibold bg-white text-lbl-ink hover:bg-white/90 shadow-2xl"
-            onClick={() => window.open("https://calendly.com/karen-launchbylunch/30min", "_blank")}
+            onClick={scrollToPricing}
           >
             Build Your Dashboard
             <ArrowRight className="ml-2 h-5 w-5" />
