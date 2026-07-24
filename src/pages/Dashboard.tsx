@@ -507,7 +507,7 @@ const Dashboard = () => {
           <Button
             size="lg"
             className="rounded-full px-10 py-6 text-lg font-semibold bg-white text-lbl-ink hover:bg-white/90 shadow-2xl"
-            onClick={() => window.open("https://calendly.com/karen-launchbylunch/30min", "_blank")}
+            onClick={scrollToPricing}
           >
             Build Your Dashboard
             <ArrowRight className="ml-2 h-5 w-5" />
