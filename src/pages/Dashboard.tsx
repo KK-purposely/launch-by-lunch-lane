@@ -154,7 +154,7 @@ const Dashboard = () => {
                 size="lg"
                 className="group rounded-full px-8 py-6 text-lg font-semibold text-white shadow-xl transition-all hover:shadow-2xl"
                 style={{ background: "linear-gradient(90deg, #fc8817, #ec4795)" }}
-                onClick={() => window.open("https://calendly.com/karen-launchbylunch/30min", "_blank")}
+                onClick={scrollToPricing}
               >
                 Build Your Dashboard
                 <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
