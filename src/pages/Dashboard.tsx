@@ -14,20 +14,27 @@ import {
 import Footer from "@/components/Footer";
 import dashboardImage from "@/assets/evergreen-dashboard.png.asset.json";
 
+const GILBARBARA = "https://cdn.jsdelivr.net/gh/gilbarbara/logos@master/logos";
+const SVGL = "https://raw.githubusercontent.com/pheralb/svgl/main/static/library";
+
 const connectors = [
-  { name: "Stripe", slug: "stripe", color: "635BFF" },
-  { name: "QuickBooks", slug: "quickbooks", color: "2CA01C" },
-  { name: "Google Analytics", slug: "googleanalytics", color: "E37400" },
-  { name: "HubSpot", slug: "hubspot", color: "FF7A59" },
-  { name: "Google Sheets", slug: "googlesheets", color: "34A853" },
-  { name: "Shopify", slug: "shopify", color: "7AB55C" },
-  { name: "Airtable", slug: "airtable", color: "18BFFF" },
-  { name: "Notion", slug: "notion", color: "000000" },
-  { name: "Luma", slug: "lumen", color: "FF6B4A" },
-  { name: "LinkedIn", slug: "linkedin", color: "0A66C2" },
-  { name: "Instagram", slug: "instagram", color: "E4405F" },
-  { name: "Gmail", slug: "gmail", color: "EA4335" },
+  { name: "Stripe", src: `${GILBARBARA}/stripe.svg` },
+  { name: "QuickBooks", src: "/logos/quickbooks.svg" },
+  { name: "Google Analytics", src: `${GILBARBARA}/google-analytics.svg` },
+  { name: "HubSpot", src: `${GILBARBARA}/hubspot.svg` },
+  { name: "Google Sheets", src: `${SVGL}/google-sheets.svg` },
+  { name: "Shopify", src: `${GILBARBARA}/shopify.svg` },
+  { name: "Airtable", src: `${GILBARBARA}/airtable.svg` },
+  { name: "Notion", src: `${GILBARBARA}/notion.svg` },
+  { name: "Luma", src: "/logos/luma.svg" },
+  { name: "LinkedIn", src: `${GILBARBARA}/linkedin-icon.svg` },
+  { name: "Instagram", src: `${GILBARBARA}/instagram-icon.svg` },
+  { name: "Gmail", src: `${GILBARBARA}/google-gmail.svg` },
 ];
+
+const scrollToPricing = () => {
+  document.getElementById("pricing")?.scrollIntoView({ behavior: "smooth", block: "start" });
+};
 
 const painPoints = [
   "You get to the end of the month and realize three invoices are overdue, and now you cannot pay your team.",
