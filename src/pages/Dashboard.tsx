@@ -333,9 +333,9 @@ const Dashboard = () => {
               <div key={c.name} className="bg-white rounded-2xl border border-gray-100 shadow-sm p-4 flex flex-col items-center gap-2 hover:shadow-md transition-shadow">
                 <div className="h-12 w-12 rounded-xl bg-gray-50 flex items-center justify-center">
                   <img
-                    src={`https://cdn.simpleicons.org/${c.slug}/${c.color}`}
-                    alt={c.name}
-                    className="h-7 w-7"
+                    src={c.src}
+                    alt={`${c.name} logo`}
+                    className="h-7 w-7 object-contain"
                     loading="lazy"
                   />
                 </div>
