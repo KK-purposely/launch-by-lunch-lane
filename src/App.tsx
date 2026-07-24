@@ -67,6 +67,7 @@ const App = () => (
             <Route path="/free-upskilling-ma" element={<Navigate to="/comm-corp-express-ai-training-in-ma" replace />} />
             <Route path="/industries" element={<Industries />} />
             <Route path="/dashboard" element={<Dashboard />} />
+            <Route path="/company-brain" element={<CompanyBrain />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>
