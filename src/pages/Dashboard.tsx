@@ -396,7 +396,8 @@ const Dashboard = () => {
       </section>
 
       {/* WHAT'S INCLUDED */}
-      <section className="bg-lbl-paper py-20 md:py-24 px-4 sm:px-6">
+      <section id="pricing" className="bg-lbl-paper py-20 md:py-24 px-4 sm:px-6 scroll-mt-20">
+
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
             <div className="text-xs font-bold uppercase tracking-wider text-lbl-orange mb-3">Simple pricing</div>
