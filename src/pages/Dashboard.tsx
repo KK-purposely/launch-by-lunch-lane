@@ -28,7 +28,7 @@ const connectors = [
   { name: "Notion", src: `${GILBARBARA}/notion.svg` },
   { name: "Luma", src: "/logos/luma.svg" },
   { name: "LinkedIn", src: `${GILBARBARA}/linkedin-icon.svg` },
-  { name: "Instagram", src: `${GILBARBARA}/instagram-icon.svg` },
+  { name: "Instagram", src: "/logos/instagram.svg" },
   { name: "Gmail", src: `${GILBARBARA}/google-gmail.svg` },
 ];
 
