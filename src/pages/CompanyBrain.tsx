@@ -349,7 +349,7 @@ export default function CompanyBrain() {
     { name: "Trello", src: "/logos/trello.svg" },
     { name: "Zapier", src: "/logos/zapier.svg" },
     { name: "Asana", src: "/logos/asana.svg" },
-    { name: "Fathom", src: "https://cdn.jsdelivr.net/gh/gilbarbara/logos@master/logos/fathom.svg" },
+    { name: "Fathom", src: "/logos/fathom.webp" },
   ];
 
   const examples: Example[] = [
