@@ -22,10 +22,7 @@ import {
   AlertCircle,
   ListChecks,
   RefreshCw,
-  FileSpreadsheet,
   Receipt,
-  BookOpen,
-  Zap,
 } from "lucide-react";
 import Footer from "@/components/Footer";
 
