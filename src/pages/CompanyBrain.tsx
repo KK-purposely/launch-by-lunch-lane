@@ -136,24 +136,13 @@ const HeroOrb = () => {
         transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
       >
         <div className="flex flex-col items-center text-white">
-          <svg viewBox="0 0 64 64" className="w-16 h-16 md:w-20 md:h-20" fill="none">
-            <path
-              d="M22 14c-5 0-9 3.5-9 8.5 0 2 .8 3.8 2 5.2-1.5 1.5-2.5 3.6-2.5 5.8 0 3.2 2 6 5 7.2-.3.9-.5 1.9-.5 2.9 0 4.4 3.6 8 8 8 2.5 0 4.7-1.1 6.2-2.9C33.3 50.4 34 51 35 51V13c-1 0-1.7.6-3.8 2.2C29.7 13.4 27.5 12 25 12"
-              stroke="white"
-              strokeWidth="1.6"
-              fill="rgba(255,255,255,0.08)"
-              strokeLinejoin="round"
-            />
-            <path
-              d="M42 14c5 0 9 3.5 9 8.5 0 2-.8 3.8-2 5.2 1.5 1.5 2.5 3.6 2.5 5.8 0 3.2-2 6-5 7.2.3.9.5 1.9.5 2.9 0 4.4-3.6 8-8 8-2.5 0-4.7-1.1-6.2-2.9C30.7 50.4 30 51 29 51V13c1 0 1.7.6 3.8 2.2C34.3 13.4 36.5 12 39 12"
-              stroke="white"
-              strokeWidth="1.6"
-              fill="rgba(255,255,255,0.08)"
-              strokeLinejoin="round"
-            />
-            <path d="M32 14v37" stroke="white" strokeWidth="1.4" opacity="0.9" />
-            <path d="M18 24c2 1 4 1 6 0M18 34c2 1 4 1 6 0M18 42c2 1 4 1 6 0" stroke="white" strokeWidth="1.1" opacity="0.7" fill="none" />
-            <path d="M46 24c-2 1-4 1-6 0M46 34c-2 1-4 1-6 0M46 42c-2 1-4 1-6 0" stroke="white" strokeWidth="1.1" opacity="0.7" fill="none" />
+          <svg viewBox="0 0 64 58" fill="none" className="w-20 h-20 md:w-24 md:h-24" style={{ filter: "drop-shadow(0 2px 6px rgba(20,8,30,0.35))" }} aria-hidden="true">
+            <path d="M32 6C24 3 14 6 11 15C6 17 5 24 9 29C6 34 9 42 16 43C18 50 27 53 32 49C37 53 46 50 48 43C55 42 58 34 55 29C59 24 58 17 53 15C50 6 40 3 32 6Z" fill="rgba(255,255,255,0.16)" stroke="#fff" strokeWidth="2.4" strokeLinejoin="round" />
+            <path d="M32 7V50" stroke="#fff" strokeWidth="2" strokeLinecap="round" />
+            <g stroke="#fff" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round">
+              <path d="M32 15C27 15 25 19 28 22" /><path d="M22 13C19 16 20 20 23 21" /><path d="M14 20C11 23 13 28 17 28" /><path d="M20 30C16 31 16 37 21 38" /><path d="M32 28C28 28 26 32 29 35" /><path d="M32 40C28 40 27 44 30 46" />
+              <path d="M32 15C37 15 39 19 36 22" /><path d="M42 13C45 16 44 20 41 21" /><path d="M50 20C53 23 51 28 47 28" /><path d="M44 30C48 31 48 37 43 38" /><path d="M32 28C36 28 38 32 35 35" /><path d="M32 40C36 40 37 44 34 46" />
+            </g>
           </svg>
           <div className="text-[10px] md:text-xs font-bold tracking-[0.2em] uppercase mt-1">
             Company<br />Brain
