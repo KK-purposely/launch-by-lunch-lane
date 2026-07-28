@@ -5,10 +5,7 @@ import { Button } from "@/components/ui/button";
 import {
   ArrowRight,
   Sparkles,
-  Search,
   MessageSquare,
-  Target,
-  Presentation,
   FileText,
   Users,
   Mic2,
@@ -23,6 +20,8 @@ import {
   ListChecks,
   RefreshCw,
   Receipt,
+  Check,
+  Plus,
 } from "lucide-react";
 import Footer from "@/components/Footer";
 
@@ -252,6 +251,7 @@ const HubDiagram = ({ items }: { items: { title: string; body: string; icon: Rea
 /* -------- Popover example card -------- */
 type Example = {
   icon: React.ElementType;
+  name: string;
   title: string;
   ask: string;
   response: string;
@@ -265,7 +265,8 @@ const ExampleCard = ({ ex, up }: { ex: Example; up: boolean }) => {
         <span className="inline-flex w-10 h-10 rounded-xl items-center justify-center bg-lbl-magenta/10 text-lbl-magenta mb-4">
           <Icon className="w-5 h-5" />
         </span>
-        <p className="text-lbl-ink font-semibold leading-snug mb-4">{ex.title}</p>
+        <h3 className="text-xl font-extrabold text-lbl-ink leading-snug mb-2">{ex.name}</h3>
+        <p className="text-sm text-gray-600 leading-relaxed mb-4">{ex.title}</p>
         <div className="flex items-center gap-1.5 text-lbl-magenta text-sm font-medium">
           <Sparkles className="w-3.5 h-3.5" />
           Hover to see an example
@@ -308,12 +309,6 @@ export default function CompanyBrain() {
     "New hires take months to get up to speed.",
   ];
 
-  const imagine = [
-    { tag: "Research", icon: Search, bg: PURPLE, body: "It could research every interaction your team has ever had with a company or prospect, and tell you how best to respond, instantly." },
-    { tag: "Social media", icon: MessageSquare, bg: PURPLE, body: "It could look at your past LinkedIn posts and write a new one in your voice, based on the conversations you had that week." },
-    { tag: "Goals", icon: Target, bg: WARM, body: "It could tell you exactly what to focus on today, and what is obviously getting in the way of the things that matter most." },
-    { tag: "Sales", icon: Presentation, bg: WARM, body: "It could build a presentation from a conversation you had earlier that day, in your format and voice, in under five minutes." },
-  ];
 
   const hub = [
     { title: "Who you are", body: "Identity, story, and what sets you apart.", icon: Home, bg: PURPLE },
@@ -344,6 +339,7 @@ export default function CompanyBrain() {
   const examples: Example[] = [
     {
       icon: MessageSquare,
+      name: "Client Updates",
       title: "Ask a question about any client, project, or deal and get an instant, accurate answer.",
       ask: "What's the latest with Acme Corp?",
       response: `Acme Corp: Account Snapshot
@@ -356,6 +352,7 @@ export default function CompanyBrain() {
     },
     {
       icon: FileText,
+      name: "Presentation",
       title: "Generate presentations, summaries, or updates using your company's real data.",
       ask: "Create a Q1 board update using our real numbers and recent wins.",
       response: `Q1 Board Update: Draft Deck (8 slides)
@@ -369,6 +366,7 @@ export default function CompanyBrain() {
     },
     {
       icon: Calendar,
+      name: "Meeting Prep",
       title: "Automatically prep for meetings and send follow-ups, with no manual work.",
       ask: "Prep me for my 10am with Northstar and draft the follow-up.",
       response: `Meeting Prep: Northstar (10:00 AM)
@@ -384,6 +382,7 @@ Follow-up email drafted and ready to send.`,
     },
     {
       icon: ListChecks,
+      name: "Project Management",
       title: "Create and track team-wide to-dos that update across your systems.",
       ask: "Show me what the team owes this week, with status.",
       response: `Team To-Dos: Week of April 14
@@ -403,6 +402,7 @@ Next nudge: Marcus on the code review backlog, 4pm.`,
     },
     {
       icon: Receipt,
+      name: "Invoices",
       title: "Generate invoices, reports, or client communications in seconds.",
       ask: "Generate the April invoice for Northstar.",
       response: `INVOICE #2024-0417
@@ -419,6 +419,7 @@ Logged in QuickBooks, CRM updated, #finance notified.`,
     },
     {
       icon: RefreshCw,
+      name: "Status Updates",
       title: "Keep projects updated without chasing anyone for status.",
       ask: "Give me a status across all active client projects.",
       response: `Active Projects: auto-compiled this morning
@@ -466,10 +467,6 @@ Compiled from Asana, HubSpot, Slack, Gmail. No one was asked for an update.`,
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 py-20 md:py-28">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
-              <div className="inline-flex items-center gap-2 bg-white/10 border border-white/20 backdrop-blur px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider mb-6">
-                <span className="h-1.5 w-1.5 rounded-full bg-lbl-orange" />
-                A second brain for your whole company
-              </div>
               <h1 className="text-5xl md:text-6xl lg:text-7xl font-extrabold leading-[1.05] tracking-tight mb-6">
                 Give your team a brain that <Gradient>knows your business</Gradient>
               </h1>
@@ -531,7 +528,7 @@ Compiled from Asana, HubSpot, Slack, Gmail. No one was asked for an update.`,
       </section>
 
       {/* 3. IMAGINE */}
-      <section className="bg-white py-20 md:py-24 px-4 sm:px-6">
+      <section className="bg-white py-20 md:py-24 px-4 sm:px-6 relative overflow-visible">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
             <Kicker>Imagine</Kicker>
@@ -539,34 +536,17 @@ Compiled from Asana, HubSpot, Slack, Gmail. No one was asked for an update.`,
               What if everyone on your team had a <Gradient>second brain</Gradient>?
             </h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              One that knows your business as well as you do, and puts that knowledge to work in seconds.
+              One that knows your business as well as you do. Hover any card to see what it could return, with your real company context built in.
             </p>
           </div>
-          <div className="grid md:grid-cols-2 gap-6">
-            {imagine.map((c) => {
-              const Icon = c.icon;
-              return (
-                <div
-                  key={c.tag}
-                  className="relative bg-white rounded-2xl p-7 border border-gray-100 shadow-sm overflow-hidden"
-                >
-                  <div className="absolute inset-x-0 top-0 h-1" style={{ background: WARM }} />
-                  <span
-                    className="inline-flex w-12 h-12 rounded-xl items-center justify-center text-white mb-4"
-                    style={{ background: c.bg }}
-                  >
-                    <Icon className="h-6 w-6" />
-                  </span>
-                  <div className="text-xs font-bold uppercase tracking-[0.2em] text-lbl-magenta mb-2">
-                    {c.tag}
-                  </div>
-                  <p className="text-gray-700 leading-relaxed">{c.body}</p>
-                </div>
-              );
-            })}
+          <div className="grid md:grid-cols-3 gap-6 relative">
+            {examples.map((ex, i) => (
+              <ExampleCard key={i} ex={ex} up={i >= 3} />
+            ))}
           </div>
         </div>
       </section>
+
 
       {/* 4. THE COMPANY BRAIN HUB */}
       <section className="bg-lbl-paper py-20 md:py-24 px-4 sm:px-6">
@@ -604,6 +584,40 @@ Compiled from Asana, HubSpot, Slack, Gmail. No one was asked for an update.`,
         </div>
       </section>
 
+      {/* TESTIMONIAL */}
+      <section className="relative overflow-hidden text-white">
+        <div
+          className="absolute inset-0"
+          style={{ background: "linear-gradient(135deg,#2a1748 0%, #421f52 55%, #6b3a82 100%)" }}
+        />
+        <div
+          className="absolute inset-0 opacity-40 pointer-events-none"
+          style={{ background: "radial-gradient(circle at 80% 30%, rgba(236,71,149,0.35), transparent 55%)" }}
+        />
+        <div className="relative max-w-[880px] mx-auto px-4 sm:px-6 py-20 md:py-24 text-center">
+          <div className="text-xs font-bold uppercase tracking-[0.2em] text-lbl-orange mb-4">
+            In their words
+          </div>
+          <div className="text-6xl leading-none font-serif text-lbl-orange mb-2" aria-hidden="true">
+            &ldquo;
+          </div>
+          <blockquote className="text-2xl md:text-3xl font-bold leading-snug text-white mb-8">
+            It actually knows how our company works. Instead of everyone hunting for context, the whole team pulls from the same shared brain.
+          </blockquote>
+          <div className="flex items-center justify-center gap-4">
+            <img
+              src="/molly-papermaster.png"
+              alt="Molly Papermaster"
+              className="h-[58px] w-[58px] rounded-full object-cover border border-white/25"
+            />
+            <div className="text-left">
+              <div className="font-bold text-white">Molly Papermaster</div>
+              <div className="text-white/70 text-sm">Chief of Staff, The Engine</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* 5. CONNECT THE TOOLS */}
       <section className="bg-white py-20 md:py-24 px-4 sm:px-6">
         <div className="max-w-6xl mx-auto">
@@ -633,25 +647,7 @@ Compiled from Asana, HubSpot, Slack, Gmail. No one was asked for an update.`,
         </div>
       </section>
 
-      {/* 6. PUT IT TO WORK */}
-      <section className="bg-lbl-paper py-20 md:py-24 px-4 sm:px-6 relative overflow-visible">
-        <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-14">
-            <Kicker>Put it to work</Kicker>
-            <h2 className="text-4xl md:text-5xl font-extrabold text-lbl-ink mb-4">
-              Ask anything. Get an answer with <Gradient>your context</Gradient> built in.
-            </h2>
-            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              Hover any card to see what your team's brain could return. Real company context, not generic AI.
-            </p>
-          </div>
-          <div className="grid md:grid-cols-3 gap-6 relative">
-            {examples.map((ex, i) => (
-              <ExampleCard key={i} ex={ex} up={i >= 3} />
-            ))}
-          </div>
-        </div>
-      </section>
+
 
       {/* 7. WHAT YOUR TEAM GETS */}
       <section className="bg-white py-20 md:py-24 px-4 sm:px-6">
@@ -809,6 +805,95 @@ Compiled from Asana, HubSpot, Slack, Gmail. No one was asked for an update.`,
                 <ArrowRight className="ml-2 h-5 w-5 inline transition-transform group-hover:translate-x-1" />
               </a>
             </Button>
+          </div>
+        </div>
+      </section>
+
+      {/* PRICING */}
+      <section id="pricing" className="bg-white py-20 md:py-24 px-4 sm:px-6">
+        <div className="max-w-6xl mx-auto">
+          <div className="text-center mb-14">
+            <Kicker>Pricing</Kicker>
+            <h2 className="text-4xl md:text-5xl font-extrabold text-lbl-ink mb-4">
+              Simple pricing that <Gradient>scales with your team</Gradient>
+            </h2>
+            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+              One setup to stand up your company brain, then grow it as your team and tools grow.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-6 max-w-[960px] mx-auto">
+            {/* Featured price card */}
+            <div className="bg-white rounded-2xl border border-gray-100 shadow-lg overflow-hidden">
+              <div
+                className="px-7 py-6 text-white"
+                style={{ background: "linear-gradient(96deg,#421f52 0%,#9b2a7a 42%,#ec4795 68%,#fc8817 100%)" }}
+              >
+                <div className="text-xs font-bold uppercase tracking-[0.2em] text-white/85 mb-3">
+                  Standard Company Brain
+                </div>
+                <div className="flex items-baseline gap-2">
+                  <span className="text-sm text-white/85">Starts at</span>
+                  <span className="text-4xl font-extrabold">$3,500</span>
+                </div>
+              </div>
+              <div className="p-7">
+                <ul className="space-y-4 mb-8">
+                  {["5 tool connectors", "15 documents", "Setup for up to 15 people"].map((f) => (
+                    <li key={f} className="flex items-center gap-3">
+                      <span
+                        className="flex-shrink-0 h-6 w-6 rounded-full flex items-center justify-center text-white"
+                        style={{ background: WARM }}
+                      >
+                        <Check className="h-3.5 w-3.5" />
+                      </span>
+                      <span className="text-gray-700">{f}</span>
+                    </li>
+                  ))}
+                </ul>
+                <Button
+                  asChild
+                  size="lg"
+                  className="group w-full rounded-full px-8 py-6 text-lg font-semibold text-white shadow-lg transition-all hover:shadow-xl"
+                  style={{ background: WARM }}
+                >
+                  <a
+                    href="https://calendly.com/karen-launchbylunch/30min"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Get started
+                    <ArrowRight className="ml-2 h-5 w-5 inline transition-transform group-hover:translate-x-1" />
+                  </a>
+                </Button>
+              </div>
+            </div>
+
+            {/* Add-on card */}
+            <div
+              className="rounded-2xl border border-lbl-orange/20 p-7"
+              style={{ background: "linear-gradient(160deg,#fff4ec 0%,#fdeaf3 100%)" }}
+            >
+              <div className="text-xs font-bold uppercase tracking-[0.2em] text-lbl-eggplant mb-3">
+                Add on anytime
+              </div>
+              <p className="text-gray-700 leading-relaxed mb-6">
+                Scale your brain as your business grows. Expand any part of your plan when you need to.
+              </p>
+              <ul className="space-y-4">
+                {["Additional documents", "Additional connectors", "Additional team members"].map((f) => (
+                  <li key={f} className="flex items-center gap-3">
+                    <span
+                      className="flex-shrink-0 h-6 w-6 rounded-md flex items-center justify-center text-white"
+                      style={{ background: WARM }}
+                    >
+                      <Plus className="h-3.5 w-3.5" />
+                    </span>
+                    <span className="text-gray-700">{f}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
           </div>
         </div>
       </section>
