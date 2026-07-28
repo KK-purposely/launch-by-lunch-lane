@@ -316,7 +316,7 @@ export default function CompanyBrain() {
     { title: "Your voice & tone", body: "So it sounds just like you.", icon: Mic2, bg: PURPLE },
     { title: "How you operate", body: "Your process and how work moves.", icon: Workflow, bg: WARM },
     { title: "Where to look", body: "Your key docs, drives, and systems.", icon: FolderOpen, bg: PURPLE },
-    { title: "Your cadence", body: "The rhythms of your week.", icon: Calendar, bg: WARM },
+    { title: "Your cadence", body: "The rhythms of your week, e.g. no meetings on Fridays.", icon: Calendar, bg: WARM },
     { title: "Live tool access", body: "Connected to the tools you use.", icon: Link2, bg: PURPLE },
     { title: "Brand & guidelines", body: "Your standards, always on-brand.", icon: ShieldCheck, bg: WARM },
   ];
@@ -333,7 +333,7 @@ export default function CompanyBrain() {
     { name: "Trello", src: "/logos/trello.svg" },
     { name: "Zapier", src: "/logos/zapier.svg" },
     { name: "Asana", src: "/logos/asana.svg" },
-    { name: "Fathom", src: "/logos/fathom.webp" },
+    { name: "Fathom", inlineSvg: true },
   ];
 
   const examples: Example[] = [
@@ -631,12 +631,21 @@ Compiled from Asana, HubSpot, Slack, Gmail. No one was asked for an update.`,
             </p>
           </div>
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
-            {connectors.map((c) => (
+          {connectors.map((c) => (
               <div
                 key={c.name}
                 className="bg-white rounded-2xl p-5 border border-gray-100 shadow-sm flex flex-col items-center justify-center gap-3 aspect-square"
               >
-                <img src={c.src} alt={c.name} className="h-8 w-8 object-contain" />
+                {c.inlineSvg ? (
+                  <svg viewBox="0 0 24 24" className="h-8 w-8" stroke="#6d5efc" strokeWidth="2" strokeLinecap="round" fill="none" aria-hidden="true">
+                    <path d="M5 10v4" />
+                    <path d="M9 6.5v11" />
+                    <path d="M13 8.5v7" />
+                    <path d="M17 11v2" />
+                  </svg>
+                ) : (
+                  <img src={c.src} alt={c.name} className="h-8 w-8 object-contain" />
+                )}
                 <div className="text-sm font-medium text-lbl-ink">{c.name}</div>
               </div>
             ))}
