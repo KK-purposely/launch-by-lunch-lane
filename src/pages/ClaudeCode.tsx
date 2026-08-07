@@ -8,6 +8,7 @@ import { ArrowRight, Users, User, Wrench, Building2, CheckCircle2, Zap, Laptop, 
 import Footer from "@/components/Footer";
 import IntegrationsSection from "@/components/claude-code/IntegrationsSection";
 import WorkshopTestimonials from "@/components/claude-code/WorkshopTestimonials";
+import { trackEvent } from "@/lib/analytics";
 
 const workshops = [
   {
@@ -225,7 +226,7 @@ const ClaudeCode = () => {
                   <p className="text-gray-600 text-lg flex-1 mb-8">{w.description}</p>
                   <Button
                     className="w-full rounded-full font-semibold transition-all duration-300 bg-lbl-ink hover:bg-lbl-orange text-white"
-                    onClick={() => window.open(w.ctaUrl, "_blank")}
+                    onClick={() => { if (w.ctaUrl.includes("luma")) trackEvent('event_registration_click', { location: 'claude_code' }); window.open(w.ctaUrl, "_blank"); }}
                   >
                     {w.ctaText}
                   </Button>
@@ -270,7 +271,7 @@ const ClaudeCode = () => {
         <Button
           size="lg"
           className="bg-lbl-orange hover:bg-lbl-orange/90 text-white px-10 py-4 text-lg rounded-full font-bold transition-all duration-300 shadow-xl hover:scale-105 group"
-          onClick={() => window.open("https://calendly.com/karen-launchbylunch/30min", "_blank")}
+          onClick={() => { trackEvent('book_consultation', { location: 'claude_code' }); window.open("https://calendly.com/karen-launchbylunch/30min", "_blank"); }}
         >
           <span className="flex items-center gap-3">
             Schedule a Call

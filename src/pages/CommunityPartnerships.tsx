@@ -2,6 +2,7 @@ import React from "react";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Users, Target, Zap, BookOpen, ThumbsUp, Share2, Calendar } from "lucide-react";
+import { trackEvent } from "@/lib/analytics";
 
 const CommunityPartnerships = () => {
   return (
@@ -312,7 +313,7 @@ const CommunityPartnerships = () => {
               <Button 
                 size="lg"
                 className="bg-gradient-to-r from-lbl-ink to-lbl-orange hover:from-lbl-orange hover:to-lbl-ink text-white px-8 py-6 text-lg rounded-full font-semibold shadow-lg hover:shadow-xl"
-                onClick={() => window.open('https://calendly.com/d/cwr2-n7m-9gs/learn-more', '_blank')}
+                onClick={() => { trackEvent('book_consultation', { location: 'community_partnerships' }); window.open('https://calendly.com/d/cwr2-n7m-9gs/learn-more', '_blank'); }}
               >
                 <Calendar className="mr-2 h-5 w-5" />
                 Schedule a Call

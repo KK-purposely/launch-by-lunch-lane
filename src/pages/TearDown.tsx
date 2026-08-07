@@ -9,6 +9,7 @@ import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 import { Search, CheckCircle, Loader2, ClipboardList, Eye, Bug, TrendingUp, Zap, Target, Rocket, Star } from "lucide-react";
 import { supabase } from "@/integrations/supabase/client";
 import { useToast } from "@/hooks/use-toast";
+import { trackEvent } from "@/lib/analytics";
 
 const TearDown = () => {
   const [formData, setFormData] = useState({
@@ -82,6 +83,8 @@ const TearDown = () => {
         console.error('Email notification error:', emailError);
         // Don't throw here as the form submission was successful
       }
+
+      trackEvent('teardown_request_submit');
 
       setIsSubmitted(true);
       toast({

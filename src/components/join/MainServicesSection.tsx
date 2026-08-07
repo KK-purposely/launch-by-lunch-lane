@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 import InviteRequestModal from "./InviteRequestModal";
+import { trackEvent } from "@/lib/analytics";
 
 interface MainServicesSectionProps {
   onServiceClick: (service: any) => void;
@@ -93,6 +94,7 @@ const MainServicesSection = ({ onServiceClick }: MainServicesSectionProps) => {
   ];
 
   const handleAcceleratorClick = () => {
+    trackEvent('book_consultation', { location: 'main_services_section' });
     window.open("https://calendly.com/d/cwr2-n7m-9gs/learn-more", "_blank");
   };
 

@@ -4,6 +4,7 @@ import Footer from "@/components/Footer";
 import WhoWeAre from "@/components/WhoWeAre";
 import HowYourBusinessChanges from "@/components/HowYourBusinessChanges";
 import { Button } from "@/components/ui/button";
+import { trackEvent } from "@/lib/analytics";
 import {
   ArrowRight,
   Brain,
@@ -62,7 +63,7 @@ const Enterprise = () => {
             size="lg"
             className="bg-lbl-orange hover:bg-lbl-orange/90 text-white px-10 py-4 text-lg rounded-full font-bold transition-all duration-300 shadow-xl hover:scale-105 group"
             onClick={() =>
-              window.open("https://calendly.com/karen-launchbylunch/30min", "_blank")
+              { trackEvent('book_consultation', { location: 'enterprise' }); window.open("https://calendly.com/karen-launchbylunch/30min", "_blank"); }
             }
           >
             <span className="flex items-center gap-3">

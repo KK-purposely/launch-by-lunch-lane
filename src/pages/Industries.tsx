@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Brain, UserRound, Search, Megaphone, Wallet, ShoppingBag, UtensilsCrossed, Briefcase, Palette, Stethoscope, Hammer, GraduationCap, Microscope } from "lucide-react";
 import Footer from "@/components/Footer";
+import { trackEvent } from "@/lib/analytics";
 
 const builds = [
   {
@@ -137,7 +138,7 @@ const Industries = () => {
             <Button
               size="lg"
               className="bg-gradient-to-r from-lbl-ink to-lbl-orange hover:from-lbl-orange hover:to-lbl-ink text-white rounded-full px-8"
-              onClick={() => window.open("https://calendly.com/karen-launchbylunch/30min", "_blank")}
+              onClick={() => { trackEvent('book_consultation', { location: 'industries' }); window.open("https://calendly.com/karen-launchbylunch/30min", "_blank"); }}
             >
               Book a Consultation <ArrowRight className="ml-2 h-5 w-5" />
             </Button>
@@ -246,7 +247,7 @@ const Industries = () => {
             <Button
               size="lg"
               className="bg-white text-lbl-orange hover:bg-white/90 rounded-full px-8"
-              onClick={() => window.open("https://calendly.com/karen-launchbylunch/30min", "_blank")}
+              onClick={() => { trackEvent('book_consultation', { location: 'industries' }); window.open("https://calendly.com/karen-launchbylunch/30min", "_blank"); }}
             >
               Book a Consultation <ArrowRight className="ml-2 h-5 w-5" />
             </Button>

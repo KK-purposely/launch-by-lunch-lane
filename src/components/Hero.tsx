@@ -1,6 +1,7 @@
 
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
+import { trackEvent } from "@/lib/analytics";
 
 interface HeroProps {
   showButtons?: boolean;
@@ -40,7 +41,7 @@ const Hero = ({ showButtons = true }: HeroProps) => {
                 <Button
                   size="lg"
                   className="group w-full max-w-sm bg-gradient-to-r from-lbl-ink to-lbl-orange hover:from-lbl-orange hover:to-lbl-ink text-white px-8 py-6 text-lg rounded-full font-medium transition-all duration-300 shadow-lg hover:shadow-xl"
-                  onClick={() => window.open("https://calendly.com/karen-launchbylunch/30min", "_blank")}
+                  onClick={() => { trackEvent('book_consultation', { location: 'hero' }); window.open("https://calendly.com/karen-launchbylunch/30min", "_blank"); }}
                 >
                   <span className="flex items-center gap-2">
                     Book a Consultation
@@ -52,7 +53,7 @@ const Hero = ({ showButtons = true }: HeroProps) => {
                   variant="outline"
                   size="lg"
                   className="w-full max-w-sm px-8 py-6 text-lg border-lbl-orange text-lbl-orange hover:bg-lbl-orange hover:text-white rounded-full font-medium transition-all duration-300"
-                  onClick={() => window.open("https://newsletter.launchbylunch.co", "_blank")}
+                  onClick={() => { trackEvent('newsletter_signup_click', { location: 'hero' }); window.open("https://newsletter.launchbylunch.co", "_blank"); }}
                 >
                   Get Our Newsletter
                 </Button>

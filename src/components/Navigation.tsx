@@ -9,6 +9,7 @@ import {
   DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
+import { trackEvent } from "@/lib/analytics";
 
 const Navigation = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -50,7 +51,7 @@ const Navigation = () => {
                   Free AI Upskilling
                 </Link>
 
-                <a href="https://luma.com/launchbylunch" target="_blank" rel="noopener noreferrer" className="px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-lbl-orange">
+                <a href="https://luma.com/launchbylunch" target="_blank" rel="noopener noreferrer" onClick={() => trackEvent('event_registration_click', { location: 'navigation' })} className="px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-lbl-orange">
                   Public Events
                 </a>
 
@@ -65,7 +66,7 @@ const Navigation = () => {
             <Button
               size="sm"
               className="bg-lbl-orange hover:bg-lbl-orange/90 text-white rounded-full font-medium transition-all duration-300"
-              onClick={() => window.open("https://newsletter.launchbylunch.co", "_blank")}
+              onClick={() => { trackEvent('newsletter_signup_click', { location: 'navigation' }); window.open("https://newsletter.launchbylunch.co", "_blank"); }}
             >
               Get Our Newsletter
             </Button>
@@ -106,7 +107,7 @@ const Navigation = () => {
                 </DropdownMenuItem>
 
                 <DropdownMenuItem asChild>
-                  <a href="https://luma.com/launchbylunch" target="_blank" rel="noopener noreferrer" className="w-full" onClick={() => setIsMenuOpen(false)}>
+                  <a href="https://luma.com/launchbylunch" target="_blank" rel="noopener noreferrer" className="w-full" onClick={() => { trackEvent('event_registration_click', { location: 'navigation_mobile' }); setIsMenuOpen(false); }}>
                     Public Events
                   </a>
                 </DropdownMenuItem>

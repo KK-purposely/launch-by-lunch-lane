@@ -24,6 +24,7 @@ import {
   Plus,
 } from "lucide-react";
 import Footer from "@/components/Footer";
+import { trackEvent } from "@/lib/analytics";
 
 const WARM = "linear-gradient(96deg, #ec4795 0%, #fc8817 100%)";
 const PURPLE = "linear-gradient(135deg, #6b3a82 0%, #ec4795 100%)";
@@ -809,6 +810,7 @@ Compiled from Asana, HubSpot, Slack, Gmail. No one was asked for an update.`,
                 href="https://calendly.com/karen-launchbylunch/30min"
                 target="_blank"
                 rel="noopener noreferrer"
+                onClick={() => trackEvent('book_consultation', { location: 'company_brain' })}
               >
                 Let's map your company brain
                 <ArrowRight className="ml-2 h-5 w-5 inline transition-transform group-hover:translate-x-1" />
@@ -870,6 +872,7 @@ Compiled from Asana, HubSpot, Slack, Gmail. No one was asked for an update.`,
                     href="https://calendly.com/karen-launchbylunch/30min"
                     target="_blank"
                     rel="noopener noreferrer"
+                    onClick={() => trackEvent('book_consultation', { location: 'company_brain' })}
                   >
                     Get started
                     <ArrowRight className="ml-2 h-5 w-5 inline transition-transform group-hover:translate-x-1" />

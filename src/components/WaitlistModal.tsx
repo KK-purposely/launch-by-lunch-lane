@@ -6,6 +6,7 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { useToast } from "@/hooks/use-toast";
 import { Loader2, Sparkles } from "lucide-react";
+import { trackEvent } from "@/lib/analytics";
 
 interface WaitlistModalProps {
   isOpen: boolean;
@@ -48,6 +49,8 @@ const WaitlistModal = ({ isOpen, onClose }: WaitlistModalProps) => {
       if (!response.ok) {
         throw new Error('Failed to join waitlist');
       }
+
+      trackEvent('waitlist_submit');
 
       toast({
         title: "Successfully joined the waitlist! 🎉",

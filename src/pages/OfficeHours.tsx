@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Clock, Users, MessageCircle, Calendar, ArrowRight, CheckCircle } from "lucide-react";
 import Footer from "@/components/Footer";
+import { trackEvent } from "@/lib/analytics";
 
 const OfficeHours = () => {
   // Scroll to top when component mounts
@@ -35,6 +36,7 @@ const OfficeHours = () => {
   ];
 
   const handleBookSession = () => {
+    trackEvent('book_consultation', { location: 'office_hours' });
     window.open("https://calendly.com/karen-launchbylunch/ai-low-code-office-hours", "_blank");
   };
 
