@@ -29,6 +29,7 @@ import {
   ArrowRight,
 } from "lucide-react";
 import Footer from "@/components/Footer";
+import { trackEvent } from "@/lib/analytics";
 
 const DISCOVERY_URL = "https://calendly.com/karen-launchbylunch/30min";
 const LUMA_URL = "https://luma.com/launchbylunch";
@@ -492,6 +493,10 @@ const CTAButton = ({
       href={card.cta.href}
       target={card.cta.external ? "_blank" : undefined}
       rel={card.cta.external ? "noopener noreferrer" : undefined}
+      onClick={() => {
+        if (card.cta.href.includes("calendly.com")) trackEvent('book_consultation', { location: 'services_card' });
+        else if (card.cta.href.includes("luma")) trackEvent('event_registration_click', { location: 'services_card' });
+      }}
       className={cls}
     >
       {inner}
@@ -655,7 +660,7 @@ const Pricing = () => {
               without staying dependent on us.
             </p>
             <div className="flex flex-wrap items-center gap-5">
-              <a href={DISCOVERY_URL} target="_blank" rel="noopener noreferrer" className="btn-cta group">
+              <a href={DISCOVERY_URL} target="_blank" rel="noopener noreferrer" onClick={() => trackEvent('book_consultation', { location: 'services' })} className="btn-cta group">
                 Book a free discovery call
                 <ArrowRight className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
               </a>
@@ -868,7 +873,7 @@ const Pricing = () => {
             Ready to put AI to work?
           </h2>
           <div className="flex flex-wrap items-center justify-center gap-5 mb-8">
-            <a href={DISCOVERY_URL} target="_blank" rel="noopener noreferrer" className="btn-cta group">
+            <a href={DISCOVERY_URL} target="_blank" rel="noopener noreferrer" onClick={() => trackEvent('book_consultation', { location: 'services' })} className="btn-cta group">
               Book a free discovery call
               <ArrowRight className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
             </a>
@@ -876,6 +881,7 @@ const Pricing = () => {
               href={LUMA_URL}
               target="_blank"
               rel="noopener noreferrer"
+              onClick={() => trackEvent('event_registration_click', { location: 'services' })}
               className="inline-flex items-center gap-2 h-[52px] px-7 rounded-full font-semibold text-[var(--lbl-eggplant)] border-2 border-[var(--lbl-eggplant)] hover:bg-[var(--lbl-eggplant)] hover:text-white transition-colors"
             >
               See the workshop calendar

@@ -6,6 +6,7 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { supabase } from "@/integrations/supabase/client";
 import { useToast } from "@/hooks/use-toast";
+import { trackEvent } from "@/lib/analytics";
 
 interface ContactFormProps {
   isOpen: boolean;
@@ -43,6 +44,8 @@ const ContactForm = ({ isOpen, onClose, serviceTitle }: ContactFormProps) => {
       if (error) {
         throw error;
       }
+
+      trackEvent('contact_form_submit', { service: serviceTitle });
 
       toast({
         title: "Success!",

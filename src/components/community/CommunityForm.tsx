@@ -10,6 +10,7 @@ import FormHeader from "./FormHeader";
 import PersonalInfoSection from "./PersonalInfoSection";
 import CommunityQuestionsSection from "./CommunityQuestionsSection";
 import { CommunityFormData } from "./types";
+import { trackEvent } from "@/lib/analytics";
 
 const CommunityForm = () => {
   const { toast } = useToast();
@@ -77,6 +78,8 @@ const CommunityForm = () => {
         console.error("Error sending notification email:", emailError);
         // Still show success to user since their application was saved
       }
+
+      trackEvent('community_form_submit');
 
       toast({
         title: "Thank You for Your Application!",

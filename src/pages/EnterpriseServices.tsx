@@ -19,6 +19,7 @@ import {
 } from "lucide-react";
 import Footer from "@/components/Footer";
 import IntegrationsSection from "@/components/claude-code/IntegrationsSection";
+import { trackEvent } from "@/lib/analytics";
 
 const painPoints = [
   "Your team wastes hours searching Slack, email, and docs for answers that should be easy to find",
@@ -128,12 +129,13 @@ const EnterpriseServices = () => {
           <Button
             size="lg"
             className="bg-lbl-orange hover:bg-lbl-orange/90 text-white px-10 py-4 text-lg rounded-full font-bold transition-all duration-300 shadow-2xl hover:scale-105 group"
-            onClick={() =>
+            onClick={() => {
+              trackEvent('book_consultation', { location: 'enterprise_services' });
               window.open(
                 "https://calendly.com/karen-launchbylunch/30min",
                 "_blank"
-              )
-            }
+              );
+            }}
           >
             <span className="flex items-center gap-3">
               Let's Talk About Your Team
@@ -276,12 +278,13 @@ const EnterpriseServices = () => {
         <Button
           size="lg"
           className="bg-lbl-orange hover:bg-lbl-orange/90 text-white px-10 py-4 text-lg rounded-full font-bold transition-all duration-300 shadow-xl hover:scale-105 group"
-          onClick={() =>
+          onClick={() => {
+            trackEvent('book_consultation', { location: 'enterprise_services' });
             window.open(
               "https://calendly.com/karen-launchbylunch/30min",
               "_blank"
-            )
-          }
+            );
+          }}
         >
           <span className="flex items-center gap-3">
             Schedule a Call
