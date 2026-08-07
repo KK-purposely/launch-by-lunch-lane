@@ -362,6 +362,7 @@ const Index = () => {
                   href="https://roicalculator.launchbylunch.co/"
                   target="_blank"
                   rel="noopener noreferrer"
+                  onClick={() => trackEvent('roi_calculator_click', { location: 'index' })}
                   className="inline-flex items-center gap-2 px-6 py-3 bg-white text-[var(--lbl-eggplant)] font-semibold text-base rounded-full hover:bg-white/90 transition-colors duration-200 group"
                 >
                   Try our ROI calculator
