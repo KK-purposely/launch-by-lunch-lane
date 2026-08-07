@@ -11,6 +11,7 @@ import karenCredentials from "@/assets/karen-credentials.png";
 import katLazell from "@/assets/testimonial-kat-lazell.jpg";
 import amandaSwiatocha from "@/assets/testimonial-amanda-swiatocha.jpg";
 import jessLynch from "@/assets/testimonial-jess-lynch.jpg";
+import { trackEvent } from "@/lib/analytics";
 
 const KeynotesWorkshops = () => {
   const topics = [
@@ -372,7 +373,7 @@ const KeynotesWorkshops = () => {
               </p>
               <Button
                 size="lg"
-                onClick={() => window.open("https://calendly.com/karen-launchbylunch/30min", "_blank")}
+                onClick={() => { trackEvent('book_consultation', { location: 'keynotes_workshops' }); window.open("https://calendly.com/karen-launchbylunch/30min", "_blank"); }}
                 className="bg-white text-lbl-ink hover:bg-white/90 px-8 py-6 text-lg rounded-full font-bold shadow-xl hover:scale-105 transition-all duration-300 group"
               >
                 <span className="flex items-center gap-2">

@@ -13,6 +13,7 @@ import FAQSection from "@/components/join/FAQSection";
 import BottomCTASection from "@/components/join/BottomCTASection";
 import ContactForm from "@/components/ContactForm";
 import YouTubePlayer from "@/components/YouTubePlayer";
+import { trackEvent } from "@/lib/analytics";
 
 const Community = () => {
   const navigate = useNavigate();
@@ -28,6 +29,7 @@ const Community = () => {
       setSelectedService(service.title);
       setContactFormOpen(true);
     } else if (service.ctaUrl === "https://calendly.com/karen-launchbylunch/ai-low-code-office-hours") {
+      trackEvent('book_consultation', { location: 'community' });
       window.open(service.ctaUrl, "_blank");
     } else if (service.ctaUrl === "#") {
       console.log(`Clicked ${service.title}`);

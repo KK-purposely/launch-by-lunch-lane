@@ -14,6 +14,7 @@ import {
 } from "lucide-react";
 import Footer from "@/components/Footer";
 import dashboardImage from "@/assets/evergreen-dashboard.png.asset.json";
+import { trackEvent } from "@/lib/analytics";
 
 const GILBARBARA = "https://cdn.jsdelivr.net/gh/gilbarbara/logos@master/logos";
 const SVGL = "https://raw.githubusercontent.com/pheralb/svgl/main/static/library";
@@ -500,7 +501,7 @@ const Dashboard = () => {
               <Button
                 className="w-full rounded-full text-white font-semibold py-6"
                 style={{ background: "linear-gradient(90deg, #2a1748, #fc8817)" }}
-                onClick={() => window.open("https://calendly.com/karen-launchbylunch/30min", "_blank")}
+                onClick={() => { trackEvent('book_consultation', { location: 'dashboard' }); window.open("https://calendly.com/karen-launchbylunch/30min", "_blank"); }}
               >
                 Get Started
               </Button>

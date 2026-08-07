@@ -4,6 +4,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Button } from "@/components/ui/button";
 import { ArrowUpRight, Sparkles, Rocket, CheckCircle } from "lucide-react";
 import WaitlistModal from "@/components/WaitlistModal";
+import { trackEvent } from "@/lib/analytics";
 
 
 const Accelerators = () => {
@@ -215,7 +216,7 @@ const Accelerators = () => {
                         ? 'bg-gradient-to-r from-lbl-ink to-lbl-orange hover:from-lbl-orange hover:to-lbl-ink text-white shadow-lg hover:shadow-xl' 
                         : 'text-gray-500'
                     }`}
-                    onClick={() => cohort.isWaitlist ? setIsWaitlistOpen(true) : window.open(cohort.url, '_blank')}
+                    onClick={() => { if (cohort.isWaitlist) { setIsWaitlistOpen(true); } else { trackEvent('event_registration_click', { location: 'accelerators' }); window.open(cohort.url, '_blank'); } }}
                     disabled={!cohort.isActive && !cohort.isWaitlist}
                   >
                     {cohort.isWaitlist ? (

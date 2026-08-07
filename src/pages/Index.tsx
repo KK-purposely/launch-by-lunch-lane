@@ -14,6 +14,7 @@ import Footer from "@/components/Footer";
 import trustedByImg from "@/assets/trusted-by.png";
 import mollyPapermaster from "@/assets/molly-papermaster.png.asset.json";
 import commCorpLogo from "@/assets/commonwealth-corporation-logo.png.asset.json";
+import { trackEvent } from "@/lib/analytics";
 
 /* ── Scroll-triggered wrapper ── */
 const Reveal = ({ children, className = "", delay = 0 }: { children: React.ReactNode; className?: string; delay?: number }) => {
@@ -258,7 +259,7 @@ const Index = () => {
                 <Button
                   size="lg"
                   className="group w-full max-w-sm bg-gradient-to-r from-lbl-ink to-lbl-orange hover:from-lbl-orange hover:to-lbl-ink text-white px-8 py-6 text-lg rounded-full font-medium transition-all duration-300 shadow-lg hover:shadow-xl"
-                  onClick={() => window.open("https://calendly.com/karen-launchbylunch/30min", "_blank")}
+                  onClick={() => { trackEvent('book_consultation', { location: 'index_hero' }); { trackEvent('book_consultation', { location: 'index' }); window.open("https://calendly.com/karen-launchbylunch/30min", "_blank"); }; }}
                 >
                   <span className="flex items-center gap-2">
                     Book a Consultation
