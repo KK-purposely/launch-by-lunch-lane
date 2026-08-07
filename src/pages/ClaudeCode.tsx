@@ -226,7 +226,7 @@ const ClaudeCode = () => {
                   <p className="text-gray-600 text-lg flex-1 mb-8">{w.description}</p>
                   <Button
                     className="w-full rounded-full font-semibold transition-all duration-300 bg-lbl-ink hover:bg-lbl-orange text-white"
-                    onClick={() => { if (w.ctaUrl.includes("luma")) trackEvent('event_registration_click', { location: 'claude_code' }); window.open(w.ctaUrl, "_blank"); }}
+                    onClick={() => { if (w.ctaUrl.includes("luma")) { trackEvent('event_registration_click', { location: 'claude_code', workshop: w.title }); } else { trackEvent('workshop_inquiry_click', { location: 'claude_code', workshop: w.title }); } window.open(w.ctaUrl, "_blank"); }}
                   >
                     {w.ctaText}
                   </Button>

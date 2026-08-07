@@ -259,7 +259,7 @@ const Index = () => {
                 <Button
                   size="lg"
                   className="group w-full max-w-sm bg-gradient-to-r from-lbl-ink to-lbl-orange hover:from-lbl-orange hover:to-lbl-ink text-white px-8 py-6 text-lg rounded-full font-medium transition-all duration-300 shadow-lg hover:shadow-xl"
-                  onClick={() => { trackEvent('book_consultation', { location: 'index_hero' }); { trackEvent('book_consultation', { location: 'index' }); window.open("https://calendly.com/karen-launchbylunch/30min", "_blank"); }; }}
+                  onClick={() => { trackEvent('book_consultation', { location: 'index_hero' }); window.open("https://calendly.com/karen-launchbylunch/30min", "_blank"); }}
                 >
                   <span className="flex items-center gap-2">
                     Book a Consultation
@@ -790,9 +790,10 @@ const Index = () => {
             <Button
               size="lg"
               className="bg-lbl-orange hover:bg-lbl-orange/90 text-white px-10 py-4 text-lg rounded-full font-bold transition-all duration-300 shadow-xl hover:scale-105 group"
-              onClick={() =>
-                window.open("https://calendly.com/karen-launchbylunch/30min", "_blank")
-              }
+              onClick={() => {
+                trackEvent('book_consultation', { location: 'index' });
+                window.open("https://calendly.com/karen-launchbylunch/30min", "_blank");
+              }}
             >
               <span className="flex items-center gap-3">
                 Let's Talk
