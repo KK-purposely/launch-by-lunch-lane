@@ -13,7 +13,8 @@ export type AnalyticsEvent =
   | 'community_form_submit'
   | 'invite_request_submit'
   | 'teardown_request_submit'
-  | 'event_registration_click';
+  | 'event_registration_click'
+  | 'workshop_inquiry_click';
 
 export function trackEvent(
   event: AnalyticsEvent,
