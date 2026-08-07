@@ -1,6 +1,7 @@
 
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Sparkles } from "lucide-react";
+import { trackEvent } from "@/lib/analytics";
 
 const CTA = () => {
   const scrollToJoinWaitlist = () => {
@@ -33,7 +34,7 @@ const CTA = () => {
           <Button
             size="lg"
             className="group bg-white text-lbl-orange hover:bg-white/90 px-8 py-6 text-lg rounded-full font-medium transition-all duration-300 shadow-lg hover:shadow-xl"
-            onClick={() => window.open('https://newsletter.launchbylunch.co', '_blank')}
+            onClick={() => { trackEvent('newsletter_signup_click', { location: 'cta' }); window.open('https://newsletter.launchbylunch.co', '_blank'); }}
           >
             <span className="flex items-center gap-2">
               Subscribe to our Newsletter
