@@ -258,42 +258,40 @@ type Example = {
   response: string;
 };
 
-const ExampleCard = ({ ex, up }: { ex: Example; up: boolean }) => {
+const ExampleCard = ({ ex }: { ex: Example }) => {
   const Icon = ex.icon;
   return (
-    <div className="group relative hover:z-40">
-      <div className="bg-white rounded-2xl p-6 border border-gray-100 shadow-sm h-full transition-shadow group-hover:shadow-lg">
-        <span className="inline-flex w-10 h-10 rounded-xl items-center justify-center bg-lbl-magenta/10 text-lbl-magenta mb-4">
-          <Icon className="w-5 h-5" />
-        </span>
-        <h3 className="text-xl font-extrabold text-lbl-ink leading-snug mb-2">{ex.name}</h3>
-        <p className="text-sm text-gray-600 leading-relaxed mb-4">{ex.title}</p>
-        <div className="flex items-center gap-1.5 text-lbl-magenta text-sm font-medium">
-          <Sparkles className="w-3.5 h-3.5" />
-          Hover to see an example
+    <div className="group relative">
+      <div className="bg-white rounded-2xl border border-gray-100 shadow-sm h-full overflow-hidden transition-shadow group-hover:shadow-lg flex flex-col">
+        {/* Default face */}
+        <div className="p-6 group-hover:opacity-0 group-hover:absolute group-hover:inset-0 transition-opacity duration-150">
+          <span className="inline-flex w-10 h-10 rounded-xl items-center justify-center bg-lbl-magenta/10 text-lbl-magenta mb-4">
+            <Icon className="w-5 h-5" />
+          </span>
+          <h3 className="text-xl font-extrabold text-lbl-ink leading-snug mb-2">{ex.name}</h3>
+          <p className="text-sm text-gray-600 leading-relaxed mb-4">{ex.title}</p>
+          <div className="flex items-center gap-1.5 text-lbl-magenta text-sm font-medium">
+            <Sparkles className="w-3.5 h-3.5" />
+            Hover to see an example
+          </div>
         </div>
-      </div>
 
-      {/* Popover */}
-      <div
-        className={`pointer-events-none opacity-0 group-hover:opacity-100 group-hover:pointer-events-auto transition-opacity duration-200 absolute left-1/2 -translate-x-1/2 z-50 w-[340px] md:w-[380px] ${
-          up ? "bottom-full mb-3" : "top-full mt-3"
-        }`}
-      >
-        <div
-          className="bg-white rounded-2xl overflow-hidden border border-gray-100"
-          style={{ boxShadow: "0 30px 60px -20px rgba(20,10,40,0.35)" }}
-        >
-          <div className="h-1.5" style={{ background: WARM }} />
-          <div className="p-5">
-            <div className="text-[10px] font-bold uppercase tracking-[0.15em] text-lbl-magenta mb-1">You ask</div>
-            <div className="bg-lbl-paper rounded-lg p-3 text-sm text-lbl-ink mb-4">{ex.ask}</div>
-            <div className="text-[10px] font-bold uppercase tracking-[0.15em] text-lbl-magenta mb-2 flex items-center gap-1">
-              <Sparkles className="w-3 h-3" /> AI response
-            </div>
-            <div className="text-xs text-gray-700 leading-relaxed whitespace-pre-line">
-              {ex.response}
-            </div>
+        {/* Hover face: example content shown directly on the card */}
+        <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-200 absolute inset-0 p-5 flex flex-col">
+          <div className="h-1.5 -mx-5 -mt-5 mb-4" style={{ background: WARM }} />
+          <div className="flex items-center gap-2 mb-3">
+            <span className="inline-flex w-8 h-8 rounded-lg items-center justify-center bg-lbl-magenta/10 text-lbl-magenta flex-shrink-0">
+              <Icon className="w-4 h-4" />
+            </span>
+            <h3 className="text-base font-extrabold text-lbl-ink leading-snug">{ex.name}</h3>
+          </div>
+          <div className="text-[10px] font-bold uppercase tracking-[0.15em] text-lbl-magenta mb-1">You ask</div>
+          <div className="bg-lbl-paper rounded-lg p-2.5 text-xs text-lbl-ink mb-3 leading-relaxed">{ex.ask}</div>
+          <div className="text-[10px] font-bold uppercase tracking-[0.15em] text-lbl-magenta mb-1.5 flex items-center gap-1">
+            <Sparkles className="w-3 h-3" /> AI response
+          </div>
+          <div className="text-xs text-gray-700 leading-relaxed whitespace-pre-line overflow-y-auto flex-1">
+            {ex.response}
           </div>
         </div>
       </div>
