@@ -508,20 +508,13 @@ const Dashboard = () => {
                 </li>
               </ul>
               <div className="text-xs font-bold uppercase tracking-wider text-gray-500 mb-2">Additional sections:</div>
-              <div className="flex flex-wrap gap-2 mb-6">
+              <div className="flex flex-wrap gap-2">
                 {["Website analytics", "Social media analytics", "Project updates", "Marketing spend (Google Ads, Facebook Ads)"].map((p) => (
                   <span key={p} className="text-xs font-medium px-3 py-1 rounded-full bg-lbl-paper border border-gray-200 text-lbl-ink">
                     {p}
                   </span>
                 ))}
               </div>
-              <Button
-                variant="outline"
-                className="w-full rounded-full font-semibold py-6 border-lbl-ink text-lbl-ink hover:bg-lbl-ink hover:text-white"
-                onClick={() => (window.location.href = "/contact")}
-              >
-                Talk to Us
-              </Button>
             </div>
 
             {/* Ongoing Care */}
@@ -536,14 +529,7 @@ const Dashboard = () => {
               <div className="text-4xl font-extrabold text-lbl-ink mb-1">
                 $500<span className="text-base font-medium text-gray-500"> / month</span>
               </div>
-              <p className="text-sm text-gray-600 mb-6">We keep it current and evolve it with you.</p>
-              <Button
-                variant="outline"
-                className="w-full rounded-full font-semibold py-6 border-lbl-ink text-lbl-ink hover:bg-lbl-ink hover:text-white"
-                onClick={() => (window.location.href = "/contact")}
-              >
-                Talk to Us
-              </Button>
+              <p className="text-sm text-gray-600">We keep it current and evolve it with you.</p>
             </div>
           </div>
         </div>
