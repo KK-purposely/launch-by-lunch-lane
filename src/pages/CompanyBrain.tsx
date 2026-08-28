@@ -831,8 +831,8 @@ Compiled from Asana, HubSpot, Slack, Gmail. No one was asked for an update.`,
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-6 max-w-[960px] mx-auto">
-            {/* Featured price card */}
+          <div className="grid md:grid-cols-3 gap-6 max-w-[1100px] mx-auto">
+            {/* Base price card */}
             <div className="bg-white rounded-2xl border border-gray-100 shadow-lg overflow-hidden">
               <div
                 className="px-7 py-6 text-white"
@@ -848,7 +848,57 @@ Compiled from Asana, HubSpot, Slack, Gmail. No one was asked for an update.`,
               </div>
               <div className="p-7">
                 <ul className="space-y-4 mb-8">
-                  {["5 tool connectors", "15 documents", "Setup for up to 15 people"].map((f) => (
+                  {["5 tool connectors", "25 documents", "Setup for up to 15 people"].map((f) => (
+                    <li key={f} className="flex items-center gap-3">
+                      <span
+                        className="flex-shrink-0 h-6 w-6 rounded-full flex items-center justify-center text-white"
+                        style={{ background: WARM }}
+                      >
+                        <Check className="h-3.5 w-3.5" />
+                      </span>
+                      <span className="text-gray-700">{f}</span>
+                    </li>
+                  ))}
+                </ul>
+                <Button
+                  asChild
+                  size="lg"
+                  className="group w-full rounded-full px-8 py-6 text-lg font-semibold text-white shadow-lg transition-all hover:shadow-xl"
+                  style={{ background: WARM }}
+                >
+                  <a
+                    href="https://calendly.com/karen-launchbylunch/30min"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    onClick={() => trackEvent('book_consultation', { location: 'company_brain' })}
+                  >
+                    Get started
+                    <ArrowRight className="ml-2 h-5 w-5 inline transition-transform group-hover:translate-x-1" />
+                  </a>
+                </Button>
+              </div>
+            </div>
+
+            {/* Premium price card */}
+            <div className="bg-white rounded-2xl border-2 border-lbl-orange shadow-lg overflow-hidden relative">
+              <div className="absolute -top-3 left-1/2 -translate-x-1/2 bg-lbl-orange text-white text-[10px] font-bold uppercase tracking-wider px-3 py-1 rounded-full z-10">
+                Most Popular
+              </div>
+              <div
+                className="px-7 py-6 text-white"
+                style={{ background: "linear-gradient(135deg,#2a1748 0%,#421f52 45%,#6b3a82 100%)" }}
+              >
+                <div className="text-xs font-bold uppercase tracking-[0.2em] text-white/85 mb-3">
+                  Standard Company Brain
+                </div>
+                <div className="flex items-baseline gap-2">
+                  <span className="text-sm text-white/85">Starts at</span>
+                  <span className="text-4xl font-extrabold">$7,500</span>
+                </div>
+              </div>
+              <div className="p-7">
+                <ul className="space-y-4 mb-8">
+                  {["Intake call", "2 hours of training for the team", "Ownership handoff", "25 documents"].map((f) => (
                     <li key={f} className="flex items-center gap-3">
                       <span
                         className="flex-shrink-0 h-6 w-6 rounded-full flex items-center justify-center text-white"
