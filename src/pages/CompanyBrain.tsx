@@ -527,7 +527,7 @@ Compiled from Asana, HubSpot, Slack, Gmail. No one was asked for an update.`,
       </section>
 
       {/* 3. IMAGINE */}
-      <section className="bg-white py-20 md:py-24 px-4 sm:px-6 relative overflow-visible">
+      <section className="bg-white py-20 md:py-24 px-4 sm:px-6">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
             <Kicker>Imagine</Kicker>
