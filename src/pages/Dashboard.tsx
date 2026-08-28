@@ -335,18 +335,6 @@ const Dashboard = () => {
         </div>
       </section>
 
-      {/* TESTIMONIAL 1 */}
-      <section className="bg-white py-20 px-4 sm:px-6">
-        <div className="max-w-3xl mx-auto">
-          <div className="bg-lbl-paper rounded-3xl p-10 md:p-12 text-center shadow-sm border border-gray-100">
-            <div className="text-4xl text-lbl-magenta font-serif leading-none mb-4">“</div>
-            <p className="text-xl md:text-2xl text-lbl-ink leading-relaxed mb-4 italic">
-              I used to open six tabs to answer one question. Now it is one screen, and I finally trust the number.
-            </p>
-            <div className="font-semibold text-lbl-magenta">Allison, CEO and Founder</div>
-          </div>
-        </div>
-      </section>
 
       {/* SEE IT IN ACTION */}
       <section className="bg-white pb-20 px-4 sm:px-6">
@@ -422,7 +410,7 @@ const Dashboard = () => {
         </div>
       </section>
 
-      {/* TESTIMONIAL 2 */}
+      {/* TESTIMONIAL */}
       <section className="bg-lbl-paper py-20 px-4 sm:px-6">
         <div className="max-w-3xl mx-auto">
           <div className="bg-white rounded-3xl p-10 md:p-12 text-center shadow-sm border border-gray-100">
@@ -430,7 +418,7 @@ const Dashboard = () => {
             <p className="text-xl md:text-2xl text-lbl-ink leading-relaxed mb-4 italic">
               We stopped guessing at the end of the month. Now I glance at it every morning with my coffee.
             </p>
-            <div className="font-semibold text-lbl-orange">Steve, Store Owner</div>
+            <div className="font-semibold text-lbl-orange">Chantal Galipeau, CEO and Studio Owner</div>
           </div>
         </div>
       </section>
