@@ -540,7 +540,7 @@ Compiled from Asana, HubSpot, Slack, Gmail. No one was asked for an update.`,
           </div>
           <div className="grid md:grid-cols-3 gap-6 relative">
             {examples.map((ex, i) => (
-              <ExampleCard key={i} ex={ex} up={i >= 3} />
+              <ExampleCard key={i} ex={ex} />
             ))}
           </div>
         </div>
