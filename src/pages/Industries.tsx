@@ -2,9 +2,12 @@ import React from "react";
 import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Brain, UserRound, Search, Megaphone, Wallet, ShoppingBag, UtensilsCrossed, Briefcase, Palette, Stethoscope, Hammer, GraduationCap, Microscope } from "lucide-react";
+import { ArrowRight, ShoppingBag, UtensilsCrossed, Briefcase, Palette, Stethoscope, Hammer, GraduationCap, Microscope } from "lucide-react";
 import Footer from "@/components/Footer";
 import { trackEvent } from "@/lib/analytics";
+import { BrainOrb } from "@/components/visuals/BrainOrb";
+import { DashboardMock } from "@/components/visuals/DashboardMock";
+import blueBotImg from "@/assets/blue-bot-chief-of-staff.png";
 
 const builds = [
   {
