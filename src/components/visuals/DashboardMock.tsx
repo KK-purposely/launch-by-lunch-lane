@@ -18,13 +18,13 @@ export const DashboardMock = () => (
   <div className="grid grid-cols-5 gap-3">
     {/* Revenue tile */}
     <div
-      className="col-span-2 rounded-xl p-4 text-white flex flex-col justify-between min-h-[150px]"
+      className="col-span-2 rounded-xl p-4 text-white flex flex-col items-center justify-center text-center min-h-[150px]"
       style={{ background: "linear-gradient(135deg, #421f52 0%, #ec4795 100%)" }}
     >
       <div className="text-[10px] font-semibold uppercase tracking-[0.15em] opacity-90">Revenue</div>
-      <div>
+      <div className="mt-2">
         <div className="text-3xl md:text-4xl font-extrabold leading-none">$48.2k</div>
-        <div className="text-[11px] opacity-95 mt-2 flex items-center gap-1">
+        <div className="text-[11px] opacity-95 mt-2 flex items-center justify-center gap-1">
           <span>▲</span> 18% on pace
         </div>
       </div>
@@ -75,8 +75,11 @@ export const DashboardMock = () => (
           strokeLinecap="round"
           strokeLinejoin="round"
           points="0,34 15,30 30,32 45,20 60,24 75,12 100,6"
+          pathLength={100}
+          strokeDasharray="100"
+          className="animate-trend-draw"
         />
-        <circle cx="100" cy="6" r="2.5" fill="#fc8817" />
+        <circle cx="100" cy="6" r="2.5" fill="#fc8817" className="animate-trend-dot" />
       </svg>
     </div>
 
