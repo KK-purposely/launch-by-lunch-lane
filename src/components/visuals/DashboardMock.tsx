@@ -2,7 +2,6 @@ import React from "react";
 import { AlertTriangle } from "lucide-react";
 
 export const DashboardMock = () => (
-{/* Card */}
 <div
   className="relative bg-white text-gray-900 rounded-2xl p-5 md:p-6"
   style={{ boxShadow: "0 40px 80px -20px rgba(20,10,40,0.55), 0 20px 40px -20px rgba(20,10,40,0.4)" }}
