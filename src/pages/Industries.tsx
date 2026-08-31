@@ -152,27 +152,60 @@ const Industries = () => {
           <div className="mb-14 max-w-3xl">
             <p className="text-sm font-semibold uppercase tracking-widest text-lbl-orange mb-3">Our most requested builds</p>
             <h2 className="text-3xl md:text-5xl font-bold">
-              <span className="bg-grad-brand bg-clip-text text-transparent">Five builds that quietly run the business.</span>
+              <span className="bg-grad-brand bg-clip-text text-transparent">Popular builds for any industry.</span>
             </h2>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {builds.map((b) => (
-              <div
+              <Link
                 key={b.n}
-                className="group relative bg-white rounded-3xl border border-gray-200 p-6 hover:border-lbl-orange hover:shadow-xl transition-all duration-300"
+                to={b.to}
+                className="group relative flex flex-col bg-white rounded-3xl border border-gray-200 overflow-hidden hover:border-lbl-orange hover:shadow-xl transition-all duration-300"
               >
-                <div className="flex items-start justify-between mb-5">
-                  <span className="text-4xl font-extrabold bg-grad-brand bg-clip-text text-transparent">{b.n}</span>
-                  <div className="p-3 rounded-2xl bg-lbl-paper group-hover:bg-lbl-orange/10 transition-colors">
-                    <b.icon className="h-6 w-6 text-lbl-orange" />
-                  </div>
+                <div
+                  className="relative h-56 flex items-center justify-center overflow-hidden px-6"
+                  style={{
+                    background:
+                      b.visual === "dashboard"
+                        ? "linear-gradient(135deg,#2a1748,#421f52,#6b3a82)"
+                        : b.visual === "brain"
+                        ? "linear-gradient(135deg,#2a1748,#421f52,#6b3a82)"
+                        : "linear-gradient(135deg,#421f52,#9b2a7a,#ec4795)",
+                  }}
+                >
+                  {b.visual === "brain" && (
+                    <div className="w-[230px]">
+                      <BrainOrb />
+                    </div>
+                  )}
+                  {b.visual === "dashboard" && (
+                    <div className="w-[460px] scale-[0.62] origin-center">
+                      <DashboardMock />
+                    </div>
+                  )}
+                  {b.visual === "bot" && (
+                    <img
+                      src={blueBotImg}
+                      alt="Blue AI bot Chief of Staff assistant"
+                      className="h-44 w-44 object-contain drop-shadow-2xl"
+                    />
+                  )}
                 </div>
-                <h3 className="text-xl font-bold text-lbl-ink mb-2">{b.title}</h3>
-                <p className="text-lg text-lbl-ink/75 leading-relaxed">{b.desc}</p>
-              </div>
+                <div className="p-6 flex flex-col flex-1">
+                  <div className="flex items-start justify-between mb-3">
+                    <span className="text-4xl font-extrabold bg-grad-brand bg-clip-text text-transparent">{b.n}</span>
+                  </div>
+                  <h3 className="text-xl font-bold text-lbl-ink mb-2">{b.title}</h3>
+                  <p className="text-lg text-lbl-ink/75 leading-relaxed mb-4">{b.desc}</p>
+                  <span className="mt-auto inline-flex items-center font-semibold text-lbl-orange">
+                    Learn more <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
+                  </span>
+                </div>
+              </Link>
             ))}
           </div>
+
         </div>
       </section>
 
