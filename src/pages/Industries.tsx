@@ -191,7 +191,7 @@ const Industries = () => {
                     <img
                       src={blueBotImg}
                       alt="Blue AI bot Chief of Staff assistant"
-                      className="h-44 w-44 object-contain drop-shadow-2xl"
+                      className="h-44 w-44 object-contain drop-shadow-2xl animate-bounce-slow"
                     />
                   )}
                 </div>

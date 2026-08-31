@@ -201,3 +201,45 @@
 .bg-ink {
   background-color: var(--lbl-ink);
 }
+@keyframes trend-draw {
+  0% {
+    stroke-dashoffset: 100;
+  }
+  70% {
+    stroke-dashoffset: 0;
+  }
+  90% {
+    stroke-dashoffset: 0;
+    opacity: 1;
+  }
+  100% {
+    stroke-dashoffset: 0;
+    opacity: 0;
+  }
+}
+
+.animate-trend-draw {
+  animation: trend-draw 3.2s ease-in-out infinite;
+}
+
+@keyframes trend-dot {
+  0%, 60% {
+    opacity: 0;
+    transform: scale(0.4);
+  }
+  75% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.animate-trend-dot {
+  transform-origin: 100px 6px;
+  animation: trend-dot 3.2s ease-in-out infinite;
+}
