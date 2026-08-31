@@ -183,7 +183,7 @@ const Industries = () => {
                     </div>
                   )}
                   {b.visual === "dashboard" && (
-                    <div className="w-[460px] scale-[0.62] origin-center">
+                    <div className="w-[640px] scale-[0.44] origin-center">
                       <DashboardMock />
                     </div>
                   )}
