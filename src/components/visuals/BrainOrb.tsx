@@ -22,8 +22,8 @@ export const BrainOrb = () => {
   return (
     <motion.div
       className="relative w-full aspect-square max-w-[560px] mx-auto"
-      animate={{ y: [0, -10, 0] }}
-      transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
+      animate={{ y: [0, -6, 0] }}
+      transition={{ duration: 8, repeat: Infinity, ease: [0.45, 0.05, 0.55, 0.95], repeatType: "loop" }}
     >
       {/* Rotating dashed ring */}
       <motion.div
