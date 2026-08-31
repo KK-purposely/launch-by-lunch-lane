@@ -183,8 +183,8 @@ const Industries = () => {
                     </div>
                   )}
                   {b.visual === "dashboard" && (
-                    <div className="w-[260px] scale-[0.78] origin-center">
-                      <DashboardMock square />
+                    <div className="w-full max-w-[340px] px-2">
+                      <DashboardMock compact />
                     </div>
                   )}
                   {b.visual === "bot" && (
