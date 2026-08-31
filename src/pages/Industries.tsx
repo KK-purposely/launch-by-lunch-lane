@@ -11,33 +11,25 @@ const builds = [
     n: "01",
     title: "Company Brain",
     desc: "A living knowledge base that gets new hires up to speed on day one, not month one.",
-    icon: Brain,
+    to: "/company-brain",
+    visual: "brain" as const,
   },
   {
     n: "02",
-    title: "Your Best (and Last) Assistant",
-    desc: "A dedicated AI assistant that tracks follow-ups, tasks, and deadlines so nothing falls through the cracks.",
-    icon: UserRound,
+    title: "Company Dashboard",
+    desc: "One screen with revenue, pipeline, and the must-dos, so you always know where the business stands.",
+    to: "/dashboard",
+    visual: "dashboard" as const,
   },
   {
     n: "03",
-    title: "Analysis Agent",
-    desc: "Specialized research skills that turn weeks of analysis into a few focused hours.",
-    icon: Search,
-  },
-  {
-    n: "04",
-    title: "Social Savant",
-    desc: "Social posts drafted in your voice, drawn from your own conversations, notes, and ideas.",
-    icon: Megaphone,
-  },
-  {
-    n: "05",
-    title: "Cash Companion",
-    desc: "Weekly financial summaries delivered automatically, so you can skip the Sunday spreadsheet routine.",
-    icon: Wallet,
+    title: "Build Your Chief of Staff",
+    desc: "A daily briefing and AI inbox system where your calendar, notes, CRM, and email finally talk to each other.",
+    to: "/claude-code",
+    visual: "bot" as const,
   },
 ];
+
 
 const verticals = [
   {
