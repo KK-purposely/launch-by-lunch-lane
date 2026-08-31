@@ -22,6 +22,7 @@ export const BrainOrb = () => {
   return (
     <motion.div
       className="relative w-full aspect-square max-w-[560px] mx-auto"
+      style={{ willChange: "transform", transform: "translateZ(0)", backfaceVisibility: "hidden" }}
       animate={{ y: [0, -6, 0] }}
       transition={{ duration: 8, repeat: Infinity, ease: [0.45, 0.05, 0.55, 0.95], repeatType: "loop" }}
     >
@@ -96,7 +97,7 @@ export const BrainOrb = () => {
               <path d="M32 15C37 15 39 19 36 22" /><path d="M42 13C45 16 44 20 41 21" /><path d="M50 20C53 23 51 28 47 28" /><path d="M44 30C48 31 48 37 43 38" /><path d="M32 28C36 28 38 32 35 35" /><path d="M32 40C36 40 37 44 34 46" />
             </g>
           </svg>
-          <div className="text-[10px] md:text-xs font-bold tracking-[0.2em] uppercase mt-1">
+          <div className="text-[10px] md:text-xs font-bold tracking-[0.2em] uppercase mt-1 text-center" style={{ transform: "translateZ(0)", backfaceVisibility: "hidden", WebkitFontSmoothing: "antialiased" }}>
             Company<br />Brain
           </div>
         </div>
