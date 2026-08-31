@@ -2,42 +2,37 @@ import React from "react";
 import { Helmet } from "react-helmet-async";
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Brain, UserRound, Search, Megaphone, Wallet, ShoppingBag, UtensilsCrossed, Briefcase, Palette, Stethoscope, Hammer, GraduationCap, Microscope } from "lucide-react";
+import { ArrowRight, ShoppingBag, UtensilsCrossed, Briefcase, Palette, Stethoscope, Hammer, GraduationCap, Microscope } from "lucide-react";
 import Footer from "@/components/Footer";
 import { trackEvent } from "@/lib/analytics";
+import { BrainOrb } from "@/components/visuals/BrainOrb";
+import { DashboardMock } from "@/components/visuals/DashboardMock";
+import blueBotImg from "@/assets/blue-bot-chief-of-staff.png";
 
 const builds = [
   {
     n: "01",
     title: "Company Brain",
     desc: "A living knowledge base that gets new hires up to speed on day one, not month one.",
-    icon: Brain,
+    to: "/company-brain",
+    visual: "brain" as const,
   },
   {
     n: "02",
-    title: "Your Best (and Last) Assistant",
-    desc: "A dedicated AI assistant that tracks follow-ups, tasks, and deadlines so nothing falls through the cracks.",
-    icon: UserRound,
+    title: "Company Dashboard",
+    desc: "One screen with revenue, pipeline, and the must-dos, so you always know where the business stands.",
+    to: "/dashboard",
+    visual: "dashboard" as const,
   },
   {
     n: "03",
-    title: "Analysis Agent",
-    desc: "Specialized research skills that turn weeks of analysis into a few focused hours.",
-    icon: Search,
-  },
-  {
-    n: "04",
-    title: "Social Savant",
-    desc: "Social posts drafted in your voice, drawn from your own conversations, notes, and ideas.",
-    icon: Megaphone,
-  },
-  {
-    n: "05",
-    title: "Cash Companion",
-    desc: "Weekly financial summaries delivered automatically, so you can skip the Sunday spreadsheet routine.",
-    icon: Wallet,
+    title: "Build Your Chief of Staff",
+    desc: "A daily briefing and AI inbox system where your calendar, notes, CRM, and email finally talk to each other.",
+    to: "/claude-code",
+    visual: "bot" as const,
   },
 ];
+
 
 const verticals = [
   {
@@ -160,27 +155,60 @@ const Industries = () => {
           <div className="mb-14 max-w-3xl">
             <p className="text-sm font-semibold uppercase tracking-widest text-lbl-orange mb-3">Our most requested builds</p>
             <h2 className="text-3xl md:text-5xl font-bold">
-              <span className="bg-grad-brand bg-clip-text text-transparent">Five builds that quietly run the business.</span>
+              <span className="bg-grad-brand bg-clip-text text-transparent">Popular builds for any industry.</span>
             </h2>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {builds.map((b) => (
-              <div
+              <Link
                 key={b.n}
-                className="group relative bg-white rounded-3xl border border-gray-200 p-6 hover:border-lbl-orange hover:shadow-xl transition-all duration-300"
+                to={b.to}
+                className="group relative flex flex-col bg-white rounded-3xl border border-gray-200 overflow-hidden hover:border-lbl-orange hover:shadow-xl transition-all duration-300"
               >
-                <div className="flex items-start justify-between mb-5">
-                  <span className="text-4xl font-extrabold bg-grad-brand bg-clip-text text-transparent">{b.n}</span>
-                  <div className="p-3 rounded-2xl bg-lbl-paper group-hover:bg-lbl-orange/10 transition-colors">
-                    <b.icon className="h-6 w-6 text-lbl-orange" />
-                  </div>
+                <div
+                  className="relative h-56 flex items-center justify-center overflow-hidden px-6"
+                  style={{
+                    background:
+                      b.visual === "dashboard"
+                        ? "linear-gradient(135deg,#2a1748,#421f52,#6b3a82)"
+                        : b.visual === "brain"
+                        ? "linear-gradient(135deg,#2a1748,#421f52,#6b3a82)"
+                        : "linear-gradient(135deg,#421f52,#9b2a7a,#ec4795)",
+                  }}
+                >
+                  {b.visual === "brain" && (
+                    <div className="w-[230px]">
+                      <BrainOrb />
+                    </div>
+                  )}
+                  {b.visual === "dashboard" && (
+                    <div className="w-[640px] scale-[0.44] origin-center">
+                      <DashboardMock />
+                    </div>
+                  )}
+                  {b.visual === "bot" && (
+                    <img
+                      src={blueBotImg}
+                      alt="Blue AI bot Chief of Staff assistant"
+                      className="h-44 w-44 object-contain drop-shadow-2xl"
+                    />
+                  )}
                 </div>
-                <h3 className="text-xl font-bold text-lbl-ink mb-2">{b.title}</h3>
-                <p className="text-lg text-lbl-ink/75 leading-relaxed">{b.desc}</p>
-              </div>
+                <div className="p-6 flex flex-col flex-1">
+                  <div className="flex items-start justify-between mb-3">
+                    <span className="text-4xl font-extrabold bg-grad-brand bg-clip-text text-transparent">{b.n}</span>
+                  </div>
+                  <h3 className="text-xl font-bold text-lbl-ink mb-2">{b.title}</h3>
+                  <p className="text-lg text-lbl-ink/75 leading-relaxed mb-4">{b.desc}</p>
+                  <span className="mt-auto inline-flex items-center font-semibold text-lbl-orange">
+                    Learn more <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
+                  </span>
+                </div>
+              </Link>
             ))}
           </div>
+
         </div>
       </section>
 
