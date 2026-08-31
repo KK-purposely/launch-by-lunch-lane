@@ -167,9 +167,7 @@ const Industries = () => {
                 className="group relative flex flex-col bg-white rounded-3xl border border-gray-200 overflow-hidden hover:border-lbl-orange hover:shadow-xl transition-all duration-300"
               >
                 <div
-                  className={`relative flex items-center justify-center overflow-hidden px-6 ${
-                    b.visual === "dashboard" ? "aspect-square" : "h-56"
-                  }`}
+                  className="relative h-56 flex items-center justify-center overflow-hidden px-6"
                   style={{
                     background:
                       b.visual === "dashboard"
@@ -185,7 +183,7 @@ const Industries = () => {
                     </div>
                   )}
                   {b.visual === "dashboard" && (
-                    <div className="w-full max-w-[280px] scale-[0.92] origin-center">
+                    <div className="w-[260px] scale-[0.78] origin-center">
                       <DashboardMock square />
                     </div>
                   )}

@@ -13,46 +13,37 @@ export const DashboardMock: React.FC<DashboardMockProps> = ({ square = false, cl
   if (square) {
     return (
       <div className={wrapperClass} style={shadow}>
-        <div className="flex items-center justify-between mb-3">
-          <div className="text-xs font-semibold text-gray-700">This Month</div>
-          <div className="flex items-center gap-1.5">
-            <span className="h-2 w-2 rounded-full bg-orange-400" />
-            <span className="h-2 w-2 rounded-full bg-pink-400" />
-            <span className="h-2 w-2 rounded-full bg-purple-400" />
-          </div>
-        </div>
-
-        <div className="grid grid-cols-2 gap-2.5">
+        <div className="grid grid-cols-2 gap-2">
           {/* Revenue tile */}
           <div
-            className="col-span-2 rounded-xl p-4 text-white flex flex-col items-center justify-center text-center min-h-[130px]"
+            className="col-span-2 rounded-xl p-3 text-white flex flex-col items-center justify-center text-center min-h-[96px]"
             style={{ background: "linear-gradient(135deg, #421f52 0%, #ec4795 100%)" }}
           >
-            <div className="text-[10px] font-semibold uppercase tracking-[0.15em] opacity-90">Revenue</div>
-            <div className="mt-2">
-              <div className="text-4xl font-extrabold leading-none">$48.2k</div>
-              <div className="text-[11px] opacity-95 mt-2 flex items-center justify-center gap-1">
+            <div className="text-[9px] font-semibold uppercase tracking-[0.15em] opacity-90">Revenue</div>
+            <div className="mt-1">
+              <div className="text-3xl font-extrabold leading-none">$48.2k</div>
+              <div className="text-[10px] opacity-95 mt-1 flex items-center justify-center gap-1">
                 <span>▲</span> 18% on pace
               </div>
             </div>
           </div>
 
           {/* Must Do tile */}
-          <div className="col-span-2 rounded-xl border border-gray-200/80 bg-white p-3 min-h-[100px]">
-            <div className="flex items-center gap-1.5 mb-2">
-              <AlertTriangle className="h-3 w-3 text-red-500" />
-              <span className="text-[10px] font-bold uppercase tracking-[0.15em] text-red-500">Must Do</span>
+          <div className="col-span-2 rounded-xl border border-gray-200/80 bg-white p-2.5 min-h-[78px]">
+            <div className="flex items-center gap-1 mb-1.5">
+              <AlertTriangle className="h-2.5 w-2.5 text-red-500" />
+              <span className="text-[9px] font-bold uppercase tracking-[0.15em] text-red-500">Must Do</span>
             </div>
-            <ul className="space-y-1.5">
+            <ul className="space-y-1">
               {[
                 { name: "Atlas Advisory", days: 14, amt: "$2,950" },
                 { name: "Brightwave Co", days: 9, amt: "$2,500" },
                 { name: "Cedar & Co", days: 30, amt: "$250" },
               ].map((r) => (
-                <li key={r.name} className="flex justify-between items-start text-[11px]">
+                <li key={r.name} className="flex justify-between items-start text-[10px]">
                   <div className="leading-tight">
                     <div className="font-semibold text-gray-900">{r.name}</div>
-                    <div className="text-[10px] text-red-500">{r.days} days overdue</div>
+                    <div className="text-[9px] text-red-500">{r.days} days overdue</div>
                   </div>
                   <span className="font-semibold text-gray-900">{r.amt}</span>
                 </li>
@@ -61,9 +52,9 @@ export const DashboardMock: React.FC<DashboardMockProps> = ({ square = false, cl
           </div>
 
           {/* Revenue trend */}
-          <div className="col-span-1 rounded-xl border border-gray-200/80 p-2.5">
-            <div className="text-[10px] font-semibold uppercase tracking-[0.15em] text-gray-500 mb-1">Trend</div>
-            <svg viewBox="0 0 100 40" className="w-full h-10" preserveAspectRatio="none">
+          <div className="col-span-1 rounded-xl border border-gray-200/80 p-2">
+            <div className="text-[9px] font-semibold uppercase tracking-[0.15em] text-gray-500 mb-1">Trend</div>
+            <svg viewBox="0 0 100 40" className="w-full h-8" preserveAspectRatio="none">
               <defs>
                 <linearGradient id="trend-stroke" x1="0" x2="1" y1="0" y2="0">
                   <stop offset="0%" stopColor="#ec4795" />
@@ -91,9 +82,9 @@ export const DashboardMock: React.FC<DashboardMockProps> = ({ square = false, cl
           </div>
 
           {/* Goal donut */}
-          <div className="col-span-1 rounded-xl border border-gray-200/80 p-2.5 flex flex-col items-center">
-            <div className="text-[10px] font-semibold uppercase tracking-[0.15em] text-gray-500 mb-1">Goal</div>
-            <div className="relative w-12 h-12">
+          <div className="col-span-1 rounded-xl border border-gray-200/80 p-2 flex flex-col items-center">
+            <div className="text-[9px] font-semibold uppercase tracking-[0.15em] text-gray-500 mb-1">Goal</div>
+            <div className="relative w-10 h-10">
               <svg viewBox="0 0 36 36" className="w-full h-full -rotate-90">
                 <defs>
                   <linearGradient id="goal-arc" x1="0" x2="1" y1="0" y2="1">
@@ -114,7 +105,7 @@ export const DashboardMock: React.FC<DashboardMockProps> = ({ square = false, cl
                 />
               </svg>
               <div className="absolute inset-0 flex items-center justify-center">
-                <span className="text-xs font-extrabold text-gray-900">74%</span>
+                <span className="text-[10px] font-extrabold text-gray-900">74%</span>
               </div>
             </div>
           </div>
