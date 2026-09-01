@@ -70,9 +70,9 @@ const About = () => {
                 >
                   monthly AI co-working
                 </a>
-                , or{" "}
+, or{" "}
                 <a
-                  href="/contact"
+                  href="/industries"
                   className="text-lbl-orange underline underline-offset-2 hover:text-lbl-ink transition-colors"
                 >
                   ask how
