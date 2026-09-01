@@ -464,7 +464,7 @@ const Index = () => {
                     <Button
                       size="sm"
                       variant="outline"
-                      className="group rounded-full border-lbl-orange text-lbl-orange hover:bg-lbl-orange hover:text-white transition-all duration-300"
+                      className="group rounded-full bg-lbl-orange text-white border-lbl-orange hover:bg-white hover:text-lbl-orange transition-all duration-300"
                       asChild
                       onClick={() => trackEvent('case_study_click', { location: 'molly_quote', destination: '/case-studies/engine' })}
                     >
