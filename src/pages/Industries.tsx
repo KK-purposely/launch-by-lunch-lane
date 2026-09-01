@@ -143,7 +143,7 @@ const Industries = () => {
               variant="outline"
               className="rounded-full border-lbl-orange text-lbl-orange hover:bg-lbl-orange hover:text-white px-8"
             >
-              <Link to="/case-studies/engine" onClick={() => trackEvent('case_study_click', { location: 'industries_hero', destination: '/case-studies/engine' })}>A case study</Link>
+              <Link to="/case-studies/engine" onClick={() => trackEvent('case_study_click', { location: 'industries_hero', destination: '/case-studies/engine' })}>Read a case study</Link>
             </Button>
           </div>
         </div>
