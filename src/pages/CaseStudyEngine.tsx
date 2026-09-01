@@ -356,7 +356,7 @@ const CaseStudyEngine = () => {
             href={CALENDLY}
             target="_blank"
             rel="noopener noreferrer"
-            onClick={() => trackEvent('consultation_click', { location: 'case_study_engine' })}
+            onClick={() => trackEvent('book_consultation', { location: 'case_study_engine' })}
           >
             Book a call with Launch by Lunch
           </a>
