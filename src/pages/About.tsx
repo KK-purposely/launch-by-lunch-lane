@@ -111,7 +111,7 @@ const About = () => {
                           Karen Kelly
                         </a>
                       </h3>
-                      <p className="text-lbl-orange font-semibold mb-2">Founder, CEO</p>
+                      <p className="text-lbl-orange font-semibold mb-2">Founder and CEO, CCAR-F</p>
                       <p className="text-gray-700 leading-relaxed text-base">
                         Karen Kelly is a 3x founder and TEDx speaker helping leaders navigate the future of work in an AI-driven world. Named a Top 100 Voice of the Massachusetts AI Coalition in 2026, Karen founded Launch by Lunch as Boston's first AI community with the goal of enabling non-technical teams with the power of no code solutions. She has worked with dozens of Fortune 1000 organizations, making AI practical and accessible for non-technical executives while emphasizing judgment and communication as leadership advantages.
                       </p>
@@ -141,7 +141,7 @@ const About = () => {
                           Ariel Galipeau
                         </span>
                       </h3>
-                      <p className="text-lbl-orange font-semibold mb-2">Director of AI Programs, CCA-F</p>
+                      <p className="text-lbl-orange font-semibold mb-2">Director of AI Programs, CCAR-F</p>
                       <p className="text-gray-700 leading-relaxed text-base">
                         Ariel Galipeau is a Claude Certified Architect and coach who helps founders and teams turn ideas into executable plans, scalable systems, and consistent progress. With a decade inside fast-moving, mission-driven startups, she translates complexity into clear priorities and embeds AI into day-to-day workflows to improve decision-making, reduce friction, and drive real momentum. She has a particular interest in closing the AI adoption gap for women.
                       </p>

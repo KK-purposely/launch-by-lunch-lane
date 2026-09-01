@@ -273,7 +273,7 @@ const Index = () => {
                   className="w-full max-w-sm px-8 py-6 text-lg border-lbl-orange text-lbl-orange hover:bg-lbl-orange hover:text-white rounded-full font-medium transition-all duration-300"
                   asChild
                 >
-                  <Link to="/services">See What We Do</Link>
+                  <Link to="/industries">See What We Do</Link>
                 </Button>
               </motion.div>
             </div>
