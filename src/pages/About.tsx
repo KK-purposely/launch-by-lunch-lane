@@ -39,7 +39,9 @@ const About = () => {
             </h1>
             <div className="max-w-3xl mx-auto text-lg md:text-xl text-muted-foreground leading-relaxed space-y-6">
               <p>
-                When I founded Launch by Lunch in 2024, my goal was simple: help non-technical founders build with AI. Since then, it has evolved into more than 2,500 IRL community members, monthly AI coworking events, and bespoke AI solutions and{" "}
+                When I founded Launch by Lunch in 2024, my goal was simple: help non-technical founders build with AI. Since then, it has evolved into more than 2,500 IRL community members, monthly AI coworking events, and{" "}
+                <a href="/industries" className="text-lbl-orange underline underline-offset-2 hover:text-lbl-ink transition-colors">bespoke AI solutions</a>{" "}
+                and{" "}
                 <a
                   href="/comm-corp-express-ai-training-in-ma"
                   className="text-lbl-orange underline underline-offset-2 hover:text-lbl-ink transition-colors"
