@@ -15,7 +15,8 @@ export type AnalyticsEvent =
   | 'teardown_request_submit'
   | 'event_registration_click'
   | 'workshop_inquiry_click'
-  | 'roi_calculator_click';
+  | 'roi_calculator_click'
+  | 'case_study_click';
 
 export function trackEvent(
   event: AnalyticsEvent,

@@ -460,6 +460,18 @@ const Index = () => {
                     Molly Papermaster
                     <span className="block font-normal text-gray-600">Chief of Staff, The Engine</span>
                   </figcaption>
+                  <Button
+                    size="sm"
+                    variant="outline"
+                    className="mt-4 group rounded-full border-lbl-orange text-lbl-orange hover:bg-lbl-orange hover:text-white transition-all duration-300"
+                    asChild
+                    onClick={() => trackEvent('case_study_click', { location: 'molly_quote', destination: '/case-studies/engine' })}
+                  >
+                    <Link to="/case-studies/engine">
+                      Read the case study
+                      <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
+                    </Link>
+                  </Button>
                 </div>
               </figure>
             </Reveal>
