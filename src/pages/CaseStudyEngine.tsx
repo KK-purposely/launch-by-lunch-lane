@@ -125,7 +125,7 @@ const CaseStudyEngine = () => {
       <header className="topbar">
         <div className="topbar-inner">
           <img
-            src="/lovable-uploads/8f3eba1c-0f11-4411-9774-5671f6239bf2.png"
+            src="/lovable-uploads/9e01cb2b-d7f4-4b83-adb5-706805de7735.png"
             height={32}
             alt="Launch by Lunch"
           />
