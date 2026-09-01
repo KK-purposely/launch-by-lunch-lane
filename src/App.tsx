@@ -28,6 +28,7 @@ import FreeUpskillingMA from "./pages/FreeUpskillingMA";
 import Industries from "./pages/Industries";
 import Dashboard from "./pages/Dashboard";
 import CompanyBrain from "./pages/CompanyBrain";
+import CaseStudyEngine from "./pages/CaseStudyEngine";
 import Navigation from "./components/Navigation";
 import ScrollToTop from "./components/ScrollToTop";
 
@@ -68,6 +69,7 @@ const App = () => (
             <Route path="/industries" element={<Industries />} />
             <Route path="/dashboard" element={<Dashboard />} />
             <Route path="/company-brain" element={<CompanyBrain />} />
+            <Route path="/case-studies/engine" element={<CaseStudyEngine />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>
