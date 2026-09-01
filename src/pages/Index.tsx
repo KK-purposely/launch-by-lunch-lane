@@ -456,22 +456,24 @@ const Index = () => {
                   <blockquote className="text-lg md:text-xl text-lbl-ink leading-relaxed italic">
                     "Launch by Lunch addressed 2 critical AI initiatives for us. The first was a shared knowledge base so anyone on the team can find answers without chasing colleagues down. The second was the creation of team-based workflows built around how we actually operate. It feels like each team got something made for them."
                   </blockquote>
-                  <figcaption className="mt-3 text-base font-semibold text-lbl-ink">
-                    Molly Papermaster
-                    <span className="block font-normal text-gray-600">Chief of Staff, The Engine</span>
-                  </figcaption>
-                  <Button
-                    size="sm"
-                    variant="outline"
-                    className="mt-4 group rounded-full border-lbl-orange text-lbl-orange hover:bg-lbl-orange hover:text-white transition-all duration-300"
-                    asChild
-                    onClick={() => trackEvent('case_study_click', { location: 'molly_quote', destination: '/case-studies/engine' })}
-                  >
-                    <Link to="/case-studies/engine">
-                      Read the case study
-                      <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
-                    </Link>
-                  </Button>
+                  <div className="mt-4 flex flex-col md:flex-row md:items-end md:justify-between gap-4">
+                    <figcaption className="text-base font-semibold text-lbl-ink">
+                      Molly Papermaster
+                      <span className="block font-normal text-gray-600">Chief of Staff, The Engine</span>
+                    </figcaption>
+                    <Button
+                      size="sm"
+                      variant="outline"
+                      className="group rounded-full border-lbl-orange text-lbl-orange hover:bg-lbl-orange hover:text-white transition-all duration-300"
+                      asChild
+                      onClick={() => trackEvent('case_study_click', { location: 'molly_quote', destination: '/case-studies/engine' })}
+                    >
+                      <Link to="/case-studies/engine">
+                        Read the case study
+                        <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
+                      </Link>
+                    </Button>
+                  </div>
                 </div>
               </figure>
             </Reveal>
