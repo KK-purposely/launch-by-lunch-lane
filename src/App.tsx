@@ -29,6 +29,7 @@ import Industries from "./pages/Industries";
 import Dashboard from "./pages/Dashboard";
 import CompanyBrain from "./pages/CompanyBrain";
 import CaseStudyEngine from "./pages/CaseStudyEngine";
+import CaseStudyProverb from "./pages/CaseStudyProverb";
 import Navigation from "./components/Navigation";
 import ScrollToTop from "./components/ScrollToTop";
 
@@ -70,6 +71,7 @@ const App = () => (
             <Route path="/dashboard" element={<Dashboard />} />
             <Route path="/company-brain" element={<CompanyBrain />} />
             <Route path="/case-studies/engine" element={<CaseStudyEngine />} />
+            <Route path="/case-studies/proverb" element={<CaseStudyProverb />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>
