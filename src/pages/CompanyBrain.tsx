@@ -131,10 +131,10 @@ type Example = {
 const ExampleCard = ({ ex }: { ex: Example }) => {
   const Icon = ex.icon;
   return (
-    <div className="group relative">
-      <div className="bg-white rounded-2xl border border-gray-100 shadow-sm h-full overflow-hidden transition-shadow group-hover:shadow-lg flex flex-col">
+    <div className="group relative z-10 hover:z-30">
+      <div className="bg-white rounded-2xl border border-gray-100 shadow-sm h-full flex flex-col transition-shadow group-hover:shadow-lg">
         {/* Default face */}
-        <div className="p-6 group-hover:opacity-0 group-hover:absolute group-hover:inset-0 transition-opacity duration-150">
+        <div className="p-6">
           <span className="inline-flex w-10 h-10 rounded-xl items-center justify-center bg-lbl-magenta/10 text-lbl-magenta mb-4">
             <Icon className="w-5 h-5" />
           </span>
@@ -146,9 +146,9 @@ const ExampleCard = ({ ex }: { ex: Example }) => {
           </div>
         </div>
 
-        {/* Hover face: example content shown directly on the card */}
-        <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-200 absolute inset-0 p-5 flex flex-col">
-          <div className="h-1.5 -mx-5 -mt-5 mb-4" style={{ background: WARM }} />
+        {/* Hover popover panel */}
+        <div className="opacity-0 invisible group-hover:opacity-100 group-hover:visible pointer-events-none group-hover:pointer-events-auto transition-opacity duration-200 absolute top-0 left-0 w-full bg-white rounded-2xl border border-gray-200 shadow-xl p-5 flex flex-col">
+          <div className="h-1.5 -mx-5 -mt-5 mb-4 rounded-t-2xl" style={{ background: WARM }} />
           <div className="flex items-center gap-2 mb-3">
             <span className="inline-flex w-8 h-8 rounded-lg items-center justify-center bg-lbl-magenta/10 text-lbl-magenta flex-shrink-0">
               <Icon className="w-4 h-4" />
@@ -160,7 +160,7 @@ const ExampleCard = ({ ex }: { ex: Example }) => {
           <div className="text-[10px] font-bold uppercase tracking-[0.15em] text-lbl-magenta mb-1.5 flex items-center gap-1">
             <Sparkles className="w-3 h-3" /> AI response
           </div>
-          <div className="text-xs text-gray-700 leading-relaxed whitespace-pre-line overflow-y-auto flex-1">
+          <div className="text-xs text-gray-700 leading-relaxed whitespace-pre-line">
             {ex.response}
           </div>
         </div>
