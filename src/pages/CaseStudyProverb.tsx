@@ -4,47 +4,44 @@ import { trackEvent } from "@/lib/analytics";
 
 const CALENDLY = "https://calendly.com/karen-launchbylunch/30min";
 
-const aboutSteps = [
-  {
-    n: "01",
-    title: "Strategy",
-    body: "[Placeholder] Positioning and narrative work for places, districts, and institutions.",
-  },
-  {
-    n: "02",
-    title: "Brand Identity",
-    body: "[Placeholder] Naming, visual systems, and brand expression for developments and campuses.",
-  },
-  {
-    n: "03",
-    title: "Activation",
-    body: "[Placeholder] Campaigns, environmental design, and community engagement that bring the brand to life.",
-  },
+const aboutStats = [
+  { label: "pending — no revenue-impact numbers yet" },
+  { label: "pending — no revenue-impact numbers yet" },
 ];
 
 const steps = [
   {
     n: "01",
-    title: "[Placeholder] Voice-matched content system",
-    body: "[Placeholder description of a structural build. Real deliverable copy pending.]",
+    title: "Strategy & Guidance Document",
+    body: "Mapped ICP, verticals, and positioning through a round of leadership interviews. Done.",
   },
   {
     n: "02",
-    title: "[Placeholder] Deal follow-up automation",
-    body: "[Placeholder description of a structural build. Real deliverable copy pending.]",
+    title: "Claude Code foundation",
+    body: "9 team members onboarded, 6 tools connected (Gmail, Google Drive, Google Calendar, HubSpot, Granola, Slack). Done.",
   },
   {
     n: "03",
-    title: "[Placeholder] Relationship mining",
-    body: "[Placeholder description of a structural build. Real deliverable copy pending.]",
+    title: "Voice-matched content system",
+    body: "LinkedIn content trained on each person's own writing, live for two of the team's principals. Done.",
+  },
+  {
+    n: "04",
+    title: "Pipeline Watch",
+    body: "A stage-aware system that flags deals gone quiet and suggests next steps, mapped against live HubSpot data. In build.",
+  },
+  {
+    n: "05",
+    title: "Revival",
+    body: "Mining twenty years of past relationships, scored and segmented for reactivation. First full test pass complete, not yet live.",
   },
 ];
 
 const outcomes: { label: string; body: string }[] = [
-  { label: "Faster proposal turnaround:", body: "[placeholder - pending real metric]" },
-  { label: "More consistent follow-up on open deals:", body: "[placeholder - pending real metric]" },
-  { label: "Dormant relationships resurfaced:", body: "[placeholder - pending real metric]" },
-  { label: "Time back for senior team members:", body: "[placeholder - pending real metric]" },
+  { label: "74 warm relationships identified:", body: "from 20 years of email and CRM history, none of them cold outreach." },
+  { label: "21 / 41 / 11 segmentation:", body: "sorted into Revive, Resurrect, and Rekindle tiers by relationship strength and timing." },
+  { label: "12 deals ($1.09M) caught in a hidden bottleneck:", body: "found stuck in a pipeline stage that looked closed but wasn't, in a live pipeline audit." },
+  { label: "Suggest, never send:", body: "every system built with a human review step before anything reaches a real contact." },
 ];
 
 const connectedTools: { name: string; domain: string }[] = [
@@ -52,6 +49,8 @@ const connectedTools: { name: string; domain: string }[] = [
   { name: "Google Drive", domain: "drive.google.com" },
   { name: "Google Calendar", domain: "calendar.google.com" },
   { name: "HubSpot", domain: "hubspot.com" },
+  { name: "Granola", domain: "granola.ai" },
+  { name: "Slack", domain: "slack.com" },
 ];
 
 function StatCardTodo({ label }: { label: string }) {
