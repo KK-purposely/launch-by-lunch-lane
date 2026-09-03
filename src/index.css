@@ -748,3 +748,523 @@
   .engine-page .quote-text { font-size: 19px; }
   .engine-page .step { flex-direction: column; gap: 8px; }
 }
+
+
+/* ============ Proverb Agency case study (internal test) ============ */
+.proverb-page {
+  --lbl-eggplant: #421f52;
+  --lbl-orange: #fc8817;
+  --eggplant-700: #341641;
+  --eggplant-night: #2a1748;
+  --orange-200: #ffc485;
+  --orange-500: #e2700a;
+  --orange-600: #b75a06;
+  --slate-700: #3d3942;
+  --slate-300: #a0a0a8;
+  --eg-border: #ececec;
+  --grad-brand-warm: linear-gradient(96deg, #ec4795 0%, #fc8817 100%);
+  --grad-hero-soft: linear-gradient(120deg, #f1ebf7 0%, #faf0ec 55%, #ffffff 100%);
+
+  background: var(--grad-hero-soft);
+  background-attachment: fixed;
+  min-height: 100vh;
+  color: var(--slate-700);
+  font-family: "Inter", system-ui, -apple-system, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+.proverb-page .container {
+  max-width: 940px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.proverb-page .topbar {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: rgba(255, 255, 255, 0.82);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--eg-border);
+  overflow: hidden;
+}
+.proverb-page .topbar-inner {
+  max-width: 940px;
+  margin: 0 auto;
+  padding: 14px 24px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.proverb-page .topbar-inner img {
+  max-height: 28px;
+  width: auto;
+  display: block;
+  flex-shrink: 0;
+}
+.proverb-page .topbar-x {
+  color: var(--slate-300);
+  font-weight: 700;
+  font-size: 18px;
+}
+.proverb-page .topbar-client {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.proverb-page .topbar-client .topbar-gear {
+  height: 24px;
+  width: auto;
+}
+.proverb-page .topbar-client .topbar-wordmark {
+  height: 20px;
+  width: auto;
+}
+.proverb-page .topbar-tag {
+  margin-left: auto;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--orange-600);
+}
+
+.proverb-page .hero {
+  padding: 64px 24px 32px;
+  text-align: center;
+}
+.proverb-page .eyebrow {
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--orange-500);
+  margin-bottom: 16px;
+}
+.proverb-page .eyebrow-orange-strong { color: var(--orange-500); }
+.proverb-page .hero-h1 {
+  font-size: 52px;
+  font-weight: 800;
+  line-height: 1.08;
+  color: var(--eggplant-700);
+  margin-bottom: 18px;
+  letter-spacing: -0.01em;
+}
+.proverb-page .grad-text {
+  background: var(--grad-brand-warm);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+.proverb-page .lede {
+  font-size: 18px;
+  color: var(--slate-700);
+  max-width: 660px;
+  margin: 0 auto;
+  line-height: 1.55;
+}
+
+.proverb-page .stat-row {
+  display: flex;
+  gap: 14px;
+  justify-content: center;
+  margin-top: 36px;
+  flex-wrap: wrap;
+}
+.proverb-page .stat-card {
+  background: white;
+  border: 1px solid var(--eg-border);
+  border-radius: 16px;
+  padding: 20px 22px;
+  box-shadow: 0 1px 2px rgba(23, 10, 31, 0.06);
+  flex: 1 1 220px;
+  position: relative;
+  overflow: hidden;
+  text-align: left;
+}
+.proverb-page .stat-card::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 4px;
+  background: var(--grad-brand-warm);
+}
+.proverb-page .stat-num {
+  display: block;
+  font-size: 40px;
+  font-weight: 900;
+  line-height: 1;
+}
+.proverb-page .stat-label {
+  display: block;
+  margin-top: 8px;
+  font-size: 14px;
+  color: var(--slate-700);
+  font-weight: 600;
+  line-height: 1.4;
+}
+.proverb-page .stat-card-todo {
+  border: 2px dashed var(--orange-500);
+  background: #fff4e8;
+  opacity: 0.75;
+}
+.proverb-page .stat-card-todo::before { display: none; }
+.proverb-page .stat-num-todo {
+  color: var(--orange-500);
+  -webkit-text-fill-color: var(--orange-500);
+}
+
+.proverb-page .glance-wrap { padding: 0 24px 34px; }
+.proverb-page .glance {
+  background: white;
+  border: 1px solid var(--eg-border);
+  border-radius: 16px;
+  box-shadow: 0 1px 2px rgba(23, 10, 31, 0.06);
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  overflow: hidden;
+  margin: 0;
+}
+.proverb-page .glance-cell {
+  padding: 22px 24px;
+  border-right: 1px solid var(--eg-border);
+}
+.proverb-page .glance-cell:last-child { border-right: none; }
+.proverb-page .glance-cell dt {
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--orange-500);
+  margin-bottom: 6px;
+}
+.proverb-page .glance-cell dd {
+  margin: 0;
+  color: var(--lbl-eggplant);
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.35;
+}
+
+.proverb-page .block { padding: 34px 24px; }
+.proverb-page .h2 {
+  color: var(--lbl-eggplant);
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1.18;
+  margin-bottom: 16px;
+  letter-spacing: -0.005em;
+}
+.proverb-page .body-p {
+  color: var(--slate-700);
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 14px;
+}
+.proverb-page .subhead {
+  color: var(--slate-700);
+  margin-top: 8px;
+  margin-bottom: 22px;
+  max-width: 700px;
+  font-size: 17px;
+  line-height: 1.55;
+}
+
+.proverb-page .about-card {
+  background: white;
+  border: 1px solid var(--eg-border);
+  border-radius: 16px;
+  padding: 34px 34px;
+  box-shadow: 0 1px 2px rgba(23, 10, 31, 0.06);
+}
+.proverb-page .about-logo {
+  display: block;
+  width: 240px;
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 24px;
+}
+.proverb-page .about-steps { margin-top: 28px; }
+.proverb-page .about-stats { margin-top: 28px; }
+
+.proverb-page .steps {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.proverb-page .step {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+  background: white;
+  border: 1px solid var(--eg-border);
+  border-radius: 16px;
+  padding: 22px 26px;
+  box-shadow: 0 1px 2px rgba(23, 10, 31, 0.06);
+}
+.proverb-page .step-n {
+  font-size: 32px;
+  font-weight: 900;
+  min-width: 52px;
+  line-height: 1;
+}
+.proverb-page .step-title {
+  color: var(--lbl-eggplant);
+  font-size: 20px;
+  font-weight: 700;
+  margin: 0 0 4px;
+}
+.proverb-page .step-text {
+  font-size: 14px;
+  color: var(--slate-700);
+  line-height: 1.55;
+  margin: 0;
+}
+
+.proverb-page .results-grid { margin-bottom: 22px; }
+.proverb-page .outcomes {
+  background: white;
+  border: 1px solid var(--eg-border);
+  border-radius: 16px;
+  padding: 24px 28px;
+  box-shadow: 0 1px 2px rgba(23, 10, 31, 0.06);
+}
+.proverb-page .outcomes-spaced { margin-top: 32px; }
+
+.proverb-page .tool-logos {
+  margin-top: 28px;
+  background: white;
+  border: 1px solid var(--eg-border);
+  border-radius: 16px;
+  padding: 24px 28px;
+  box-shadow: 0 1px 2px rgba(23, 10, 31, 0.06);
+}
+.proverb-page .tool-logos-label {
+  font-size: 12px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  font-weight: 800;
+  color: var(--orange-500);
+  margin: 0 0 16px;
+}
+.proverb-page .tool-logo-grid {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+.proverb-page .tool-logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border: 1px solid var(--eg-border);
+  border-radius: 999px;
+  padding: 8px 14px 8px 10px;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--eggplant-600);
+}
+.proverb-page .tool-logo img {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+  border-radius: 4px;
+}
+.proverb-page .outcome-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.proverb-page .outcome-list li {
+  position: relative;
+  padding: 8px 0 8px 26px;
+  font-size: 16px;
+  line-height: 1.55;
+  color: var(--slate-700);
+}
+.proverb-page .outcome-list li::before {
+  content: "→";
+  position: absolute;
+  left: 0;
+  top: 8px;
+  color: var(--orange-500);
+  font-weight: 700;
+}
+.proverb-page .outcome-list strong {
+  color: var(--lbl-eggplant);
+  font-weight: 700;
+}
+
+.proverb-page .pending-pill {
+  display: inline-block;
+  margin-bottom: 18px;
+  background: #fff4e8;
+  border: 1px solid var(--orange-500);
+  border-radius: 999px;
+  padding: 6px 16px;
+  font-size: 13px;
+  color: var(--orange-600);
+  font-family: "Fraunces", "Inter", serif;
+  font-style: italic;
+}
+.proverb-page .quote-card {
+  background: var(--eggplant-night);
+  color: white;
+  border-radius: 24px;
+  position: relative;
+  overflow: hidden;
+}
+.proverb-page .quote-card-lg { padding: 44px 48px; }
+.proverb-page .quote-card-sm { padding: 30px 34px; margin-top: 18px; }
+.proverb-page .quote-mark {
+  position: relative;
+  display: block;
+  margin-bottom: 12px;
+  font-size: 140px;
+  line-height: 0.8;
+  color: var(--lbl-orange);
+  opacity: 0.35;
+  font-weight: 900;
+  font-family: "Inter", sans-serif;
+}
+.proverb-page .quote-text {
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 1.5;
+  position: relative;
+  margin: 0;
+  color: white;
+}
+.proverb-page .quote-card-sm .quote-text { font-size: 18px; }
+.proverb-page .quote-attr {
+  margin-top: 22px;
+  font-size: 14px;
+  color: var(--orange-200);
+  font-weight: 600;
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+.proverb-page .quote-photo {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+  border: 2px solid rgba(255, 255, 255, 0.25);
+}
+.proverb-page .quote-photo-placeholder {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  border: 2px solid rgba(255, 255, 255, 0.25);
+  background: rgba(255, 255, 255, 0.15);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 14px;
+}
+.proverb-page .quote-attr-text { display: block; }
+.proverb-page .quote-name {
+  display: block;
+  color: white;
+  font-weight: 700;
+  font-size: 16px;
+  margin-bottom: 2px;
+}
+.proverb-page .quote-role { color: var(--orange-200); }
+
+.proverb-page .cta-wrap {
+  max-width: 940px;
+  margin: 0 auto;
+}
+.proverb-page .cta {
+  background: var(--grad-brand-warm);
+  border-radius: 24px;
+  padding: 48px;
+  text-align: center;
+  color: white;
+  margin: 20px 24px 56px;
+}
+.proverb-page .cta-h2 {
+  color: white;
+  font-size: 32px;
+  font-weight: 800;
+  margin: 0 0 12px;
+  line-height: 1.2;
+}
+.proverb-page .cta-p {
+  color: rgba(255, 255, 255, 0.92);
+  max-width: 560px;
+  margin: 0 auto 24px;
+  font-size: 18px;
+  line-height: 1.5;
+}
+.proverb-page .cta-btn {
+  display: inline-block;
+  background: white;
+  color: var(--lbl-eggplant);
+  font-weight: 700;
+  padding: 14px 32px;
+  border-radius: 999px;
+  text-decoration: none;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+.proverb-page .cta-btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.proverb-page .site-footer {
+  text-align: center;
+  padding: 28px 0 48px;
+  color: var(--slate-300);
+  font-size: 14px;
+}
+.proverb-page .site-footer p { margin: 6px 0; }
+.proverb-page .footer-logo { display: block; margin: 0 auto 10px; max-height: 80px; width: auto; }
+.proverb-page .footer-link {
+  color: var(--lbl-eggplant);
+  font-weight: 600;
+  text-decoration: none;
+}
+.proverb-page .footer-link:hover { text-decoration: underline; }
+
+@media (max-width: 720px) {
+  .proverb-page .glance { grid-template-columns: repeat(2, 1fr); }
+  .proverb-page .glance-cell:nth-child(2) { border-right: none; }
+  .proverb-page .glance-cell:nth-child(1),
+  .proverb-page .glance-cell:nth-child(2) {
+    border-bottom: 1px solid var(--eg-border);
+  }
+  .proverb-page .hero-h1 { font-size: 36px; }
+  .proverb-page .h2 { font-size: 26px; }
+  .proverb-page .cta { padding: 36px 24px; }
+  .proverb-page .cta-h2 { font-size: 26px; }
+  .proverb-page .quote-card-lg { padding: 36px 28px; }
+  .proverb-page .quote-text { font-size: 19px; }
+  .proverb-page .step { flex-direction: column; gap: 8px; }
+}
+
+.proverb-page .test-banner {
+  width: 100%;
+  background: #b30021;
+  color: #ffffff;
+  text-align: center;
+  padding: 14px 16px;
+  font-size: 15px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  border-bottom: 3px solid #ffffff;
+  position: relative;
+  z-index: 60;
+}
