@@ -5,8 +5,8 @@ import { trackEvent } from "@/lib/analytics";
 const CALENDLY = "https://calendly.com/karen-launchbylunch/30min";
 
 const aboutStats = [
-  { label: "pending — no revenue-impact numbers yet" },
-  { label: "pending — no revenue-impact numbers yet" },
+  { label: "pending - no revenue-impact numbers yet" },
+  { label: "pending - no revenue-impact numbers yet" },
 ];
 
 const steps = [
@@ -134,11 +134,11 @@ const CaseStudyProverb = () => {
             <span className="grad-text">repeatable pipeline</span>
           </h1>
           <p className="lede">
-            Proverb Agency's new-business team was doing strong work with no system behind it — deals
+            Proverb Agency's new-business team was doing strong work with no system behind it - deals
             went dark after quotes, and two decades of client relationships sat underused. Launch by
             Lunch is building an AI-powered new business engine on Claude Code to change that.
           </p>
-          <span className="pending-pill">Phase 1 of 2 — in progress</span>
+          <span className="pending-pill">Phase 1 of 2 - in progress</span>
           <div className="stat-row">
             <StatCard num="74" label="warm relationships identified and scored for reactivation" />
             <StatCard num="32" label="deals ($2.23M) mapped in a live pipeline audit" />
@@ -153,7 +153,7 @@ const CaseStudyProverb = () => {
             <h2 className="h2">A 20-year branding and marketing agency for places that need to tell their story</h2>
             <p className="body-p">
               Proverb Agency is a place-branding and marketing agency (est. 1997) working with real
-              estate developers, anchor institutions, and municipalities — helping organizations with
+              estate developers, anchor institutions, and municipalities - helping organizations with
               large, complicated missions find their people and tell their story.
             </p>
 
@@ -193,12 +193,12 @@ const CaseStudyProverb = () => {
           <h2 className="h2">Great relationships, no system to run them through</h2>
           <p className="body-p">
             New-business outreach lived in inboxes and individual habits. Deals that went quiet after a
-            quote had no systematic follow-up — roughly 3 in 10 went dark with nobody chasing them.
+            quote had no systematic follow-up - roughly 3 in 10 went dark with nobody chasing them.
           </p>
           <p className="body-p">
             Proverb's twenty-year client network was a real asset sitting mostly untapped, and a past
             experience with an outside outreach vendor had left the team wary of anything that touched
-            their relationships without a human reviewing it first — any system had to suggest, never send.
+            their relationships without a human reviewing it first - any system had to suggest, never send.
           </p>
         </section>
 
@@ -226,7 +226,7 @@ const CaseStudyProverb = () => {
         <section className="block">
           <p className="eyebrow">The Results</p>
           <h2 className="h2">Real findings, from a system still being built</h2>
-          <span className="pending-pill">Engagement in progress — quantified business-outcome numbers (win rate, revenue) not yet available.</span>
+          <span className="pending-pill">Engagement in progress - quantified business-outcome numbers (win rate, revenue) not yet available.</span>
           <PlaceholderQuote name="[Client Contact]" role="[Title]" initials="CC" />
 
           <div className="outcomes outcomes-spaced">
