@@ -147,7 +147,7 @@ const ExampleCard = ({ ex }: { ex: Example }) => {
         </div>
 
         {/* Hover popover panel */}
-        <div className="opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-opacity duration-200 absolute top-0 left-0 w-full bg-white rounded-2xl border border-gray-200 shadow-xl p-5 flex flex-col">
+        <div className="opacity-0 invisible group-hover:opacity-100 group-hover:visible pointer-events-none group-hover:pointer-events-auto transition-opacity duration-200 absolute top-0 left-0 w-full bg-white rounded-2xl border border-gray-200 shadow-xl p-5 flex flex-col">
           <div className="h-1.5 -mx-5 -mt-5 mb-4 rounded-t-2xl" style={{ background: WARM }} />
           <div className="flex items-center gap-2 mb-3">
             <span className="inline-flex w-8 h-8 rounded-lg items-center justify-center bg-lbl-magenta/10 text-lbl-magenta flex-shrink-0">
