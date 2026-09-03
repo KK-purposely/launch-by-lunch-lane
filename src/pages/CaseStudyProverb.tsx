@@ -129,20 +129,20 @@ const CaseStudyProverb = () => {
         {/* Hero */}
         <section className="hero">
           <h1 className="hero-h1">
-            A 20-year agency got
+            Turning 20 years of relationships into a
             <br />
-            <span className="grad-text">[PLACEHOLDER: outcome]</span>
+            <span className="grad-text">repeatable pipeline</span>
           </h1>
           <p className="lede">
-            [Placeholder lede] Launch by Lunch worked with a roughly nine-person place-branding
-            agency to build an AI-powered new business engine on Claude Code, covering sales
-            outreach, proposal drafting, content production, and relationship mining across a two
-            decade client network. Final narrative pending.
+            Proverb Agency's new-business team was doing strong work with no system behind it — deals
+            went dark after quotes, and two decades of client relationships sat underused. Launch by
+            Lunch is building an AI-powered new business engine on Claude Code to change that.
           </p>
+          <span className="pending-pill">Phase 1 of 2 — in progress</span>
           <div className="stat-row">
-            <StatCardTodo label="metric pending real numbers" />
-            <StatCardTodo label="metric pending real numbers" />
-            <StatCardTodo label="metric pending real numbers" />
+            <StatCard num="74" label="warm relationships identified and scored for reactivation" />
+            <StatCard num="32" label="deals ($2.23M) mapped in a live pipeline audit" />
+            <StatCard num="9" label="team members onboarded to Claude Code" />
           </div>
         </section>
 
@@ -150,28 +150,17 @@ const CaseStudyProverb = () => {
         <section className="block about-section">
           <div className="about-card">
             <p className="eyebrow">ABOUT PROVERB AGENCY</p>
-            <h2 className="h2">[Placeholder headline about the agency and what it is known for]</h2>
+            <h2 className="h2">A 20-year branding and marketing agency for places that need to tell their story</h2>
             <p className="body-p">
-              Proverb Agency is a place-branding and marketing agency founded in 1997, working with
-              real estate developers, anchor institutions, and municipalities to shape how places
-              are understood, named, and experienced.
+              Proverb Agency is a place-branding and marketing agency (est. 1997) working with real
+              estate developers, anchor institutions, and municipalities — helping organizations with
+              large, complicated missions find their people and tell their story.
             </p>
 
-            <div className="steps about-steps">
-              {aboutSteps.map((s) => (
-                <div className="step" key={s.n}>
-                  <div className="step-n grad-text">{s.n}</div>
-                  <div className="step-body">
-                    <h3 className="step-title">{s.title}</h3>
-                    <p className="step-text">{s.body}</p>
-                  </div>
-                </div>
-              ))}
-            </div>
-
             <div className="stat-row about-stats">
-              <StatCardTodo label="metric pending real numbers" />
-              <StatCardTodo label="metric pending real numbers" />
+              {aboutStats.map((s, i) => (
+                <StatCardTodo key={i} label={s.label} />
+              ))}
             </div>
           </div>
         </section>
@@ -189,11 +178,11 @@ const CaseStudyProverb = () => {
             </div>
             <div className="glance-cell">
               <dt>Engagement</dt>
-              <dd>AI-powered new business engine (Claude Code)</dd>
+              <dd>AI-powered new business engine (Claude Code), Phase 1</dd>
             </div>
             <div className="glance-cell">
               <dt>Timeline</dt>
-              <dd>[TBD]</dd>
+              <dd>Kickoff July 2026 → ongoing</dd>
             </div>
           </dl>
         </section>
@@ -201,25 +190,24 @@ const CaseStudyProverb = () => {
         {/* Challenge */}
         <section className="block">
           <p className="eyebrow">The Challenge</p>
-          <h2 className="h2">[Placeholder headline about the new business gap]</h2>
+          <h2 className="h2">Great relationships, no system to run them through</h2>
           <p className="body-p">
-            [Placeholder] New business outreach was fragmented across inboxes, docs, and individual
-            habits, so promising conversations moved at different speeds depending on who was
-            driving them.
+            New-business outreach lived in inboxes and individual habits. Deals that went quiet after a
+            quote had no systematic follow-up — roughly 3 in 10 went dark with nobody chasing them.
           </p>
           <p className="body-p">
-            [Placeholder] Deals stalled between touchpoints, and two decades of client and partner
-            relationships sat underused because there was no simple way to surface who to reconnect
-            with and why.
+            Proverb's twenty-year client network was a real asset sitting mostly untapped, and a past
+            experience with an outside outreach vendor had left the team wary of anything that touched
+            their relationships without a human reviewing it first — any system had to suggest, never send.
           </p>
         </section>
 
         {/* What we built */}
         <section className="block">
           <p className="eyebrow">What We Built</p>
-          <h2 className="h2">[Placeholder headline for the build]</h2>
+          <h2 className="h2">A five-part engine, built in stages, human-approved at every step</h2>
           <p className="subhead">
-            [Placeholder subhead describing the shape of the engine at a high level.]
+            Foundation and content are live; pipeline and relationship-mining are in active build.
           </p>
           <div className="steps">
             {steps.map((s) => (
@@ -237,8 +225,8 @@ const CaseStudyProverb = () => {
         {/* Results */}
         <section className="block">
           <p className="eyebrow">The Results</p>
-          <h2 className="h2">[Placeholder headline about results]</h2>
-          <span className="pending-pill">Pending real metrics and client sign-off</span>
+          <h2 className="h2">Real findings, from a system still being built</h2>
+          <span className="pending-pill">Engagement in progress — quantified business-outcome numbers (win rate, revenue) not yet available.</span>
           <PlaceholderQuote name="[Client Contact]" role="[Title]" initials="CC" />
 
           <div className="outcomes outcomes-spaced">
