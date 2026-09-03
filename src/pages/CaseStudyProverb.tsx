@@ -4,47 +4,44 @@ import { trackEvent } from "@/lib/analytics";
 
 const CALENDLY = "https://calendly.com/karen-launchbylunch/30min";
 
-const aboutSteps = [
-  {
-    n: "01",
-    title: "Strategy",
-    body: "[Placeholder] Positioning and narrative work for places, districts, and institutions.",
-  },
-  {
-    n: "02",
-    title: "Brand Identity",
-    body: "[Placeholder] Naming, visual systems, and brand expression for developments and campuses.",
-  },
-  {
-    n: "03",
-    title: "Activation",
-    body: "[Placeholder] Campaigns, environmental design, and community engagement that bring the brand to life.",
-  },
+const aboutStats = [
+  { label: "pending - no revenue-impact numbers yet" },
+  { label: "pending - no revenue-impact numbers yet" },
 ];
 
 const steps = [
   {
     n: "01",
-    title: "[Placeholder] Voice-matched content system",
-    body: "[Placeholder description of a structural build. Real deliverable copy pending.]",
+    title: "Strategy & Guidance Document",
+    body: "Mapped ICP, verticals, and positioning through a round of leadership interviews. Done.",
   },
   {
     n: "02",
-    title: "[Placeholder] Deal follow-up automation",
-    body: "[Placeholder description of a structural build. Real deliverable copy pending.]",
+    title: "Claude Code foundation",
+    body: "9 team members onboarded, 6 tools connected (Gmail, Google Drive, Google Calendar, HubSpot, Granola, Slack). Done.",
   },
   {
     n: "03",
-    title: "[Placeholder] Relationship mining",
-    body: "[Placeholder description of a structural build. Real deliverable copy pending.]",
+    title: "Voice-matched content system",
+    body: "LinkedIn content trained on each person's own writing, live for two of the team's principals. Done.",
+  },
+  {
+    n: "04",
+    title: "Pipeline Watch",
+    body: "A stage-aware system that flags deals gone quiet and suggests next steps, mapped against live HubSpot data. In build.",
+  },
+  {
+    n: "05",
+    title: "Revival",
+    body: "Mining twenty years of past relationships, scored and segmented for reactivation. First full test pass complete, not yet live.",
   },
 ];
 
 const outcomes: { label: string; body: string }[] = [
-  { label: "Faster proposal turnaround:", body: "[placeholder - pending real metric]" },
-  { label: "More consistent follow-up on open deals:", body: "[placeholder - pending real metric]" },
-  { label: "Dormant relationships resurfaced:", body: "[placeholder - pending real metric]" },
-  { label: "Time back for senior team members:", body: "[placeholder - pending real metric]" },
+  { label: "74 warm relationships identified:", body: "from 20 years of email and CRM history, none of them cold outreach." },
+  { label: "21 / 41 / 11 segmentation:", body: "sorted into Revive, Resurrect, and Rekindle tiers by relationship strength and timing." },
+  { label: "12 deals ($1.09M) caught in a hidden bottleneck:", body: "found stuck in a pipeline stage that looked closed but wasn't, in a live pipeline audit." },
+  { label: "Suggest, never send:", body: "every system built with a human review step before anything reaches a real contact." },
 ];
 
 const connectedTools: { name: string; domain: string }[] = [
@@ -52,7 +49,18 @@ const connectedTools: { name: string; domain: string }[] = [
   { name: "Google Drive", domain: "drive.google.com" },
   { name: "Google Calendar", domain: "calendar.google.com" },
   { name: "HubSpot", domain: "hubspot.com" },
+  { name: "Granola", domain: "granola.ai" },
+  { name: "Slack", domain: "slack.com" },
 ];
+
+function StatCard({ num, label }: { num: string; label: string }) {
+  return (
+    <div className="stat-card">
+      <span className="stat-num">{num}</span>
+      <span className="stat-label">{label}</span>
+    </div>
+  );
+}
 
 function StatCardTodo({ label }: { label: string }) {
   return (
@@ -121,20 +129,20 @@ const CaseStudyProverb = () => {
         {/* Hero */}
         <section className="hero">
           <h1 className="hero-h1">
-            A 20-year agency got
+            Turning 20 years of relationships into a
             <br />
-            <span className="grad-text">[PLACEHOLDER: outcome]</span>
+            <span className="grad-text">repeatable pipeline</span>
           </h1>
           <p className="lede">
-            [Placeholder lede] Launch by Lunch worked with a roughly nine-person place-branding
-            agency to build an AI-powered new business engine on Claude Code, covering sales
-            outreach, proposal drafting, content production, and relationship mining across a two
-            decade client network. Final narrative pending.
+            Proverb Agency's new-business team was doing strong work with no system behind it - deals
+            went dark after quotes, and two decades of client relationships sat underused. Launch by
+            Lunch is building an AI-powered new business engine on Claude Code to change that.
           </p>
+          <span className="pending-pill">Phase 1 of 2 - in progress</span>
           <div className="stat-row">
-            <StatCardTodo label="metric pending real numbers" />
-            <StatCardTodo label="metric pending real numbers" />
-            <StatCardTodo label="metric pending real numbers" />
+            <StatCard num="74" label="warm relationships identified and scored for reactivation" />
+            <StatCard num="32" label="deals ($2.23M) mapped in a live pipeline audit" />
+            <StatCard num="9" label="team members onboarded to Claude Code" />
           </div>
         </section>
 
@@ -142,28 +150,17 @@ const CaseStudyProverb = () => {
         <section className="block about-section">
           <div className="about-card">
             <p className="eyebrow">ABOUT PROVERB AGENCY</p>
-            <h2 className="h2">[Placeholder headline about the agency and what it is known for]</h2>
+            <h2 className="h2">A 20-year branding and marketing agency for places that need to tell their story</h2>
             <p className="body-p">
-              Proverb Agency is a place-branding and marketing agency founded in 1997, working with
-              real estate developers, anchor institutions, and municipalities to shape how places
-              are understood, named, and experienced.
+              Proverb Agency is a place-branding and marketing agency (est. 1997) working with real
+              estate developers, anchor institutions, and municipalities - helping organizations with
+              large, complicated missions find their people and tell their story.
             </p>
 
-            <div className="steps about-steps">
-              {aboutSteps.map((s) => (
-                <div className="step" key={s.n}>
-                  <div className="step-n grad-text">{s.n}</div>
-                  <div className="step-body">
-                    <h3 className="step-title">{s.title}</h3>
-                    <p className="step-text">{s.body}</p>
-                  </div>
-                </div>
-              ))}
-            </div>
-
             <div className="stat-row about-stats">
-              <StatCardTodo label="metric pending real numbers" />
-              <StatCardTodo label="metric pending real numbers" />
+              {aboutStats.map((s, i) => (
+                <StatCardTodo key={i} label={s.label} />
+              ))}
             </div>
           </div>
         </section>
@@ -181,11 +178,11 @@ const CaseStudyProverb = () => {
             </div>
             <div className="glance-cell">
               <dt>Engagement</dt>
-              <dd>AI-powered new business engine (Claude Code)</dd>
+              <dd>AI-powered new business engine (Claude Code), Phase 1</dd>
             </div>
             <div className="glance-cell">
               <dt>Timeline</dt>
-              <dd>[TBD]</dd>
+              <dd>Kickoff July 2026 → ongoing</dd>
             </div>
           </dl>
         </section>
@@ -193,25 +190,24 @@ const CaseStudyProverb = () => {
         {/* Challenge */}
         <section className="block">
           <p className="eyebrow">The Challenge</p>
-          <h2 className="h2">[Placeholder headline about the new business gap]</h2>
+          <h2 className="h2">Great relationships, no system to run them through</h2>
           <p className="body-p">
-            [Placeholder] New business outreach was fragmented across inboxes, docs, and individual
-            habits, so promising conversations moved at different speeds depending on who was
-            driving them.
+            New-business outreach lived in inboxes and individual habits. Deals that went quiet after a
+            quote had no systematic follow-up - roughly 3 in 10 went dark with nobody chasing them.
           </p>
           <p className="body-p">
-            [Placeholder] Deals stalled between touchpoints, and two decades of client and partner
-            relationships sat underused because there was no simple way to surface who to reconnect
-            with and why.
+            Proverb's twenty-year client network was a real asset sitting mostly untapped, and a past
+            experience with an outside outreach vendor had left the team wary of anything that touched
+            their relationships without a human reviewing it first - any system had to suggest, never send.
           </p>
         </section>
 
         {/* What we built */}
         <section className="block">
           <p className="eyebrow">What We Built</p>
-          <h2 className="h2">[Placeholder headline for the build]</h2>
+          <h2 className="h2">A five-part engine, built in stages, human-approved at every step</h2>
           <p className="subhead">
-            [Placeholder subhead describing the shape of the engine at a high level.]
+            Foundation and content are live; pipeline and relationship-mining are in active build.
           </p>
           <div className="steps">
             {steps.map((s) => (
@@ -229,8 +225,8 @@ const CaseStudyProverb = () => {
         {/* Results */}
         <section className="block">
           <p className="eyebrow">The Results</p>
-          <h2 className="h2">[Placeholder headline about results]</h2>
-          <span className="pending-pill">Pending real metrics and client sign-off</span>
+          <h2 className="h2">Real findings, from a system still being built</h2>
+          <span className="pending-pill">Engagement in progress - quantified business-outcome numbers (win rate, revenue) not yet available.</span>
           <PlaceholderQuote name="[Client Contact]" role="[Title]" initials="CC" />
 
           <div className="outcomes outcomes-spaced">
