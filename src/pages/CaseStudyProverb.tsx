@@ -53,6 +53,15 @@ const connectedTools: { name: string; domain: string }[] = [
   { name: "Slack", domain: "slack.com" },
 ];
 
+function StatCard({ num, label }: { num: string; label: string }) {
+  return (
+    <div className="stat-card">
+      <span className="stat-num">{num}</span>
+      <span className="stat-label">{label}</span>
+    </div>
+  );
+}
+
 function StatCardTodo({ label }: { label: string }) {
   return (
     <div className="stat-card stat-card-todo">
