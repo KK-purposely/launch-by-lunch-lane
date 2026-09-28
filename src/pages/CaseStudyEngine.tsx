@@ -52,24 +52,32 @@ const steps = [
 
 const outcomes: { label: string; body: string }[] = [
   {
+    label: "9 to 21 Engines supported:",
+    body: "The Builder Platform team took on the second NSF Engines cohort without adding anyone to the team.",
+  },
+  {
+    label: "About 1,500 hours a year returned to the team:",
+    body: "roughly 29 hours a week, about three-quarters of a full-time position, now spent on the Engines.",
+  },
+  {
+    label: "Call prep and debriefs cut from 1 hour to 10 minutes each:",
+    body: "across about 40 Engine calls a month, roughly 67 hours a month back.",
+  },
+  {
+    label: "19 skills the team built themselves in the Navigator library:",
+    body: "every Navigator uses the same tools on every Engine, so the quality of support no longer depends on who is running the account that week.",
+  },
+  {
     label: "6+ tools in the tech stack connected to Claude:",
     body: "the brain plugs into the systems the team already lives in.",
   },
   {
-    label: "8 automations & skills running in production:",
+    label: "8 automations and skills from the original Launch by Lunch build, running in production:",
     body: "built for real workflows, not demos.",
   },
   {
     label: "Real adoption across a busy 37-person team:",
     body: "people picked it up quickly because it was built around work they were already doing.",
-  },
-  {
-    label: "Time back for the work that matters:",
-    body: "recurring busywork (follow-ups, status, reports) now runs automatically.",
-  },
-  {
-    label: "Knowledge is findable:",
-    body: "anyone can get answers without tracking down the one person who knows.",
   },
   {
     label: "Workflows that fit each team:",
@@ -86,6 +94,7 @@ const connectedTools: { name: string; domain: string }[] = [
   { name: "Gmail", domain: "gmail.com" },
   { name: "Google Drive", domain: "drive.google.com" },
   { name: "Google Calendar", domain: "calendar.google.com" },
+  { name: "Slack", domain: "slack.com" },
   { name: "Granola", domain: "granola.ai" },
   { name: "Fathom", domain: "fathom.video" },
   { name: "Monday.com", domain: "monday.com" },
@@ -110,12 +119,12 @@ const CaseStudyEngine = () => {
         <title>The Engine Case Study | Launch by Lunch</title>
         <meta
           name="description"
-          content="How Launch by Lunch built The Engine a shared company brain plus team-specific automations, with 100% adoption across 37 people."
+          content="How Launch by Lunch built The Engine a shared company brain on Claude plus team-specific automations. One team went from supporting 9 Engines to 21 with no added headcount and got about 1,500 hours a year back."
         />
         <meta property="og:title" content="The Engine Case Study | Launch by Lunch" />
         <meta
           property="og:description"
-          content="A whole company got a second brain and hours back every week."
+          content="A team that scaled from 9 Engines to 21 without adding headcount, and got about 1,500 hours a year back."
         />
         <meta property="og:type" content="article" />
         <link rel="canonical" href="https://launchbylunch.co/case-studies/engine" />
@@ -151,8 +160,8 @@ const CaseStudyEngine = () => {
           </p>
           <div className="stat-row">
             <StatCard num="100%" label="of the team working from one shared, governed brain" />
-            <StatCard num="37" label="people on one shared brain" />
-            <StatCard num="5" label="teams with workflows built for them" />
+            <StatCard num="9 to 21" label="Engines supported with no added headcount" />
+            <StatCard num="~1,500" label="hours a year returned to the team" />
           </div>
         </section>
 
@@ -266,10 +275,25 @@ const CaseStudyEngine = () => {
           </div>
         </section>
 
+        {/* Going Further */}
+        <section className="block">
+          <p className="eyebrow">Going Further</p>
+          <h2 className="h2">Then the team kept building</h2>
+          <p className="body-p">
+            Once the foundation was in place, The Builder Platform team kept building on it at their own pace. They created the Navigator system their whole team runs on: the Navigator Playbook plus a shared library of 19 skills covering every step of an Engine relationship. That includes first outreach, account brief setup, pre-call prep, post-call debriefs, advisor briefs, 90-day action plans, resource and funding matching, and NSF report narratives. Every Navigator uses the same tools on every Engine, so the quality of support no longer depends on who is running the account that week. Debriefs write assessment scores straight into Airtable, so portfolio data stays current without anyone logging it separately.
+          </p>
+          <p className="body-p">
+            The team also uses these tools to go deeper and to check their own work. Before a first call with an Engine, they build a deep dive on its market, capital options, path to commercialization, and workforce, so they know where the risk sits. Cross-portfolio pattern passes run parallel agents that each look at one Engine without seeing the others, then compare findings to surface patterns no single account would show. Before the Cohort 2 handoff, they ran a 28-agent pressure test on the full Navigator workflow and fixed the gaps before any Engine ran into them. Recurring jobs like the weekly team sync report and to-do cleanup now run on a schedule.
+          </p>
+        </section>
+
         {/* Results */}
         <section className="block">
           <p className="eyebrow">The Results</p>
-          <h2 className="h2">Adoption stuck, and the team got time back</h2>
+          <h2 className="h2">From 9 Engines to 21, with no added headcount</h2>
+          <p className="body-p">
+            When the second NSF Engines cohort began, The Builder Platform went from supporting 9 Engines to 21 without adding anyone to the team. Claude is a big part of how that works.
+          </p>
           <figure className="quote-card quote-card-lg">
             <span className="quote-mark" aria-hidden="true">&ldquo;</span>
             <blockquote className="quote-text">
@@ -291,6 +315,22 @@ const CaseStudyEngine = () => {
               </span>
             </figcaption>
           </figure>
+
+          <div className="results-table-wrap" role="region" aria-label="Workflow time savings" tabIndex={0}>
+            <table className="results-table">
+              <thead>
+                <tr><th scope="col">Workflow</th><th scope="col">Before</th><th scope="col">After</th><th scope="col">Impact</th></tr>
+              </thead>
+              <tbody>
+                <tr><th scope="row">Call prep</th><td>1 hour</td><td>10 minutes</td><td>About 67 hours a month combined with debriefs (about 40 Engine calls a month)</td></tr>
+                <tr><th scope="row">Post-call debrief</th><td>1 hour</td><td>10 minutes</td><td>Included above</td></tr>
+                <tr><th scope="row">Morning Brief</th><td>Separate tools</td><td>One ranked list</td><td>2.5 hours a week for each of 5 team members</td></tr>
+                <tr><th scope="row">Weekly status</th><td>90 minutes</td><td>45 minutes</td><td>45 minutes a week</td></tr>
+                <tr className="results-total"><th scope="row">Total</th><td></td><td></td><td>About 29 hours a week, about 1,500 hours a year, roughly three-quarters of a full-time position</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p className="results-note">Figures reported by The Builder Platform team.</p>
 
           <div className="outcomes outcomes-spaced">
             <ul className="outcome-list">
@@ -337,6 +377,20 @@ const CaseStudyEngine = () => {
               <span className="quote-attr-text">
                 <span className="quote-name">Katherine Otway</span>
                 <span className="quote-role">Chief Marketing Officer, The Engine</span>
+              </span>
+            </figcaption>
+          </figure>
+          <figure className="quote-card quote-card-lg team-quote">
+            <span className="quote-mark" aria-hidden="true">&ldquo;</span>
+            <blockquote className="quote-text">
+              <p>Every Navigator uses the same tools on every Engine, so the quality of support no longer depends on who is running the account that week.</p>
+              <p>The judgment calls are still ours. What changed is that we spend our time on those decisions and on the Engines instead of on prep and paperwork.</p>
+            </blockquote>
+            <figcaption className="quote-attr">
+              <img className="quote-photo" src="/case-studies/engine/engine-gear.png" alt="The Engine" />
+              <span className="quote-attr-text">
+                <span className="quote-name">The Builder Platform team</span>
+                <span className="quote-role">The Engine</span>
               </span>
             </figcaption>
           </figure>
