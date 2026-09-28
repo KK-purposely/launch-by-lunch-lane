@@ -76,14 +76,6 @@ const outcomes: { label: string; body: string }[] = [
     body: "built for real workflows, not demos.",
   },
   {
-    label: "Real adoption across a busy 37-person team:",
-    body: "people picked it up quickly because it was built around work they were already doing.",
-  },
-  {
-    label: "Workflows that fit each team:",
-    body: "five functional areas got automations built around how they actually operate.",
-  },
-  {
     label: "A durable foundation:",
     body: "the brain stays current on a monthly rhythm leadership reviews in minutes.",
   },
