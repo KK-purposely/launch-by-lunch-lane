@@ -699,6 +699,12 @@
   flex-shrink: 0;
   border: 2px solid rgba(255, 255, 255, 0.25);
 }
+.engine-page .team-quote .quote-photo {
+  background: white;
+  padding: 8px;
+  object-fit: contain;
+  box-sizing: border-box;
+}
 .engine-page .quote-photo-placeholder {
   width: 52px;
   height: 52px;
