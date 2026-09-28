@@ -658,6 +658,7 @@
   overflow: hidden;
 }
 .engine-page .quote-card-lg { padding: 44px 48px; }
+.engine-page .quote-card + .quote-card { margin-top: 28px; }
 .engine-page .team-quote { margin-top: 18px; }
 .engine-page .team-quote .quote-text p + p { margin-top: 18px; }
 .engine-page .quote-card-sm { padding: 30px 34px; margin-top: 18px; }
