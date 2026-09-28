@@ -528,6 +528,50 @@
 }
 .engine-page .outcomes-spaced { margin-top: 32px; }
 
+.engine-page .results-table-wrap {
+  margin-top: 30px;
+  overflow-x: auto;
+  background: white;
+  border: 1px solid var(--eg-border);
+  border-radius: 16px;
+  box-shadow: 0 1px 2px rgba(23, 10, 31, 0.06);
+}
+.engine-page .results-table {
+  width: 100%;
+  min-width: 680px;
+  border-collapse: separate;
+  border-spacing: 0;
+  text-align: left;
+  font-size: 15px;
+  line-height: 1.5;
+}
+.engine-page .results-table thead {
+  background: var(--lbl-eggplant);
+  color: white;
+}
+.engine-page .results-table th,
+.engine-page .results-table td {
+  padding: 15px 18px;
+  vertical-align: top;
+}
+.engine-page .results-table tbody tr:not(:last-child) > * {
+  border-bottom: 1px solid var(--eg-border);
+}
+.engine-page .results-table tbody th {
+  color: var(--lbl-eggplant);
+  font-weight: 700;
+}
+.engine-page .results-table th:nth-child(1) { min-width: 140px; }
+.engine-page .results-table th:nth-child(2),
+.engine-page .results-table th:nth-child(3) { min-width: 115px; }
+.engine-page .results-table th:nth-child(4) { min-width: 290px; }
+.engine-page .results-table .results-total > * { font-weight: 700; }
+.engine-page .results-note {
+  margin-top: 9px;
+  font-size: 13px;
+  color: var(--slate-700);
+}
+
 .engine-page .tool-logos {
   margin-top: 28px;
   background: white;
@@ -614,6 +658,8 @@
   overflow: hidden;
 }
 .engine-page .quote-card-lg { padding: 44px 48px; }
+.engine-page .team-quote { margin-top: 18px; }
+.engine-page .team-quote .quote-text p + p { margin-top: 18px; }
 .engine-page .quote-card-sm { padding: 30px 34px; margin-top: 18px; }
 .engine-page .quote-mark {
   position: relative;
