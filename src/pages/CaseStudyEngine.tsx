@@ -358,6 +358,27 @@ const CaseStudyEngine = () => {
           <figure className="quote-card quote-card-lg">
             <span className="quote-mark" aria-hidden="true">&ldquo;</span>
             <blockquote className="quote-text">
+              We're a small team supporting founders working on some of the hardest problems in
+              science and engineering. Every hour we spend on the mechanics of our own work is an
+              hour we're not spending on them. AI adoption came quickly and naturally, in large part
+              because Launch by Lunch helped us understand what was actually possible and set up
+              scalable systems.
+            </blockquote>
+            <figcaption className="quote-attr">
+              <img
+                className="quote-photo"
+                src="/case-studies/engine/rachael-faust.jpg"
+                alt="Rachael Faust"
+              />
+              <span className="quote-attr-text">
+                <span className="quote-name">Rachael Faust</span>
+                <span className="quote-role">Senior Manager, Marketing and Programs</span>
+              </span>
+            </figcaption>
+          </figure>
+          <figure className="quote-card quote-card-lg">
+            <span className="quote-mark" aria-hidden="true">&ldquo;</span>
+            <blockquote className="quote-text">
               Launch by Lunch built something that fits our existing tool stack and the requirements
               of how we do our work every day. And that made the investment worth it.
             </blockquote>
@@ -370,20 +391,6 @@ const CaseStudyEngine = () => {
               <span className="quote-attr-text">
                 <span className="quote-name">Katherine Otway</span>
                 <span className="quote-role">Chief Marketing Officer, The Engine</span>
-              </span>
-            </figcaption>
-          </figure>
-          <figure className="quote-card quote-card-lg team-quote">
-            <span className="quote-mark" aria-hidden="true">&ldquo;</span>
-            <blockquote className="quote-text">
-              <p>Every Navigator uses the same tools on every Engine, so the quality of support no longer depends on who is running the account that week.</p>
-              <p>The judgment calls are still ours. What changed is that we spend our time on those decisions and on the Engines instead of on prep and paperwork.</p>
-            </blockquote>
-            <figcaption className="quote-attr">
-              <img className="quote-photo" src="/case-studies/engine/engine-gear.png" alt="The Engine" />
-              <span className="quote-attr-text">
-                <span className="quote-name">The Builder Platform team</span>
-                <span className="quote-role">The Engine</span>
               </span>
             </figcaption>
           </figure>
