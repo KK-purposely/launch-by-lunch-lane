@@ -32,8 +32,17 @@ import CaseStudyEngine from "./pages/CaseStudyEngine";
 import CaseStudyProverb from "./pages/CaseStudyProverb";
 import Navigation from "./components/Navigation";
 import ScrollToTop from "./components/ScrollToTop";
+import BullhornCallback from "./pages/BullhornCallback";
 
 const queryClient = new QueryClient(); // Trigger GitHub sync
+
+// OAuth callback routes (e.g. /oauth/bullhorn/callback) render completely bare:
+// no navigation, footer, analytics, or chat widgets should load on any /oauth/* path.
+const ChromeGate = ({ children }: { children: React.ReactNode }) => {
+  const location = useLocation();
+  if (location.pathname.startsWith("/oauth/")) return null;
+  return <>{children}</>;
+};
 
 const App = () => (
   <QueryClientProvider client={queryClient}>
@@ -42,8 +51,10 @@ const App = () => (
         <Toaster />
         <Sonner />
         <BrowserRouter>
-          <ScrollToTop />
-          <Navigation />
+          <ChromeGate>
+            <ScrollToTop />
+            <Navigation />
+          </ChromeGate>
           <Routes>
             <Route path="/" element={<Index />} />
             <Route path="/services" element={<Pricing />} />
