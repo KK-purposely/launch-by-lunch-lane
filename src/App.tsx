@@ -39,7 +39,7 @@ const queryClient = new QueryClient(); // Trigger GitHub sync
 
 // OAuth callback routes (e.g. /oauth/bullhorn/callback) render completely bare:
 // no navigation, footer, analytics, or chat widgets should load on any /oauth/* path.
-const ChromeGate = ({ children }: { children: React.ReactNode }) => {
+const ChromeGate = ({ children }: { children: ReactNode }) => {
   const location = useLocation();
   if (location.pathname.startsWith("/oauth/")) return null;
   return <>{children}</>;
