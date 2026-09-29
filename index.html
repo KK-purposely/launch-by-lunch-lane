@@ -23,33 +23,45 @@
 
     <link rel="icon" type="image/x-icon" href="https://cdn.launchbylunch.co/favicons/icon.avif">
 
-    <!-- Hotjar Tracking Code for Launch by Lunch -->
+    <!-- Hotjar Tracking Code for Launch by Lunch (skipped on /oauth/* paths) -->
 <script>
-    (function(h,o,t,j,a,r){
-        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
-        h._hjSettings={hjid:6393139,hjsv:6};
-        a=o.getElementsByTagName('head')[0];
-        r=o.createElement('script');r.async=1;
-        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
-        a.appendChild(r);
-    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+    if (!location.pathname.startsWith('/oauth/')) {
+        (function(h,o,t,j,a,r){
+            h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+            h._hjSettings={hjid:6393139,hjsv:6};
+            a=o.getElementsByTagName('head')[0];
+            r=o.createElement('script');r.async=1;
+            r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+            a.appendChild(r);
+        })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+    }
 </script>
 
-<!-- Crisp Chat Widget -->
+<!-- Crisp Chat Widget (skipped on /oauth/* paths) -->
 <script type="text/javascript">
-    window.$crisp=[];
-    window.CRISP_WEBSITE_ID="a97993d6-d29f-42ad-92fc-ec625c66e31f";
-    (function(){
-        d=document;
-        s=d.createElement("script");
-        s.src="https://client.crisp.chat/l.js";
-        s.async=1;
-        d.getElementsByTagName("head")[0].appendChild(s);
-    })();
+    if (!location.pathname.startsWith('/oauth/')) {
+        window.$crisp=[];
+        window.CRISP_WEBSITE_ID="a97993d6-d29f-42ad-92fc-ec625c66e31f";
+        (function(){
+            d=document;
+            s=d.createElement("script");
+            s.src="https://client.crisp.chat/l.js";
+            s.async=1;
+            d.getElementsByTagName("head")[0].appendChild(s);
+        })();
+    }
 </script>
 
-<!-- Umami Analytics -->
-<script defer src="https://cloud.umami.is/script.js" data-website-id="096dbc31-4dc5-4aae-ba46-dba3d4bfbb7f"></script>
+<!-- Umami Analytics (skipped on /oauth/* paths) -->
+<script>
+    if (!location.pathname.startsWith('/oauth/')) {
+        var umamiS = document.createElement('script');
+        umamiS.defer = true;
+        umamiS.src = 'https://cloud.umami.is/script.js';
+        umamiS.setAttribute('data-website-id', '096dbc31-4dc5-4aae-ba46-dba3d4bfbb7f');
+        document.head.appendChild(umamiS);
+    }
+</script>
     
   
   
@@ -102,14 +114,18 @@
   }
   </script>
 
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-RN23XS81KR"></script>
+  <!-- Google tag (gtag.js): only loads on non-OAuth paths -->
   <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'G-RN23XS81KR');
+    if (!location.pathname.startsWith('/oauth/')) {
+      var gtagS = document.createElement('script');
+      gtagS.async = true;
+      gtagS.src = 'https://www.googletagmanager.com/gtag/js?id=G-RN23XS81KR';
+      document.head.appendChild(gtagS);
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-RN23XS81KR');
+    }
   </script>
 </head>
 
