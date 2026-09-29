@@ -83,6 +83,7 @@ const App = () => (
             <Route path="/company-brain" element={<CompanyBrain />} />
             <Route path="/case-studies/engine" element={<CaseStudyEngine />} />
             <Route path="/case-studies/proverb" element={<CaseStudyProverb />} />
+            <Route path="/oauth/bullhorn/callback" element={<BullhornCallback />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>
