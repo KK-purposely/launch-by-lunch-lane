@@ -1,9 +1,10 @@
 
+import type { ReactNode } from "react";
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Navigate, useLocation } from "react-router-dom";
 import { HelmetProvider } from "react-helmet-async";
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
@@ -32,8 +33,17 @@ import CaseStudyEngine from "./pages/CaseStudyEngine";
 import CaseStudyProverb from "./pages/CaseStudyProverb";
 import Navigation from "./components/Navigation";
 import ScrollToTop from "./components/ScrollToTop";
+import BullhornCallback from "./pages/BullhornCallback";
 
 const queryClient = new QueryClient(); // Trigger GitHub sync
+
+// OAuth callback routes (e.g. /oauth/bullhorn/callback) render completely bare:
+// no navigation, footer, analytics, or chat widgets should load on any /oauth/* path.
+const ChromeGate = ({ children }: { children: ReactNode }) => {
+  const location = useLocation();
+  if (location.pathname.startsWith("/oauth/")) return null;
+  return <>{children}</>;
+};
 
 const App = () => (
   <QueryClientProvider client={queryClient}>
@@ -42,8 +52,10 @@ const App = () => (
         <Toaster />
         <Sonner />
         <BrowserRouter>
-          <ScrollToTop />
-          <Navigation />
+          <ChromeGate>
+            <ScrollToTop />
+            <Navigation />
+          </ChromeGate>
           <Routes>
             <Route path="/" element={<Index />} />
             <Route path="/services" element={<Pricing />} />
@@ -72,6 +84,7 @@ const App = () => (
             <Route path="/company-brain" element={<CompanyBrain />} />
             <Route path="/case-studies/engine" element={<CaseStudyEngine />} />
             <Route path="/case-studies/proverb" element={<CaseStudyProverb />} />
+            <Route path="/oauth/bullhorn/callback" element={<BullhornCallback />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>
