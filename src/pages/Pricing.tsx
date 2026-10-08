@@ -1,3 +1,4 @@
+import BBBSeal from "@/components/BBBSeal";
 import React, { useRef, useState } from "react";
 import { Helmet } from "react-helmet-async";
 import { motion, useInView } from "framer-motion";
