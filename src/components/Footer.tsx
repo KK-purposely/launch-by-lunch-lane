@@ -1,4 +1,4 @@
-
+import BBBSeal from "@/components/BBBSeal";
 const Footer = () => {
   const currentYear = new Date().getFullYear();
   
@@ -30,6 +30,8 @@ const Footer = () => {
           </a>
         </div>
         
+        <BBBSeal className="mb-4" height={44} />
+
         <div className="text-sm text-white/70">
           &copy; {currentYear} Launch by Lunch. All rights reserved.
         </div>

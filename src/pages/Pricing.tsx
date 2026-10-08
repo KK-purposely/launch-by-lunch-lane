@@ -1,3 +1,4 @@
+import BBBSeal from "@/components/BBBSeal";
 import React, { useRef, useState } from "react";
 import { Helmet } from "react-helmet-async";
 import { motion, useInView } from "framer-motion";
@@ -892,6 +893,9 @@ const Pricing = () => {
             We work exclusively with small businesses. No jargon. No enterprise sales pitch. Just a
             conversation.
           </p>
+          <div className="mt-8 flex justify-center">
+            <BBBSeal />
+          </div>
         </div>
       </section>
 
