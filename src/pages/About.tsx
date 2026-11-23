@@ -191,11 +191,12 @@ const About = () => {
             <Card className="border-none shadow-lg bg-white">
               <CardContent className="p-6 md:p-8">
                 <div className="h-14 flex items-center mb-5">
-                  <span className="text-4xl font-bold bg-gradient-to-r from-lbl-ink to-lbl-orange bg-clip-text text-transparent">10</span>
+                  <span className="text-4xl font-bold bg-gradient-to-r from-lbl-ink to-lbl-orange bg-clip-text text-transparent">12</span>
                 </div>
-                <h3 className="text-xl font-bold text-lbl-ink mb-2">Claude Certified Architects (CCAR-F)</h3>
+                <h3 className="text-xl font-bold text-lbl-ink mb-1">12 Claude Certified Architects</h3>
+                <p className="text-sm font-semibold text-lbl-orange mb-3">(CCAR-F)</p>
                 <p className="text-lg text-gray-700 leading-relaxed">
-                  Ten of our builders hold Anthropic's Claude Certified Architect credential. The exam tests deep technical skill, including the Model Context Protocol (MCP), building on the Claude API, agent design, and production-grade integrations. It holds our team to the same engineering standard expected of software developers with a traditional CS degree.
+                  Twelve of our builders hold Anthropic's Claude Certified Architect credential. The exam tests deep technical skill, including the Model Context Protocol (MCP), building on the Claude API, agent design, and production-grade integrations. It holds our team to the same engineering standard expected of software developers with a traditional CS degree.
                 </p>
               </CardContent>
             </Card>
