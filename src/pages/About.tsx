@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button";
 import { ArrowUpRight, Sparkles } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 import Footer from "@/components/Footer";
+import commCorpLogo from "@/assets/commonwealth-corporation-logo.png.asset.json";
 
 const About = () => {
   const navigate = useNavigate();
@@ -147,6 +148,58 @@ const About = () => {
             </div>
           </div>
         </div>
+
+        {/* Credentials Section */}
+        <section className="mb-16" aria-labelledby="credentials-heading">
+          <h2 id="credentials-heading" className="text-2xl md:text-3xl font-bold mb-3 text-center">
+            <span className="bg-gradient-to-r from-lbl-ink to-lbl-orange bg-clip-text text-transparent">
+              Our Credentials
+            </span>
+          </h2>
+          <p className="text-lg text-gray-700 text-center max-w-2xl mx-auto mb-10">
+            The training, approvals, and certifications behind every engagement.
+          </p>
+          <div className="grid md:grid-cols-2 gap-6">
+            <Card className="border-none shadow-lg bg-white">
+              <CardContent className="p-6 md:p-8">
+                <img src="/lovable-uploads/claude-partner-network.png" alt="Claude Partner Network logo" className="h-14 w-auto mb-5" />
+                <h3 className="text-xl font-bold text-lbl-ink mb-2">Claude Partner Network</h3>
+                <p className="text-lg text-gray-700 leading-relaxed">
+                  Launch by Lunch is a member of the Claude Partner Network, Anthropic's program for the trusted firms it relies on to help organizations adopt Claude. Membership is selective: partners are vetted by Anthropic and gain direct access to its training, technical guidance, and product teams.
+                </p>
+              </CardContent>
+            </Card>
+            <Card className="border-none shadow-lg bg-white">
+              <CardContent className="p-6 md:p-8">
+                <div className="h-14 flex items-center mb-5"><Sparkles className="h-10 w-10 text-lbl-orange" /></div>
+                <h3 className="text-xl font-bold text-lbl-ink mb-2">Anthropic Approved SMB Training</h3>
+                <p className="text-lg text-gray-700 leading-relaxed">
+                  We are one of the only small business training companies in the US approved by Anthropic. That means we teach from Anthropic's own playbook and receive week to week updates, so your team learns what works with Claude today, not last quarter.
+                </p>
+              </CardContent>
+            </Card>
+            <Card className="border-none shadow-lg bg-white">
+              <CardContent className="p-6 md:p-8">
+                <img src={commCorpLogo.url} alt="Commonwealth Corporation logo" className="h-14 w-auto mb-5" />
+                <h3 className="text-xl font-bold text-lbl-ink mb-2">State Approved AI Upskilling</h3>
+                <p className="text-lg text-gray-700 leading-relaxed">
+                  We partner with the Commonwealth of Massachusetts through Commonwealth Corporation's Workforce Training Fund Express Program. Our AI upskilling curriculum is state approved, so eligible Massachusetts businesses can train their teams with grant funding.
+                </p>
+              </CardContent>
+            </Card>
+            <Card className="border-none shadow-lg bg-white">
+              <CardContent className="p-6 md:p-8">
+                <div className="h-14 flex items-center mb-5">
+                  <span className="text-4xl font-bold bg-gradient-to-r from-lbl-ink to-lbl-orange bg-clip-text text-transparent">10</span>
+                </div>
+                <h3 className="text-xl font-bold text-lbl-ink mb-2">Claude Certified Architects (CCAR-F)</h3>
+                <p className="text-lg text-gray-700 leading-relaxed">
+                  Ten of our builders hold Anthropic's Claude Certified Architect credential. The exam tests deep technical skill, including the Model Context Protocol (MCP), building on the Claude API, agent design, and production-grade integrations. It holds our team to the same engineering standard expected of professional software developers.
+                </p>
+              </CardContent>
+            </Card>
+          </div>
+        </section>
 
         {/* CTA Section */}
         <div className="text-center">
