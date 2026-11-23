@@ -166,7 +166,7 @@ const About = () => {
                 <img src="/lovable-uploads/claude-partner-network.png" alt="Claude Partner Network logo" className="h-14 w-auto mb-5" />
                 <h3 className="text-xl font-bold text-lbl-ink mb-2">Claude Partner Network</h3>
                 <p className="text-lg text-gray-700 leading-relaxed">
-                  Launch by Lunch is a member of the Claude Partner Network, Anthropic's program for the trusted firms it relies on to help organizations adopt Claude. Membership is selective: partners are vetted by Anthropic and gain direct access to its training, technical guidance, and product teams.
+                  Launch by Lunch is a Certified member of the Claude Partner Network, Anthropic's program for the trusted firms it relies on to help organizations adopt Claude. Membership is selective: partners are vetted by Anthropic and gain direct access to its training, technical guidance, and product teams.
                 </p>
               </CardContent>
             </Card>
