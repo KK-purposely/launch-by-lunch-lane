@@ -41,14 +41,7 @@ const About = () => {
               <p>
                 When I founded Launch by Lunch in 2024, my goal was simple: help non-technical founders build with AI. Since then, it has evolved into more than 2,500 IRL community members, monthly AI coworking events, and{" "}
                 <a href="/industries" className="text-lbl-orange underline underline-offset-2 hover:text-lbl-ink transition-colors">bespoke AI solutions</a>{" "}
-                and{" "}
-                <a
-                  href="/comm-corp-express-ai-training-in-ma"
-                  className="text-lbl-orange underline underline-offset-2 hover:text-lbl-ink transition-colors"
-                >
-                  training
-                </a>{" "}
-                for small business owners.
+                and training for small business owners.
               </p>
               <p>
                 We are grounded in the belief that AI can support our ability to be more human as leaders, friends, parents, and colleagues. We exist to build community through AI and ensure that no business is left behind in the greatest evolution of opportunity our economy has ever seen.
