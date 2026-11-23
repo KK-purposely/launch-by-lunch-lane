@@ -7,6 +7,7 @@ import { ArrowUpRight, Sparkles } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 import Footer from "@/components/Footer";
 import commCorpLogo from "@/assets/commonwealth-corporation-logo.png.asset.json";
+import anthropicLogo from "@/assets/anthropic-wordmark.png.asset.json";
 
 const About = () => {
   const navigate = useNavigate();
@@ -171,7 +172,7 @@ const About = () => {
             </Card>
             <Card className="border-none shadow-lg bg-white">
               <CardContent className="p-6 md:p-8">
-                <div className="h-14 flex items-center mb-5"><Sparkles className="h-10 w-10 text-lbl-orange" /></div>
+                <img src={anthropicLogo.url} alt="Anthropic" className="h-14 w-auto mb-5" />
                 <h3 className="text-xl font-bold text-lbl-ink mb-2">Anthropic Approved SMB Training</h3>
                 <p className="text-lg text-gray-700 leading-relaxed">
                   We are one of the only small business training companies in the US approved by Anthropic. That means we teach from Anthropic's own playbook and receive week to week updates, so your team learns what works with Claude today, not last quarter.
