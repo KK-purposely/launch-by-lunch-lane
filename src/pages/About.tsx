@@ -8,6 +8,7 @@ import { useNavigate } from "react-router-dom";
 import Footer from "@/components/Footer";
 import commCorpLogo from "@/assets/commonwealth-corporation-logo.png.asset.json";
 import anthropicLogo from "@/assets/anthropic-wordmark.png.asset.json";
+import ccarBadge from "@/assets/claude-certified-architect-badge.png.asset.json";
 
 const About = () => {
   const navigate = useNavigate();
@@ -190,9 +191,7 @@ const About = () => {
             </Card>
             <Card className="border-none shadow-lg bg-white">
               <CardContent className="p-6 md:p-8">
-                <div className="h-14 flex items-center mb-5">
-                  <span className="text-4xl font-bold bg-gradient-to-r from-lbl-ink to-lbl-orange bg-clip-text text-transparent">12</span>
-                </div>
+                <img src={ccarBadge.url} alt="Claude Certified Architect Foundations badge" className="h-20 w-auto mb-5" />
                 <h3 className="text-xl font-bold text-lbl-ink mb-1">12 Claude Certified Architects</h3>
                 <p className="text-sm font-semibold text-lbl-orange mb-3">(CCAR-F)</p>
                 <p className="text-lg text-gray-700 leading-relaxed">
