@@ -194,7 +194,7 @@ const About = () => {
                 </div>
                 <h3 className="text-xl font-bold text-lbl-ink mb-2">Claude Certified Architects (CCAR-F)</h3>
                 <p className="text-lg text-gray-700 leading-relaxed">
-                  Ten of our builders hold Anthropic's Claude Certified Architect credential. The exam tests deep technical skill, including the Model Context Protocol (MCP), building on the Claude API, agent design, and production-grade integrations. It holds our team to the same engineering standard expected of professional software developers.
+                  Ten of our builders hold Anthropic's Claude Certified Architect credential. The exam tests deep technical skill, including the Model Context Protocol (MCP), building on the Claude API, agent design, and production-grade integrations. It holds our team to the same engineering standard expected of software developers with a traditional CS degree.
                 </p>
               </CardContent>
             </Card>
