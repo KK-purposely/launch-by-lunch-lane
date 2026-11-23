@@ -47,10 +47,6 @@ const Navigation = () => {
                   Industries
                 </Link>
 
-                <Link to="/comm-corp-express-ai-training-in-ma" className="px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-lbl-orange">
-                  Free AI Upskilling
-                </Link>
-
                 <a href="https://luma.com/launchbylunch" target="_blank" rel="noopener noreferrer" onClick={() => trackEvent('event_registration_click', { location: 'navigation' })} className="px-3 py-2 rounded-md text-sm font-medium text-gray-700 hover:text-lbl-orange">
                   Public Events
                 </a>
@@ -97,12 +93,6 @@ const Navigation = () => {
                 <DropdownMenuItem asChild>
                   <Link to="/industries" className="w-full" onClick={() => setIsMenuOpen(false)}>
                     Industries
-                  </Link>
-                </DropdownMenuItem>
-
-                <DropdownMenuItem asChild>
-                  <Link to="/comm-corp-express-ai-training-in-ma" className="w-full" onClick={() => setIsMenuOpen(false)}>
-                    Free AI Upskilling
                   </Link>
                 </DropdownMenuItem>
 
